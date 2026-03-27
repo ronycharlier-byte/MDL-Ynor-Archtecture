@@ -84,8 +84,8 @@ def _ynor_logo_svg(with_background: bool = False) -> str:
   <defs>
     <linearGradient id="ynorGlow" x1="10%" y1="10%" x2="90%" y2="90%">
       <stop offset="0%" stop-color="#c6ecff"/>
-      <stop offset="48%" stop-color="#8fd6ff"/>
-      <stop offset="100%" stop-color="#4fb8ff"/>
+      <stop offset="46%" stop-color="#8fd6ff"/>
+      <stop offset="100%" stop-color="#58bfff"/>
     </linearGradient>
     <linearGradient id="ynorCore" x1="30%" y1="0%" x2="70%" y2="100%">
       <stop offset="0%" stop-color="#eefcff"/>
@@ -101,18 +101,26 @@ def _ynor_logo_svg(with_background: bool = False) -> str:
   </defs>
 {background}
   <g filter="url(#softGlow)" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 32l20-16 20 16-20 16-20-16Z" stroke="url(#ynorGlow)" stroke-width="1.5" opacity=".92"/>
-    <path d="M32 9l15 7v32l-15 7-15-7V16l15-7Z" stroke="url(#ynorGlow)" stroke-width="1.2" opacity=".72"/>
-    <path d="M21 17h22M20 25h24M18 39h28M20 47h24" stroke="url(#ynorGlow)" stroke-width="1.35" opacity=".7"/>
-    <path d="M28 13c-4.5 5.4-5.8 11.1-5.8 19.2S23.4 48 28 53.5" stroke="url(#ynorGlow)" stroke-width="2.2" opacity=".95"/>
-    <path d="M36 13c4.5 5.4 5.8 11.1 5.8 19.2S40.6 48 36 53.5" stroke="url(#ynorGlow)" stroke-width="2.2" opacity=".95"/>
-    <path d="M30 15c1.7 2.2 3 4.5 3 7.2s-1.3 5-3 7.2M34 15c-1.7 2.2-3 4.5-3 7.2s1.3 5 3 7.2M30 34c1.7 2.2 3 4.5 3 7.2s-1.3 5-3 7.2M34 34c-1.7 2.2-3 4.5-3 7.2s1.3 5 3 7.2" stroke="url(#ynorCore)" stroke-width="1.7" opacity=".9"/>
-    <circle cx="20" cy="20" r="1.2" fill="#c6ecff"/>
-    <circle cx="44" cy="20" r="1.2" fill="#c6ecff"/>
-    <circle cx="18" cy="44" r="1.2" fill="#c6ecff"/>
-    <circle cx="46" cy="44" r="1.2" fill="#c6ecff"/>
-    <circle cx="32" cy="11" r="1.1" fill="#eefcff"/>
-    <circle cx="32" cy="53" r="1.1" fill="#eefcff"/>
+    <path d="M32 8.2l19.3 11.2v22.3L32 52.9 12.7 41.7V19.4L32 8.2Z" stroke="url(#ynorGlow)" stroke-width="1.4" opacity=".96"/>
+    <path d="M32 12.3l15.8 9.1v21.1L32 51.6l-15.8-9.1V21.4l15.8-9.1Z" stroke="url(#ynorGlow)" stroke-width="1" opacity=".58"/>
+
+    <path d="M23 18h7M34 18h7M21 26h11M32 26h11M18.5 33h8M37.5 33h8M21 40h11M32 40h11M23 46h7M34 46h7" stroke="url(#ynorGlow)" stroke-width="1.1" opacity=".78"/>
+    <path d="M18 23l6.7 0.2M19 31l5.2 0.1M19 39l5.2-0.1M18 47l6.7-0.2M46 23l-6.7 0.2M45 31l-5.2 0.1M45 39l-5.2-0.1M46 47l-6.7-0.2" stroke="url(#ynorGlow)" stroke-width="1" opacity=".44"/>
+
+    <path d="M25 13.5c-4.1 4.7-6.1 10.2-6.1 18.2s2 13.5 6.1 18.8" stroke="url(#ynorGlow)" stroke-width="2.1" opacity=".98"/>
+    <path d="M39 13.5c4.1 4.7 6.1 10.2 6.1 18.2s-2 13.5-6.1 18.8" stroke="url(#ynorGlow)" stroke-width="2.1" opacity=".98"/>
+
+    <path d="M29.4 13.9c1.6 1.8 2.6 4 2.6 6.3s-1 4.4-2.6 6.3M34.6 13.9c-1.6 1.8-2.6 4-2.6 6.3s1 4.4 2.6 6.3M29.4 31.2c1.6 1.8 2.6 4 2.6 6.3s-1 4.4-2.6 6.3M34.6 31.2c-1.6 1.8-2.6 4-2.6 6.3s1 4.4 2.6 6.3" stroke="url(#ynorCore)" stroke-width="1.9" opacity=".98"/>
+
+    <path d="M32 11.5l3.2 3.5-3.2 3.3-3.2-3.3 3.2-3.5Z" fill="#c6ecff" opacity=".88"/>
+    <path d="M32 45.9l3.2 3.5-3.2 3.4-3.2-3.4 3.2-3.5Z" fill="#c6ecff" opacity=".88"/>
+
+    <circle cx="16.5" cy="21.8" r="1.15" fill="#eefcff"/>
+    <circle cx="47.5" cy="21.8" r="1.15" fill="#eefcff"/>
+    <circle cx="14.8" cy="42.1" r="1.15" fill="#eefcff"/>
+    <circle cx="49.2" cy="42.1" r="1.15" fill="#eefcff"/>
+    <circle cx="32" cy="9.2" r="1.05" fill="#eefcff"/>
+    <circle cx="32" cy="54.7" r="1.05" fill="#eefcff"/>
   </g>
 </svg>
 """.strip()
