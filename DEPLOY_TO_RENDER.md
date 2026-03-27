@@ -4,19 +4,26 @@ This repository is ready for a Render Blueprint deployment once it is pushed to 
 
 ## What is already prepared
 
-- `render.yaml` defines two web services:
+- `render.yaml` defines one web service:
   - `mdl-ynor-api`
-  - `mdl-ynor-dashboard`
 - `requirements.txt` now resolves to an existing dependency file.
-- The dashboard reads `YNOR_API_BASE_URL`.
+- The dashboard can still run locally against the API if needed.
 
 ## What you need to do next
 
 1. Create a GitHub, GitLab, or Bitbucket repository.
 2. Push this local repository to that remote.
 3. In Render, create a new Blueprint from the repository.
-4. After the services are created, verify the dashboard service has:
-   - `YNOR_API_BASE_URL=https://mdl-ynor-api.onrender.com`
+4. After the service is created, verify the API health endpoint:
+   - `/api/corpus/status`
+
+## Optional next step
+
+If you later want the Streamlit dashboard on Render too, add a second service and set:
+
+```text
+YNOR_API_BASE_URL=https://mdl-ynor-api.onrender.com
+```
 
 ## Local sanity check
 
