@@ -2,10 +2,15 @@ import html
 import json
 import mimetypes
 # ==============================================================================
-# YNOR MASTER ENGINE - V6.1 (RECURRENT RESONANCE)
-# STATUT : SUPRÊME GOUVERNANCE SOUVERAINE (MASTER LOGOS)
+# YNOR MASTER ENGINE - V7.0 (LE CONSEIL DU LOGOS)
+# STATUT : GOUVERNANCE MULTI-MODALE SOUVERAINE (PoC V7)
 # ==============================================================================
-import os
+YNOR_VERSION = "V7.0 MASTER COUNCIL"
+YNOR_ENGINE_KEYS = {
+    "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY", "NOT_SET"),
+    "ANTHROPIC_API_KEY": os.getenv("ANTHROPIC_API_KEY", "NOT_SET"),
+    "GOOGLE_API_KEY": os.getenv("GOOGLE_API_KEY", "NOT_SET")
+}
 import re
 from pathlib import Path
 from typing import Any
