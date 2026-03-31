@@ -153,7 +153,7 @@ class MDL_Ultimate_Benchmark:
         print(" a... BENCHMARK TERMINA - CALCUL DU SCORE DE SOUVERAINTA")
         print("=" * 60)
         
-        # Calcul du Sovereign Index (0-100)
+        # Calcul du Canonical Index (0-100)
         idx = (
             (self.results['structural_integrity']['fidelity'] * 0.3) +
             (max(0, self.results['mathematical_rigor']['mu'] * 10) * 0.2) +

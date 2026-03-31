@@ -24,7 +24,7 @@ Le texte se relit comme mecanisme de clarification et de stabilisation.
 ## B'. Miroir
 Repères structurants:
 - CARTE D'ACCES SOUVERAINE (PHASE IV)
-- Sovereign Research Collective -- Founder Level 0
+- Canonical Research Collective -- Founder Level 0
 - CLES D'ACTIVATION (ROOT KEYS)
 - PHRASES D'INITIALISATION
 - IDENTIFIANTS ET REPERES INTERNES

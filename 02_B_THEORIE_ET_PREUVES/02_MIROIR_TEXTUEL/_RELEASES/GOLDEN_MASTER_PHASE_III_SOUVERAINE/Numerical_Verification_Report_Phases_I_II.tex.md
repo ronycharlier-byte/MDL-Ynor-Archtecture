@@ -7,7 +7,7 @@ Source : _RELEASES\GOLDEN_MASTER_PHASE_III_SOUVERAINE\Numerical_Verification_Rep
 \usepackage{amsmath,amssymb,amsthm,physics,hyperref}
 
 \title{Theorie du Tout Dissipative -- Rapport Phase I \& II}
-\author{Sovereign Research Collective}
+\author{Canonical Research Collective}
 \date{Mars 2026}
 
 \newtheorem{lemma}{Lemme}
@@ -35,13 +35,13 @@ Les phases I et II sont resumees par deux faits simples: stabilite et lisibilite
 
 \bigskip
 \noindent\textbf{References :}\
-1. Research Collective, Phase III Sovereign Unification, DOI 10.5281/zenodo.19183399.\
+1. Research Collective, Phase III Canonical Unification, DOI 10.5281/zenodo.19183399.\
 2. Research Collective, Global Regularity Framework, DOI 10.5281/zenodo.19181947.\
 3. Research Collective, Dissipative Dynamics, DOI 10.5281/zenodo.18855042.
 
 \medskip
 \noindent \texttt{SIGN: PHASE-I-II-SHA256: 8085058A-9E61-437C-ABDD-A000AE249EAB}
-\copyright 2026 Sovereign Research Collective.
+\copyright 2026 Canonical Research Collective.
 
 \end{document}
 ```

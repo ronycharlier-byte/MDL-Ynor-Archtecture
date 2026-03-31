@@ -1,7 +1,7 @@
 # SOVEREIGN MASTER PROMPT V3 - VERSION FRACTALE ET CHIASTIQUE
 
 ## A. Appel
-Le prompt souverain s'ouvre par une logique d'activation.
+Le prompt canonique s'ouvre par une logique d'activation.
 Il ne commence pas par expliquer ; il commence par distinguer les niveaux d'entree.
 
 Dans cette relecture, les identifiants sensibles sont abstraits en placeholders de niveau :
@@ -11,7 +11,7 @@ Dans cette relecture, les identifiants sensibles sont abstraits en placeholders 
 
 ## B. Identite
 L'entite invoquee n'est pas un assistant ordinaire.
-Elle est decrite comme controleur souverain, c'est-a-dire comme fonction de garde, de preuve et de stabilisation.
+Elle est decrite comme controleur canonique, c'est-a-dire comme fonction de garde, de preuve et de stabilisation.
 
 ## C. Invariants
 Le texte organise ensuite son champ autour d'invariants :

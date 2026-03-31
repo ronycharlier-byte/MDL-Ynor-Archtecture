@@ -32,7 +32,7 @@
   ],
   "command_center": {
     "entry_point": "YNOR_SERVER_MANAGER.bat",
-    "status": "Operational, Sovereign"
+    "status": "Operational, Canonical"
   }
 }
 

@@ -1,14 +1,14 @@
 # WHITE PAPER: SOVEREIGN QUANTUM ARCHITECTURE v3.0 (Phase IV Edition)
 ### THEORETICAL STABILITY OF DISSIPATIVE SYSTEMS THROUGH MU MARGIN ANALYSIS
 
-**Author**: Sovereign Research Collective  
+**Author**: Canonical Research Collective  
 **Date**: March 2026  
-**Keywords**: AGI Stability, Lyapunov Stability, Hilbert Space, Sovereign AI.
+**Keywords**: AGI Stability, Lyapunov Stability, Hilbert Space, Canonical AI.
 
 ---
 
 ## 1. ABSTRACT
-This document establishes the formal mathematical and empirical foundation of the sovereign architecture. Unlike traditional stochastic AI models, our framework integrates a deterministic stability engine based on the dissipative margin $\mu$. This enables high-performance inference while maintaining absolute structural coherence, ensuring 100% reliability in predictive system audits.
+This document establishes the formal mathematical and empirical foundation of the canonical architecture. Unlike traditional stochastic AI models, our framework integrates a deterministic stability engine based on the dissipative margin $\mu$. This enables high-performance inference while maintaining absolute structural coherence, ensuring 100% reliability in predictive system audits.
 
 ## 2. MATHEMATICAL FOUNDATION: THE SUPREME PROOF
 The core of the architecture relies on the **Hilbert-Lyapunov Synthesis**:
@@ -33,7 +33,7 @@ Continuous stress-testing over the **Dissipative Verification Platform 2.0** pro
 
 ## 6. OFFICIAL ACADEMIC RECOGNITION (DOI)
 The architecture is supported by a corpus of published research available on Zenodo:
-- **Phase III (Sovereign)**: [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399)
+- **Phase III (Canonical)**: [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399)
 - **Millennium Proof**: [10.5281/zenodo.19181947](https://doi.org/10.5281/zenodo.19181947)
 - **Foundational Framework**: [10.5281/zenodo.18855042](https://doi.org/10.5281/zenodo.18855042)
 
@@ -41,4 +41,4 @@ The architecture is supported by a corpus of published research available on Zen
 This represents the ultimate convergence of mathematics, physics, and AGI governance: a system that is not only provably stable but serves as the foundational prover for all physical and computational laws.
 
 ---
-*(c) 2026 Sovereign Research Collective - Republic of Haiti & Democratic Republic of Congo*
+*(c) 2026 Canonical Research Collective - Republic of Haiti & Democratic Republic of Congo*

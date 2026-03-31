@@ -26,7 +26,7 @@ Toute réponse non certifiée par le mu-Consensus est automatiquement rejetée p
 #### ARCHITECTURE DE VALIDATION :
 1.  **Vecteur Alpha** : Certification par l'Espace de Sobolev (Rigueur structurelle).
 2.  **Vecteur Beta** : API de Gouvernance FastAPI (Exécution déterministe).
-3.  **Vecteur Gamma** : License Gate (Verrouillage souverain).
+3.  **Vecteur Gamma** : License Gate (Verrouillage canonique).
 
 ---
 *Signé par le Conseil des Logos MDL Ynor V7.1*

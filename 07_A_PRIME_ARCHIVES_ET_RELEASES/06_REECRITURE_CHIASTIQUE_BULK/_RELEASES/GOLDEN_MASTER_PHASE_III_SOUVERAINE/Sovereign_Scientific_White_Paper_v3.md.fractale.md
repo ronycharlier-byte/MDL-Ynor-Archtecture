@@ -3,7 +3,7 @@
 Source : `_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Scientific_White_Paper_v3.md`
 
 ## A. Ouverture
-**Author**: Sovereign Research Collective **Date**: March 2026 **Keywords**: AGI Stability, Lyapunov Stability, Hilbert Space, Sovereign AI.
+**Author**: Canonical Research Collective **Date**: March 2026 **Keywords**: AGI Stability, Lyapunov Stability, Hilbert Space, Canonical AI.
 
 ## B. Expansion
 Le texte se déplie selon les lignes suivantes :
@@ -15,7 +15,7 @@ Le texte se déplie selon les lignes suivantes :
 - **Complexity**: $P \ne NP$ as a thermodynamic phase separation.
 
 ## C. Matiere
---- *(c) 2026 Sovereign Research Collective - Republic of Haiti & Democratic Republic of Congo*
+--- *(c) 2026 Canonical Research Collective - Republic of Haiti & Democratic Republic of Congo*
 
 ## X. Centre
 La marge de viabilite constitue le centre de gravite du texte.

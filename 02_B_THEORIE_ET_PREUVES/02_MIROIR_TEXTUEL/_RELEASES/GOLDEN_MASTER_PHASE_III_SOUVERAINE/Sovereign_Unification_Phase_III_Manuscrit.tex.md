@@ -11,7 +11,7 @@ Source : _RELEASES\GOLDEN_MASTER_PHASE_III\Sovereign_Unification_Phase_III_Manus
 
 \title[Phase III: Unification Souveraine]{Phase III: Unification Souveraine\\
 \large Preuves Numeriques, Relativite Generale et Post-Millenaire}
-\author{Sovereign Research Collective}
+\author{Canonical Research Collective}
 \date{Mars 2026}
 
 \begin{document}

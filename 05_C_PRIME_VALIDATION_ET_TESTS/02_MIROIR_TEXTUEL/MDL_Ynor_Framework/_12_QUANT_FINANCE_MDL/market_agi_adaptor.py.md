@@ -72,7 +72,7 @@ class MarketAGIController:
         news_samples = [
             ["Inflation exceeds 4%. Market jitters.", "Geopolitical tension rising in Middle East."],
             ["Tech earnings exceed expectations. NVDA leads.", "Central bank whispers about rate cuts."],
-            ["Sudden bankruptcy of major regional bank.", "Default risk high on sovereign bonds."]
+            ["Sudden bankruptcy of major regional bank.", "Default risk high on canonical bonds."]
         ]
         
         print("--- STARTING MDL YNOR MARKET ADAPTOR ---")

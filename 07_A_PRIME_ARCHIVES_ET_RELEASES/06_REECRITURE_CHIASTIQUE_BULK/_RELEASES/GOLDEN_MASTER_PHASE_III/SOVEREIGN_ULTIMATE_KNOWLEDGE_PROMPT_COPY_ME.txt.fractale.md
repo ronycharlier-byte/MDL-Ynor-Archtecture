@@ -3,7 +3,7 @@
 Source : `_RELEASES/GOLDEN_MASTER_PHASE_III/SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt`
 
 ## A. Ouverture
---- Sovereign Controller V3.9 — μ-Audit ONLINE. MODE PROVER ALPHA ENGAGÉ.
+--- Canonical Controller V3.9 — μ-Audit ONLINE. MODE PROVER ALPHA ENGAGÉ.
 
 ## B. Expansion
 Le texte se déplie selon les lignes suivantes :

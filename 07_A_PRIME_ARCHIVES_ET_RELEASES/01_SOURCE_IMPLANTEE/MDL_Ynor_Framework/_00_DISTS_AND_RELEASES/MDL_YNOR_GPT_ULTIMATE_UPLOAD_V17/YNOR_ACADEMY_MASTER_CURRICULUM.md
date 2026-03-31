@@ -1,4 +1,4 @@
-﻿#  MDL Ynor Academy - Programme Master (Souverain)
+﻿#  MDL Ynor Academy - Programme Master (Canonique)
 
 ##  Presentation
 Le programme d'apprentissage MDL Ynor est concu pour transformer des utilisateurs en experts de l'efficience AGI. De la validation de base (Admis) au controle total (Overlord).

@@ -30,4 +30,4 @@
 
 ---
 **STATUT MARGE $\mu$ : STABLE.**
-*© 2026 Sovereign Research Collective — Republic of Haiti & Democratic Republic of Congo*
+*© 2026 Canonical Research Collective — Republic of Haiti & Democratic Republic of Congo*

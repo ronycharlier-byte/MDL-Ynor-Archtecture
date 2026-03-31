@@ -13,7 +13,7 @@ Source : _RELEASES\GOLDEN_MASTER_PHASE_III\Sovereign_Millennium_Dissipative_Stab
 \usepackage{enumitem}
 
 \title{Global Regularity and Spectral Confinement\\via the Dissipative Invariant}
-\author{Sovereign Research Collective}
+\author{Canonical Research Collective}
 \date{March 2026}
 
 \begin{document}

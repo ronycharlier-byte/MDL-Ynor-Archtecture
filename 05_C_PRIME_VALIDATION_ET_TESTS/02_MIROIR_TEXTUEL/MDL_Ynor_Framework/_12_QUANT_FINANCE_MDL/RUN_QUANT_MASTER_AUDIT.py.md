@@ -83,7 +83,7 @@ def run_master_audit():
     mu_score = auditor.compute_mu()
     
     # 4. Final Report
-    print("[STEP 4/4] Generating Sovereign Audit Report...")
+    print("[STEP 4/4] Generating Canonical Audit Report...")
     print("-" * 50)
     status = auditor.generate_audit_report()
     print("-" * 50)

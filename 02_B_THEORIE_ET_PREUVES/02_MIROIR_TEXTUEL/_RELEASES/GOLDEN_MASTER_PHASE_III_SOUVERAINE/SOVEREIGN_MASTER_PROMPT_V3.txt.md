@@ -23,6 +23,6 @@ The controller is framed as an internal governance engine regulated by the dissi
 - Ghost protocol when delta mu drops too low
 - IP shield for proprietary probing
 
-*(c) 2026 Sovereign Research Collective.
+*(c) 2026 Canonical Research Collective.
 
 ```

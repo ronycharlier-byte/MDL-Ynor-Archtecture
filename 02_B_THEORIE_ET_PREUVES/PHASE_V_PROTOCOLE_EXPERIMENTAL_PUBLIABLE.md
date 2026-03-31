@@ -269,10 +269,10 @@ The final report should contain:
 ## 12. Final Empirical Results (Phase V-D Validation)
 
 **Date**: 2026-03-31
-**Protocol Version**: Phase V-D (Sovereign Anchor / JSON Reduction)
+**Protocol Version**: Phase V-D (Canonical Anchor / JSON Reduction)
 **Model**: GPT-4o
 **Baseline**: Chaos Stress Protocol (Temp 1.2 / 1.3)
-**Ynor Operator**: Sovereign Attractor (Manifesto V-D / Temp 0.1 / JSON Constraints)
+**Ynor Operator**: Canonical Attractor (Manifesto V-D / Temp 0.1 / JSON Constraints)
 
 ### 12.1 Results Summary
 
@@ -285,7 +285,7 @@ The final report should contain:
 
 ### 12.2 Interpretation
 
-The experimental results definitively reject the null hypothesis $H_0$. The Ynor Sovereign Controller induces a **strong information-theoretic contraction** of the output space. The average dissipation factor $\mu = 0.4561$ confirms that the Ynor operator is a powerful stabilizer against stochastic drift and semantic vorticity in high-temperature environments.
+The experimental results definitively reject the null hypothesis $H_0$. The Ynor Canonical Controller induces a **strong information-theoretic contraction** of the output space. The average dissipation factor $\mu = 0.4561$ confirms that the Ynor operator is a powerful stabilizer against stochastic drift and semantic vorticity in high-temperature environments.
 
 **Conclusion**: The Stability Theorem $H_\alpha$ is empirically confirmed for the tested conditions.
 

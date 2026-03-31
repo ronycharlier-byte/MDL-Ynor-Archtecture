@@ -21,9 +21,9 @@ The text frames stability as requiring a positive margin and bounded incoherence
 ## 3. FINAL TEMPLATE FOR ZENODO/ARXIV (PHASE III)
 - DOI: 10.5281/zenodo.19183399
 - Title: Universal Dissipative Stability - Phase III
-- Author: Sovereign Research Collective
+- Author: Canonical Research Collective
 - License: CC-BY 4.0
 
-*(c) 2026 Sovereign Research Collective - Validation SHA-256: 4F92B3C1-72A2-4B81-9C1D-8085058A9E61*
+*(c) 2026 Canonical Research Collective - Validation SHA-256: 4F92B3C1-72A2-4B81-9C1D-8085058A9E61*
 
 ```

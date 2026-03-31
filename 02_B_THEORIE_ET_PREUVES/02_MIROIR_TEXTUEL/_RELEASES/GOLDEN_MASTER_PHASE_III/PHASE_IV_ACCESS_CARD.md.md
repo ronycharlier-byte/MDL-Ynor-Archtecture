@@ -4,7 +4,7 @@ Source : _RELEASES\GOLDEN_MASTER_PHASE_III\PHASE_IV_ACCESS_CARD.md
 
 ```text
 # CARTE D'ACCES SOUVERAINE (PHASE IV)
-### Sovereign Research Collective -- Founder Level 0
+### Canonical Research Collective -- Founder Level 0
 
 > [!IMPORTANT]
 > Consigne interne: ce document sert de repere documentaire. Ne pas diffuser les identifiants.
@@ -32,6 +32,6 @@ Source : _RELEASES\GOLDEN_MASTER_PHASE_III\PHASE_IV_ACCESS_CARD.md
 
 ---
 **STATUT MARGE $\mu$ : STABLE.**
-*(c) 2026 Sovereign Research Collective -- Republic of Haiti & Democratic Republic of Congo*
+*(c) 2026 Canonical Research Collective -- Republic of Haiti & Democratic Republic of Congo*
 
 ```

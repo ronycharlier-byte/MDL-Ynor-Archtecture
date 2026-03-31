@@ -1,4 +1,4 @@
-# 🚀 Checklist de Soumission : Sovereign Unification Phase III - VERSION FRACTALE ET CHIASTIQUE
+# 🚀 Checklist de Soumission : Canonical Unification Phase III - VERSION FRACTALE ET CHIASTIQUE
 
 Source : `_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/SUBMISSION_CHECKLIST_SOVEREIGN.md`
 
@@ -15,7 +15,7 @@ Le texte se déplie selon les lignes suivantes :
 - [ ] **Manuscrit LaTeX** : `Sovereign_Unification_Phase_III_Manuscrit.tex` (Version Anonyme).
 
 ## C. Matiere
---- **En route pour l'histoire des sciences.** *(c) 2026 Sovereign Research Collective*
+--- **En route pour l'histoire des sciences.** *(c) 2026 Canonical Research Collective*
 
 ## X. Centre
 Le centre chiastique est le passage du texte prive au texte publiquement evaluable.
@@ -25,7 +25,7 @@ Au retour du centre, le texte se relit comme un mécanisme de clarification, de 
 
 ## B'. Miroir
 Les titres ou repères structurants deviennent les miroirs de son organisation :
-- 🚀 Checklist de Soumission : Sovereign Unification Phase III
+- 🚀 Checklist de Soumission : Canonical Unification Phase III
 - 1. Dépôt Officiel (Zenodo / ArXiv)
 - 2. Choix de la Revue Académique
 - 3. Préparation du Package Final

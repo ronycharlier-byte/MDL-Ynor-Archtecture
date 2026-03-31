@@ -129,7 +129,7 @@ Taches :
 ## Epreuve 6 - Calcul des variations, monotonicite et regularite
 Soit
 E(u) = integral_Omega (a(x, u, Du) + F(x, u)) dx
-sur un domaine borne Omega, avec croissance p, coercivite et monotonicite stricte.
+sur un domaine borne Canonique, avec croissance p, coercivite et monotonicite stricte.
 
 Taches :
 - Prouver l'existence d'un minimiseur dans un espace de Sobolev adequat.

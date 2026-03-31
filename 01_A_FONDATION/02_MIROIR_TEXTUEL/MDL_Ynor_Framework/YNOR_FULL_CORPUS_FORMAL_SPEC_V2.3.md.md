@@ -19,7 +19,7 @@ MDL Ynor is a dissipative cognitive architecture founded upon the structural via
 - **Quantitative Systems Regulator**: Integrated Mu Margin Auditing for S&P 500 and NASDAQ-100 datasets.
 - **Geodynamic Analytical Module**: Implementation of World Magnetic Model (WMM 2026) secular variation vectors.
 - **Logical Isolation Substrate (V16.1)**: Enhanced structural isolation and Integrity Reclamation Protocols.
-- **Sovereign Unification (Phase III)**: DOI: [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399).
+- **Canonical Unification (Phase III)**: DOI: [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399).
 - **Formal Resolution of Millennium Problems**: DOI: [10.5281/zenodo.19181947](https://doi.org/10.5281/zenodo.19181947).
 - **The Viability Principle (Foundational)**: DOI: [10.5281/zenodo.18855042](https://doi.org/10.5281/zenodo.18855042).
 - **Structural Entropy Analysis**: DOI: [10.5281/zenodo.18567115](https://doi.org/10.5281/zenodo.18567115).

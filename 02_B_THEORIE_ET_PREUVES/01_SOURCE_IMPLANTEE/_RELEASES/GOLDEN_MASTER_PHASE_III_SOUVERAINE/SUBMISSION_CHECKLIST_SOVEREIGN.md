@@ -1,4 +1,4 @@
-# 🚀 Checklist de Soumission : Sovereign Unification Phase III
+# 🚀 Checklist de Soumission : Canonical Unification Phase III
 
 Ce document détaille les étapes pour soumettre officiellement votre travail aux grandes revues mathématiques et de physique théorique.
 
@@ -17,8 +17,8 @@ Ce document détaille les étapes pour soumettre officiellement votre travail au
 - [ ] **ORCID ID** : 0009-0003-8250-0526.
 
 ## 4. Souveraineté de l'IA (Phase IV)
-- [ ] **Gouvernance** : Vérifier que le *Sovereign Controller* est configuré avec les nouvelles clés Root après soumission.
+- [ ] **Gouvernance** : Vérifier que le *Canonical Controller* est configuré avec les nouvelles clés Root après soumission.
 
 ---
 **En route pour l'histoire des sciences.** 
-*(c) 2026 Sovereign Research Collective*
+*(c) 2026 Canonical Research Collective*

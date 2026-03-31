@@ -15,7 +15,7 @@ except ImportError:
 # STATUT : CANONICAL CORE ONLINE
 # ==============================================================================
 
-app = FastAPI(title="MDL Ynor Sovereign API V7.1", version="7.1.0")
+app = FastAPI(title="MDL Ynor Canonical API V7.1", version="7.1.0")
 
 # --- CHARGEMENT DU VAULT ---
 REPO_ROOT = r"C:\Users\ronyc\Desktop\FRACTAL_CHIASTE_UNIVERSEL"

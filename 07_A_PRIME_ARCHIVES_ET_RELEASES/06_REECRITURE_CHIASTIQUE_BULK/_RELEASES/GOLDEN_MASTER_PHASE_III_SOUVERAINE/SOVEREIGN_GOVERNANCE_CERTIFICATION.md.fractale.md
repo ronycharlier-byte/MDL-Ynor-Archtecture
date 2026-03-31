@@ -3,7 +3,7 @@
 Source : `_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/SOVEREIGN_GOVERNANCE_Validation.md`
 
 ## A. Ouverture
-Ce document définit les niveaux de Validation et de maturité des systèmes intégrés au cadre de gouvernance souverain. Chaque niveau est validé par un audit formel de la marge dissipative $\mu$.
+Ce document définit les niveaux de Validation et de maturité des systèmes intégrés au cadre de gouvernance canonique. Chaque niveau est validé par un audit formel de la marge dissipative $\mu$.
 
 ## B. Expansion
 Le texte se déplie selon les lignes suivantes :

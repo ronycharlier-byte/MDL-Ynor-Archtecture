@@ -1,4 +1,4 @@
-﻿#  MDL Ynor - Kit de Vente Souverain (Elite)
+﻿#  MDL Ynor - Kit de Vente Canonique (Elite)
 
 ##  Proposition de Valeur Unique (UVP)
 MDL Ynor n'est pas une simple intelligence artificielle (Systeme 1). C'est une architecture auditable (Systeme 2) garantissant la rentabilite et la securite de tes agents autonomes via l'quation Mu ().

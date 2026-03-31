@@ -1,6 +1,6 @@
 # CADRE DE REPERES SOVEREINS — GOUVERNANCE ACADÉMIQUE
 
-Ce document définit les niveaux de Validation et de maturité des systèmes intégrés au cadre de gouvernance souverain. Chaque niveau est validé par un audit formel de la marge dissipative $\mu$.
+Ce document définit les niveaux de Validation et de maturité des systèmes intégrés au cadre de gouvernance canonique. Chaque niveau est validé par un audit formel de la marge dissipative $\mu$.
 
 ---
 
@@ -22,4 +22,4 @@ Tout système audité doit soumettre ses paramètres à l'INITIALISATION SOUVERA
 - **Audit de Déviation** : Recalibrage automatique du coefficient d'amplification $\beta$.
 
 ---
-*© 2026 Sovereign Research Collective — Cadre de gouvernance interne.*
+*© 2026 Canonical Research Collective — Cadre de gouvernance interne.*

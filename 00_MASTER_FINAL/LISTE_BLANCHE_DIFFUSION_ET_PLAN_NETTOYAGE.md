@@ -87,7 +87,7 @@ Il sert de garde-fou pour eviter de melanger corpus editorial, artefacts de trav
 - Garder une seule source canonique par document.
 - Conserver une seule version miroir par source, avec alias si necessaire.
 - Harmoniser les noms visibles et les encodages.
-- Marquer explicitement les variantes versionnees, historisees et souveraines comme derives.
+- Marquer explicitement les variantes versionnees, historisees et canonique comme derives.
 
 ### Etape 4 - Filtrage
 - Exclure les caches Python, les environnements virtuels et les journaux des packages de diffusion.

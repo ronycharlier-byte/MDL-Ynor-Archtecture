@@ -33,7 +33,7 @@ ETAPE 4 : ACTIONS (LE PONT API)
 ETAPE 5 : PUBLICATION
 -----------------------
 - Nom : MDL Ynor +
-- Description : Noyau decisionnel AGI souverain.
+- Description : Noyau decisionnel AGI canonique.
 - Visibility : Public (GPT Store).
 
 =====================================================================

@@ -17,7 +17,7 @@ Centraliser les points de benchmark visibles dans le corpus et clarifier ce qu i
 ### `mdl_ynor_ultimate_benchmark_v3.py`
 - finalite: audit global du corpus
 - axes: structure, mathematique, geophysique, quant finance, knowledge sync, performance I/O
-- usage: score souverain global et rapport JSON
+- usage: score canonique global et rapport JSON
 
 ## Ce Que Le Benchmark Mesure
 - presence des modules critiques

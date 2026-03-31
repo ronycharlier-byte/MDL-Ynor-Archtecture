@@ -25,7 +25,7 @@ Au retour du centre, le texte se relit comme un mecanisme de clarification, de s
 ## B'. Miroir
 Les repères structurants deviennent les miroirs de son organisation:
 - CARTE D'ACCES SOUVERAINE (PHASE IV)
-- Sovereign Research Collective -- Founder Level 0
+- Canonical Research Collective -- Founder Level 0
 - CLES D'ACTIVATION (ROOT KEYS)
 - PHRASES D'INITIALISATION
 - IDENTIFIANTS ET REPERES INTERNES

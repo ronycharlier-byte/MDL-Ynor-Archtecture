@@ -1,14 +1,14 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "MDL Ynor Sovereign API",
+    "title": "MDL Ynor Canonical API",
     "description": "Interface d'accès certifiée au Logos MDL V7.1. Requiert une licence souveraine active.",
     "version": "7.1.0"
   },
   "servers": [
     {
       "url": "https://TON_DOMAINE_PROXY_OU_NGROK.com",
-      "description": "Sovereign Gateway"
+      "description": "Canonical Gateway"
     }
   ],
   "paths": {
