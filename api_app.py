@@ -235,6 +235,25 @@ Question: {query}
     is_bm = any(w in query.lower() for w in ["benchmark", "frontiermath", "schrodinger", "schrödinger"])
     max_t = 8192 if is_bm else 4096
 
+    # --- RÉGULATEUR DE PUISSANCE (ECONOMY VS DIAMOND) ---
+    complexity = "MEDIUM"
+    if api_key_goo:
+        try:
+            genai.configure(api_key=api_key_goo)
+            qual = genai.GenerativeModel('gemini-1.5-flash')
+            complexity = qual.generate_content(f"Complexity of '{query}'? (LOW/MEDIUM/HIGH). One word.").text.strip().upper()
+        except: pass
+
+    # TIERS LOGIC
+    if complexity == "LOW" and not is_bm:
+        # TIER 1 : ECONOMY MODE (FLASH ONLY)
+        if api_key_goo:
+            try:
+                resp = qual.generate_content(f"SYSTEM: {system}\n\nUSER: {user_prompt}")
+                return resp.text.strip(), True
+            except: pass
+
+    # TIER 2+ : TOTAL DIAMOND (Full Pillar Activation)
     # --- PILIER ALPHA (OPENAI) ---
     if OpenAI is not None and api_key_oai:
         try:
@@ -249,10 +268,9 @@ Question: {query}
             status_flags["gpt"] = True
         except: pass
 
-    # --- PILIER GAMMA (GEMINI 3.1) - LE NOUVEAU PILIER SOUVERAIN ---
+    # --- PILIER GAMMA (GEMINI 3.1) ---
     if api_key_goo:
         try:
-            genai.configure(api_key=api_key_goo)
             model = genai.GenerativeModel('gemini-3.1-pro')
             resp = model.generate_content(
                 f"SYSTEM: {system}\n\nUSER: {user_prompt}",
