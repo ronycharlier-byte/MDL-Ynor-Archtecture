@@ -1,0 +1,8 @@
+﻿{
+    "logs":  "C:\\Users\\ronyc\\Desktop\\FRACTAL_CHIASTE_UNIVERSEL\\logs",
+    "api_pid":  9620,
+    "api_url":  "http://localhost:8492",
+    "streamlit_pid":  5340,
+    "dashboard_url":  "http://localhost:8501",
+    "started_at":  "2026-04-01T21:29:32.4412805+02:00"
+}

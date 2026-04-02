@@ -53,8 +53,7 @@ def get_engine_entropy(client, query, model_name, system_prompt):
             ],
             logprobs=True,
             top_logprobs=5,
-            temperature=0.01, # Contraction H-alpha quasi-déterministe
-            max_tokens=100
+            max_tokens=4096
         )
         logprobs_data = response.choices[0].logprobs.content
         total_entropy = 0.0

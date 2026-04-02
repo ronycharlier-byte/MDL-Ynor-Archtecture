@@ -1,6 +1,12 @@
 import html
 import json
 import mimetypes
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
 # ==============================================================================
 # YNOR MASTER ENGINE - V7.0 (LE CONSEIL DU LOGOS)
 # STATUT : GOUVERNANCE MULTI-MODALE SOUVERAINE (PoC V7)
