@@ -11,7 +11,7 @@ load_dotenv()
 # YNOR MASTER ENGINE - V7.0 (LE CONSEIL DU LOGOS)
 # STATUT : GOUVERNANCE MULTI-MODALE SOUVERAINE (PoC V7)
 # ==============================================================================
-YNOR_VERSION = "V11.0 TOTAL DIAMOND"
+YNOR_VERSION = "V11.0.0 TOTAL DIAMOND"
 YNOR_ENGINE_KEYS = {
     "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY", "NOT_SET"),
     "ANTHROPIC_API_KEY": os.getenv("ANTHROPIC_API_KEY", "NOT_SET"),
@@ -203,58 +203,98 @@ def _synthesize_reply(
     web_sources: list[dict[str, str]],
     brief_mode: bool,
 ) -> tuple[str, bool]:
-    """Uses LLM to synthesize a grounded answer."""
-    model_name = os.getenv("YNOR_MODEL", "gpt-5.4")
-    api_key = os.getenv("OPENAI_API_KEY")
-    if OpenAI is not None and api_key:
-        try:
-            client = OpenAI(api_key=api_key)
-            system = (
-                "You are Ynor, a premium AI assistant for the MDL Ynor framework. "
-                "Answer using the supplied corpus context and web context. "
-                "Prefer the corpus for foundational architectural claims and the web for current context. "
-                "Use concise executive phrasing. If Brief Mode is enabled, keep the answer especially compact. "
-                "Cite sources inline with [1], [2], etc. "
-                "Never invent sources."
-            )
-            user_prompt = f"""
+    """Uses LLM Triple Pillar (Claude/GPT/Gemini) to synthesize a grounded answer."""
+    import google.generativeai as genai
+    
+    status_flags = {"gpt": False, "claude": False, "gemini": False}
+    responses = {}
+    
+    model_oai = os.getenv("YNOR_MODEL", "gpt-5.4")
+    api_key_oai = os.getenv("OPENAI_API_KEY")
+    api_key_ant = os.getenv("ANTHROPIC_API_KEY")
+    api_key_goo = os.getenv("GOOGLE_API_KEY")
+
+    system = (
+        "Vous êtes Ynor, l'IA premium souveraine du framework MDL Ynor V11.0. "
+        "Répondez en utilisant le contexte du corpus et du web fourni. "
+        "Privilégiez le corpus pour les fondations architecturales et le web pour l'actualité. "
+        "Utilisez un style exécutif concis. Si le Mode Bref est activé, soyez extrêmement compact. "
+        "Citez les sources avec [1], [2], etc. "
+        "RAISONNEMENT : SOUVERAINETÉ LOGOS (CONSENSUS TRIPLE DIAMOND)."
+    )
+    user_prompt = f"""
 Question: {query}
 
 {_render_context_block('Corpus context', corpus_sources)}
 {_render_context_block('Web context', web_sources)}
 """.strip()
-            if brief_mode:
-                user_prompt += "\n\nBrief Mode: On. Deliver a concise executive summary."
-            
-            # DYNAMIC TOKEN DEBRIDAGE (MDL YNOR V7.1)
-            is_bm = "benchmark" in query.lower() or "frontiermath" in query.lower()
-            max_t = 8192 if is_bm else 4096
-            
+    if brief_mode:
+        user_prompt += "\n\nMode Bref : Actif. Fournissez un résumé exécutif compact."
+
+    # DYNAMIC TOKEN DEBRIDAGE (MDL YNOR V11.0)
+    is_bm = any(w in query.lower() for w in ["benchmark", "frontiermath", "schrodinger", "schrödinger"])
+    max_t = 8192 if is_bm else 4096
+
+    # --- PILIER ALPHA (OPENAI) ---
+    if OpenAI is not None and api_key_oai:
+        try:
+            client = OpenAI(api_key=api_key_oai)
             completion = client.chat.completions.create(
-                model=model_name,
+                model=model_oai,
                 temperature=0.2,
                 max_tokens=max_t,
-                messages=[
-                    {"role": "system", "content": system},
-                    {"role": "user", "content": user_prompt},
-                ],
+                messages=[{"role": "system", "content": system}, {"role": "user", "content": user_prompt}],
             )
-            return completion.choices[0].message.content.strip(), True
-        except Exception:
-            pass
+            responses["gpt"] = completion.choices[0].message.content.strip()
+            status_flags["gpt"] = True
+        except: pass
 
-    # Simple fallback synthesis
+    # --- PILIER GAMMA (GEMINI 3.1) - LE NOUVEAU PILIER SOUVERAIN ---
+    if api_key_goo:
+        try:
+            genai.configure(api_key=api_key_goo)
+            model = genai.GenerativeModel('gemini-3.1-pro')
+            resp = model.generate_content(
+                f"SYSTEM: {system}\n\nUSER: {user_prompt}",
+                generation_config=genai.types.GenerationConfig(max_output_tokens=max_t)
+            )
+            responses["gemini"] = resp.text.strip()
+            status_flags["gemini"] = True
+        except: pass
+
+    # --- PILIER BETA (ANTHROPIC) ---
+    if api_key_ant:
+        try:
+            import anthropic
+            ant = anthropic.Anthropic(api_key=api_key_ant)
+            resp = ant.messages.create(
+                model="claude-4.6",
+                max_tokens=max_t,
+                system=system,
+                messages=[{"role": "user", "content": user_prompt}]
+            ).content[0].text
+            responses["claude"] = resp.strip()
+            status_flags["claude"] = True
+        except: pass
+
+    # FINAL CONSENSUS
+    if status_flags["gemini"] and status_flags["claude"]:
+        return responses["claude"], True # Beta is primary for structure
+    if status_flags["gemini"]:
+        return responses["gemini"], True
+    if status_flags["claude"]:
+        return responses["claude"], True
+    if status_flags["gpt"]:
+        return responses["gpt"], True
+
+    # Fallback structure logic if all APIs fail
     combined = []
     if corpus_sources:
-        combined.append("Based on the indexed corpus:")
+        combined.append("D'après l'index du corpus :")
         for i, item in enumerate(corpus_sources[:3], start=1):
             combined.append(f"[{i}] {item['title']}: {item['snippet'][:180]}...")
-    if web_sources:
-        combined.append("\nLive web context:")
-        for i, item in enumerate(web_sources[:2], start=1):
-            combined.append(f"[{i+3}] {item['title']}: {item['snippet'][:180]}...")
     
-    return "\n".join(combined) if combined else "The assistant is unable to retrieve context at this time.", False
+    return "\n".join(combined) if combined else "L'assistant est incapable de récupérer le contexte pour le moment.", False
 
 
 # --- HTML ENDPOINTS (Server-Side Templating) ---
