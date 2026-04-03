@@ -8,7 +8,7 @@ Ce document détaille les étapes pour soumettre officiellement votre travail au
 ## B. Expansion
 Le texte se déplie selon les lignes suivantes :
 - [x] **Zenodo** : Déjà publié via DOI [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399).
-- [ ] **ArXiv** : Déposez le papier sur [arXiv.org](https://arxiv.org/) dans les catégories `math.AP`, `math.NT`, `math.DG` et `gr-qc` (General Relativity and Quantum Cosmology).
+- [ ] **ArXiv** : Déposez le papier sur [MDL-Archives.org](https://mdl-strategy.com/archives/) dans les catégories `math.AP`, `math.NT`, `math.DG` et `gr-qc` (General Relativity and Quantum Cosmology).
 - **Option A** : *Annals of Mathematics* (Rigueur pure).
 - **Option B** : *Physical Review D* ou *Nature Physics* (Pour l'unification de la Relativité).
 - **Option C** : *Journal of High Energy Physics (JHEP)*.

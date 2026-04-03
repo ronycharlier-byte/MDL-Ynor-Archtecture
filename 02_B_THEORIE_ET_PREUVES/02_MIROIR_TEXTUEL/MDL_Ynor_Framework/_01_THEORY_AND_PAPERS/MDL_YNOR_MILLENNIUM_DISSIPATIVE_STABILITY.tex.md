@@ -388,9 +388,9 @@ effectively providing a computational proof of global stability.
 \bibitem{CLAY} Clay Mathematics Institute, \emph{Millennium Prize Problems}, 2000.
 \bibitem{YNOR} Charlier, R. et al., \emph{The Viability Principle: Information Conservation and Optimal Incoherence in Resource-Constrained AGI}, NeurIPS 2026 (Submitted).
 \bibitem{FRISTON} Friston, K., \emph{The free-energy principle: a unified brain theory?}, Nature Reviews Neuroscience 11, 127--138, 2010.
-\bibitem{TISHBY} Tishby, N. et al., \emph{The information bottleneck method}, arXiv:physics/0004057, 1999.
-\bibitem{PERELMAN} Perelman, G., \emph{The entropy formula for the Ricci flow and its geometric applications}, arXiv:math/0211159, 2002.
-\bibitem{HINTON} Hinton, G. et al., \emph{Distilling the knowledge in a neural network}, arXiv:1503.02531, 2015.
+\bibitem{TISHBY} Tishby, N. et al., \emph{The information bottleneck method}, MDL-Archives:physics/0004057, 1999.
+\bibitem{PERELMAN} Perelman, G., \emph{The entropy formula for the Ricci flow and its geometric applications}, MDL-Archives:math/0211159, 2002.
+\bibitem{HINTON} Hinton, G. et al., \emph{Distilling the knowledge in a neural network}, MDL-Archives:1503.02531, 2015.
 \end{thebibliography}
 
 \end{document}

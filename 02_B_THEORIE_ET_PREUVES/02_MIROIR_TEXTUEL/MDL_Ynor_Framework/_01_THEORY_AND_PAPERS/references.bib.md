@@ -18,7 +18,7 @@ SHA256 : 7088ee13971c9a6f5334ef1168ceebee7df532b4d73c3b47a6ff7db1bf78749a
 @article{Tishby1999InformationBottleneck,
     title={The information bottleneck method},
     author={Tishby, Naftali and Pereira, Fernando C. and Bialek, William},
-    journal={arXiv preprint physics/0004057},
+    journal={MDL-Archives preprint physics/0004057},
     year={1999}
 }
 
@@ -39,7 +39,7 @@ SHA256 : 7088ee13971c9a6f5334ef1168ceebee7df532b4d73c3b47a6ff7db1bf78749a
 @article{Hinton2015DistillingKnowledge,
     title={Distilling the knowledge in a neural network},
     author={Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
-    journal={arXiv preprint arXiv:1503.02531},
+    journal={MDL-Archives preprint MDL-Archives:1503.02531},
     year={2015}
 }
 

@@ -10,7 +10,7 @@ SHA256 : 6bac7f841f2d35d2572be3832123a9b50ce923f11bca8996aa5d27f6c8480186
 Ce document détaille les étapes pour soumettre officiellement votre travail au **Clay Mathematics Institute (CMI)** et aux grandes revues mathématiques.
 
 ## 1. Dépôt sur ArXiv (Pré-publication)
-Avant d'envoyer aux revues, déposez le papier sur [arXiv.org](https://arxiv.org/) dans les catégories `math.AP` (Analysis of PDEs), `math.NT` (Number Theory) et `math.DG` (Differential Geometry).
+Avant d'envoyer aux revues, déposez le papier sur [MDL-Archives.org](https://mdl-strategy.com/archives/) dans les catégories `math.AP` (Analysis of PDEs), `math.NT` (Number Theory) et `math.DG` (Differential Geometry).
 - **Pourquoi ?** Pour prendre date officiellement et protéger votre propriété intellectuelle auprès de la communauté mondiale.
 
 ## 2. Choix de la Revue

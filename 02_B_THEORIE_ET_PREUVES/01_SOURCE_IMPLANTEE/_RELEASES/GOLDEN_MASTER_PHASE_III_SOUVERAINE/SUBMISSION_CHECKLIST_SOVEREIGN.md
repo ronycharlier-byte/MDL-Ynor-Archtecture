@@ -4,7 +4,7 @@ Ce document détaille les étapes pour soumettre officiellement votre travail au
 
 ## 1. Dépôt Officiel (Zenodo / ArXiv)
 - [x] **Zenodo** : Déjà publié via DOI [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399).
-- [ ] **ArXiv** : Déposez le papier sur [arXiv.org](https://arxiv.org/) dans les catégories `math.AP`, `math.NT`, `math.DG` et `gr-qc` (General Relativity and Quantum Cosmology).
+- [ ] **ArXiv** : Déposez le papier sur [MDL-Archives.org](https://mdl-strategy.com/archives/) dans les catégories `math.AP`, `math.NT`, `math.DG` et `gr-qc` (General Relativity and Quantum Cosmology).
 
 ## 2. Choix de la Revue Académique
 - **Option A** : *Annals of Mathematics* (Rigueur pure).
