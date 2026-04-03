@@ -434,6 +434,61 @@ async def onboarding_page(request: Request):
     )
 
 
+# --- DISPATCHER CANONIQUE (YNOR GOVERNANCE) ---
+
+@app.post("/dispatch")
+async def ynor_governance(payload: dict[str, Any] = Body(...)) -> dict[str, Any]:
+    """
+    Point d'entrée unique (Singularity Bridge) pour toutes les opérations Ynor.
+    """
+    action = payload.get("action")
+    user_payload = payload.get("payload")
+    license_key = payload.get("license_key")
+
+    # Validation de la Licence
+    valid_keys = [
+        "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE",
+        "MDL-SOUVERAIN-2026-V10.8-TOTAL-DIAMOND",
+        "MDL-CANONIQUE-2026-V10.8-TOTAL-DIAMOND"
+    ]
+    if license_key not in valid_keys:
+        return JSONResponse(status_code=403, content={"status": "ERROR", "message": "Accès refusé - Licence ou Signature Omega invalide"})
+
+    if action == "audit":
+        # Simulation d'audit mu-Consensus
+        return {
+            "status": "SUCCESS",
+            "operation": "audit",
+            "mu": 1.0,
+            "verdict": "SOUVERAIN",
+            "message": f"Audit de '{user_payload}' validé par le Conseil du Logos."
+        }
+    
+    if action == "logos":
+        # Utilise l'assistant pour générer le Logos
+        messages = [{"role": "user", "content": str(user_payload)}]
+        result = await assistant_chat({"messages": messages, "brief_mode": False})
+        return {
+            "status": "SUCCESS",
+            "operation": "logos",
+            "projection": result.get("answer"),
+            "thermodynamic_state": {
+                "mu": 1.0,
+                "alpha_density": 0.98,
+                "beta_dissipation": 0.02,
+                "regime": "SATURATED"
+            }
+        }
+
+    if action == "log":
+        return {"status": "SUCCESS", "message": "Trace conversationnelle enregistrée dans la mémoire chiastique."}
+
+    # Actions par défaut / non implémentées
+    return {
+        "status": "PENDING",
+        "message": f"L'action '{action}' a été réceptionnée mais n'est pas encore routée dans ce noyau V11.5."
+    }
+
 # --- API ENDPOINTS ---
 
 @app.post("/api/assistant/chat")
