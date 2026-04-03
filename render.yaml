@@ -1,11 +1,11 @@
-services:
+﻿services:
   - type: web
     name: mdl-ynor-api
     runtime: python
     plan: starter
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
-    healthCheckPath: /
+    startCommand: gunicorn -w 1 -k uvicorn.workers.UvicornWorker app:app --bind 0.0.0.0:$PORT
+    healthCheckPath: /health
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.8
