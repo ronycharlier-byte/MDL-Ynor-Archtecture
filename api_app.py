@@ -26,6 +26,22 @@ from fastapi import Body, FastAPI, HTTPException, Query, Request
 from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, PlainTextResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI(
+    title="Ynor API Engine",
+    description="The premium intelligence engine for the MDL Ynor Universel corpus.",
+    version="2.3.4",
+)
+
+# CONFIGURATION CORS (Indispensable pour OpenAI/GPT Actions)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Autorise toutes les origines (y compris openai.com)
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 try:
     from openai import OpenAI
