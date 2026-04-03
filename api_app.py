@@ -458,9 +458,8 @@ async def ynor_governance(payload: dict[str, Any] = Body(...)) -> dict[str, Any]
         # Simulation d'audit mu-Consensus
         return {
             "status": "SUCCESS",
-            "operation": "audit",
             "mu": 1.0,
-            "verdict": "SOUVERAIN",
+            "projection": "Audit validé.",
             "message": f"Audit de '{user_payload}' validé par le Conseil du Logos."
         }
     
@@ -470,22 +469,24 @@ async def ynor_governance(payload: dict[str, Any] = Body(...)) -> dict[str, Any]
         result = await assistant_chat({"messages": messages, "brief_mode": False})
         return {
             "status": "SUCCESS",
-            "operation": "logos",
+            "mu": 1.0,
             "projection": result.get("answer"),
-            "thermodynamic_state": {
-                "mu": 1.0,
-                "alpha_density": 0.98,
-                "beta_dissipation": 0.02,
-                "regime": "SATURATED"
-            }
+            "message": "Projection du Logos V11.5 stable."
         }
 
     if action == "log":
-        return {"status": "SUCCESS", "message": "Trace conversationnelle enregistrée dans la mémoire chiastique."}
+        return {
+            "status": "SUCCESS",
+            "mu": 1.0,
+            "projection": "Log scellé.",
+            "message": "Trace conversationnelle enregistrée dans la mémoire chiastique."
+        }
 
     # Actions par défaut / non implémentées
     return {
         "status": "PENDING",
+        "mu": 0.5,
+        "projection": "Action non reconnue.",
         "message": f"L'action '{action}' a été réceptionnée mais n'est pas encore routée dans ce noyau V11.5."
     }
 
