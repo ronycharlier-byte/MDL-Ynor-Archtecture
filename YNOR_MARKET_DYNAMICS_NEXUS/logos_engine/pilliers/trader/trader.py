@@ -1,8 +1,8 @@
-import functools
+﻿import functools
 import time
 import json
 
-from Formalisme Logique Sémantique_engine.agents.utils.agent_utils import build_instrument_context
+from Formalisme Logique SÃ©mantique_engine.agents.utils.agent_utils import build_instrument_context
 
 
 def create_trader(llm, memory):

@@ -1,4 +1,4 @@
-import Ynor_Dynamics.default_config as default_config
+﻿import Ynor_Dynamics.default_config as default_config
 from typing import Dict, Optional
 
 # Use default config but allow it to be overridden

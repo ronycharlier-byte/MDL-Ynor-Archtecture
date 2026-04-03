@@ -1,7 +1,7 @@
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+﻿from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 import time
 import json
-from Formalisme Logique Sémantique_engine.agents.utils.agent_utils import (
+from Formalisme Logique SÃ©mantique_engine.agents.utils.agent_utils import (
     build_instrument_context,
     get_balance_sheet,
     get_cashflow,
@@ -10,7 +10,7 @@ from Formalisme Logique Sémantique_engine.agents.utils.agent_utils import (
     get_insider_transactions,
     get_language_instruction,
 )
-from Formalisme Logique Sémantique_engine.dataflows.config import get_config
+from Formalisme Logique SÃ©mantique_engine.dataflows.config import get_config
 
 
 def create_fundamentals_analyst(llm):

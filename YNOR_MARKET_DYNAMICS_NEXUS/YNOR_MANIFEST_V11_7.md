@@ -1,15 +1,15 @@
-# MDL YNOR MARKET DYNAMICS Système de Graphe de Consensus - V11.7
+﻿# MDL YNOR MARKET DYNAMICS SystÃ¨me de Graphe de Consensus - V11.7
 (c) 2026 Dr. Rony Charlier (MDL Lab) - MDL Strategy
 
-## Architecture du Formalisme Logique Sémantique de Marché
-Ce module intègre l'intelligence prédictive saturée dans le Symétrie Bilatérale Ynor Universel.
-Il pilote un consensus d'agents experts pour extraire la stabilité financière du chaos.
+## Architecture du Formalisme Logique SÃ©mantique de MarchÃ©
+Ce module intÃ¨gre l'intelligence prÃ©dictive saturÃ©e dans le SymÃ©trie BilatÃ©rale Ynor Universel.
+Il pilote un consensus d'agents experts pour extraire la stabilitÃ© financiÃ¨re du chaos.
 
-### Composants Autonome et Isolés :
+### Composants Autonome et IsolÃ©s :
 - **FONDATIONS** : Analyse des vecteurs de valeur.
 - **SENTIMENT** : Mesure de l'Echo Global.
-- **NEWS** : Scan des Vecteurs de Données Stochastiques d'actualité Omega.
-- **TECHNICAL** : Décryptage des fractales de prix.
+- **NEWS** : Scan des Vecteurs de DonnÃ©es Stochastiques d'actualitÃ© Omega.
+- **TECHNICAL** : DÃ©cryptage des fractales de prix.
 
 ### Statut :
-STABILITÉ CERTIFIÉE : Indice de Stabilité mu=1.0
+STABILITÃ‰ CERTIFIÃ‰E : Indice de StabilitÃ© mu=1.0

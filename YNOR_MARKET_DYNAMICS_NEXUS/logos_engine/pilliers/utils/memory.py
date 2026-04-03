@@ -1,4 +1,4 @@
-"""Financial situation memory using BM25 for lexical similarity matching.
+﻿"""Financial situation memory using BM25 for lexical similarity matching.
 
 Uses BM25 (Best Matching 25) algorithm for retrieval - no API calls,
 no token limits, works offline with any LLM provider.

@@ -1,19 +1,19 @@
-from langchain_core.messages import HumanMessage, RemoveMessage
+﻿from langchain_core.messages import HumanMessage, RemoveMessage
 
 # Import tools from separate utility files
-from Formalisme Logique Sémantique_engine.agents.utils.core_stock_tools import (
+from Formalisme Logique SÃ©mantique_engine.agents.utils.core_stock_tools import (
     get_stock_data
 )
-from Formalisme Logique Sémantique_engine.agents.utils.technical_indicators_tools import (
+from Formalisme Logique SÃ©mantique_engine.agents.utils.technical_indicators_tools import (
     get_indicators
 )
-from Formalisme Logique Sémantique_engine.agents.utils.fundamental_data_tools import (
+from Formalisme Logique SÃ©mantique_engine.agents.utils.fundamental_data_tools import (
     get_fundamentals,
     get_balance_sheet,
     get_cashflow,
     get_income_statement
 )
-from Formalisme Logique Sémantique_engine.agents.utils.news_data_tools import (
+from Formalisme Logique SÃ©mantique_engine.agents.utils.news_data_tools import (
     get_news,
     get_insider_transactions,
     get_global_news
@@ -27,7 +27,7 @@ def get_language_instruction() -> str:
     Only applied to user-facing agents (analysts, portfolio manager).
     Internal debate agents stay in English for reasoning quality.
     """
-    from Formalisme Logique Sémantique_engine.dataflows.config import get_config
+    from Formalisme Logique SÃ©mantique_engine.dataflows.config import get_config
     lang = get_config().get("output_language", "English")
     if lang.strip().lower() == "english":
         return ""

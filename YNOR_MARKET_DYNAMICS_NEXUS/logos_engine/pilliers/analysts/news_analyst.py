@@ -1,13 +1,13 @@
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+﻿from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 import time
 import json
-from Formalisme Logique Sémantique_engine.agents.utils.agent_utils import (
+from Formalisme Logique SÃ©mantique_engine.agents.utils.agent_utils import (
     build_instrument_context,
     get_global_news,
     get_language_instruction,
     get_news,
 )
-from Formalisme Logique Sémantique_engine.dataflows.config import get_config
+from Formalisme Logique SÃ©mantique_engine.dataflows.config import get_config
 
 
 def create_news_analyst(llm):

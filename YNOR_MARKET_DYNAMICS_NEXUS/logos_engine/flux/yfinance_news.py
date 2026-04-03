@@ -1,4 +1,4 @@
-"""yfinance-based news data fetching functions."""
+﻿"""yfinance-based news data fetching functions."""
 
 import yfinance as yf
 from datetime import datetime

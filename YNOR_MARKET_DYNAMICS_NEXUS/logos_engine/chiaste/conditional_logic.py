@@ -1,6 +1,6 @@
-# Ynor_Dynamics/graph/conditional_logic.py
+﻿# Ynor_Dynamics/graph/conditional_logic.py
 
-from Formalisme Logique Sémantique_engine.agents.utils.agent_states import AgentState
+from Formalisme Logique SÃ©mantique_engine.agents.utils.agent_states import AgentState
 
 
 class ConditionalLogic:

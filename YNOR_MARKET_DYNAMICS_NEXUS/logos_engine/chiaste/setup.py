@@ -1,12 +1,12 @@
-# Ynor_Dynamics/graph/setup.py
+﻿# Ynor_Dynamics/graph/setup.py
 
 from typing import Dict, Any
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, StateGraph, START
 from langgraph.prebuilt import ToolNode
 
-from Formalisme Logique Sémantique_engine.agents import *
-from Formalisme Logique Sémantique_engine.agents.utils.agent_states import AgentState
+from Formalisme Logique SÃ©mantique_engine.agents import *
+from Formalisme Logique SÃ©mantique_engine.agents.utils.agent_states import AgentState
 
 from .conditional_logic import ConditionalLogic
 

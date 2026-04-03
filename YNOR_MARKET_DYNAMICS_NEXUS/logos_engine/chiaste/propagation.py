@@ -1,7 +1,7 @@
-# Ynor_Dynamics/graph/propagation.py
+﻿# Ynor_Dynamics/graph/propagation.py
 
 from typing import Dict, Any, List, Optional
-from Formalisme Logique Sémantique_engine.agents.utils.agent_states import (
+from Formalisme Logique SÃ©mantique_engine.agents.utils.agent_states import (
     AgentState,
     InvestDebateState,
     RiskDebateState,

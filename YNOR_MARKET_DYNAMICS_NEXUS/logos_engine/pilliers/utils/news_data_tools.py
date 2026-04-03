@@ -1,6 +1,6 @@
-from langchain_core.tools import tool
+﻿from langchain_core.tools import tool
 from typing import Annotated
-from Formalisme Logique Sémantique_engine.dataflows.interface import route_to_vendor
+from Formalisme Logique SÃ©mantique_engine.dataflows.interface import route_to_vendor
 
 @tool
 def get_news(

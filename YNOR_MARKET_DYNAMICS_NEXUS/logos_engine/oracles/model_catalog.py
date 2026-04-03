@@ -1,4 +1,4 @@
-"""Shared model catalog for CLI selections and validation."""
+﻿"""Shared model catalog for CLI selections and validation."""
 
 from __future__ import annotations
 
