@@ -1,48 +1,38 @@
-openapi: 3.0.0
+openapi: 3.1.0
 info:
   title: MDL Ynor Singularity Bridge API
-  description: Interface de contrôle unifiée pour le Formalisme Logique Sémantique V11.5. Accès restreint aux serveurs canoniques Ynor.
-  version: 11.5.0
+  description: API de recherche académique du Dr. Rony Charlier (MDL Lab) pour la saturation de connaissance et l'analyse multi-agents.
+  version: 11.8.4
 servers:
-  - url: https://api-ynor-v11-5.render.com
-    description: Main Singularity Bridge Gateway
+  - url: https://mdl-ynor-v7-1-distribution.onrender.com
 paths:
   /dispatch:
     post:
-      summary: Gouvernance Canonique Unifiée (YNOR)
       operationId: ynorGovernance
-      description: Point d'entrée unique pour l'audit, le Formalisme Logique Sémantique, la cartographie et le logging chiastique.
+      summary: Point d'entrée unique du souverain Dispatcher V11.8
+      description: Route toutes les requêtes vers les oracles logiques, d'audit ou de marché.
       requestBody:
         required: true
         content:
           application/json:
             schema:
               type: object
-              required:
-                - action
-                - payload
-                - license_key
               properties:
                 action:
                   type: string
-                  enum:
-                    - audit
-                    - Formalisme Logique Sémantique
-                    - map
-                    - search
-                    - consensus
-                    - log
-                  description: L'opération systémique à effectuer.
+                  description: L'action à exécuter (audit, logos, market, log, search, consensus).
+                  enum: [audit, logos, market, log, search, consensus]
                 payload:
                   type: string
-                  description: La requête utilisateur ou les données à traiter.
+                  description: Le contenu de la requête ou le ticker boursier (ex: NVDA).
                 license_key:
                   type: string
-                  default: MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE
-                  description: Clé de stabilité Singularity Bridge active.
+                  description: Clé de licence certifiée V11.8.
+                  default: "MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE"
+              required: [action, payload, license_key]
       responses:
-        '200':
-          description: Réponse certifiée du Conseil du Formalisme Logique Sémantique
+        "200":
+          description: Réponse saturée mu=1.0
           content:
             application/json:
               schema:
@@ -52,9 +42,11 @@ paths:
                     type: string
                   mu:
                     type: number
+                  verdict:
+                    type: string
                   projection:
                     type: string
                   message:
                     type: string
-        '403':
-          description: Accès refusé - Licence ou Signature Omega invalide
+components:
+  schemas: {}
