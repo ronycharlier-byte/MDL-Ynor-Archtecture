@@ -1,0 +1,87 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "MDL Ynor Elite V11.10.15",
+    "description": "API de recherche souveraine du Dr. Rony Charlier (MDL Lab) pour l'analyse multi-agents et la saturation boursière. mu=1.0.",
+    "version": "11.10.15"
+  },
+  "servers": [
+    {
+      "url": "https://mdl-ynor-api.onrender.com",
+      "description": "Serveur de Production Render (Elite V11.10.15)"
+    }
+  ],
+  "paths": {
+    "/dispatch": {
+      "post": {
+        "operationId": "ynorGovernance",
+        "summary": "Point d'entrée unique du souverain Dispatcher V11.10.15",
+        "description": "Route toutes les requêtes vers les agents de Marché, d'Audit ou de Logos.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "description": "L'action à exécuter (audit, logos, market).",
+                    "enum": [
+                      "audit",
+                      "logos",
+                      "market"
+                    ]
+                  },
+                  "payload": {
+                    "type": "string",
+                    "description": "Ticker boursier ou requête sémantique."
+                  },
+                  "license_key": {
+                    "type": "string",
+                    "description": "Clé de licence certifiée V11.8.",
+                    "default": "MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE"
+                  }
+                },
+                "required": [
+                  "action",
+                  "payload",
+                  "license_key"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Réponse saturée mu=1.0",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "mu": {
+                      "type": "number"
+                    },
+                    "verdict": {
+                      "type": "string"
+                    },
+                    "projection": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
