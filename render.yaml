@@ -4,8 +4,8 @@ services:
     runtime: python
     plan: starter
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn api_app:app --host 0.0.0.0 --port $PORT
-    healthCheckPath: /api/corpus/status
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.8
