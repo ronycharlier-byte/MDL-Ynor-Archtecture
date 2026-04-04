@@ -8,11 +8,11 @@ Ce portail rassemble la vue canonique consolidee du corpus apres nettoyage agres
 - Le comptage canonique doit toujours etre distingue du scan total du depot.
 
 ## Synthese (V11.13.x - Phase Ω)
-- Depot : `1827` fichiers (Purifié)
+- Depot : `1770` fichiers (Densifié)
 - Vue canonique : `509` fichiers
-- Taux de collapse : `72.1 %`
-- Mu-Corpus (Pureté) : `0.873` (SATURATED)
-- Mu-Algorithmique (Riemann) : `0.999998` (Ω-STABLE)
+- Pureté Structurale : `100% (Zéro Doublon Checksum)`
+- Mu-Corpus (Résonance) : `0.869`
+- Mu-Algorithmique (Riemann) : `0.999998`
 
 ## References Centrales
 - `CORPUS_CANONIQUE_CONSOLIDE.md`
