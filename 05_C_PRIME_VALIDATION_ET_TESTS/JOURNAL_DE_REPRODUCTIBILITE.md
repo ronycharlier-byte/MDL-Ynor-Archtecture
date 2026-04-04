@@ -16,6 +16,7 @@ Ce document archive les preuves de stabilité et de reproductibilité des calcul
 | 2026-04-05 | V11.13 | Consolidation Canonique | Source Unique | OUI |
 | 2026-04-05 | V11.13.x | Stress Test 50,000 Zéros (Λ) | $\mu = 0.9998$ | SCELLÉ |
 | 2026-04-05 | V11.13.x | MEGA-STRESS 500,000 Zéros | $\mu = 0.99998$ | SOVER. ALPHA |
+| 2026-04-05 | V11.13.x | HYPER-STRESS 5,000,000 (Ω) | $\mu = 0.999998$ | SOVER. OMEGA |
 
 ## Protocole de Vérification Externe
 1. Cloner le repo : `git clone <repo_url>`

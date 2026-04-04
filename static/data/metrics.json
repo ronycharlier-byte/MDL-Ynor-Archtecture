@@ -1,10 +1,10 @@
 {
     "timestamp": 1775343168.0884776,
     "axes": {
-        "saturation_mu": 0.9999899838376766,
+        "saturation_mu": 0.9999989999783762,
         "symmetry_chi": 1.0,
-        "resonance_lambda": 0.9998204186279578
+        "resonance_lambda": 0.9999783766394189
     },
-    "status": "MEGA_VALIDATED_500000",
-    "hash": "6d2653ecfb52a75fbf79335e4dc34eafd1429c5c8ea5fc71801f4c0d0187bb31"
+    "status": "HYPER_VALIDATED_5000000",
+    "hash": "6ab8ad098ca1436fd5f908c8c7c2ad213cc91817ff53265b04c5325330baaa67"
 }
