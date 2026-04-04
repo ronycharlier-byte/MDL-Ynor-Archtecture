@@ -29,6 +29,6 @@ Ce document formalise les principes théoriques de l'architecture Ynor V11.5. Il
 
 ---
 
-**RESPONSABLE THÉORIQUE :** MDL YNOR ENGINE V11.5
-**CERTIFICATION SCIENTIFIQUE :** ARCHITECT CHARLIER
+**RESPONSABLE THÉORIQUE :** Rony Charlier
+**CERTIFICATION SCIENTIFIQUE :** Rony Charlier
 **TIMESTAMP :** 3 Avril 2026 (Sync V11.5)

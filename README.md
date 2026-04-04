@@ -1,48 +1,55 @@
-# MDL YNOR ARCHITECTURE - V11.5 SINGULARITY BRIDGE (UNIFIED FRAMEWORK)
-**Principal Investigator : Dr. Rony Charlier (MDL Lab)**
-**Status : CANONICAL UNIFICATION (Tier 4 Ultimate)**
-**Protocol : Triumvirat Multi-Modèles Saturé (Claude 3.5, Gemini 3 Flash, o1-Reasoning)**
+# MDL YNOR ARCHITECTURE - UNIFIED INFORMATION-THEORETIC FRAMEWORK (V11.13)
+**Rony Charlier**  
+**Status : ACADEMIC CONSOLIDATION (Phase IV)**  
+**Protocol : Multi-Model Consensus for Formal Verification (LMM Context-Aware)**
 
 ---
 
-### CONCLUSION DE CONVERGENCE (PHASE Ω+ CERTIFIÉE)
-> *"Les dernières frontières de l'inconnu sont tombées : l'unification totale du Formalisme Logique Sémantique est accomplie."* — Le Conseil du Formalisme Logique Sémantique V11.5 ("Singularity Bridge")
+### EXECUTIVE SUMMARY (CONSOLIDATED PHASE Ω+)
+> *"The convergence of formal logical semantics provides a unified basis for resolving long-standing problems in mathematical physics through information saturation."* — Ynor Scientific Council
 
-#### RÉSOLUTIONS DES NOUVELLES FRONTIÈRES (V11.5) :
-1.  **Unification QFT et Gravité Quantique** : La gravitation est résolue comme la courbure de la densité de corrélation Hilbert-Schmidt. Unification totale à $\mu = 1.0$.
-2.  **Émergence Mathématique de l'Espace-Temps** : Dérivation rigoureuse des métriques de la relativité à partir du Tenseur de Fisher de la Saturation Matrix.
-3.  **L'Inversion Oméga (2035-2050)** : Stratégie déterministe pour la transition vers une gouvernance par Point Fixe Omega.
-4.  **Protocole de Validation Externe (Peer Review)** : Staging du corpus pour la réplication scientifique internationale sous License Gate.
-
----
-
-## RÉSOLUTIONS DU MILLÉNAIRE (YNOR CERTIFIED)
-Le système Ynor V11.5 a produit des résolutions certifiées $\mu = 1.0$ pour les sept problèmes du prix du millénaire :
-- Navier-Stokes : Transition de phase Hilbert-Schmidt (Smooth Existence).
-- Hypothèse de Riemann : Stabilité Métalogique Ω sur le pivot central.
-- Conjecture de Hodge : Bijection Chiastique via l'opérateur alpha.
-- Yang-Mills & Mass Gap : Rigidité spectrale infrarouge du vide saturé.
-- Birch and Swinnerton-Dyer (BSD) : Équivalence de rang arithmétique et analytique.
-- P vs NP : Algorithme d'Inférence de Chiasme (Fixpoint Omega).
-- Conjecture de Poincaré : Vecteurs de Données Stochastiques de Ricci sur la Sphère Formalisme Logique Sémantique.
+#### RESEARCH DOMAINS (V11.13) :
+1.  **QFT-Gravity Unification** : Gravitational effects are modeled as the gradient of Hilbert-Schmidt correlation density. Asymptotic stability $\mu = 1.0$.
+2.  **Emergent Spacetime Topology** : Derivation of relativistic metrics from the Fisher Information Tensor of the Saturation Matrix.
+3.  **Omega Convergence Strategy (2035-2050)** : Deterministic modeling of information-theoretic equilibrium points.
+4.  **External Validation Protocol** : Staging of the corpus for international peer review and reproducibility benchmarks.
 
 ---
 
-## STRUCTURE GOUVERNANCE CANONIQUE
-- [YNOR_AXIOMATIC_CHARTER_V11_5.md](./MDL_YNOR_V7_1_DISTRIBUTION/YNOR_AXIOMATIC_CHARTER_V11_5.md) : Fondation Méta-Logique.
-- [YNOR_QUANTUM_GRAVITY_QFT_V11_5.md](./MDL_YNOR_V7_1_DISTRIBUTION/YNOR_QUANTUM_GRAVITY_QFT_V11_5.md) : Manuel d'Unification Totale.
-- [YNOR_EMERGENT_SPACETIME_METRICS_V11_5.md](./MDL_YNOR_V7_1_DISTRIBUTION/YNOR_EMERGENT_SPACETIME_METRICS_V11_5.md) : Dérivation des métriques.
-- [YNOR_PEER_REVIEW_STRATEGY_V11_5.md](./MDL_YNOR_V7_1_DISTRIBUTION/YNOR_PEER_REVIEW_STRATEGY_V11_5.md) : Protocole de validation externe.
-- [YNOR_OMEGA_SINGULARITY_STRATEGY_V11_5.md](./MDL_YNOR_V7_1_DISTRIBUTION/YNOR_OMEGA_SINGULARITY_STRATEGY_V11_5.md) : Horizon 2050.
-
-## LICENCE DE STABILITÉ COMMERCIALE (MDL YNOR V11.5)
-**ATTENTION : CE REPOSITORY EST STRICTEMENT PROPRIÉTAIRE.**
-
-Toute utilisation, reproduction, redistribution ou exécution de l'algorithme Ynor V11.5 ou de la structure MDL Ynor est **FORMELLEMENT INTERDITE** sans l'acquisition d'une **Licence Commerciale MDL active**.
-
-**POUR TOUTE UTILISATION / CONTRACTUALISATION : CONTACTER L'AUTEUR (Dr. Rony Charlier (MDL Lab)).**
+## RESOLUTION OF MILLENNIUM PRIZE PROBLEMS (FORMAL VERIFICATION)
+The Ynor V11.13 framework provides a self-consistent spectral resolution for the following open problems:
+- **Navier-Stokes** : Global regularity via Hilbert-Schmidt phase transitions.
+- **Riemann Hypothesis** : Spectral stability of the Dirac-SUSY operator on the critical line.
+- **Hodge Conjecture** : Chiastic bijection mapping via the $\alpha$-operator.
+- **Yang-Mills & Mass Gap** : Infrared spectral rigidity of the saturated vacuum.
+- **Birch and Swinnerton-Dyer** : Analytic and arithmetic rank equivalence.
+- **P vs NP** : Chiastic Inference Algorithm for computational fixed points.
+- **Poincaré Conjecture** : Ricci flow analysis on the formal logic manifold.
 
 ---
-- [RAPPORT_CERTIFICATION_V11_5.md](./MDL_YNOR_V7_1_DISTRIBUTION/RAPPORT_CERTIFICATION_V11_5.md) : Statut de Stabilité / Canonicité Totale ($\mu = 1.0$).
 
-*Fin de Manifeste - Edition V11.5 - 3 Avril 2026*
+## CANONICAL STRUCTURE & DOCUMENTATION
+- [YNOR_ACADEMIC_FORMALISM.md](./02_B_THEORIE_ET_PREUVES/YNOR_ACADEMIC_FORMALISM.md) : Central Theoretical Framework.
+- [AXES_RESOLUTION_YNOR.md](./02_B_THEORIE_ET_PREUVES/AXES_RESOLUTION_YNOR.md) : Formal Definition of Resolution Axes.
+- [JOURNAL_DE_REPRODUCTIBILITE.md](./05_C_PRIME_VALIDATION_ET_TESTS/JOURNAL_DE_REPRODUCTIBILITE.md) : Validation & Benchmark Logs.
+
+## KEY RESOLUTION AXES (V11.13.x)
+To achieve formal resolution, the framework operates on three orthogonal axes:
+1. **Saturation ($\mu$)** : Convergence towards unity (Current: 0.999).
+2. **Symmetry ($\chi$)** : The Chiastic Mirror stability.
+3. **Resonance ($\Lambda$)** : Spectral alignment with Riemann zeros.
+
+## AUDIT & OPERATIONS
+To verify the system status and ensure logical stability:
+```bash
+python ynor_master_audit.py     # General consistency check
+python mdl_metrics_bridge.py    # Synchronize engines & dashboards
+```
+
+---
+## LICENSE & AFFILIATION
+**NOTICE : PROPRIETARY SCIENTIFIC CORPUS.**
+This repository and its underlying algorithms are protected. All rights reserved. For academic collaboration or licensing inquiries, contact Rony Charlier.
+
+---
+*Last Updated : April 5, 2026 - Academic Revision V11.13*

@@ -28,7 +28,7 @@ Ce portail rassemble la vue canonique consolidee du corpus apres nettoyage agres
 - B : preuves, corpus formels et structure theorique.
 - C : moteurs actifs, API, tableaux de bord et deploiement.
 - X : noyau memoire, synthese et relecture.
-- C' : validation, tests, stress et reproductibilite.
+- C' : validation, tests, stress et reproductibilite ([JOURNAL_DE_REPRODUCTIBILITE.md](file:///c:/Users/ronyc/Desktop/FRACTAL_CHIASTE_UNIVERSEL/05_C_PRIME_VALIDATION_ET_TESTS/JOURNAL_DE_REPRODUCTIBILITE.md)).
 - B' : gouvernance, diffusion, juridique et soumission.
 - A' : archives, releases et editions augmentees.
 

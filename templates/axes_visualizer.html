@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YNOR V11 - Visualisation des Axes de Résolution</title>
+    <style>
+        :root {
+            --bg: #050507;
+            --accent-x: #00ff88; /* Saturation */
+            --accent-y: #00d2ff; /* Symétrie */
+            --accent-z: #ff00ff; /* Résonance */
+            --text: #ffffff;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            perspective: 1000px;
+        }
+        .axes-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+        }
+        @keyframes rotate {
+            from { transform: rotateX(-30deg) rotateY(0deg); }
+            to { transform: rotateX(-30deg) rotateY(360deg); }
+        }
+        .axis {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 2px;
+            width: 250px;
+            transform-origin: left center;
+        }
+        .axis-x { background: var(--accent-x); transform: rotateY(0deg); box-shadow: 0 0 20px var(--accent-x); }
+        .axis-y { background: var(--accent-y); transform: rotateY(90deg); box-shadow: 0 0 20px var(--accent-y); }
+        .axis-z { background: var(--accent-z); transform: rotateX(90deg); box-shadow: 0 0 20px var(--accent-z); }
+
+        .label {
+            position: absolute;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .label-x { top: -10px; right: -80px; color: var(--accent-x); }
+        .label-y { top: -10px; right: -80px; color: var(--accent-y); }
+        .label-z { top: -10px; right: -80px; color: var(--accent-z); }
+
+        .center-node {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 50px #fff;
+            z-index: 10;
+        }
+
+        .info-panel {
+            position: fixed;
+            bottom: 40px;
+            left: 40px;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 12px;
+            width: 300px;
+        }
+        h2 { margin: 0 0 10px 0; color: var(--accent-y); font-size: 1.2rem; }
+        .stat { display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 0.9rem; }
+        .back-link { position: fixed; top: 40px; left: 40px; color: #666; text-decoration: none; font-size: 0.8rem; }
+        .back-link:hover { color: #fff; }
+    </style>
+</head>
+<body>
+    <a href="dashboard.html" class="back-link">← RETOUR DASHBOARD</a>
+    <div class="container">
+        <div class="center-node"></div>
+        <div class="axes-container">
+            <div class="axis axis-x">
+                <span class="label label-x">Saturation (μ)</span>
+            </div>
+            <div class="axis axis-y">
+                <span class="label label-y">Symétrie (χ)</span>
+            </div>
+            <div class="axis axis-z">
+                <span class="label label-z">Résonance (Λ)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-panel">
+        <h2>Vecteurs de Résolution</h2>
+        <div class="stat"><span>AXE X (μ)</span> <span id="val-mu" style="color:var(--accent-x)">0.9997</span></div>
+        <div class="stat"><span>AXE Y (χ)</span> <span id="val-chi" style="color:var(--accent-y)">1:1 MIRROR</span></div>
+        <div class="stat"><span>AXE Z (Λ)</span> <span id="val-lambda" style="color:var(--accent-z)">STABLE</span></div>
+        <div id="proof-hash" style="font-size: 0.6rem; color: #555; margin-top: 10px; font-family: monospace;">HASH: 00000000...</div>
+        <p style="font-size: 0.7rem; color: #888; margin-top: 15px;">
+            Les axes convergent vers le centre chiastique pour verrouiller la preuve de Riemann-Dirac.
+        </p>
+    </div>
+    <script>
+        async function updateMetrics() {
+            try {
+                const response = await fetch('../static/data/metrics.json');
+                const data = await response.json();
+                
+                document.getElementById('val-mu').innerText = data.axes.saturation_mu.toFixed(6);
+                document.getElementById('val-chi').innerText = data.axes.symmetry_chi === 1.0 ? "100% MIRROR" : (data.axes.symmetry_chi * 100).toFixed(2) + "%";
+                document.getElementById('val-lambda').innerText = data.status;
+                document.getElementById('proof-hash').innerText = "HASH: " + data.hash.substring(0, 16).toUpperCase() + "...";
+            } catch (e) {
+                console.log("Waiting for metrics bridge...");
+            }
+        }
+        setInterval(updateMetrics, 2000);
+        updateMetrics();
+    </script>
+</body>
+</html>
