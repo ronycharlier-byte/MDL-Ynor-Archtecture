@@ -14,3 +14,5 @@ yfinance
 stockstats
 gunicorn
 scipy
+slowapi
+PyJWT

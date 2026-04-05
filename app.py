@@ -7,13 +7,26 @@ import sys
 import json
 import traceback
 from typing import Optional, Any
-from datetime import datetime
+from datetime import datetime, timedelta
+import jwt 
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 
-# MDL YNOR ACADEMIC V11.13.x - FORMAL VERIFICATION
-# Unified Information-Theoretic Framework
+# MDL YNOR ACADEMIC V11.13.0 — SECURE CORE PROV
+# SECURITY: JWT + RATE LIMITING + RESTRICTED CORS
 
+limiter = Limiter(key_func=get_remote_address)
 app = FastAPI(title="MDL YNOR ACADEMIC V11.13.0")
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
+JWT_SECRET = os.getenv("YNOR_JWT_SECRET", "YNOR-MASTER-OMEGA-CORE-KEY-2026")
+JWT_ALGO = "HS256"
+
+# CORE SEC: CORS Restrictions (Env-driven)
+allowed_origins = os.getenv("YNOR_ALLOWED_ORIGINS", "*").split(",")
+app.add_middleware(CORSMiddleware, allow_origins=allowed_origins, allow_methods=["*"], allow_headers=["*"])
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -35,23 +48,39 @@ async def root():
         "timestamp": str(datetime.now())
     }
 
-@app.get("/health")
-async def health():
-    return {"status": "ok"}
+# --- AUTHENTICATION FLOW: NO CHARLIER KEY -> NO TOKEN ---
+class LoginRequest(BaseModel):
+    license_key: str
+
+@app.post("/login")
+@limiter.limit("5/minute")
+async def login(request: LoginRequest, r: Request):
+    master_key = os.getenv("YNOR_API_KEY", "MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE")
+    if request.license_key != master_key:
+        return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
+    
+    expires = datetime.now() + timedelta(hours=1)
+    token = jwt.encode({"sub": "MDL-AGENT", "exp": expires}, JWT_SECRET, algorithm=JWT_ALGO)
+    return {"token": token, "expires": str(expires)}
+
+def verify_jwt(token: str):
+    try:
+        jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGO])
+        return True
+    except:
+        return False
 
 class RiemannRequest(BaseModel):
     n_points: Optional[int] = 500
     u_max: Optional[float] = 5.0
     gain: Optional[float] = 10.0
-    license_key: str
+    token: str
 
 @app.post("/riemann")
-async def riemann_solve(request: RiemannRequest):
-    # Use environment variable for master key, with fallbacks for legacy/academic
-    master_key = os.getenv("YNOR_API_KEY", "MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE")
-    valid_keys = [master_key, "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE", "ACADEMIC-V11.13"]
-    if request.license_key not in valid_keys:
-        return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
+@limiter.limit("2/minute")
+async def riemann_solve(request: RiemannRequest, r: Request):
+    if not verify_jwt(request.token):
+        return JSONResponse(status_code=401, content={"status": "UNAUTHORIZED"})
     
     try:
         from riemann_engine import run_riemann_engine
@@ -68,14 +97,13 @@ async def riemann_solve(request: RiemannRequest):
 class DispatchRequest(BaseModel):
     action: str
     payload: Any
-    license_key: str
+    token: str
 
 @app.post("/dispatch")
-async def dispatch(request: DispatchRequest):
-    master_key = os.getenv("YNOR_API_KEY", "MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE")
-    valid_keys = [master_key, "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE", "ACADEMIC-V11.13"]
-    if request.license_key not in valid_keys:
-        return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
+@limiter.limit("10/minute")
+async def dispatch(request: DispatchRequest, r: Request):
+    if not verify_jwt(request.token):
+        return JSONResponse(status_code=401, content={"status": "UNAUTHORIZED"})
 
     action = request.action.lower()
     query = str(request.payload)
