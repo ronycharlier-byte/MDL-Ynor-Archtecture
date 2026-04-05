@@ -13,6 +13,7 @@ Ce portail rassemble la vue canonique consolidee du corpus apres nettoyage agres
 - Pureté Structurale : `100% (Zéro Doublon Checksum)`
 - Mu-Corpus (Résonance) : `0.869`
 - Mu-Algorithmique (Riemann) : `0.999998`
+- Statut Déploiement (Render) : `ACTIF - V11.13.0 (Ω)`
 
 ## References Centrales
 - `CORPUS_CANONIQUE_CONSOLIDE.md`
