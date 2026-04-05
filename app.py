@@ -48,6 +48,10 @@ async def root():
         "timestamp": str(datetime.now())
     }
 
+@app.get("/health")
+async def health():
+    return {"status": "ok", "mu": 0.999}
+
 # --- AUTHENTICATION FLOW: NO CHARLIER KEY -> NO TOKEN ---
 class LoginRequest(BaseModel):
     license_key: str
