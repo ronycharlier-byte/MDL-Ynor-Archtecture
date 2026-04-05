@@ -47,7 +47,9 @@ class RiemannRequest(BaseModel):
 
 @app.post("/riemann")
 async def riemann_solve(request: RiemannRequest):
-    valid_keys = ["MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE", "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE", "ACADEMIC-V11.13"]
+    # Use environment variable for master key, with fallbacks for legacy/academic
+    master_key = os.getenv("YNOR_API_KEY", "MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE")
+    valid_keys = [master_key, "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE", "ACADEMIC-V11.13"]
     if request.license_key not in valid_keys:
         return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
     
@@ -70,7 +72,8 @@ class DispatchRequest(BaseModel):
 
 @app.post("/dispatch")
 async def dispatch(request: DispatchRequest):
-    valid_keys = ["MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE", "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE", "ACADEMIC-V11.13"]
+    master_key = os.getenv("YNOR_API_KEY", "MDL-SINGULARITY-2026-V11.8-OMEGA-BRIDGE")
+    valid_keys = [master_key, "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE", "ACADEMIC-V11.13"]
     if request.license_key not in valid_keys:
         return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
 

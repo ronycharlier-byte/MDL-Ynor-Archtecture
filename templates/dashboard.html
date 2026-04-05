@@ -132,5 +132,32 @@
     <div style="margin-top: 8rem; color: #666; font-size: 0.9rem;">
         © 2026 MDL YNOR ENGINE - Rony Charlier
     </div>
+
+    <script>
+        async function updateDashboard() {
+            try {
+                // Determine current URL for relative fetch
+                const response = await fetch('/');
+                const data = await response.json();
+                
+                // Update elements
+                document.querySelector('.mu-value').textContent = `μ = ${data.mu.toFixed(6)}`;
+                
+                // Visual feedback if mu is high
+                if (data.mu > 0.99) {
+                    document.querySelector('.mu-value').style.color = '#00d2ff';
+                    document.querySelector('.mu-value').style.textShadow = '0 0 20px rgba(0, 210, 255, 0.6)';
+                }
+                
+                console.log("Dashboard Updated:", data);
+            } catch (err) {
+                console.warn("API Sync Failed:", err);
+            }
+        }
+
+        // Initialize and setup interval
+        updateDashboard();
+        setInterval(updateDashboard, 5000);
+    </script>
 </body>
 </html>
