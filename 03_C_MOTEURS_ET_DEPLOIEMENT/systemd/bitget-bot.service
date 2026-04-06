@@ -1,0 +1,15 @@
+[Unit]
+Description=Bitget isolated margin bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/FRACTAL_CHIASTE_UNIVERSEL
+EnvironmentFile=/opt/FRACTAL_CHIASTE_UNIVERSEL/.env
+ExecStart=/opt/FRACTAL_CHIASTE_UNIVERSEL/.venv/bin/python /opt/FRACTAL_CHIASTE_UNIVERSEL/03_C_MOTEURS_ET_DEPLOIEMENT/bitget_market_bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

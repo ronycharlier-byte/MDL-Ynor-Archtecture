@@ -1,0 +1,15 @@
+[Unit]
+Description=Bitget dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/FRACTAL_CHIASTE_UNIVERSEL
+EnvironmentFile=/opt/FRACTAL_CHIASTE_UNIVERSEL/.env
+ExecStart=/opt/FRACTAL_CHIASTE_UNIVERSEL/.venv/bin/python -m streamlit run /opt/FRACTAL_CHIASTE_UNIVERSEL/03_C_MOTEURS_ET_DEPLOIEMENT/bitget_dashboard.py --server.address 0.0.0.0 --server.port 8501
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

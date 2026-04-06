@@ -21,3 +21,5 @@ pydantic<2
 python-dotenv
 numpy
 requests
+ccxt
+streamlit
