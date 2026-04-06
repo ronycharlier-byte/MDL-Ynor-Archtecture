@@ -70,6 +70,8 @@ with st.sidebar:
     secret = st.text_input("Secret", value=os.getenv("BITGET_SECRET", ""), type="password")
     passphrase = st.text_input("Passphrase", value=os.getenv("BITGET_PASSPHRASE", ""), type="password")
     live_trading = as_bool("LIVE_TRADING", os.getenv("LIVE_TRADING", "false").lower() == "true")
+    live_confirmed = as_bool("LIVE_CONFIRMED", os.getenv("LIVE_CONFIRMED", "false").lower() == "true")
+    max_usdt_per_trade = st.number_input("Max USDT/order", value=float(os.getenv("MAX_USDT_PER_TRADE", "10")))
     default_type = st.selectbox("Type de marché", ["spot", "swap"], index=0)
     margin_mode = st.selectbox("Margin mode", ["isolated", "cross"], index=0)
 
@@ -132,8 +134,10 @@ config = BotConfig(
     secret=secret,
     passphrase=passphrase,
     live_trading=live_trading,
+    live_confirmed=live_confirmed,
     margin_mode=margin_mode,
     default_type=default_type,
+    max_usdt_per_trade=max_usdt_per_trade,
 )
 
 if not api_key or not secret or not passphrase:
@@ -145,9 +149,10 @@ status_col2.metric("Market", default_type)
 status_col3.metric("Margin", margin_mode)
 status_col4.metric("State", "RUNNING" if st.session_state.bot_running else "STOPPED")
 
-profile_col1, profile_col2 = st.columns(2)
+profile_col1, profile_col2, profile_col3 = st.columns(3)
 profile_col1.write("Strategy profile:", st.session_state.strategy.profile_path)
 profile_col2.write("Quant engine:", "enabled")
+profile_col3.write("Live confirmed:", "yes" if live_confirmed else "no")
 
 try:
     exchange = create_exchange(config)

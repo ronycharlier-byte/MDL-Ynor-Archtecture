@@ -19,8 +19,10 @@ class BotConfig:
     secret: str = field(default_factory=lambda: os.getenv("BITGET_SECRET", "YOUR_SECRET"))
     passphrase: str = field(default_factory=lambda: os.getenv("BITGET_PASSPHRASE", "YOUR_PASSPHRASE"))
     live_trading: bool = field(default_factory=lambda: os.getenv("LIVE_TRADING", "false").lower() == "true")
+    live_confirmed: bool = field(default_factory=lambda: os.getenv("LIVE_CONFIRMED", "false").lower() == "true")
     margin_mode: str = "isolated"
     default_type: str = "spot"
+    max_usdt_per_trade: float = field(default_factory=lambda: float(os.getenv("MAX_USDT_PER_TRADE", "10")))
 
 
 @dataclass
@@ -92,7 +94,10 @@ def _market_buy(
     symbol: str,
     price: float,
 ) -> str:
-    quote_amount = strategy.usdt_per_trade[symbol]
+    if config.live_trading and not config.live_confirmed:
+        return f"[LIVE BLOCKED] {symbol}: set LIVE_CONFIRMED=true to allow real orders"
+
+    quote_amount = min(strategy.usdt_per_trade[symbol], config.max_usdt_per_trade)
     base_amount = quote_amount / price
     base_amount = float(exchange.amount_to_precision(symbol, base_amount))
 
@@ -122,6 +127,9 @@ def _market_sell(
     amount: float,
     price: float,
 ) -> str:
+    if config.live_trading and not config.live_confirmed:
+        return f"[LIVE BLOCKED] {symbol}: set LIVE_CONFIRMED=true to allow real orders"
+
     amount = float(exchange.amount_to_precision(symbol, amount))
     if amount <= 0:
         return f"[SELL] {symbol}: amount invalide"
