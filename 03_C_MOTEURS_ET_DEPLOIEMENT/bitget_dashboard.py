@@ -150,9 +150,9 @@ status_col3.metric("Margin", margin_mode)
 status_col4.metric("State", "RUNNING" if st.session_state.bot_running else "STOPPED")
 
 profile_col1, profile_col2, profile_col3 = st.columns(3)
-profile_col1.write("Strategy profile:", st.session_state.strategy.profile_path)
-profile_col2.write("Quant engine:", "enabled")
-profile_col3.write("Live confirmed:", "yes" if live_confirmed else "no")
+profile_col1.markdown(f"**Strategy profile:** `{st.session_state.strategy.profile_path}`")
+profile_col2.markdown("**Quant engine:** `enabled`")
+profile_col3.markdown(f"**Live confirmed:** `{'yes' if live_confirmed else 'no'}`")
 
 try:
     exchange = create_exchange(config)
