@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 sys.path.append(os.path.abspath("."))
 sys.path.append(os.path.abspath("./03_C_MOTEURS_ET_DEPLOIEMENT"))
 
-from bitget_bot_core import BotConfig, BotState, StrategyConfig, check_signals, create_exchange, fetch_ohlcv_df
+from bitget_bot_core import BotConfig, BotState, StrategyConfig, check_signals, create_exchange, default_symbols, prepare_exchange, fetch_ohlcv_df
 
 
 st.set_page_config(page_title="Bitget Margin Isolée", layout="wide")
@@ -17,7 +17,7 @@ st.set_page_config(page_title="Bitget Margin Isolée", layout="wide")
 
 def init_state() -> None:
     if "symbols" not in st.session_state:
-        st.session_state.symbols = ["BTC/USDT", "ETH/USDT"]
+        st.session_state.symbols = default_symbols(os.getenv("DEFAULT_TYPE", "swap"))
     if "bot_state" not in st.session_state:
         st.session_state.bot_state = BotState(st.session_state.symbols)
     if "strategy" not in st.session_state:
@@ -72,22 +72,24 @@ with st.sidebar:
     live_trading = as_bool("LIVE_TRADING", os.getenv("LIVE_TRADING", "false").lower() == "true")
     live_confirmed = as_bool("LIVE_CONFIRMED", os.getenv("LIVE_CONFIRMED", "false").lower() == "true")
     max_usdt_per_trade = st.number_input("Max USDT/order", value=float(os.getenv("MAX_USDT_PER_TRADE", "10")))
-    default_type = st.selectbox("Type de marché", ["spot", "swap"], index=0)
+    leverage = st.number_input("Leverage", value=float(os.getenv("LEVERAGE", "1")))
+    default_type = st.selectbox("Type de marché", ["spot", "swap"], index=1 if os.getenv("DEFAULT_TYPE", "swap") == "swap" else 0)
     margin_mode = st.selectbox("Margin mode", ["isolated", "cross"], index=0)
 
     st.header("Stratégie")
     timeframe = st.selectbox("Timeframe", ["1m", "5m", "15m"], index=0)
+    symbol_options = ["BTC/USDT:USDT"] if default_type == "swap" else ["BTC/USDT", "ETH/USDT"]
     selected_symbols = st.multiselect(
         "Symbols",
-        ["BTC/USDT", "ETH/USDT"],
-        default=st.session_state.symbols,
+        symbol_options,
+        default=st.session_state.symbols if st.session_state.symbols else symbol_options,
     )
-    breakout_btc = st.number_input("BTC breakout", value=float(st.session_state.strategy.breakout["BTC/USDT"]))
-    sweep_btc = st.number_input("BTC sweep", value=float(st.session_state.strategy.sweep["BTC/USDT"]))
-    breakout_eth = st.number_input("ETH breakout", value=float(st.session_state.strategy.breakout["ETH/USDT"]))
-    sweep_eth = st.number_input("ETH sweep", value=float(st.session_state.strategy.sweep["ETH/USDT"]))
-    usdt_btc = st.number_input("BTC USDT/trade", value=float(st.session_state.strategy.usdt_per_trade["BTC/USDT"]))
-    usdt_eth = st.number_input("ETH USDT/trade", value=float(st.session_state.strategy.usdt_per_trade["ETH/USDT"]))
+    breakout_btc = st.number_input("BTC breakout", value=float(st.session_state.strategy.breakout["BTC/USDT:USDT" if default_type == "swap" else "BTC/USDT"]))
+    sweep_btc = st.number_input("BTC sweep", value=float(st.session_state.strategy.sweep["BTC/USDT:USDT" if default_type == "swap" else "BTC/USDT"]))
+    breakout_eth = st.number_input("ETH breakout", value=float(st.session_state.strategy.breakout.get("ETH/USDT", 2200)))
+    sweep_eth = st.number_input("ETH sweep", value=float(st.session_state.strategy.sweep.get("ETH/USDT", 2000)))
+    usdt_btc = st.number_input("BTC USDT/trade", value=float(st.session_state.strategy.usdt_per_trade["BTC/USDT:USDT" if default_type == "swap" else "BTC/USDT"]))
+    usdt_eth = st.number_input("ETH USDT/trade", value=float(st.session_state.strategy.usdt_per_trade.get("ETH/USDT", 25.0)))
     profile_path = st.text_input("Strategy profile", value=st.session_state.strategy.profile_path)
 
     st.header("Contrôle")
@@ -102,14 +104,14 @@ if selected_symbols:
         st.session_state.symbols = selected_symbols
         st.session_state.bot_state = BotState(st.session_state.symbols)
 else:
-    st.session_state.symbols = ["BTC/USDT"]
+    st.session_state.symbols = symbol_options[:1]
     st.session_state.bot_state = BotState(st.session_state.symbols)
 
 st.session_state.strategy = StrategyConfig(
     timeframe=timeframe,
-    breakout={"BTC/USDT": breakout_btc, "ETH/USDT": breakout_eth},
-    sweep={"BTC/USDT": sweep_btc, "ETH/USDT": sweep_eth},
-    usdt_per_trade={"BTC/USDT": usdt_btc, "ETH/USDT": usdt_eth},
+    breakout={"BTC/USDT": breakout_btc, "BTC/USDT:USDT": breakout_btc, "ETH/USDT": breakout_eth},
+    sweep={"BTC/USDT": sweep_btc, "BTC/USDT:USDT": sweep_btc, "ETH/USDT": sweep_eth},
+    usdt_per_trade={"BTC/USDT": usdt_btc, "BTC/USDT:USDT": usdt_btc, "ETH/USDT": usdt_eth},
     profile_path=profile_path,
 )
 
@@ -138,6 +140,7 @@ config = BotConfig(
     margin_mode=margin_mode,
     default_type=default_type,
     max_usdt_per_trade=max_usdt_per_trade,
+    leverage=leverage,
 )
 
 if not api_key or not secret or not passphrase:
@@ -157,6 +160,8 @@ profile_col3.markdown(f"**Live confirmed:** `{'yes' if live_confirmed else 'no'}
 try:
     exchange = create_exchange(config)
     exchange.load_markets()
+    for symbol in st.session_state.symbols:
+        prepare_exchange(exchange, config, symbol)
     exchange_ready = True
 except Exception as exc:
     exchange_ready = False

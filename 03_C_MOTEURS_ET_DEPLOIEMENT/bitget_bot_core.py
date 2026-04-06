@@ -21,8 +21,9 @@ class BotConfig:
     live_trading: bool = field(default_factory=lambda: os.getenv("LIVE_TRADING", "false").lower() == "true")
     live_confirmed: bool = field(default_factory=lambda: os.getenv("LIVE_CONFIRMED", "false").lower() == "true")
     margin_mode: str = "isolated"
-    default_type: str = "spot"
+    default_type: str = field(default_factory=lambda: os.getenv("DEFAULT_TYPE", "swap"))
     max_usdt_per_trade: float = field(default_factory=lambda: float(os.getenv("MAX_USDT_PER_TRADE", "10")))
+    leverage: float = field(default_factory=lambda: float(os.getenv("LEVERAGE", "1")))
 
 
 @dataclass
@@ -44,10 +45,16 @@ class BotState:
 @dataclass
 class StrategyConfig:
     timeframe: str = "1m"
-    breakout: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 70000, "ETH/USDT": 2200})
-    sweep: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 65000, "ETH/USDT": 2000})
-    usdt_per_trade: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 50.0, "ETH/USDT": 25.0})
+    breakout: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 70000, "BTC/USDT:USDT": 70000, "ETH/USDT": 2200})
+    sweep: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 65000, "BTC/USDT:USDT": 65000, "ETH/USDT": 2000})
+    usdt_per_trade: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 50.0, "BTC/USDT:USDT": 10.0, "ETH/USDT": 25.0})
     profile_path: str = "03_C_MOTEURS_ET_DEPLOIEMENT/strategy_profile.json"
+
+
+def default_symbols(default_type: str) -> List[str]:
+    if default_type == "swap":
+        return ["BTC/USDT:USDT"]
+    return ["BTC/USDT", "ETH/USDT"]
 
 
 def create_exchange(config: BotConfig) -> ccxt.Exchange:
@@ -62,6 +69,21 @@ def create_exchange(config: BotConfig) -> ccxt.Exchange:
             },
         }
     )
+
+
+def prepare_exchange(exchange: ccxt.Exchange, config: BotConfig, symbol: str) -> None:
+    if config.default_type != "swap":
+        return
+
+    try:
+        exchange.set_margin_mode(config.margin_mode, symbol)
+    except Exception:
+        pass
+
+    try:
+        exchange.set_leverage(int(config.leverage), symbol)
+    except Exception:
+        pass
 
 
 def fetch_ohlcv_df(exchange: ccxt.Exchange, symbol: str, timeframe: str, limit: int = 50) -> pd.DataFrame:

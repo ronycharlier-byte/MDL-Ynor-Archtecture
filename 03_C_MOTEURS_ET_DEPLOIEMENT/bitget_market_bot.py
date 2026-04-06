@@ -1,16 +1,18 @@
 import os
 import time
 
-from bitget_bot_core import BotConfig, BotState, StrategyConfig, check_signals, create_exchange, fetch_ohlcv_df
+from bitget_bot_core import BotConfig, BotState, StrategyConfig, check_signals, create_exchange, default_symbols, prepare_exchange, fetch_ohlcv_df
 
 
 def main() -> None:
     config = BotConfig()
     strategy = StrategyConfig()
-    symbols = ["BTC/USDT", "ETH/USDT"]
+    symbols = default_symbols(config.default_type)
     state = BotState(symbols)
     exchange = create_exchange(config)
     exchange.load_markets()
+    for symbol in symbols:
+        prepare_exchange(exchange, config, symbol)
 
     print(f"[START] Bitget bot lancé | LIVE_TRADING={config.live_trading}")
 

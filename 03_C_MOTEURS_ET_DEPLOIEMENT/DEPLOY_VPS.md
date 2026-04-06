@@ -17,6 +17,7 @@ The script will prompt for:
 - Bitget API key
 - Bitget secret
 - Bitget passphrase
+- swap/spot mode
 - whether to enable live trading
 
 If you prefer the manual steps, keep reading.
@@ -53,6 +54,8 @@ Fill in:
 - `BITGET_API_KEY`
 - `BITGET_SECRET`
 - `BITGET_PASSPHRASE`
+- `DEFAULT_TYPE=swap` for futures
+- `LEVERAGE=1` for a first test
 - `LIVE_TRADING=false` for testing first
 
 The VPS installer now uses `03_C_MOTEURS_ET_DEPLOIEMENT/requirements-bitget.txt`, which keeps the Python install minimal.
@@ -68,6 +71,14 @@ Do not paste CIDR ranges such as `74.220.48.0/24`.
 ```bash
 streamlit run 03_C_MOTEURS_ET_DEPLOIEMENT/bitget_dashboard.py --server.address 0.0.0.0 --server.port 8501
 ```
+
+For a swap test, choose:
+
+- `Type de marché = swap`
+- `Margin mode = isolated`
+- `Symbols = BTC/USDT:USDT`
+- `Max USDT/order = 10` or lower
+- `Leverage = 1`
 
 ## 7. Run the bot
 
