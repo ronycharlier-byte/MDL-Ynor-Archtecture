@@ -6,6 +6,9 @@ import ccxt
 import pandas as pd
 from dotenv import load_dotenv
 
+from feature_engine import compute_market_features
+from strategy_engine import load_strategy_profile, score_market
+
 
 load_dotenv()
 
@@ -42,6 +45,7 @@ class StrategyConfig:
     breakout: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 70000, "ETH/USDT": 2200})
     sweep: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 65000, "ETH/USDT": 2000})
     usdt_per_trade: Dict[str, float] = field(default_factory=lambda: {"BTC/USDT": 50.0, "ETH/USDT": 25.0})
+    profile_path: str = "03_C_MOTEURS_ET_DEPLOIEMENT/strategy_profile.json"
 
 
 def create_exchange(config: BotConfig) -> ccxt.Exchange:
@@ -158,17 +162,28 @@ def check_signals(
     low = float(last["low"])
     trail = None
 
+    features = compute_market_features(df)
+    profile = load_strategy_profile(strategy.profile_path)
+    quant_view = score_market(features, profile) if features else {"score": 0.0, "decision": "hold", "components": {}}
+
     if state.positions[symbol] == 0.0:
-        if price > strategy.breakout[symbol]:
+        if features and quant_view["decision"] == "buy":
             events.append(_market_buy(exchange, state, strategy, config, symbol, price))
-        elif low < strategy.sweep[symbol] and price > strategy.sweep[symbol]:
+        elif not features and price > strategy.breakout[symbol]:
             events.append(_market_buy(exchange, state, strategy, config, symbol, price))
+        elif not features and low < strategy.sweep[symbol] and price > strategy.sweep[symbol]:
+            events.append(_market_buy(exchange, state, strategy, config, symbol, price))
+        else:
+            state.last_action = f"[HOLD] {symbol} score={quant_view['score']:.2f}"
+            events.append(state.last_action)
     else:
         trail = trailing_stop(state, symbol, price)
-        if trail is not None and price < trail:
+        if features and quant_view["decision"] == "sell":
+            events.append(_market_sell(exchange, state, config, symbol, state.positions[symbol], price))
+        elif trail is not None and price < trail:
             events.append(_market_sell(exchange, state, config, symbol, state.positions[symbol], price))
         else:
-            state.last_action = f"[HOLD] {symbol} price={price} trail={trail}"
+            state.last_action = f"[HOLD] {symbol} price={price} trail={trail} score={quant_view['score']:.2f}"
             events.append(state.last_action)
 
     snapshot = {
@@ -181,6 +196,7 @@ def check_signals(
         "peak_price": state.peak_price[symbol],
         "breakout": strategy.breakout[symbol],
         "sweep": strategy.sweep[symbol],
+        "score": quant_view["score"],
+        "decision": quant_view["decision"],
     }
     return events, snapshot
-

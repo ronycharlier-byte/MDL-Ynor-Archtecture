@@ -86,6 +86,7 @@ with st.sidebar:
     sweep_eth = st.number_input("ETH sweep", value=float(st.session_state.strategy.sweep["ETH/USDT"]))
     usdt_btc = st.number_input("BTC USDT/trade", value=float(st.session_state.strategy.usdt_per_trade["BTC/USDT"]))
     usdt_eth = st.number_input("ETH USDT/trade", value=float(st.session_state.strategy.usdt_per_trade["ETH/USDT"]))
+    profile_path = st.text_input("Strategy profile", value=st.session_state.strategy.profile_path)
 
     st.header("Contrôle")
     col_a, col_b = st.columns(2)
@@ -107,6 +108,7 @@ st.session_state.strategy = StrategyConfig(
     breakout={"BTC/USDT": breakout_btc, "ETH/USDT": breakout_eth},
     sweep={"BTC/USDT": sweep_btc, "ETH/USDT": sweep_eth},
     usdt_per_trade={"BTC/USDT": usdt_btc, "ETH/USDT": usdt_eth},
+    profile_path=profile_path,
 )
 
 if reset_button:
@@ -142,6 +144,10 @@ status_col1.metric("Mode", "LIVE" if live_trading else "DRY RUN")
 status_col2.metric("Market", default_type)
 status_col3.metric("Margin", margin_mode)
 status_col4.metric("State", "RUNNING" if st.session_state.bot_running else "STOPPED")
+
+profile_col1, profile_col2 = st.columns(2)
+profile_col1.write("Strategy profile:", st.session_state.strategy.profile_path)
+profile_col2.write("Quant engine:", "enabled")
 
 try:
     exchange = create_exchange(config)
