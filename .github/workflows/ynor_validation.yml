@@ -1,35 +1,70 @@
-name: MDL Ynor Elite V11.9.9 Absolute Stability (CI)
+﻿name: MDL Ynor Elite V11.9.9 Absolute Stability (CI)
+
+
 
 on:
+
   push:
+
     branches: [ main ]
+
   pull_request:
+
     branches: [ main ]
+
+
 
 jobs:
+
   stability_audit:
+
     runs-on: ubuntu-latest
 
+
+
     steps:
+
       - name: Checkout Repository
+
         uses: actions/checkout@v4
 
+
+
       - name: Set up Python 3.11
+
         uses: actions/setup-python@v4
+
         with:
+
           python-version: '3.11'
 
+
+
       - name: Audit Core Syntax (mu=1.0)
+
         run: |
+
           python -m pip install --upgrade pip
+
           pip install fastapi uvicorn pydantic numpy requests
-          echo "Démarrage de l'Audit de Stabilité V11.9.9..."
+
+          echo "Dmarrage de l'Audit de Stabilit V11.9.9..."
+
           python -m py_compile MDL_YNOR_V7_1_DISTRIBUTION/app.py
+
           python -m py_compile YNOR_MARKET_DYNAMICS_NEXUS/ynor_market_bridge.py
+
           
-      - name: Certification de Densité
+
+      - name: Certification de Densit
+
         run: |
+
           echo "Certification du Corpus 1949 Vecteurs..."
-          # Vérification de présence du nexus de marché
+
+          # Vrification de prsence du nexus de march
+
           ls -R YNOR_MARKET_DYNAMICS_NEXUS/
-          echo "SOUVERAINETÉ V11.9.9 CERTIFIÉE. mu=1.0."
+
+          echo "SOUVERAINET V11.9.9 CERTIFIE. mu=1.0."
+

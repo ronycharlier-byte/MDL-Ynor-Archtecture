@@ -1,52 +1,40 @@
-# EXECUTIVE DIGEST YNOR
-
-## En Une Phrase
-Ynor est structure pour etre consultable depuis un point d'acces central, avec une lecture simple des grandes couches du corpus.
-Sa force principale est la lisibilite chiastique; sa faiblesse principale reste la proliferation des variantes.
-
-## Perimetre
-- Ce digest resume la couche editoriale consolidee.
-- Les miroirs, exports et artefacts de travail ne doivent pas etre confondus avec les sources canoniques.
-- Les chiffres ci-dessous renvoient au corpus consolide, pas au scan brut du depot complet.
-- La vue canonique dedoublonnee doit etre consideree comme reference de lecture.
-
-## Chiffres Cles
-- Entrees unifiees : `128`
-- Sources uniques : `118`
-- Axe de lecture : `A -> B -> C -> X -> C' -> B' -> A'`
-- Noeuds actifs : `7`
-
-## Travaux Realises
-- Reorganisation des textes majeurs.
-- Harmonisation des JSON et des exports.
-- Projection des PDF constitutionnels, mathematiques, juridiques et administratifs.
-- Construction d'un index maitre de correspondance.
-- Mise en place d'une carte visuelle et d'une navigation centrale.
-- Stabilisation d'une edition canonique de consultation.
-- Separation plus nette entre lecture canonique et couches de travail.
-- Exposition plus claire des forces, faiblesses et correctifs prioritaires.
-
-## Portes D'Entree
-- Fondation : README et textes de base
-- Theorie : corpus formels, preuves, PDF mathematiques
-- C : moteurs actifs, APIs, tableaux de bord et deploiement
-- Memoire : JSON, connaissance, intelligence
-- C' : validation, tests, stress et reproductibilite
-- Gouvernance : droit, doctrine, prospectus, depot
-- Archives : manuscrits et editions augmentees
-
-## Fichiers A Lire En Premier
-- `00_PUBLIC_BRIEF/README.md`
-- `00_PUBLIC_BRIEF/REFERENCE_PUBLIQUE.md`
-- `00_EDITION_CANONIQUE_FINALE/PORTAIL_CANONIQUE_FINAL.md`
-- `00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/INDEX_MAITRE_YNOR.md`
-- `00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/CARTE_VISUELLE_YNOR.md`
-- `00_MASTER_FINAL/CORPUS_QUALITE_ET_CORRECTIFS.md`
-- `03_C_MOTEURS_ET_DEPLOIEMENT/README.md`
-- `05_C_PRIME_VALIDATION_ET_TESTS/README.md`
-
-## Centre
-Le centre de cette synthese executive est la lisibilite immediate: rendre l'ensemble navigable en quelques minutes sans perdre la profondeur de l'architecture.
-Cette lisibilite n'est pas une validation externe; elle organise d'abord la consultation et la tracabilite.
-Les blocs deja reproductibles localement sont consideres comme etablis au niveau interne; les blocs de revue sont prepares pour une verification independante selon un protocole explicite.
-Leurs ecarts potentiels sont deja isoles, traces et organises pour lecture tierce, ce qui remplace la logique du manque par une logique de suivi et de comparaison.
+﻿﻿---
+STATUS: CANONICAL | V11.13.0 | SOURCE: UNIFIED | 
+AUDIT: CERTIFIED 2026-04-06
+---
+STATUS: CONSOLIDATED V11.13 | CANONICAL SOURCE: TRUE
+
+# EXECUTIVE DIGEST YNOR
+
+## Reading Contract
+If you read only four documents, read these in this order:
+1. [EXECUTIVE_DIGEST.md](./EXECUTIVE_DIGEST.md)
+2. [YNOR_UNIFIED_AXIOMS.md](../00_MASTER_FINAL/YNOR_UNIFIED_AXIOMS.md)
+3. [YNOR_UNIFIED_PROTOCOLS.md](../00_MASTER_FINAL/YNOR_UNIFIED_PROTOCOLS.md)
+4. [VALIDATION_SCIENTIFIQUE_YNOR.md](../00_MASTER_FINAL/VALIDATION_SCIENTIFIQUE_YNOR.md)
+
+## High-Level Map
+- `YNOR_UNIFIED_AXIOMS.md` defines the ontological and methodological base.
+- `YNOR_UNIFIED_PROTOCOLS.md` defines the operational reading and transformation rules.
+- `VALIDATION_SCIENTIFIQUE_YNOR.md` defines the reproducibility and benchmark posture.
+
+## System Summary
+Ynor is a chiastic, layered corpus organized around a stable center, mirrored relations, recursive reading, and controlled expansion.
+Its current consolidation objective is not to add volume but to reduce entropy, keep one source of truth per concept, and make external reading immediate.
+
+## Canonical Entry Points
+- Foundation and source layer: [YNOR_UNIFIED_AXIOMS.md](../00_MASTER_FINAL/YNOR_UNIFIED_AXIOMS.md)
+- Operational layer: [YNOR_UNIFIED_PROTOCOLS.md](../00_MASTER_FINAL/YNOR_UNIFIED_PROTOCOLS.md)
+- Scientific validation: [VALIDATION_SCIENTIFIQUE_YNOR.md](../00_MASTER_FINAL/VALIDATION_SCIENTIFIQUE_YNOR.md)
+- Canonical portal: [PORTAIL_CANONIQUE_FINAL.md](../00_EDITION_CANONIQUE_FINALE/PORTAIL_CANONIQUE_FINAL.md)
+
+## What The Reader Needs To Know
+- The old stratification existed to expose the corpus.
+- The unified documents now replace the former distributed logic.
+- The remaining task is validation discipline, not further proliferation.
+
+## Immediate Interpretation
+The corpus is now readable as a compact architecture:
+- axioms establish what Ynor is allowed to be;
+- protocols establish how Ynor is handled;
+- validation establishes what can be claimed with discipline.

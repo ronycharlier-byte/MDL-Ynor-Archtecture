@@ -1,0 +1,34 @@
+﻿﻿{
+  "items": [
+    {
+      "type": "file",
+      "path": "00_EDITION_CANONIQUE_FINALE/PORTAIL_CANONIQUE_FINAL.md",
+      "title": "Ω PORTAIL CANONIQUE"
+    },
+    {
+      "type": "file",
+      "path": "01_A_FONDATION/INDEX_MAITRE_YNOR.md",
+      "title": "A: Index Maître"
+    },
+    {
+       "type": "file",
+       "path": "02_B_THEORIE_ET_PREUVES/YNOR_ACADEMIC_FORMALISM.md",
+       "title": "B: Formalisme Acadmique"
+    },
+    {
+       "type": "folder",
+       "path": "03_C_MOTEURS_ET_DEPLOIEMENT",
+       "title": "C: Moteurs & Dploiement"
+    },
+    {
+       "type": "file",
+       "path": "05_C_PRIME_VALIDATION_ET_TESTS/JOURNAL_DE_REPRODUCTIBILITE.md",
+       "title": "C': Journal de Reproductibilit"
+    },
+    {
+       "type": "file",
+       "path": "README.md",
+       "title": "Dpôt (README)"
+    }
+  ]
+}

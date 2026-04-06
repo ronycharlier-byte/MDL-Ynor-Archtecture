@@ -1,0 +1,38 @@
+﻿﻿{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "MDL Ynor Systme de Graphe de Consensus API",
+    "description": "Systme de Gouvernance Analytique MDL. Gated by Canonical Protocol.",
+    "version": "8.7.1"
+  },
+  "servers": [
+    { "url": "https://mdl-ynor-v7-1-distribution.onrender.com" }
+  ],
+  "paths": {
+    "/dispatch": {
+      "post": {
+        "operationId": "ynorGovernance",
+        "summary": "Excution d'une action de gouvernance",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "action": { "type": "string", "enum": ["audit", "Formalisme Logique Smantique", "map", "search", "consensus", "log"] },
+                  "payload": { "type": "string" },
+                  "license_key": { "type": "string" }
+                },
+                "required": ["action", "payload", "license_key"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Succs de la projection", "content": { "application/json": { "schema": { "type": "object" } } } }
+        }
+      }
+    }
+  }
+}

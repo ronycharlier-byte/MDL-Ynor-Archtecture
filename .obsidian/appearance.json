@@ -1,0 +1,11 @@
+﻿﻿{
+  "accentColor": "#FFD700",
+  "baseFontSize": 16,
+  "theme": "obsidian",
+  "nativeMenus": true,
+  "cssTheme": "",
+  "showViewHeader": true,
+  "interfaceFontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
+  "textFontFamily": "Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif",
+  "monospaceFontFamily": "Monaco, 'Courier New', Courier, monospace"
+}

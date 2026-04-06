@@ -1,37 +1,37 @@
-{
-    "nexus_version": "1.0.0 (Ω Phase Seed)",
-    "last_update": "2026-04-05",
-    "global_saturation": 0.45,
-    "regions": {
-        "AFRICA": {
-            "key_actors": ["Nigeria", "South Africa", "Egypt", "Ethiopia", "Kenya"],
-            "historical_resonance": "Post-colonial synthesis transition toward multipolar sovereignty.",
-            "stability_mu": 0.35
-        },
-        "AMERICAS": {
-            "key_actors": ["USA", "Brazil", "Canada", "Mexico", "Argentina"],
-            "historical_resonance": "Hemispheric dominance vs. emerging BRICS+ alignment.",
-            "stability_mu": 0.65
-        },
-        "ASIA_PACIFIC": {
-            "key_actors": ["China", "India", "Japan", "South Korea", "Australia", "Indonesia"],
-            "historical_resonance": "Centripetal shift of global economic gravity.",
-            "stability_mu": 0.72
-        },
-        "EUROPE": {
-            "key_actors": ["Germany", "France", "UK", "Russia", "Italy", "Poland"],
-            "historical_resonance": "Structural fragmentation vs. supranational integration.",
-            "stability_mu": 0.58
-        },
-        "MIDDLE_EAST_NORTH_AFRICA": {
-            "key_actors": ["Saudi Arabia", "Iran", "Turkey", "Israel", "UAE"],
-            "historical_resonance": "Energy-driven saturation and religious-ideological chiastic stress.",
-            "stability_mu": 0.28
-        }
-    },
-    "tipping_points_2026": [
-        "Iran-USA (Hormuz Axis)",
-        "China-USA (Taiwan Semi-Conductor Axis)",
-        "Russia-NATO (Arctic-Eastern Europe Axis)"
-    ]
-}
+﻿﻿{
+    "nexus_version": "1.0.0 (Ω Phase Seed)",
+    "last_update": "2026-04-05",
+    "global_saturation": 0.45,
+    "regions": {
+        "AFRICA": {
+            "key_actors": ["Nigeria", "South Africa", "Egypt", "Ethiopia", "Kenya"],
+            "historical_resonance": "Post-colonial synthesis transition toward multipolar sovereignty.",
+            "stability_mu": 0.35
+        },
+        "AMERICAS": {
+            "key_actors": ["USA", "Brazil", "Canada", "Mexico", "Argentina"],
+            "historical_resonance": "Hemispheric dominance vs. emerging BRICS+ alignment.",
+            "stability_mu": 0.65
+        },
+        "ASIA_PACIFIC": {
+            "key_actors": ["China", "India", "Japan", "South Korea", "Australia", "Indonesia"],
+            "historical_resonance": "Centripetal shift of global economic gravity.",
+            "stability_mu": 0.72
+        },
+        "EUROPE": {
+            "key_actors": ["Germany", "France", "UK", "Russia", "Italy", "Poland"],
+            "historical_resonance": "Structural fragmentation vs. supranational integration.",
+            "stability_mu": 0.58
+        },
+        "MIDDLE_EAST_NORTH_AFRICA": {
+            "key_actors": ["Saudi Arabia", "Iran", "Turkey", "Israel", "UAE"],
+            "historical_resonance": "Energy-driven saturation and religious-ideological chiastic stress.",
+            "stability_mu": 0.28
+        }
+    },
+    "tipping_points_2026": [
+        "Iran-USA (Hormuz Axis)",
+        "China-USA (Taiwan Semi-Conductor Axis)",
+        "Russia-NATO (Arctic-Eastern Europe Axis)"
+    ]
+}

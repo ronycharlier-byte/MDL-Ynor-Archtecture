@@ -1,4 +1,4 @@
-﻿@echo off
+﻿﻿@echo off
 setlocal
 title YNOR CORE BRAIN SYNC
 
@@ -46,6 +46,6 @@ if "%choice%"=="4" exit
 
 :end
 exit
-
-
-
+
+
+

@@ -1,111 +1,111 @@
-\documentclass[11pt,a4paper]{amsart}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{geometry}
-\usepackage{cite}
-\usepackage{hyperref}
-\usepackage{mathrsfs}
-\usepackage{enumitem}
-
-\geometry{margin=1in}
-\hypersetup{
-  colorlinks=true,
-  linkcolor=blue,
-  citecolor=red,
-  urlcolor=blue
-}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{remark}[theorem]{Remark}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{axiom}[theorem]{Axiome}
-
-\newcommand{\alphacoeff}{\ensuremath{\alpha}}
-\newcommand{\betacoeff}{\ensuremath{\beta}}
-\newcommand{\kappacoeff}{\ensuremath{\kappa}}
-\newcommand{\mumargin}{\ensuremath{\mu}}
-\newcommand{\norm}[1]{\left\|#1\right\|}
-\newcommand{\inner}[2]{\langle #1, #2 \rangle}
-
-\title{Global Regularity and Spectral Confinement\\via the Dissipative Invariant}
-\author{Canonical Research Collective}
-\address{Republic of Haiti \& Democratic Republic of Congo}
-\thanks{This research is supported by the Dissipative Verification Platform 2.0.}
-\date{March 2026}
-
-\begin{document}
-
-\begin{abstract}
-We study a dissipative margin
-\[
-  \mumargin = \alphacoeff - \betacoeff - \kappacoeff,
-\]
-which acts as a stability invariant for several nonlinear systems.
-The presentation is intentionally compact: it records the stability scheme,
-the Collatz dissipative model, and a spectral Goldbach signature.
-\end{abstract}
-
-\maketitle
-
-\section{The Axiomatic of Invariant Margins}
-Let $(\mathcal{H},\langle\cdot,\cdot\rangle)$ be a real Hilbert space and
-consider
-\[
-  \dot{S}(t)=E(S)-D(S)+M(S_t), \qquad S(0)=S_0\in\mathcal{H}.
-\]
-Assume
-\begin{align}
-  \langle S,D(S)\rangle &\ge \alphacoeff\|S\|^{2}, & \text{(coercivity)} \\
-  |\langle S,E(S)\rangle| &\le \betacoeff\|S\|^{2}, & \text{(amplification)} \\
-  \|M(S_t)\| &\le \kappacoeff\|S\|. & \text{(memory)}
-\end{align}
-Then $\mumargin>0$ implies dissipation dominates amplification.
-
-\section{Collatz Dissipative Model}
-For the trajectory $(n_k)_{k\ge 0}$, define
-\[
-  n_{k+1}=T(n_k):=
-  \begin{cases}
-    n_k/2 & n_k \equiv 0 \pmod 2,\\
-    3n_k+1 & n_k \equiv 1 \pmod 2.
-  \end{cases}
-\]
-With $V(n)=\log n$, the average drift is negative:
-\begin{lemma}
-For every $n\ge 2$, the conditional drift satisfies
-$E[\Delta V_k \mid n_k=n] \le -\epsilon$ for some $\epsilon>0$.
-\end{lemma}
-
-\begin{proof}
-The dissipative term dominates in the mean, so the orbit is pulled toward the
-minimal attractor $\{1,2,4\}$.
-\end{proof}
-
-\section{Goldbach Spectral Signature}
-Let $\mathcal H=\ell^2(\mathbb P)$ and, for every even integer $2m>2$, define
-\[
-  (D_{2m}f)(p)=\sum_{\substack{q\in\mathbb P\\ p+q=2m}} f(q).
-\]
-\begin{proposition}
-The operator $D_{2m}$ admits a fixed vector if and only if $2m$ is a sum of two
-primes.
-\end{proposition}
-
-\section{Conclusion}
-The two phases recorded here establish a compact stability narrative:
-dissipation controls the trajectory, and the spectral picture remains coherent.
-
-\bigskip
-\noindent\textbf{References:}\\
-1. Research Collective, Phase III Canonical Unification, DOI 10.5281/zenodo.19183399.\\
-2. Research Collective, Global Regularity Framework, DOI 10.5281/zenodo.19181947.\\
-3. Research Collective, Dissipative Dynamics, DOI 10.5281/zenodo.18855042.
-
-\medskip
-\noindent \texttt{SIGN: PHASE-I-II-SHA256: 8085058A-9E61-437C-ABDD-A000AE249EAB}\\
-\textcopyright 2026 Canonical Research Collective.
-
-\end{document}
+﻿\documentclass[11pt,a4paper]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+
+\geometry{margin=1in}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=red,
+  urlcolor=blue
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{axiom}[theorem]{Axiome}
+
+\newcommand{\alphacoeff}{\ensuremath{\alpha}}
+\newcommand{\betacoeff}{\ensuremath{\beta}}
+\newcommand{\kappacoeff}{\ensuremath{\kappa}}
+\newcommand{\mumargin}{\ensuremath{\mu}}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\inner}[2]{\langle #1, #2 \rangle}
+
+\title{Global Regularity and Spectral Confinement\\via the Dissipative Invariant}
+\author{Canonical Research Collective}
+\address{Republic of Haiti \& Democratic Republic of Congo}
+\thanks{This research is supported by the Dissipative Verification Platform 2.0.}
+\date{March 2026}
+
+\begin{document}
+
+\begin{abstract}
+We study a dissipative margin
+\[
+  \mumargin = \alphacoeff - \betacoeff - \kappacoeff,
+\]
+which acts as a stability invariant for several nonlinear systems.
+The presentation is intentionally compact: it records the stability scheme,
+the Collatz dissipative model, and a spectral Goldbach signature.
+\end{abstract}
+
+\maketitle
+
+\section{The Axiomatic of Invariant Margins}
+Let $(\mathcal{H},\langle\cdot,\cdot\rangle)$ be a real Hilbert space and
+consider
+\[
+  \dot{S}(t)=E(S)-D(S)+M(S_t), \qquad S(0)=S_0\in\mathcal{H}.
+\]
+Assume
+\begin{align}
+  \langle S,D(S)\rangle &\ge \alphacoeff\|S\|^{2}, & \text{(coercivity)} \\
+  |\langle S,E(S)\rangle| &\le \betacoeff\|S\|^{2}, & \text{(amplification)} \\
+  \|M(S_t)\| &\le \kappacoeff\|S\|. & \text{(memory)}
+\end{align}
+Then $\mumargin>0$ implies dissipation dominates amplification.
+
+\section{Collatz Dissipative Model}
+For the trajectory $(n_k)_{k\ge 0}$, define
+\[
+  n_{k+1}=T(n_k):=
+  \begin{cases}
+    n_k/2 & n_k \equiv 0 \pmod 2,\\
+    3n_k+1 & n_k \equiv 1 \pmod 2.
+  \end{cases}
+\]
+With $V(n)=\log n$, the average drift is negative:
+\begin{lemma}
+For every $n\ge 2$, the conditional drift satisfies
+$E[\Delta V_k \mid n_k=n] \le -\epsilon$ for some $\epsilon>0$.
+\end{lemma}
+
+\begin{proof}
+The dissipative term dominates in the mean, so the orbit is pulled toward the
+minimal attractor $\{1,2,4\}$.
+\end{proof}
+
+\section{Goldbach Spectral Signature}
+Let $\mathcal H=\ell^2(\mathbb P)$ and, for every even integer $2m>2$, define
+\[
+  (D_{2m}f)(p)=\sum_{\substack{q\in\mathbb P\\ p+q=2m}} f(q).
+\]
+\begin{proposition}
+The operator $D_{2m}$ admits a fixed vector if and only if $2m$ is a sum of two
+primes.
+\end{proposition}
+
+\section{Conclusion}
+The two phases recorded here establish a compact stability narrative:
+dissipation controls the trajectory, and the spectral picture remains coherent.
+
+\bigskip
+\noindent\textbf{References:}\\
+1. Research Collective, Phase III Canonical Unification, DOI 10.5281/zenodo.19183399.\\
+2. Research Collective, Global Regularity Framework, DOI 10.5281/zenodo.19181947.\\
+3. Research Collective, Dissipative Dynamics, DOI 10.5281/zenodo.18855042.
+
+\medskip
+\noindent \texttt{SIGN: PHASE-I-II-SHA256: 8085058A-9E61-437C-ABDD-A000AE249EAB}\\
+\textcopyright 2026 Canonical Research Collective.
+
+\end{document}

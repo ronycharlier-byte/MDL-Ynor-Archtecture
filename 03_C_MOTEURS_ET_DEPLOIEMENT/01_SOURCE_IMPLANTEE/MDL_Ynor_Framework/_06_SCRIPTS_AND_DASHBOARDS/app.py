@@ -1,4 +1,4 @@
-import streamlit as st
+﻿﻿import streamlit as st
 from openai import OpenAI
 import os
 import pandas as pd
@@ -125,8 +125,8 @@ if st.button("RUN AUDIT"):
                 "experience_summary": full_log,
                 "quality_score": gain / 100.0 if gain > 0 else 0.5
             }
-            # Appel asynchrone à l'API locale Ynor pour l'auto-apprentissage
-            # Note: L'API doit être lancée (Option [2] du Manager)
+            # Appel asynchrone l'API locale Ynor pour l'auto-apprentissage
+            # Note: L'API doit être lance (Option [2] du Manager)
             requests.post(
                 "http://localhost:8492/v1/archive/auto_learn", 
                 json=learn_payload, 

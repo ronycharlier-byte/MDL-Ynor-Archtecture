@@ -1,4 +1,4 @@
-name: mdl-ynor-env
+﻿name: mdl-ynor-env
 channels:
   - conda-forge
   - pytorch

@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # MDL YNOR - AUTOMATED INTEGRITY AUDIT SCRIPT (V2.3)
 # =============================================================================
 $ErrorActionPreference = "SilentlyContinue"
@@ -41,7 +41,7 @@ try {
     $response = Invoke-RestMethod -Uri "http://127.0.0.1:8492/status" -Method Get -TimeoutSec 2
     $mu = $response.mu
     Write-Host "API Status : OK" -ForegroundColor Green
-    Write-Host "Marge de Viabilité (mu) : $mu" -ForegroundColor ($mu -ge 0 ? "Green" : "Red")
+    Write-Host "Marge de Viabilité (mu) : $mu" -ForegroundColor ($mu -ge 0 "Green" : "Red")
 } catch {
     Write-Host "ALERTE : API hors ligne ou injoignable. Le Silent Kernel opère en mode ISOLÉ." -ForegroundColor Magenta
 }

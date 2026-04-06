@@ -1,70 +1,70 @@
-{
-  "openapi": "3.1.0",
-  "info": {
-    "title": "MDL Ynor Canonical API",
-    "description": "Interface d'accès certifiée au Formalisme Logique Sémantique MDL V7.1. Requiert une licence canonique active.",
-    "version": "7.1.0"
-  },
-  "servers": [
-    {
-      "url": "https://TON_DOMAINE_PROXY_OU_NGROK.com",
-      "description": "Canonical Gateway"
-    }
-  ],
-  "paths": {
-    "/audit": {
-      "post": {
-        "summary": "Effectuer un audit de stabilité mu",
-        "operationId": "auditQuery",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "query": { "type": "string" }
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": { "description": "Verdict de stabilité mu-Consensus" }
-        }
-      }
-    },
-    "/Formalisme Logique Sémantique": {
-      "post": {
-        "summary": "Extraction du Formalisme Logique Sémantique pur (Licence requise)",
-        "operationId": "getFormalisme Logique Sémantique",
-        "parameters": [
-          {
-            "name": "X-MDL-License",
-            "in": "header",
-            "required": true,
-            "schema": { "type": "string" },
-            "description": "Clé de stabilité MDL V7.1"
-          }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "query": { "type": "string" }
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": { "description": "Projection certifiée du Formalisme Logique Sémantique" },
-          "403": { "description": "Accès refusé - Licence invalide" }
-        }
-      }
-    }
-  }
-}
+﻿﻿{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "MDL Ynor Canonical API",
+    "description": "Interface d'accs certifie au Formalisme Logique Smantique MDL V7.1. Requiert une licence canonique active.",
+    "version": "7.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://TON_DOMAINE_PROXY_OU_NGROK.com",
+      "description": "Canonical Gateway"
+    }
+  ],
+  "paths": {
+    "/audit": {
+      "post": {
+        "summary": "Effectuer un audit de stabilitmu",
+        "operationId": "auditQuery",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Verdict de stabilitmu-Consensus" }
+        }
+      }
+    },
+    "/Formalisme Logique Smantique": {
+      "post": {
+        "summary": "Extraction du Formalisme Logique Smantique pur (Licence requise)",
+        "operationId": "getFormalisme Logique Smantique",
+        "parameters": [
+          {
+            "name": "X-MDL-License",
+            "in": "header",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Clde stabilitMDL V7.1"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Projection certifie du Formalisme Logique Smantique" },
+          "403": { "description": "Accs refus- Licence invalide" }
+        }
+      }
+    }
+  }
+}

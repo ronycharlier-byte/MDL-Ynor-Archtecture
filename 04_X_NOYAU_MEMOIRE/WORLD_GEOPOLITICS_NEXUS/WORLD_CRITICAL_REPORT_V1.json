@@ -1,57 +1,57 @@
-[
-    {
-        "region": "AFRICA",
-        "mu": 0.35,
-        "indicators": {
-            "RSI": 37.23,
-            "MACD": -0.15,
-            "Entropy": 0.65
-        },
-        "verdict": "\u26a0\ufe0f BRUIT DIPLOMATIQUE (Fragilit\u00e9)",
-        "analysis": "La zone AFRICA pr\u00e9sente un RSI de 37.23. Stabilit\u00e9 m\u00e9diane. D\u00e9pendance aux flux externes de r\u00e9sonance."
-    },
-    {
-        "region": "AMERICAS",
-        "mu": 0.65,
-        "indicators": {
-            "RSI": 69.86,
-            "MACD": 0.15,
-            "Entropy": 0.35
-        },
-        "verdict": "\u2696\ufe0f \u00c9QUILIBRE CHIASTIQUE (Stabilit\u00e9)",
-        "analysis": "La zone AMERICAS pr\u00e9sente un RSI de 69.86. Stabilit\u00e9 m\u00e9diane. D\u00e9pendance aux flux externes de r\u00e9sonance."
-    },
-    {
-        "region": "ASIA_PACIFIC",
-        "mu": 0.72,
-        "indicators": {
-            "RSI": 69.88,
-            "MACD": 0.22,
-            "Entropy": 0.28
-        },
-        "verdict": "\ud83d\udc8e SOUVERAINET\u00c9 CRISTALLINE (Expansion)",
-        "analysis": "La zone ASIA_PACIFIC pr\u00e9sente un RSI de 69.88. La r\u00e9sonance est satur\u00e9e. Le p\u00f4le de puissance est en phase d'expansion cristalline."
-    },
-    {
-        "region": "EUROPE",
-        "mu": 0.58,
-        "indicators": {
-            "RSI": 60.5,
-            "MACD": 0.08,
-            "Entropy": 0.42
-        },
-        "verdict": "\u2696\ufe0f \u00c9QUILIBRE CHIASTIQUE (Stabilit\u00e9)",
-        "analysis": "La zone EUROPE pr\u00e9sente un RSI de 60.5. Stabilit\u00e9 m\u00e9diane. D\u00e9pendance aux flux externes de r\u00e9sonance."
-    },
-    {
-        "region": "MIDDLE_EAST_NORTH_AFRICA",
-        "mu": 0.28,
-        "indicators": {
-            "RSI": 30.66,
-            "MACD": -0.22,
-            "Entropy": 0.72
-        },
-        "verdict": "\ud83d\udd25 EFFONDREMENT IMMINENT (Chaos)",
-        "analysis": "La zone MIDDLE_EAST_NORTH_AFRICA pr\u00e9sente un RSI de 30.66. L'entropie est critique. Le syst\u00e8me ne peut plus absorber le bruit des proxies."
-    }
+﻿﻿[
+    {
+        "region": "AFRICA",
+        "mu": 0.35,
+        "indicators": {
+            "RSI": 37.23,
+            "MACD": -0.15,
+            "Entropy": 0.65
+        },
+        "verdict": "\u26a0\ufe0f BRUIT DIPLOMATIQUE (Fragilit\u00e9)",
+        "analysis": "La zone AFRICA pr\u00e9sente un RSI de 37.23. Stabilit\u00e9 m\u00e9diane. D\u00e9pendance aux flux externes de r\u00e9sonance."
+    },
+    {
+        "region": "AMERICAS",
+        "mu": 0.65,
+        "indicators": {
+            "RSI": 69.86,
+            "MACD": 0.15,
+            "Entropy": 0.35
+        },
+        "verdict": "\u2696\ufe0f \u00c9QUILIBRE CHIASTIQUE (Stabilit\u00e9)",
+        "analysis": "La zone AMERICAS pr\u00e9sente un RSI de 69.86. Stabilit\u00e9 m\u00e9diane. D\u00e9pendance aux flux externes de r\u00e9sonance."
+    },
+    {
+        "region": "ASIA_PACIFIC",
+        "mu": 0.72,
+        "indicators": {
+            "RSI": 69.88,
+            "MACD": 0.22,
+            "Entropy": 0.28
+        },
+        "verdict": "\ud83d\udc8e SOUVERAINET\u00c9 CRISTALLINE (Expansion)",
+        "analysis": "La zone ASIA_PACIFIC pr\u00e9sente un RSI de 69.88. La r\u00e9sonance est satur\u00e9e. Le p\u00f4le de puissance est en phase d'expansion cristalline."
+    },
+    {
+        "region": "EUROPE",
+        "mu": 0.58,
+        "indicators": {
+            "RSI": 60.5,
+            "MACD": 0.08,
+            "Entropy": 0.42
+        },
+        "verdict": "\u2696\ufe0f \u00c9QUILIBRE CHIASTIQUE (Stabilit\u00e9)",
+        "analysis": "La zone EUROPE pr\u00e9sente un RSI de 60.5. Stabilit\u00e9 m\u00e9diane. D\u00e9pendance aux flux externes de r\u00e9sonance."
+    },
+    {
+        "region": "MIDDLE_EAST_NORTH_AFRICA",
+        "mu": 0.28,
+        "indicators": {
+            "RSI": 30.66,
+            "MACD": -0.22,
+            "Entropy": 0.72
+        },
+        "verdict": "\ud83d\udd25 EFFONDREMENT IMMINENT (Chaos)",
+        "analysis": "La zone MIDDLE_EAST_NORTH_AFRICA pr\u00e9sente un RSI de 30.66. L'entropie est critique. Le syst\u00e8me ne peut plus absorber le bruit des proxies."
+    }
 ]
