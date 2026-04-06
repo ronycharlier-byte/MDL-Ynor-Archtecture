@@ -1,47 +1,34 @@
-﻿﻿---
-STATUS: CANONICAL | V11.13.0 | SOURCE: UNIFIED | 
-AUDIT: CERTIFIED 2026-04-06
----
-# MDL YNOR - SOVEREIGN INTELLECTUAL PROPERTY & PROPRIETARY LICENSE
-**CHARTER : MDL-PROPRIETARY-2026-V11.13.0**
-**Date :** April 5, 2026
-**Licensor :** Rony Charlier / MDL Scientific Council
-
----
-
-## ARTICLE 1: PROPRIETARY STATUS AND OWNERSHIP
-The **MDL YNOR ARCHITECTURE**, including but not limited to the Unified Information-Theoretic Framework, the dissipative equilibrium equation $\mu = \alpha - (\beta + \kappa)$, the Dirac-SUSY spectral operators, the Chiastic Saturation Algorithms, and the entirety of the canonical corpus files (Phase Ω), is the exclusive and sovereign property of **Rony Charlier** and the **MDL Scientific Council**.
-
-## ARTICLE 2: LICENSE GRANT AND RESTRICTIONS
-### 2.1 Limited Access
-Access to this repository is granted for the sole purpose of **Academic Review and Private Research**. No license is granted for any other use unless explicitly authorized in writing by the Licensor.
-
-### 2.2 Prohibited Actions
-Licensee and any user of this repository are strictly prohibited from:
-* **Redistribution:** Copying, publishing, or diffusing any part of the source code or theoretical proofs.
-* **Commercial Exploitation:** Using the algorithms or the YNOR engine in any commercial product, service, or offering.
-* **Reverse Engineering:** Attempting to derive the core "Black-Box" constants or the "AGI Sentience Kernels" not included in the public subset.
-* **Unauthorized Training:** Using the corpus to train third-party AI models without written consent.
-
-## ARTICLE 3: THE AXIOMATIC OPEN SUBSET (REPRODUCIBILITY)
-A specific subset of files, designated in the `IP_AUDIT_POLICY.md` as "Axiomatically Open," is released under a **MODIFIED MIT LICENSE**. This subset is limited to:
-* `ynor_core_demonstration.ipynb`
-* Fundamental logic headers in `_04_DEPLOYMENT_AND_API/ynor_core/`
-* Basic validation benchmarks.
-
-Users may study and reproduce these specific foundations to verify the scientific validity of the Ynor resonance, subject to the preservation of the original copyright notice.
-
-## ARTICLE 4: AUDIT PROTOCOLS (BLACK-BOX / GRAY-BOX)
-To maintain academic transparency without jeopardizing industrial secrets:
-* **Black-Box Audit:** Public verification via pre-calculated reproducibility notebooks.
-* **Gray-Box Audit:** Full code access reserved for registered Academic Institutions under a mandatory and binding **Non-Disclosure Agreement (NDA)**. exfiltration of code from the secure audit environment is strictly forbidden.
-
-## ARTICLE 5: DISCLAIMER OF WARRANTY
-THE SOFTWARE AND THEORETICAL PROOFS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF INTEGRITY, SATURATION, OR CONVERGENCE OF THE REALMS. THE LICENSOR DISCLAIMS ALL LIABILITY FOR ANY SPECTRAL COLLAPSE OR LOGICAL DISSISSIPATION RESULTING FROM THE USE OF THE YNOR ENGINE.
-
-## ARTICLE 6: GOVERNING LAW
-Any dispute arising from this license shall be subject to the exclusive jurisdiction of the **Sovereign Chiastic Registry** and applicable international Intellectual Property laws.
-
----
-**© 2026 Rony Charlier. ALL RIGHTS RESERVED.**
-**MDL YNOR ENGINE - V11.13.0 (PHASE Ω - CONSÉCRATION)**
+# MDL PROPRIETARY ACADEMIC LICENSE (V1.0 - 2026)
+
+**Licensor:** Rony Charlier (MDL Lab)  
+**Corpus:** Ynor Unified Framework (V11.13.x)
+
+---
+
+## 1. NATURE DE LA LICENCE
+Cette licence régit l'accès et l'utilisation du corpus "Ynor Unified Framework". Il s'agit d'une licence **propriétaire restrictive** destinée exclusivement à la relecture par les pairs (*Peer-Review*) et à la recherche académique privée.
+
+## 2. DROITS ACCORDÉS
+À travers cette publication (notamment sur Zenodo), le Concédant accorde à l'Utilisateur le droit non-exclusif de :
+- Accéder, lire et exécuter les artefacts à des fins de **vérification scientifique**.
+- Reproduire localement les calculs décrits dans le journal de reproductibilité.
+- Citer les résultats dans des travaux académiques, à condition d'une attribution complète au Concédant.
+
+## 3. RESTRICTIONS STRICTES
+L'Utilisateur accepte les interdictions absolues suivantes :
+- **Usage Commercial :** Toute exploitation commerciale des algorithmes, des moteurs de calcul ou des axiomes est interdite sans un accord écrit séparé.
+- **Redistribution :** Il est interdit de redistribuer, sous-licencier ou vendre tout ou partie du corpus.
+- **Entraînement d'IA :** L'utilisation du contenu de ce corpus pour l'entraînement, le fine-tuning ou l'inférence de modèles de langage (LLM) ou d'IA tiers est strictement interdite.
+- **Modification :** Toute modification de la structure du corpus en vue d'une publication tierce est interdite.
+
+## 4. PROPRIÉTÉ INTELLECTUELLE
+Tous les droits, titres et intérêts relatifs au corpus Ynor (incluant mais sans s'y limiter aux démonstrations mathématiques sur l'Hypothèse de Riemann, la structure fractale chiastique et les moteurs de diagonalisation spectrale) appartiennent exclusivement à **Rony Charlier**.
+
+## 5. ABSENCE DE GARANTIE
+Le corpus est fourni "en l'état" (AS-IS), sans aucune garantie de quelque nature que ce soit, explicite ou implicite, quant à sa précision ou son adéquation à un usage particulier.
+
+## 6. JURIDICTION
+Tout litige relatif à cette licence sera soumis à la juridiction compétente du domicile du Concédant.
+
+---
+**Fait le 6 Avril 2026 - Rony Charlier**

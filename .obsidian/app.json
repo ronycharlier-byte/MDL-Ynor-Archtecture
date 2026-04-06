@@ -1,19 +1,55 @@
-﻿﻿{
-  "excludedFolders": [
-    ".git",
-    ".github",
-    "__pycache__",
-    "venv",
-    ".idea",
-    ".vscode",
-    "logs",
-    "static",
-    "templates"
-  ],
-  "useMarkdownLinks": true,
-  "showFrontmatter": true,
-  "defaultViewMode": "preview",
-  "readableLineLength": true,
-  "attachmentFolderPath": "static/img",
-  "community-plugins-enabled": true
+{
+
+
+  "excludedFolders": [
+
+
+    ".git",
+
+
+    ".github",
+
+
+    "__pycache__",
+
+
+    "venv",
+
+
+    ".idea",
+
+
+    ".vscode",
+
+
+    "logs",
+
+
+    "static",
+
+
+    "templates"
+
+
+  ],
+
+
+  "useMarkdownLinks": true,
+
+
+  "showFrontmatter": true,
+
+
+  "defaultViewMode": "preview",
+
+
+  "readableLineLength": true,
+
+
+  "attachmentFolderPath": "static/img",
+
+
+  "community-plugins-enabled": true
+
+
 }

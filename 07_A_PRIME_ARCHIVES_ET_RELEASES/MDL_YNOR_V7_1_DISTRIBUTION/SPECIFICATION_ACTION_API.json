@@ -1,69 +1,276 @@
-﻿﻿{
-  "openapi": "3.1.0",
-  "info": {
-    "title": "MDL Ynor Singularity Bridge API",
-    "description": "Interface de contrôle unifie pour le Formalisme Logique Smantique V11.5. Accs restreint aux serveurs canoniques Ynor.",
-    "version": "11.5.0"
-  },
-  "servers": [
-    {
-      "url": "https://api-ynor-v11-5.render.com",
-      "description": "Main Singularity Bridge Gateway"
-    }
-  ],
-  "paths": {
-    "/dispatch": {
-      "post": {
-        "summary": "Gouvernance Canonique Unifie (YNOR)",
-        "operationId": "ynorGovernance",
-        "description": "Point d'entre unique pour l'audit, le Formalisme Logique Smantique, la cartographie et le logging chiastique.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "action": { 
-                    "type": "string", 
-                    "enum": ["audit", "Formalisme Logique Smantique", "map", "search", "consensus", "log"],
-                    "description": "L'opration systmique effectuer."
-                  },
-                  "payload": { 
-                    "type": "string", 
-                    "description": "La requête utilisateur ou les donnes traiter."
-                  },
-                  "license_key": { 
-                    "type": "string", 
-                    "default": "MDL-SINGULARITY-2026-V11.5-OMEGA-BRIDGE",
-                    "description": "Clde stabilitSingularity Bridge active."
-                  }
-                },
-                "required": ["action", "payload", "license_key"]
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": { 
-            "description": "Rponse certifie du Conseil du Formalisme Logique Smantique",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "status": { "type": "string" },
-                    "mu": { "type": "number" },
-                    "projection": { "type": "string" },
-                    "message": { "type": "string" }
-                  }
-                }
-              }
-            }
-          },
-          "403": { "description": "Accs refus- Licence ou Signature Omega invalide" }
-        }
-      }
-    }
-  }
-}
+{
+
+
+
+  "openapi": "3.1.0",
+
+
+
+  "info": {
+
+
+
+    "title": "MDL Ynor Singularity Bridge API",
+
+
+
+    "description": "Interface de contrôle unifie pour le Formalisme Logique Smantique V11.5. Accs restreint aux serveurs canoniques Ynor.",
+
+
+
+    "version": "11.5.0"
+
+
+
+  },
+
+
+
+  "servers": [
+
+
+
+    {
+
+
+
+      "url": "https://api-ynor-v11-5.render.com",
+
+
+
+      "description": "Main Singularity Bridge Gateway"
+
+
+
+    }
+
+
+
+  ],
+
+
+
+  "paths": {
+
+
+
+    "/dispatch": {
+
+
+
+      "post": {
+
+
+
+        "summary": "Gouvernance Canonique Unifie (YNOR)",
+
+
+
+        "operationId": "ynorGovernance",
+
+
+
+        "description": "Point d'entre unique pour l'audit, le Formalisme Logique Smantique, la cartographie et le logging sym?trie r?cursive.",
+
+
+
+        "requestBody": {
+
+
+
+          "required": true,
+
+
+
+          "content": {
+
+
+
+            "application/json": {
+
+
+
+              "schema": {
+
+
+
+                "type": "object",
+
+
+
+                "properties": {
+
+
+
+                  "action": { 
+
+
+
+                    "type": "string", 
+
+
+
+                    "enum": ["audit", "Formalisme Logique Smantique", "map", "search", "consensus", "log"],
+
+
+
+                    "description": "L'opration systmique effectuer."
+
+
+
+                  },
+
+
+
+                  "payload": { 
+
+
+
+                    "type": "string", 
+
+
+
+                    "description": "La requête utilisateur ou les donnes traiter."
+
+
+
+                  },
+
+
+
+                  "license_key": { 
+
+
+
+                    "type": "string", 
+
+
+
+                    "default": "MDL-SINGULARITY-2026-V11.5-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE",
+
+
+
+                    "description": "Clde stabilitSingularity Bridge active."
+
+
+
+                  }
+
+
+
+                },
+
+
+
+                "required": ["action", "payload", "license_key"]
+
+
+
+              }
+
+
+
+            }
+
+
+
+          }
+
+
+
+        },
+
+
+
+        "responses": {
+
+
+
+          "200": { 
+
+
+
+            "description": "Rponse certifie du Conseil du Formalisme Logique Smantique",
+
+
+
+            "content": {
+
+
+
+              "application/json": {
+
+
+
+                "schema": {
+
+
+
+                  "type": "object",
+
+
+
+                  "properties": {
+
+
+
+                    "status": { "type": "string" },
+
+
+
+                    "mu": { "type": "number" },
+
+
+
+                    "projection": { "type": "string" },
+
+
+
+                    "message": { "type": "string" }
+
+
+
+                  }
+
+
+
+                }
+
+
+
+              }
+
+
+
+            }
+
+
+
+          },
+
+
+
+          "403": { "description": "Accs refus- Licence ou Signature Final Consolidated Review / V11.13.0 invalide" }
+
+
+
+        }
+
+
+
+      }
+
+
+
+    }
+
+
+
+  }
+
+
+
+}
+
+
+

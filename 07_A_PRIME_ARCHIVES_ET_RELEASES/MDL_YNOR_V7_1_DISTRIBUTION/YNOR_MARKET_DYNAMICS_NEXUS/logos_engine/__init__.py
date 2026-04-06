@@ -1,1 +1,2 @@
-﻿﻿# Logos Engine Core V11.9.7
+# Logos Engine Core V11.9.7
+

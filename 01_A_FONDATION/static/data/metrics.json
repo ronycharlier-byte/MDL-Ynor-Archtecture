@@ -1,10 +1,37 @@
-﻿﻿{
-    "timestamp": 1775343168.0884776,
-    "axes": {
-        "saturation_mu": 0.8741869220256315,
-        "symmetry_chi": 1.0,
-        "resonance_lambda": 0.9999783766394189
-    },
-    "status": "CORPUS_OPTIMIZED",
-    "hash": "6ab8ad098ca1436fd5f908c8c7c2ad213cc91817ff53265b04c5325330baaa67"
+{
+
+
+
+    "timestamp": 1775343168.0884776,
+
+
+
+    "axes": {
+
+
+
+        "saturation_mu": 0.8741869220256315,
+
+
+
+        "symmetry_chi": 1.0,
+
+
+
+        "resonance_lambda": 0.9999783766394189
+
+
+
+    },
+
+
+
+    "status": "CORPUS_OPTIMIZED",
+
+
+
+    "hash": "6ab8ad098ca1436fd5f908c8c7c2ad213cc91817ff53265b04c5325330baaa67"
+
+
+
 }

@@ -1,70 +1,277 @@
-﻿﻿﻿{
-  "stage": "step_5_constitution_pdf_augmented",
-  "total_documents": 9,
-  "output_root": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES",
-  "items": [
-    {
-      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.pdf",
-      "family": "mathematique",
-      "pages": 193,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathmatique intgrale du noyau MDL Ynor.pdf",
-      "family": "mathematique",
-      "pages": 125,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL Ynor Constitution/Chapitre I — Formalisation mathmatique intgrale du noyau MDL Ynor.pdf",
-      "family": "constitutionnel",
-      "pages": 125,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/Chapitre I — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/Chapitre I — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systmes Dissipatifs Amplification Borne.pdf",
-      "family": "constitutionnel",
-      "pages": 24,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systmes Dissipatifs Amplification Borne.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systmes Dissipatifs Amplification Borne.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL Ynor Constitution/MDL Ynor — Thorie Structurelle des Systmes Dissipatifs Amplification Borne.pdf",
-      "family": "constitutionnel",
-      "pages": 88,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thorie Structurelle des Systmes Dissipatifs Amplification Borne.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thorie Structurelle des Systmes Dissipatifs Amplification Borne.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL Ynor Constitution/MDL Ynor — Thormes fondamentaux de la marge dissipative.pdf",
-      "family": "constitutionnel",
-      "pages": 47,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thormes fondamentaux de la marge dissipative.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thormes fondamentaux de la marge dissipative.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL Ynor Constitution/MDL Ynor — Traitdes dynamiques dissipatives et de la stabilitstructurelle.pdf",
-      "family": "constitutionnel",
-      "pages": 73,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Traitdes dynamiques dissipatives et de la stabilitstructurelle.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Traitdes dynamiques dissipatives et de la stabilitstructurelle.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifie V1.pdf",
-      "family": "constitutionnel",
-      "pages": 11,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifie V1.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifie V1.fractale_compagnon.pdf"
-    },
-    {
-      "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.pdf",
-      "family": "corpus_formel",
-      "pages": 2,
-      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.fractale.md",
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.fractale_compagnon.pdf"
-    }
-  ]
+{
+
+
+
+  "stage": "step_5_constitution_pdf_augmented",
+
+
+
+  "total_documents": 9,
+
+
+
+  "output_root": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES",
+
+
+
+  "items": [
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.pdf",
+
+
+
+      "family": "mathematique",
+
+
+
+      "pages": 193,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathmatique intgrale du noyau MDL Ynor.pdf",
+
+
+
+      "family": "mathematique",
+
+
+
+      "pages": 125,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/Chapitre I — Formalisation mathmatique intgrale du noyau MDL Ynor.pdf",
+
+
+
+      "family": "constitutionnel",
+
+
+
+      "pages": 125,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/Chapitre I — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/Chapitre I — Formalisation mathmatique intgrale du noyau MDL Ynor.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systmes Dissipatifs Amplification Borne.pdf",
+
+
+
+      "family": "constitutionnel",
+
+
+
+      "pages": 24,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systmes Dissipatifs Amplification Borne.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systmes Dissipatifs Amplification Borne.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/MDL Ynor — Thorie Structurelle des Systmes Dissipatifs Amplification Borne.pdf",
+
+
+
+      "family": "constitutionnel",
+
+
+
+      "pages": 88,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thorie Structurelle des Systmes Dissipatifs Amplification Borne.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thorie Structurelle des Systmes Dissipatifs Amplification Borne.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/MDL Ynor — Thormes fondamentaux de la marge dissipative.pdf",
+
+
+
+      "family": "constitutionnel",
+
+
+
+      "pages": 47,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thormes fondamentaux de la marge dissipative.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Thormes fondamentaux de la marge dissipative.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/MDL Ynor — Traitdes dynamiques dissipatives et de la stabilitstructurelle.pdf",
+
+
+
+      "family": "constitutionnel",
+
+
+
+      "pages": 73,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Traitdes dynamiques dissipatives et de la stabilitstructurelle.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Traitdes dynamiques dissipatives et de la stabilitstructurelle.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifie V1.pdf",
+
+
+
+      "family": "constitutionnel",
+
+
+
+      "pages": 11,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifie V1.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifie V1.fractale_compagnon.pdf"
+
+
+
+    },
+
+
+
+    {
+
+
+
+      "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.pdf",
+
+
+
+      "family": "corpus_formel",
+
+
+
+      "pages": 2,
+
+
+
+      "markdown_rewrite": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.fractale.md",
+
+
+
+      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.fractale_compagnon.pdf"
+
+
+
+    }
+
+
+
+  ]
+
+
+
 }

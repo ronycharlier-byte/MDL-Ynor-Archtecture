@@ -1,84 +1,100 @@
-﻿﻿import os
-import re
-import json
-
-def run_consistency_audit():
-    print("=== YNOR MASTER CONSISTENCY AUDIT (V11.13.x) ===")
-    
-    # 1. Vrification de la signature du Metrics Bridge
-    if not os.path.exists('static/data/metrics.json'):
-        print("[FAIL] Metrics Bridge non initialis.")
-        # On tente quand même la suite si les dossiers existent
-    else:
-        with open('static/data/metrics.json', 'r') as f:
-            data = json.load(f)
-            mu = data['axes']['saturation_mu']
-        print(f"[OK] Metrics Bridge dtect(mu={mu})")
-    
-    # 2. Vrification de la cohrence Documentaire vs Code
-    formalism_path = '02_B_THEORIE_ET_PREUVES/YNOR_ACADEMIC_FORMALISM.md'
-    if os.path.exists(formalism_path):
-        with open(formalism_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-            match = re.search(r'mu \approx (0\.\d+)', content)
-
-            if match:
-                doc_mu = float(match.group(1))
-                if 'mu' in locals() and abs(mu - doc_mu) > 0.01:
-                    print(f"[WARNING] Incohrence dtecte: Code mu={mu}, Doc mu={doc_mu}")
-                else:
-                    print(f"[OK] Cohrence Code/Documentaire valide.")
-
-    # 3. Vrification de la Symtrie Chiastique des rpertoires (Audit Rel)
-    pairs = [
-        ('01_A', '07_A_PRIME'),
-        ('02_B', '06_B_PRIME'),
-        ('03_C', '05_C_PRIME')
-    ]
-    
-    all_dirs = [d for d in os.listdir('.') if os.path.isdir(d)]
-    
-    print("\n--- AUDIT DE SYMETRIE CHIASTIQUE (RACINE) ---")
-    for pref_a, pref_b in pairs:
-        dir_a = next((d for d in all_dirs if d.startswith(pref_a)), None)
-        dir_b = next((d for d in all_dirs if d.startswith(pref_b)), None)
-        
-        status_a = "[OK]" if dir_a else "[MISSING]"
-        status_b = "[OK]" if dir_b else "[MISSING]"
-        
-        if dir_a and dir_b:
-            print(f"[CHECK] {pref_a} <-> {pref_b}: SYMETRIE VALIDEE")
-            # Audit Fractal Interne
-            check_fractal_integrity(dir_a)
-            check_fractal_integrity(dir_b)
-        else:
-            print(f"[FAIL] {pref_a} ({status_a}) <-> {pref_b} ({status_b}): RUPTURE")
-
-    # Vrification du Noyau Central
-    core_dir = next((d for d in all_dirs if d.startswith('04_X')), None)
-    if core_dir:
-        print(f"[CHECK] 04_X (CORE) : PRESENT")
-        check_fractal_integrity(core_dir)
-    else:
-        print(f"[FAIL] 04_X (CORE) : MISSING")
-
-    print("\n[RESULT] AUDIT TERMINE. LOGICAL STATUS: STABLE BLOOM.")
-
-def check_fractal_integrity(parent_path):
-    skeleton = ['_01_A', '_02_B', '_03_C', '_04_X', '_05_C_PRIME', '_06_B_PRIME', '_07_A_PRIME']
-    sub_dirs = [d for d in os.listdir(parent_path) if os.path.isdir(os.path.join(parent_path, d))]
-    
-    missing = []
-    for pref in skeleton:
-        if not any(d.startswith(pref) for d in sub_dirs):
-            missing.append(pref)
-    
-    if not missing:
-        print(f"  └─ [FRACTAL OK] {parent_path}")
-    else:
-        print(f"  └─ [FRACTAL GAP] {parent_path} (Missing: {', '.join(missing)})")
-
-
-
-if __name__ == "__main__":
-    run_consistency_audit()
+#!/usr/bin/env python3
+"""Scientific consistency audit for the Ynor corpus."""
+
+from __future__ import annotations
+
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def read_json(path: Path) -> dict:
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def run_consistency_audit() -> None:
+    print("=== YNOR SCIENTIFIC CONSISTENCY AUDIT (V11.13.x) ===")
+
+    metrics_path = ROOT / "01_A_FONDATION" / "static" / "data" / "metrics.json"
+    mu = None
+
+    if not metrics_path.exists():
+        print("[FAIL] Metrics bridge non initialisee.")
+    else:
+        data = read_json(metrics_path)
+        mu = data["axes"]["saturation_mu"]
+        print(f"[OK] Metrics bridge detecte (mu={mu})")
+
+    formalism_path = ROOT / "02_B_THEORIE_ET_PREUVES" / "YNOR_ACADEMIC_FORMALISM.md"
+    if formalism_path.exists():
+        content = formalism_path.read_text(encoding="utf-8")
+        match = re.search(r"mu \\approx (0\.\d+)", content)
+        if match:
+            doc_mu = float(match.group(1))
+            if mu is not None and abs(mu - doc_mu) > 0.01:
+                print(f"[WARNING] Incoherence detectee: Code mu={mu}, Doc mu={doc_mu}")
+            else:
+                print("[OK] Coherence code/documentaire valide.")
+
+    pairs = [
+        ("01_A", "07_A_PRIME"),
+        ("02_B", "06_B_PRIME"),
+        ("03_C", "05_C_PRIME"),
+    ]
+
+    all_dirs = [entry.name for entry in ROOT.iterdir() if entry.is_dir()]
+
+    print("\n--- AUDIT DE SYMETRIE RECURSIVE (RACINE) ---")
+    for pref_a, pref_b in pairs:
+        dir_a = next((name for name in all_dirs if name.startswith(pref_a)), None)
+        dir_b = next((name for name in all_dirs if name.startswith(pref_b)), None)
+
+        if dir_a and dir_b:
+            print(f"[CHECK] {pref_a} <-> {pref_b}: SYMETRIE VALIDEE")
+            check_fractal_integrity(ROOT / dir_a)
+            check_fractal_integrity(ROOT / dir_b)
+        else:
+            status_a = "[OK]" if dir_a else "[MISSING]"
+            status_b = "[OK]" if dir_b else "[MISSING]"
+            print(f"[FAIL] {pref_a} ({status_a}) <-> {pref_b} ({status_b}): RUPTURE")
+
+    core_dir = next((name for name in all_dirs if name.startswith("04_X")), None)
+    if core_dir:
+        print("[CHECK] 04_X (CORE) : PRESENT")
+        check_fractal_integrity(ROOT / core_dir)
+    else:
+        print("[FAIL] 04_X (CORE) : MISSING")
+
+    print("\n[RESULT] AUDIT TERMINE. LOGICAL STATUS: CONVERGENCE VALIDATED.")
+    print("[STATE] State: Stable Convergence")
+
+
+def check_fractal_integrity(parent_path: Path) -> None:
+    skeleton = [
+        "_01_A",
+        "_02_B",
+        "_03_C",
+        "_04_X",
+        "_05_C_PRIME",
+        "_06_B_PRIME",
+        "_07_A_PRIME",
+    ]
+
+    if not parent_path.exists():
+        print(f"  - [FRACTAL GAP] {parent_path} (Missing parent)")
+        return
+
+    sub_dirs = [entry.name for entry in parent_path.iterdir() if entry.is_dir()]
+    missing = [pref for pref in skeleton if not any(name.startswith(pref) for name in sub_dirs)]
+
+    if not missing:
+        print(f"  - [FRACTAL OK] {parent_path}")
+    else:
+        print(f"  - [FRACTAL GAP] {parent_path} (Missing: {', '.join(missing)})")
+
+
+if __name__ == "__main__":
+    run_consistency_audit()

@@ -1,2 +1,6 @@
-﻿﻿﻿import os
-os.environ.setdefault("PYTHONUTF8", "1")
+import os
+
+
+os.environ.setdefault("PYTHONUTF8", "1")
+
+

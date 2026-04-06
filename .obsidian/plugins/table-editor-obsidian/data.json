@@ -1,6 +1,16 @@
-﻿﻿{
-  "formatType": "normal",
-  "showRibbonIcon": true,
-  "bindEnter": true,
-  "bindTab": true
+{
+
+
+  "formatType": "normal",
+
+
+  "showRibbonIcon": true,
+
+
+  "bindEnter": true,
+
+
+  "bindTab": true
+
+
 }

@@ -1,1 +1,1 @@
-﻿﻿from fastapi import FastAPI; import os; app = FastAPI(title='MDL YNOR OMEGA'); @app.get('/') async def root(): return {'status': 'LIVE', 'mu': 1.0}; @app.get('/health') async def health(): return {'status': 'ok'}
+from fastapi import FastAPI; import os; app = FastAPI(title='MDL YNOR FINAL CONSOLIDATED REVIEW / V11.13.0'); @app.get('/') async def root(): return {'status': 'LIVE', 'mu': 1.0}; @app.get('/health') async def health(): return {'status': 'ok'}

@@ -1,640 +1,136 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
+"""Normalize scientific corpus files and strip BOM markers.
 
-
-
-"""Scan and normalize mojibake in markdown and JSON files.
-
-
-
-
-
-
-
-The script is intentionally conservative:
-
-
-
-- it only touches .md and .json files;
-
-
-
-- it rewrites line by line, only when a candidate repair improves the text;
-
-
-
-- it validates JSON after repair before writing.
-
-
-
+The tool is intentionally conservative:
+- it targets only `.py`, `.md`, `.json`, and `.jsonld` files;
+- it removes leading BOM markers and any stray U+FEFF characters;
+- it normalizes line endings to the current platform convention;
+- it optionally creates `.bak` backups before writing.
 """
-
-
-
-
-
-
 
 from __future__ import annotations
 
-
-
-
-
-
-
 import argparse
-
-
-
 import json
-
-
-
-import re
-
-
-
-import shutil
-
-
-
 import sys
-
-
-
-import unicodedata
-
-
-
 from dataclasses import dataclass
-
-
-
 from pathlib import Path
-
-
-
 from typing import Iterable
 
-
-
-
-
-
-
-
-
-
-
-MOJIBAKE_PATTERNS = (
-
-
-
-    re.compile(r"."),
-
-
-
-    re.compile(r"."),
-
-
-
-    re.compile(r"[]"),
-
-
-
-    re.compile(r""),
-
-
-
-)
-
-
-
-
-
-
-
-
-
+TARGET_SUFFIXES = {".py", ".md", ".json", ".jsonld"}
+LINE_ENDING = "\r\n" if sys.platform.startswith("win") else "\n"
 
 
 @dataclass
-
-
-
 class FileReport:
-
-
-
     path: Path
-
-
-
-    suspicious_before: int
-
-
-
-    suspicious_after: int
-
-
-
     changed: bool
+    removed_bom: int
+    line_ending_changed: bool
+    json_valid: bool | None = None
 
 
-
-    valid_json: bool | None = None
-
-
-
-
-
-
-
-
-
-
-
-def suspicious_count(text: str) -> int:
+def iter_target_files(roots: list[Path]) -> Iterable[Path]:
+    for root in roots:
+        if root.is_file():
+            if root.suffix.lower() in TARGET_SUFFIXES:
+                yield root
+            continue
+        if not root.exists():
+            continue
+        for path in root.rglob("*"):
+            if path.is_file() and path.suffix.lower() in TARGET_SUFFIXES:
+                yield path
 
 
+def normalize_text(text: str) -> tuple[str, int, bool]:
+    removed_bom = text.count("\ufeff")
+    if removed_bom:
+        text = text.replace("\ufeff", "")
 
-    return sum(len(pattern.findall(text)) for pattern in MOJIBAKE_PATTERNS)
-
-
-
-
-
-
-
-
-
+    line_ending_changed = ("\r\n" in text) or ("\r" in text)
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = LINE_ENDING.join(text.split("\n"))
+    return text, removed_bom, line_ending_changed
 
 
-def candidate_repair(text: str) -> str | None:
+def process_file(path: Path, *, apply: bool, backup: bool) -> FileReport:
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        original = handle.read()
 
+    normalized, removed_bom, line_ending_changed = normalize_text(original)
+    changed = normalized != original
+    json_valid: bool | None = None
 
-
-    candidates: list[str] = []
-
-
-
-
-
-
-
-    for encoding in ("cp1252", "latin-1"):
-
-
-
+    if path.suffix.lower() in {".json", ".jsonld"}:
         try:
-
-
-
-            fixed = text.encode(encoding).decode("utf-8")
-
-
-
-        except (UnicodeEncodeError, UnicodeDecodeError):
-
-
-
-            continue
-
-
-
-        candidates.append(unicodedata.normalize("NFC", fixed))
-
-
-
-
-
-
-
-    if not candidates:
-
-
-
-        return None
-
-
-
-
-
-
-
-    best = min(candidates, key=lambda item: (suspicious_count(item), item.count(""), abs(len(item) - len(text))))
-
-
-
-    if suspicious_count(best) < suspicious_count(text):
-
-
-
-        return best
-
-
-
-    return None
-
-
-
-
-
-
-
-
-
-
-
-def normalize_text(text: str) -> tuple[str, bool]:
-
-
-
-    changed = False
-
-
-
-    lines: list[str] = []
-
-
-
-
-
-
-
-    for line in text.splitlines(keepends=True):
-
-
-
-        repaired = candidate_repair(line)
-
-
-
-        if repaired is not None and repaired != line:
-
-
-
-            lines.append(repaired)
-
-
-
-            changed = True
-
-
-
-        else:
-
-
-
-            lines.append(line)
-
-
-
-
-
-
-
-    normalized = "".join(lines)
-
-
-
-    if normalized != text:
-
-
-
-        changed = True
-
-
-
-    return normalized, changed
-
-
-
-
-
-
-
-
-
-
-
-def iter_target_files(paths: Iterable[Path]) -> Iterable[Path]:
-
-
-
-    for base in paths:
-
-
-
-        if base.is_file() and base.suffix.lower() in {".md", ".json"}:
-
-
-
-            yield base
-
-
-
-            continue
-
-
-
-        if not base.exists():
-
-
-
-            continue
-
-
-
-        for file in base.rglob("*"):
-
-
-
-            if file.is_file() and file.suffix.lower() in {".md", ".json"}:
-
-
-
-                yield file
-
-
-
-
-
-
-
-
-
-
-
-def process_file(path: Path, apply: bool, backup: bool) -> FileReport:
-
-
-
-    original = path.read_text(encoding="utf-8", errors="strict")
-
-
-
-    before = suspicious_count(original)
-
-
-
-    if before == 0:
-
-
-
-        return FileReport(path=path, suspicious_before=0, suspicious_after=0, changed=False)
-
-
-
-
-
-
-
-    repaired, changed = normalize_text(original)
-
-
-
-    after = suspicious_count(repaired)
-
-
-
-    valid_json: bool | None = None
-
-
-
-
-
-
-
-    if path.suffix.lower() == ".json" and changed:
-
-
-
-        try:
-
-
-
-            json.loads(repaired)
-
-
-
-            valid_json = True
-
-
-
+            json.loads(normalized)
+            json_valid = True
         except json.JSONDecodeError:
-
-
-
-            valid_json = False
-
-
-
-            repaired = original
-
-
-
-            changed = False
-
-
-
-            after = before
-
-
-
-
-
-
+            json_valid = False
 
     if changed and apply:
-
-
-
         if backup:
-
-
-
-            shutil.copy2(path, path.with_suffix(path.suffix + ".bak"))
-
-
-
-        path.write_text(repaired, encoding="utf-8", newline="")
-
-
-
-
-
-
+            backup_path = path.with_suffix(path.suffix + ".bak")
+            backup_path.write_text(original, encoding="utf-8", newline="")
+        path.write_text(normalized, encoding="utf-8", newline="")
 
     return FileReport(
-
-
-
         path=path,
-
-
-
-        suspicious_before=before,
-
-
-
-        suspicious_after=after,
-
-
-
         changed=changed,
-
-
-
-        valid_json=valid_json,
-
-
-
+        removed_bom=removed_bom,
+        line_ending_changed=line_ending_changed,
+        json_valid=json_valid,
     )
 
 
-
-
-
-
-
-
-
-
-
-def main() -> int:
-
-
-
-    parser = argparse.ArgumentParser(description="Normalize encoding issues in .md and .json files.")
-
-
-
-    parser.add_argument("paths", nargs="*", default=["."], help="Root paths to scan.")
-
-
-
-    parser.add_argument("--apply", action="store_true", help="Write repaired files back to disk.")
-
-
-
-    parser.add_argument("--backup", action="store_true", help="Create .bak copies before writing.")
-
-
-
-    args = parser.parse_args()
-
-
-
-
-
-
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="Remove BOM markers and normalize scientific text encodings."
+    )
+    parser.add_argument(
+        "paths",
+        nargs="*",
+        default=["."],
+        help="Files or directories to scan. Defaults to the current directory.",
+    )
+    parser.add_argument(
+        "--apply",
+        action="store_true",
+        help="Write normalized content back to disk.",
+    )
+    parser.add_argument(
+        "--backup",
+        action="store_true",
+        help="Write a .bak copy before modifying each file.",
+    )
+    args = parser.parse_args(argv)
 
     roots = [Path(p).resolve() for p in args.paths]
-
-
-
     reports: list[FileReport] = []
 
-
-
-
-
-
-
     for file_path in iter_target_files(roots):
-
-
-
         try:
-
-
-
             reports.append(process_file(file_path, apply=args.apply, backup=args.backup))
-
-
-
         except UnicodeDecodeError as exc:
-
-
-
             print(f"[skip] {file_path} : {exc}", file=sys.stderr)
-
-
-
         except json.JSONDecodeError as exc:
+            print(f"[skip] {file_path} : invalid JSON ({exc})", file=sys.stderr)
 
-
-
-            print(f"[skip] {file_path} : invalid UTF-8/JSON content ({exc})", file=sys.stderr)
-
-
-
-
-
-
-
-    changed = [r for r in reports if r.changed]
-
-
-
+    changed = [report for report in reports if report.changed]
     print(f"scanned={len(reports)} changed={len(changed)} apply={args.apply}")
 
-
-
     for report in changed:
-
-
-
         extra = ""
-
-
-
-        if report.valid_json is not None:
-
-
-
-            extra = f" json_valid={report.valid_json}"
-
-
-
+        if report.json_valid is not None:
+            extra = f" json_valid={report.json_valid}"
         print(
-
-
-
-            f"{report.path} | suspicious_before={report.suspicious_before} "
-
-
-
-            f"suspicious_after={report.suspicious_after}{extra}"
-
-
-
+            f"{report.path} | removed_bom={report.removed_bom} "
+            f"line_endings_changed={report.line_ending_changed}{extra}"
         )
-
-
-
-
-
-
 
     return 0
 
 
-
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
-
-
-
     raise SystemExit(main())
-
-
-

@@ -1,90 +1,268 @@
-﻿﻿---
-STATUS: CANONICAL | V11.13.0 | AUDIT: CERTIFIED | OMEGA
----
-# YNOR - 5-MINUTE INVESTOR PITCH (LIVE SCRIPT) - VERSION FRACTALE ET CHIASTIQUE
-
-
-
-Source : `MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/LIVE_PITCH_SCRIPT.md`
-
-
-
-## A. Ouverture
-
-*(Pacing: Slow, deliberate, zero rush. Let the silences work.)*
-
-
-
-## B. Expansion
-
-Le texte se dplie selon les lignes suivantes :
-
-- 0:00 — THE HOOK (IMMEDIATE)
-
-- 0:20 — THE PROBLEM (UNIVERSAL)
-
-- 1:00 — THE FUNDAMENTAL INSIGHT
-
-- 1:20 — THE SOLUTION (CLEAR, INEVITABLE)
-
-- 1:45 — THE PRODUCT SIMPLICITY
-
-
-
-## C. Matiere
-
-Le mouvement du texte fait passer une intuition initiale vers une forme plus structure.
-
-
-
-## X. Centre
-
-Le centre chiastique est la conversion d'une these en desir de transmission.
-
-
-
-## C'. Retour
-
-Au retour du centre, le texte se relit comme un mcanisme de clarification, de stabilisation ou d'institution.
-
-
-
-## B'. Miroir
-
-Les titres ou repres structurants deviennent les miroirs de son organisation :
-
-- YNOR - 5-MINUTE INVESTOR PITCH (LIVE SCRIPT)
-
-- 0:00 — THE HOOK (IMMEDIATE)
-
-- 0:20 — THE PROBLEM (UNIVERSAL)
-
-- 1:00 — THE FUNDAMENTAL INSIGHT
-
-- 1:20 — THE SOLUTION (CLEAR, INEVITABLE)
-
-- 1:45 — THE PRODUCT SIMPLICITY
-
-
-
-## A'. Cloture
-
-La clôture rpond l'ouverture : ce qui commençait comme noncdevient ici arche, retour et scellement fractal.
-
-
-
-Forme chiastique :
-
-- A : ouverture
-
-- B : dploiement
-
-- C : matire
-
-- X : centre
-
-- C' : retour
-
-- B' : miroir
-
+---
+
+
+STATUS: CANONICAL | V11.13.0 | AUDIT: CERTIFIED | FINAL CONSOLIDATED REVIEW / V11.13.0
+
+
+---
+
+
+# YNOR - 5-MINUTE INVESTOR PITCH (LIVE SCRIPT) - VERSION FRACTALE ET CHIASTIQUE
+
+
+
+
+
+
+
+
+
+
+
+Source : `MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/LIVE_PITCH_SCRIPT.md`
+
+
+
+
+
+
+
+
+
+
+
+## A. Ouverture
+
+
+
+
+
+*(Pacing: Slow, deliberate, zero rush. Let the silences work.)*
+
+
+
+
+
+
+
+
+
+
+
+## B. Expansion
+
+
+
+
+
+Le texte se dplie selon les lignes suivantes :
+
+
+
+
+
+- 0:00 — THE HOOK (IMMEDIATE)
+
+
+
+
+
+- 0:20 — THE PROBLEM (UNIVERSAL)
+
+
+
+
+
+- 1:00 — THE FUNDAMENTAL INSIGHT
+
+
+
+
+
+- 1:20 — THE SOLUTION (CLEAR, INEVITABLE)
+
+
+
+
+
+- 1:45 — THE PRODUCT SIMPLICITY
+
+
+
+
+
+
+
+
+
+
+
+## C. Matiere
+
+
+
+
+
+Le mouvement du texte fait passer une intuition initiale vers une forme plus structure.
+
+
+
+
+
+
+
+
+
+
+
+## X. Centre
+
+
+
+
+
+Le centre sym?trie r?cursive est la conversion d'une these en desir de transmission.
+
+
+
+
+
+
+
+
+
+
+
+## C'. Retour
+
+
+
+
+
+Au retour du centre, le texte se relit comme un mcanisme de clarification, de stabilisation ou d'institution.
+
+
+
+
+
+
+
+
+
+
+
+## B'. Miroir
+
+
+
+
+
+Les titres ou repres structurants deviennent les miroirs de son organisation :
+
+
+
+
+
+- YNOR - 5-MINUTE INVESTOR PITCH (LIVE SCRIPT)
+
+
+
+
+
+- 0:00 — THE HOOK (IMMEDIATE)
+
+
+
+
+
+- 0:20 — THE PROBLEM (UNIVERSAL)
+
+
+
+
+
+- 1:00 — THE FUNDAMENTAL INSIGHT
+
+
+
+
+
+- 1:20 — THE SOLUTION (CLEAR, INEVITABLE)
+
+
+
+
+
+- 1:45 — THE PRODUCT SIMPLICITY
+
+
+
+
+
+
+
+
+
+
+
+## A'. Cloture
+
+
+
+
+
+La clôture rpond l'ouverture : ce qui commençait comme noncdevient ici arche, retour et scellement fractal.
+
+
+
+
+
+
+
+
+
+
+
+Forme sym?trie r?cursive :
+
+
+
+
+
+- A : ouverture
+
+
+
+
+
+- B : dploiement
+
+
+
+
+
+- C : matire
+
+
+
+
+
+- X : centre
+
+
+
+
+
+- C' : retour
+
+
+
+
+
+- B' : miroir
+
+
+
+
+
 - A' : clôture
