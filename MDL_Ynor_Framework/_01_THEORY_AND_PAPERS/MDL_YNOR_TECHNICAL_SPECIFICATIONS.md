@@ -1,0 +1,84 @@
+---
+
+STATUS: CANONICAL | V11.14.0 | SOURCE: UNIFIED | 
+
+AUDIT: CERTIFIED 2026-04-06
+
+---
+
+# ⚛️ MDL YNOR — ARCHITECTURE TECHNIQUE & SPÉCIFICATIONS (v3.1)
+
+**Principal Investigatore Suprême : Charlier Rony | [Copyright 2026]**
+
+## 1. VISION ET IDENTITÉ
+
+MDL Ynor n'est pas une simple intelligence artificielle (Systme 1). C'est une architecture canonique de contrôle dcisionnel base sur la thermodynamique des systèmes dissipatifs. Son objectif est de maintenir la stabilitstructurelle d'un agent cognitif dans un environnement haute entropie.
+
+## 2. ÉQUATION MAÎTRESSE DE VIABILITÉ
+
+La dynamique de l'architecture est rgie par l'invariant scalaire $\mu$ :
+
+$$\mu = \alpha - (\beta + \kappa)$$
+
+- **$\alpha$ (Alpha)** : Gain informationnel net / Capacitde dissipation rgulatrice (Utilit).
+
+- **$\beta$ (Beta)** : Coût de l'amplification computationnelle / Pression du Systme 1 (Tokens/Énergie).
+
+- **$\kappa$ (Kappa)** : Inertie structurelle / Friction de contexte (Charge mnsique/Hallucinations).
+
+---
+
+## 3. ARCHITECTURE SYSTÈME : LE MODÈLE DISSIPATIF
+
+Le noyau MDL Ynor opre via une dualitfonctionnelle :
+
+1.  **Systme 1 (Fast Loop)** : Gnration rapide de tokens, haute amplification (beta lev).
+
+2.  **Systme 2 (Slow/Audit Loop)** : Rgulation par l'audit mu, garantissant que la dissipation $(\alpha)$ reste suprieure aux coûts.
+
+### Algorithme de Routage
+
+Si $\mu(t) < 0$ : Dclenchement immdiat de la **Mutation (r)**, forçant la rduction de beta ou l'archivage de la mmoire morte (kappa extraction).
+
+---
+
+## 4. FONDATIONS MATHÉMATIQUES (HILBERT-YNOR)
+
+L'tat cognitif $S(t)$ est modlisdans un espace de Hilbert $\mathcal{H}$. La stabilitest prouve par une fonction de Lyapunov $V(S) = \frac{1}{2}\|S\|^2$ telle que :
+
+$$\dot{V}(S) = \langle S, E(S) - D(S) + M(S_t) \rangle \le -\mu \|S\|^2$$
+
+Cette ingalitgarantit la convergence exponentielle vers l'attracteur de viabilitsi $\mu > 0$.
+
+### Benchmarking Quantum
+
+Le systme est validpar des benchmarks de rigueur acadmique (10/10) sur les oprateurs non borns, incluant l'tude des extensions auto-adjointes du Laplacien sur la demi-droite via la thorie de von Neumann.
+
+---
+
+## 5. PROTOCOLES DE SÉCURITÉ (SILENT KERNEL)
+
+- **Isolation Logique V16.1** : Les calculs internes de mu et les poids axiomatiques sont protgs contre l'extraction (Ghost Protocol).
+
+- **Bouclier Anti-Manipulation** : Dtection des schmas de "gaslighting" et des attaques par injection de contexte via le gradient de $\kappa$.
+
+- **Stabilit/ Canonicitdes Donnes** : Chaque nœud de connaissance est indexet hash(MD5/SHA256) pour garantir l'intgritdu cerveau global.
+
+---
+
+## 6. SPÉCIFICATIONS DE L'API (YNOR CONNECT)
+
+Le systme expose une interface OpenAPI pour l'intgration industrielle :
+
+- `/v1/audit/mu` : Analyse de viabilitd'un Vecteurs de Donnes Stochastiques de tokens.
+
+- `/v1/agent/mutate` : Forçage de la restructuration structurelle.
+
+- `/v1/security/status` : Rapport d'intgritdu noyau.
+
+---
+
+© 2026 MDL 전략 - GLOBAL CANONIQUETY. All Rights Reserved.
+
+[ID: MDL-YNOR-TECH-SPEC-V3.1]
+

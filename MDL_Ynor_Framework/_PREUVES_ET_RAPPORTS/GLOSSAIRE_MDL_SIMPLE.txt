@@ -1,0 +1,60 @@
+=============================================================================
+
+
+
+COPYRIGHT (c) 2026 CHARLIER RONY - TOUS DROITS RESERVES
+
+
+
+Principal Investigatore Supreme & Fondateur - Principal Investigatorure MDL Ynor
+
+
+
+Toute reproduction ou utilisation sans autorisation est strictement interdite.
+
+
+
+=============================================================================
+
+
+
+# GLOSSAIRE SIMPLIFIÉ MDL YNOR (POUR TOUS)
+
+
+
+
+
+
+
+- **Marge Dissipative (mu)** : C'est l'indicateur de santde votre systme. 
+
+
+
+    - S'il est positif (>0), tout va bien.
+
+
+
+    - S'il est ngatif (<0), le systme "surchauffe" et va bientôt tomber en panne.
+
+
+
+- **Amplification (beta)** : C'est la vitesse de votre moteur ou la force de votre projet. Plus elle est grande, plus le systme est puissant mais aussi instable.
+
+
+
+- **Dissipation (alpha)** : C'est le systme de refroidissement. C'est ce qui vacue le stress et les problmes.
+
+
+
+- **Inertie (kappa)** : C'est le poids du systme. C'est sa rsistance changer ses habitudes, même quand il y a un problme.
+
+
+
+- **Mutation (r)** : C'est une rparation d'urgence. On change les pices du moteur pour qu'il refroidisse mieux.
+
+
+
+- **Mtacognition** : C'est comme un "cerveau tmoin" qui vrifie que les rparations sont bien faites et ne vont pas causer un autre problme plus tard.
+
+
+

@@ -1,0 +1,48 @@
+ÿþ
+
+
+
+
+
+--- Audit MagnÚtique : Austin Bergstrom (AUS) ---
+
+
+
+
+
+Warning: NOAA API failed (400 Client Error: 400 for url: https://www.ngdc.noaa.gov/geomag-web/calculators/calculateDeclinationlat1=30.1944&lon1=-97.67&startYear=2015&endYear=2015&resultFormat=json). Using approximation.
+
+
+
+
+
+Warning: NOAA API failed (400 Client Error: 400 for url: https://www.ngdc.noaa.gov/geomag-web/calculators/calculateDeclinationlat1=30.1944&lon1=-97.67&startYear=2026&endYear=2026&resultFormat=json). Using approximation.
+
+
+
+
+
+Position: 30.1944, -97.67
+
+
+
+
+
+Cap Vrai: 184.1'%
+
+
+
+
+
+DÚclinaison 2015: -1.50'% -> NumÚro: 19
+
+
+
+
+
+DÚclinaison 2026: -1.50'% -> NumÚro: 19
+
+
+
+
+

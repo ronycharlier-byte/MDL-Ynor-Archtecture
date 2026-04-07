@@ -1,0 +1,195 @@
+ÿþ=====================================================
+
+
+
+
+ [BENCHMARK] YNOR CORE vs BASELINE LLM (No-Guard)    
+
+
+
+
+=====================================================
+
+
+
+
+
+
+
+
+
+ [1/2] Ex%®cution Baseline (Sans Ynor)...
+
+
+
+
+  > Baseline compl%®t%®e. Tokens consomm%®s : 450
+
+
+
+
+
+
+
+
+
+ [2/2] Ex%®cution Ynor Guarded (Sous gouvernance l%]%)...
+
+
+
+
+--- YNOR CORE ::: DEPLOYING INDUSTRIAL GUARD (SESSION: 9c2f4b20-2811-4760-9068-1223d546440f) ---
+
+
+
+
+--- MODEL: gpt-4o ---
+
+
+
+
+ [Step 00] mu = 4.4691 (D_mu=+4.4691) | alpha=4.62 | beta=0.14 | kappa=0.01 | --> CONTINUE
+
+
+
+
+ [Step 01] mu = 8.9279 (D_mu=+4.4589) | alpha=9.23 | beta=0.28 | kappa=0.02 | --> CONTINUE
+
+
+
+
+ [Step 02] mu = 13.3759 (D_mu=+4.4480) | alpha=13.85 | beta=0.42 | kappa=0.05 | --> CONTINUE
+
+
+
+
+ [Step 03] mu = 17.8126 (D_mu=+4.4367) | alpha=18.46 | beta=0.56 | kappa=0.09 | --> CONTINUE
+
+
+
+
+ [Step 04] mu = 22.2377 (D_mu=+4.4251) | alpha=23.08 | beta=0.70 | kappa=0.14 | --> CONTINUE
+
+
+
+
+ [Step 05] mu = 26.6509 (D_mu=+4.4132) | alpha=27.69 | beta=0.84 | kappa=0.20 | --> CONTINUE
+
+
+
+
+ [Step 06] mu = 31.0521 (D_mu=+4.4012) | alpha=32.31 | beta=0.98 | kappa=0.28 | --> CONTINUE
+
+
+
+
+ [Step 07] mu = 35.4411 (D_mu=+4.3889) | alpha=36.92 | beta=1.12 | kappa=0.36 | --> CONTINUE
+
+
+
+
+ [Step 08] mu = 39.8176 (D_mu=+4.3765) | alpha=41.54 | beta=1.26 | kappa=0.46 | --> CONTINUE
+
+
+
+
+ [Step 09] mu = 44.1816 (D_mu=+4.3640) | alpha=46.15 | beta=1.40 | kappa=0.57 | --> CONTINUE
+
+
+
+
+ [Step 10] mu = 48.5329 (D_mu=+4.3513) | alpha=50.77 | beta=1.54 | kappa=0.70 | --> CONTINUE
+
+
+
+
+ [Step 11] mu = 52.8714 (D_mu=+4.3385) | alpha=55.38 | beta=1.68 | kappa=0.83 | --> CONTINUE
+
+
+
+
+ [Step 12] mu = 57.1970 (D_mu=+4.3256) | alpha=60.00 | beta=1.82 | kappa=0.98 | --> CONTINUE
+
+
+
+
+ [Step 13] mu = 61.5096 (D_mu=+4.3126) | alpha=64.62 | beta=1.96 | kappa=1.15 | --> CONTINUE
+
+
+
+
+ [Step 14] mu = 65.8091 (D_mu=+4.2995) | alpha=69.23 | beta=2.10 | kappa=1.32 | --> CONTINUE
+
+
+
+
+ [Step 15] mu = 68.0408 (D_mu=+2.2317) | alpha=72.13 | beta=2.58 | kappa=1.51 | --> CONTINUE
+
+
+
+
+ [Step 16] mu = 70.2266 (D_mu=+2.1859) | alpha=75.03 | beta=3.06 | kappa=1.75 | --> CONTINUE
+
+
+
+
+ [Step 17] mu = 72.3658 (D_mu=+2.1392) | alpha=77.93 | beta=3.54 | kappa=2.03 | --> CONTINUE
+
+
+
+
+ [Step 18] mu = 74.4576 (D_mu=+2.0918) | alpha=80.83 | beta=4.02 | kappa=2.36 | --> CONTINUE
+
+
+
+
+ [Step 19] mu = 76.5013 (D_mu=+2.0438) | alpha=83.73 | beta=4.50 | kappa=2.73 | --> CONTINUE
+
+
+
+
+  > Ynor Guard compl%®t%®. Tokens consomm%®s : 450
+
+
+
+
+
+
+
+
+
+=====================================================
+
+
+
+
+ [SYNTH%êSE LOGIQUE ET FINANCI%êRE]
+
+
+
+
+=====================================================
+
+
+
+
+ %ëconomie de tokens (B%¬ta) : 0
+
+
+
+
+ Gain d'Efficacit%®         : 0.00%
+
+
+
+
+ Statut du Syst%¿me         : %ëCHEC
+
+
+
+
+=====================================================
+
+
+
+

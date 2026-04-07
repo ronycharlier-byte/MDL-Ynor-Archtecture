@@ -1,0 +1,84 @@
+---
+
+STATUS: CANONICAL | V11.14.0 | SOURCE: UNIFIED | 
+
+AUDIT: CERTIFIED 2026-04-06
+
+---
+
+# Module Pdagogique : Dynamique Gomagntique et Navigation Mondiale
+
+## 🎯 Objectifs de l'atelier
+
+- Comprendre les fondements de la drive magntique et son acclration (annes 1990).
+
+- Maîtriser l'utilisation du World Magnetic Model (WMM) dans les systèmes de navigation modernes.
+
+- Analyser les risques oprationnels (Aroports, satellites, faune).
+
+## 📅 Squence de l'atelier
+
+### 1- Introduction aux Nords (15 min)
+
+- Nord Gographique (Rotation fixe).
+
+- Nord Magntique (Vecteurs de Donnes Stochastiques fluctuant).
+
+- Dclinaison Magntique : L'angle de correction (True vs Magnetic).
+
+### 2- Étude de Cas : Aroports (20 min)
+
+- Pourquoi Fairbanks, Austin et Genve ont dû être renomms 
+
+- Rgle de numrotation FAA/AIM (Arrondi la dizaine de degrs).
+
+- Dmonstration pratique : Utilisation du script `runway_renumber.py`.
+
+### 3- Le Moteur Profond : Godynamo et Swarm (25 min)
+
+- Le noyau liquide (Fer/Nickel) -2900 km.
+
+- Le bras de fer Canada vs Sibrie.
+
+- Les "Blobs" de roche continentale influençant les contrastes de temprature.
+
+### 4- Consquences Systmiques : De la Biologie l'ISS (30 min)
+
+- Navigation animale (Cryptochromes, Magntite).
+
+- L'Anomalie de l'Atlantique Sud (SAA) et ses radiations (ISS/Satellites).
+
+- Menace des inversions magntiques Analyse de la stabilitsur 9000 ans.
+
+### 5- Atelier Pratique : Code et Donnes (30 min)
+
+- Installation et excution du script de dtection de renumrotation.
+
+- Consultation Programmatrique de l'API NOAA / BGS.
+
+- Exercice : Calculer la drive d'un trajet Afrique du Sud -> Royaume-Uni (Erreur de 150 km sans WMM).
+
+## 📚 Ressources et Liens
+
+- **WMM 2025/2026** (NOAA/BGS).
+
+- **Mission Swarm** (ESA).
+
+- **Étude Nature Geoscience 2026** (Blobs et Godynamo).
+
+- **Script Local** : `runway_renumber.py`.
+
+---
+
+### 📚 Bibliographie pour l'Instructeur
+
+- **WMM 2026 Policy Manual** (NOAA/BGS).
+
+- **FAA AIM Section 2** (Runway markings).
+
+- **Swarm Data Access** (ESA VirES).
+
+- **Nature 2026** : "The Geodynamo Orchestrators".
+
+*Voir `SOURCES.md` pour le dtail des citations.*
+

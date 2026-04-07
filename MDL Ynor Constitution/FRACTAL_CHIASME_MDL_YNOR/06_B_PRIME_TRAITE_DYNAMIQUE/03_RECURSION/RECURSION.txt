@@ -1,0 +1,7 @@
+﻿Récursion fractale du nœud B_PRIME
+
+Règle 1 : lire la source.
+Règle 2 : identifier le miroir chiastique B.
+Règle 3 : revenir au centre X.
+Règle 4 : rejouer la même logique à l'intérieur du corpus local.
+

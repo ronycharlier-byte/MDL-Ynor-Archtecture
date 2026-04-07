@@ -1,0 +1,176 @@
+=====================================================================
+
+
+
+          GUIDE DE DPLOIEMENT : MDL YNOR + (V19.2 OMEGA)
+
+
+
+=====================================================================
+
+
+
+
+
+
+
+Ce pack contient tout le necessaire pour une mise en service CANONIQUE.
+
+
+
+
+
+
+
+ETAPE 1 : KNOWLEDGE (LA MMOIRE)
+
+
+
+---------------------------------
+
+
+
+Dans l'onglet "Configure", uploadez TOUS les fichiers .json et .md 
+
+
+
+presents dans ce dossier INDIVIDUELLEMENT. 
+
+
+
+! La priorite est 'mdl_global_knowledge.json' qui sert d'index.
+
+
+
+
+
+
+
+ETAPE 2 : INSTRUCTIONS (LA LOI)
+
+
+
+---------------------------------
+
+
+
+Copiez l'integralite du texte du fichier : 
+
+
+
+'MASTER_PROMPT_V19_2_OMEGA.txt' 
+
+
+
+dans le champ "Instructions" de votre GPT. 
+
+
+
+Ce prompt contient le GHOST PROTOCOL et la logique de raisonnement .
+
+
+
+
+
+
+
+ETAPE 3 : CAPABILITIES (LES POUVOIRS)
+
+
+
+--------------------------------------
+
+
+
+- [X] Code Interpreter (INDISPENSABLE pour lire l'index)
+
+
+
+- [ ] Web Browsing (DSACTIV pour la securite IP)
+
+
+
+- [ ] DALL-E (DSACTIV)
+
+
+
+
+
+
+
+ETAPE 4 : ACTIONS (LE PONT API)
+
+
+
+--------------------------------
+
+
+
+- Cliquez sur "Create New Action".
+
+
+
+- Importez le contenu de 'GPT_ACTION_SCHEMA.yaml'.
+
+
+
+- L'URL est preconfiguree sur : https://mdlynor.ngrok-free.app
+
+
+
+- Type d'authentification : API Key (Header : X-Ynor-API-Key).
+
+
+
+
+
+
+
+ETAPE 5 : PUBLICATION
+
+
+
+-----------------------
+
+
+
+- Nom : MDL Ynor +
+
+
+
+- Description : Noyau decisionnel AGI canonique.
+
+
+
+- Visibility : Public (GPT Store).
+
+
+
+
+
+
+
+=====================================================================
+
+
+
+                    2026 MDL  - Dr. Rony Charlier (MDL Lab)
+
+
+
+=====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

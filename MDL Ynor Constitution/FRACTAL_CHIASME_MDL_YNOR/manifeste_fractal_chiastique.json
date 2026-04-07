@@ -1,0 +1,80 @@
+[
+  {
+    "order": "01",
+    "key": "A",
+    "title": "AXIOMATIQUE MINIMALE",
+    "role": "Ouverture fondatrice",
+    "mirror": "A_PRIME",
+    "summary": "Porte d'entree du chiasme et cadre initial des definitions.",
+    "sources": [
+      "Chapitre I - Formalisation axiomatique minimale.pdf"
+    ]
+  },
+  {
+    "order": "02",
+    "key": "B",
+    "title": "THEOREMES DE LA MARGE",
+    "role": "Arc de dissipation amont",
+    "mirror": "B_PRIME",
+    "summary": "Premier arc de dissipation et preparation du spine central.",
+    "sources": [
+      "MDL Ynor - Theoremes fondamentaux de la marge dissipative.pdf"
+    ]
+  },
+  {
+    "order": "03",
+    "key": "C",
+    "title": "THEORIE STRUCTURELLE",
+    "role": "Constitution amont",
+    "mirror": "C_PRIME",
+    "summary": "Charpente structurelle qui prepare l'acces au noyau integral.",
+    "sources": [
+      "MDL Ynor - Theorie Structurelle des Systemes Dissipatifs a Amplification Bornee.pdf"
+    ]
+  },
+  {
+    "order": "04",
+    "key": "X",
+    "title": "NOYAU INTEGRAL",
+    "role": "Centre de symetrie recursive",
+    "mirror": "X",
+    "summary": "Centre de convergence et de normalisation du corpus.",
+    "sources": [
+      "Chapitre I - Formalisation mathematique integrale du noyau MDL Ynor.pdf",
+      "Chapitre XVI - Formalisation mathematique integrale du noyau MDL Ynor.pdf"
+    ]
+  },
+  {
+    "order": "05",
+    "key": "C_PRIME",
+    "title": "CONSTITUTION STRUCTURELLE",
+    "role": "Constitution aval",
+    "mirror": "C",
+    "summary": "Reformulation normative de la couche structurelle.",
+    "sources": [
+      "MDL Ynor - Constitution Structurelle des Systemes Dissipatifs a Amplification Bornee.pdf"
+    ]
+  },
+  {
+    "order": "06",
+    "key": "B_PRIME",
+    "title": "TRAITE DYNAMIQUE",
+    "role": "Arc de dissipation aval",
+    "mirror": "B",
+    "summary": "Arc de dissipation aval et fermeture du cycle.",
+    "sources": [
+      "MDL Ynor - Traite des dynamiques dissipatives et de la stabilite structurelle.pdf"
+    ]
+  },
+  {
+    "order": "07",
+    "key": "A_PRIME",
+    "title": "ARCHITECTURE RECURSIVE",
+    "role": "Cloture architecturale",
+    "mirror": "A",
+    "summary": "Cloture du cycle et relance recursive vers les couches de sortie.",
+    "sources": [
+      "MDL Ynor Architecture - corpus de chapitres et d'articles de cloture"
+    ]
+  }
+]

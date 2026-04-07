@@ -1,0 +1,258 @@
+ÿþ
+
+
+
+
+
+--- Audit MagnÚtique : Austin Bergstrom (AUS) ---
+
+
+
+
+
+Warning: NOAA API failed (400 Client Error: 400 for url: https://www.ngdc.noaa.gov/geomag-web/calculators/calculateDeclinationlat1=30.1944&lon1=-97.67&model=WMM&startYear=2015&startMonth=01&startDay=01&resultFormat=json&key=zNEw7). Using local approximation.
+
+
+
+
+
+Position: 30.1944, -97.67
+
+
+
+
+
+Cap Vrai: 184.1'%
+
+
+
+
+
+DÚclinaison 2015: -2.50'% -> NumÚro: 19
+
+
+
+
+
+DÚclinaison 2026: +3.07'% -> NumÚro: 18
+
+
+
+
+
+python : Traceback (most recent call last):
+
+
+
+
+
+Au caractre Ligne:1 : 1
+
+
+
+
+
++ python "c:\Users\ronyc\Desktop\MDL Ynor 
+
+
+
+
+
+Architecture\MDL_Ynor_Framewo ...
+
+
+
+
+
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+    + CategoryInfo          : NotSpecified: (Traceba 
+
+
+
+
+
+   ck (most recent call last)::String) [], RemoteEx  
+
+
+
+
+
+  ception
+
+
+
+
+
+    + FullyQualifiedErrorId : NativeCommandError
+
+
+
+
+
+ 
+
+
+
+
+
+  File "c:\Users\ronyc\Desktop\MDL Ynor Architecture\
+
+
+
+
+
+MDL_Ynor_Framework\_11_GEOMAGNETISM_AND_WMM\runway_re
+
+
+
+
+
+number.py", line 145, in <module>
+
+
+
+
+
+    check_airport_renumbering("Austin Bergstrom 
+
+
+
+
+
+(AUS)", 30.1944, -97.67, 184.1)
+
+
+
+
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+  File "c:\Users\ronyc\Desktop\MDL Ynor Architecture\
+
+
+
+
+
+MDL_Ynor_Framework\_11_GEOMAGNETISM_AND_WMM\runway_re
+
+
+
+
+
+number.py", line 137, in check_airport_renumbering
+
+
+
+
+
+    print(f"\u26a0\ufe0f ACTION REQUISE : 
+
+
+
+
+
+RenumÚrotation nÚcessaire ({num_2015:02d} -> 
+
+
+
+
+
+{num_2026:02d})")
+
+
+
+
+
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+  File "C:\Users\ronyc\AppData\Local\Python\pythoncor
+
+
+
+
+
+e-3.14-64\Lib\encodings\cp1252.py", line 19, in 
+
+
+
+
+
+encode
+
+
+
+
+
+    return codecs.charmap_encode(input,self.errors,en
+
+
+
+
+
+coding_table)[0]
+
+
+
+
+
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+
+^^^^^^^^^^^^^
+
+
+
+
+
+UnicodeEncodeError: 'charmap' codec can't encode 
+
+
+
+
+
+characters in position 0-1: character maps to 
+
+
+
+
+
+<undefined>
+
+
+
+
+
