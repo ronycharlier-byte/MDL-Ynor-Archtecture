@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 TITLE MDL YNOR - DEMO RUNBOOK (v2.2.0-PROD)
 SETLOCAL
 

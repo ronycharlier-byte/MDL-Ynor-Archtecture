@@ -1,0 +1,269 @@
+# MIROIR TEXTUEL - openapi.json
+
+```text
+{
+
+
+  "openapi": "3.1.0",
+
+
+  "info": {
+
+
+    "title": "MDL YNOR ACADEMIC V11.13.0",
+
+
+    "description": "Autonomous Dispatcher & Canonical Audit API for Ynor V11.13.x. Support for Final Consolidated Review / V11.13.0-Bridge (V11.8).",
+
+
+    "version": "11.13.0"
+
+
+  },
+
+
+  "servers": [
+
+
+    {
+
+
+      "url": "https://mdl-ynor-api.onrender.com",
+
+
+      "description": "Render Production Autonomous Node"
+
+
+    }
+
+
+  ],
+
+
+  "paths": {
+
+
+    "/login": {
+
+
+      "post": {
+
+
+        "summary": "JWT Session Initiation",
+
+
+        "operationId": "login",
+
+
+        "requestBody": {
+
+
+          "required": true,
+
+
+          "content": {
+
+
+            "application/json": {
+
+
+              "schema": {
+
+
+                "type": "object",
+
+
+                "properties": {
+
+
+                  "license_key": { "type": "string" }
+
+
+                },
+
+
+                "required": ["license_key"]
+
+
+              }
+
+
+            }
+
+
+          }
+
+
+        },
+
+
+        "responses": {
+
+
+          "200": { "description": "Token and expiration details" },
+
+
+          "403": { "description": "Forbidden (Invalid Key)" }
+
+
+        }
+
+
+      }
+
+
+    },
+
+
+    "/dispatch": {
+
+
+      "post": {
+
+
+        "summary": "Multi-Agent Autonomous Dispatcher",
+
+
+        "operationId": "dispatch",
+
+
+        "requestBody": {
+
+
+          "required": true,
+
+
+          "content": {
+
+
+            "application/json": {
+
+
+              "schema": {
+
+
+                "type": "object",
+
+
+                "properties": {
+
+
+                  "action": { "type": "string" },
+
+
+                  "payload": { "type": "object" },
+
+
+                  "token": { "type": "string" },
+
+
+                  "license_key": { "type": "string" }
+
+
+                },
+
+
+                "required": ["action", "payload"]
+
+
+              }
+
+
+            }
+
+
+          }
+
+
+        },
+
+
+        "responses": {
+
+
+          "200": {
+
+
+            "description": "Canonical result and mu stability index",
+
+
+            "content": {
+
+
+              "application/json": {
+
+
+                "schema": {
+
+
+                  "type": "object",
+
+
+                  "properties": {
+
+
+                    "status": { "type": "string" },
+
+
+                    "mu": { "type": "number" },
+
+
+                    "verdict": { "type": "string" },
+
+
+                    "data": { "type": "object" }
+
+
+                  }
+
+
+                }
+
+
+              }
+
+
+            }
+
+
+          },
+
+
+          "401": { "description": "Unauthorized (License Gate)" }
+
+
+        }
+
+
+      }
+
+
+    },
+
+
+    "/health": {
+
+
+      "get": {
+
+
+        "summary": "Engine Health Status",
+
+
+        "responses": { "200": { "description": "OK" } }
+
+
+      }
+
+
+    }
+
+
+  }
+
+
+}
+
+
+
+```

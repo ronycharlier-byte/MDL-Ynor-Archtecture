@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 title YNOR CLOUD DEPLOYMENT PORTAL
 color 0B
 setlocal enabledelayedexpansion

@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 TITLE LANCEMENT MDL YNOR (NGROK TUNNEL)
 cd /d "c:\Users\ronyc\Desktop\MDL Ynor Architecture\MDL_Ynor_Framework"
 echo =======================================================

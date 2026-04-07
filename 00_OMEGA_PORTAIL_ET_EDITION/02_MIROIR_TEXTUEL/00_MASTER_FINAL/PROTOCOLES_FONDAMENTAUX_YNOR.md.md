@@ -1,0 +1,33 @@
+# MIROIR TEXTUEL - PROTOCOLES_FONDAMENTAUX_YNOR.md
+
+```text
+---
+
+
+
+STATUS: CANONICAL | V11.13.0 | SOURCE: UNIFIED | 
+
+
+
+AUDIT: CERTIFIED 2026-04-06
+
+
+
+---
+
+
+
+STATUS: CONSOLIDATED V11.13 | CANONICAL SOURCE: TRUE
+
+
+
+
+
+
+
+Ce document a ete consolide dans [YNOR_UNIFIED_PROTOCOLS.md](./YNOR_UNIFIED_PROTOCOLS.md).
+
+
+
+
+```

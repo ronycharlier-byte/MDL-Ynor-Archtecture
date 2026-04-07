@@ -1,5 +1,5 @@
-﻿﻿streamlit
-openai
-pandas
-plotly
-tiktoken
+streamlit
+openai
+pandas
+plotly
+tiktoken

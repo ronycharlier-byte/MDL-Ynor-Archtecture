@@ -1,15 +1,15 @@
-﻿﻿fastapi
-uvicorn[standard]
-pydantic<2
-openai
-anthropic
-google-generativeai
-python-dotenv
-numpy
-requests
-langchain
-langgraph
-pandas
-yfinance
-stockstats
-gunicorn
+﻿﻿fastapi
+uvicorn[standard]
+pydantic<2
+openai
+anthropic
+google-generativeai
+python-dotenv
+numpy
+requests
+langchain
+langgraph
+pandas
+yfinance
+stockstats
+gunicorn

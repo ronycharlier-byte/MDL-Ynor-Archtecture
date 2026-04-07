@@ -1,0 +1,29 @@
+{
+  "node": "03_C_MOTEURS_ET_DEPLOIEMENT",
+  "key": "C",
+  "mirror": "C_PRIME",
+  "role": "Moteurs actifs, APIs et tableaux de bord",
+  "inventory_count": 5,
+  "inventory": [
+    {
+      "source": "MDL_Ynor_Framework/_03_CORE_AGI_ENGINES",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_04_DEPLOYMENT_AND_API",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_06_SCRIPTS_AND_DASHBOARDS",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_ASSETS_UI",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/.github",
+      "status": "missing"
+    }
+  ]
+}

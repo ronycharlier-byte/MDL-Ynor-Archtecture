@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Stop"
 
 $constitutionRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $outputRoot = Join-Path $constitutionRoot "FRACTAL_CHIASME_MDL_YNOR"

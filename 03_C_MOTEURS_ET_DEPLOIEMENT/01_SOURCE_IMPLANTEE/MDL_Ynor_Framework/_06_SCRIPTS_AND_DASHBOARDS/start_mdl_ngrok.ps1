@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # COPYRIGHT (c) 2026 CHARLIER RONY - TOUS DROITS RESERVES
 # Architecte Supreme & Fondateur - Architecture MDL Ynor
 # SCRIPT DE LANCEMENT NGROK (ACCES QUANTUM) v1.1 - FIXED

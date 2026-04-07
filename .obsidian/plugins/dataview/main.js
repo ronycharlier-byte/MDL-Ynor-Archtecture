@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 var obsidian = require('obsidian');
 var state = require('@codemirror/state');

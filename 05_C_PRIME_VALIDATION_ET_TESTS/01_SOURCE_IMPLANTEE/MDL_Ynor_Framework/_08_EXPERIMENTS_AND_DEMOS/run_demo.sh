@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # MDL YNOR - DEMO RUNBOOK (v2.2.0-PROD) - UNIX VERSION (SH)
 
 echo "============================================================"

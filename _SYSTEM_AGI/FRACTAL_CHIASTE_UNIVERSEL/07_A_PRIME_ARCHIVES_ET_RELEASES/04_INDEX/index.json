@@ -1,0 +1,29 @@
+{
+  "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+  "key": "A_PRIME",
+  "mirror": "A",
+  "role": "Cloture recursive par archives, commandes et distributions",
+  "inventory_count": 5,
+  "inventory": [
+    {
+      "source": "MDL_Ynor_Framework/_00_DISTS_AND_RELEASES",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_ARCHIVES_LOGIQUE_MDL",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/mdl_ynor_framework.egg-info",
+      "status": "missing"
+    },
+    {
+      "source": "_RELEASES/MDL_YNOR_SOVEREIGN_ARCH_GOLDEN_MASTER_2026.zip",
+      "status": "missing"
+    }
+  ]
+}
