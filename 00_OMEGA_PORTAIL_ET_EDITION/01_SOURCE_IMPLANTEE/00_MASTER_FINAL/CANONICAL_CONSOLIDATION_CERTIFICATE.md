@@ -1,5 +1,5 @@
 ---
-### 💎 CANONICAL RELEASE V11.13.0
+### CANONICAL RELEASE V11.13.0
 - **AUTHOR**: Rony Charlier (ORCID: 0009-0003-8250-0526)
 - **DOI**: [10.5281/zenodo.19437934](https://doi.org/10.5281/zenodo.19437934)
 - **STATUS**: 10/10 SATURATION ACHIEVED
@@ -22,11 +22,11 @@ Ce document atteste l'état de consolidation finale du corpus Ynor pour la versi
 
 ## Arbre de Preuve
 1. **Unification des axiomes** : [YNOR_UNIFIED_AXIOMS.md](./YNOR_UNIFIED_AXIOMS.md)
-   - *Rôle* : Référence unique pour les fondements mathématiques.
+ - *Rôle* : Référence unique pour les fondements mathématiques.
 2. **Unification des protocoles** : [YNOR_UNIFIED_PROTOCOLS.md](./YNOR_UNIFIED_PROTOCOLS.md)
-   - *Rôle* : Référence unique pour l'architecture opérationnelle.
+ - *Rôle* : Référence unique pour l'architecture opérationnelle.
 3. **Journal de reproductibilité** : [JOURNAL_DE_REPRODUCTIBILITE.md](../05_C_PRIME_VALIDATION_ET_TESTS/JOURNAL_DE_REPRODUCTIBILITE.md)
-   - *Rôle* : Registre des signatures de calculs et des tests de convergence.
+ - *Rôle* : Registre des signatures de calculs et des tests de convergence.
 
 ## Signature de l'audit final
 - **Opérateur** : Antigravity (Advanced Agentic AI).

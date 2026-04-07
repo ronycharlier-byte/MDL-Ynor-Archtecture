@@ -65,7 +65,7 @@ STATUS: CONSOLIDATED V11.13 | CANONICAL SOURCE: TRUE
 
 
 
-- Le signal principal reste donc celui d'une **absence de garde-fou reproductible** sur le bloc cible, plus qu'une corruption massive deja traitee.
+- Le signal principal reste donc celui d'une **absence de garde-remarquable reproductible** sur le bloc cible, plus qu'une corruption massive deja traitee.
 
 
 
@@ -81,19 +81,19 @@ STATUS: CONSOLIDATED V11.13 | CANONICAL SOURCE: TRUE
 
 
 
-  - scanner recursivement les fichiers `.md` et `.json`;
+ - scanner recursivement les fichiers `.md` et `.json`;
 
 
 
-  - tester des reparations conservatrices ligne par ligne;
+ - tester des reparations conservatrices ligne par ligne;
 
 
 
-  - valider les JSON avant ecriture;
+ - valider les JSON avant ecriture;
 
 
 
-  - n'ecrire sur disque qu'en mode `--apply`.
+ - n'ecrire sur disque qu'en mode `--apply`.
 
 
 

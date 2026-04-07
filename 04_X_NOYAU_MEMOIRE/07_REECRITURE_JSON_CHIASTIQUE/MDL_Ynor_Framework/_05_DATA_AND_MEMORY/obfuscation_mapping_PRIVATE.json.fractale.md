@@ -24,11 +24,11 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 {
-  "ynor_logic_f1a4703a.bin": "DATA_PROVENANCE.json",
-  "ynor_node_b2fc5604.yaml": "GPT_ACTION_SCHEMA.yaml",
-  "ynor_logic_7538ede2.bin": "mdl_global_knowledge.json",
-  "ynor_logic_ca1d1aee.bin": "MDL_YNOR_CONTRAT_LICENCE.json",
-  "ynor_logic_420ee36b.bin": "mdl_ynor_manifesto_governance.json"
+ "ynor_logic_f1a4703a.bin": "DATA_PROVENANCE.json",
+ "ynor_node_b2fc5604.yaml": "GPT_ACTION_SCHEMA.yaml",
+ "ynor_logic_7538ede2.bin": "mdl_global_knowledge.json",
+ "ynor_logic_ca1d1aee.bin": "MDL_YNOR_CONTRAT_LICENCE.json",
+ "ynor_logic_420ee36b.bin": "mdl_ynor_manifesto_governance.json"
 }
 ```
 

@@ -10,7 +10,7 @@ from langchain_core.messages import HumanMessage, RemoveMessage
 from Formalisme Logique Smantique_engine.agents.utils.core_stock_tools import (
 
 
-    get_stock_data
+ get_stock_data
 
 
 )
@@ -19,7 +19,7 @@ from Formalisme Logique Smantique_engine.agents.utils.core_stock_tools import (
 from Formalisme Logique Smantique_engine.agents.utils.technical_indicators_tools import (
 
 
-    get_indicators
+ get_indicators
 
 
 )
@@ -28,16 +28,16 @@ from Formalisme Logique Smantique_engine.agents.utils.technical_indicators_tools
 from Formalisme Logique Smantique_engine.agents.utils.fundamental_data_tools import (
 
 
-    get_fundamentals,
+ get_fundamentals,
 
 
-    get_balance_sheet,
+ get_balance_sheet,
 
 
-    get_cashflow,
+ get_cashflow,
 
 
-    get_income_statement
+ get_income_statement
 
 
 )
@@ -46,13 +46,13 @@ from Formalisme Logique Smantique_engine.agents.utils.fundamental_data_tools imp
 from Formalisme Logique Smantique_engine.agents.utils.news_data_tools import (
 
 
-    get_news,
+ get_news,
 
 
-    get_insider_transactions,
+ get_insider_transactions,
 
 
-    get_global_news
+ get_global_news
 
 
 )
@@ -67,37 +67,37 @@ from Formalisme Logique Smantique_engine.agents.utils.news_data_tools import (
 def get_language_instruction() -> str:
 
 
-    """Return a prompt instruction for the configured output language.
+ """Return a prompt instruction for the configured output language.
 
 
 
 
 
-    Returns empty string when English (default), so no extra tokens are used.
+ Returns empty string when English (default), so no extra tokens are used.
 
 
-    Only applied to user-facing agents (analysts, portfolio manager).
+ Only applied to user-facing agents (analysts, portfolio manager).
 
 
-    Internal debate agents stay in English for reasoning quality.
+ Internal debate agents stay in English for reasoning quality.
 
 
-    """
+ """
 
 
-    from Formalisme Logique Smantique_engine.dataflows.config import get_config
+ from Formalisme Logique Smantique_engine.dataflows.config import get_config
 
 
-    lang = get_config().get("output_language", "English")
+ lang = get_config().get("output_language", "English")
 
 
-    if lang.strip().lower() == "english":
+ if lang.strip().lower() == "english":
 
 
-        return ""
+ return ""
 
 
-    return f" Write your entire response in {lang}."
+ return f" Write your entire response in {lang}."
 
 
 
@@ -109,22 +109,22 @@ def get_language_instruction() -> str:
 def build_instrument_context(ticker: str) -> str:
 
 
-    """Describe the exact instrument so agents preserve exchange-qualified tickers."""
+ """Describe the exact instrument so agents preserve exchange-qualified tickers."""
 
 
-    return (
+ return (
 
 
-        f"The instrument to analyze is `{ticker}`. "
+ f"The instrument to analyze is `{ticker}`. "
 
 
-        "Use this exact ticker in every tool call, report, and recommendation, "
+ "Use this exact ticker in every tool call, report, and recommendation, "
 
 
-        "preserving any exchange suffix (e.g. `.TO`, `.L`, `.HK`, `.T`)."
+ "preserving any exchange suffix (e.g. `.TO`, `.L`, `.HK`, `.T`)."
 
 
-    )
+ )
 
 
 
@@ -133,43 +133,43 @@ def build_instrument_context(ticker: str) -> str:
 def create_msg_delete():
 
 
-    def delete_messages(state):
+ def delete_messages(state):
 
 
-        """Clear messages and add placeholder for Anthropic compatibility"""
+ """Clear messages and add placeholder for Anthropic compatibility"""
 
 
-        messages = state["messages"]
-
-
-
-
-
-        # Remove all messages
-
-
-        removal_operations = [RemoveMessage(id=m.id) for m in messages]
+ messages = state["messages"]
 
 
 
 
 
-        # Add a minimal placeholder message
+ # Remove all messages
 
 
-        placeholder = HumanMessage(content="Continue")
-
-
-
-
-
-        return {"messages": removal_operations + [placeholder]}
+ removal_operations = [RemoveMessage(id=m.id) for m in messages]
 
 
 
 
 
-    return delete_messages
+ # Add a minimal placeholder message
+
+
+ placeholder = HumanMessage(content="Continue")
+
+
+
+
+
+ return {"messages": removal_operations + [placeholder]}
+
+
+
+
+
+ return delete_messages
 
 
 
@@ -178,6 +178,6 @@ def create_msg_delete():
 
 
 
-        
+ 
 
 

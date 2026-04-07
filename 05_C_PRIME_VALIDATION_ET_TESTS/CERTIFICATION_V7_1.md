@@ -222,7 +222,7 @@ Toute rponse non certifie par le mu-Consensus est automatiquement rejete par l'A
 
 
 
-1.  **Vecteur Alpha** : Certification par l'Espace de Sobolev (Rigueur structurelle).
+1. **Vecteur Alpha** : Certification par l'Espace de Sobolev (Rigueur structurelle).
 
 
 
@@ -230,7 +230,7 @@ Toute rponse non certifie par le mu-Consensus est automatiquement rejete par l'A
 
 
 
-2.  **Vecteur Beta** : API de Gouvernance FastAPI (Excution dterministe).
+2. **Vecteur Beta** : API de Gouvernance FastAPI (Excution dterministe).
 
 
 
@@ -238,7 +238,7 @@ Toute rponse non certifie par le mu-Consensus est automatiquement rejete par l'A
 
 
 
-3.  **Vecteur Gamma** : License Gate (Verrouillage canonique).
+3. **Vecteur Gamma** : License Gate (Verrouillage canonique).
 
 
 

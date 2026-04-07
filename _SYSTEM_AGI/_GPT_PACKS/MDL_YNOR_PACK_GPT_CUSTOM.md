@@ -193,95 +193,95 @@ Toujours :
 ```yaml
 openapi: 3.1.0
 info:
-  title: MDL Ynor API
-  version: 1.0.0
-  description: API canonique pour le diagnostic, le dispatch et les calculs spécialisés.
+ title: MDL Ynor API
+ version: 1.0.0
+ description: API canonique pour le diagnostic, le dispatch et les calculs spécialisés.
 
 servers:
-  - url: https://mdl-ynor-api.onrender.com
+ - url: https://mdl-ynor-api.onrender.com
 
 paths:
-  /health:
-    get:
-      operationId: getHealth
-      summary: Vérifier l'état du service
-      responses:
-        "200":
-          description: Service disponible
+ /health:
+ get:
+ operationId: getHealth
+ summary: Vérifier l'état du service
+ responses:
+ "200":
+ description: Service disponible
 
-  /dispatch:
-    post:
-      operationId: ynorDispatch
-      summary: Exécuter une action MDL Ynor
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              required:
-                - action
-                - payload
-              properties:
-                action:
-                  type: string
-                  enum:
-                    - audit
-                    - logos
-                    - search
-                    - market
-                    - millennium
-                    - solve
-                payload:
-                  oneOf:
-                    - type: string
-                    - type: object
-                  description: Donnée ou requête à traiter.
-                token:
-                  type: string
-                  description: Jeton JWT optionnel si le service l'exige.
-                license_key:
-                  type: string
-                  description: Clé de licence optionnelle si le service l'exige.
-      responses:
-        "200":
-          description: Réponse du dispatcher
-        "401":
-          description: Non autorisé
-        "403":
-          description: Refus d'accès
+ /dispatch:
+ post:
+ operationId: ynorDispatch
+ summary: Exécuter une action MDL Ynor
+ requestBody:
+ required: true
+ content:
+ application/json:
+ schema:
+ type: object
+ required:
+ - action
+ - payload
+ properties:
+ action:
+ type: string
+ enum:
+ - audit
+ - logos
+ - search
+ - market
+ - millennium
+ - solve
+ payload:
+ oneOf:
+ - type: string
+ - type: object
+ description: Donnée ou requête à traiter.
+ token:
+ type: string
+ description: Jeton JWT optionnel si le service l'exige.
+ license_key:
+ type: string
+ description: Clé de licence optionnelle si le service l'exige.
+ responses:
+ "200":
+ description: Réponse du dispatcher
+ "401":
+ description: Non autorisé
+ "403":
+ description: Refus d'accès
 
-  /riemann:
-    post:
-      operationId: solveRiemann
-      summary: Lancer le solveur de Riemann
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              required:
-                - token
-              properties:
-                n_points:
-                  type: integer
-                  default: 500
-                u_max:
-                  type: number
-                  default: 5
-                gain:
-                  type: number
-                  default: 10
-                token:
-                  type: string
-      responses:
-        "200":
-          description: Calcul effectué
-        "401":
-          description: Non autorisé
-        "500":
-          description: Erreur serveur
+ /riemann:
+ post:
+ operationId: solveRiemann
+ summary: Lancer le solveur de Riemann
+ requestBody:
+ required: true
+ content:
+ application/json:
+ schema:
+ type: object
+ required:
+ - token
+ properties:
+ n_points:
+ type: integer
+ default: 500
+ u_max:
+ type: number
+ default: 5
+ gain:
+ type: number
+ default: 10
+ token:
+ type: string
+ responses:
+ "200":
+ description: Calcul effectué
+ "401":
+ description: Non autorisé
+ "500":
+ description: Erreur serveur
 ```
 
 ## Conversation Starters

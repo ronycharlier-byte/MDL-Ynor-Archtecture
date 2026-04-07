@@ -15,15 +15,15 @@ This document provides complete traceability for the datasets, samples, and arch
 
 The following scripts are responsible for the normalization of raw informational flows into Ynor-compatible scalar states ($\alpha, \beta, \kappa$):
 
-1.  `_05_DATA_AND_MEMORY/scripts/cleanse_pii.py`: Anonymization of audit logs (RGPD Grade).
-2.  `_05_DATA_AND_MEMORY/scripts/entropy_mapper.py`: Calculates informational entropy for $\alpha$ estimation.
-3.  `_05_DATA_AND_MEMORY/scripts/token_weighting.py`: Maps LLM tokens to $\beta$ values.
+1. `_05_DATA_AND_MEMORY/scripts/cleanse_pii.py`: Anonymization of audit logs (RGPD Grade).
+2. `_05_DATA_AND_MEMORY/scripts/entropy_mapper.py`: Calculates informational entropy for $\alpha$ estimation.
+3. `_05_DATA_AND_MEMORY/scripts/token_weighting.py`: Maps LLM tokens to $\beta$ values.
 
 ## 3. COMPLIANCE & GOVERNANCE
 
 All datasets have been audited for:
--   **Bias Mitigation**: Validation of statistical distribution parity.
--   **Ethical Sourcing**: No non-consensual web-crawled personal data.
--   **Licensing**: 100% compliance with open-source and commercial terms.
+- **Bias Mitigation**: Validation of statistical distribution parity.
+- **Ethical Sourcing**: No non-consensual web-crawled personal data.
+- **Licensing**: 100% compliance with open-source and commercial terms.
 
 For access to raw datasets for academic peer-review, please contact **Rony Charlier** under a standard Mutual NDA.

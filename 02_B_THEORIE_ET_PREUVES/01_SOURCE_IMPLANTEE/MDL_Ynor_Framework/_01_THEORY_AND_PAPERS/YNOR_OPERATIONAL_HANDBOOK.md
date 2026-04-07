@@ -9,7 +9,7 @@
 - **Règle d'Or** : La génération s'arrête dès que $\mu = \alpha - \beta - \kappa \le 0$.
 - **Lancement** : Utilisez l'Option [1] du `YNOR_SERVER_MANAGER.bat` pour la démo live réelle.
 
-## 💰 PROTOCOLE 2 : LE CLOSING SYSTÉMATIQUE (Sales)
+## PROTOCOLE 2 : LE CLOSING SYSTÉMATIQUE (Sales)
 - **Offre standard** : Audit Ynor à $99.
 - **Offre Intégration** : $299.
 - **Positionnement** : "Gap Selling" (vendre l'écart de gaspillage tokens).
@@ -37,4 +37,4 @@
 Le point d'entrée unique de ton empire est le fichier :
 `c:\Users\ronyc\Desktop\MDL Ynor Architecture\MDL_Ynor_Framework\YNOR_SERVER_MANAGER.bat`
 
-**Tout est opérationnel. Toutes les procédures sont codifiées. L'architecture est souveraine.** 🧨🚀
+**Tout est opérationnel. Toutes les procédures sont codifiées. L'architecture est souveraine.** 🧨

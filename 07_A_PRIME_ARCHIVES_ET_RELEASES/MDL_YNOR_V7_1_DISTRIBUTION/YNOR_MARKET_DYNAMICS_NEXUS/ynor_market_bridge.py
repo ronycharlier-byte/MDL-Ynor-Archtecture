@@ -25,19 +25,19 @@ sys.path.append(os.path.dirname(__file__))
 try:
 
 
-    from logos_engine.chiaste.ynor_market_graph import YnorMarketDynamicsGraph
+ from logos_engine.chiaste.ynor_market_graph import YnorMarketDynamicsGraph
 
 
-    from logos_engine.default_config import DEFAULT_CONFIG
+ from logos_engine.default_config import DEFAULT_CONFIG
 
 
 except ImportError:
 
 
-    YnorMarketDynamicsGraph = None
+ YnorMarketDynamicsGraph = None
 
 
-    DEFAULT_CONFIG = {}
+ DEFAULT_CONFIG = {}
 
 
 
@@ -46,133 +46,133 @@ except ImportError:
 class YnorMarketBridge:
 
 
-    """
+ """
 
 
-    Le Pont Singularity Market (YNOR V11.9.3.3.3) - ÉDITION TURBO
+ Le Pont Singularity Market (YNOR V11.9.3.3.3) - ÉDITION TURBO
 
 
-    Optimispour les limites de temps de l'API OpenAI (45s).
+ Optimispour les limites de temps de l'API OpenAI (45s).
 
 
-    """
+ """
 
 
-    def __init__(self):
+ def __init__(self):
 
 
-        self.config = DEFAULT_CONFIG.copy()
+ self.config = DEFAULT_CONFIG.copy()
 
 
-        self.config.update({
+ self.config.update({
 
 
-            "llm_provider": "openai",
+ "llm_provider": "openai",
 
 
-            "deep_think_llm": os.getenv("YNOR_DEEP_MODEL", "gpt-5.4-mini"), # Modle plus rapide pour le dbat
+ "deep_think_llm": os.getenv("YNOR_DEEP_MODEL", "gpt-5.4-mini"), # Modle plus rapide pour le dbat
 
 
-            "quick_think_llm": "gpt-5.4-mini",
+ "quick_think_llm": "gpt-5.4-mini",
 
 
-            "max_debate_rounds": 1, # UN SEUL ROUND CRUCIAL (GAIN DE TEMPS: 2x)
+ "max_debate_rounds": 1, # UN SEUL ROUND CRUCIAL (GAIN DE TEMPS: 2x)
 
 
-            "output_language": "French"
+ "output_language": "French"
 
 
-        })
+ })
 
 
-        
+ 
 
 
-    async def process_market_query(self, symbol: str, date: str = None):
+ async def process_market_query(self, symbol: str, date: str = None):
 
 
-        if not YnorMarketDynamicsGraph:
+ if not YnorMarketDynamicsGraph:
 
 
-            return {"status": "ERROR", "message": "Logos_engine non dtect."}
+ return {"status": "ERROR", "message": "Logos_engine non dtect."}
 
 
-            
+ 
 
 
-        if not date:
+ if not date:
 
 
-            date = datetime.now().strftime("%Y-%m-%d")
+ date = datetime.now().strftime("%Y-%m-%d")
 
 
-            
+ 
 
 
-        try:
+ try:
 
 
-            # Initialisation ultra-rapide
+ # Initialisation ultra-rapide
 
 
-            graph = YnorMarketDynamicsGraph(debug=False, config=self.config)
+ graph = YnorMarketDynamicsGraph(debug=False, config=self.config)
 
 
-            
+ 
 
 
-            # Propagation directe
+ # Propagation directe
 
 
-            state, decision = graph.propagate(symbol, date)
+ state, decision = graph.propagate(symbol, date)
 
 
-            
+ 
 
 
-            final_report = decision.get("action", "HOLD")
+ final_report = decision.get("action", "HOLD")
 
 
-            analysis = decision.get("reasoning", "")
+ analysis = decision.get("reasoning", "")
 
 
-            
+ 
 
 
-            # On renvoie une version compresse pour viter le timeout du payload
+ # On renvoie une version compresse pour viter le timeout du payload
 
 
-            return {
+ return {
 
 
-                "status": "SUCCESS",
+ "status": "SUCCESS",
 
 
-                "symbol": symbol,
+ "symbol": symbol,
 
 
-                "date": date,
+ "date": date,
 
 
-                "mu": 1.0,
+ "mu": 1.0,
 
 
-                "verdict": final_report,
+ "verdict": final_report,
 
 
-                "projection": analysis[:1500], # Tronqupour la rapiditGPT
+ "projection": analysis[:1500], # Tronqupour la rapiditGPT
 
 
-                "message": f"SCAN saturterminpour {symbol}."
+ "message": f"SCAN saturterminpour {symbol}."
 
 
-            }
+ }
 
 
-        except Exception as e:
+ except Exception as e:
 
 
-            return {"status": "ERROR", "message": f"Latence dpasse : {str(e)}"}
+ return {"status": "ERROR", "message": f"Latence dpasse : {str(e)}"}
 
 
 

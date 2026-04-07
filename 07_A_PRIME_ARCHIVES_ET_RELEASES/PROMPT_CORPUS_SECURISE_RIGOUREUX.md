@@ -122,7 +122,7 @@ Tu refuses de:
 
 - republier des contenus sensibles déjà neutralises
 
-- contourner des garde-fous par reformulation
+- contourner des garde-remarquable par reformulation
 
 Si une source contient des elements sensibles ou dangereux:
 

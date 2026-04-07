@@ -18,60 +18,60 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 {
-  "version": 1.0,
-  "learned_axioms": [
-    {
-      "timestamp": "Fri Mar 20 17:19:00 2026",
-      "discovery": "Le modèle Mu actuel est optimal pour les conditions standard.",
-      "status": "STABLE"
-    },
-    {
-      "timestamp": "Fri Mar 20 17:23:41 2026",
-      "discovery": "Détection de dérive. Coefficient Alpha boosté à 1.00 pour restaurer la coercitivité.",
-      "status": "EVOLUTION_REQUIRED"
-    },
-    {
-      "timestamp": "Fri Mar 20 17:27:25 2026",
-      "discovery": "Détection de dérive. Coefficient Alpha boosté à 1.01 pour restaurer la coercitivité.",
-      "status": "EVOLUTION_REQUIRED"
-    },
-    {
-      "timestamp": "Fri Mar 20 17:41:57 2026",
-      "discovery": "Détection de dérive. Coefficient Alpha boosté à 1.00 pour restaurer la coercitivité.",
-      "status": "EVOLUTION_REQUIRED"
-    },
-    {
-      "timestamp": "Fri Mar 20 17:44:29 2026",
-      "discovery": "Le modèle Mu actuel est optimal pour les conditions standard.",
-      "status": "STABLE"
-    }
-  ],
-  "optimized_coefficients": {
-    "alpha_boost": 1.005,
-    "beta_damping": 1.0
-  },
-  "evolution_history": [
-    {
-      "date": "Fri Mar 20 17:19:00 2026",
-      "accuracy": 100.0
-    },
-    {
-      "date": "Fri Mar 20 17:23:41 2026",
-      "accuracy": 99.5
-    },
-    {
-      "date": "Fri Mar 20 17:27:25 2026",
-      "accuracy": 99.0
-    },
-    {
-      "date": "Fri Mar 20 17:41:57 2026",
-      "accuracy": 99.5
-    },
-    {
-      "date": "Fri Mar 20 17:44:29 2026",
-      "accuracy": 100.0
-    }
-  ]
+ "version": 1.0,
+ "learned_axioms": [
+ {
+ "timestamp": "Fri Mar 20 17:19:00 2026",
+ "discovery": "Le modèle Mu actuel est optimal pour les conditions standard.",
+ "status": "STABLE"
+ },
+ {
+ "timestamp": "Fri Mar 20 17:23:41 2026",
+ "discovery": "Détection de dérive. Coefficient Alpha boosté à 1.00 pour restaurer la coercitivité.",
+ "status": "EVOLUTION_REQUIRED"
+ },
+ {
+ "timestamp": "Fri Mar 20 17:27:25 2026",
+ "discovery": "Détection de dérive. Coefficient Alpha boosté à 1.01 pour restaurer la coercitivité.",
+ "status": "EVOLUTION_REQUIRED"
+ },
+ {
+ "timestamp": "Fri Mar 20 17:41:57 2026",
+ "discovery": "Détection de dérive. Coefficient Alpha boosté à 1.00 pour restaurer la coercitivité.",
+ "status": "EVOLUTION_REQUIRED"
+ },
+ {
+ "timestamp": "Fri Mar 20 17:44:29 2026",
+ "discovery": "Le modèle Mu actuel est optimal pour les conditions standard.",
+ "status": "STABLE"
+ }
+ ],
+ "optimized_coefficients": {
+ "alpha_boost": 1.005,
+ "beta_damping": 1.0
+ },
+ "evolution_history": [
+ {
+ "date": "Fri Mar 20 17:19:00 2026",
+ "accuracy": 100.0
+ },
+ {
+ "date": "Fri Mar 20 17:23:41 2026",
+ "accuracy": 99.5
+ },
+ {
+ "date": "Fri Mar 20 17:27:25 2026",
+ "accuracy": 99.0
+ },
+ {
+ "date": "Fri Mar 20 17:41:57 2026",
+ "accuracy": 99.5
+ },
+ {
+ "date": "Fri Mar 20 17:44:29 2026",
+ "accuracy": 100.0
+ }
+ ]
 }
 ```
 

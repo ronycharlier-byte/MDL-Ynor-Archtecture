@@ -13,9 +13,9 @@ This document provides a comparative summary of the MDL Ynor architecture agains
 
 ## 2. INDUSTRIAL DIFFERENTIATION
 
-*   **Static Compute vs. Dynamic Compute**: Standard LLMs use the same amount of computation for "1+1" and "Quantum Physics". Ynor dynamic $S_{Ynor}$ allows the system to prune its compute when $\alpha$ gains stop compensating for $\beta$ costs.
-*   **Safety vs. Performance**: Unlike standard reinforcement learning (RLHF), Ynor implements a deterministic, physics-based "Stop" rule, making it more predictable and auditable.
-*   **Memory Efficiency**: By integrating $\kappa$ (memory payload), Ynor is the first framework that explicitly models the performance degradation and "hallucination threshold" caused by context overload.
+* **Static Compute vs. Dynamic Compute**: Standard LLMs use the same amount of computation for "1+1" and "Quantum Physics". Ynor dynamic $S_{Ynor}$ allows the system to prune its compute when $\alpha$ gains stop compensating for $\beta$ costs.
+* **Safety vs. Performance**: Unlike standard reinforcement learning (RLHF), Ynor implements a deterministic, physics-based "Stop" rule, making it more predictable and auditable.
+* **Memory Efficiency**: By integrating $\kappa$ (memory payload), Ynor is the first framework that explicitly models the performance degradation and "hallucination threshold" caused by context overload.
 
 ## 3. VALIDATION SUMMARY
 

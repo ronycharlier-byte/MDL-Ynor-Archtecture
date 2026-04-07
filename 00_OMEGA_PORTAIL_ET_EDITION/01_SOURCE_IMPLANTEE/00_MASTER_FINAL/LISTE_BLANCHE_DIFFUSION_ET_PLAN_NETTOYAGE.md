@@ -70,7 +70,7 @@ Ce document fixe deux choses:
 
 
 
-Il sert de garde-fou pour eviter de melanger corpus editorial, artefacts de travail et caches d'execution.
+Il sert de garde-remarquable pour eviter de melanger corpus editorial, artefacts de travail et caches d'execution.
 
 
 

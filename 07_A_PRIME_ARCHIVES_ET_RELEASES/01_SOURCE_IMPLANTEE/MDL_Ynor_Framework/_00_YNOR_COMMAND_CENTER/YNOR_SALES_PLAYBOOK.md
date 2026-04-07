@@ -1,4 +1,4 @@
-# 💰 YNOR CORE : MANUEL DE CLOSING ELITE (v3.0.0-PROD)
+# YNOR CORE : MANUEL DE CLOSING ELITE (v3.0.0-PROD)
 
 > **"Vous ne tentez plus de convaincre. Vous déplacez la décision en retirant le doute via la preuve mathématique. Voici comment closer à 90%."**
 
@@ -37,13 +37,13 @@ Rassurez sur la protection des données.
 
 ## 🛡️ 3. TRAITEMENT DES OBJECTIONS (v3)
 
--   **❌ "Est-ce fiable ?"** : *"Nos tests Monte Carlo (N=100) montrent une corrélation parfaite entre théorie et stabilité. Voyez le rapport `TEST_COVERAGE_REPORT.md`."*
--   **❌ "C'est une boîte noire ?"** : *"Non, nous avons une Spécification Abstraite (`MU_SPECIFICATION_ABSTRACT.md`) qui explique la logique physique sans compromettre notre IP."*
--   **❌ "Trop cher"** : *"Vous perdez l'équivalent de cet investissement en moins d'une semaine de tokens gaspillés. C'est un centre de profit, pas un coût."*
+- **❌ "Est-ce fiable ?"** : *"Nos tests Monte Carlo (N=100) montrent une corrélation parfaite entre théorie et stabilité. Voyez le rapport `TEST_COVERAGE_REPORT.md`."*
+- **❌ "C'est une boîte noire ?"** : *"Non, nous avons une Spécification Abstraite (`MU_SPECIFICATION_ABSTRACT.md`) qui explique la logique physique sans compromettre notre IP."*
+- **❌ "Trop cher"** : *"Vous perdez l'équivalent de cet investissement en moins d'une semaine de tokens gaspillés. C'est un centre de profit, pas un coût."*
 
 ---
 
-## 🚀 4. SIGNAL DE VICTOIRE
+## 4. SIGNAL DE VICTOIRE
 Dès qu'on vous demande **"Can I see the audit logs ?"** ou des questions sur le **"Multi-agent orchestration"**, la vente est faite.
 
-**Ynor v3 : L'Empire de l'Efficience est désormais incontestable.** 🧨🚀
+**Ynor v3 : L'Empire de l'Efficience est désormais incontestable.** 🧨

@@ -1,4 +1,4 @@
-# 💰 YNOR CORE : MANUEL DE CLOSING ELITE (v1.2.0)
+# YNOR CORE : MANUEL DE CLOSING ELITE (v1.2.0)
 
 > **"Vous ne tentez plus de convaincre. Vous déplacez la décision en retirant le doute. Voici comment closer à 80%."**
 
@@ -43,7 +43,7 @@ Ne demandez pas leur avis. Demandez leur accord :
 
 ---
 
-## 🚀 4. SIGNAL DE VICTOIRE (Closing imminent)
+## 4. SIGNAL DE VICTOIRE (Closing imminent)
 Dès qu'on vous demande **"How does it plug in ?"** ou des questions sur leur propre stack technique, la vente est faite.
 
 **Ynor : Vous possédez désormais la science de l'efficience et l'art de sa monétisation.** 🧨

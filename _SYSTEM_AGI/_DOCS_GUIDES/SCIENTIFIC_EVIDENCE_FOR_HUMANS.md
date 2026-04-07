@@ -12,11 +12,11 @@ Il est crucial de distinguer la validité interne du corpus de sa validation ext
 
 ## 3. Architecture Déployée
 Le socle technique fourni permet une stricte reproductibilité de nos tests locaux :
-*   **Données :** Systèmes de collecte CCXT (OHLCV).
-*   **Théorie :** Unification algorithmique des axiomes (CF. `YNOR_UNIFIED_AXIOMS.md`).
-*   **Infrastructure :** Déploiement VPS automatisé (`install_vps.sh`) garantissant un environnement stérile.
+* **Données :** Systèmes de collecte CCXT (OHLCV).
+* **Théorie :** Unification algorithmique des axiomes (CF. `YNOR_UNIFIED_AXIOMS.md`).
+* **Infrastructure :** Déploiement VPS automatisé (`install_vps.sh`) garantissant un environnement stérile.
 
 ## 4. Appel à l'Audit
 Ce corpus (V11.14.0) est "Science-Ready" dans sa forme. Nous le soumettons à révision pour faire examiner :
-1.  La validité de ses modèles mathématiques de distribution de données.
-2.  La viabilité de ses stratégies d'exécution asynchrone en temps réel.
+1. La validité de ses modèles mathématiques de distribution de données.
+2. La viabilité de ses stratégies d'exécution asynchrone en temps réel.

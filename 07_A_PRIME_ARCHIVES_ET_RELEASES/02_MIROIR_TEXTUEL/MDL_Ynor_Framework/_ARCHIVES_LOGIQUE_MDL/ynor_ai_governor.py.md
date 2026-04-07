@@ -24,45 +24,45 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "os.getenv("OPENAI_API_KEY", "REDAC
 
 # Vérification masquée (Security Check)
 if OPENAI_API_KEY and OPENAI_API_KEY != "VOTRE_CLE_ICI":
-    masked_key = f"{OPENAI_API_KEY[:8]}...{OPENAI_API_KEY[-5:]}"
-    print(f"[AI SECURITY] Clé utilisée : {masked_key} (Longueur: {len(OPENAI_API_KEY)})")
+ masked_key = f"{OPENAI_API_KEY[:8]}...{OPENAI_API_KEY[-5:]}"
+ print(f"[AI SECURITY] Clé utilisée : {masked_key} (Longueur: {len(OPENAI_API_KEY)})")
 else:
-    print("[AI SECURITY] ALERTE : Aucune clé renseignée dans ynor_ai_governor.py")
+ print("[AI SECURITY] ALERTE : Aucune clé renseignée dans ynor_ai_governor.py")
 
 client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
 def get_ai_reconstruction_strategy(mu, state):
-    """
-    Demande à l'IA une stratégie de mutation pour restaurer la marge mu > 0.
-    """
-    print("\n[AI GOVERNOR] Appel à l'Intelligence Artificielle pour résolution de crise...")
-    
-    prompt = f"""
-    [DIRECTIVE PRIORITAIRE : STABILISATION BRUTALE]
-    Marge dissipative mu = {mu} (seuil de sécurité : 0.01).
-    État actuel S = {state}.
-    
-    ACTION : Proposez un taux de mutation 'r' DECISIF pour augmenter l'opérateur D(S). 
-    Vous devez restaurer une marge mu > 2.0 en UN SEUL CYCLE. Soyez sévère et déterminez le taux 'r' optimal.
-    
-    RÉPONSE FORMAT : JSON uniquement {{ "mutation_rate": float, "explanation": "string" }}
-    """
+ """
+ Demande à l'IA une stratégie de mutation pour restaurer la marge mu > 0.
+ """
+ print("\n[AI GOVERNOR] Appel à l'Intelligence Artificielle pour résolution de crise...")
+ 
+ prompt = f"""
+ [DIRECTIVE PRIORITAIRE : STABILISATION BRUTALE]
+ Marge dissipative mu = {mu} (seuil de sécurité : 0.01).
+ État actuel S = {state}.
+ 
+ ACTION : Proposez un taux de mutation 'r' DECISIF pour augmenter l'opérateur D(S). 
+ Vous devez restaurer une marge mu > 2.0 en UN SEUL CYCLE. Soyez sévère et déterminez le taux 'r' optimal.
+ 
+ RÉPONSE FORMAT : JSON uniquement {{ "mutation_rate": float, "explanation": "string" }}
+ """
 
-    try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=[{"role": "user", "content": prompt}],
-            response_format={ "type": "json_object" }
-        )
-        strategy = json.loads(response.choices[0].message.content)
-        return strategy
-    except Exception as e:
-        print(f"[ERREUR AI] Impossible de contacter OpenAI : {e}")
-        # Stratégie de secours (fail-safe) : +200% de dissipation
-        return {"mutation_rate": 2.0, "explanation": "Fallback strategy due to API error."}
+ try:
+ response = client.chat.completions.create(
+ model="gpt-4o",
+ messages=[{"role": "user", "content": prompt}],
+ response_format={ "type": "json_object" }
+ )
+ strategy = json.loads(response.choices[0].message.content)
+ return strategy
+ except Exception as e:
+ print(f"[ERREUR AI] Impossible de contacter OpenAI : {e}")
+ # Stratégie de secours (fail-safe) : +200% de dissipation
+ return {"mutation_rate": 2.0, "explanation": "Fallback strategy due to API error."}
 
 if __name__ == "__main__":
-    # Test à vide
-    print(get_ai_reconstruction_strategy(-1.0, [2.0, 2.0]))
+ # Test à vide
+ print(get_ai_reconstruction_strategy(-1.0, [2.0, 2.0]))
 
 ```

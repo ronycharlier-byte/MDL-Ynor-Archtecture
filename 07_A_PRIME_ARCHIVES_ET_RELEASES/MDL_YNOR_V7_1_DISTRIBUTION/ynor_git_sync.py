@@ -28,81 +28,81 @@ from datetime import datetime
 def git_sync():
 
 
-    try:
+ try:
 
 
-        # 1. Rcupration du jeton depuis l'environnement
+ # 1. Rcupration du jeton depuis l'environnement
 
 
-        token = os.getenv("GITHUB_TOKEN")
+ token = os.getenv("GITHUB_TOKEN")
 
 
-        if not token:
+ if not token:
 
 
-            print("GITHUB_TOKEN non trouvdans l'environnement.")
+ print("GITHUB_TOKEN non trouvdans l'environnement.")
 
 
-            return False
+ return False
 
 
-        
+ 
 
 
-        # 2. Construction de l'URL scurise (Rony-Charlier repo)
+ # 2. Construction de l'URL scurise (Rony-Charlier repo)
 
 
-        repo_url = f"https://{token}@github.com/ronycharlier-byte/MDL_YNOR_V7_1_DISTRIBUTION.git"
+ repo_url = f"https://{token}@github.com/ronycharlier-byte/MDL_YNOR_V7_1_DISTRIBUTION.git"
 
 
-        
+ 
 
 
-        # 3. Injection dynamique du remote sur Render
+ # 3. Injection dynamique du remote sur Render
 
 
-        subprocess.run(["git", "remote", "set-url", "origin", repo_url], check=True)
+ subprocess.run(["git", "remote", "set-url", "origin", repo_url], check=True)
 
 
-        
+ 
 
 
-        # 4. Configuration d'identit(Obligatoire pour commit)
+ # 4. Configuration d'identit(Obligatoire pour commit)
 
 
-        subprocess.run(["git", "config", "user.email", "ronycharlier@mdlstrategy.com"], check=True)
+ subprocess.run(["git", "config", "user.email", "ronycharlier@mdlstrategy.com"], check=True)
 
 
-        subprocess.run(["git", "config", "user.name", "MDL-Canonical-Engine"], check=True)
+ subprocess.run(["git", "config", "user.name", "MDL-Canonical-Engine"], check=True)
 
 
-        
+ 
 
 
-        # 5. Cycle de persistance Canonique - TOTAL DIAMOND V10.8
+ # 5. Cycle de persistance Canonique - TOTAL DIAMOND V10.8
 
 
-        subprocess.run(["git", "add", "."], check=True)
+ subprocess.run(["git", "add", "."], check=True)
 
 
-        subprocess.run(["git", "commit", "-m", f"V10.8 TOTAL DIAMOND : Autonome et IsolETÉ Formalisme Logique Smantique - {datetime.now()}"], check=True)
+ subprocess.run(["git", "commit", "-m", f"V10.8 TOTAL DIAMOND : Autonome et IsolETÉ Formalisme Logique Smantique - {datetime.now()}"], check=True)
 
 
-        subprocess.run(["git", "push", "origin", "main"], check=True)
+ subprocess.run(["git", "push", "origin", "main"], check=True)
 
 
-        
+ 
 
 
-        return True
+ return True
 
 
-    except Exception as e:
+ except Exception as e:
 
 
-        print(f"Sync failed: {e}")
+ print(f"Sync failed: {e}")
 
 
-        return False
+ return False
 
 

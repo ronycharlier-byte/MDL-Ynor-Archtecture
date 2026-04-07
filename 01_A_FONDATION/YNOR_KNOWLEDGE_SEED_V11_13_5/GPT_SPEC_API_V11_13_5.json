@@ -1,259 +1,259 @@
 {
 
 
-  "openapi": "3.1.0",
+ "openapi": "3.1.0",
 
 
-  "info": {
+ "info": {
 
 
-    "title": "MDL Ynor Certifi? V11.10.15",
+ "title": "MDL Ynor Certifi? V11.10.15",
 
 
-    "description": "API de recherche souveraine du Dr. Rony Charlier (MDL Lab) pour l'analyse multi-agents et la saturation boursire. mu=1.0.",
+ "description": "API de recherche souveraine du Dr. Rony Charlier (MDL Lab) pour l'analyse multi-agents et la saturation boursire. mu=1.0.",
 
 
-    "version": "11.10.15"
+ "version": "11.10.15"
 
 
-  },
+ },
 
 
-  "servers": [
+ "servers": [
 
 
-    {
+ {
 
 
-      "url": "https://mdl-ynor-api.onrender.com",
+ "url": "https://mdl-ynor-api.onrender.com",
 
 
-      "description": "Serveur de Production Render (Certifi? V11.10.15)"
+ "description": "Serveur de Production Render (Certifi? V11.10.15)"
 
 
-    }
+ }
 
 
-  ],
+ ],
 
 
-  "paths": {
+ "paths": {
 
 
-    "/dispatch": {
+ "/dispatch": {
 
 
-      "post": {
+ "post": {
 
 
-        "operationId": "ynorGovernance",
+ "operationId": "ynorGovernance",
 
 
-        "summary": "Point d'entre unique du souverain Dispatcher V11.10.15",
+ "summary": "Point d'entre unique du souverain Dispatcher V11.10.15",
 
 
-        "description": "Route toutes les requêtes vers les agents de March, d'Audit ou de Logos.",
+ "description": "Route toutes les requêtes vers les agents de March, d'Audit ou de Logos.",
 
 
-        "requestBody": {
+ "requestBody": {
 
 
-          "required": true,
+ "required": true,
 
 
-          "content": {
+ "content": {
 
 
-            "application/json": {
+ "application/json": {
 
 
-              "schema": {
+ "schema": {
 
 
-                "type": "object",
+ "type": "object",
 
 
-                "properties": {
+ "properties": {
 
 
-                  "action": {
+ "action": {
 
 
-                    "type": "string",
+ "type": "string",
 
 
-                    "description": "L'action excuter (audit, logos, market).",
+ "description": "L'action excuter (audit, logos, market).",
 
 
-                    "enum": [
+ "enum": [
 
 
-                      "audit",
+ "audit",
 
 
-                      "logos",
+ "logos",
 
 
-                      "market"
+ "market"
 
 
-                    ]
+ ]
 
 
-                  },
+ },
 
 
-                  "payload": {
+ "payload": {
 
 
-                    "type": "string",
+ "type": "string",
 
 
-                    "description": "Ticker boursier ou requête smantique."
+ "description": "Ticker boursier ou requête smantique."
 
 
-                  },
+ },
 
 
-                  "license_key": {
+ "license_key": {
 
 
-                    "type": "string",
+ "type": "string",
 
 
-                    "description": "Clde licence certifie V11.8.",
+ "description": "Clde licence certifie V11.8.",
 
 
-                    "default": "MDL-SINGULARITY-2026-V11.8-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE"
+ "default": "MDL-SINGULARITY-2026-V11.8-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE"
 
 
-                  }
+ }
 
 
-                },
+ },
 
 
-                "required": [
+ "required": [
 
 
-                  "action",
+ "action",
 
 
-                  "payload",
+ "payload",
 
 
-                  "license_key"
+ "license_key"
 
 
-                ]
+ ]
 
 
-              }
+ }
 
 
-            }
+ }
 
 
-          }
+ }
 
 
-        },
+ },
 
 
-        "responses": {
+ "responses": {
 
 
-          "200": {
+ "200": {
 
 
-            "description": "Rponse sature mu=1.0",
+ "description": "Rponse sature mu=1.0",
 
 
-            "content": {
+ "content": {
 
 
-              "application/json": {
+ "application/json": {
 
 
-                "schema": {
+ "schema": {
 
 
-                  "type": "object",
+ "type": "object",
 
 
-                  "properties": {
+ "properties": {
 
 
-                    "status": {
+ "status": {
 
 
-                      "type": "string"
+ "type": "string"
 
 
-                    },
+ },
 
 
-                    "mu": {
+ "mu": {
 
 
-                      "type": "number"
+ "type": "number"
 
 
-                    },
+ },
 
 
-                    "verdict": {
+ "verdict": {
 
 
-                      "type": "string"
+ "type": "string"
 
 
-                    },
+ },
 
 
-                    "projection": {
+ "projection": {
 
 
-                      "type": "string"
+ "type": "string"
 
 
-                    },
+ },
 
 
-                    "message": {
+ "message": {
 
 
-                      "type": "string"
+ "type": "string"
 
 
-                    }
+ }
 
 
-                  }
+ }
 
 
-                }
+ }
 
 
-              }
+ }
 
 
-            }
+ }
 
 
-          }
+ }
 
 
-        }
+ }
 
 
-      }
+ }
 
 
-    }
+ }
 
 
-  }
+ }
 
 
 }

@@ -190,7 +190,7 @@ Le systme V7.0 fonctionne en trois temps :
 
 
 
-1.  **DIVERGENCE (Split)** : La requête est envoye OpenAI, Claude et Gemini. 🌍🌎🌏
+1. **DIVERGENCE (Split)** : La requête est envoye OpenAI, Claude et Gemini. 🌍🌎🌏
 
 
 
@@ -198,7 +198,7 @@ Le systme V7.0 fonctionne en trois temps :
 
 
 
-2.  **AUDIT (Scan)** : Ynor scanne les logprobs de chaque sortie. 🔬📊
+2. **AUDIT (Scan)** : Ynor scanne les logprobs de chaque sortie. 🔬📊
 
 
 
@@ -206,7 +206,7 @@ Le systme V7.0 fonctionne en trois temps :
 
 
 
-3.  **CONVERGENCE (Mod?lisation Pr?dictive)** : Ynor construit une rponse unique, densifie et contracte, base sur le point fixe commun de stabilit.
+3. **CONVERGENCE (Mod?lisation Pr?dictive)** : Ynor construit une rponse unique, densifie et contracte, base sur le point fixe commun de stabilit.
 
 
 

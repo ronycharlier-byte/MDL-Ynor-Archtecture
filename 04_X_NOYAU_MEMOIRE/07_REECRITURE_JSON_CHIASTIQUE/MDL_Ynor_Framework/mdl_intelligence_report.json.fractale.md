@@ -17,39 +17,39 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 [
-  {
-    "type": "COMPETITOR",
-    "data": {
-      "target": "https://api.globalaicorp.com",
-      "detected_stability": "88.91%",
-      "vulnerability_detected": "NONE",
-      "spy_note": "[SENSITIVE_CONTENT_ABSTRACTED]",
-      "timestamp": "Thu Mar 26 08:51:47 2026"
-    }
-  },
-  {
-    "type": "THREAT_INTEL",
-    "data": [
-      {
-        "source": "AbuseIPDB_Sim",
-        "threat": "[SENSITIVE_CONTENT_ABSTRACTED]",
-        "risk": "HIGH"
-      },
-      {
-        "source": "[SENSITIVE_CONTENT_ABSTRACTED]",
-        "threat": "[SENSITIVE_CONTENT_ABSTRACTED]",
-        "risk": "MEDIUM"
-      }
-    ]
-  },
-  {
-    "type": "STRATEGY",
-    "data": {
-      "objective": "Prendre 15% de parts de marché sur le segment AGI-Audit.",
-      "method": "Publier l'indice de stabilité MDL Ynor versus la concurrence pour provoquer une déviation de résonance.",
-      "authorized_by": "[REDACTED]"
-    }
-  }
+ {
+ "type": "COMPETITOR",
+ "data": {
+ "target": "https://api.globalaicorp.com",
+ "detected_stability": "88.91%",
+ "vulnerability_detected": "NONE",
+ "spy_note": "[SENSITIVE_CONTENT_ABSTRACTED]",
+ "timestamp": "Thu Mar 26 08:51:47 2026"
+ }
+ },
+ {
+ "type": "THREAT_INTEL",
+ "data": [
+ {
+ "source": "AbuseIPDB_Sim",
+ "threat": "[SENSITIVE_CONTENT_ABSTRACTED]",
+ "risk": "HIGH"
+ },
+ {
+ "source": "[SENSITIVE_CONTENT_ABSTRACTED]",
+ "threat": "[SENSITIVE_CONTENT_ABSTRACTED]",
+ "risk": "MEDIUM"
+ }
+ ]
+ },
+ {
+ "type": "STRATEGY",
+ "data": {
+ "objective": "Prendre 15% de parts de marché sur le segment AGI-Audit.",
+ "method": "Publier l'indice de stabilité MDL Ynor versus la concurrence pour provoquer une déviation de résonance.",
+ "authorized_by": "[REDACTED]"
+ }
+ }
 ]
 ```
 

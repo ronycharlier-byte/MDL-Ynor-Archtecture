@@ -282,7 +282,7 @@ Il sert de couche intermediaire entre les vecteurs par axe et les vecteurs feuil
 
 - Limite: Vecteur De Bord, Vecteur De Cadre.
 
-- Sens Ultime: Vecteur De Direction, Vecteur De Fin.
+- Sens le modèle canonique: Vecteur De Direction, Vecteur De Fin.
 
 ## Axe Symbolique
 

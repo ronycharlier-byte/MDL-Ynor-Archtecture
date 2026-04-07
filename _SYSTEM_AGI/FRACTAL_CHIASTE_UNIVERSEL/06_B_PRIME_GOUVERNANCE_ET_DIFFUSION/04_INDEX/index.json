@@ -1,25 +1,25 @@
 {
-  "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
-  "key": "B_PRIME",
-  "mirror": "B",
-  "role": "Reprise normative, securitaire, commerciale et de soumission",
-  "inventory_count": 4,
-  "inventory": [
-    {
-      "source": "MDL_Ynor_Framework/_05_MARKETING_AND_PITCH",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/_09_SECURITY_AND_AUDIT",
-      "status": "missing"
-    },
-    {
-      "source": "_SUBMISSIONS",
-      "status": "missing"
-    }
-  ]
+ "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+ "key": "B_PRIME",
+ "mirror": "B",
+ "role": "Reprise normative, securitaire, commerciale et de soumission",
+ "inventory_count": 4,
+ "inventory": [
+ {
+ "source": "MDL_Ynor_Framework/_05_MARKETING_AND_PITCH",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/_09_SECURITY_AND_AUDIT",
+ "status": "missing"
+ },
+ {
+ "source": "_SUBMISSIONS",
+ "status": "missing"
+ }
+ ]
 }

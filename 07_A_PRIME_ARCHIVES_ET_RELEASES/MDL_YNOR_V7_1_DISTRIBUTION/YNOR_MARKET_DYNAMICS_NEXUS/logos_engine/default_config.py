@@ -7,106 +7,106 @@ import os
 DEFAULT_CONFIG = {
 
 
-    "project_dir": os.path.abspath(os.path.join(os.path.dirname(__file__), ".")),
+ "project_dir": os.path.abspath(os.path.join(os.path.dirname(__file__), ".")),
 
 
-    "results_dir": os.getenv("Ynor_Dynamics_RESULTS_DIR", "./results"),
+ "results_dir": os.getenv("Ynor_Dynamics_RESULTS_DIR", "./results"),
 
 
-    "data_cache_dir": os.path.join(
+ "data_cache_dir": os.path.join(
 
 
-        os.path.abspath(os.path.join(os.path.dirname(__file__), ".")),
+ os.path.abspath(os.path.join(os.path.dirname(__file__), ".")),
 
 
-        "dataflows/data_cache",
+ "dataflows/data_cache",
 
 
-    ),
+ ),
 
 
-    # LLM settings
+ # LLM settings
 
 
-    "llm_provider": "openai",
+ "llm_provider": "openai",
 
 
-    "deep_think_llm": "gpt-5.4",
+ "deep_think_llm": "gpt-5.4",
 
 
-    "quick_think_llm": "gpt-5.4-mini",
+ "quick_think_llm": "gpt-5.4-mini",
 
 
-    "backend_url": "https://api.openai.com/v1",
+ "backend_url": "https://api.openai.com/v1",
 
 
-    # Provider-specific thinking configuration
+ # Provider-specific thinking configuration
 
 
-    "google_thinking_level": None,      # "high", "minimal", etc.
+ "google_thinking_level": None, # "high", "minimal", etc.
 
 
-    "openai_reasoning_effort": None,    # "medium", "high", "low"
+ "openai_reasoning_effort": None, # "medium", "high", "low"
 
 
-    "anthropic_effort": None,           # "high", "medium", "low"
+ "anthropic_effort": None, # "high", "medium", "low"
 
 
-    # Output language for analyst reports and final decision
+ # Output language for analyst reports and final decision
 
 
-    # Internal agent debate stays in English for reasoning quality
+ # Internal agent debate stays in English for reasoning quality
 
 
-    "output_language": "English",
+ "output_language": "English",
 
 
-    # Debate and discussion settings
+ # Debate and discussion settings
 
 
-    "max_debate_rounds": 1,
+ "max_debate_rounds": 1,
 
 
-    "max_risk_discuss_rounds": 1,
+ "max_risk_discuss_rounds": 1,
 
 
-    "max_recur_limit": 100,
+ "max_recur_limit": 100,
 
 
-    # Data vendor configuration
+ # Data vendor configuration
 
 
-    # Category-level configuration (default for all tools in category)
+ # Category-level configuration (default for all tools in category)
 
 
-    "data_vendors": {
+ "data_vendors": {
 
 
-        "core_stock_apis": "yfinance",       # Options: alpha_vantage, yfinance
+ "core_stock_apis": "yfinance", # Options: alpha_vantage, yfinance
 
 
-        "technical_indicators": "yfinance",  # Options: alpha_vantage, yfinance
+ "technical_indicators": "yfinance", # Options: alpha_vantage, yfinance
 
 
-        "fundamental_data": "yfinance",      # Options: alpha_vantage, yfinance
+ "fundamental_data": "yfinance", # Options: alpha_vantage, yfinance
 
 
-        "news_data": "yfinance",             # Options: alpha_vantage, yfinance
+ "news_data": "yfinance", # Options: alpha_vantage, yfinance
 
 
-    },
+ },
 
 
-    # Tool-level configuration (takes precedence over category-level)
+ # Tool-level configuration (takes precedence over category-level)
 
 
-    "tool_vendors": {
+ "tool_vendors": {
 
 
-        # Example: "get_stock_data": "alpha_vantage",  # Override category default
+ # Example: "get_stock_data": "alpha_vantage", # Override category default
 
 
-    },
+ },
 
 
 }

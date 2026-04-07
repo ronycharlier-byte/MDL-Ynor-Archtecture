@@ -6,83 +6,83 @@ import os
 
 def execute_purge():
 
-    # 1. Purge des Doublons (via report)
+ # 1. Purge des Doublons (via report)
 
-    data = {}
+ data = {}
 
-    if os.path.exists('collapse_report.json'):
+ if os.path.exists('collapse_report.json'):
 
-        with open('collapse_report.json', 'r') as f:
+ with open('collapse_report.json', 'r') as f:
 
-            data = json.load(f)
+ data = json.load(f)
 
-    
+ 
 
-    duplicates = data.get('duplicate_list', [])
+ duplicates = data.get('duplicate_list', [])
 
-    purged_count = 0
+ purged_count = 0
 
-    
+ 
 
-    print(f"=== DÉBUT DE LA PURGE DE DENSIFICATION (V11.13.x) ===")
+ print(f"=== DÉBUT DE LA PURGE DE DENSIFICATION (V11.13.x) ===")
 
-    
+ 
 
-    # Suppression des doublons lists
+ # Suppression des doublons lists
 
-    for item in duplicates:
+ for item in duplicates:
 
-        path = os.path.normpath(item['duplicate'])
+ path = os.path.normpath(item['duplicate'])
 
-        try:
+ try:
 
-            if os.path.exists(path):
+ if os.path.exists(path):
 
-                os.remove(path)
+ os.remove(path)
 
-                print(f"[PURGE] Doublon : {path} -> EFFACÉ")
+ print(f"[PURGE] Doublon : {path} -> EFFACÉ")
 
-                purged_count += 1
+ purged_count += 1
 
-        except Exception as e:
+ except Exception as e:
 
-            print(f"[ERREUR] Impossible de supprimer {path}: {e}")
+ print(f"[ERREUR] Impossible de supprimer {path}: {e}")
 
 
 
-    # 2. Nettoyage Chirurgical des Rsidus (Untitled / Sans titre)
+ # 2. Nettoyage Chirurgical des Rsidus (Untitled / Sans titre)
 
-    print(f"\n--- NETTOYAGE DES RÉSIDUS (ROOT) ---")
+ print(f"\n--- NETTOYAGE DES RÉSIDUS (ROOT) ---")
 
-    residue_patterns = ["Sans titre", "Untitled"]
+ residue_patterns = ["Sans titre", "Untitled"]
 
-    
+ 
 
-    for filename in os.listdir('.'):
+ for filename in os.listdir('.'):
 
-        if any(pattern in filename for pattern in residue_patterns):
+ if any(pattern in filename for pattern in residue_patterns):
 
-            if os.path.isfile(filename):
+ if os.path.isfile(filename):
 
-                try:
+ try:
 
-                    os.remove(filename)
+ os.remove(filename)
 
-                    print(f"[CLEANUP] Rsidu : {filename} -> ÉLIMINÉ")
+ print(f"[CLEANUP] Rsidu : {filename} -> ÉLIMINÉ")
 
-                    purged_count += 1
+ purged_count += 1
 
-                except Exception as e:
+ except Exception as e:
 
-                    print(f"[ERREUR] Impossible d'liminer {filename}: {e}")
+ print(f"[ERREUR] Impossible d'liminer {filename}: {e}")
 
-            
+ 
 
-    print(f"\n=== OPÉRATION TERMINÉE : {purged_count} ÉLÉMENTS PURGÉS ===")
+ print(f"\n=== OPÉRATION TERMINÉE : {purged_count} ÉLÉMENTS PURGÉS ===")
 
-    print(f"STATUT : CORPUS DENSISIÉ ET PURIFIÉ.")
+ print(f"STATUT : CORPUS DENSISIÉ ET PURIFIÉ.")
 
-    return purged_count
+ return purged_count
 
 
 
@@ -90,5 +90,5 @@ def execute_purge():
 
 if __name__ == "__main__":
 
-    execute_purge()
+ execute_purge()
 

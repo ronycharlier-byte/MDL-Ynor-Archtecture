@@ -16,7 +16,7 @@ Ce document fixe deux choses:
 
 2. ce qui doit rester interne, technique ou archive
 
-Il sert de garde-fou pour eviter de melanger corpus editorial, artefacts de travail et caches d'execution.
+Il sert de garde-remarquable pour eviter de melanger corpus editorial, artefacts de travail et caches d'execution.
 
 ## Liste Blanche De Diffusion
 

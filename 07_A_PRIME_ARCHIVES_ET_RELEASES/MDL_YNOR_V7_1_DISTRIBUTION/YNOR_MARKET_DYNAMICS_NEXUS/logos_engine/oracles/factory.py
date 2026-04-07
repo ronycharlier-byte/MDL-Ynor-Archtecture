@@ -25,123 +25,123 @@ from .google_client import GoogleClient
 def create_llm_client(
 
 
-    provider: str,
+ provider: str,
 
 
-    model: str,
+ model: str,
 
 
-    base_url: Optional[str] = None,
+ base_url: Optional[str] = None,
 
 
-    **kwargs,
+ **kwargs,
 
 
 ) -> BaseLLMClient:
 
 
-    """Create an LLM client for the specified provider.
+ """Create an LLM client for the specified provider.
 
 
 
 
 
-    Args:
+ Args:
 
 
-        provider: LLM provider (openai, anthropic, google, xai, ollama, openrouter)
+ provider: LLM provider (openai, anthropic, google, xai, ollama, openrouter)
 
 
-        model: Model name/identifier
+ model: Model name/identifier
 
 
-        base_url: Optional base URL for API endpoint
+ base_url: Optional base URL for API endpoint
 
 
-        **kwargs: Additional provider-specific arguments
+ **kwargs: Additional provider-specific arguments
 
 
-            - http_client: Custom httpx.Client for SSL proxy or certificate customization
+ - http_client: Custom httpx.Client for SSL proxy or certificate customization
 
 
-            - http_async_client: Custom httpx.AsyncClient for async operations
+ - http_async_client: Custom httpx.AsyncClient for async operations
 
 
-            - timeout: Request timeout in seconds
+ - timeout: Request timeout in seconds
 
 
-            - max_retries: Maximum retry attempts
+ - max_retries: Maximum retry attempts
 
 
-            - api_key: API key for the provider
+ - api_key: API key for the provider
 
 
-            - callbacks: LangChain callbacks
+ - callbacks: LangChain callbacks
 
 
 
 
 
-    Returns:
+ Returns:
 
 
-        Configured BaseLLMClient instance
+ Configured BaseLLMClient instance
 
 
 
 
 
-    Raises:
+ Raises:
 
 
-        ValueError: If provider is not supported
+ ValueError: If provider is not supported
 
 
-    """
+ """
 
 
-    provider_lower = provider.lower()
+ provider_lower = provider.lower()
 
 
 
 
 
-    if provider_lower in ("openai", "ollama", "openrouter"):
+ if provider_lower in ("openai", "ollama", "openrouter"):
 
 
-        return OpenAIClient(model, base_url, provider=provider_lower, **kwargs)
+ return OpenAIClient(model, base_url, provider=provider_lower, **kwargs)
 
 
 
 
 
-    if provider_lower == "xai":
+ if provider_lower == "xai":
 
 
-        return OpenAIClient(model, base_url, provider="xai", **kwargs)
+ return OpenAIClient(model, base_url, provider="xai", **kwargs)
 
 
 
 
 
-    if provider_lower == "anthropic":
+ if provider_lower == "anthropic":
 
 
-        return AnthropicClient(model, base_url, **kwargs)
+ return AnthropicClient(model, base_url, **kwargs)
 
 
 
 
 
-    if provider_lower == "google":
+ if provider_lower == "google":
 
 
-        return GoogleClient(model, base_url, **kwargs)
+ return GoogleClient(model, base_url, **kwargs)
 
 
 
 
 
-    raise ValueError(f"Unsupported LLM provider: {provider}")
+ raise ValueError(f"Unsupported LLM provider: {provider}")
 
 

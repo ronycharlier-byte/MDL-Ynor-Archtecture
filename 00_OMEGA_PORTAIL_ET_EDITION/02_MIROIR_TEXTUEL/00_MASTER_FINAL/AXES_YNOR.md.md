@@ -2729,7 +2729,7 @@ Les axes ci-dessous ouvrent Ynor vers des couches plus fondamentales de lecture 
 
 
 
-- axe sens ultime
+- axe sens le modèle canonique
 
 
 
@@ -5449,7 +5449,7 @@ mindmap
 
 
 
-  root((Ynor))
+ root((Ynor))
 
 
 
@@ -5457,7 +5457,7 @@ mindmap
 
 
 
-    Mathematique
+ Mathematique
 
 
 
@@ -5465,7 +5465,7 @@ mindmap
 
 
 
-      logique
+ logique
 
 
 
@@ -5473,7 +5473,7 @@ mindmap
 
 
 
-      ensembles
+ ensembles
 
 
 
@@ -5481,7 +5481,7 @@ mindmap
 
 
 
-      graphes
+ graphes
 
 
 
@@ -5489,7 +5489,7 @@ mindmap
 
 
 
-      topologie
+ topologie
 
 
 
@@ -5497,7 +5497,7 @@ mindmap
 
 
 
-      probabilites
+ probabilites
 
 
 
@@ -5505,7 +5505,7 @@ mindmap
 
 
 
-      fractales
+ fractales
 
 
 
@@ -5513,7 +5513,7 @@ mindmap
 
 
 
-    Biologique
+ Biologique
 
 
 
@@ -5521,7 +5521,7 @@ mindmap
 
 
 
-      auto-organisation
+ auto-organisation
 
 
 
@@ -5529,7 +5529,7 @@ mindmap
 
 
 
-      evolution
+ evolution
 
 
 
@@ -5537,7 +5537,7 @@ mindmap
 
 
 
-      homeostasie
+ homeostasie
 
 
 
@@ -5545,7 +5545,7 @@ mindmap
 
 
 
-      morphogenese
+ morphogenese
 
 
 
@@ -5553,7 +5553,7 @@ mindmap
 
 
 
-      ecologie
+ ecologie
 
 
 
@@ -5561,7 +5561,7 @@ mindmap
 
 
 
-      regeneration
+ regeneration
 
 
 
@@ -5569,7 +5569,7 @@ mindmap
 
 
 
-    Physique
+ Physique
 
 
 
@@ -5577,7 +5577,7 @@ mindmap
 
 
 
-      champs
+ champs
 
 
 
@@ -5585,7 +5585,7 @@ mindmap
 
 
 
-      forces
+ forces
 
 
 
@@ -5593,7 +5593,7 @@ mindmap
 
 
 
-      entropie
+ entropie
 
 
 
@@ -5601,7 +5601,7 @@ mindmap
 
 
 
-      dissipation
+ dissipation
 
 
 
@@ -5609,7 +5609,7 @@ mindmap
 
 
 
-      transitions
+ transitions
 
 
 
@@ -5617,7 +5617,7 @@ mindmap
 
 
 
-      resonance
+ resonance
 
 
 
@@ -5625,7 +5625,7 @@ mindmap
 
 
 
-    Scientifique
+ Scientifique
 
 
 
@@ -5633,7 +5633,7 @@ mindmap
 
 
 
-      mesure
+ mesure
 
 
 
@@ -5641,7 +5641,7 @@ mindmap
 
 
 
-      protocole
+ protocole
 
 
 
@@ -5649,7 +5649,7 @@ mindmap
 
 
 
-      modele
+ modele
 
 
 
@@ -5657,7 +5657,7 @@ mindmap
 
 
 
-      preuve
+ preuve
 
 
 
@@ -5665,7 +5665,7 @@ mindmap
 
 
 
-      audit
+ audit
 
 
 
@@ -5673,7 +5673,7 @@ mindmap
 
 
 
-      reproductibilite
+ reproductibilite
 
 
 
@@ -5681,7 +5681,7 @@ mindmap
 
 
 
-    Derives
+ Derives
 
 
 
@@ -5689,7 +5689,7 @@ mindmap
 
 
 
-      Mathematique
+ Mathematique
 
 
 
@@ -5697,7 +5697,7 @@ mindmap
 
 
 
-        logique
+ logique
 
 
 
@@ -5705,7 +5705,7 @@ mindmap
 
 
 
-        axiomatique
+ axiomatique
 
 
 
@@ -5713,7 +5713,7 @@ mindmap
 
 
 
-        ensembliste
+ ensembliste
 
 
 
@@ -5721,7 +5721,7 @@ mindmap
 
 
 
-        graphique
+ graphique
 
 
 
@@ -5729,7 +5729,7 @@ mindmap
 
 
 
-        topologique
+ topologique
 
 
 
@@ -5737,7 +5737,7 @@ mindmap
 
 
 
-        geometrique
+ geometrique
 
 
 
@@ -5745,7 +5745,7 @@ mindmap
 
 
 
-        probabiliste
+ probabiliste
 
 
 
@@ -5753,7 +5753,7 @@ mindmap
 
 
 
-        fractal
+ fractal
 
 
 
@@ -5761,7 +5761,7 @@ mindmap
 
 
 
-      Biologique
+ Biologique
 
 
 
@@ -5769,7 +5769,7 @@ mindmap
 
 
 
-        vital
+ vital
 
 
 
@@ -5777,7 +5777,7 @@ mindmap
 
 
 
-        adaptatif
+ adaptatif
 
 
 
@@ -5785,7 +5785,7 @@ mindmap
 
 
 
-        morphogenetique
+ morphogenetique
 
 
 
@@ -5793,7 +5793,7 @@ mindmap
 
 
 
-        homeostatique
+ homeostatique
 
 
 
@@ -5801,7 +5801,7 @@ mindmap
 
 
 
-        evolutif
+ evolutif
 
 
 
@@ -5809,7 +5809,7 @@ mindmap
 
 
 
-        ecologique
+ ecologique
 
 
 
@@ -5817,7 +5817,7 @@ mindmap
 
 
 
-        regeneratif
+ regeneratif
 
 
 
@@ -5825,7 +5825,7 @@ mindmap
 
 
 
-        organique
+ organique
 
 
 
@@ -5833,7 +5833,7 @@ mindmap
 
 
 
-      Physique
+ Physique
 
 
 
@@ -5841,7 +5841,7 @@ mindmap
 
 
 
-        dynamique
+ dynamique
 
 
 
@@ -5849,7 +5849,7 @@ mindmap
 
 
 
-        energetique
+ energetique
 
 
 
@@ -5857,7 +5857,7 @@ mindmap
 
 
 
-        thermodynamique
+ thermodynamique
 
 
 
@@ -5865,7 +5865,7 @@ mindmap
 
 
 
-        dissipatif
+ dissipatif
 
 
 
@@ -5873,7 +5873,7 @@ mindmap
 
 
 
-        inertiel
+ inertiel
 
 
 
@@ -5881,7 +5881,7 @@ mindmap
 
 
 
-        resonant
+ resonant
 
 
 
@@ -5889,7 +5889,7 @@ mindmap
 
 
 
-        cinetique
+ cinetique
 
 
 
@@ -5897,7 +5897,7 @@ mindmap
 
 
 
-        transitionnel
+ transitionnel
 
 
 
@@ -5905,7 +5905,7 @@ mindmap
 
 
 
-      Scientifique
+ Scientifique
 
 
 
@@ -5913,7 +5913,7 @@ mindmap
 
 
 
-        experimental
+ experimental
 
 
 
@@ -5921,7 +5921,7 @@ mindmap
 
 
 
-        methodologique
+ methodologique
 
 
 
@@ -5929,7 +5929,7 @@ mindmap
 
 
 
-        theorique
+ theorique
 
 
 
@@ -5937,7 +5937,7 @@ mindmap
 
 
 
-        empirique
+ empirique
 
 
 
@@ -5945,7 +5945,7 @@ mindmap
 
 
 
-        analytique
+ analytique
 
 
 
@@ -5953,7 +5953,7 @@ mindmap
 
 
 
-        critique
+ critique
 
 
 
@@ -5961,7 +5961,7 @@ mindmap
 
 
 
-        reproductible
+ reproductible
 
 
 
@@ -5969,7 +5969,7 @@ mindmap
 
 
 
-        verificatif
+ verificatif
 
 
 
@@ -5977,7 +5977,7 @@ mindmap
 
 
 
-      Cognitif
+ Cognitif
 
 
 
@@ -5985,7 +5985,7 @@ mindmap
 
 
 
-        perceptif
+ perceptif
 
 
 
@@ -5993,7 +5993,7 @@ mindmap
 
 
 
-        attentionnel
+ attentionnel
 
 
 
@@ -6001,7 +6001,7 @@ mindmap
 
 
 
-        mnemonic
+ mnemonic
 
 
 
@@ -6009,7 +6009,7 @@ mindmap
 
 
 
-        conceptuel
+ conceptuel
 
 
 
@@ -6017,7 +6017,7 @@ mindmap
 
 
 
-        decisionnel
+ decisionnel
 
 
 
@@ -6025,7 +6025,7 @@ mindmap
 
 
 
-        representatif
+ representatif
 
 
 
@@ -6033,7 +6033,7 @@ mindmap
 
 
 
-      Neurologique
+ Neurologique
 
 
 
@@ -6041,7 +6041,7 @@ mindmap
 
 
 
-        neuronal
+ neuronal
 
 
 
@@ -6049,7 +6049,7 @@ mindmap
 
 
 
-        synaptique
+ synaptique
 
 
 
@@ -6057,7 +6057,7 @@ mindmap
 
 
 
-        plasticite
+ plasticite
 
 
 
@@ -6065,7 +6065,7 @@ mindmap
 
 
 
-        reseau
+ reseau
 
 
 
@@ -6073,7 +6073,7 @@ mindmap
 
 
 
-        codage
+ codage
 
 
 
@@ -6081,7 +6081,7 @@ mindmap
 
 
 
-        integration
+ integration
 
 
 
@@ -6089,7 +6089,7 @@ mindmap
 
 
 
-      MecaniqueQuantique
+ MecaniqueQuantique
 
 
 
@@ -6097,7 +6097,7 @@ mindmap
 
 
 
-        superposition
+ superposition
 
 
 
@@ -6105,7 +6105,7 @@ mindmap
 
 
 
-        intrication
+ intrication
 
 
 
@@ -6113,7 +6113,7 @@ mindmap
 
 
 
-        mesure
+ mesure
 
 
 
@@ -6121,7 +6121,7 @@ mindmap
 
 
 
-        probabiliste
+ probabiliste
 
 
 
@@ -6129,7 +6129,7 @@ mindmap
 
 
 
-        decoherence
+ decoherence
 
 
 
@@ -6137,7 +6137,7 @@ mindmap
 
 
 
-        transition
+ transition
 
 
 
@@ -6145,7 +6145,7 @@ mindmap
 
 
 
-    Complementaires
+ Complementaires
 
 
 
@@ -6153,7 +6153,7 @@ mindmap
 
 
 
-      Informationnel
+ Informationnel
 
 
 
@@ -6161,7 +6161,7 @@ mindmap
 
 
 
-        signal
+ signal
 
 
 
@@ -6169,7 +6169,7 @@ mindmap
 
 
 
-        donnees
+ donnees
 
 
 
@@ -6177,7 +6177,7 @@ mindmap
 
 
 
-        Vecteurs de Donnes Stochastiques
+ Vecteurs de Donnes Stochastiques
 
 
 
@@ -6185,7 +6185,7 @@ mindmap
 
 
 
-        codage
+ codage
 
 
 
@@ -6193,7 +6193,7 @@ mindmap
 
 
 
-        transmission
+ transmission
 
 
 
@@ -6201,7 +6201,7 @@ mindmap
 
 
 
-        interpretation
+ interpretation
 
 
 
@@ -6209,7 +6209,7 @@ mindmap
 
 
 
-      Computationnel
+ Computationnel
 
 
 
@@ -6217,7 +6217,7 @@ mindmap
 
 
 
-        calcul
+ calcul
 
 
 
@@ -6225,7 +6225,7 @@ mindmap
 
 
 
-        algorithme
+ algorithme
 
 
 
@@ -6233,7 +6233,7 @@ mindmap
 
 
 
-        execution
+ execution
 
 
 
@@ -6241,7 +6241,7 @@ mindmap
 
 
 
-        complexite
+ complexite
 
 
 
@@ -6249,7 +6249,7 @@ mindmap
 
 
 
-        automatisation
+ automatisation
 
 
 
@@ -6257,7 +6257,7 @@ mindmap
 
 
 
-        optimisation
+ optimisation
 
 
 
@@ -6265,7 +6265,7 @@ mindmap
 
 
 
-      Semiotique
+ Semiotique
 
 
 
@@ -6273,7 +6273,7 @@ mindmap
 
 
 
-        signe
+ signe
 
 
 
@@ -6281,7 +6281,7 @@ mindmap
 
 
 
-        sens
+ sens
 
 
 
@@ -6289,7 +6289,7 @@ mindmap
 
 
 
-        symbole
+ symbole
 
 
 
@@ -6297,7 +6297,7 @@ mindmap
 
 
 
-        reference
+ reference
 
 
 
@@ -6305,7 +6305,7 @@ mindmap
 
 
 
-        lecture
+ lecture
 
 
 
@@ -6313,7 +6313,7 @@ mindmap
 
 
 
-        contexte
+ contexte
 
 
 
@@ -6321,7 +6321,7 @@ mindmap
 
 
 
-      Temporel
+ Temporel
 
 
 
@@ -6329,7 +6329,7 @@ mindmap
 
 
 
-        sequence
+ sequence
 
 
 
@@ -6337,7 +6337,7 @@ mindmap
 
 
 
-        chronologie
+ chronologie
 
 
 
@@ -6345,7 +6345,7 @@ mindmap
 
 
 
-        memoire
+ memoire
 
 
 
@@ -6353,7 +6353,7 @@ mindmap
 
 
 
-        anticipation
+ anticipation
 
 
 
@@ -6361,7 +6361,7 @@ mindmap
 
 
 
-        cycle
+ cycle
 
 
 
@@ -6369,7 +6369,7 @@ mindmap
 
 
 
-        rythme
+ rythme
 
 
 
@@ -6377,7 +6377,7 @@ mindmap
 
 
 
-      Principal Investigatorural
+ Principal Investigatorural
 
 
 
@@ -6385,7 +6385,7 @@ mindmap
 
 
 
-        structure
+ structure
 
 
 
@@ -6393,7 +6393,7 @@ mindmap
 
 
 
-        niveau
+ niveau
 
 
 
@@ -6401,7 +6401,7 @@ mindmap
 
 
 
-        couche
+ couche
 
 
 
@@ -6409,7 +6409,7 @@ mindmap
 
 
 
-        module
+ module
 
 
 
@@ -6417,7 +6417,7 @@ mindmap
 
 
 
-        passage
+ passage
 
 
 
@@ -6425,7 +6425,7 @@ mindmap
 
 
 
-        articulation
+ articulation
 
 
 
@@ -6433,7 +6433,7 @@ mindmap
 
 
 
-      Editorial
+ Editorial
 
 
 
@@ -6441,7 +6441,7 @@ mindmap
 
 
 
-        version
+ version
 
 
 
@@ -6449,7 +6449,7 @@ mindmap
 
 
 
-        style
+ style
 
 
 
@@ -6457,7 +6457,7 @@ mindmap
 
 
 
-        correction
+ correction
 
 
 
@@ -6465,7 +6465,7 @@ mindmap
 
 
 
-        coherence
+ coherence
 
 
 
@@ -6473,7 +6473,7 @@ mindmap
 
 
 
-        publication
+ publication
 
 
 
@@ -6481,7 +6481,7 @@ mindmap
 
 
 
-        diffusion
+ diffusion
 
 
 
@@ -6489,7 +6489,7 @@ mindmap
 
 
 
-      Strategique
+ Strategique
 
 
 
@@ -6497,7 +6497,7 @@ mindmap
 
 
 
-        direction
+ direction
 
 
 
@@ -6505,7 +6505,7 @@ mindmap
 
 
 
-        priorite
+ priorite
 
 
 
@@ -6513,7 +6513,7 @@ mindmap
 
 
 
-        plan
+ plan
 
 
 
@@ -6521,7 +6521,7 @@ mindmap
 
 
 
-        decision
+ decision
 
 
 
@@ -6529,7 +6529,7 @@ mindmap
 
 
 
-        action
+ action
 
 
 
@@ -6537,7 +6537,7 @@ mindmap
 
 
 
-        positionnement
+ positionnement
 
 
 
@@ -6545,7 +6545,7 @@ mindmap
 
 
 
-    Profonds
+ Profonds
 
 
 
@@ -6553,7 +6553,7 @@ mindmap
 
 
 
-      Metaphysique
+ Metaphysique
 
 
 
@@ -6561,7 +6561,7 @@ mindmap
 
 
 
-        etre
+ etre
 
 
 
@@ -6569,7 +6569,7 @@ mindmap
 
 
 
-        presence
+ presence
 
 
 
@@ -6577,7 +6577,7 @@ mindmap
 
 
 
-        fondement
+ fondement
 
 
 
@@ -6585,7 +6585,7 @@ mindmap
 
 
 
-        transcendance
+ transcendance
 
 
 
@@ -6593,7 +6593,7 @@ mindmap
 
 
 
-        immanence
+ immanence
 
 
 
@@ -6601,7 +6601,7 @@ mindmap
 
 
 
-        sens
+ sens
 
 
 
@@ -6609,7 +6609,7 @@ mindmap
 
 
 
-      Symbolique
+ Symbolique
 
 
 
@@ -6617,7 +6617,7 @@ mindmap
 
 
 
-        image
+ image
 
 
 
@@ -6625,7 +6625,7 @@ mindmap
 
 
 
-        archetype
+ archetype
 
 
 
@@ -6633,7 +6633,7 @@ mindmap
 
 
 
-        mythe
+ mythe
 
 
 
@@ -6641,7 +6641,7 @@ mindmap
 
 
 
-        analogie
+ analogie
 
 
 
@@ -6649,7 +6649,7 @@ mindmap
 
 
 
-        resonance
+ resonance
 
 
 
@@ -6657,7 +6657,7 @@ mindmap
 
 
 
-        representation
+ representation
 
 
 
@@ -6665,7 +6665,7 @@ mindmap
 
 
 
-      Operationnel
+ Operationnel
 
 
 
@@ -6673,7 +6673,7 @@ mindmap
 
 
 
-        procedure
+ procedure
 
 
 
@@ -6681,7 +6681,7 @@ mindmap
 
 
 
-        execution
+ execution
 
 
 
@@ -6689,7 +6689,7 @@ mindmap
 
 
 
-        routine
+ routine
 
 
 
@@ -6697,7 +6697,7 @@ mindmap
 
 
 
-        controle
+ controle
 
 
 
@@ -6705,7 +6705,7 @@ mindmap
 
 
 
-        reponse
+ reponse
 
 
 
@@ -6713,7 +6713,7 @@ mindmap
 
 
 
-        production
+ production
 
 
 
@@ -6721,7 +6721,7 @@ mindmap
 
 
 
-      Relationnel
+ Relationnel
 
 
 
@@ -6729,7 +6729,7 @@ mindmap
 
 
 
-        lien
+ lien
 
 
 
@@ -6737,7 +6737,7 @@ mindmap
 
 
 
-        interface
+ interface
 
 
 
@@ -6745,7 +6745,7 @@ mindmap
 
 
 
-        interaction
+ interaction
 
 
 
@@ -6753,7 +6753,7 @@ mindmap
 
 
 
-        cooperation
+ cooperation
 
 
 
@@ -6761,7 +6761,7 @@ mindmap
 
 
 
-        mediation
+ mediation
 
 
 
@@ -6769,7 +6769,7 @@ mindmap
 
 
 
-        circulation
+ circulation
 
 
 
@@ -6777,7 +6777,7 @@ mindmap
 
 
 
-      Ethique
+ Ethique
 
 
 
@@ -6785,7 +6785,7 @@ mindmap
 
 
 
-        juste
+ juste
 
 
 
@@ -6793,7 +6793,7 @@ mindmap
 
 
 
-        responsable
+ responsable
 
 
 
@@ -6801,7 +6801,7 @@ mindmap
 
 
 
-        prudent
+ prudent
 
 
 
@@ -6809,7 +6809,7 @@ mindmap
 
 
 
-        loyal
+ loyal
 
 
 
@@ -6817,7 +6817,7 @@ mindmap
 
 
 
-        transparent
+ transparent
 
 
 
@@ -6825,7 +6825,7 @@ mindmap
 
 
 
-        integrite
+ integrite
 
 
 
@@ -6833,7 +6833,7 @@ mindmap
 
 
 
-      Cosmologique
+ Cosmologique
 
 
 
@@ -6841,7 +6841,7 @@ mindmap
 
 
 
-        ordre
+ ordre
 
 
 
@@ -6849,7 +6849,7 @@ mindmap
 
 
 
-        forme
+ forme
 
 
 
@@ -6857,7 +6857,7 @@ mindmap
 
 
 
-        ensemble
+ ensemble
 
 
 
@@ -6865,7 +6865,7 @@ mindmap
 
 
 
-        cosmos
+ cosmos
 
 
 
@@ -6873,7 +6873,7 @@ mindmap
 
 
 
-        expansion
+ expansion
 
 
 
@@ -6881,7 +6881,7 @@ mindmap
 
 
 
-        orientation
+ orientation
 
 
 
@@ -6889,7 +6889,7 @@ mindmap
 
 
 
-      Dialectique
+ Dialectique
 
 
 
@@ -6897,7 +6897,7 @@ mindmap
 
 
 
-        tension
+ tension
 
 
 
@@ -6905,7 +6905,7 @@ mindmap
 
 
 
-        contradiction
+ contradiction
 
 
 
@@ -6913,7 +6913,7 @@ mindmap
 
 
 
-        negation
+ negation
 
 
 
@@ -6921,7 +6921,7 @@ mindmap
 
 
 
-        depassement
+ depassement
 
 
 
@@ -6929,7 +6929,7 @@ mindmap
 
 
 
-        opposition
+ opposition
 
 
 
@@ -6937,7 +6937,7 @@ mindmap
 
 
 
-        synthese
+ synthese
 
 
 
@@ -6945,7 +6945,7 @@ mindmap
 
 
 
-    Superieurs
+ Superieurs
 
 
 
@@ -6953,7 +6953,7 @@ mindmap
 
 
 
-      Spirituel
+ Spirituel
 
 
 
@@ -6961,7 +6961,7 @@ mindmap
 
 
 
-        interiorite
+ interiorite
 
 
 
@@ -6969,7 +6969,7 @@ mindmap
 
 
 
-        elevation
+ elevation
 
 
 
@@ -6977,7 +6977,7 @@ mindmap
 
 
 
-        silence
+ silence
 
 
 
@@ -6985,7 +6985,7 @@ mindmap
 
 
 
-        communion
+ communion
 
 
 
@@ -6993,7 +6993,7 @@ mindmap
 
 
 
-        contemplation
+ contemplation
 
 
 
@@ -7001,7 +7001,7 @@ mindmap
 
 
 
-        illumination
+ illumination
 
 
 
@@ -7009,7 +7009,7 @@ mindmap
 
 
 
-      Initiatique
+ Initiatique
 
 
 
@@ -7017,7 +7017,7 @@ mindmap
 
 
 
-        seuil
+ seuil
 
 
 
@@ -7025,7 +7025,7 @@ mindmap
 
 
 
-        passage
+ passage
 
 
 
@@ -7033,7 +7033,7 @@ mindmap
 
 
 
-        epreuve
+ epreuve
 
 
 
@@ -7041,7 +7041,7 @@ mindmap
 
 
 
-        transformation
+ transformation
 
 
 
@@ -7049,7 +7049,7 @@ mindmap
 
 
 
-        transmission
+ transmission
 
 
 
@@ -7057,7 +7057,7 @@ mindmap
 
 
 
-        accomplissement
+ accomplissement
 
 
 
@@ -7065,7 +7065,7 @@ mindmap
 
 
 
-      Politique
+ Politique
 
 
 
@@ -7073,7 +7073,7 @@ mindmap
 
 
 
-        pouvoir
+ pouvoir
 
 
 
@@ -7081,7 +7081,7 @@ mindmap
 
 
 
-        gouvernance
+ gouvernance
 
 
 
@@ -7089,7 +7089,7 @@ mindmap
 
 
 
-        decision
+ decision
 
 
 
@@ -7097,7 +7097,7 @@ mindmap
 
 
 
-        legitimite
+ legitimite
 
 
 
@@ -7105,7 +7105,7 @@ mindmap
 
 
 
-        representation
+ representation
 
 
 
@@ -7113,7 +7113,7 @@ mindmap
 
 
 
-        canoniquete
+ canoniquete
 
 
 
@@ -7121,7 +7121,7 @@ mindmap
 
 
 
-      Civilisationnel
+ Civilisationnel
 
 
 
@@ -7129,7 +7129,7 @@ mindmap
 
 
 
-        societe
+ societe
 
 
 
@@ -7137,7 +7137,7 @@ mindmap
 
 
 
-        culture
+ culture
 
 
 
@@ -7145,7 +7145,7 @@ mindmap
 
 
 
-        transmission
+ transmission
 
 
 
@@ -7153,7 +7153,7 @@ mindmap
 
 
 
-        memoire
+ memoire
 
 
 
@@ -7161,7 +7161,7 @@ mindmap
 
 
 
-        norme
+ norme
 
 
 
@@ -7169,7 +7169,7 @@ mindmap
 
 
 
-        futur
+ futur
 
 
 
@@ -7177,7 +7177,7 @@ mindmap
 
 
 
-      Industriel
+ Industriel
 
 
 
@@ -7185,7 +7185,7 @@ mindmap
 
 
 
-        production
+ production
 
 
 
@@ -7193,7 +7193,7 @@ mindmap
 
 
 
-        chaine
+ chaine
 
 
 
@@ -7201,7 +7201,7 @@ mindmap
 
 
 
-        efficience
+ efficience
 
 
 
@@ -7209,7 +7209,7 @@ mindmap
 
 
 
-        standardisation
+ standardisation
 
 
 
@@ -7217,7 +7217,7 @@ mindmap
 
 
 
-        maintenance
+ maintenance
 
 
 
@@ -7225,7 +7225,7 @@ mindmap
 
 
 
-        robustesse
+ robustesse
 
 
 
@@ -7233,7 +7233,7 @@ mindmap
 
 
 
-      Systemique
+ Systemique
 
 
 
@@ -7241,7 +7241,7 @@ mindmap
 
 
 
-        ensemble
+ ensemble
 
 
 
@@ -7249,7 +7249,7 @@ mindmap
 
 
 
-        interaction
+ interaction
 
 
 
@@ -7257,7 +7257,7 @@ mindmap
 
 
 
-        boucle
+ boucle
 
 
 
@@ -7265,7 +7265,7 @@ mindmap
 
 
 
-        retroaction
+ retroaction
 
 
 
@@ -7273,7 +7273,7 @@ mindmap
 
 
 
-        emergence
+ emergence
 
 
 
@@ -7281,7 +7281,7 @@ mindmap
 
 
 
-        regulation
+ regulation
 
 
 
@@ -7289,7 +7289,7 @@ mindmap
 
 
 
-    Ultimes
+ Ultimes
 
 
 
@@ -7297,7 +7297,7 @@ mindmap
 
 
 
-      Poetique
+ Poetique
 
 
 
@@ -7305,7 +7305,7 @@ mindmap
 
 
 
-        image
+ image
 
 
 
@@ -7313,7 +7313,7 @@ mindmap
 
 
 
-        rythme
+ rythme
 
 
 
@@ -7321,7 +7321,7 @@ mindmap
 
 
 
-        souffle
+ souffle
 
 
 
@@ -7329,7 +7329,7 @@ mindmap
 
 
 
-        metaphore
+ metaphore
 
 
 
@@ -7337,7 +7337,7 @@ mindmap
 
 
 
-        chant
+ chant
 
 
 
@@ -7345,7 +7345,7 @@ mindmap
 
 
 
-        echos
+ echos
 
 
 
@@ -7353,7 +7353,7 @@ mindmap
 
 
 
-      Ingenierique
+ Ingenierique
 
 
 
@@ -7361,7 +7361,7 @@ mindmap
 
 
 
-        conception
+ conception
 
 
 
@@ -7369,7 +7369,7 @@ mindmap
 
 
 
-        architecture
+ architecture
 
 
 
@@ -7377,7 +7377,7 @@ mindmap
 
 
 
-        integration
+ integration
 
 
 
@@ -7385,7 +7385,7 @@ mindmap
 
 
 
-        test
+ test
 
 
 
@@ -7393,7 +7393,7 @@ mindmap
 
 
 
-        fiabilite
+ fiabilite
 
 
 
@@ -7401,7 +7401,7 @@ mindmap
 
 
 
-        maintenance
+ maintenance
 
 
 
@@ -7409,7 +7409,7 @@ mindmap
 
 
 
-      Existentiel
+ Existentiel
 
 
 
@@ -7417,7 +7417,7 @@ mindmap
 
 
 
-        devenir
+ devenir
 
 
 
@@ -7425,7 +7425,7 @@ mindmap
 
 
 
-        choix
+ choix
 
 
 
@@ -7433,7 +7433,7 @@ mindmap
 
 
 
-        finitude
+ finitude
 
 
 
@@ -7441,7 +7441,7 @@ mindmap
 
 
 
-        experience
+ experience
 
 
 
@@ -7449,7 +7449,7 @@ mindmap
 
 
 
-        sens
+ sens
 
 
 
@@ -7457,7 +7457,7 @@ mindmap
 
 
 
-        responsabilite
+ responsabilite
 
 
 
@@ -7465,7 +7465,7 @@ mindmap
 
 
 
-      Anthropologique
+ Anthropologique
 
 
 
@@ -7473,7 +7473,7 @@ mindmap
 
 
 
-        humain
+ humain
 
 
 
@@ -7481,7 +7481,7 @@ mindmap
 
 
 
-        commun
+ commun
 
 
 
@@ -7489,7 +7489,7 @@ mindmap
 
 
 
-        rites
+ rites
 
 
 
@@ -7497,7 +7497,7 @@ mindmap
 
 
 
-        culture
+ culture
 
 
 
@@ -7505,7 +7505,7 @@ mindmap
 
 
 
-        transmission
+ transmission
 
 
 
@@ -7513,7 +7513,7 @@ mindmap
 
 
 
-        memoire
+ memoire
 
 
 
@@ -7521,7 +7521,7 @@ mindmap
 
 
 
-      Ecologique
+ Ecologique
 
 
 
@@ -7529,7 +7529,7 @@ mindmap
 
 
 
-        milieu
+ milieu
 
 
 
@@ -7537,7 +7537,7 @@ mindmap
 
 
 
-        relation
+ relation
 
 
 
@@ -7545,7 +7545,7 @@ mindmap
 
 
 
-        adaptation
+ adaptation
 
 
 
@@ -7553,7 +7553,7 @@ mindmap
 
 
 
-        soutenabilite
+ soutenabilite
 
 
 
@@ -7561,7 +7561,7 @@ mindmap
 
 
 
-        cohabitation
+ cohabitation
 
 
 
@@ -7569,7 +7569,7 @@ mindmap
 
 
 
-        regeneration
+ regeneration
 
 
 
@@ -7577,7 +7577,7 @@ mindmap
 
 
 
-    Memoire
+ Memoire
 
 
 
@@ -7585,7 +7585,7 @@ mindmap
 
 
 
-      souvenir
+ souvenir
 
 
 
@@ -7593,7 +7593,7 @@ mindmap
 
 
 
-      trace
+ trace
 
 
 
@@ -7601,7 +7601,7 @@ mindmap
 
 
 
-      archive
+ archive
 
 
 
@@ -7609,7 +7609,7 @@ mindmap
 
 
 
-      retention
+ retention
 
 
 
@@ -7617,7 +7617,7 @@ mindmap
 
 
 
-      sedimentation
+ sedimentation
 
 
 
@@ -7625,7 +7625,7 @@ mindmap
 
 
 
-      continuation
+ continuation
 
 
 
@@ -7633,7 +7633,7 @@ mindmap
 
 
 
-    Archivistique
+ Archivistique
 
 
 
@@ -7641,7 +7641,7 @@ mindmap
 
 
 
-      classement
+ classement
 
 
 
@@ -7649,7 +7649,7 @@ mindmap
 
 
 
-      inventaire
+ inventaire
 
 
 
@@ -7657,7 +7657,7 @@ mindmap
 
 
 
-      conservation
+ conservation
 
 
 
@@ -7665,7 +7665,7 @@ mindmap
 
 
 
-      versioning
+ versioning
 
 
 
@@ -7673,7 +7673,7 @@ mindmap
 
 
 
-      acces
+ acces
 
 
 
@@ -7681,7 +7681,7 @@ mindmap
 
 
 
-      restoration
+ restoration
 
 
 
@@ -7689,7 +7689,7 @@ mindmap
 
 
 
-    Geopolitique
+ Geopolitique
 
 
 
@@ -7697,7 +7697,7 @@ mindmap
 
 
 
-      territoire
+ territoire
 
 
 
@@ -7705,7 +7705,7 @@ mindmap
 
 
 
-      frontiere
+ frontiere
 
 
 
@@ -7713,7 +7713,7 @@ mindmap
 
 
 
-      influence
+ influence
 
 
 
@@ -7721,7 +7721,7 @@ mindmap
 
 
 
-      alliance
+ alliance
 
 
 
@@ -7729,7 +7729,7 @@ mindmap
 
 
 
-      canoniquete
+ canoniquete
 
 
 
@@ -7737,7 +7737,7 @@ mindmap
 
 
 
-      circulation
+ circulation
 
 
 
@@ -7745,7 +7745,7 @@ mindmap
 
 
 
-    Metalogique
+ Metalogique
 
 
 
@@ -7753,7 +7753,7 @@ mindmap
 
 
 
-      autoreference
+ autoreference
 
 
 
@@ -7761,7 +7761,7 @@ mindmap
 
 
 
-      reflexivite
+ reflexivite
 
 
 
@@ -7769,7 +7769,7 @@ mindmap
 
 
 
-      coherence
+ coherence
 
 
 
@@ -7777,7 +7777,7 @@ mindmap
 
 
 
-      limite
+ limite
 
 
 
@@ -7785,7 +7785,7 @@ mindmap
 
 
 
-      preuve
+ preuve
 
 
 
@@ -7793,7 +7793,7 @@ mindmap
 
 
 
-      metacadre
+ metacadre
 
 
 
@@ -7801,7 +7801,7 @@ mindmap
 
 
 
-    Autoreflexif
+ Autoreflexif
 
 
 
@@ -7809,7 +7809,7 @@ mindmap
 
 
 
-      miroir
+ miroir
 
 
 
@@ -7817,7 +7817,7 @@ mindmap
 
 
 
-      retour
+ retour
 
 
 
@@ -7825,7 +7825,7 @@ mindmap
 
 
 
-      commentaire
+ commentaire
 
 
 
@@ -7833,7 +7833,7 @@ mindmap
 
 
 
-      revision
+ revision
 
 
 
@@ -7841,7 +7841,7 @@ mindmap
 
 
 
-      ajustement
+ ajustement
 
 
 
@@ -7849,7 +7849,7 @@ mindmap
 
 
 
-      relecture
+ relecture
 
 
 
@@ -8081,7 +8081,7 @@ Le passage peut se lire ainsi:
 
 
 
-15. axe metaphysique -> etre, presence, fondement, sens ultime
+15. axe metaphysique -> etre, presence, fondement, sens le modèle canonique
 
 
 

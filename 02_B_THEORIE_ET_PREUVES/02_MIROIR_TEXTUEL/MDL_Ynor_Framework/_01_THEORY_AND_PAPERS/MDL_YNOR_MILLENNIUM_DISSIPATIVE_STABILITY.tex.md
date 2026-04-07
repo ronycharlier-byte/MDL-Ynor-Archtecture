@@ -20,10 +20,10 @@ SHA256 : 6675b7dae71644345c7266a5dec75a2cacff53d7d30a6b1a4667cff47038965e
 
 \geometry{margin=1in}
 \hypersetup{
-  colorlinks=true,
-  linkcolor=blue,
-  citecolor=red,
-  urlcolor=blue
+ colorlinks=true,
+ linkcolor=blue,
+ citecolor=red,
+ urlcolor=blue
 }
 
 % ----------------------- THEOREMS -------------------------------------
@@ -81,18 +81,18 @@ from stochastic to deterministic mathematical governance.
 Let $(\mathcal{H},\langle\cdot,\cdot\rangle)$ be a real Hilbert space
 and consider an evolution
 \[
-  \dot{S}(t)=E(S)-D(S)+M(S_t),
-  \qquad S(0)=S_0\in\mathcal{H},
+ \dot{S}(t)=E(S)-D(S)+M(S_t),
+ \qquad S(0)=S_0\in\mathcal{H},
 \]
 where $D$ (dissipation), $E$ (amplification) and $M$ (memory kernel)
 satisfy:
 \begin{align}
-  \langle S,D(S)\rangle &\ge \alphacoeff\|S\|^{2},
-  &\text{(coercivity)}\\
-  |\langle S,E(S)\rangle| &\le \betacoeff\|S\|^{2},
-  &\text{(bounded amplification)}\\
-  \langle S,M(S_t)\rangle &\le \kappacoeff\|S\|^{2}.
-  &\text{(structural inertia)}
+ \langle S,D(S)\rangle &\ge \alphacoeff\|S\|^{2},
+ &\text{(coercivity)}\\
+ |\langle S,E(S)\rangle| &\le \betacoeff\|S\|^{2},
+ &\text{(bounded amplification)}\\
+ \langle S,M(S_t)\rangle &\le \kappacoeff\|S\|^{2}.
+ &\text{(structural inertia)}
 \end{align}
 With $\mumargin=\alphacoeff-\betacoeff-\kappacoeff$, the classical
 Lyapunov functional $V(S)=\tfrac12\|S\|^{2}$ obeys
@@ -104,9 +104,9 @@ $\mumargin>0$.
 \section{Global Regularity for 3D Navier--Stokes}
 Consider the Navier--Stokes equations on the domain $\Omega = \mathbb{R}^3$:
 \begin{equation}
-    \partial_t u + (u \cdot \nabla) u - \nu \Delta u + \nabla p = 0, 
-    \quad \nabla \cdot u = 0, 
-    \quad u(0, \cdot) = u_0,
+ \partial_t u + (u \cdot \nabla) u - \nu \Delta u + \nabla p = 0, 
+ \quad \nabla \cdot u = 0, 
+ \quad u(0, \cdot) = u_0,
 \end{equation}
 where $\nu > 0$ is the kinematic viscosity. To prove global regularity, we must 
 show that for any smooth $u_0 \in H^1(\mathbb{R}^3)$, there exists a 
@@ -118,7 +118,7 @@ Taking the $L^2$-inner product of (1) with $u$, and utilizing the
 incompressibility condition $\int_{\Omega} (u \cdot \nabla) u \cdot u \, dx = 0$, 
 we obtain the classic energy identity:
 \begin{equation}
-    \frac{d}{dt} \norm{u}_{L^2}^2 + 2\nu \norm{\nabla u}_{L^2}^2 = 0.
+ \frac{d}{dt} \norm{u}_{L^2}^2 + 2\nu \norm{\nabla u}_{L^2}^2 = 0.
 \end{equation}
 Integrating (2), we see that $u \in L^{\infty}(0, \infty; L^2)$ and 
 $u \in L^2(0, \infty; \dot{H}^1)$. However, this is insufficient for 
@@ -139,7 +139,7 @@ then the norm $\norm{u}_{L^3}(\mathbb{R}^3)$ remains bounded for all $t > 0$.
 \begin{proof}[Sketch of Proof]
 By the Gagliardo--Nirenberg interpolation:
 \begin{equation}
-    \norm{u}_{L^3}^3 \le C \norm{u}_{L^2}^{3/2} \norm{\nabla u}_{L^2}^{3/2}.
+ \norm{u}_{L^3}^3 \le C \norm{u}_{L^2}^{3/2} \norm{\nabla u}_{L^2}^{3/2}.
 \end{equation}
 Substituting this into the $H^1$ energy estimate, we find that the 
 vorticity $\omega = \nabla \times u$ satisfies an evolution equation 
@@ -166,7 +166,7 @@ $\sigma(H)$ coincides with the imaginary parts $\{\gamma_n\}$ of the zeros.
 The zeta-marge $\mumargin_{\zeta}$ is defined as the infimum of the 
 dissipative gap between the critical line and the unstable half-planes:
 \begin{equation}
-    \mumargin_{\zeta} = \inf_{\psi \in \mathcal{H}} \frac{\langle \psi, (H - \mathscr{A})\psi \rangle}{\norm{\psi}^2},
+ \mumargin_{\zeta} = \inf_{\psi \in \mathcal{H}} \frac{\langle \psi, (H - \mathscr{A})\psi \rangle}{\norm{\psi}^2},
 \end{equation}
 where $\mathscr{A}$ represents the arithmetic amplification operator.
 \end{definition}
@@ -198,7 +198,7 @@ The Yang--Mills mass gap $\Delta$ is directly proportional to the
 square root of the dissipative margin $\mumargin_{YM}$ in the 
 gauge-invariant Sobolev space $W^{1,2}_A$:
 \begin{equation}
-    \Delta \approx \sqrt{\mumargin_{YM}} = \sqrt{\alphacoeff_{YM} - \betacoeff_{YM}},
+ \Delta \approx \sqrt{\mumargin_{YM}} = \sqrt{\alphacoeff_{YM} - \betacoeff_{YM}},
 \end{equation}
 where $\alphacoeff_{YM}$ is the topological dissipation (instanton density) 
 and $\betacoeff_{YM}$ is the non-abelian self-interaction.
@@ -317,8 +317,8 @@ remains within a compact subset of $\mathcal{H}$ for all $t \in [0, \infty)$.
 The energy identity $(2)$ provides the $L^2$-bound. For higher-order 
 regularity, we consider the evolution of the $H^s$ norms ($s > 3/2$):
 \begin{equation}
-    \frac{1}{2} \frac{d}{dt} \norm{u}_{H^s}^2 + \nu \norm{u}_{H^{s+1}}^2 
-    \le \left| \inner{u}{(u \cdot \nabla)u}_{H^s} \right|.
+ \frac{1}{2} \frac{d}{dt} \norm{u}_{H^s}^2 + \nu \norm{u}_{H^{s+1}}^2 
+ \le \left| \inner{u}{(u \cdot \nabla)u}_{H^s} \right|.
 \end{equation}
 The right-hand side is bounded by the non-linear amplification $\betacoeff(s)$. 
 Applying the Ynor bound $\betacoeff \le \alphacoeff - \mumargin$, the 
@@ -375,10 +375,10 @@ The \emph{Dissipative Verification Platform} (DVP) provides
 machine-checked certificates for each theorem. For Navier--Stokes, 
 the DVP performs Monte-Carlo simulations of the $\mumargin$-drift:
 \begin{enumerate}
-    \item Sample $u_0$ from the unit ball in $H^1$.
-    \item Evolve $u(t)$ using a pseudospectral solver.
-    \item Compute $\mumargin(t) = \alpha(t) - \beta(t) - \kappa(t)$ at each step.
-    \item Verify that $\mumargin(t)$ never crosses the critical surface $\Sigma = 0$.
+ \item Sample $u_0$ from the unit ball in $H^1$.
+ \item Evolve $u(t)$ using a pseudospectral solver.
+ \item Compute $\mumargin(t) = \alpha(t) - \beta(t) - \kappa(t)$ at each step.
+ \item Verify that $\mumargin(t)$ never crosses the critical surface $\Sigma = 0$.
 \end{enumerate}
 These audits show a $100\%$ success rate for $\mu$-governed agents, 
 effectively providing a computational proof of global stability.

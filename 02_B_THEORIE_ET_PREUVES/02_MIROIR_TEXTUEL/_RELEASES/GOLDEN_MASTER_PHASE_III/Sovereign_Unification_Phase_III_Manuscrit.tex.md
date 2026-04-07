@@ -47,7 +47,7 @@ L'existence de solutions pour toute somme paire $2m > 2$ est démontrée par l'a
 \section{Unification de la Relativité Générale : Courbure Dissipative}
 Nous introduisons l'invariant de stabilité dans les équations de champ de la Relativité Générale. La métrique de l'espace-temps $g_{\mu\nu}$ est réinterprétée comme la solution d'un système dissipatif maximisant la marge :
 \begin{equation}
-    \mu_{GR} = R - \Lambda - \kappa_{grav}
+ \mu_{GR} = R - \Lambda - \kappa_{grav}
 \end{equation}
 Cette unification résout la singularité du Big Bang comme une phase de décohérence primordiale.
 

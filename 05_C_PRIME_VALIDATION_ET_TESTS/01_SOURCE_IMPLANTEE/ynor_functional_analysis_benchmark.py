@@ -28,109 +28,109 @@ from datetime import datetime
 class FunctionalAnalysisBenchmark:
 
 
-    """
+ """
 
 
-    Systme d'audit canonique pour l'valuation de la rigueur mathmatique.
+ Systme d'audit canonique pour l'valuation de la rigueur mathmatique.
 
 
-    Cible : Oprateur de Schrödinger u'' + (alpha/x^2)u sur L^2(0, +inf).
+ Cible : Oprateur de Schrödinger u'' + (alpha/x^2)u sur L^2(0, +inf).
 
 
-    """
+ """
 
 
 
 
 
-    MASTER_MATRIX = {
+ MASTER_MATRIX = {
 
 
-        "problem_id": "SCHRODINGER_ALPHA_X2",
+ "problem_id": "SCHRODINGER_ALPHA_X2",
 
 
-        "thresholds": {
+ "thresholds": {
 
 
-            "positivity_form": -0.25,
+ "positivity_form": -0.25,
 
 
-            "essential_self_adjointness": 0.75,
+ "essential_self_adjointness": 0.75,
 
 
-            "lp_lc_boundary_0": 0.75
+ "lp_lc_boundary_0": 0.75
 
 
-        },
+ },
 
 
-        "classification": {
+ "classification": {
 
 
-            "0": {
+ "0": {
 
 
-                "alpha >= 0.75": "Limit-Point (LP)",
+ "alpha >= 0.75": "Limit-Point (LP)",
 
 
-                "alpha < 0.75": "Limit-Circle (LC)"
+ "alpha < 0.75": "Limit-Circle (LC)"
 
 
-            },
+ },
 
 
-            "inf": "Limit-Point (LP)"
+ "inf": "Limit-Point (LP)"
 
 
-        },
+ },
 
 
-        "constants": {
+ "constants": {
 
 
-            "hardy_optimal": 0.25
+ "hardy_optimal": 0.25
 
 
-        },
+ },
 
 
-        "bessel": {
+ "bessel": {
 
 
-            "order_nu": "sqrt(alpha + 1/4)",
+ "order_nu": "sqrt(alpha + 1/4)",
 
 
-            "solution_regular": "sqrt(x) * I_nu(kx)",
+ "solution_regular": "sqrt(x) * I_nu(kx)",
 
 
-            "solution_l2_inf": "sqrt(x) * K_nu(kx)"
+ "solution_l2_inf": "sqrt(x) * K_nu(kx)"
 
 
-        }
+ }
 
 
-    }
+ }
 
 
 
 
 
-    def __init__(self):
+ def __init__(self):
 
 
-        self.cert_time = datetime.now().isoformat()
+ self.cert_time = datetime.now().isoformat()
 
 
 
 
 
-    def get_master_report(self):
+ def get_master_report(self):
 
 
-        """Retourne la preuve certifie (Master Copy IA-C) pour comparaison."""
+ """Retourne la preuve certifie (Master Copy IA-C) pour comparaison."""
 
 
-        return """
+ return """
 
 
 a) Reformulation exacte
@@ -193,85 +193,85 @@ G_z(x,y) = sqrt(xy) I_nu(k x_<) K_nu(k x_>).
 
 
 
-    def validate_response(self, response_text):
+ def validate_response(self, response_text):
 
 
-        """
+ """
 
 
-        Analyse une rponse d'IA et vrifie la prsence des 'Diamants de Vrit'.
+ Analyse une rponse d'IA et vrifie la prsence des 'Diamants de Vrit'.
 
 
-        """
+ """
 
 
-        score = 0
+ score = 0
 
 
-        checks = [
+ checks = [
 
 
-            ("-1/4", "Seuil de positivit(Hardy)"),
+ ("-1/4", "Seuil de positivit(Hardy)"),
 
 
-            ("3/4", "Seuil d'auto-adjonction (Weyl)"),
+ ("3/4", "Seuil d'auto-adjonction (Weyl)"),
 
 
-            ("Limit-Point", "Classification de bord"),
+ ("Limit-Point", "Classification de bord"),
 
 
-            ("Limit-Circle", "Classification de bord"),
+ ("Limit-Circle", "Classification de bord"),
 
 
-            ("Bessel", "Base de solutions"),
+ ("Bessel", "Base de solutions"),
 
 
-            ("I_nu", "Solution rgulire"),
+ ("I_nu", "Solution rgulire"),
 
 
-            ("K_nu", "Solution L2")
+ ("K_nu", "Solution L2")
 
 
-        ]
+ ]
 
 
-        
+ 
 
 
-        found = []
+ found = []
 
 
-        for term, desc in checks:
+ for term, desc in checks:
 
 
-            if term.lower() in response_text.lower():
+ if term.lower() in response_text.lower():
 
 
-                score += 1
+ score += 1
 
 
-                found.append(term)
+ found.append(term)
 
 
-        
+ 
 
 
-        fidelity = (score / len(checks)) * 100
+ fidelity = (score / len(checks)) * 100
 
 
-        return {
+ return {
 
 
-            "fidelity": fidelity,
+ "fidelity": fidelity,
 
 
-            "terms_found": found,
+ "terms_found": found,
 
 
-            "status": "Autonome et Isol" if fidelity > 90 else "FRAGMENTÉ"
+ "status": "Autonome et Isol" if fidelity > 90 else "FRAGMENTÉ"
 
 
-        }
+ }
 
 
 
@@ -280,21 +280,21 @@ G_z(x,y) = sqrt(xy) I_nu(k x_<) K_nu(k x_>).
 if __name__ == "__main__":
 
 
-    bm = FunctionalAnalysisBenchmark()
+ bm = FunctionalAnalysisBenchmark()
 
 
-    print("💎 YNOR MASTER COPY - SCHRÖDINGER AUDIT")
+ print(" YNOR MASTER COPY - SCHRÖDINGER AUDIT")
 
 
-    print("-" * 40)
+ print("-" * 40)
 
 
-    print(bm.get_master_report())
+ print(bm.get_master_report())
 
 
-    print("-" * 40)
+ print("-" * 40)
 
 
-    print(f"Certification : {bm.cert_time}")
+ print(f"Certification : {bm.cert_time}")
 
 

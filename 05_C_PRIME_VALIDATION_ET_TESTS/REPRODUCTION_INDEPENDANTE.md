@@ -70,7 +70,7 @@ Ce document dfinit les tapes rigoureuses permettant un tiers (hors MDL Lab) de r
 
 
 
-   - *Rsultat attendu* : Total Fichiers = 1408, Canoniques = 525.
+ - *Rsultat attendu* : Total Fichiers = 1408, Canoniques = 525.
 
 
 
@@ -78,7 +78,7 @@ Ce document dfinit les tapes rigoureuses permettant un tiers (hors MDL Lab) de r
 
 
 
-   - *Rsultat attendu* : Convergence spectrale µ > 0.99999.
+ - *Rsultat attendu* : Convergence spectrale µ > 0.99999.
 
 
 
@@ -86,7 +86,7 @@ Ce document dfinit les tapes rigoureuses permettant un tiers (hors MDL Lab) de r
 
 
 
-   - *Rsultat attendu* : Signaux de saturation µ = 1.0.
+ - *Rsultat attendu* : Signaux de saturation µ = 1.0.
 
 
 

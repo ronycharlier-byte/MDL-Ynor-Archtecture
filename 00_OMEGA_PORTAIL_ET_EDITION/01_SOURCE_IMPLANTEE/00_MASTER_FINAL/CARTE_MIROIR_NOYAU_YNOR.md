@@ -50,75 +50,75 @@ mindmap
 
 
 
-  root((Noyau Ynor))
+ root((Noyau Ynor))
 
 
 
-    Axiomes
+ Axiomes
 
 
 
-      Fondamentaux
+ Fondamentaux
 
 
 
-      Secondaires
+ Secondaires
 
 
 
-      Coherence
+ Coherence
 
 
 
-    Protocoles
+ Protocoles
 
 
 
-      Fondamentaux
+ Fondamentaux
 
 
 
-      Secondaires
+ Secondaires
 
 
 
-      Par_Axe
+ Par_Axe
 
 
 
-      Sous_Axes
+ Sous_Axes
 
 
 
-      Feuilles
+ Feuilles
 
 
 
-      Sous_Sous_Axes
+ Sous_Sous_Axes
 
 
 
-      Sous_Sous_Sous_Axes
+ Sous_Sous_Sous_Axes
 
 
 
-    Retour
+ Retour
 
 
 
-      Vectorisation
+ Vectorisation
 
 
 
-      Axes
+ Axes
 
 
 
-      Vecteurs
+ Vecteurs
 
 
 
-      Lecture
+ Lecture
 
 
 

@@ -15,13 +15,13 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 [
-  {
-    "target": "Generic_AI_Cloud",
-    "estimated_mu": 0.12,
-    "displacement_potential": "454.55%",
-    "strategy": "[SENSITIVE_CONTENT_ABSTRACTED]",
-    "timestamp": "Fri Mar 20 17:44:29 2026"
-  }
+ {
+ "target": "Generic_AI_Cloud",
+ "estimated_mu": 0.12,
+ "displacement_potential": "454.55%",
+ "strategy": "[SENSITIVE_CONTENT_ABSTRACTED]",
+ "timestamp": "Fri Mar 20 17:44:29 2026"
+ }
 ]
 ```
 

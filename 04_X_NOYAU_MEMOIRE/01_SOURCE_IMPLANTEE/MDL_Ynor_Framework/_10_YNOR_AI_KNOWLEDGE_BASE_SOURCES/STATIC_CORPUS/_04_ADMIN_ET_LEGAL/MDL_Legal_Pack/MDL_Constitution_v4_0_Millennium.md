@@ -13,8 +13,8 @@ L’Architecture MDL Ynor est une superstructure décisionnelle, cognitive et é
 
 ### ARTICLE 2 : HIÉRARCHIE ABSOLUE
 Tout système audité sous protocole MDL doit respecter la hiérarchie des niveaux :
-*   **Niveau 0 (Survie / Mu > 0)** : Priorité absolue sur toute autre métrique.
-*   **Niveau 1-5** : Stratification de la complexité (Régulation $\to$ Cognition $\to$ Éthique $\to$ Projection $\to$ Archives).
+* **Niveau 0 (Survie / Mu > 0)** : Priorité absolue sur toute autre métrique.
+* **Niveau 1-5** : Stratification de la complexité (Régulation $\to$ Cognition $\to$ Éthique $\to$ Projection $\to$ Archives).
 
 ### ARTICLE 3 : PRINCIPE FONDAMENTAL
 « La stabilité précède la performance. »

@@ -15,13 +15,13 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 {
-  "demo_user_123": {
-    "first_audit": "Fri Mar 20 17:19:00 2026",
-    "resonance_score": 18.0,
-    "total_audits": 4,
-    "last_active": 1774024917.1818237,
-    "tier": "pro"
-  }
+ "demo_user_123": {
+ "first_audit": "Fri Mar 20 17:19:00 2026",
+ "resonance_score": 18.0,
+ "total_audits": 4,
+ "last_active": 1774024917.1818237,
+ "tier": "pro"
+ }
 }
 ```
 

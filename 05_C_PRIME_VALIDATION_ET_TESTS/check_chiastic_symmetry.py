@@ -6,91 +6,91 @@ import json
 
 def check_symmetry():
 
-    print("--- AUDIT DE COHÉRENCE CHIASTIQUE YNOR ---")
+ print("--- AUDIT DE COHÉRENCE CHIASTIQUE YNOR ---")
 
-    
+ 
 
-    layers = {
+ layers = {
 
-        "C": "03_C_MOTEURS_ET_DEPLOIEMENT",
+ "C": "03_C_MOTEURS_ET_DEPLOIEMENT",
 
-        "C_PRIME": "05_C_PRIME_VALIDATION_ET_TESTS"
+ "C_PRIME": "05_C_PRIME_VALIDATION_ET_TESTS"
 
-    }
+ }
 
-    
+ 
 
-    # Check if files in C have corresponding validation in C'
+ # Check if files in C have corresponding validation in C'
 
-    c_files = [f for f in os.listdir(layers["C"]) if os.path.isfile(os.path.join(layers["C"], f))]
+ c_files = [f for f in os.listdir(layers["C"]) if os.path.isfile(os.path.join(layers["C"], f))]
 
-    c_prime_files = [f for f in os.listdir(layers["C_PRIME"]) if os.path.isfile(os.path.join(layers["C_PRIME"], f))]
+ c_prime_files = [f for f in os.listdir(layers["C_PRIME"]) if os.path.isfile(os.path.join(layers["C_PRIME"], f))]
 
-    
+ 
 
-    print(f"Fichiers Moteur (C) : {len(c_files)}")
+ print(f"Fichiers Moteur (C) : {len(c_files)}")
 
-    print(f"Fichiers Validation (C') : {len(c_prime_files)}")
+ print(f"Fichiers Validation (C') : {len(c_prime_files)}")
 
-    
+ 
 
-    missing = []
+ missing = []
 
-    for f in c_files:
+ for f in c_files:
 
-        if f == "README.md" or f == "00_NODE.md": continue
+ if f == "README.md" or f == "00_NODE.md": continue
 
-        # Simple heuristic: look for similar names or prefixes
+ # Simple heuristic: look for similar names or prefixes
 
-        found = False
+ found = False
 
-        base = f.split('.')[0]
+ base = f.split('.')[0]
 
-        for pf in c_prime_files:
+ for pf in c_prime_files:
 
-            if base in pf:
+ if base in pf:
 
-                found = True
+ found = True
 
-                break
+ break
 
-        if not found:
+ if not found:
 
-            missing.append(f)
+ missing.append(f)
 
-            
+ 
 
-    if missing:
+ if missing:
 
-        print("\n[ALERTE] Rupture de symtrie dtecte !")
+ print("\n[ALERTE] Rupture de symtrie dtecte !")
 
-        print("Les fichiers suivants n'ont pas de pendant de validation directe :")
+ print("Les fichiers suivants n'ont pas de pendant de validation directe :")
 
-        for m in missing:
+ for m in missing:
 
-            print(f" - {m}")
+ print(f" - {m}")
 
-    else:
+ else:
 
-        print("\n[SUCCÈS] Symtrie C <-> C' maintenue (mu = 1.0).")
+ print("\n[SUCCÈS] Symtrie C <-> C' maintenue (mu = 1.0).")
 
 
 
-    return {
+ return {
 
-        "status": "VALIDATED" if not missing else "ASYMMETRIC",
+ "status": "VALIDATED" if not missing else "ASYMMETRIC",
 
-        "missing_count": len(missing)
+ "missing_count": len(missing)
 
-    }
+ }
 
 
 
 if __name__ == "__main__":
 
-    report = check_symmetry()
+ report = check_symmetry()
 
-    with open("chiastic_audit_report.json", "w") as f:
+ with open("chiastic_audit_report.json", "w") as f:
 
-        json.dump(report, f, indent=4)
+ json.dump(report, f, indent=4)
 

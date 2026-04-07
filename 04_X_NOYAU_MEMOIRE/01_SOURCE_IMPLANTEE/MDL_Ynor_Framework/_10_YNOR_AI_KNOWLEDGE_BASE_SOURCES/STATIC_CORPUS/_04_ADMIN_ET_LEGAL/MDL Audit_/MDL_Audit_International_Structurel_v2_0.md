@@ -3,10 +3,10 @@
 
 **Cadre d’audit structurel universel pour l’évaluation de systèmes humains, collectifs et artificiels**
 
-*   **Version :** 2.0 — Mars 2026 (Millennium Proof Update)
-*   **Auteur :** Charlier Rony
-*   **Corpus MDL :** v8.0 (Millennium Integration)
-*   **DOI :** 10.5281/zenodo.19181947
+* **Version :** 2.0 — Mars 2026 (Millennium Proof Update)
+* **Auteur :** Charlier Rony
+* **Corpus MDL :** v8.0 (Millennium Integration)
+* **DOI :** 10.5281/zenodo.19181947
 
 ---
 
@@ -28,15 +28,15 @@ Le protocole MDL (Meta Decision Layer) est un cadre d’audit structurel univers
 
 ## 2. Architecture générale de l’audit
 Chaque audit MDL suit une séquence obligatoire en cinq étapes :
-1.  **Définition** : Formulation précise et mesurable de l’objet audité.
-2.  **Contraintes** : Identification exhaustive des paramètres limitants.
-3.  **Hypothèses** : Formulation d’hypothèses falsifiables avec critères d’échec.
-4.  **Production** : Création de l’artefact structuré et documenté (e.g., Manuscrit Millennium).
-5.  **Évaluation** : Notation selon la grille MDL /100.
+1. **Définition** : Formulation précise et mesurable de l’objet audité.
+2. **Contraintes** : Identification exhaustive des paramètres limitants.
+3. **Hypothèses** : Formulation d’hypothèses falsifiables avec critères d’échec.
+4. **Production** : Création de l’artefact structuré et documenté (e.g., Manuscrit Millennium).
+5. **Évaluation** : Notation selon la grille MDL /100.
 
 ## 3. Fondements constitutionnels MDL
 Repose sur la **Constitution MDL v4.0 (Millennium Edition)**. Les 8 articles fondateurs définissent le cadre inviolable. 
-*   **Article 3 :** La stabilité précède la performance ($\\mu > 0$).
+* **Article 3 :** La stabilité précède la performance ($\\mu > 0$).
 
 ## 4. Protocole décisionnel PDHU — Application universelle
 Le PDHU (Protocole Décisionnel Hybride Universel) constitue le noyau opératoire.
@@ -46,10 +46,10 @@ Où $SN$ est la stabilité neuro-physiologique.
 
 ## 5. Intégration cognitive ASIC (Tri-Niveaux)
 Articulation des dimensions Consciente, Subconsciente et Inconsciente.
-*   **Phase Millennium :** Automatisation du passage Système 1 / Système 2 via le moteur Ynor.
+* **Phase Millennium :** Automatisation du passage Système 1 / Système 2 via le moteur Ynor.
 
 ## 6. Systèmes de Certification
-*   **Niveau III :** Gouvernance MDL complète et audit de conformité Millennium annuel.
+* **Niveau III :** Gouvernance MDL complète et audit de conformité Millennium annuel.
 
 ## 7. Clause juridique et protection internationale
 L’ensemble des volumes I à VII forme une architecture unifiée protégée par le droit d’auteur international (Charlier Rony).

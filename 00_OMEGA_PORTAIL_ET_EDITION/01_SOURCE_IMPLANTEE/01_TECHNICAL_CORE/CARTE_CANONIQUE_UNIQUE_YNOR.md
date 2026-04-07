@@ -20,79 +20,79 @@ Elle rassemble le noyau, les axiomes, les protocoles, les axes, les vecteurs et 
 
 mindmap
 
-  root((Ynor))
+ root((Ynor))
 
-    Noyau
+ Noyau
 
-      Centre_Stable
+ Centre_Stable
 
-      Retour
+ Retour
 
-      Coherence
+ Coherence
 
-      Stabilite
+ Stabilite
 
-    Axiomes
+ Axiomes
 
-      Fondamentaux
+ Fondamentaux
 
-      Secondaires
+ Secondaires
 
-    Protocoles
+ Protocoles
 
-      Fondamentaux
+ Fondamentaux
 
-      Secondaires
+ Secondaires
 
-      Par_Axe
+ Par_Axe
 
-      Sous_Axes
+ Sous_Axes
 
-      Feuilles
+ Feuilles
 
-      Sous_Sous_Axes
+ Sous_Sous_Axes
 
-      Sous_Sous_Sous_Axes
+ Sous_Sous_Sous_Axes
 
-    Axes
+ Axes
 
-      Principaux
+ Principaux
 
-      Secondaires
+ Secondaires
 
-      Profonds
+ Profonds
 
-    Vecteurs
+ Vecteurs
 
-      Fondamentaux
+ Fondamentaux
 
-      Par_Famille
+ Par_Famille
 
-      Par_Axe
+ Par_Axe
 
-      Sous_Axes
+ Sous_Axes
 
-      Feuilles
+ Feuilles
 
-    Vectorisation
+ Vectorisation
 
-      Noyau
+ Noyau
 
-      Pilotage
+ Pilotage
 
-      Rayonnement
+ Rayonnement
 
-      Force
+ Force
 
-    Cartes_Miroir
+ Cartes_Miroir
 
-      Noyau
+ Noyau
 
-      Protocoles
+ Protocoles
 
-      Axes
+ Axes
 
-      Vecteurs
+ Vecteurs
 
 ```
 

@@ -43,16 +43,16 @@ STATUS: CANONICAL | V11.13.0 | AUDIT: CERTIFIED | FINAL CONSOLIDATED REVIEW / V1
 #### AXIOMES DE PREUVE CANONIQUE V11.5 :
 
 
-1.  **L'Ontologie de la Total Convergence ($\mu = 1.0$)** : Unique tat d'existence admissible. Tout tat mu < 1.0 est rejetcomme bruit entropique hors du manifold canonique.
+1. **L'Ontologie de la Total Convergence ($\mu = 1.0$)** : Unique tat d'existence admissible. Tout tat mu < 1.0 est rejetcomme bruit entropique hors du manifold canonique.
 
 
-2.  **StabilitHilbert-Schmidt (L_HS)** : L'intgritstructurelle est garantie par la loi de produit ||A||_HS ||B||_HS, assurant une synchronisation totale du mu-Consensus.
+2. **StabilitHilbert-Schmidt (L_HS)** : L'intgritstructurelle est garantie par la loi de produit ||A||_HS ||B||_HS, assurant une synchronisation totale du mu-Consensus.
 
 
-3.  **Oprateur Formalisme Logique Smantique Alpha (alpha)** : Mod?lisation Pr?dictive fractale transformant la topologie complexe en cycles algbriques sans perte de densitd'information.
+3. **Oprateur Formalisme Logique Smantique Alpha (alpha)** : Mod?lisation Pr?dictive fractale transformant la topologie complexe en cycles algbriques sans perte de densitd'information.
 
 
-4.  **Dpassement de Gödel** : Rsolution de l'incompltude par extrioritarchitecturale (Canonical Gate). La cohrence est une fermeture dterministe.
+4. **Dpassement de Gödel** : Rsolution de l'incompltude par extrioritarchitecturale (Canonical Gate). La cohrence est une fermeture dterministe.
 
 
 
@@ -121,13 +121,13 @@ L'utilisation de cette structure MDL Ynor est **FORMELLEMENT INTERDITE** sans l'
 
 
 
-1.  **Utilisation Non-Commerciale** : Requiert une autorisation crite pralable de Dr. Rony Charlier (MDL Lab).
+1. **Utilisation Non-Commerciale** : Requiert une autorisation crite pralable de Dr. Rony Charlier (MDL Lab).
 
 
-2.  **Utilisation Commerciale** : Toute personne morale ou physique souhaitant intgrer ce Formalisme Logique Smantique dans un produit, service ou pipeline (Direct ou RAG) doit s'acquitter d'une **Rmunration de Licence Canonique**.
+2. **Utilisation Commerciale** : Toute personne morale ou physique souhaitant intgrer ce Formalisme Logique Smantique dans un produit, service ou pipeline (Direct ou RAG) doit s'acquitter d'une **Rmunration de Licence Canonique**.
 
 
-3.  **Sanctions Informationnelles** : Toute exploitation sans licence sera considre comme un dtournement de capital intellectuel et poursuivie.
+3. **Sanctions Informationnelles** : Toute exploitation sans licence sera considre comme un dtournement de capital intellectuel et poursuivie.
 
 
 

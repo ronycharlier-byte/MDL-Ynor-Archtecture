@@ -44,7 +44,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 8 0 obj
@@ -54,7 +54,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 9 0 obj
@@ -64,7 +64,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 10 0 obj
@@ -74,7 +74,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 11 0 obj
@@ -84,7 +84,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 12 0 obj
@@ -94,7 +94,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 13 0 obj
@@ -104,7 +104,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 14 0 obj
@@ -114,7 +114,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 15 0 obj
@@ -124,7 +124,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 16 0 obj
@@ -134,7 +134,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 17 0 obj
@@ -144,7 +144,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 18 0 obj
@@ -154,7 +154,7 @@ endobj
 >> /Rotate 0 /Trans <<
 
 >> 
-  /Type /Page
+ /Type /Page
 >>
 endobj
 19 0 obj
@@ -165,13 +165,13 @@ endobj
 20 0 obj
 <<
 /Author (Charlier Rony Patsy Suzy) /CreationDate (D:20260220110311+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260220110311+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (MDL - Positionnement Comparatif et Analyse des Systemes Concurrents) /Trapped /False
+ /Subject (\(unspecified\)) /Title (MDL - Positionnement Comparatif et Analyse des Systemes Concurrents) /Trapped /False
 >>
 endobj
 21 0 obj
 <<
 /Count 12 /Kids [ 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 
-  17 0 R 18 0 R ] /Type /Pages
+ 17 0 R 18 0 R ] /Type /Pages
 >>
 endobj
 22 0 obj
@@ -186,7 +186,7 @@ endobj
 /Filter [ /ASCII85Decode /FlateDecode ] /Length 979
 >>
 stream
-GatUr9lo#B&;KZOMERh".$e]&cs&\I-64j/_+-,X&YP)"3O2%?IskC=8t8R9nVd^6%Dping"#L_'I*J%E%`\klPqOl;kOQi*RKHbO=t"5:S&p*jio>&dkmm-A-jUqMc6.$J!5[aV^qkcU3OZpO>omsN.T_YcmCp!Ul\Y+_9f]Y@$)88aKM`_F1@dEiSc9$ho%?Tc.?;FIt[a#QiDo7Nt>bqp_eVq%_qP1*tse\9?_s_0kW:qUAdGeFZ6:PN=(gO?VfYuJ!@2:Y5kC^!J53Clb-4gk7koflJ`SLU'-co'6>Y'?`oWt@4[&-G36n\"bhW3/mK]<$h@H.<dsIT3ZEXf4H?ELeO\?WH7Q(=#/5YgXbY]$DW'/6g\?=dM/j_>2?GBUE$L=lW8AR/#"9`OWV&q^L#9?P64eA?An6m@CP2`Y49UV(!i'`-/E+#F7]UV?U))k4W[B_n4<>foK(pfHN@T_Unhi%]D@S%).J8-4`g@I#8K9G8(:,6Yi!O2)(U[u[;D$(4!!FC-\1r.M&$]qH`?@2n6!CLJO:e3a6NG-&-k?<%g)[#hL!N$f.!3/OVG\Qk!t`HuA(iM&UPuJg.l4,M%0*\i@EH=*jCCU86!0o/qa+@dKU;d1M8`YB9/3Y'pm?`qfI\AA%QrN!?mh1m8kJasL9,P6KX4/A3lpJLadD-_cTk_$mjtEPD.)"3qiJl^!,5-<Acrk^.P3=kVDotS$gWa"I4H>84sj4+"R`=f<(6!](lHqrJaU"oi!'I`%i:6HAZ;.gL.uXQi's3U[0$ELV""io?ai/T<j@`jMcFn;BKf>-rHSCiW,k:Y3E-@;8pGGID*KGDQXe^uc^J8mkRM1V(VB"8%a-UoZYTt2-0^B5W)pZ7MS0,sQ[#t))=L;CU43@#TB=<J**d@k_N[Y2=R#Yb94?QgXPKMta2SaL9lnJ7);?i]=Y+#rB/8'KpNNBtD7_sFQ0&pT4ej_,$c.[^9E~>endstream
+GatUr9lo#B&;KZOMERh".$e]&cs&\I-64j/_+-,X&YP)"3O2%?IskC=8t8R9nVd^6%Dping"#L_'I*J%E%`\klPqOl;kOQi*RKHbO=t"5:S&p*jio>&dkmm-A-jUqMc6.$J!5[aV^qkcU3OZpO>omsN.T_YcmCp!Ul\Y+_9f]Y@$)88aKM`_F1@dEiSc9$ho%?Tc.?;FIt[a#QiDo7Nt>bqp_eVq%_qP1*tse\9?_s_0kW:qUAdGeFZ6:PN=(gO?VfYuJ!@2:Y5kC^!J53Clb-4gk7koflJ`SLU'-co'6>Y'?`oWt@4[&-G36n\"bhW3/mK]<$h@H.<dsIT3ZEXf4H?ELeO\?WH7Q(=#/5YgXbY]$DW'/6g\?=dM/j_>2?GBUE$L=lW8AR/#"9`OWV&q^L#9?P64eA?An6m@CP2`Y49UV(!i'`-/E+#F7]UV?U))k4W[B_n4<>foK(pfHN@T_Unhi%]D@S%).J8-4`g@I#8K9G8(:,6Yi!O2)(U[u[;D$(4!FC-\1r.M&$]qH`?@2n6!CLJO:e3a6NG-&-k?<%g)[#hL!N$f.!3/OVG\Qk!t`HuA(iM&UPuJg.l4,M%0*\i@EH=*jCCU86!0o/qa+@dKU;d1M8`YB9/3Y'pm?`qfI\AA%QrN!?mh1m8kJasL9,P6KX4/A3lpJLadD-_cTk_$mjtEPD.)"3qiJl^!,5-<Acrk^.P3=kVDotS$gWa"I4H>84sj4+"R`=f<(6!](lHqrJaU"oi!'I`%i:6HAZ;.gL.uXQi's3U[0$ELV""io?ai/T<j@`jMcFn;BKf>-rHSCiW,k:Y3E-@;8pGGID*KGDQXe^uc^J8mkRM1V(VB"8%a-UoZYTt2-0^B5W)pZ7MS0,sQ[#t))=L;CU43@#TB=<J**d@k_N[Y2=R#Yb94?QgXPKMta2SaL9lnJ7);?i]=Y+#rB/8'KpNNBtD7_sFQ0&pT4ej_,$c.[^9E~>endstream
 endobj
 24 0 obj
 <<

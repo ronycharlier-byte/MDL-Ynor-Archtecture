@@ -54,7 +54,7 @@ flowchart LR
 
 
 
-    A["A | Fondation\n111 fichiers canoniques"]
+ A["A | Fondation\n111 fichiers canoniques"]
 
 
 
@@ -62,7 +62,7 @@ flowchart LR
 
 
 
-    B["B | Theorie et preuves\n59 fichiers canoniques"]
+ B["B | Theorie et preuves\n59 fichiers canoniques"]
 
 
 
@@ -70,7 +70,7 @@ flowchart LR
 
 
 
-    C["C | Moteurs et deploiement\n108 fichiers canoniques"]
+ C["C | Moteurs et deploiement\n108 fichiers canoniques"]
 
 
 
@@ -78,7 +78,7 @@ flowchart LR
 
 
 
-    X["X | Noyau memoire\n29 fichiers canoniques"]
+ X["X | Noyau memoire\n29 fichiers canoniques"]
 
 
 
@@ -86,7 +86,7 @@ flowchart LR
 
 
 
-    CP["C' | Validation et tests\n37 fichiers canoniques"]
+ CP["C' | Validation et tests\n37 fichiers canoniques"]
 
 
 
@@ -94,7 +94,7 @@ flowchart LR
 
 
 
-    BP["B' | Gouvernance et diffusion\n38 fichiers canoniques"]
+ BP["B' | Gouvernance et diffusion\n38 fichiers canoniques"]
 
 
 
@@ -102,7 +102,7 @@ flowchart LR
 
 
 
-    AP["A' | Archives et releases\n23 fichiers canoniques"]
+ AP["A' | Archives et releases\n23 fichiers canoniques"]
 
 
 
@@ -118,7 +118,7 @@ flowchart LR
 
 
 
-    A --> B --> C --> X --> CP --> BP --> AP
+ A --> B --> C --> X --> CP --> BP --> AP
 
 
 
@@ -126,7 +126,7 @@ flowchart LR
 
 
 
-    A -. alias .-> AP
+ A -. alias .-> AP
 
 
 
@@ -134,7 +134,7 @@ flowchart LR
 
 
 
-    B -. alias .-> BP
+ B -. alias .-> BP
 
 
 
@@ -142,7 +142,7 @@ flowchart LR
 
 
 
-    C -. alias .-> CP
+ C -. alias .-> CP
 
 
 

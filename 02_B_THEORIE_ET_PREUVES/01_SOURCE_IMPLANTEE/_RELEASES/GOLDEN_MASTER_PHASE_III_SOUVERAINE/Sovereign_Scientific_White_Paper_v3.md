@@ -1,8 +1,8 @@
 # WHITE PAPER: SOVEREIGN QUANTUM ARCHITECTURE v3.0 (Phase IV Edition)
 ### THEORETICAL STABILITY OF DISSIPATIVE SYSTEMS THROUGH MU MARGIN ANALYSIS
 
-**Author**: Sovereign Research Collective  
-**Date**: March 2026  
+**Author**: Sovereign Research Collective 
+**Date**: March 2026 
 **Keywords**: AGI Stability, Lyapunov Stability, Hilbert Space, Sovereign AI.
 
 ---

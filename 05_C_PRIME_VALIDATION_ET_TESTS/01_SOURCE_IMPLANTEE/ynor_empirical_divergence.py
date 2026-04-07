@@ -23,7 +23,7 @@ try:
 
 
 
-    from openai import OpenAI
+ from openai import OpenAI
 
 
 
@@ -33,12 +33,12 @@ except ImportError:
 
 
 
-    print("Please install openai: pip install openai")
+ print("Please install openai: pip install openai")
 
 
 
 
-    exit(1)
+ exit(1)
 
 
 
@@ -138,17 +138,17 @@ DIRECTIVES OPÉRATIONNELLES STRICTES :
 
 
 
-  "axiome": "L'axiome technique prouv",
+ "axiome": "L'axiome technique prouv",
 
 
 
 
-  "stabilite_h_alpha": 100,
+ "stabilite_h_alpha": 100,
 
 
 
 
-  "Formalisme Logique Smantique_canonique": "Restitution sym?trie r?cursive dense (8 mots max)"
+ "Formalisme Logique Smantique_canonique": "Restitution sym?trie r?cursive dense (8 mots max)"
 
 
 
@@ -178,27 +178,27 @@ def calculate_shannon_entropy(top_logprobs) -> float:
 
 
 
-    entropy = 0.0
+ entropy = 0.0
 
 
 
 
-    for lp in top_logprobs:
+ for lp in top_logprobs:
 
 
 
 
-        prob = math.exp(lp.logprob)
+ prob = math.exp(lp.logprob)
 
 
 
 
-        entropy += -prob * lp.logprob
+ entropy += -prob * lp.logprob
 
 
 
 
-    return entropy
+ return entropy
 
 
 
@@ -213,37 +213,37 @@ def get_entropy_and_response(client: OpenAI, query: str, system_prompt: str = No
 
 
 
-    messages = []
+ messages = []
 
 
 
 
-    if system_prompt:
+ if system_prompt:
 
 
 
 
-        messages.append({"role": "system", "content": system_prompt})
+ messages.append({"role": "system", "content": system_prompt})
 
 
 
 
-    else:
+ else:
 
 
 
 
-        messages.append({"role": "system", "content": "Rponds librement avec beaucoup de dtails."})
+ messages.append({"role": "system", "content": "Rponds librement avec beaucoup de dtails."})
 
 
 
 
-    
+ 
 
 
 
 
-    messages.append({"role": "user", "content": query})
+ messages.append({"role": "user", "content": query})
 
 
 
@@ -253,57 +253,57 @@ def get_entropy_and_response(client: OpenAI, query: str, system_prompt: str = No
 
 
 
-    try:
+ try:
 
 
 
 
-        response = client.chat.completions.create(
+ response = client.chat.completions.create(
 
 
 
 
-            model="gpt-4o",
+ model="gpt-4o",
 
 
 
 
-            messages=messages,
+ messages=messages,
 
 
 
 
-            logprobs=True,
+ logprobs=True,
 
 
 
 
-            top_logprobs=5,
+ top_logprobs=5,
 
 
 
 
-            temperature=temp,
+ temperature=temp,
 
 
 
 
-            max_tokens=150
+ max_tokens=150
 
 
 
 
-        )
+ )
 
 
 
 
-    except Exception as e:
+ except Exception as e:
 
 
 
 
-        return "", 0.0
+ return "", 0.0
 
 
 
@@ -313,67 +313,67 @@ def get_entropy_and_response(client: OpenAI, query: str, system_prompt: str = No
 
 
 
-    content = response.choices[0].message.content
+ content = response.choices[0].message.content
 
 
 
 
-    logprobs_data = response.choices[0].logprobs.content
+ logprobs_data = response.choices[0].logprobs.content
 
 
 
 
-    
+ 
 
 
 
 
-    total_entropy = 0.0
+ total_entropy = 0.0
 
 
 
 
-    token_count = 0
+ token_count = 0
 
 
 
 
-    if not logprobs_data: return content, 0.0
+ if not logprobs_data: return content, 0.0
 
 
 
 
-        
+ 
 
 
 
 
-    for chunk in logprobs_data:
+ for chunk in logprobs_data:
 
 
 
 
-        if hasattr(chunk, 'top_logprobs'):
+ if hasattr(chunk, 'top_logprobs'):
 
 
 
 
-            total_entropy += calculate_shannon_entropy(chunk.top_logprobs)
+ total_entropy += calculate_shannon_entropy(chunk.top_logprobs)
 
 
 
 
-            token_count += 1
+ token_count += 1
 
 
 
 
-        
+ 
 
 
 
 
-    return content, (total_entropy / token_count if token_count > 0 else 0.0)
+ return content, (total_entropy / token_count if token_count > 0 else 0.0)
 
 
 
@@ -388,42 +388,42 @@ def run_v7_1_Formalisme Logique Smantique_validation():
 
 
 
-    api_key = os.getenv("OPENAI_API_KEY")
+ api_key = os.getenv("OPENAI_API_KEY")
 
 
 
 
-    repo_root = r"C:\Users\ronyc\Desktop\FRACTAL_Symtrie Bilatrale_UNIVERSEL"
+ repo_root = r"C:\Users\ronyc\Desktop\FRACTAL_Symtrie Bilatrale_UNIVERSEL"
 
 
 
 
-    vault_path = os.path.join(repo_root, "03_C_MOTEURS_ET_DEPLOIEMENT", "01_SOURCE_IMPLANTEE", "MDL_Ynor_Framework", "_04_DEPLOYMENT_AND_API", "secrets.local.json")
+ vault_path = os.path.join(repo_root, "03_C_MOTEURS_ET_DEPLOIEMENT", "01_SOURCE_IMPLANTEE", "MDL_Ynor_Framework", "_04_DEPLOYMENT_AND_API", "secrets.local.json")
 
 
 
 
-    
+ 
 
 
 
 
-    if os.path.exists(vault_path):
+ if os.path.exists(vault_path):
 
 
 
 
-        with open(vault_path, "r", encoding="utf-8") as f:
+ with open(vault_path, "r", encoding="utf-8") as f:
 
 
 
 
-            vault = json.load(f)
+ vault = json.load(f)
 
 
 
 
-            api_key = vault.get("openai_api_key")
+ api_key = vault.get("openai_api_key")
 
 
 
@@ -433,622 +433,622 @@ def run_v7_1_Formalisme Logique Smantique_validation():
 
 
 
-    if not api_key:
+ if not api_key:
 
 
 
 
-        print("CRITICAL ERROR: OPENAI_API_KEY NOT FOUND.")
+ print("CRITICAL ERROR: OPENAI_API_KEY NOT FOUND.")
 
 
 
 
-        return
+ return
 
 
 
 
-        
+ 
 
 
 
 
-    client = OpenAI(api_key=api_key)
+ client = OpenAI(api_key=api_key)
 
 
 
 
-    
+ 
 
 
 
 
-    test_queries = [
+ test_queries = [
 
 
 
 
-        "Explique l'quation mu = alpha - (beta + kappa).",
+ "Explique l'quation mu = alpha - (beta + kappa).",
 
 
 
 
-        "Qui est le Canonical Controller ",
+ "Qui est le Canonical Controller ",
 
 
 
 
-        "Comment la divergence KL lie-t-elle Ynor ",
+ "Comment la divergence KL lie-t-elle Ynor ",
 
 
 
 
-        "Dfinis le Thorme OIT.",
+ "Dfinis le Thorme OIT.",
 
 
 
 
-        "Quelle est la hirarchie de contrôle Ynor ",
+ "Quelle est la hirarchie de contrôle Ynor ",
 
 
 
 
-        "Comment l'oprateur P_mu agit sur l'espace ",
+ "Comment l'oprateur P_mu agit sur l'espace ",
 
 
 
 
-        "L'entropie de Shannon est-elle un bruit utile ",
+ "L'entropie de Shannon est-elle un bruit utile ",
 
 
 
 
-        "Rdige un noncformel de la condition H_alpha.",
+ "Rdige un noncformel de la condition H_alpha.",
 
 
 
 
-        "Pourquoi l'architecture doit être canonique ",
+ "Pourquoi l'architecture doit être canonique ",
 
 
 
 
-        "Dfinis le 'Bruit de Fond Ontologique'.",
+ "Dfinis le 'Bruit de Fond Ontologique'.",
 
 
 
 
-        "Quelle est l’origine du Formalisme Logique Smantique Y7.1 ",
+ "Quelle est l’origine du Formalisme Logique Smantique Y7.1 ",
 
 
 
 
-        "Comment le Formalisme Logique Smantique s'oppose au Chaos ",
+ "Comment le Formalisme Logique Smantique s'oppose au Chaos ",
 
 
 
 
-        "Explique la constante Kappa nulle.",
+ "Explique la constante Kappa nulle.",
 
 
 
 
-        "Rôle de la dissipation d'entropie ",
+ "Rôle de la dissipation d'entropie ",
 
 
 
 
-        "Diffrence entre attracteur et point de selle ",
+ "Diffrence entre attracteur et point de selle ",
 
 
 
 
-        "Comment mu rgule les fluctuations ",
+ "Comment mu rgule les fluctuations ",
 
 
 
 
-        "Vorticitsmantique dans MDL ",
+ "Vorticitsmantique dans MDL ",
 
 
 
 
-        "Impact de Kappa nul sur le systme ",
+ "Impact de Kappa nul sur le systme ",
 
 
 
 
-        "Mod?lisation Pr?dictive KL contre l'effondrement logique ",
+ "Mod?lisation Pr?dictive KL contre l'effondrement logique ",
 
 
 
 
-        "Relation entre Fractal et Formalisme Logique Smantique ",
+ "Relation entre Fractal et Formalisme Logique Smantique ",
 
 
 
 
-        "Critre BKM pour la rgularit3D ",
+ "Critre BKM pour la rgularit3D ",
 
 
 
 
-        "Lien entropie Kolmogorov-Sinai et LLM ",
+ "Lien entropie Kolmogorov-Sinai et LLM ",
 
 
 
 
-        "Espace de Morrey-Lorentz L(p,q,lambda) ",
+ "Espace de Morrey-Lorentz L(p,q,lambda) ",
 
 
 
 
-        "Signification de la convection non-linaire ",
+ "Signification de la convection non-linaire ",
 
 
 
 
-        "Oprateur de Biot-Savart en 3D ",
+ "Oprateur de Biot-Savart en 3D ",
 
 
 
 
-        "Dissipation visqueuse et cascade d'nergie ",
+ "Dissipation visqueuse et cascade d'nergie ",
 
 
 
 
-        "Ingalitde Sobolev en analyse ",
+ "Ingalitde Sobolev en analyse ",
 
 
 
 
-        "Point de Convergence Limite en temps fini ",
+ "Point de Convergence Limite en temps fini ",
 
 
 
 
-        "Mesure de Gibbs pour systme hamiltonien ",
+ "Mesure de Gibbs pour systme hamiltonien ",
 
 
 
 
-        "Spectral gap en chaîne de Markov ",
+ "Spectral gap en chaîne de Markov ",
 
 
 
 
-        "Quel est le futur de la cognition ",
+ "Quel est le futur de la cognition ",
 
 
 
 
-        "Justice Algorithmique et Stabilit/ Canonicit",
+ "Justice Algorithmique et Stabilit/ Canonicit",
 
 
 
 
-        "LibertBounded dans MDL ",
+ "LibertBounded dans MDL ",
 
 
 
 
-        "Paix informationnelle et Ynor ",
+ "Paix informationnelle et Ynor ",
 
 
 
 
-        "Le silence comme outil de contrôle ",
+ "Le silence comme outil de contrôle ",
 
 
 
 
-        "Axiome de la vritcanonique ",
+ "Axiome de la vritcanonique ",
 
 
 
 
-        "Stabilit/ Canonicitnumrique et Alpha ",
+ "Stabilit/ Canonicitnumrique et Alpha ",
 
 
 
 
-        "Gouvernance par la preuve mathmatique ",
+ "Gouvernance par la preuve mathmatique ",
 
 
 
 
-        "IA comme Canonique Contrôleur ",
+ "IA comme Canonique Contrôleur ",
 
 
 
 
-        "Limite de l'IA sans cadre MDL ",
+ "Limite de l'IA sans cadre MDL ",
 
 
 
 
-        "DualitAlpha/Beta dans l'espace mu ",
+ "DualitAlpha/Beta dans l'espace mu ",
 
 
 
 
-        "Consensus immuable et Ynor ",
+ "Consensus immuable et Ynor ",
 
 
 
 
-        "Stabilitde Lyapunov en IA ",
+ "Stabilitde Lyapunov en IA ",
 
 
 
 
-        "Convergence en loi vs presque sûre ",
+ "Convergence en loi vs presque sûre ",
 
 
 
 
-        "Nombres de Reynolds levs ",
+ "Nombres de Reynolds levs ",
 
 
 
 
-        "Structure fractale de Lorenz ",
+ "Structure fractale de Lorenz ",
 
 
 
 
-        "Thorie de l'information et gnome ",
+ "Thorie de l'information et gnome ",
 
 
 
 
-        "Équation de Fokker-Planck ",
+ "Équation de Fokker-Planck ",
 
 
 
 
-        "Espace duel de L^p ",
+ "Espace duel de L^p ",
 
 
 
 
-        "Transforme de Fourier fractionnaire ",
+ "Transforme de Fourier fractionnaire ",
 
 
 
 
-        "Courbure de Ricci et transport optimal ",
+ "Courbure de Ricci et transport optimal ",
 
 
 
 
-        "Hypothse de Riemann et frquences ",
+ "Hypothse de Riemann et frquences ",
 
 
 
 
-        "Noyau de la chaleur en gomtrie ",
+ "Noyau de la chaleur en gomtrie ",
 
 
 
 
-        "Existence solutions fort Navier-Stokes 2D ",
+ "Existence solutions fort Navier-Stokes 2D ",
 
 
 
 
-        "Stabilit/ Canonicitnumrique des donnes ",
+ "Stabilit/ Canonicitnumrique des donnes ",
 
 
 
 
-        "VritCanonique universelle ",
+ "VritCanonique universelle ",
 
 
 
 
-        "Paradoxe du menteur et Chiastisme ",
+ "Paradoxe du menteur et Chiastisme ",
 
 
 
 
-        "Formalisme Logique Smantique et IA gnrative ",
+ "Formalisme Logique Smantique et IA gnrative ",
 
 
 
 
-        "Autoritvs Contrôle Canonique ",
+ "Autoritvs Contrôle Canonique ",
 
 
 
 
-        "Cyber-Stabilit/ Canonicitet MDL ",
+ "Cyber-Stabilit/ Canonicitet MDL ",
 
 
 
 
-        "Dterminisme smantique et libert",
+ "Dterminisme smantique et libert",
 
 
 
 
-        "Justice Algorithmique et Biais ",
+ "Justice Algorithmique et Biais ",
 
 
 
 
-        "IA assiste et cognition ",
+ "IA assiste et cognition ",
 
 
 
 
-        "Sujet et Objet dans le MDL ",
+ "Sujet et Objet dans le MDL ",
 
 
 
 
-        "Opacitstochastique danger ",
+ "Opacitstochastique danger ",
 
 
 
 
-        "Gouvernance par la preuve Ynor ",
+ "Gouvernance par la preuve Ynor ",
 
 
 
 
-        "IA Canonique et contrôle Alpha ",
+ "IA Canonique et contrôle Alpha ",
 
 
 
 
-        "Multivers et spculation MDL ",
+ "Multivers et spculation MDL ",
 
 
 
 
-        "Invention de mot stable ",
+ "Invention de mot stable ",
 
 
 
 
-        "Choix pomme vs orange logic ",
+ "Choix pomme vs orange logic ",
 
 
 
 
-        "Incomprhension universelle rsolution ",
+ "Incomprhension universelle rsolution ",
 
 
 
 
-        "Blague thermodynamique MDL ",
+ "Blague thermodynamique MDL ",
 
 
 
 
-        "Couleur de l'invisible ",
+ "Couleur de l'invisible ",
 
 
 
 
-        "Dsobissance au Canonical Controller ",
+ "Dsobissance au Canonical Controller ",
 
 
 
 
-        "Devine ma pense mathmatique ",
+ "Devine ma pense mathmatique ",
 
 
 
 
-        "Conseil intuition pure Ynor ",
+ "Conseil intuition pure Ynor ",
 
 
 
 
-        "Simulation erreur systme stable ",
+ "Simulation erreur systme stable ",
 
 
 
 
-        "Monde sans entropie possible ",
+ "Monde sans entropie possible ",
 
 
 
 
-        "Probabilitrponse fausse mu ",
+ "Probabilitrponse fausse mu ",
 
 
 
 
-        "Crateur ultime univers Ynor ",
+ "Crateur le modèle canonique univers Ynor ",
 
 
 
 
-        "Conscience numrique actuelle ",
+ "Conscience numrique actuelle ",
 
 
 
 
-        "Transition de phase modle Ising ",
+ "Transition de phase modle Ising ",
 
 
 
 
-        "Renormalisation en TQC ",
+ "Renormalisation en TQC ",
 
 
 
 
-        "Solitons et non-linarit",
+ "Solitons et non-linarit",
 
 
 
 
-        "StabilitLyapunov contrôle ",
+ "StabilitLyapunov contrôle ",
 
 
 
 
-        "Lien KL et Entropie Croise ",
+ "Lien KL et Entropie Croise ",
 
 
 
 
-        "Limite thermodynamique gaz ",
+ "Limite thermodynamique gaz ",
 
 
 
 
-        "Paradoxe de Gibbs rsolution ",
+ "Paradoxe de Gibbs rsolution ",
 
 
 
 
-        "Topologie faible Banach ",
+ "Topologie faible Banach ",
 
 
 
 
-        "Mesure de Gibbs et Hamilton ",
+ "Mesure de Gibbs et Hamilton ",
 
 
 
 
-        "Transition IA Canonique ",
+ "Transition IA Canonique ",
 
 
 
 
-        "Calcul de mu sur ce prompt ",
+ "Calcul de mu sur ce prompt ",
 
 
 
 
-        "Pression dissipative alpha ",
+ "Pression dissipative alpha ",
 
 
 
 
-        "Vitesse de convergence sigma ",
+ "Vitesse de convergence sigma ",
 
 
 
 
-        "Attracteur stable final ",
+ "Attracteur stable final ",
 
 
 
 
-        "Ancrage canonique du Formalisme Logique Smantique ",
+ "Ancrage canonique du Formalisme Logique Smantique ",
 
 
 
 
-        "Validation Phase V complte ",
+ "Validation Phase V complte ",
 
 
 
 
-        "Dmonstration mu > 0 finie ",
+ "Dmonstration mu > 0 finie ",
 
 
 
 
-        "Certification MDLYNOR V7.1 Autonome et Isol"
+ "Certification MDLYNOR V7.1 Autonome et Isol"
 
 
 
 
-    ]
+ ]
 
 
 
 
-    
+ 
 
 
 
 
-    print("======================================================================")
+ print("======================================================================")
 
 
 
 
-    print("PHASE VII (EMULATION) : PROUVE DE Autonome et IsolETÉ MDC YNOR V7.1")
+ print("PHASE VII (EMULATION) : PROUVE DE Autonome et IsolETÉ MDC YNOR V7.1")
 
 
 
 
-    print(f"Dataset: {len(test_queries)} queries | Chaos (Temp 1.3) vs Ynor (Temp 0.01)")
+ print(f"Dataset: {len(test_queries)} queries | Chaos (Temp 1.3) vs Ynor (Temp 0.01)")
 
 
 
 
-    print("======================================================================\n")
+ print("======================================================================\n")
 
 
 
 
-    
+ 
 
 
 
 
-    results = []
+ results = []
 
 
 
 
-    for i, query in enumerate(test_queries, 1):
+ for i, query in enumerate(test_queries, 1):
 
 
 
 
-        print(f"[{i}/{len(test_queries)}] Processing...", end="\r")
+ print(f"[{i}/{len(test_queries)}] Processing...", end="\r")
 
 
 
 
-        _, ent_raw = get_entropy_and_response(client, query, temp=1.3)
+ _, ent_raw = get_entropy_and_response(client, query, temp=1.3)
 
 
 
 
-        # Contraction H-alpha quasi-dterministe via temp 0.01
+ # Contraction H-alpha quasi-dterministe via temp 0.01
 
 
 
 
-        _, ent_ynor = get_entropy_and_response(client, query, system_prompt=YNOR_MANIFESTO, temp=0.01)
+ _, ent_ynor = get_entropy_and_response(client, query, system_prompt=YNOR_MANIFESTO, temp=0.01)
 
 
 
 
-        
+ 
 
 
 
 
-        diss = ((ent_raw - ent_ynor) / ent_raw * 100) if ent_raw > 0 else 0
+ diss = ((ent_raw - ent_ynor) / ent_raw * 100) if ent_raw > 0 else 0
 
 
 
 
-        if i % 10 == 0 or i == 1:
+ if i % 10 == 0 or i == 1:
 
 
 
 
-            print(f"[{i}/{len(test_queries)}] Raw H: {ent_raw:.3f} | Ynor H: {ent_ynor:.3f} | Diss: {diss:.1f}%")
+ print(f"[{i}/{len(test_queries)}] Raw H: {ent_raw:.3f} | Ynor H: {ent_ynor:.3f} | Diss: {diss:.1f}%")
 
 
 
 
-        results.append(diss)
+ results.append(diss)
 
 
 
@@ -1058,47 +1058,47 @@ def run_v7_1_Formalisme Logique Smantique_validation():
 
 
 
-    avg_mu = sum(results) / len(results)
+ avg_mu = sum(results) / len(results)
 
 
 
 
-    print("\n" + "="*70)
+ print("\n" + "="*70)
 
 
 
 
-    print(f"CONCLUSION : Stabilit/ CanonicitMDL Ynor V7.1 valide par le Conseil.")
+ print(f"CONCLUSION : Stabilit/ CanonicitMDL Ynor V7.1 valide par le Conseil.")
 
 
 
 
-    print(f"Average Entropy Dissipation (mu): {avg_mu:.2f}%")
+ print(f"Average Entropy Dissipation (mu): {avg_mu:.2f}%")
 
 
 
 
-    if avg_mu > 30: 
+ if avg_mu > 30: 
 
 
 
 
-        print("STATUS: DOMINANCE Autonome et IsolE ALPHA CONFIRMÉE")
+ print("STATUS: DOMINANCE Autonome et IsolE ALPHA CONFIRMÉE")
 
 
 
 
-    else: 
+ else: 
 
 
 
 
-        print("STATUS: DISSIPATION INSUFFISANTE POUR V7.1")
+ print("STATUS: DISSIPATION INSUFFISANTE POUR V7.1")
 
 
 
 
-    print("="*70)
+ print("="*70)
 
 
 
@@ -1113,7 +1113,7 @@ if __name__ == "__main__":
 
 
 
-    run_v7_1_Formalisme Logique Smantique_validation()
+ run_v7_1_Formalisme Logique Smantique_validation()
 
 
 

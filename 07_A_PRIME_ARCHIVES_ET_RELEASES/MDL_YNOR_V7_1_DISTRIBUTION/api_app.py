@@ -42,7 +42,7 @@ STATUS = {"mu": 1.0, "status": "LIVE", "message": "MDL Ynor Certifi? Heartbeat V
 
 async def root():
 
-    return STATUS
+ return STATUS
 
 
 
@@ -50,17 +50,17 @@ async def root():
 
 async def health():
 
-    return {"status": "ok"}
+ return {"status": "ok"}
 
 
 
 class DispatchRequest(BaseModel):
 
-    action: str
+ action: str
 
-    payload: Any
+ payload: Any
 
-    license_key: str
+ license_key: str
 
 
 
@@ -68,99 +68,99 @@ class DispatchRequest(BaseModel):
 
 async def dispatch(request: DispatchRequest):
 
-    # Scurit
+ # Scurit
 
-    valid_keys = ["MDL-SINGULARITY-2026-V11.8-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE", "MDL-SINGULARITY-2026-V11.5-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE"]
+ valid_keys = ["MDL-SINGULARITY-2026-V11.8-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE", "MDL-SINGULARITY-2026-V11.5-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE"]
 
-    if request.license_key not in valid_keys:
+ if request.license_key not in valid_keys:
 
-        return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
-
-
-
-    # Da‰BRAYAGE DES IMPORTS (LAZY LOADING POUR a‰VITER OOM SUR RENDER)
-
-    import numpy as np
-
-    import pandas as pd
-
-    NEXUS_PATH = os.path.join(BASE_DIR, "YNOR_MARKET_DYNAMICS_NEXUS")
-
-    if NEXUS_PATH not in sys.path:
-
-        sys.path.append(NEXUS_PATH)
+ return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
 
 
 
-    action = request.action.lower()
+ # Da‰BRAYAGE DES IMPORTS (LAZY LOADING POUR a‰VITER OOM SUR RENDER)
 
-    user_payload = str(request.payload)
+ import numpy as np
 
+ import pandas as pd
 
+ NEXUS_PATH = os.path.join(BASE_DIR, "YNOR_MARKET_DYNAMICS_NEXUS")
 
-    try:
+ if NEXUS_PATH not in sys.path:
 
-        # 1. ACTION: MARKET (Nexus Consensus Multi-Agents)
-
-        if "market" in action:
-
-            from ynor_market_bridge import YNOR_MARKET_NEXUS
-
-            symbol = user_payload.strip().upper().split()[0]
-
-            result = await YNOR_MARKET_NEXUS.process_market_query(symbol)
-
-            return {
-
-                "status": "SUCCESS",
-
-                "mu": 1.0,
-
-                "verdict": "Consensus Alpha Satur(V11.14.0)",
-
-                "projection": result.get("projection", "Analyse en cours..."),
-
-                "details": result
-
-            }
+ sys.path.append(NEXUS_PATH)
 
 
 
-        # 2. ACTION: LOGOS / AUDIT (Infrence sur le Corpus local)
+ action = request.action.lower()
 
-        if "logos" in action or "audit" in action:
-
-            # (Simulation de haute fidlitpour garantir le mu=1.0 sans plantage OOM)
-
-            return {
-
-                "status": "SUCCESS",
-
-                "mu": 1.0,
-
-                "verdict": "Audit de Flux Alpha Certifi",
-
-                "message": f"Logica Ynor (V11.14.0) valide pour: '{user_payload}'"
-
-            }
+ user_payload = str(request.payload)
 
 
 
-    except Exception as e:
+ try:
 
-        return {
+ # 1. ACTION: MARKET (Nexus Consensus Multi-Agents)
 
-            "status": "PARTIAL_FAILURE",
+ if "market" in action:
 
-            "mu": 0.5,
+ from ynor_market_bridge import YNOR_MARKET_NEXUS
 
-            "error": str(e),
+ symbol = user_payload.strip().upper().split()[0]
 
-            "trace": traceback.format_exc()
+ result = await YNOR_MARKET_NEXUS.process_market_query(symbol)
 
-        }
+ return {
+
+ "status": "SUCCESS",
+
+ "mu": 1.0,
+
+ "verdict": "Consensus Alpha Satur(V11.14.0)",
+
+ "projection": result.get("projection", "Analyse en cours..."),
+
+ "details": result
+
+ }
 
 
 
-    return {"status": "SUCCESS", "mu": 1.0, "message": "Action OK."}
+ # 2. ACTION: LOGOS / AUDIT (Infrence sur le Corpus local)
+
+ if "logos" in action or "audit" in action:
+
+ # (Simulation de haute fidlitpour garantir le mu=1.0 sans plantage OOM)
+
+ return {
+
+ "status": "SUCCESS",
+
+ "mu": 1.0,
+
+ "verdict": "Audit de Flux Alpha Certifi",
+
+ "message": f"Logica Ynor (V11.14.0) valide pour: '{user_payload}'"
+
+ }
+
+
+
+ except Exception as e:
+
+ return {
+
+ "status": "PARTIAL_FAILURE",
+
+ "mu": 0.5,
+
+ "error": str(e),
+
+ "trace": traceback.format_exc()
+
+ }
+
+
+
+ return {"status": "SUCCESS", "mu": 1.0, "message": "Action OK."}
 

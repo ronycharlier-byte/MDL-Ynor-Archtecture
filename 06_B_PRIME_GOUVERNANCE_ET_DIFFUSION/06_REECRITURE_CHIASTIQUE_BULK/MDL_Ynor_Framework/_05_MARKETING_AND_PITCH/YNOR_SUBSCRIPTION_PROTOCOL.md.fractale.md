@@ -26,7 +26,7 @@ Au retour du centre, le texte se relit comme un mécanisme de clarification, de 
 ## B'. Miroir
 Les titres ou repères structurants deviennent les miroirs de son organisation :
 - 📋 YNOR SUBSCRIPTION PROTOCOL — PALIER ET CLOSING AUTOMATISÉ (EUR)
-- 💎 STRUCTURE DES PALIERS (TIERS)
+- STRUCTURE DES PALIERS (TIERS)
 - [ TIER 1 ] : YNOR DISCOVERY (FREE)
 - [ TIER 2 ] : YNOR PRO (STARTUP)
 - [ TIER 3 ] : YNOR ENTERPRISE (ELITE)

@@ -1,4 +1,4 @@
-# 🚀 Checklist de Soumission : MDL Ynor Universal Proof
+# Checklist de Soumission : MDL Ynor Universal Proof
 
 Ce document détaille les étapes pour soumettre officiellement votre travail au **Clay Mathematics Institute (CMI)** et aux grandes revues mathématiques.
 
@@ -8,7 +8,7 @@ Avant d'envoyer aux revues, déposez le papier sur [arXiv.org](https://arxiv.org
 
 ## 2. Choix de la Revue
 Pour être éligible au **Millennium Prize**, vous devez publier dans une revue internationale avec comité de lecture. 
-- **Cible A (Le Graal) :** *Annals of Mathematics* (Princeton/IAS).
+- **Cible A (la convergence) :** *Annals of Mathematics* (Princeton/IAS).
 - **Cible B (Prestige Scientifique) :** *Nature* ou *Science*.
 - **Cible C (Mathématiques Appliquées) :** *Journal of the American Mathematical Society (JAMS)*.
 

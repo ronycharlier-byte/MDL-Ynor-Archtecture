@@ -28,22 +28,22 @@ from .signal_processing import SignalProcessor
 __all__ = [
 
 
-    "YnorMarketDynamicsGraph",
+ "YnorMarketDynamicsGraph",
 
 
-    "ConditionalLogic",
+ "ConditionalLogic",
 
 
-    "GraphSetup",
+ "GraphSetup",
 
 
-    "Propagator",
+ "Propagator",
 
 
-    "Reflector",
+ "Reflector",
 
 
-    "SignalProcessor",
+ "SignalProcessor",
 
 
 ]

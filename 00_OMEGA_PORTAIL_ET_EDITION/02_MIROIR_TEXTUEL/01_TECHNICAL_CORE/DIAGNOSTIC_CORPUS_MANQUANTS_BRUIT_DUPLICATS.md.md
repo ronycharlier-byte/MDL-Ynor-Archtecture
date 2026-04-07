@@ -41,10 +41,10 @@ AUDIT: CERTIFIED 2026-04-06
 - Conserver un seul representant canonique par famille.
 - Archiver les miroirs, variantes de release et exports synchrones comme derives, pas comme points d'entree.
 - Familles historiquement prioritaires a dedoublonner logiquement:
-  - `PROTOCOLES_YNOR.md` comme source unique pour la famille `PROTOCOLES_*`.
-  - `AXIOMES_YNOR.md` comme source unique pour la famille `AXIOMES_*`.
-  - `Procfile`, `index_meta.json`, `mdl_global_knowledge.json`, `MDL_Ynor_Dynamic_Systems_Paper.tex`, `MDL_Ynor_NeurIPS_Submission.tex` et `Sovereign_Global_Knowledge.json` comme couples ou miroirs a maintenir en archive uniquement.
-  - Les exports `*.fractale.md`, `*.fractale_augmente.tex`, `*.json.fractale.md` et `*.md.md` comme artefacts derives, jamais comme lecture principale.
+ - `PROTOCOLES_YNOR.md` comme source unique pour la famille `PROTOCOLES_*`.
+ - `AXIOMES_YNOR.md` comme source unique pour la famille `AXIOMES_*`.
+ - `Procfile`, `index_meta.json`, `mdl_global_knowledge.json`, `MDL_Ynor_Dynamic_Systems_Paper.tex`, `MDL_Ynor_NeurIPS_Submission.tex` et `Sovereign_Global_Knowledge.json` comme couples ou miroirs a maintenir en archive uniquement.
+ - Les exports `*.fractale.md`, `*.fractale_augmente.tex`, `*.json.fractale.md` et `*.md.md` comme artefacts derives, jamais comme lecture principale.
 
 ## 5. Ce qu'il faut normaliser
 

@@ -1,65 +1,65 @@
 {
-  "node": "01_A_FONDATION",
-  "key": "A",
-  "mirror": "A_PRIME",
-  "role": "Ouverture, configuration, cadre initial",
-  "inventory_count": 14,
-  "inventory": [
-    {
-      "source": "README.md",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/.env",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/.env.template",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/.gitignore",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/docker-compose.yml",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/Dockerfile",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/environment.yml",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/pyproject.toml",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/README.md",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/requirements.txt",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/uv.lock",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.md",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.pdf",
-      "status": "missing"
-    },
-    {
-      "source": "MDL Ynor Constitution",
-      "status": "missing"
-    }
-  ]
+ "node": "01_A_FONDATION",
+ "key": "A",
+ "mirror": "A_PRIME",
+ "role": "Ouverture, configuration, cadre initial",
+ "inventory_count": 14,
+ "inventory": [
+ {
+ "source": "README.md",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/.env",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/.env.template",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/.gitignore",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/docker-compose.yml",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/Dockerfile",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/environment.yml",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/pyproject.toml",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/README.md",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/requirements.txt",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/uv.lock",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.md",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.pdf",
+ "status": "missing"
+ },
+ {
+ "source": "MDL Ynor Constitution",
+ "status": "missing"
+ }
+ ]
 }

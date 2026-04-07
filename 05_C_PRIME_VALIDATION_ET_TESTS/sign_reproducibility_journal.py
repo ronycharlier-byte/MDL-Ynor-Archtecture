@@ -14,45 +14,45 @@ SIGNATURE_PATH = "05_C_PRIME_VALIDATION_ET_TESTS/JOURNAL_SIGNATURE.json"
 
 def sign_journal():
 
-    if not os.path.exists(JOURNAL_PATH):
+ if not os.path.exists(JOURNAL_PATH):
 
-        print(f"Erreur : {JOURNAL_PATH} introuvable.")
+ print(f"Erreur : {JOURNAL_PATH} introuvable.")
 
-        return
-
-
-
-    with open(JOURNAL_PATH, "rb") as f:
-
-        file_data = f.read()
-
-        file_hash = hashlib.sha256(file_data).hexdigest()
+ return
 
 
 
-    signature = {
+ with open(JOURNAL_PATH, "rb") as f:
 
-        "timestamp": str(datetime.now()),
+ file_data = f.read()
 
-        "file": JOURNAL_PATH,
-
-        "sha256": file_hash,
-
-        "status": "IMMUTABLE_CLAIM_SIGNED",
-
-        "signer": "MDL YNOR ENGINE V11.13"
-
-    }
+ file_hash = hashlib.sha256(file_data).hexdigest()
 
 
 
-    with open(SIGNATURE_PATH, "w") as f:
+ signature = {
 
-        json.dump(signature, f, indent=4)
+ "timestamp": str(datetime.now()),
+
+ "file": JOURNAL_PATH,
+
+ "sha256": file_hash,
+
+ "status": "IMMUTABLE_CLAIM_SIGNED",
+
+ "signer": "MDL YNOR ENGINE V11.13"
+
+ }
 
 
 
-    print(f"Journal signavec succs : {file_hash}")
+ with open(SIGNATURE_PATH, "w") as f:
+
+ json.dump(signature, f, indent=4)
+
+
+
+ print(f"Journal signavec succs : {file_hash}")
 
 
 
@@ -60,5 +60,5 @@ import os
 
 if __name__ == "__main__":
 
-    sign_journal()
+ sign_journal()
 

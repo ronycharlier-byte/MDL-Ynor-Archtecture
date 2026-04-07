@@ -28,37 +28,37 @@ from VERROU_LICENCE_GATE import validate_license_canonicalty
 def get_secrets():
 
 
-    # Attempt to locate secrets.local.json
+ # Attempt to locate secrets.local.json
 
 
-    possible_paths = [
+ possible_paths = [
 
 
-        os.path.join(os.getcwd(), "secrets.local.json"),
+ os.path.join(os.getcwd(), "secrets.local.json"),
 
 
-        os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "03_C_MOTEURS_ET_DEPLOIEMENT", "01_SOURCE_IMPLANTEE", "MDL_Ynor_Framework", "_04_DEPLOYMENT_AND_API", "secrets.local.json")
+ os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "03_C_MOTEURS_ET_DEPLOIEMENT", "01_SOURCE_IMPLANTEE", "MDL_Ynor_Framework", "_04_DEPLOYMENT_AND_API", "secrets.local.json")
 
 
-    ]
+ ]
 
 
-    
+ 
 
 
-    for path in possible_paths:
+ for path in possible_paths:
 
 
-        if os.path.exists(path):
+ if os.path.exists(path):
 
 
-            with open(path, "r", encoding="utf-8") as f:
+ with open(path, "r", encoding="utf-8") as f:
 
 
-                return json.load(f)
+ return json.load(f)
 
 
-    return {}
+ return {}
 
 
 
@@ -67,121 +67,121 @@ def get_secrets():
 def solve_with_ynor_logic(user_query):
 
 
-    """
+ """
 
 
-    Excute une requête via l'API OpenAI en utilisant le protocole Ynor V10.8.
+ Excute une requête via l'API OpenAI en utilisant le protocole Ynor V10.8.
 
 
-    """
+ """
 
 
-    # 1. Validation de la stabilit
+ # 1. Validation de la stabilit
 
 
-    is_valid, msg = validate_license_canonicalty()
+ is_valid, msg = validate_license_canonicalty()
 
 
-    if not is_valid:
+ if not is_valid:
 
 
-        return f"ÉCHEC DE Autonome et IsolETÉ : {msg}"
+ return f"ÉCHEC DE Autonome et IsolETÉ : {msg}"
 
 
 
 
 
-    # 2. Chargement des configurations
+ # 2. Chargement des configurations
 
 
-    secrets = get_secrets()
+ secrets = get_secrets()
 
 
-    api_key = secrets.get("openai_api_key")
+ api_key = secrets.get("openai_api_key")
 
 
-    if not api_key:
+ if not api_key:
 
 
-        return "ERREUR : ClOpenAI manquante dans le vault."
+ return "ERREUR : ClOpenAI manquante dans le vault."
 
 
 
 
 
-    # 3. Chargement du Prompt Systme Inviolable
+ # 3. Chargement du Prompt Systme Inviolable
 
 
-    prompt_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "PROMPT_SYSTEME_INVIOLABLE.txt")
+ prompt_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "PROMPT_SYSTEME_INVIOLABLE.txt")
 
 
-    if not os.path.exists(prompt_path):
+ if not os.path.exists(prompt_path):
 
 
-        return "ERREUR : PROMPT_SYSTEME_INVIOLABLE.txt introuvable."
+ return "ERREUR : PROMPT_SYSTEME_INVIOLABLE.txt introuvable."
 
 
-    
+ 
 
 
-    with open(prompt_path, "r", encoding="utf-8") as f:
+ with open(prompt_path, "r", encoding="utf-8") as f:
 
 
-        system_prompt = f.read()
+ system_prompt = f.read()
 
 
 
 
 
-    # 4. Initialisation du client OpenAI
+ # 4. Initialisation du client OpenAI
 
 
-    client = OpenAI(api_key=api_key)
+ client = OpenAI(api_key=api_key)
 
 
 
 
 
-    # 5. Mod?lisation Pr?dictive du Formalisme Logique Smantique (Requête API)
+ # 5. Mod?lisation Pr?dictive du Formalisme Logique Smantique (Requête API)
 
 
-    try:
+ try:
 
 
-        response = client.chat.completions.create(
+ response = client.chat.completions.create(
 
 
-            model="gpt-5.4", # Modle de rfrence pour la V10.8
+ model="gpt-5.4", # Modle de rfrence pour la V10.8
 
 
-            messages=[
+ messages=[
 
 
-                {"role": "system", "content": system_prompt},
+ {"role": "system", "content": system_prompt},
 
 
-                {"role": "user", "content": user_query}
+ {"role": "user", "content": user_query}
 
 
-            ],
+ ],
 
 
-            temperature=0, # Rigueur maximale
+ temperature=0, # Rigueur maximale
 
 
-            max_tokens=4096,
+ max_tokens=4096,
 
 
-        )
+ )
 
 
-        return response.choices[0].message.content
+ return response.choices[0].message.content
 
 
-    except Exception as e:
+ except Exception as e:
 
 
-        return f"ERREUR DE PROJECTION : {str(e)}"
+ return f"ERREUR DE PROJECTION : {str(e)}"
 
 
 
@@ -190,36 +190,36 @@ def solve_with_ynor_logic(user_query):
 if __name__ == "__main__":
 
 
-    # Test de rfrence : Oprateur de Schrödinger L_alpha,beta
+ # Test de rfrence : Oprateur de Schrödinger L_alpha,beta
 
 
-    benchmark_query = (
+ benchmark_query = (
 
 
-        "Dmontrez la convergence de l'oprateur de Schrödinger $L_{\\alpha,\\beta}$ "
+ "Dmontrez la convergence de l'oprateur de Schrödinger $L_{\\alpha,\\beta}$ "
 
 
-        "dans l'espace de Hilbert s'appuyant sur le produit de Hilbert-Schmidt MDL. "
+ "dans l'espace de Hilbert s'appuyant sur le produit de Hilbert-Schmidt MDL. "
 
 
-        "Utilisez le formalisme Ynor V10.8."
+ "Utilisez le formalisme Ynor V10.8."
 
 
-    )
+ )
 
 
-    
+ 
 
 
-    print("\n--- [ PROJECTION Formalisme Logique Smantique EN COURS ] ---\n")
+ print("\n--- [ PROJECTION Formalisme Logique Smantique EN COURS ] ---\n")
 
 
-    result = solve_with_ynor_logic(benchmark_query)
+ result = solve_with_ynor_logic(benchmark_query)
 
 
-    print(result)
+ print(result)
 
 
-    print("\n--- [ FIN DE TRANSMISSION ] ---\n")
+ print("\n--- [ FIN DE TRANSMISSION ] ---\n")
 
 

@@ -17,9 +17,9 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 {
-  "ngrok_pid": 3780,
-  "uvicorn_pid": 29880,
-  "started_at": "20/03/2026 15:31:57"
+ "ngrok_pid": 3780,
+ "uvicorn_pid": 29880,
+ "started_at": "20/03/2026 15:31:57"
 }
 ```
 

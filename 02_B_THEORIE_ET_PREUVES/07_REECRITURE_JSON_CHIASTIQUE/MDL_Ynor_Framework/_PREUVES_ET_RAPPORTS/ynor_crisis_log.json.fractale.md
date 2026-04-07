@@ -19,14 +19,14 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 {
-  "event": "CRITICAL_THRESHOLD_EXCEEDED",
-  "time": 0.0,
-  "mu": -1.0,
-  "state": [
-    2.0,
-    2.0
-  ],
-  "recommendation": "Requérir une mutation immédiate de l'opérateur D."
+ "event": "CRITICAL_THRESHOLD_EXCEEDED",
+ "time": 0.0,
+ "mu": -1.0,
+ "state": [
+ 2.0,
+ 2.0
+ ],
+ "recommendation": "Requérir une mutation immédiate de l'opérateur D."
 }
 ```
 

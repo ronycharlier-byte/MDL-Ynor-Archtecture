@@ -1,76 +1,76 @@
 {
 
-  "openapi": "3.1.0",
+ "openapi": "3.1.0",
 
-  "info": {
+ "info": {
 
-    "title": "MDL Ynor Systme de Graphe de Consensus API",
+ "title": "MDL Ynor Systme de Graphe de Consensus API",
 
-    "description": "Systme de Gouvernance Analytique MDL. Gated by Canonical Protocol.",
+ "description": "Systme de Gouvernance Analytique MDL. Gated by Canonical Protocol.",
 
-    "version": "8.7.1"
+ "version": "8.7.1"
 
-  },
+ },
 
-  "servers": [
+ "servers": [
 
-    { "url": "https://mdl-ynor-v7-1-distribution.onrender.com" }
+ { "url": "https://mdl-ynor-v7-1-distribution.onrender.com" }
 
-  ],
+ ],
 
-  "paths": {
+ "paths": {
 
-    "/dispatch": {
+ "/dispatch": {
 
-      "post": {
+ "post": {
 
-        "operationId": "ynorGovernance",
+ "operationId": "ynorGovernance",
 
-        "summary": "Excution d'une action de gouvernance",
+ "summary": "Excution d'une action de gouvernance",
 
-        "requestBody": {
+ "requestBody": {
 
-          "required": true,
+ "required": true,
 
-          "content": {
+ "content": {
 
-            "application/json": {
+ "application/json": {
 
-              "schema": {
+ "schema": {
 
-                "type": "object",
+ "type": "object",
 
-                "properties": {
+ "properties": {
 
-                  "action": { "type": "string", "enum": ["audit", "Formalisme Logique Smantique", "map", "search", "consensus", "log"] },
+ "action": { "type": "string", "enum": ["audit", "Formalisme Logique Smantique", "map", "search", "consensus", "log"] },
 
-                  "payload": { "type": "string" },
+ "payload": { "type": "string" },
 
-                  "license_key": { "type": "string" }
+ "license_key": { "type": "string" }
 
-                },
+ },
 
-                "required": ["action", "payload", "license_key"]
+ "required": ["action", "payload", "license_key"]
 
-              }
+ }
 
-            }
+ }
 
-          }
+ }
 
-        },
+ },
 
-        "responses": {
+ "responses": {
 
-          "200": { "description": "Succs de la projection", "content": { "application/json": { "schema": { "type": "object" } } } }
+ "200": { "description": "Succs de la projection", "content": { "application/json": { "schema": { "type": "object" } } } }
 
-        }
+ }
 
-      }
+ }
 
-    }
+ }
 
-  }
+ }
 
 }
 

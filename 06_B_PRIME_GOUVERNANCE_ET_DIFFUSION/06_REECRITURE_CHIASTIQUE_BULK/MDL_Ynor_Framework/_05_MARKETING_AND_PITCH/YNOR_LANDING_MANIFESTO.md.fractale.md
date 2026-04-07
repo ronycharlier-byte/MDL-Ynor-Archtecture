@@ -29,7 +29,7 @@ Les titres ou repères structurants deviennent les miroirs de son organisation :
 - 💣 The Billion-Dollar Leak
 - 🧠 The Ynor Insight
 - $$ \mu = \alpha - \beta - \kappa $$
-- 🚀 The Ynor Guard : Real-Time Governance
+- The Ynor Guard : Real-Time Governance
 - 📊 Irrefutable Proof (Benchmark)
 
 ## A'. Cloture

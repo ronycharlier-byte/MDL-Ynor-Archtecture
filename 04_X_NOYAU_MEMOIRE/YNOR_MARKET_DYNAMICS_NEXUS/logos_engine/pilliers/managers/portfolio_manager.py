@@ -10,64 +10,64 @@ from Formalisme Logique Smantique_engine.agents.utils.agent_utils import build_i
 def create_portfolio_manager(llm, memory):
 
 
-    def portfolio_manager_node(state) -> dict:
+ def portfolio_manager_node(state) -> dict:
 
 
 
 
 
-        instrument_context = build_instrument_context(state["company_of_interest"])
+ instrument_context = build_instrument_context(state["company_of_interest"])
 
 
 
 
 
-        history = state["risk_debate_state"]["history"]
+ history = state["risk_debate_state"]["history"]
 
 
-        risk_debate_state = state["risk_debate_state"]
+ risk_debate_state = state["risk_debate_state"]
 
 
-        market_research_report = state["market_report"]
+ market_research_report = state["market_report"]
 
 
-        news_report = state["news_report"]
+ news_report = state["news_report"]
 
 
-        fundamentals_report = state["fundamentals_report"]
+ fundamentals_report = state["fundamentals_report"]
 
 
-        sentiment_report = state["sentiment_report"]
+ sentiment_report = state["sentiment_report"]
 
 
-        trader_plan = state["investment_plan"]
-
-
-
-
-
-        curr_situation = f"{market_research_report}\n\n{sentiment_report}\n\n{news_report}\n\n{fundamentals_report}"
-
-
-        past_memories = memory.get_memories(curr_situation, n_matches=2)
+ trader_plan = state["investment_plan"]
 
 
 
 
 
-        past_memory_str = ""
+ curr_situation = f"{market_research_report}\n\n{sentiment_report}\n\n{news_report}\n\n{fundamentals_report}"
 
 
-        for i, rec in enumerate(past_memories, 1):
-
-
-            past_memory_str += rec["recommendation"] + "\n\n"
+ past_memories = memory.get_memories(curr_situation, n_matches=2)
 
 
 
 
 
-        prompt = f"""As the Portfolio Manager, synthesize the risk analysts' debate and deliver the final trading decision.
+ past_memory_str = ""
+
+
+ for i, rec in enumerate(past_memories, 1):
+
+
+ past_memory_str += rec["recommendation"] + "\n\n"
+
+
+
+
+
+ prompt = f"""As the Portfolio Manager, synthesize the risk analysts' debate and deliver the final trading decision.
 
 
 
@@ -160,66 +160,66 @@ Be decisive and ground every conclusion in specific evidence from the analysts.{
 
 
 
-        response = llm.invoke(prompt)
+ response = llm.invoke(prompt)
 
 
 
 
 
-        new_risk_debate_state = {
+ new_risk_debate_state = {
 
 
-            "judge_decision": response.content,
+ "judge_decision": response.content,
 
 
-            "history": risk_debate_state["history"],
+ "history": risk_debate_state["history"],
 
 
-            "aggressive_history": risk_debate_state["aggressive_history"],
+ "aggressive_history": risk_debate_state["aggressive_history"],
 
 
-            "conservative_history": risk_debate_state["conservative_history"],
+ "conservative_history": risk_debate_state["conservative_history"],
 
 
-            "neutral_history": risk_debate_state["neutral_history"],
+ "neutral_history": risk_debate_state["neutral_history"],
 
 
-            "latest_speaker": "Judge",
+ "latest_speaker": "Judge",
 
 
-            "current_aggressive_response": risk_debate_state["current_aggressive_response"],
+ "current_aggressive_response": risk_debate_state["current_aggressive_response"],
 
 
-            "current_conservative_response": risk_debate_state["current_conservative_response"],
+ "current_conservative_response": risk_debate_state["current_conservative_response"],
 
 
-            "current_neutral_response": risk_debate_state["current_neutral_response"],
+ "current_neutral_response": risk_debate_state["current_neutral_response"],
 
 
-            "count": risk_debate_state["count"],
+ "count": risk_debate_state["count"],
 
 
-        }
-
-
-
-
-
-        return {
-
-
-            "risk_debate_state": new_risk_debate_state,
-
-
-            "final_trade_decision": response.content,
-
-
-        }
+ }
 
 
 
 
 
-    return portfolio_manager_node
+ return {
+
+
+ "risk_debate_state": new_risk_debate_state,
+
+
+ "final_trade_decision": response.content,
+
+
+ }
+
+
+
+
+
+ return portfolio_manager_node
 
 

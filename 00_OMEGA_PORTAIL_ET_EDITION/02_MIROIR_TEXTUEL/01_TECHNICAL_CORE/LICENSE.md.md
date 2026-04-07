@@ -3,7 +3,7 @@
 ```text
 # MDL PROPRIETARY ACADEMIC LICENSE (V1.0 - 2026)
 
-**Licensor:** Rony Charlier (MDL Lab)  
+**Licensor:** Rony Charlier (MDL Lab) 
 **Corpus:** Ynor Unified Framework (V11.14.0.x)
 
 ---

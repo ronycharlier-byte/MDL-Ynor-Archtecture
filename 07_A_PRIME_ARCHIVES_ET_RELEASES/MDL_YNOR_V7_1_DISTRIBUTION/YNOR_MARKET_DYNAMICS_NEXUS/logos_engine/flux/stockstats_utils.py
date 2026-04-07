@@ -43,52 +43,52 @@ logger = logging.getLogger(__name__)
 def yf_retry(func, max_retries=3, base_delay=2.0):
 
 
-    """Execute a yfinance call with exponential backoff on rate limits.
+ """Execute a yfinance call with exponential backoff on rate limits.
 
 
 
 
 
-    yfinance raises YFRateLimitError on HTTP 429 responses but does not
+ yfinance raises YFRateLimitError on HTTP 429 responses but does not
 
 
-    retry them internally. This wrapper adds retry logic specifically
+ retry them internally. This wrapper adds retry logic specifically
 
 
-    for rate limits. Other exceptions propagate immediately.
+ for rate limits. Other exceptions propagate immediately.
 
 
-    """
+ """
 
 
-    for attempt in range(max_retries + 1):
+ for attempt in range(max_retries + 1):
 
 
-        try:
+ try:
 
 
-            return func()
+ return func()
 
 
-        except YFRateLimitError:
+ except YFRateLimitError:
 
 
-            if attempt < max_retries:
+ if attempt < max_retries:
 
 
-                delay = base_delay * (2 ** attempt)
+ delay = base_delay * (2 ** attempt)
 
 
-                logger.warning(f"Yahoo Finance rate limited, retrying in {delay:.0f}s (attempt {attempt + 1}/{max_retries})")
+ logger.warning(f"Yahoo Finance rate limited, retrying in {delay:.0f}s (attempt {attempt + 1}/{max_retries})")
 
 
-                time.sleep(delay)
+ time.sleep(delay)
 
 
-            else:
+ else:
 
 
-                raise
+ raise
 
 
 
@@ -100,34 +100,34 @@ def yf_retry(func, max_retries=3, base_delay=2.0):
 def _clean_dataframe(data: pd.DataFrame) -> pd.DataFrame:
 
 
-    """Normalize a stock DataFrame for stockstats: parse dates, drop invalid rows, fill price gaps."""
+ """Normalize a stock DataFrame for stockstats: parse dates, drop invalid rows, fill price gaps."""
 
 
-    data["Date"] = pd.to_datetime(data["Date"], errors="coerce")
+ data["Date"] = pd.to_datetime(data["Date"], errors="coerce")
 
 
-    data = data.dropna(subset=["Date"])
-
-
-
-
-
-    price_cols = [c for c in ["Open", "High", "Low", "Close", "Volume"] if c in data.columns]
-
-
-    data[price_cols] = data[price_cols].apply(pd.to_numeric, errors="coerce")
-
-
-    data = data.dropna(subset=["Close"])
-
-
-    data[price_cols] = data[price_cols].ffill().bfill()
+ data = data.dropna(subset=["Date"])
 
 
 
 
 
-    return data
+ price_cols = [c for c in ["Open", "High", "Low", "Close", "Volume"] if c in data.columns]
+
+
+ data[price_cols] = data[price_cols].apply(pd.to_numeric, errors="coerce")
+
+
+ data = data.dropna(subset=["Close"])
+
+
+ data[price_cols] = data[price_cols].ffill().bfill()
+
+
+
+
+
+ return data
 
 
 
@@ -139,127 +139,127 @@ def _clean_dataframe(data: pd.DataFrame) -> pd.DataFrame:
 def load_ohlcv(symbol: str, curr_date: str) -> pd.DataFrame:
 
 
-    """Fetch OHLCV data with caching, filtered to prevent look-ahead bias.
+ """Fetch OHLCV data with caching, filtered to prevent look-ahead bias.
 
 
 
 
 
-    Downloads 15 years of data up to today and caches per symbol. On
+ Downloads 15 years of data up to today and caches per symbol. On
 
 
-    subsequent calls the cache is reused. Rows after curr_date are
+ subsequent calls the cache is reused. Rows after curr_date are
 
 
-    filtered out so backtests never see future prices.
+ filtered out so backtests never see future prices.
 
 
-    """
+ """
 
 
-    config = get_config()
+ config = get_config()
 
 
-    curr_date_dt = pd.to_datetime(curr_date)
+ curr_date_dt = pd.to_datetime(curr_date)
 
 
 
 
 
-    # Cache uses a fixed window (15y to today) so one file per symbol
+ # Cache uses a fixed window (15y to today) so one file per symbol
 
 
-    today_date = pd.Timestamp.today()
+ today_date = pd.Timestamp.today()
 
 
-    start_date = today_date - pd.DateOffset(years=5)
+ start_date = today_date - pd.DateOffset(years=5)
 
 
-    start_str = start_date.strftime("%Y-%m-%d")
+ start_str = start_date.strftime("%Y-%m-%d")
 
 
-    end_str = today_date.strftime("%Y-%m-%d")
+ end_str = today_date.strftime("%Y-%m-%d")
 
 
 
 
 
-    os.makedirs(config["data_cache_dir"], exist_ok=True)
+ os.makedirs(config["data_cache_dir"], exist_ok=True)
 
 
-    data_file = os.path.join(
+ data_file = os.path.join(
 
 
-        config["data_cache_dir"],
+ config["data_cache_dir"],
 
 
-        f"{symbol}-YFin-data-{start_str}-{end_str}.csv",
+ f"{symbol}-YFin-data-{start_str}-{end_str}.csv",
 
 
-    )
+ )
 
 
 
 
 
-    if os.path.exists(data_file):
+ if os.path.exists(data_file):
 
 
-        data = pd.read_csv(data_file, on_bad_lines="skip")
+ data = pd.read_csv(data_file, on_bad_lines="skip")
 
 
-    else:
+ else:
 
 
-        data = yf_retry(lambda: yf.download(
+ data = yf_retry(lambda: yf.download(
 
 
-            symbol,
+ symbol,
 
 
-            start=start_str,
+ start=start_str,
 
 
-            end=end_str,
+ end=end_str,
 
 
-            multi_level_index=False,
+ multi_level_index=False,
 
 
-            progress=False,
+ progress=False,
 
 
-            auto_adjust=True,
+ auto_adjust=True,
 
 
-        ))
+ ))
 
 
-        data = data.reset_index()
+ data = data.reset_index()
 
 
-        data.to_csv(data_file, index=False)
+ data.to_csv(data_file, index=False)
 
 
 
 
 
-    data = _clean_dataframe(data)
+ data = _clean_dataframe(data)
 
 
 
 
 
-    # Filter to curr_date to prevent look-ahead bias in backtesting
+ # Filter to curr_date to prevent look-ahead bias in backtesting
 
 
-    data = data[data["Date"] <= curr_date_dt]
+ data = data[data["Date"] <= curr_date_dt]
 
 
 
 
 
-    return data
+ return data
 
 
 
@@ -271,37 +271,37 @@ def load_ohlcv(symbol: str, curr_date: str) -> pd.DataFrame:
 def filter_financials_by_date(data: pd.DataFrame, curr_date: str) -> pd.DataFrame:
 
 
-    """Drop financial statement columns (fiscal period timestamps) after curr_date.
+ """Drop financial statement columns (fiscal period timestamps) after curr_date.
 
 
 
 
 
-    yfinance financial statements use fiscal period end dates as columns.
+ yfinance financial statements use fiscal period end dates as columns.
 
 
-    Columns after curr_date represent future data and are removed to
+ Columns after curr_date represent future data and are removed to
 
 
-    prevent look-ahead bias.
+ prevent look-ahead bias.
 
 
-    """
+ """
 
 
-    if not curr_date or data.empty:
+ if not curr_date or data.empty:
 
 
-        return data
+ return data
 
 
-    cutoff = pd.Timestamp(curr_date)
+ cutoff = pd.Timestamp(curr_date)
 
 
-    mask = pd.to_datetime(data.columns, errors="coerce") <= cutoff
+ mask = pd.to_datetime(data.columns, errors="coerce") <= cutoff
 
 
-    return data.loc[:, mask]
+ return data.loc[:, mask]
 
 
 
@@ -313,72 +313,72 @@ def filter_financials_by_date(data: pd.DataFrame, curr_date: str) -> pd.DataFram
 class StockstatsUtils:
 
 
-    @staticmethod
+ @staticmethod
 
 
-    def get_stock_stats(
+ def get_stock_stats(
 
 
-        symbol: Annotated[str, "ticker symbol for the company"],
+ symbol: Annotated[str, "ticker symbol for the company"],
 
 
-        indicator: Annotated[
+ indicator: Annotated[
 
 
-            str, "quantitative indicators based off of the stock data for the company"
+ str, "quantitative indicators based off of the stock data for the company"
 
 
-        ],
+ ],
 
 
-        curr_date: Annotated[
+ curr_date: Annotated[
 
 
-            str, "curr date for retrieving stock price data, YYYY-mm-dd"
+ str, "curr date for retrieving stock price data, YYYY-mm-dd"
 
 
-        ],
+ ],
 
 
-    ):
+ ):
 
 
-        data = load_ohlcv(symbol, curr_date)
+ data = load_ohlcv(symbol, curr_date)
 
 
-        df = wrap(data)
+ df = wrap(data)
 
 
-        df["Date"] = df["Date"].dt.strftime("%Y-%m-%d")
+ df["Date"] = df["Date"].dt.strftime("%Y-%m-%d")
 
 
-        curr_date_str = pd.to_datetime(curr_date).strftime("%Y-%m-%d")
-
-
-
-
-
-        df[indicator]  # trigger stockstats to calculate the indicator
-
-
-        matching_rows = df[df["Date"].str.startswith(curr_date_str)]
+ curr_date_str = pd.to_datetime(curr_date).strftime("%Y-%m-%d")
 
 
 
 
 
-        if not matching_rows.empty:
+ df[indicator] # trigger stockstats to calculate the indicator
 
 
-            indicator_value = matching_rows[indicator].values[0]
+ matching_rows = df[df["Date"].str.startswith(curr_date_str)]
 
 
-            return indicator_value
 
 
-        else:
+
+ if not matching_rows.empty:
 
 
-            return "N/A: Not a trading day (weekend or holiday)"
+ indicator_value = matching_rows[indicator].values[0]
+
+
+ return indicator_value
+
+
+ else:
+
+
+ return "N/A: Not a trading day (weekend or holiday)"
 
 

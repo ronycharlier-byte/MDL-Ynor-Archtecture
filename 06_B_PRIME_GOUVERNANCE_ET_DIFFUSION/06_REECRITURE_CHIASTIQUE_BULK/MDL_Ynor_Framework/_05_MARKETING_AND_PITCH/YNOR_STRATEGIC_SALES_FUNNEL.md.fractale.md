@@ -30,7 +30,7 @@ Les titres ou repères structurants deviennent les miroirs de son organisation :
 - Étape 2 : L'ÉDUCATION (Interest & Desire)
 - Étape 3 : L'ÉVALUATION (Trial)
 - Étape 4 : LA CONVERSION (Closing)
-- 📈 Métriques de Succès (KPIs)
+- Métriques de Succès (KPIs)
 
 ## A'. Cloture
 La clôture répond à l'ouverture : ce qui commençait comme énoncé devient ici arche, retour et scellement fractal.

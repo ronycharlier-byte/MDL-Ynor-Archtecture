@@ -19,16 +19,16 @@ from typing import Optional
 try:
 
 
-    from openai import OpenAI
+ from openai import OpenAI
 
 
 except ImportError:
 
 
-    print("Please install openai: pip install openai")
+ print("Please install openai: pip install openai")
 
 
-    exit(1)
+ exit(1)
 
 
 
@@ -70,16 +70,16 @@ VAULT_PATH = os.path.join(REPO_ROOT, "03_C_MOTEURS_ET_DEPLOIEMENT", "01_SOURCE_I
 def get_vault():
 
 
-    if os.path.exists(VAULT_PATH):
+ if os.path.exists(VAULT_PATH):
 
 
-        with open(VAULT_PATH, "r", encoding="utf-8") as f:
+ with open(VAULT_PATH, "r", encoding="utf-8") as f:
 
 
-            return json.load(f)
+ return json.load(f)
 
 
-    return {}
+ return {}
 
 
 
@@ -112,7 +112,7 @@ FORMAT OBLIGATOIRE : { "axiome": "...", "Formalisme Logique Smantique_final": ".
 class QueryRequest(BaseModel):
 
 
-    query: str
+ query: str
 
 
 
@@ -121,19 +121,19 @@ class QueryRequest(BaseModel):
 def calculate_shannon_entropy(top_logprobs) -> float:
 
 
-    entropy = 0.0
+ entropy = 0.0
 
 
-    for lp in top_logprobs:
+ for lp in top_logprobs:
 
 
-        prob = math.exp(lp.logprob)
+ prob = math.exp(lp.logprob)
 
 
-        entropy += -prob * lp.logprob
+ entropy += -prob * lp.logprob
 
 
-    return entropy
+ return entropy
 
 
 
@@ -142,55 +142,55 @@ def calculate_shannon_entropy(top_logprobs) -> float:
 def get_mu_score(client, query, system_prompt):
 
 
-    """Calcul du mu d'un domaine smantique."""
+ """Calcul du mu d'un domaine smantique."""
 
 
-    try:
+ try:
 
 
-        response = client.chat.completions.create(
+ response = client.chat.completions.create(
 
 
-            model="gpt-4o",
+ model="gpt-4o",
 
 
-            messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": query}],
+ messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": query}],
 
 
-            logprobs=True, top_logprobs=5, temperature=0.01, max_tokens=100
+ logprobs=True, top_logprobs=5, temperature=0.01, max_tokens=100
 
 
-        )
+ )
 
 
-        logprobs_data = response.choices[0].logprobs.content
+ logprobs_data = response.choices[0].logprobs.content
 
 
-        total_entropy = 0.0
+ total_entropy = 0.0
 
 
-        token_count = 0
+ token_count = 0
 
 
-        for chunk in logprobs_data:
+ for chunk in logprobs_data:
 
 
-            if hasattr(chunk, 'top_logprobs'):
+ if hasattr(chunk, 'top_logprobs'):
 
 
-                total_entropy += calculate_shannon_entropy(chunk.top_logprobs)
+ total_entropy += calculate_shannon_entropy(chunk.top_logprobs)
 
 
-                token_count += 1
+ token_count += 1
 
 
-        return response.choices[0].message.content, (total_entropy / token_count if token_count > 0 else 0)
+ return response.choices[0].message.content, (total_entropy / token_count if token_count > 0 else 0)
 
 
-    except:
+ except:
 
 
-        return None, 1.0 # Entropie maximale en cas d'erreur (Chaos)
+ return None, 1.0 # Entropie maximale en cas d'erreur (Chaos)
 
 
 
@@ -208,7 +208,7 @@ def get_mu_score(client, query, system_prompt):
 def read_root():
 
 
-    return {"status": "MDL YNOR V7.1 Autonome et IsolACTIF", "engine": "CANONICAL CORE"}
+ return {"status": "MDL YNOR V7.1 Autonome et IsolACTIF", "engine": "CANONICAL CORE"}
 
 
 
@@ -220,55 +220,55 @@ def read_root():
 def audit_query(request: QueryRequest):
 
 
-    """Effectue un mu-Consensus pour vrifier la stabilitd'une requête."""
+ """Effectue un mu-Consensus pour vrifier la stabilitd'une requête."""
 
 
-    vault = get_vault()
+ vault = get_vault()
 
 
-    client = OpenAI(api_key=vault.get("openai_api_key"))
+ client = OpenAI(api_key=vault.get("openai_api_key"))
 
 
-    
+ 
 
 
-    # Audit croispar le Conseil
+ # Audit croispar le Conseil
 
 
-    _, mu1 = get_mu_score(client, request.query, YNOR_COUNCIL_MANIFESTO)
+ _, mu1 = get_mu_score(client, request.query, YNOR_COUNCIL_MANIFESTO)
 
 
-    _, mu2 = get_mu_score(client, request.query, YNOR_COUNCIL_MANIFESTO)
+ _, mu2 = get_mu_score(client, request.query, YNOR_COUNCIL_MANIFESTO)
 
 
-    
+ 
 
 
-    # mu-Consensus Harmonique
+ # mu-Consensus Harmonique
 
 
-    mu_consensus = 2 / ( (1/mu1 if mu1 > 0 else 1) + (1/mu2 if mu2 > 0 else 1) )
+ mu_consensus = 2 / ( (1/mu1 if mu1 > 0 else 1) + (1/mu2 if mu2 > 0 else 1) )
 
 
-    
+ 
 
 
-    is_stable = mu_consensus < 0.35
+ is_stable = mu_consensus < 0.35
 
 
-    return {
+ return {
 
 
-        "status": "STABLE" if is_stable else "UNSTABLE",
+ "status": "STABLE" if is_stable else "UNSTABLE",
 
 
-        "mu_council_score": round(mu_consensus, 4),
+ "mu_council_score": round(mu_consensus, 4),
 
 
-        "verdict": "Formalisme Logique Smantique CERTIFIÉ" if is_stable else "CHAOS SEMANTIQUE DÉTECTÉ"
+ "verdict": "Formalisme Logique Smantique CERTIFIÉ" if is_stable else "CHAOS SEMANTIQUE DÉTECTÉ"
 
 
-    }
+ }
 
 
 
@@ -280,58 +280,58 @@ def audit_query(request: QueryRequest):
 def get_Formalisme Logique Smantique(request: QueryRequest, x_mdl_license: Optional[str] = Header(None)):
 
 
-    """Extraction du Formalisme Logique Smantique pur. Ncessite une licence MDL V7.1 valide."""
+ """Extraction du Formalisme Logique Smantique pur. Ncessite une licence MDL V7.1 valide."""
 
 
-    vault = get_vault()
+ vault = get_vault()
 
 
-    if x_mdl_license != vault.get("mdl_license_v7_key"):
+ if x_mdl_license != vault.get("mdl_license_v7_key"):
 
 
-        raise HTTPException(status_code=403, detail="LICENCE MDL NON VALIDÉE - ACCÈS AU Formalisme Logique Smantique REFUSÉ")
+ raise HTTPException(status_code=403, detail="LICENCE MDL NON VALIDÉE - ACCÈS AU Formalisme Logique Smantique REFUSÉ")
 
 
 
 
 
-    client = OpenAI(api_key=vault.get("openai_api_key"))
+ client = OpenAI(api_key=vault.get("openai_api_key"))
 
 
-    
+ 
 
 
-    # Audit avant rponse
+ # Audit avant rponse
 
 
-    resp, mu = get_mu_score(client, request.query, YNOR_COUNCIL_MANIFESTO)
+ resp, mu = get_mu_score(client, request.query, YNOR_COUNCIL_MANIFESTO)
 
 
-    
+ 
 
 
-    if mu > 0.4:
+ if mu > 0.4:
 
 
-        return {"status": "DIVERGENCE", "mu": round(mu, 4), "data": "Rponse instable - Ressayez"}
+ return {"status": "DIVERGENCE", "mu": round(mu, 4), "data": "Rponse instable - Ressayez"}
 
 
-    
+ 
 
 
-    return {
+ return {
 
 
-        "status": "OIT_SUCCESS",
+ "status": "OIT_SUCCESS",
 
 
-        "mu_index": round(mu, 4),
+ "mu_index": round(mu, 4),
 
 
-        "projection": resp
+ "projection": resp
 
 
-    }
+ }
 
 
 
@@ -340,9 +340,9 @@ def get_Formalisme Logique Smantique(request: QueryRequest, x_mdl_license: Optio
 if __name__ == "__main__":
 
 
-    import uvicorn
+ import uvicorn
 
 
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+ uvicorn.run(app, host="127.0.0.1", port=8000)
 
 

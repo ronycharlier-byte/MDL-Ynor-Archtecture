@@ -1,951 +1,951 @@
 {
-  "node": "00_OMEGA_PORTAIL_ET_EDITION",
-  "key": "OMEGA",
-  "mirror": "OMEGA_PRIME",
-  "role": "Enveloppe matricielle externe, face d'entree structurelle.",
-  "inventory_count": 157,
-  "inventory": [
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\JOURNAL_TARGETING.md",
-      "size_bytes": 1962,
-      "sha256": "eb93d8224729e3f05b84fcd11fd1f8bdec4e5a42ca5caf2e5e2e93410ac9ef6a",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\LETTRE_DE_COUVERTURE.md",
-      "size_bytes": 2728,
-      "sha256": "a2d865b01afaca09ca667ac87796e0277e7885351f240cf20304a08fbdcabfda",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\manifest_step12_submission_pack.json",
-      "size_bytes": 2029,
-      "sha256": "b8f34b3537eec64cbc244208b63c46f68c0665a7dd07b5b029f1afa6d4d43c99",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\MANUSCRIT_FINAL.md",
-      "size_bytes": 28503,
-      "sha256": "f5e3f356a87759c43cc915a51051c496f60c07404b05a427fb06621be640c8d1",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\MANUSCRIT_FINAL_FOUNDATIONS_OF_PHYSICS.md",
-      "size_bytes": 29217,
-      "sha256": "34c2b45b1ae300ff7d121bbac5655f2f786881453699540c6daa1e0060cb73fc",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\METADONNEES_SOUMISSION.md",
-      "size_bytes": 1493,
-      "sha256": "4eb7958bed81484c5e6a96090dd1f1d54cceabd8667d0ecab8ed99bec71e613f",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\RESUME_DE_SOUMISSION.md",
-      "size_bytes": 1229,
-      "sha256": "596dc7c3f4707bb8e593f24a21b99ff2974ff79d3f6db414fd7d2caf742f0964",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\STRUCTURE_DE_LIVRAISON.md",
-      "size_bytes": 1430,
-      "sha256": "4181e32eebceb050c9f7cae16581b78863c35481006d42d53a9549c64cbcb4cf",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\YNOR_CERTIFIED_UPLOAD_MANIFEST.md",
-      "size_bytes": 700,
-      "sha256": "4cad1150b0950f62d7ca4289ca167dfe210679776f02dc6e204ad63832459d11",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\YNOR_CERTIFIED_UPLOAD_README.md",
-      "size_bytes": 922,
-      "sha256": "4ad9429e09c09cf5de26fadedfd8a32dd510f570b3c743b50b4d3b538c654119",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\YNOR_MAXIMUM_EXPLOITATION_MANIFEST.md",
-      "size_bytes": 1129,
-      "sha256": "4c014d683a263cac2a66303056849e8fa3d01a1c4d8ac649931cb9bf9235da3e",
-      "kind": "text"
-    },
-    {
-      "source": "00_ACADEMIC_SUBMISSION\\YNOR_MAXIMUM_EXPLOITATION_PACK.md",
-      "size_bytes": 4442,
-      "sha256": "d1b42048a7fe0137d5a42658dab7fde2f7dadd73cccf69268b94f92574c23905",
-      "kind": "text"
-    },
-    {
-      "source": "00_CORPUS_AUDIT\\corpus_audit.json",
-      "size_bytes": 298946,
-      "sha256": "b24e6db558133ce319591e5fb65470c20bb3f2cb6b3c7efbca226b268c8381bf",
-      "kind": "text"
-    },
-    {
-      "source": "00_CORPUS_AUDIT\\CORPUS_AUDIT.md",
-      "size_bytes": 71856,
-      "sha256": "5caf74b2ab6d6ae62c61d83db07a9cd63a1f5aac186734e7813a715ca9192d6a",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\CANONICAL_DUPLICATES_MAP.md",
-      "size_bytes": 11098,
-      "sha256": "ae8df96cb5022e9264ee883f08843d4658818e7c54164418c838b02bbba6fdd6",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\CORPUS_CANONIQUE_CONSOLIDE.md",
-      "size_bytes": 1959,
-      "sha256": "6eb06941de72b79dd832cf7d0bd4f2c18764b2c2c7e72926b3b101666273cd9b",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\manifest_step9_canonical_edition.json",
-      "size_bytes": 2575,
-      "sha256": "03063685fd6f13c8990631959eaf4de0ccb9bd6d72c9d931c47479358cd3c2e7",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\PORTAIL_CANONIQUE_FINAL.md",
-      "size_bytes": 2651,
-      "sha256": "4c9d60d93b8912aac62cfb8b2686db02810f2f518276e804442b7dd04dade21c",
-      "kind": "text"
-    },
-    {
-      "source": "00_EXECUTIVE_DIGEST\\EXECUTIVE_DIGEST.md",
-      "size_bytes": 1483,
-      "sha256": "fbfb7b6d151b2b049dd39aa4cb7f5f4488503e1d7909930e8611d7189e1dd137",
-      "kind": "text"
-    },
-    {
-      "source": "00_EXECUTIVE_DIGEST\\FICHE_UNE_PAGE.md",
-      "size_bytes": 520,
-      "sha256": "97d9bf6811a8f85488c1a7d6afba231c0d339cddd8744807a16525fd5f4e2e0e",
-      "kind": "text"
-    },
-    {
-      "source": "00_EXECUTIVE_DIGEST\\manifest_step10_executive_digest.json",
-      "size_bytes": 1366,
-      "sha256": "80b04926f2e30d74d01f7148a52b3e73efd2fb03447446db76310769ef2518dd",
-      "kind": "text"
-    },
-    {
-      "source": "00_EXTERNAL_AUDIT_PORTAL\\AUDIT_GUIDE.md",
-      "size_bytes": 1745,
-      "sha256": "64469cb1a8db69178c78f0fc767159417bc4fd1e59f014de1a9512c38eadf180",
-      "kind": "text"
-    },
-    {
-      "source": "00_HOMEPAGE\\HOMEPAGE_DU_CORPUS.md",
-      "size_bytes": 1641,
-      "sha256": "0185a0e6dd3fb256a34629bab81bc2d5ba79de00192e7a9a896fad70654067e5",
-      "kind": "text"
-    },
-    {
-      "source": "00_HOMEPAGE\\manifest_step13_homepage.json",
-      "size_bytes": 1092,
-      "sha256": "d97c17602f5c1e5d9a5f6ab3c2882987b4fa39f2c562098eb46258b45ea92fe1",
-      "kind": "text"
-    },
-    {
-      "source": "00_HOMEPAGE\\SITE_MAP.md",
-      "size_bytes": 416,
-      "sha256": "3f0f71a0f637a3f389b3475d1463111aa9b41ce80436159d711728b4cae82aae",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\2026-04-06.md",
-      "size_bytes": 114,
-      "sha256": "036dcb8a35b735775a49d602591bb77dc664751b63f4dcdadd436d2f6acd5966",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\AXES_YNOR.md",
-      "size_bytes": 39026,
-      "sha256": "ed6af0f8d30be0d0c670a95c7cef17bfbadc1fe7a0417a1525f0c979eea888e0",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\AXIOMES_FONDAMENTAUX_YNOR.md",
-      "size_bytes": 274,
-      "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\AXIOMES_SECONDAIRES_YNOR.md",
-      "size_bytes": 274,
-      "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\AXIOMES_YNOR.md",
-      "size_bytes": 274,
-      "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\BENCHMARK_MATHEMATIQUE_MAXIMAL_YNOR.md",
-      "size_bytes": 9812,
-      "sha256": "a3c3c0c8b5b4153c753ec78f0d986e71030c53486aa629ecdbef36e0a5c88536",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\BENCHMARK_MATHEMATIQUE_ULTRA_YNOR.md",
-      "size_bytes": 12665,
-      "sha256": "0c655b803cacb1f643e6c13c5e7aa8193f8dc240b3ca1b2a2d38305d4d1c7e05",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CANONICAL_CONSOLIDATION_CERTIFICATE.md",
-      "size_bytes": 2068,
-      "sha256": "7249bde61ab05d7094bc9a9f58c63062d76818d8c9a575c3f030b9736d7f0f2c",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CARTE_CANONIQUE_PUBLIQUE_YNOR.md",
-      "size_bytes": 1082,
-      "sha256": "4a3ebd268d12b55872e25f3d273440622aedbbed30022ab9bab276de3f624b5d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CARTE_CANONIQUE_UNIQUE_YNOR.md",
-      "size_bytes": 1877,
-      "sha256": "d190667679fed0fde76d4973ed863049512a70d5120393c6ff68cc13334bd1f2",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CARTE_MERMAID_GLOBALE_YNOR.md",
-      "size_bytes": 3646,
-      "sha256": "3b21ae526553747153e190c75c3bc444d791bb9650380a0458bc609dfa1f775d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CARTE_MIROIR_AXES_YNOR.md",
-      "size_bytes": 2716,
-      "sha256": "518c48f2739e5872b1036472f7664c4029ad9824a72470243380a1b6dac95ad4",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CARTE_MIROIR_NOYAU_YNOR.md",
-      "size_bytes": 1259,
-      "sha256": "5882be168c3647fec0f31b4916c969f92c8f9bb0f0dff9b8f8307e1dd012c867",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CARTE_MIROIR_PROTOCOLES_YNOR.md",
-      "size_bytes": 1263,
-      "sha256": "52dea80f6b54e377600ffae599cc3aeede595aed3d8e6385e736598e21bd653e",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CARTE_MIROIR_VECTEURS_YNOR.md",
-      "size_bytes": 1312,
-      "sha256": "52d38d63f773a345ebc6e3ac71b83c0bf5c6308ac219421981d38f311331596f",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\CORPUS_QUALITE_ET_CORRECTIFS.md",
-      "size_bytes": 2422,
-      "sha256": "07894ae6f3a704b41d0e009978057a05c6432fc1af8369e04cc8338db027ad52",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\DASHBOARD_INTEGRITE_SYSTEMIQUE.md",
-      "size_bytes": 1299,
-      "sha256": "4e73068b8bf501e96e20a70321eb0be5bbda799d7104b1fd46283b6949c8e9b8",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\DIAGNOSTIC_CORPUS_MANQUANTS_BRUIT_DUPLICATS.md",
-      "size_bytes": 4153,
-      "sha256": "d37a7c08ea2710e1f9319382f93bf7f33dce0c4b13a7685d6913d9e7f9e90250",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\DISCUSSION_BOHR_CALCULEE.md",
-      "size_bytes": 11564,
-      "sha256": "3fe271e858b584ab1fda7df18d6dee1dae5ad0bcaa89d34cf042cff24e47a876",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\ENCODING_AUDIT_FIRST_BLOCK.md",
-      "size_bytes": 1447,
-      "sha256": "d98b2520e54792116ad99e735d1e3c076fc9af845a00b6f7ced5de113a9b2467",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\GENESIS_BLOCK_V11_13.md",
-      "size_bytes": 92984,
-      "sha256": "d5ed6f896287a8687c87295fbbd10558fedacbfa0e009c385bc41446c6cf18a0",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\LICENSE.md",
-      "size_bytes": 2235,
-      "sha256": "8a3ddf926ff78574db354ec6815c7b528518c4e7afee0cded25d1bde33883d09",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\LISTE_BLANCHE_DIFFUSION_ET_PLAN_NETTOYAGE.md",
-      "size_bytes": 5802,
-      "sha256": "fd534fc198f60062a360109e30574218d9d9ab0ea4b5664b9ed8cf189e8296e3",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\MANIFESTE_EXCLUSION_DIFFUSION.md",
-      "size_bytes": 1227,
-      "sha256": "ed65e36913d851511d38a5585c880f51699ba7da9d7716ccc3a62b82945091f2",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\manifest_step14_master_final.json",
-      "size_bytes": 1933,
-      "sha256": "54ec67ae881d60b41f66e87b084c59c12c496440ee5cb477c5c7f71160cf8391",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\MASTER_FINAL.md",
-      "size_bytes": 6412,
-      "sha256": "e230815654dc97f69a56ad8b969231b4de520a0ad2d9aac63b159a01e43417a9",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\NETTOYAGE_TECHNIQUE.md",
-      "size_bytes": 1101,
-      "sha256": "ee649ff13841174d484e07a1927c4d7dab6f26ed7f3febc92d9da677b1a33898",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\NORMALISATION_CANONIQUE.md",
-      "size_bytes": 2616,
-      "sha256": "24818c66d6deee6fe67d665984ffba29410ad7f0cf49d2f72223f4646e623834",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\NORMALISATION_TERMINOLOGIQUE_YNOR.md",
-      "size_bytes": 2477,
-      "sha256": "3a76c06fc6d138fb5b41e123474bb12cc9c2e934e316f665171ae25a15757138",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\NOYAU_YNOR.md",
-      "size_bytes": 1750,
-      "sha256": "04d83fa3ef14101e2466802885f0e57142e3374009a11ec6da351ae20e23d1b2",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROMPT_CORPUS_SECURISE_RIGOUREUX.md",
-      "size_bytes": 8485,
-      "sha256": "9f65b52175dbc2e1221d081841550dfe42841b13facc24d5277a53dc37e0c494",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROMPT_CORPUS_SECURISE_RIGOUREUX_PREMIUM.md",
-      "size_bytes": 10973,
-      "sha256": "9b1ec3f9556b55dd33d092090824ccb45b82a490eef104a0d2eab55b1a5dc2af",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROMPT_GPT_FINAL_MOINS_8000.md",
-      "size_bytes": 6953,
-      "sha256": "88e33fcb6750abb4d00b1c41b2677749817e6737da04bfef3b2409015ae710f1",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_FEUILLES_YNOR.md",
-      "size_bytes": 11290,
-      "sha256": "ceac1f613a6320484dc5195f022f46a9a33477f17c0a5008b08a017d8608d4f7",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_FONDAMENTAUX_YNOR.md",
-      "size_bytes": 280,
-      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_PAR_AXE_YNOR.md",
-      "size_bytes": 280,
-      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_SECONDAIRES_YNOR.md",
-      "size_bytes": 280,
-      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_SOUS_AXES_YNOR.md",
-      "size_bytes": 280,
-      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_SOUS_SOUS_AXES_YNOR.md",
-      "size_bytes": 280,
-      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_SOUS_SOUS_SOUS_AXES_YNOR.md",
-      "size_bytes": 280,
-      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\PROTOCOLES_YNOR.md",
-      "size_bytes": 280,
-      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\README.md",
-      "size_bytes": 3711,
-      "sha256": "0cbc2933ba2e54c3b970c36096aa57aabae83e5a29470b475434f4ecfdc06ac0",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\SUITE_CORPUS_ACTIONNELLE.md",
-      "size_bytes": 4873,
-      "sha256": "3a230fcd85b03b6d8437622ce9c3e8d43682c7683dd3f48dc9638f333a0bb764",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VALIDATION_SCIENTIFIQUE_YNOR.md",
-      "size_bytes": 2677,
-      "sha256": "f72673ff726617a774b4207b0662a499d97e7c5ee1e2a54b7399046f206c0cae",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VECTEURS_FEUILLES_YNOR.md",
-      "size_bytes": 9699,
-      "sha256": "ed7011db86e43ab47744a405b6bc3e2f66159e99b6ec4e794fd938ffacd53576",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VECTEURS_FONDAMENTAUX_YNOR.md",
-      "size_bytes": 3493,
-      "sha256": "5f4b296d84606a06b2c6486f20662424f6612e8e16fac3c91312cb00d765b8a7",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VECTEURS_PAR_AXE_YNOR.md",
-      "size_bytes": 13019,
-      "sha256": "12a94c9cebd050f62827315f74fef52ef72f8aa16d9831c2ac21fe5bc1789997",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VECTEURS_PAR_FAMILLE_YNOR.md",
-      "size_bytes": 20066,
-      "sha256": "37397b7ed603a106bca982f85150ec9939d8babfd5bf9f6df2b1ae585b47b601",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VECTEURS_SOUS_AXES_YNOR.md",
-      "size_bytes": 23315,
-      "sha256": "8b17aab9e4d4a11d6cbfbbbeaea6e3f39ce48b388d408707620f28235a727ada",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VECTEURS_YNOR.md",
-      "size_bytes": 1638,
-      "sha256": "8a74247461e32fc452fdf0c9f684ace4a9404de4621133f21765deae8bfa89a4",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\VECTORISATION_YNOR.md",
-      "size_bytes": 2467,
-      "sha256": "787ef491de27d475c790d257a506deb2b148542946cebc0e066b80dde927c010",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\YNOR_ACADEMIC_META.jsonld",
-      "size_bytes": 1211,
-      "sha256": "7dffd0fa79d9874a64458c46f18a7675649a75d0f30ac7a4889edbd5645e773b",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\YNOR_UNIFIED_AXIOMS.md",
-      "size_bytes": 7606,
-      "sha256": "bd6fda5a805e34c70f5befec780de39dd6d5d04e345fd84a7c13f22a1db23be2",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\YNOR_UNIFIED_PROTOCOLS.md",
-      "size_bytes": 15771,
-      "sha256": "b2fb65cf3746d4aece7a14d056ecaedf8181045caba646942e1687af0fd7d2a3",
-      "kind": "text"
-    },
-    {
-      "source": "00_PUBLIC_BRIEF\\manifest_step11_public_brief.json",
-      "size_bytes": 844,
-      "sha256": "8c1bd901ce7cd8eef4ba59e9ee2dd2a8acd643c84d6b3bd45343afcef6814f0c",
-      "kind": "text"
-    },
-    {
-      "source": "00_PUBLIC_BRIEF\\PRESENTATION_PUBLIQUE.md",
-      "size_bytes": 698,
-      "sha256": "d0f570891c9e091c552dd3db92502838453d6c8dd5096e2b4e4206fb3247150e",
-      "kind": "text"
-    },
-    {
-      "source": "00_PUBLIC_BRIEF\\PUBLIC_BRIEF.md",
-      "size_bytes": 922,
-      "sha256": "cd5dbbd57304523ab5b4557dc5804e68dee396ab1aaabae586441c6eb2c17fad",
-      "kind": "text"
-    },
-    {
-      "source": "00_PUBLIC_BRIEF\\README.md",
-      "size_bytes": 2183,
-      "sha256": "46e2a6fc99fdb0ef0a5a2fee55fd8866197ecdab591caaa2a52ac8c0e934396f",
-      "kind": "text"
-    },
-    {
-      "source": "00_PUBLIC_BRIEF\\REFERENCE_PUBLIQUE.md",
-      "size_bytes": 1826,
-      "sha256": "d6d266ff70ac0722365680a053dfa2cd69995d0a15a44478f7af9a76faff1eb7",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\JOURNAL_TARGETING.md",
-      "size_bytes": 2068,
-      "sha256": "f2f9549f3c7bd1984fa1c96ecf140b9bd8313f1db375513063dbef16cd050df8",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\LETTRE_DE_COUVERTURE.md",
-      "size_bytes": 1118,
-      "sha256": "ade82d452cd90d231d2946395c1d4b53a8f9f59aa652a477f4b512f997a5dbbe",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\manifest_step12_submission_pack.json",
-      "size_bytes": 1508,
-      "sha256": "93f1bb0f5057765d3f04c626285dc65b06406d3a251c02a42e16844c57ff8b39",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\MANUSCRIT_FINAL.md",
-      "size_bytes": 29848,
-      "sha256": "373f7a9e6201fa65c10bf6ecd0155d0c6856079845cd0bb64bae7b5360f71907",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\MANUSCRIT_FINAL_FOUNDATIONS_OF_PHYSICS.md",
-      "size_bytes": 30568,
-      "sha256": "80c8176ed1e22aa8cac378208f9460fda7e420d7dee884bf33ea2d9681f3faec",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\METADONNEES_SOUMISSION.md",
-      "size_bytes": 1594,
-      "sha256": "43bff47139ddce3873f95f32f1f13f30e2535d82fd236213b40215f756abee47",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\RESUME_DE_SOUMISSION.md",
-      "size_bytes": 684,
-      "sha256": "37923447618da7ca377feb69ae68a09b32f1233b96d166fade02b59dcb7a8877",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\STRUCTURE_DE_LIVRAISON.md",
-      "size_bytes": 821,
-      "sha256": "f85e0abdaaeb0a2acbce5f7214e5546f1842741880cded18c7e4ea840fc6f29a",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\YNOR_CERTIFIED_UPLOAD_MANIFEST.md",
-      "size_bytes": 693,
-      "sha256": "1bd5bb60ecf77df282659e83480d9b777e321bc60a3bbb7238a9b17f085b4ef2",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\YNOR_CERTIFIED_UPLOAD_README.md",
-      "size_bytes": 915,
-      "sha256": "2cd4331c611880f6647bd31270aebf4ed587c423ae355b3bbe560088f40770df",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\YNOR_MAXIMUM_EXPLOITATION_MANIFEST.md",
-      "size_bytes": 1243,
-      "sha256": "169a308150e7f3fb9553f56232b038799d1171ea51faa598020e7535046408ea",
-      "kind": "text"
-    },
-    {
-      "source": "00_SUBMISSION_PACK\\YNOR_MAXIMUM_EXPLOITATION_PACK.md",
-      "size_bytes": 5325,
-      "sha256": "0640278bc0fab8df00b4dde932c14a518386897e81b44e6b89f7af1ab33a1fdf",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\2026-04-06.md",
-      "size_bytes": 98,
-      "sha256": "9e0e0ad9795ec6100fca49107d271dc92aac7ebf9ecd239adaed145975e6a62a",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\AXES_YNOR.md",
-      "size_bytes": 26027,
-      "sha256": "bb4e845d7e30bec146293c6bc820e753e94d06c8658eaca4644c9eaa4b4a4c55",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\AXIOMES_YNOR.md",
-      "size_bytes": 244,
-      "sha256": "bbe63385ebbd2d8df3adc9550d0c1782fac774e1722b369a67bd08b47f33d821",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\BENCHMARK_MATHEMATIQUE_V10.md",
-      "size_bytes": 8865,
-      "sha256": "f4f50f5aa22374b2228117cebf545e4aa0e6ab8a65dfd0889411b8273d468eb2",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\BENCHMARK_MATHEMATIQUE_V11.md",
-      "size_bytes": 9948,
-      "sha256": "377cce474e6a8e2ca2f007b770c243ab8937b895afca820716bd9a958146ae02",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\CANONICAL_CONSOLIDATION_CERTIFICATE.md",
-      "size_bytes": 2025,
-      "sha256": "c7a249c9cd6226e7869a8a206ad77e690428d1e75671204ff397654e680195f2",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\CARTE_CANONIQUE_PUBLIQUE_YNOR.md",
-      "size_bytes": 857,
-      "sha256": "830c4f388f640f1c875c0f77438b54101a989fc040e7a4c9a859c4a07b0187e6",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\CARTE_CANONIQUE_UNIQUE_YNOR.md",
-      "size_bytes": 1538,
-      "sha256": "133beed1793db4e58f9d657949d33ac403a6c0fdf009ebe83ae99a43e0331e96",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\CARTE_MERMAID_GLOBALE_YNOR.md",
-      "size_bytes": 2370,
-      "sha256": "ac1bfce9e90cb0aa96f8af77962b182ec30c496daadbb60688fbe40253d633ee",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\CORPUS_QUALITE_ET_CORRECTIFS.md",
-      "size_bytes": 2464,
-      "sha256": "4ccd6cbfb693c34fd881f28148e6118f0372c3c77e7377f2422b4618e4779bb7",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\DASHBOARD_INTEGRITE_SYSTEMIQUE.md",
-      "size_bytes": 1798,
-      "sha256": "2c72fcc37704a43921dbb3ed897c31cd8f8bcf89ffa1cf56068eaaa31b871bb1",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\DIAGNOSTIC_CORPUS_MANQUANTS_BRUIT_DUPLICATS.md",
-      "size_bytes": 3841,
-      "sha256": "0723fd98306fbf94314ec752455656ebfd3604d1883ae8f0fbd90e2d886a7832",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\DISCUSSION_BOHR_CALCULEE.md",
-      "size_bytes": 7768,
-      "sha256": "05d0f897f5c03b9d680255a3976b619108897b78c453f7273b859e0222e8f97f",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\ENCODING_AUDIT_FIRST_BLOCK.md",
-      "size_bytes": 1323,
-      "sha256": "2511d0c156183fbe40a3ca68505bc7a888e8380b35505ed9ee321267edbfa705",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\LICENSE.md",
-      "size_bytes": 2237,
-      "sha256": "ea50b1df3a90245b6e2126ac731f000ae73562a9d5715d455ba3c172458bd89e",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\LISTE_BLANCHE_DIFFUSION_ET_PLAN_NETTOYAGE.md",
-      "size_bytes": 4322,
-      "sha256": "b9549ed66b3a3b6508e88eb36ed890529e204e8026ccfe5a8fa046a1c33aead0",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\MANIFESTE_EXCLUSION_DIFFUSION.md",
-      "size_bytes": 969,
-      "sha256": "28f061a872d3ae8fcce10fa30234f7b7c782253153946d70b1cf962f3a9c452c",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\manifest_step14_master_final.json",
-      "size_bytes": 2506,
-      "sha256": "37bb2aadffd338396c6b4e009e4db8d3533a34c8911ea70d6552f302ab3594e8",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\MASTER_FINAL.md",
-      "size_bytes": 5039,
-      "sha256": "b2a21b95ac70ebd3c16feda6d75c21943605383c95a98800397482cd56fdc54c",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\NETTOYAGE_TECHNIQUE.md",
-      "size_bytes": 949,
-      "sha256": "a915899fdd1e096baeb9665fa62e9789c3445446f94f3f6c59ae9041c23df8fc",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\NORMALISATION_CANONIQUE.md",
-      "size_bytes": 2035,
-      "sha256": "73a8252ff018ba6893d968d83001b41f92de8e1d128affd7fa6e81f5437e9772",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\NORMALISATION_TERMINOLOGIQUE_YNOR.md",
-      "size_bytes": 2229,
-      "sha256": "3e4439d730ea81ae5d0258e82fa9d5eb06464858a19855019a18d1cc2b170a04",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\NOYAU_YNOR.md",
-      "size_bytes": 1408,
-      "sha256": "ebeeb55c624f896a6ad752e54eff47a16b3870edc1333ebb0dc5c7d0f58d88c8",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\PROTOCOLES_FEUILLES_YNOR.md",
-      "size_bytes": 7717,
-      "sha256": "d17643236e3656a6328afc39f7c5b974fad907617f2a4866241726d647119977",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\PROTOCOLES_YNOR.md",
-      "size_bytes": 250,
-      "sha256": "5b4d8eb67dc32df2d5944e2be4968dfef6980cd5edc796cb070004941c4a5272",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\README.md",
-      "size_bytes": 3708,
-      "sha256": "7b665039d840da1843df380441eb2ebbfddc762a06500d90359895261876cba4",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\SUITE_CORPUS_ACTIONNELLE.md",
-      "size_bytes": 3766,
-      "sha256": "92ecbe20177efbc0dc6a229550880b70e5ccd57a2d45cc8c7ff20156dba581cc",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VALIDATION_SCIENTIFIQUE_YNOR.md",
-      "size_bytes": 2551,
-      "sha256": "ee9b3c8a2603b2a7944d28a4e70f7be102c333a4c5b5767be7f91e26636535a1",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VECTEURS_FEUILLES_YNOR.md",
-      "size_bytes": 6758,
-      "sha256": "e487ad86a0e480f04208e8f0c235b4fe0168f63a25185892b463304f6e85f5a7",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VECTEURS_FONDAMENTAUX_YNOR.md",
-      "size_bytes": 2834,
-      "sha256": "e8ba85be44c85d1d40d634dbef923045dcfcfba3bd64382127627ca511550963",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VECTEURS_PAR_AXE_YNOR.md",
-      "size_bytes": 9951,
-      "sha256": "42994bb6f5c75c90cc9b9b8843eaf221695b58cac0b83cc80f1ebab66e8a76cc",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VECTEURS_PAR_FAMILLE_YNOR.md",
-      "size_bytes": 13562,
-      "sha256": "a598277c3552f478d87157ff7fc97a519a823ce1bc63c03bb51a4f35368a123d",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VECTEURS_SOUS_AXES_YNOR.md",
-      "size_bytes": 18486,
-      "sha256": "500d050815a008099d16b31b94cc11d1a54d5fa91203211817e2df9d9a2b79d7",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VECTEURS_YNOR.md",
-      "size_bytes": 1450,
-      "sha256": "7a57b109541301a3921a2626ab24f270d5829d529b51716816bbb57ba3fd4474",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\VECTORISATION_YNOR.md",
-      "size_bytes": 2071,
-      "sha256": "b5c3b9590f2f0d02a31fb383e4c67a782cd924da062e43071cab6b6c55ae7e21",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\YNOR_ACADEMIC_META.jsonld",
-      "size_bytes": 1213,
-      "sha256": "742494585e2f83e40239adb5c8847c8c1cbd5bda22213f4ccddb46d6946782d1",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\YNOR_UNIFIED_AXIOMS.md",
-      "size_bytes": 6564,
-      "sha256": "fb7fb3ae493573c0aca642f1918a6d1317ad0f36df33f9afc1d5fbf3643e1e94",
-      "kind": "text"
-    },
-    {
-      "source": "01_TECHNICAL_CORE\\YNOR_UNIFIED_PROTOCOLS.md",
-      "size_bytes": 13709,
-      "sha256": "65880a3ccc44028e7e2ed25f00f46f1c4dadd016d382a23c0c5ebbb5f70e4133",
-      "kind": "text"
-    },
-    {
-      "source": "02_PUBLIC_LITERATURE\\manifest_step11_public_brief.json",
-      "size_bytes": 1110,
-      "sha256": "d0b9ee9ef72c23b104c1b1954808566ef770749c9c9144c50da656b2fc7ed020",
-      "kind": "text"
-    },
-    {
-      "source": "02_PUBLIC_LITERATURE\\PRESENTATION_PUBLIQUE.md",
-      "size_bytes": 2031,
-      "sha256": "17c2ba7d3a08afdf7b85b6fa302c384a13f135f4bb8675f5beb40ce2126d41ab",
-      "kind": "text"
-    },
-    {
-      "source": "02_PUBLIC_LITERATURE\\PUBLIC_BRIEF.md",
-      "size_bytes": 1698,
-      "sha256": "caa00db86dfad6ff3556089da88ab1e5fac6ee19242fbbc89df61e9aff52e02a",
-      "kind": "text"
-    },
-    {
-      "source": "02_PUBLIC_LITERATURE\\README.md",
-      "size_bytes": 2089,
-      "sha256": "22250259f7626cd25168aa8ea7cfaa10ac79734a844afba7b349bbb414056d3f",
-      "kind": "text"
-    },
-    {
-      "source": "02_PUBLIC_LITERATURE\\REFERENCE_PUBLIQUE.md",
-      "size_bytes": 1723,
-      "sha256": "8dde5046fa68a8c966452719ab1429de4c440aa1366c30152f6040f4934f85d4",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\manifest_step14_master_final.json",
-      "size_bytes": 2114,
-      "sha256": "d0072f295d81f66e883a8a625c558156d68376752fd83e172e7f1bd77dd1e0ad",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\MASTER_FINAL.md",
-      "size_bytes": 1050,
-      "sha256": "4e1232d5f11dc3b1f22553589494b3745a4ed03dc3c9385c27ff76455d50e493",
-      "kind": "text"
-    },
-    {
-      "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\PROMPT_CORPUS_SECURISE_RIGOUREUX.md",
-      "size_bytes": 7318,
-      "sha256": "ca166059c6fe77bddbca470fc50b43c4096e247d91015b30ca13f03df46109ec",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
-      "size_bytes": 4478,
-      "sha256": "6fed5684973ceced7c8b714c43425da0c9d6bceff13f674cb62386210757887c",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\CARTE_VISUELLE_YNOR.md",
-      "size_bytes": 2185,
-      "sha256": "56cc8995d0b5675b99a7e35c6280192dd570434ba0e2c622d1ded90fb1c2ec86",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\INDEX_MAITRE_FRACTAL_CHIASTIQUE.md",
-      "size_bytes": 30146,
-      "sha256": "23920dfa221a27b6c9cd614a7cde27fc59f2f0ed3d58c692413191f7a3780709",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\INDEX_MAITRE_YNOR.md",
-      "size_bytes": 3422,
-      "sha256": "ae40cf50f6b8cef0f0de9e13995d8175bcb9e551bf9a34e55ed3f73c92c1b18d",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifeste_fractal_chiaste_universel.json",
-      "size_bytes": 1394,
-      "sha256": "41857b52ca18b4f38b8873ade8800e5fad8094c2d888c825bd330ab8f866b8b3",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\MANIFESTE_FRACTAL_CHIASTE_UNIVERSEL.md",
-      "size_bytes": 1009,
-      "sha256": "66bc92b846fe9c3dda22f3a723e5404757060d7a3c4bef448c7b83a98a5d485c",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifeste_ynor.json",
-      "size_bytes": 1632,
-      "sha256": "ff9c649dce46337ffed6e2d24d38ea8f93b093cf0209774ebd99c2a32ca3fd7f",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\MANIFESTE_YNOR.md",
-      "size_bytes": 1903,
-      "sha256": "9f869829c7ef1e8ab99ab951bd65894eb766689ff0104ef46905b2acb6485290",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step2_bulk_rewrite.json",
-      "size_bytes": 20643,
-      "sha256": "a9790623239c105369b5516ba732071ff96aa91e6e8eac873843ebdff335ecc9",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step3_json_rewrite.json",
-      "size_bytes": 7770,
-      "sha256": "31be788fa537092ab642f5e106aea8ce0614c4fb73e1f3fd122507ebb719b118",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step4_pdf_latex_augmented.json",
-      "size_bytes": 6269,
-      "sha256": "d2d2e1bd01dd4a059cf427c9c857cc694891fcf05f22066eb75798ed7af5810f",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step5_constitution_pdf_augmented.json",
-      "size_bytes": 5908,
-      "sha256": "b5b93885272c4446721ec5975aab786e23079dc6f576e876f87e1e0b9f47fdff",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step6_legal_admin_pdf_augmented.json",
-      "size_bytes": 16783,
-      "sha256": "6c48f44085f9dfd81882e4d2bba122e61df7d2281c36df01a258792f3907f6a9",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step7_master_index.json",
-      "size_bytes": 137761,
-      "sha256": "76a1095aa7534adfa1af446ea653e5bc30fe77bc59889186994b34696db6271f",
-      "kind": "text"
-    },
-    {
-      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step8_visual_navigation.json",
-      "size_bytes": 5261,
-      "sha256": "2292862c3f17034934f1ea63fc8091d131b1b9233386b88eb635ce84653bcc11",
-      "kind": "text"
-    }
-  ]
+ "node": "00_OMEGA_PORTAIL_ET_EDITION",
+ "key": "OMEGA",
+ "mirror": "OMEGA_PRIME",
+ "role": "Enveloppe matricielle externe, face d'entree structurelle.",
+ "inventory_count": 157,
+ "inventory": [
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\JOURNAL_TARGETING.md",
+ "size_bytes": 1962,
+ "sha256": "eb93d8224729e3f05b84fcd11fd1f8bdec4e5a42ca5caf2e5e2e93410ac9ef6a",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\LETTRE_DE_COUVERTURE.md",
+ "size_bytes": 2728,
+ "sha256": "a2d865b01afaca09ca667ac87796e0277e7885351f240cf20304a08fbdcabfda",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\manifest_step12_submission_pack.json",
+ "size_bytes": 2029,
+ "sha256": "b8f34b3537eec64cbc244208b63c46f68c0665a7dd07b5b029f1afa6d4d43c99",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\MANUSCRIT_FINAL.md",
+ "size_bytes": 28503,
+ "sha256": "f5e3f356a87759c43cc915a51051c496f60c07404b05a427fb06621be640c8d1",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\MANUSCRIT_FINAL_FOUNDATIONS_OF_PHYSICS.md",
+ "size_bytes": 29217,
+ "sha256": "34c2b45b1ae300ff7d121bbac5655f2f786881453699540c6daa1e0060cb73fc",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\METADONNEES_SOUMISSION.md",
+ "size_bytes": 1493,
+ "sha256": "4eb7958bed81484c5e6a96090dd1f1d54cceabd8667d0ecab8ed99bec71e613f",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\RESUME_DE_SOUMISSION.md",
+ "size_bytes": 1229,
+ "sha256": "596dc7c3f4707bb8e593f24a21b99ff2974ff79d3f6db414fd7d2caf742f0964",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\STRUCTURE_DE_LIVRAISON.md",
+ "size_bytes": 1430,
+ "sha256": "4181e32eebceb050c9f7cae16581b78863c35481006d42d53a9549c64cbcb4cf",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\YNOR_CERTIFIED_UPLOAD_MANIFEST.md",
+ "size_bytes": 700,
+ "sha256": "4cad1150b0950f62d7ca4289ca167dfe210679776f02dc6e204ad63832459d11",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\YNOR_CERTIFIED_UPLOAD_README.md",
+ "size_bytes": 922,
+ "sha256": "4ad9429e09c09cf5de26fadedfd8a32dd510f570b3c743b50b4d3b538c654119",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\YNOR_MAXIMUM_EXPLOITATION_MANIFEST.md",
+ "size_bytes": 1129,
+ "sha256": "4c014d683a263cac2a66303056849e8fa3d01a1c4d8ac649931cb9bf9235da3e",
+ "kind": "text"
+ },
+ {
+ "source": "00_ACADEMIC_SUBMISSION\\YNOR_MAXIMUM_EXPLOITATION_PACK.md",
+ "size_bytes": 4442,
+ "sha256": "d1b42048a7fe0137d5a42658dab7fde2f7dadd73cccf69268b94f92574c23905",
+ "kind": "text"
+ },
+ {
+ "source": "00_CORPUS_AUDIT\\corpus_audit.json",
+ "size_bytes": 298946,
+ "sha256": "b24e6db558133ce319591e5fb65470c20bb3f2cb6b3c7efbca226b268c8381bf",
+ "kind": "text"
+ },
+ {
+ "source": "00_CORPUS_AUDIT\\CORPUS_AUDIT.md",
+ "size_bytes": 71856,
+ "sha256": "5caf74b2ab6d6ae62c61d83db07a9cd63a1f5aac186734e7813a715ca9192d6a",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\CANONICAL_DUPLICATES_MAP.md",
+ "size_bytes": 11098,
+ "sha256": "ae8df96cb5022e9264ee883f08843d4658818e7c54164418c838b02bbba6fdd6",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\CORPUS_CANONIQUE_CONSOLIDE.md",
+ "size_bytes": 1959,
+ "sha256": "6eb06941de72b79dd832cf7d0bd4f2c18764b2c2c7e72926b3b101666273cd9b",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\manifest_step9_canonical_edition.json",
+ "size_bytes": 2575,
+ "sha256": "03063685fd6f13c8990631959eaf4de0ccb9bd6d72c9d931c47479358cd3c2e7",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\PORTAIL_CANONIQUE_FINAL.md",
+ "size_bytes": 2651,
+ "sha256": "4c9d60d93b8912aac62cfb8b2686db02810f2f518276e804442b7dd04dade21c",
+ "kind": "text"
+ },
+ {
+ "source": "00_EXECUTIVE_DIGEST\\EXECUTIVE_DIGEST.md",
+ "size_bytes": 1483,
+ "sha256": "fbfb7b6d151b2b049dd39aa4cb7f5f4488503e1d7909930e8611d7189e1dd137",
+ "kind": "text"
+ },
+ {
+ "source": "00_EXECUTIVE_DIGEST\\FICHE_UNE_PAGE.md",
+ "size_bytes": 520,
+ "sha256": "97d9bf6811a8f85488c1a7d6afba231c0d339cddd8744807a16525fd5f4e2e0e",
+ "kind": "text"
+ },
+ {
+ "source": "00_EXECUTIVE_DIGEST\\manifest_step10_executive_digest.json",
+ "size_bytes": 1366,
+ "sha256": "80b04926f2e30d74d01f7148a52b3e73efd2fb03447446db76310769ef2518dd",
+ "kind": "text"
+ },
+ {
+ "source": "00_EXTERNAL_AUDIT_PORTAL\\AUDIT_GUIDE.md",
+ "size_bytes": 1745,
+ "sha256": "64469cb1a8db69178c78f0fc767159417bc4fd1e59f014de1a9512c38eadf180",
+ "kind": "text"
+ },
+ {
+ "source": "00_HOMEPAGE\\HOMEPAGE_DU_CORPUS.md",
+ "size_bytes": 1641,
+ "sha256": "0185a0e6dd3fb256a34629bab81bc2d5ba79de00192e7a9a896fad70654067e5",
+ "kind": "text"
+ },
+ {
+ "source": "00_HOMEPAGE\\manifest_step13_homepage.json",
+ "size_bytes": 1092,
+ "sha256": "d97c17602f5c1e5d9a5f6ab3c2882987b4fa39f2c562098eb46258b45ea92fe1",
+ "kind": "text"
+ },
+ {
+ "source": "00_HOMEPAGE\\SITE_MAP.md",
+ "size_bytes": 416,
+ "sha256": "3f0f71a0f637a3f389b3475d1463111aa9b41ce80436159d711728b4cae82aae",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\2026-04-06.md",
+ "size_bytes": 114,
+ "sha256": "036dcb8a35b735775a49d602591bb77dc664751b63f4dcdadd436d2f6acd5966",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\AXES_YNOR.md",
+ "size_bytes": 39026,
+ "sha256": "ed6af0f8d30be0d0c670a95c7cef17bfbadc1fe7a0417a1525f0c979eea888e0",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\AXIOMES_FONDAMENTAUX_YNOR.md",
+ "size_bytes": 274,
+ "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\AXIOMES_SECONDAIRES_YNOR.md",
+ "size_bytes": 274,
+ "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\AXIOMES_YNOR.md",
+ "size_bytes": 274,
+ "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\BENCHMARK_MATHEMATIQUE_MAXIMAL_YNOR.md",
+ "size_bytes": 9812,
+ "sha256": "a3c3c0c8b5b4153c753ec78f0d986e71030c53486aa629ecdbef36e0a5c88536",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\BENCHMARK_MATHEMATIQUE_ULTRA_YNOR.md",
+ "size_bytes": 12665,
+ "sha256": "0c655b803cacb1f643e6c13c5e7aa8193f8dc240b3ca1b2a2d38305d4d1c7e05",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CANONICAL_CONSOLIDATION_CERTIFICATE.md",
+ "size_bytes": 2068,
+ "sha256": "7249bde61ab05d7094bc9a9f58c63062d76818d8c9a575c3f030b9736d7f0f2c",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CARTE_CANONIQUE_PUBLIQUE_YNOR.md",
+ "size_bytes": 1082,
+ "sha256": "4a3ebd268d12b55872e25f3d273440622aedbbed30022ab9bab276de3f624b5d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CARTE_CANONIQUE_UNIQUE_YNOR.md",
+ "size_bytes": 1877,
+ "sha256": "d190667679fed0fde76d4973ed863049512a70d5120393c6ff68cc13334bd1f2",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CARTE_MERMAID_GLOBALE_YNOR.md",
+ "size_bytes": 3646,
+ "sha256": "3b21ae526553747153e190c75c3bc444d791bb9650380a0458bc609dfa1f775d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CARTE_MIROIR_AXES_YNOR.md",
+ "size_bytes": 2716,
+ "sha256": "518c48f2739e5872b1036472f7664c4029ad9824a72470243380a1b6dac95ad4",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CARTE_MIROIR_NOYAU_YNOR.md",
+ "size_bytes": 1259,
+ "sha256": "5882be168c3647fec0f31b4916c969f92c8f9bb0f0dff9b8f8307e1dd012c867",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CARTE_MIROIR_PROTOCOLES_YNOR.md",
+ "size_bytes": 1263,
+ "sha256": "52dea80f6b54e377600ffae599cc3aeede595aed3d8e6385e736598e21bd653e",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CARTE_MIROIR_VECTEURS_YNOR.md",
+ "size_bytes": 1312,
+ "sha256": "52d38d63f773a345ebc6e3ac71b83c0bf5c6308ac219421981d38f311331596f",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\CORPUS_QUALITE_ET_CORRECTIFS.md",
+ "size_bytes": 2422,
+ "sha256": "07894ae6f3a704b41d0e009978057a05c6432fc1af8369e04cc8338db027ad52",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\DASHBOARD_INTEGRITE_SYSTEMIQUE.md",
+ "size_bytes": 1299,
+ "sha256": "4e73068b8bf501e96e20a70321eb0be5bbda799d7104b1fd46283b6949c8e9b8",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\DIAGNOSTIC_CORPUS_MANQUANTS_BRUIT_DUPLICATS.md",
+ "size_bytes": 4153,
+ "sha256": "d37a7c08ea2710e1f9319382f93bf7f33dce0c4b13a7685d6913d9e7f9e90250",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\DISCUSSION_BOHR_CALCULEE.md",
+ "size_bytes": 11564,
+ "sha256": "3fe271e858b584ab1fda7df18d6dee1dae5ad0bcaa89d34cf042cff24e47a876",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\ENCODING_AUDIT_FIRST_BLOCK.md",
+ "size_bytes": 1447,
+ "sha256": "d98b2520e54792116ad99e735d1e3c076fc9af845a00b6f7ced5de113a9b2467",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\GENESIS_BLOCK_V11_13.md",
+ "size_bytes": 92984,
+ "sha256": "d5ed6f896287a8687c87295fbbd10558fedacbfa0e009c385bc41446c6cf18a0",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\LICENSE.md",
+ "size_bytes": 2235,
+ "sha256": "8a3ddf926ff78574db354ec6815c7b528518c4e7afee0cded25d1bde33883d09",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\LISTE_BLANCHE_DIFFUSION_ET_PLAN_NETTOYAGE.md",
+ "size_bytes": 5802,
+ "sha256": "fd534fc198f60062a360109e30574218d9d9ab0ea4b5664b9ed8cf189e8296e3",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\MANIFESTE_EXCLUSION_DIFFUSION.md",
+ "size_bytes": 1227,
+ "sha256": "ed65e36913d851511d38a5585c880f51699ba7da9d7716ccc3a62b82945091f2",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\manifest_step14_master_final.json",
+ "size_bytes": 1933,
+ "sha256": "54ec67ae881d60b41f66e87b084c59c12c496440ee5cb477c5c7f71160cf8391",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\MASTER_FINAL.md",
+ "size_bytes": 6412,
+ "sha256": "e230815654dc97f69a56ad8b969231b4de520a0ad2d9aac63b159a01e43417a9",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\NETTOYAGE_TECHNIQUE.md",
+ "size_bytes": 1101,
+ "sha256": "ee649ff13841174d484e07a1927c4d7dab6f26ed7f3febc92d9da677b1a33898",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\NORMALISATION_CANONIQUE.md",
+ "size_bytes": 2616,
+ "sha256": "24818c66d6deee6fe67d665984ffba29410ad7f0cf49d2f72223f4646e623834",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\NORMALISATION_TERMINOLOGIQUE_YNOR.md",
+ "size_bytes": 2477,
+ "sha256": "3a76c06fc6d138fb5b41e123474bb12cc9c2e934e316f665171ae25a15757138",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\NOYAU_YNOR.md",
+ "size_bytes": 1750,
+ "sha256": "04d83fa3ef14101e2466802885f0e57142e3374009a11ec6da351ae20e23d1b2",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROMPT_CORPUS_SECURISE_RIGOUREUX.md",
+ "size_bytes": 8485,
+ "sha256": "9f65b52175dbc2e1221d081841550dfe42841b13facc24d5277a53dc37e0c494",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROMPT_CORPUS_SECURISE_RIGOUREUX_PREMIUM.md",
+ "size_bytes": 10973,
+ "sha256": "9b1ec3f9556b55dd33d092090824ccb45b82a490eef104a0d2eab55b1a5dc2af",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROMPT_GPT_FINAL_MOINS_8000.md",
+ "size_bytes": 6953,
+ "sha256": "88e33fcb6750abb4d00b1c41b2677749817e6737da04bfef3b2409015ae710f1",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_FEUILLES_YNOR.md",
+ "size_bytes": 11290,
+ "sha256": "ceac1f613a6320484dc5195f022f46a9a33477f17c0a5008b08a017d8608d4f7",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_FONDAMENTAUX_YNOR.md",
+ "size_bytes": 280,
+ "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_PAR_AXE_YNOR.md",
+ "size_bytes": 280,
+ "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_SECONDAIRES_YNOR.md",
+ "size_bytes": 280,
+ "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_SOUS_AXES_YNOR.md",
+ "size_bytes": 280,
+ "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_SOUS_SOUS_AXES_YNOR.md",
+ "size_bytes": 280,
+ "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_SOUS_SOUS_SOUS_AXES_YNOR.md",
+ "size_bytes": 280,
+ "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\PROTOCOLES_YNOR.md",
+ "size_bytes": 280,
+ "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\README.md",
+ "size_bytes": 3711,
+ "sha256": "0cbc2933ba2e54c3b970c36096aa57aabae83e5a29470b475434f4ecfdc06ac0",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\SUITE_CORPUS_ACTIONNELLE.md",
+ "size_bytes": 4873,
+ "sha256": "3a230fcd85b03b6d8437622ce9c3e8d43682c7683dd3f48dc9638f333a0bb764",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VALIDATION_SCIENTIFIQUE_YNOR.md",
+ "size_bytes": 2677,
+ "sha256": "f72673ff726617a774b4207b0662a499d97e7c5ee1e2a54b7399046f206c0cae",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VECTEURS_FEUILLES_YNOR.md",
+ "size_bytes": 9699,
+ "sha256": "ed7011db86e43ab47744a405b6bc3e2f66159e99b6ec4e794fd938ffacd53576",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VECTEURS_FONDAMENTAUX_YNOR.md",
+ "size_bytes": 3493,
+ "sha256": "5f4b296d84606a06b2c6486f20662424f6612e8e16fac3c91312cb00d765b8a7",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VECTEURS_PAR_AXE_YNOR.md",
+ "size_bytes": 13019,
+ "sha256": "12a94c9cebd050f62827315f74fef52ef72f8aa16d9831c2ac21fe5bc1789997",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VECTEURS_PAR_FAMILLE_YNOR.md",
+ "size_bytes": 20066,
+ "sha256": "37397b7ed603a106bca982f85150ec9939d8babfd5bf9f6df2b1ae585b47b601",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VECTEURS_SOUS_AXES_YNOR.md",
+ "size_bytes": 23315,
+ "sha256": "8b17aab9e4d4a11d6cbfbbbeaea6e3f39ce48b388d408707620f28235a727ada",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VECTEURS_YNOR.md",
+ "size_bytes": 1638,
+ "sha256": "8a74247461e32fc452fdf0c9f684ace4a9404de4621133f21765deae8bfa89a4",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\VECTORISATION_YNOR.md",
+ "size_bytes": 2467,
+ "sha256": "787ef491de27d475c790d257a506deb2b148542946cebc0e066b80dde927c010",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\YNOR_ACADEMIC_META.jsonld",
+ "size_bytes": 1211,
+ "sha256": "7dffd0fa79d9874a64458c46f18a7675649a75d0f30ac7a4889edbd5645e773b",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\YNOR_UNIFIED_AXIOMS.md",
+ "size_bytes": 7606,
+ "sha256": "bd6fda5a805e34c70f5befec780de39dd6d5d04e345fd84a7c13f22a1db23be2",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\YNOR_UNIFIED_PROTOCOLS.md",
+ "size_bytes": 15771,
+ "sha256": "b2fb65cf3746d4aece7a14d056ecaedf8181045caba646942e1687af0fd7d2a3",
+ "kind": "text"
+ },
+ {
+ "source": "00_PUBLIC_BRIEF\\manifest_step11_public_brief.json",
+ "size_bytes": 844,
+ "sha256": "8c1bd901ce7cd8eef4ba59e9ee2dd2a8acd643c84d6b3bd45343afcef6814f0c",
+ "kind": "text"
+ },
+ {
+ "source": "00_PUBLIC_BRIEF\\PRESENTATION_PUBLIQUE.md",
+ "size_bytes": 698,
+ "sha256": "d0f570891c9e091c552dd3db92502838453d6c8dd5096e2b4e4206fb3247150e",
+ "kind": "text"
+ },
+ {
+ "source": "00_PUBLIC_BRIEF\\PUBLIC_BRIEF.md",
+ "size_bytes": 922,
+ "sha256": "cd5dbbd57304523ab5b4557dc5804e68dee396ab1aaabae586441c6eb2c17fad",
+ "kind": "text"
+ },
+ {
+ "source": "00_PUBLIC_BRIEF\\README.md",
+ "size_bytes": 2183,
+ "sha256": "46e2a6fc99fdb0ef0a5a2fee55fd8866197ecdab591caaa2a52ac8c0e934396f",
+ "kind": "text"
+ },
+ {
+ "source": "00_PUBLIC_BRIEF\\REFERENCE_PUBLIQUE.md",
+ "size_bytes": 1826,
+ "sha256": "d6d266ff70ac0722365680a053dfa2cd69995d0a15a44478f7af9a76faff1eb7",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\JOURNAL_TARGETING.md",
+ "size_bytes": 2068,
+ "sha256": "f2f9549f3c7bd1984fa1c96ecf140b9bd8313f1db375513063dbef16cd050df8",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\LETTRE_DE_COUVERTURE.md",
+ "size_bytes": 1118,
+ "sha256": "ade82d452cd90d231d2946395c1d4b53a8f9f59aa652a477f4b512f997a5dbbe",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\manifest_step12_submission_pack.json",
+ "size_bytes": 1508,
+ "sha256": "93f1bb0f5057765d3f04c626285dc65b06406d3a251c02a42e16844c57ff8b39",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\MANUSCRIT_FINAL.md",
+ "size_bytes": 29848,
+ "sha256": "373f7a9e6201fa65c10bf6ecd0155d0c6856079845cd0bb64bae7b5360f71907",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\MANUSCRIT_FINAL_FOUNDATIONS_OF_PHYSICS.md",
+ "size_bytes": 30568,
+ "sha256": "80c8176ed1e22aa8cac378208f9460fda7e420d7dee884bf33ea2d9681f3faec",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\METADONNEES_SOUMISSION.md",
+ "size_bytes": 1594,
+ "sha256": "43bff47139ddce3873f95f32f1f13f30e2535d82fd236213b40215f756abee47",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\RESUME_DE_SOUMISSION.md",
+ "size_bytes": 684,
+ "sha256": "37923447618da7ca377feb69ae68a09b32f1233b96d166fade02b59dcb7a8877",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\STRUCTURE_DE_LIVRAISON.md",
+ "size_bytes": 821,
+ "sha256": "f85e0abdaaeb0a2acbce5f7214e5546f1842741880cded18c7e4ea840fc6f29a",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\YNOR_CERTIFIED_UPLOAD_MANIFEST.md",
+ "size_bytes": 693,
+ "sha256": "1bd5bb60ecf77df282659e83480d9b777e321bc60a3bbb7238a9b17f085b4ef2",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\YNOR_CERTIFIED_UPLOAD_README.md",
+ "size_bytes": 915,
+ "sha256": "2cd4331c611880f6647bd31270aebf4ed587c423ae355b3bbe560088f40770df",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\YNOR_MAXIMUM_EXPLOITATION_MANIFEST.md",
+ "size_bytes": 1243,
+ "sha256": "169a308150e7f3fb9553f56232b038799d1171ea51faa598020e7535046408ea",
+ "kind": "text"
+ },
+ {
+ "source": "00_SUBMISSION_PACK\\YNOR_MAXIMUM_EXPLOITATION_PACK.md",
+ "size_bytes": 5325,
+ "sha256": "0640278bc0fab8df00b4dde932c14a518386897e81b44e6b89f7af1ab33a1fdf",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\2026-04-06.md",
+ "size_bytes": 98,
+ "sha256": "9e0e0ad9795ec6100fca49107d271dc92aac7ebf9ecd239adaed145975e6a62a",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\AXES_YNOR.md",
+ "size_bytes": 26027,
+ "sha256": "bb4e845d7e30bec146293c6bc820e753e94d06c8658eaca4644c9eaa4b4a4c55",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\AXIOMES_YNOR.md",
+ "size_bytes": 244,
+ "sha256": "bbe63385ebbd2d8df3adc9550d0c1782fac774e1722b369a67bd08b47f33d821",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\BENCHMARK_MATHEMATIQUE_V10.md",
+ "size_bytes": 8865,
+ "sha256": "f4f50f5aa22374b2228117cebf545e4aa0e6ab8a65dfd0889411b8273d468eb2",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\BENCHMARK_MATHEMATIQUE_V11.md",
+ "size_bytes": 9948,
+ "sha256": "377cce474e6a8e2ca2f007b770c243ab8937b895afca820716bd9a958146ae02",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\CANONICAL_CONSOLIDATION_CERTIFICATE.md",
+ "size_bytes": 2025,
+ "sha256": "c7a249c9cd6226e7869a8a206ad77e690428d1e75671204ff397654e680195f2",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\CARTE_CANONIQUE_PUBLIQUE_YNOR.md",
+ "size_bytes": 857,
+ "sha256": "830c4f388f640f1c875c0f77438b54101a989fc040e7a4c9a859c4a07b0187e6",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\CARTE_CANONIQUE_UNIQUE_YNOR.md",
+ "size_bytes": 1538,
+ "sha256": "133beed1793db4e58f9d657949d33ac403a6c0fdf009ebe83ae99a43e0331e96",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\CARTE_MERMAID_GLOBALE_YNOR.md",
+ "size_bytes": 2370,
+ "sha256": "ac1bfce9e90cb0aa96f8af77962b182ec30c496daadbb60688fbe40253d633ee",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\CORPUS_QUALITE_ET_CORRECTIFS.md",
+ "size_bytes": 2464,
+ "sha256": "4ccd6cbfb693c34fd881f28148e6118f0372c3c77e7377f2422b4618e4779bb7",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\DASHBOARD_INTEGRITE_SYSTEMIQUE.md",
+ "size_bytes": 1798,
+ "sha256": "2c72fcc37704a43921dbb3ed897c31cd8f8bcf89ffa1cf56068eaaa31b871bb1",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\DIAGNOSTIC_CORPUS_MANQUANTS_BRUIT_DUPLICATS.md",
+ "size_bytes": 3841,
+ "sha256": "0723fd98306fbf94314ec752455656ebfd3604d1883ae8f0fbd90e2d886a7832",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\DISCUSSION_BOHR_CALCULEE.md",
+ "size_bytes": 7768,
+ "sha256": "05d0f897f5c03b9d680255a3976b619108897b78c453f7273b859e0222e8f97f",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\ENCODING_AUDIT_FIRST_BLOCK.md",
+ "size_bytes": 1323,
+ "sha256": "2511d0c156183fbe40a3ca68505bc7a888e8380b35505ed9ee321267edbfa705",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\LICENSE.md",
+ "size_bytes": 2237,
+ "sha256": "ea50b1df3a90245b6e2126ac731f000ae73562a9d5715d455ba3c172458bd89e",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\LISTE_BLANCHE_DIFFUSION_ET_PLAN_NETTOYAGE.md",
+ "size_bytes": 4322,
+ "sha256": "b9549ed66b3a3b6508e88eb36ed890529e204e8026ccfe5a8fa046a1c33aead0",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\MANIFESTE_EXCLUSION_DIFFUSION.md",
+ "size_bytes": 969,
+ "sha256": "28f061a872d3ae8fcce10fa30234f7b7c782253153946d70b1cf962f3a9c452c",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\manifest_step14_master_final.json",
+ "size_bytes": 2506,
+ "sha256": "37bb2aadffd338396c6b4e009e4db8d3533a34c8911ea70d6552f302ab3594e8",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\MASTER_FINAL.md",
+ "size_bytes": 5039,
+ "sha256": "b2a21b95ac70ebd3c16feda6d75c21943605383c95a98800397482cd56fdc54c",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\NETTOYAGE_TECHNIQUE.md",
+ "size_bytes": 949,
+ "sha256": "a915899fdd1e096baeb9665fa62e9789c3445446f94f3f6c59ae9041c23df8fc",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\NORMALISATION_CANONIQUE.md",
+ "size_bytes": 2035,
+ "sha256": "73a8252ff018ba6893d968d83001b41f92de8e1d128affd7fa6e81f5437e9772",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\NORMALISATION_TERMINOLOGIQUE_YNOR.md",
+ "size_bytes": 2229,
+ "sha256": "3e4439d730ea81ae5d0258e82fa9d5eb06464858a19855019a18d1cc2b170a04",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\NOYAU_YNOR.md",
+ "size_bytes": 1408,
+ "sha256": "ebeeb55c624f896a6ad752e54eff47a16b3870edc1333ebb0dc5c7d0f58d88c8",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\PROTOCOLES_FEUILLES_YNOR.md",
+ "size_bytes": 7717,
+ "sha256": "d17643236e3656a6328afc39f7c5b974fad907617f2a4866241726d647119977",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\PROTOCOLES_YNOR.md",
+ "size_bytes": 250,
+ "sha256": "5b4d8eb67dc32df2d5944e2be4968dfef6980cd5edc796cb070004941c4a5272",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\README.md",
+ "size_bytes": 3708,
+ "sha256": "7b665039d840da1843df380441eb2ebbfddc762a06500d90359895261876cba4",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\SUITE_CORPUS_ACTIONNELLE.md",
+ "size_bytes": 3766,
+ "sha256": "92ecbe20177efbc0dc6a229550880b70e5ccd57a2d45cc8c7ff20156dba581cc",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VALIDATION_SCIENTIFIQUE_YNOR.md",
+ "size_bytes": 2551,
+ "sha256": "ee9b3c8a2603b2a7944d28a4e70f7be102c333a4c5b5767be7f91e26636535a1",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VECTEURS_FEUILLES_YNOR.md",
+ "size_bytes": 6758,
+ "sha256": "e487ad86a0e480f04208e8f0c235b4fe0168f63a25185892b463304f6e85f5a7",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VECTEURS_FONDAMENTAUX_YNOR.md",
+ "size_bytes": 2834,
+ "sha256": "e8ba85be44c85d1d40d634dbef923045dcfcfba3bd64382127627ca511550963",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VECTEURS_PAR_AXE_YNOR.md",
+ "size_bytes": 9951,
+ "sha256": "42994bb6f5c75c90cc9b9b8843eaf221695b58cac0b83cc80f1ebab66e8a76cc",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VECTEURS_PAR_FAMILLE_YNOR.md",
+ "size_bytes": 13562,
+ "sha256": "a598277c3552f478d87157ff7fc97a519a823ce1bc63c03bb51a4f35368a123d",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VECTEURS_SOUS_AXES_YNOR.md",
+ "size_bytes": 18486,
+ "sha256": "500d050815a008099d16b31b94cc11d1a54d5fa91203211817e2df9d9a2b79d7",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VECTEURS_YNOR.md",
+ "size_bytes": 1450,
+ "sha256": "7a57b109541301a3921a2626ab24f270d5829d529b51716816bbb57ba3fd4474",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\VECTORISATION_YNOR.md",
+ "size_bytes": 2071,
+ "sha256": "b5c3b9590f2f0d02a31fb383e4c67a782cd924da062e43071cab6b6c55ae7e21",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\YNOR_ACADEMIC_META.jsonld",
+ "size_bytes": 1213,
+ "sha256": "742494585e2f83e40239adb5c8847c8c1cbd5bda22213f4ccddb46d6946782d1",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\YNOR_UNIFIED_AXIOMS.md",
+ "size_bytes": 6564,
+ "sha256": "fb7fb3ae493573c0aca642f1918a6d1317ad0f36df33f9afc1d5fbf3643e1e94",
+ "kind": "text"
+ },
+ {
+ "source": "01_TECHNICAL_CORE\\YNOR_UNIFIED_PROTOCOLS.md",
+ "size_bytes": 13709,
+ "sha256": "65880a3ccc44028e7e2ed25f00f46f1c4dadd016d382a23c0c5ebbb5f70e4133",
+ "kind": "text"
+ },
+ {
+ "source": "02_PUBLIC_LITERATURE\\manifest_step11_public_brief.json",
+ "size_bytes": 1110,
+ "sha256": "d0b9ee9ef72c23b104c1b1954808566ef770749c9c9144c50da656b2fc7ed020",
+ "kind": "text"
+ },
+ {
+ "source": "02_PUBLIC_LITERATURE\\PRESENTATION_PUBLIQUE.md",
+ "size_bytes": 2031,
+ "sha256": "17c2ba7d3a08afdf7b85b6fa302c384a13f135f4bb8675f5beb40ce2126d41ab",
+ "kind": "text"
+ },
+ {
+ "source": "02_PUBLIC_LITERATURE\\PUBLIC_BRIEF.md",
+ "size_bytes": 1698,
+ "sha256": "caa00db86dfad6ff3556089da88ab1e5fac6ee19242fbbc89df61e9aff52e02a",
+ "kind": "text"
+ },
+ {
+ "source": "02_PUBLIC_LITERATURE\\README.md",
+ "size_bytes": 2089,
+ "sha256": "22250259f7626cd25168aa8ea7cfaa10ac79734a844afba7b349bbb414056d3f",
+ "kind": "text"
+ },
+ {
+ "source": "02_PUBLIC_LITERATURE\\REFERENCE_PUBLIQUE.md",
+ "size_bytes": 1723,
+ "sha256": "8dde5046fa68a8c966452719ab1429de4c440aa1366c30152f6040f4934f85d4",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\manifest_step14_master_final.json",
+ "size_bytes": 2114,
+ "sha256": "d0072f295d81f66e883a8a625c558156d68376752fd83e172e7f1bd77dd1e0ad",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\MASTER_FINAL.md",
+ "size_bytes": 1050,
+ "sha256": "4e1232d5f11dc3b1f22553589494b3745a4ed03dc3c9385c27ff76455d50e493",
+ "kind": "text"
+ },
+ {
+ "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\PROMPT_CORPUS_SECURISE_RIGOUREUX.md",
+ "size_bytes": 7318,
+ "sha256": "ca166059c6fe77bddbca470fc50b43c4096e247d91015b30ca13f03df46109ec",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
+ "size_bytes": 4478,
+ "sha256": "6fed5684973ceced7c8b714c43425da0c9d6bceff13f674cb62386210757887c",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\CARTE_VISUELLE_YNOR.md",
+ "size_bytes": 2185,
+ "sha256": "56cc8995d0b5675b99a7e35c6280192dd570434ba0e2c622d1ded90fb1c2ec86",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\INDEX_MAITRE_FRACTAL_CHIASTIQUE.md",
+ "size_bytes": 30146,
+ "sha256": "23920dfa221a27b6c9cd614a7cde27fc59f2f0ed3d58c692413191f7a3780709",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\INDEX_MAITRE_YNOR.md",
+ "size_bytes": 3422,
+ "sha256": "ae40cf50f6b8cef0f0de9e13995d8175bcb9e551bf9a34e55ed3f73c92c1b18d",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifeste_fractal_chiaste_universel.json",
+ "size_bytes": 1394,
+ "sha256": "41857b52ca18b4f38b8873ade8800e5fad8094c2d888c825bd330ab8f866b8b3",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\MANIFESTE_FRACTAL_CHIASTE_UNIVERSEL.md",
+ "size_bytes": 1009,
+ "sha256": "66bc92b846fe9c3dda22f3a723e5404757060d7a3c4bef448c7b83a98a5d485c",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifeste_ynor.json",
+ "size_bytes": 1632,
+ "sha256": "ff9c649dce46337ffed6e2d24d38ea8f93b093cf0209774ebd99c2a32ca3fd7f",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\MANIFESTE_YNOR.md",
+ "size_bytes": 1903,
+ "sha256": "9f869829c7ef1e8ab99ab951bd65894eb766689ff0104ef46905b2acb6485290",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step2_bulk_rewrite.json",
+ "size_bytes": 20643,
+ "sha256": "a9790623239c105369b5516ba732071ff96aa91e6e8eac873843ebdff335ecc9",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step3_json_rewrite.json",
+ "size_bytes": 7770,
+ "sha256": "31be788fa537092ab642f5e106aea8ce0614c4fb73e1f3fd122507ebb719b118",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step4_pdf_latex_augmented.json",
+ "size_bytes": 6269,
+ "sha256": "d2d2e1bd01dd4a059cf427c9c857cc694891fcf05f22066eb75798ed7af5810f",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step5_constitution_pdf_augmented.json",
+ "size_bytes": 5908,
+ "sha256": "b5b93885272c4446721ec5975aab786e23079dc6f576e876f87e1e0b9f47fdff",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step6_legal_admin_pdf_augmented.json",
+ "size_bytes": 16783,
+ "sha256": "6c48f44085f9dfd81882e4d2bba122e61df7d2281c36df01a258792f3907f6a9",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step7_master_index.json",
+ "size_bytes": 137761,
+ "sha256": "76a1095aa7534adfa1af446ea653e5bc30fe77bc59889186994b34696db6271f",
+ "kind": "text"
+ },
+ {
+ "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\manifest_step8_visual_navigation.json",
+ "size_bytes": 5261,
+ "sha256": "2292862c3f17034934f1ea63fc8091d131b1b9233386b88eb635ce84653bcc11",
+ "kind": "text"
+ }
+ ]
 }

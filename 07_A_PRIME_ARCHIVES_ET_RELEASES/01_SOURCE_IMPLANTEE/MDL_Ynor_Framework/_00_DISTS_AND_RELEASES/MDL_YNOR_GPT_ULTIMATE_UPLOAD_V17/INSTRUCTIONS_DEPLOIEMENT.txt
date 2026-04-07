@@ -1,5 +1,5 @@
 =====================================================================
-          GUIDE DE DÉPLOIEMENT : MDL YNOR Ω+ (V19.2 OMEGA)
+ GUIDE DE DÉPLOIEMENT : MDL YNOR Ω+ (V19.2 OMEGA)
 =====================================================================
 
 Ce pack contient tout le nécessaire pour une mise en service SOUVERAINE.
@@ -37,5 +37,5 @@ ETAPE 5 : PUBLICATION
 - Visibility : Public (GPT Store).
 
 =====================================================================
-                   © 2026 MDL 전략 - RONY CHARLIER
+ © 2026 MDL 전략 - RONY CHARLIER
 =====================================================================

@@ -14,75 +14,75 @@ from datetime import datetime
 
 def create_bundle():
 
-    print("--- YNOR ACADEMIC : GÉNÉRATION DU PACK DE SOUMISSION ---")
+ print("--- YNOR ACADEMIC : GÉNÉRATION DU PACK DE SOUMISSION ---")
 
-    
+ 
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+ timestamp = datetime.now().strftime("%Y%m%d_%H%M")
 
-    bundle_name = f"YNOR_ACADEMIC_SUBMISSION_{timestamp}.zip"
+ bundle_name = f"YNOR_ACADEMIC_SUBMISSION_{timestamp}.zip"
 
-    
+ 
 
-    # Paths to include
+ # Paths to include
 
-    targets = [
+ targets = [
 
-        "00_EDITION_CANONIQUE_FINALE",
+ "00_EDITION_CANONIQUE_FINALE",
 
-        "02_B_THEORIE_ET_PREUVES",
+ "02_B_THEORIE_ET_PREUVES",
 
-        "03_C_MOTEURS_ET_DEPLOIEMENT",
+ "03_C_MOTEURS_ET_DEPLOIEMENT",
 
-        "MDL_YNOR_V7_1_DISTRIBUTION",
+ "MDL_YNOR_V7_1_DISTRIBUTION",
 
-        "README.md",
+ "README.md",
 
-        "LICENSE",
+ "LICENSE",
 
-        "PORTAIL_CANONIQUE_FINAL.md"
+ "PORTAIL_CANONIQUE_FINAL.md"
 
-    ]
+ ]
 
-    
+ 
 
-    with zipfile.ZipFile(bundle_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
+ with zipfile.ZipFile(bundle_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
 
-        for t in targets:
+ for t in targets:
 
-            if os.path.isfile(t):
+ if os.path.isfile(t):
 
-                zipf.write(t)
+ zipf.write(t)
 
-                print(f" [+] Fichier ajout: {t}")
+ print(f" [+] Fichier ajout: {t}")
 
-            elif os.path.isdir(t):
+ elif os.path.isdir(t):
 
-                for root, dirs, files in os.walk(t):
+ for root, dirs, files in os.walk(t):
 
-                    # Skip git and cache
+ # Skip git and cache
 
-                    if '.git' in root or '__pycache__' in root:
+ if '.git' in root or '__pycache__' in root:
 
-                        continue
+ continue
 
-                    for file in files:
+ for file in files:
 
-                        filepath = os.path.join(root, file)
+ filepath = os.path.join(root, file)
 
-                        zipf.write(filepath)
+ zipf.write(filepath)
 
-                print(f" [V] Dossier consolid: {t}")
+ print(f" [V] Dossier consolid: {t}")
 
 
 
-    print(f"\n[SUCCÈS] Pack de soumission gnr: {bundle_name}")
+ print(f"\n[SUCCÈS] Pack de soumission gnr: {bundle_name}")
 
-    print("Le fichier est prêt pour l'envoi aux comits de lecture (Nature, Science, etc.).")
+ print("Le fichier est prêt pour l'envoi aux comits de lecture (Nature, Science, etc.).")
 
 
 
 if __name__ == "__main__":
 
-    create_bundle()
+ create_bundle()
 

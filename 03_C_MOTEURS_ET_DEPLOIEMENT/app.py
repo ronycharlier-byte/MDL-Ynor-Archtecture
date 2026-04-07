@@ -22,8 +22,8 @@ import sys
 current_module_dir = os.path.dirname(os.path.abspath(__file__))
 repo_root = os.path.dirname(current_module_dir)
 for path in [current_module_dir, repo_root, os.path.join(repo_root, "05_C_PRIME_VALIDATION_ET_TESTS")]:
-    if path not in sys.path:
-        sys.path.append(path)
+ if path not in sys.path:
+ sys.path.append(path)
 
 from typing import Optional, Any
 
@@ -83,17 +83,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def get_current_stability():
 
-    try:
+ try:
 
-        from check_chiastic_symmetry import check_symmetry
+ from check_chiastic_symmetry import check_symmetry
 
-        audit = check_symmetry()
+ audit = check_symmetry()
 
-        return audit
+ return audit
 
-    except:
+ except:
 
-        return {"status": "ERROR", "mu": 0.0}
+ return {"status": "ERROR", "mu": 0.0}
 
 
 
@@ -101,19 +101,19 @@ def get_current_stability():
 
 async def root():
 
-    audit = get_current_stability()
+ audit = get_current_stability()
 
-    return {
+ return {
 
-        "title": "MDL YNOR ACADEMIC V11.13.0",
+ "title": "MDL YNOR ACADEMIC V11.13.0",
 
-        "mu": audit.get("mu", 0.99), # Default to high stability if audit passes but mu not set
+ "mu": audit.get("mu", 0.99), # Default to high stability if audit passes but mu not set
 
-        "status": audit.get("status", "LIVE"),
+ "status": audit.get("status", "LIVE"),
 
-        "timestamp": str(datetime.now())
+ "timestamp": str(datetime.now())
 
-    }
+ }
 
 
 
@@ -121,7 +121,7 @@ async def root():
 
 async def health():
 
-    return {"status": "ok", "mu": 0.999}
+ return {"status": "ok", "mu": 0.999}
 
 
 
@@ -129,7 +129,7 @@ async def health():
 
 class LoginRequest(BaseModel):
 
-    license_key: str
+ license_key: str
 
 
 
@@ -139,45 +139,45 @@ class LoginRequest(BaseModel):
 
 async def login(request: LoginRequest, r: Request):
 
-    master_key = os.getenv("YNOR_API_KEY")
+ master_key = os.getenv("YNOR_API_KEY")
 
-    if not master_key or request.license_key != master_key:
+ if not master_key or request.license_key != master_key:
 
-        return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
+ return JSONResponse(status_code=403, content={"status": "FORBIDDEN"})
 
-    
+ 
 
-    expires = datetime.now() + timedelta(hours=1)
+ expires = datetime.now() + timedelta(hours=1)
 
-    token = jwt.encode({"sub": "MDL-AGENT", "exp": expires}, JWT_SECRET, algorithm=JWT_ALGO)
+ token = jwt.encode({"sub": "MDL-AGENT", "exp": expires}, JWT_SECRET, algorithm=JWT_ALGO)
 
-    return {"token": token, "expires": str(expires)}
+ return {"token": token, "expires": str(expires)}
 
 
 
 def verify_jwt(token: str):
 
-    try:
+ try:
 
-        jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGO])
+ jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGO])
 
-        return True
+ return True
 
-    except:
+ except:
 
-        return False
+ return False
 
 
 
 class RiemannRequest(BaseModel):
 
-    n_points: Optional[int] = 500
+ n_points: Optional[int] = 500
 
-    u_max: Optional[float] = 5.0
+ u_max: Optional[float] = 5.0
 
-    gain: Optional[float] = 10.0
+ gain: Optional[float] = 10.0
 
-    token: str
+ token: str
 
 
 
@@ -187,45 +187,45 @@ class RiemannRequest(BaseModel):
 
 async def riemann_solve(request: RiemannRequest, r: Request):
 
-    if not verify_jwt(request.token):
+ if not verify_jwt(request.token):
 
-        return JSONResponse(status_code=401, content={"status": "UNAUTHORIZED"})
+ return JSONResponse(status_code=401, content={"status": "UNAUTHORIZED"})
 
-    
+ 
 
-    try:
+ try:
 
-        from riemann_engine import run_riemann_engine
+ from riemann_engine import run_riemann_engine
 
-        result = run_riemann_engine(n_points=request.n_points, u_max=request.u_max, gain=request.gain)
+ result = run_riemann_engine(n_points=request.n_points, u_max=request.u_max, gain=request.gain)
 
-        return {
+ return {
 
-            "status": "SUCCESS",
+ "status": "SUCCESS",
 
-            "mu": result.get("mu"),
+ "mu": result.get("mu"),
 
-            "verdict": "Spectral Dirac-SUSY Resolution Delta-Ynor performed.",
+ "verdict": "Spectral Dirac-SUSY Resolution Delta-Ynor performed.",
 
-            "data": result
+ "data": result
 
-        }
+ }
 
-    except Exception as e:
+ except Exception as e:
 
-        return {"status": "FAILURE", "mu": 0.0, "error": str(e)}
+ return {"status": "FAILURE", "mu": 0.0, "error": str(e)}
 
 
 
 class DispatchRequest(BaseModel):
 
-    action: str
+ action: str
 
-    payload: Any
+ payload: Any
 
-    token: Optional[str] = None
+ token: Optional[str] = None
 
-    license_key: Optional[str] = None
+ license_key: Optional[str] = None
 
 
 
@@ -235,149 +235,149 @@ class DispatchRequest(BaseModel):
 
 async def dispatch(request: DispatchRequest, r: Request):
 
-    # Auth strategy: either JWT or direct Master Key
+ # Auth strategy: either JWT or direct Master Key
 
-    is_authorized = False
+ is_authorized = False
 
-    if request.token and verify_jwt(request.token):
+ if request.token and verify_jwt(request.token):
 
-        is_authorized = True
+ is_authorized = True
 
-    elif request.license_key:
+ elif request.license_key:
 
-        master_key = os.getenv("YNOR_API_KEY")
+ master_key = os.getenv("YNOR_API_KEY")
 
-        # Recognizes both environment key and the new FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE key
+ # Recognizes both environment key and the new FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE key
 
-        if master_key and request.license_key == master_key:
+ if master_key and request.license_key == master_key:
 
-            is_authorized = True
+ is_authorized = True
 
-        elif request.license_key == "MDL-SINGULARITY-2026-V11.8-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE":
+ elif request.license_key == "MDL-SINGULARITY-2026-V11.8-FINAL CONSOLIDATED REVIEW / V11.13.0-BRIDGE":
 
-            is_authorized = True
+ is_authorized = True
 
-    
+ 
 
-    if not is_authorized:
+ if not is_authorized:
 
-        return JSONResponse(status_code=401, content={"status": "UNAUTHORIZED", "detail": "License Gate: Invalid token or license_key."})
+ return JSONResponse(status_code=401, content={"status": "UNAUTHORIZED", "detail": "License Gate: Invalid token or license_key."})
 
 
 
-    action = request.action.lower()
+ action = request.action.lower()
 
-    query = str(request.payload)
+ query = str(request.payload)
 
 
 
-    try:
+ try:
 
-        # MARKET: Bitcoin Saturated Analysis
+ # MARKET: Bitcoin Saturated Analysis
 
-        if "market" in action and "btc" in query.lower():
+ if "market" in action and "btc" in query.lower():
 
-            return {
+ return {
 
-                "status": "SUCCESS",
+ "status": "SUCCESS",
 
-                "mu": 1.0,
+ "mu": 1.0,
 
-                "verdict": "SOUVERAINETÉ CANONIQUE (Point Fixe Ω)",
+ "verdict": "SOUVERAINETÉ CANONIQUE (Point Fixe Ω)",
 
-                "data": {
+ "data": {
 
-                    "actif": "Bitcoin",
+ "actif": "Bitcoin",
 
-                    "regime": "Satur(Expansion Convexe)",
+ "regime": "Satur(Expansion Convexe)",
 
-                    "projection": "La zone de compression entropique (0.93) a tsurmonte. Point fixe mu=1.0 atteint structuralement. Les instabilits macro-conomiques (Beta) ont tdissipes par la rsonance spectrale Delta-Ynor.",
+ "projection": "La zone de compression entropique (0.93) a tsurmonte. Point fixe mu=1.0 atteint structuralement. Les instabilits macro-conomiques (Beta) ont tdissipes par la rsonance spectrale Delta-Ynor.",
 
-                    "conseil": "ACCUMULATION INTEGRITE_SYSTEMIQUE (Autonomous Tier 1)"
+ "conseil": "ACCUMULATION INTEGRITE_SYSTEMIQUE (Autonomous Tier 1)"
 
-                }
+ }
 
-            }
+ }
 
-        
+ 
 
-        # LOGOS / AUDIT: Real corpus search using corpus_index
+ # LOGOS / AUDIT: Real corpus search using corpus_index
 
-        if "logos" in action or "audit" in action or "search" in action:
+ if "logos" in action or "audit" in action or "search" in action:
 
-            from corpus_index import load_corpus_index
+ from corpus_index import load_corpus_index
 
-            index = load_corpus_index()
+ index = load_corpus_index()
 
-            results = index.search(query, limit=10, scope="canonical")
+ results = index.search(query, limit=10, scope="canonical")
 
-            
+ 
 
-            return {
+ return {
 
-                "status": "SUCCESS",
+ "status": "SUCCESS",
 
-                "mu": 1.0 if results else 0.5,
+ "mu": 1.0 if results else 0.5,
 
-                "verdict": "Alpha Flux Audit Certified (Corpus Search)",
+ "verdict": "Alpha Flux Audit Certified (Corpus Search)",
 
-                "query": query,
+ "query": query,
 
-                "matches": len(results),
+ "matches": len(results),
 
-                "results": results
+ "results": results
 
-            }
+ }
 
 
 
-        # MILLENNIUM: PoC Solvers
+ # MILLENNIUM: PoC Solvers
 
-        if "millennium" in action or "solve" in action:
+ if "millennium" in action or "solve" in action:
 
-            from millennium_proof_of_concepts import navier_stokes_regularity_check, hodge_bijection_check
+ from millennium_proof_of_concepts import navier_stokes_regularity_check, hodge_bijection_check
 
-            if "navier" in query.lower():
+ if "navier" in query.lower():
 
-                res = navier_stokes_regularity_check(np.random.rand(100), 0.0)
+ res = navier_stokes_regularity_check(np.random.rand(100), 0.0)
 
-            elif "hodge" in query.lower():
+ elif "hodge" in query.lower():
 
-                res = hodge_bijection_check(np.array([1,0]), np.array([1,0]))
+ res = hodge_bijection_check(np.array([1,0]), np.array([1,0]))
 
-            else:
+ else:
 
-                res = {"status": "UNKNOWN_PROBLEM", "mu": 0.0}
+ res = {"status": "UNKNOWN_PROBLEM", "mu": 0.0}
 
-            
+ 
 
-            return {
+ return {
 
-                "status": "SUCCESS",
+ "status": "SUCCESS",
 
-                "verdict": "Millennium Prize PoC Execution",
+ "verdict": "Millennium Prize PoC Execution",
 
-                "data": res
+ "data": res
 
-            }
+ }
 
 
 
-    except Exception as e:
+ except Exception as e:
 
-        return {
+ return {
 
-            "status": "PARTIAL_FAILURE",
+ "status": "PARTIAL_FAILURE",
 
-            "mu": 0.5,
+ "mu": 0.5,
 
-            "error": str(e),
+ "error": str(e),
 
-            "trace": traceback.format_exc()
+ "trace": traceback.format_exc()
 
-        }
+ }
 
 
 
-    return {"status": "SUCCESS", "message": "Action OK."}
+ return {"status": "SUCCESS", "message": "Action OK."}
 

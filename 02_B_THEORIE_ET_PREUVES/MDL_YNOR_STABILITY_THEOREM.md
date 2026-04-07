@@ -194,15 +194,15 @@ At each step:
 
 
 
-   $$
+ $$
 
 
 
-   P_{n+1}^\mu = \mathcal{T}_\mu(Q_{n+1}).
+ P_{n+1}^\mu = \mathcal{T}_\mu(Q_{n+1}).
 
 
 
-   $$
+ $$
 
 
 
@@ -590,15 +590,15 @@ Assume:
 
 
 
-   $$
+ $$
 
 
 
-   D_{KL}(Q_{n+1} \,||\, P^*) \le D_{KL}(P_n \,||\, P^*) + \varepsilon_n,
+ D_{KL}(Q_{n+1} \,||\, P^*) \le D_{KL}(P_n \,||\, P^*) + \varepsilon_n,
 
 
 
-   $$
+ $$
 
 
 
@@ -610,15 +610,15 @@ Assume:
 
 
 
-   $$
+ $$
 
 
 
-   P_{n+1}^\mu = \Pi_{\mathcal{C}_{\mathrm{Ynor}}}(Q_{n+1}),
+ P_{n+1}^\mu = \Pi_{\mathcal{C}_{\mathrm{Ynor}}}(Q_{n+1}),
 
 
 
-   $$
+ $$
 
 
 
@@ -630,7 +630,7 @@ Assume:
 
 
 
-   ($H_\alpha$) holds.
+ ($H_\alpha$) holds.
 
 
 
@@ -686,15 +686,15 @@ Consequently:
 
 
 
-  $$
+ $$
 
 
 
-  D_{KL}(P_n \,||\, P^*) \to 0.
+ D_{KL}(P_n \,||\, P^*) \to 0.
 
 
 
-  $$
+ $$
 
 
 

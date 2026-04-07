@@ -10,13 +10,13 @@ TITLE MDL YNOR - DEMO RUNBOOK (v2.2.0-PROD)
 SETLOCAL
 
 echo ============================================================
-echo   ⚡ MDL YNOR - AUTOMATED DEMO & VALIDATION ⚡
+echo ⚡ MDL YNOR - AUTOMATED DEMO & VALIDATION ⚡
 echo ============================================================
 
 :: 1. CHECK VIRTUAL ENV
 IF NOT EXIST venv (
-    echo [INFO] Creating virtual environment...
-    python -m venv venv
+ echo [INFO] Creating virtual environment...
+ python -m venv venv
 )
 
 echo [INFO] Activating environment...
@@ -29,9 +29,9 @@ pip install -e .
 
 :: 3. ENVIRONMENT CHECK
 IF NOT EXIST .env (
-    echo [WARNING] No .env file found. Copying template...
-    copy .env.template .env
-    echo [ACTION] Please edit your .env file and add your API keys!
+ echo [WARNING] No .env file found. Copying template...
+ copy .env.template .env
+ echo [ACTION] Please edit your .env file and add your API keys!
 )
 
 :: 4. RUN VALIDATION
@@ -52,7 +52,7 @@ echo jupyter notebook ynor_core_demonstration.ipynb
 echo.
 
 echo ============================================================
-echo   ✅ DEMO & AUDIT SUCCESSFUL
+echo ✅ DEMO & AUDIT SUCCESSFUL
 echo ============================================================
 pause
 

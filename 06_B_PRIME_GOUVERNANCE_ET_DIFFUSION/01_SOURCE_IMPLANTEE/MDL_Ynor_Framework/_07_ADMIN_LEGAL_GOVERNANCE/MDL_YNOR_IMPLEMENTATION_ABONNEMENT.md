@@ -9,18 +9,18 @@
 - Créez un compte sur [Stripe.com](https://stripe.com).
 - Créez un "Produit" : **MDL Ynor AGI - Stability Subscription**.
 - Définissez deux tarifs : 
-    - **Starter** : 49€ / Mois (Limité à 1000 audits mu).
-    - **Enterprise** : 499€ / Mois (Audits illimités + Innovation AGI prioritaire).
+ - **Starter** : 49€ / Mois (Limité à 1000 audits mu).
+ - **Enterprise** : 499€ / Mois (Audits illimités + Innovation AGI prioritaire).
 
 ## 2. L'INTERRUPTEUR DE PAIEMENT (LOGIQUE CODE)
 Pour que votre IA ne travaille que si l'abonnement est payé, vous devez ajouter cette vérification dans le fichier `ynor_commercial_api.py` :
 
 ```python
 def check_subscription(api_key):
-    # Appel à votre base de données ou à Stripe pour vérifier le statut
-    if api_key in database_valid_keys:
-        return True
-    return False
+ # Appel à votre base de données ou à Stripe pour vérifier le statut
+ if api_key in database_valid_keys:
+ return True
+ return False
 ```
 
 ## 3. VENDRE VIA LE CUSTOM GPT

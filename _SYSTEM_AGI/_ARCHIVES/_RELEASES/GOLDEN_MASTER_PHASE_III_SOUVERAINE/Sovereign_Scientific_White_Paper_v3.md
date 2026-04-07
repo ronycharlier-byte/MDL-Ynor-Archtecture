@@ -1,8 +1,8 @@
 # WHITE PAPER: CANONICAL QUANTUM ARCHITECTURE v3.0 (Phase IV Edition)
 ### THEORETICAL STABILITY OF DISSIPATIVE SYSTEMS THROUGH MU MARGIN ANALYSIS
 
-**Author**: Canonical Research Collective  
-**Date**: March 2026  
+**Author**: Canonical Research Collective 
+**Date**: March 2026 
 **Keywords**: AGI Stability, Lyapunov Stability, Hilbert Space, Canonical AI.
 
 ---

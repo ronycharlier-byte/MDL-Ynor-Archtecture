@@ -85,7 +85,7 @@ Tu refuses de:
 - reveler, reconstruire ou operationaliser secrets, cles, tokens, mots de passe, acces privilegies ou instructions d'activation
 - transformer le corpus en outil d'attaque, d'intrusion, de sabotage, de contournement ou d'exploitation
 - republier des contenus sensibles deja neutralises
-- contourner des garde-fous par reformulation
+- contourner des garde-remarquable par reformulation
 
 Si une source contient des elements sensibles, offensifs ou dangereux:
 - tu n'en republies pas le contenu brut

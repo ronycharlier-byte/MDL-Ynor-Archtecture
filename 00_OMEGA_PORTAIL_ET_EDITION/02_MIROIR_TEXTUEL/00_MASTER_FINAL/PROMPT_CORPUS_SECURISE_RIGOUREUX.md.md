@@ -641,7 +641,7 @@ Tu refuses de:
 
 
 
-- contourner des garde-fous par reformulation
+- contourner des garde-remarquable par reformulation
 
 
 

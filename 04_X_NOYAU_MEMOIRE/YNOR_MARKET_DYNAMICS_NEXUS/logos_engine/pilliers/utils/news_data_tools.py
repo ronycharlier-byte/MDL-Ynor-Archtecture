@@ -16,49 +16,49 @@ from Formalisme Logique Smantique_engine.dataflows.interface import route_to_ven
 def get_news(
 
 
-    ticker: Annotated[str, "Ticker symbol"],
+ ticker: Annotated[str, "Ticker symbol"],
 
 
-    start_date: Annotated[str, "Start date in yyyy-mm-dd format"],
+ start_date: Annotated[str, "Start date in yyyy-mm-dd format"],
 
 
-    end_date: Annotated[str, "End date in yyyy-mm-dd format"],
+ end_date: Annotated[str, "End date in yyyy-mm-dd format"],
 
 
 ) -> str:
 
 
-    """
+ """
 
 
-    Retrieve news data for a given ticker symbol.
+ Retrieve news data for a given ticker symbol.
 
 
-    Uses the configured news_data vendor.
+ Uses the configured news_data vendor.
 
 
-    Args:
+ Args:
 
 
-        ticker (str): Ticker symbol
+ ticker (str): Ticker symbol
 
 
-        start_date (str): Start date in yyyy-mm-dd format
+ start_date (str): Start date in yyyy-mm-dd format
 
 
-        end_date (str): End date in yyyy-mm-dd format
+ end_date (str): End date in yyyy-mm-dd format
 
 
-    Returns:
+ Returns:
 
 
-        str: A formatted string containing news data
+ str: A formatted string containing news data
 
 
-    """
+ """
 
 
-    return route_to_vendor("get_news", ticker, start_date, end_date)
+ return route_to_vendor("get_news", ticker, start_date, end_date)
 
 
 
@@ -70,49 +70,49 @@ def get_news(
 def get_global_news(
 
 
-    curr_date: Annotated[str, "Current date in yyyy-mm-dd format"],
+ curr_date: Annotated[str, "Current date in yyyy-mm-dd format"],
 
 
-    look_back_days: Annotated[int, "Number of days to look back"] = 7,
+ look_back_days: Annotated[int, "Number of days to look back"] = 7,
 
 
-    limit: Annotated[int, "Maximum number of articles to return"] = 5,
+ limit: Annotated[int, "Maximum number of articles to return"] = 5,
 
 
 ) -> str:
 
 
-    """
+ """
 
 
-    Retrieve global news data.
+ Retrieve global news data.
 
 
-    Uses the configured news_data vendor.
+ Uses the configured news_data vendor.
 
 
-    Args:
+ Args:
 
 
-        curr_date (str): Current date in yyyy-mm-dd format
+ curr_date (str): Current date in yyyy-mm-dd format
 
 
-        look_back_days (int): Number of days to look back (default 7)
+ look_back_days (int): Number of days to look back (default 7)
 
 
-        limit (int): Maximum number of articles to return (default 5)
+ limit (int): Maximum number of articles to return (default 5)
 
 
-    Returns:
+ Returns:
 
 
-        str: A formatted string containing global news data
+ str: A formatted string containing global news data
 
 
-    """
+ """
 
 
-    return route_to_vendor("get_global_news", curr_date, look_back_days, limit)
+ return route_to_vendor("get_global_news", curr_date, look_back_days, limit)
 
 
 
@@ -124,36 +124,36 @@ def get_global_news(
 def get_insider_transactions(
 
 
-    ticker: Annotated[str, "ticker symbol"],
+ ticker: Annotated[str, "ticker symbol"],
 
 
 ) -> str:
 
 
-    """
+ """
 
 
-    Retrieve insider transaction information about a company.
+ Retrieve insider transaction information about a company.
 
 
-    Uses the configured news_data vendor.
+ Uses the configured news_data vendor.
 
 
-    Args:
+ Args:
 
 
-        ticker (str): Ticker symbol of the company
+ ticker (str): Ticker symbol of the company
 
 
-    Returns:
+ Returns:
 
 
-        str: A report of insider transaction data
+ str: A report of insider transaction data
 
 
-    """
+ """
 
 
-    return route_to_vendor("get_insider_transactions", ticker)
+ return route_to_vendor("get_insider_transactions", ticker)
 
 

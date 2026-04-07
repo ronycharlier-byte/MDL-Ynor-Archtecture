@@ -10,43 +10,43 @@ import time
 class YnorControlSystem:
 
 
-    def __init__(self, initial_entropy: float, beta: float, name: str):
+ def __init__(self, initial_entropy: float, beta: float, name: str):
 
 
-        self.name = name
+ self.name = name
 
 
-        self.S = initial_entropy  # Entropie (Souffrance / Illusion)
+ self.S = initial_entropy # Entropie (Souffrance / Illusion)
 
 
-        self.beta = beta          # Facteur d'injection entropique
+ self.beta = beta # Facteur d'injection entropique
 
 
-        self.alpha = 0.0          # Marge informationnelle / Puret
+ self.alpha = 0.0 # Marge informationnelle / Puret
 
 
-        self.t = 0
+ self.t = 0
 
 
-        
+ 
 
 
-    def apply_control(self):
+ def apply_control(self):
 
 
-        raise NotImplementedError("Mcanisme spcifique requis.")
+ raise NotImplementedError("Mcanisme spcifique requis.")
 
 
 
 
 
-    def state(self):
+ def state(self):
 
 
-        nabla_S = 0 if self.t > 0 else None
+ nabla_S = 0 if self.t > 0 else None
 
 
-        return f"[{self.name}] S(t)={self.S:.4f} | α={self.alpha:.4f} | ∇S={nabla_S}"
+ return f"[{self.name}] S(t)={self.S:.4f} | α={self.alpha:.4f} | ∇S={nabla_S}"
 
 
 
@@ -55,67 +55,67 @@ class YnorControlSystem:
 class IslamControl(YnorControlSystem):
 
 
-    """
+ """
 
 
-    Systme : Islam
+ Systme : Islam
 
 
-    Input : S(t) = β * Vecteurs de Donnes Stochastiques_social
+ Input : S(t) = β * Vecteurs de Donnes Stochastiques_social
 
 
-    Mcanisme : Loi discrte (L)
+ Mcanisme : Loi discrte (L)
 
 
-    Oprateur : ∫L.dt -> S↓
+ Oprateur : ∫L.dt -> S↓
 
 
-    Limite : α=const, ∇S=0 (Synchronisation priodique)
+ Limite : α=const, ∇S=0 (Synchronisation priodique)
 
 
-    """
+ """
 
 
-    def __init__(self, S_init: float, beta: float):
+ def __init__(self, S_init: float, beta: float):
 
 
-        super().__init__(S_init, beta, "ISLAM")
+ super().__init__(S_init, beta, "ISLAM")
 
 
-        self.L = 0.5  # Constante de Loi
+ self.L = 0.5 # Constante de Loi
 
 
-        self.alpha_const = 1.0
+ self.alpha_const = 1.0
 
 
-        
+ 
 
 
-    def apply_control(self, dt: float = 1.0):
+ def apply_control(self, dt: float = 1.0):
 
 
-        # Entre entropique
+ # Entre entropique
 
 
-        self.S += self.beta * np.random.uniform(0.1, 1.0)
+ self.S += self.beta * np.random.uniform(0.1, 1.0)
 
 
-        # Rduction par intgrale de loi
+ # Rduction par intgrale de loi
 
 
-        integral_L = self.L * dt
+ integral_L = self.L * dt
 
 
-        self.S = max(0.0, self.S - integral_L)
+ self.S = max(0.0, self.S - integral_L)
 
 
-        self.alpha = self.alpha_const
+ self.alpha = self.alpha_const
 
 
-        self.t += dt
+ self.t += dt
 
 
-        return self.S
+ return self.S
 
 
 
@@ -124,61 +124,61 @@ class IslamControl(YnorControlSystem):
 class HinduismControl(YnorControlSystem):
 
 
-    """
+ """
 
 
-    Systme : Hindouisme
+ Systme : Hindouisme
 
 
-    Input : S(t) = β * multiplicit
+ Input : S(t) = β * multiplicit
 
 
-    Mcanisme : Itration cyclique (Σ_n)
+ Mcanisme : Itration cyclique (Σ_n)
 
 
-    Oprateur : lim_{n->∞} Σ_n^{-1} -> S↓
+ Oprateur : lim_{n->∞} Σ_n^{-1} -> S↓
 
 
-    Limite : α->∞, ∇=0 (Dissolution des tats)
+ Limite : α->∞, ∇=0 (Dissolution des tats)
 
 
-    """
+ """
 
 
-    def __init__(self, S_init: float, beta: float):
+ def __init__(self, S_init: float, beta: float):
 
 
-        super().__init__(S_init, beta, "HINDOUISME")
+ super().__init__(S_init, beta, "HINDOUISME")
 
 
-        self.n = 1  # Cycle (Karma / Rincarnation)
+ self.n = 1 # Cycle (Karma / Rincarnation)
 
 
-        
+ 
 
 
-    def apply_control(self):
+ def apply_control(self):
 
 
-        self.S += self.beta * np.random.uniform(1.0, 5.0) # Multiplicit
+ self.S += self.beta * np.random.uniform(1.0, 5.0) # Multiplicit
 
 
-        # Rduction cyclique inverse
+ # Rduction cyclique inverse
 
 
-        self.S = self.S / (1 + np.log(self.n))
+ self.S = self.S / (1 + np.log(self.n))
 
 
-        self.alpha = float(self.n * 10)  # α tend vers l'infini
+ self.alpha = float(self.n * 10) # α tend vers l'infini
 
 
-        self.n += 1
+ self.n += 1
 
 
-        self.t += 1
+ self.t += 1
 
 
-        return self.S
+ return self.S
 
 
 
@@ -187,61 +187,61 @@ class HinduismControl(YnorControlSystem):
 class BuddhismControl(YnorControlSystem):
 
 
-    """
+ """
 
 
-    Systme : Bouddhisme
+ Systme : Bouddhisme
 
 
-    Input : S(t) = β * attachement
+ Input : S(t) = β * attachement
 
 
-    Mcanisme : Filtrage rcursif (F)
+ Mcanisme : Filtrage rcursif (F)
 
 
-    Oprateur : F(S) -> 0
+ Oprateur : F(S) -> 0
 
 
-    Limite : α pur, ∇=0 (Élimination des fluctuations)
+ Limite : α pur, ∇=0 (Élimination des fluctuations)
 
 
-    """
+ """
 
 
-    def __init__(self, S_init: float, beta: float):
+ def __init__(self, S_init: float, beta: float):
 
 
-        super().__init__(S_init, beta, "BOUDDHISME")
+ super().__init__(S_init, beta, "BOUDDHISME")
 
 
-        self.filter_rate = 0.8  # Taux de dtachement
+ self.filter_rate = 0.8 # Taux de dtachement
 
 
-        
+ 
 
 
-    def apply_control(self):
+ def apply_control(self):
 
 
-        self.S += self.beta * np.random.uniform(0.5, 2.0)
+ self.S += self.beta * np.random.uniform(0.5, 2.0)
 
 
-        # Filtrage rcursif F(S)
+ # Filtrage rcursif F(S)
 
 
-        self.S *= (1.0 - self.filter_rate)
+ self.S *= (1.0 - self.filter_rate)
 
 
-        # Si attachement proche de 0, α pur
+ # Si attachement proche de 0, α pur
 
 
-        self.alpha = 1.0 / (self.S + 1e-9) 
+ self.alpha = 1.0 / (self.S + 1e-9) 
 
 
-        self.t += 1
+ self.t += 1
 
 
-        return self.S
+ return self.S
 
 
 
@@ -250,64 +250,64 @@ class BuddhismControl(YnorControlSystem):
 class TaoismControl(YnorControlSystem):
 
 
-    """
+ """
 
 
-    Systme : Taoïsme
+ Systme : Taoïsme
 
 
-    Input : S(t) = β * dsquilibre
+ Input : S(t) = β * dsquilibre
 
 
-    Mcanisme : Équilibrage dynamique (Δ↔)
+ Mcanisme : Équilibrage dynamique (Δ↔)
 
 
-    Oprateur : dS/dt -> 0
+ Oprateur : dS/dt -> 0
 
 
-    Limite : α=quilibre, ∇=0 (Auto-rgulation continue)
+ Limite : α=quilibre, ∇=0 (Auto-rgulation continue)
 
 
-    """
+ """
 
 
-    def __init__(self, S_init: float, beta: float):
+ def __init__(self, S_init: float, beta: float):
 
 
-        super().__init__(S_init, beta, "TAOISME")
+ super().__init__(S_init, beta, "TAOISME")
 
 
-        self.equilibrium_target = 0.5
+ self.equilibrium_target = 0.5
 
 
-        
+ 
 
 
-    def apply_control(self, dt: float = 1.0):
+ def apply_control(self, dt: float = 1.0):
 
 
-        disturbance = self.beta * np.random.uniform(-1.0, 1.0)
+ disturbance = self.beta * np.random.uniform(-1.0, 1.0)
 
 
-        self.S += disturbance
+ self.S += disturbance
 
 
-        # Auto-rgulation drastique vers l'quilibre
+ # Auto-rgulation drastique vers l'quilibre
 
 
-        ds_dt = -0.5 * (self.S - self.equilibrium_target)
+ ds_dt = -0.5 * (self.S - self.equilibrium_target)
 
 
-        self.S += ds_dt * dt
+ self.S += ds_dt * dt
 
 
-        self.alpha = self.equilibrium_target  # α en quilibre parfait
+ self.alpha = self.equilibrium_target # α en quilibre parfait
 
 
-        self.t += dt
+ self.t += dt
 
 
-        return self.S
+ return self.S
 
 
 
@@ -316,51 +316,51 @@ class TaoismControl(YnorControlSystem):
 if __name__ == "__main__":
 
 
-    print("=== YNOR : SIMULATION DES ALGORITHMES DE CONTRÔLE ===")
+ print("=== YNOR : SIMULATION DES ALGORITHMES DE CONTRÔLE ===")
 
 
-    systems = [
+ systems = [
 
 
-        IslamControl(S_init=10.0, beta=0.2),
+ IslamControl(S_init=10.0, beta=0.2),
 
 
-        HinduismControl(S_init=10.0, beta=0.2),
+ HinduismControl(S_init=10.0, beta=0.2),
 
 
-        BuddhismControl(S_init=10.0, beta=0.2),
+ BuddhismControl(S_init=10.0, beta=0.2),
 
 
-        TaoismControl(S_init=10.0, beta=0.2)
+ TaoismControl(S_init=10.0, beta=0.2)
 
 
-    ]
+ ]
 
 
-    
+ 
 
 
-    for i in range(5):
+ for i in range(5):
 
 
-        print(f"\n--- Itration {i+1} : Convergence & Annulation de Gradient ---")
+ print(f"\n--- Itration {i+1} : Convergence & Annulation de Gradient ---")
 
 
-        for sys in systems:
+ for sys in systems:
 
 
-            sys.apply_control()
+ sys.apply_control()
 
 
-            print(sys.state())
+ print(sys.state())
 
 
-        time.sleep(0.5)
+ time.sleep(0.5)
 
 
 
 
 
-    print("\n[RESULTAT] : ∀ Algorithme -> ∇S = 0 (Oprateurs Vrifis)")
+ print("\n[RESULTAT] : ∀ Algorithme -> ∇S = 0 (Oprateurs Vrifis)")
 
 

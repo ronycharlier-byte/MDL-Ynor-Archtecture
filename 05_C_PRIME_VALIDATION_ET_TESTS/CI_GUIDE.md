@@ -158,7 +158,7 @@ Expliquer comment la validation continue du corpus est structuree dans les workf
 
 
 
-- `ynor_ci.yml` effectue un grep de secrets de type `SK-`, ce qui reste un garde-fou simple mais incomplet
+- `ynor_ci.yml` effectue un grep de secrets de type `SK-`, ce qui reste un garde-remarquable simple mais incomplet
 
 
 

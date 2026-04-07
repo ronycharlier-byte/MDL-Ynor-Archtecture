@@ -15,8 +15,8 @@ Le moteur de trading **Bitget Ynor** est conçu comme une extension d'exécution
 - **Gestion des Échanges** : Interface CCXT unifiée pour Bitget.
 - **Télémétrie OHLCV** : Extraction et normalisation des flux temporels.
 - **Logique de Signal** :
-    - **Breakout** : Détection des franchissements de niveaux critiques.
-    - **Sweep** : Identification des chasses aux liquidités.
+ - **Breakout** : Détection des franchissements de niveaux critiques.
+ - **Sweep** : Identification des chasses aux liquidités.
 - **Protocole de Sortie** : Stop-loss suiveur (Trailing Stop) dynamique.
 
 ### 2. Automate d'Exécution (`bitget_market_bot.py`)
@@ -48,7 +48,7 @@ Le moteur de trading **Bitget Ynor** est conçu comme une extension d'exécution
 
 ---
 
-## 🚀 Guide de Surveillance
+## Guide de Surveillance
 Pour monitorer l'automate en production :
 1. Se connecter au VPS.
 2. Lancer le dashboard : `streamlit run 03_C_MOTEURS_ET_DEPLOIEMENT/bitget_dashboard.py`.

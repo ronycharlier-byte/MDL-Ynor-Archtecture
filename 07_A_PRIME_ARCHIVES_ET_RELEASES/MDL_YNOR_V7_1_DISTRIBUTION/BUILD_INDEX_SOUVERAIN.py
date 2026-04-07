@@ -28,22 +28,22 @@ INDEX_FILE = "corpus_index.json"
 def chunk_text(text, chunk_size=500, overlap=50):
 
 
-    words = text.split()
+ words = text.split()
 
 
-    chunks = []
+ chunks = []
 
 
-    for i in range(0, len(words), chunk_size - overlap):
+ for i in range(0, len(words), chunk_size - overlap):
 
 
-        chunk = " ".join(words[i:i + chunk_size])
+ chunk = " ".join(words[i:i + chunk_size])
 
 
-        chunks.append(chunk)
+ chunks.append(chunk)
 
 
-    return chunks
+ return chunks
 
 
 
@@ -52,19 +52,19 @@ def chunk_text(text, chunk_size=500, overlap=50):
 def get_embedding(client, text):
 
 
-    response = client.embeddings.create(
+ response = client.embeddings.create(
 
 
-        input=[text],
+ input=[text],
 
 
-        model="text-embedding-3-small"
+ model="text-embedding-3-small"
 
 
-    )
+ )
 
 
-    return response.data[0].embedding
+ return response.data[0].embedding
 
 
 
@@ -73,178 +73,178 @@ def get_embedding(client, text):
 def build_index():
 
 
-    print("========================================")
+ print("========================================")
 
 
-    print("MOTEUR Autonome et Isol: Indexation Vectorielle")
+ print("MOTEUR Autonome et Isol: Indexation Vectorielle")
 
 
-    print("========================================")
+ print("========================================")
 
 
-    
+ 
 
 
-    # 1. Scanner tous les fichiers markdown (Corpus global + Canonical Distribution)
+ # 1. Scanner tous les fichiers markdown (Corpus global + Canonical Distribution)
 
 
-    md_files = glob.glob(os.path.join(CORPUS_ROOT, "**", "*.md"), recursive=True)
+ md_files = glob.glob(os.path.join(CORPUS_ROOT, "**", "*.md"), recursive=True)
 
 
-    
+ 
 
 
-    print(f"[{len(md_files)}] fichiers Markdown trouvs indexer.")
+ print(f"[{len(md_files)}] fichiers Markdown trouvs indexer.")
 
 
-    
+ 
 
 
-    if len(md_files) == 0:
+ if len(md_files) == 0:
 
 
-        print("Erreur: Aucun fichier trouvdans", CORPUS_ROOT)
+ print("Erreur: Aucun fichier trouvdans", CORPUS_ROOT)
 
 
-        return
+ return
 
 
 
 
 
-    client = OpenAI() # S'appuie sur os.environ["OPENAI_API_KEY"]
+ client = OpenAI() # S'appuie sur os.environ["OPENAI_API_KEY"]
 
 
-    index_data = []
+ index_data = []
 
 
 
 
 
-    for file_path in md_files:
+ for file_path in md_files:
 
 
-        try:
+ try:
 
 
-            with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+ with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
 
 
-                content = f.read()
+ content = f.read()
 
 
-            
+ 
 
 
-            # 2. Chunking (dcoupage intelligent)
+ # 2. Chunking (dcoupage intelligent)
 
 
-            chunks = chunk_text(content, chunk_size=400, overlap=50)
+ chunks = chunk_text(content, chunk_size=400, overlap=50)
 
 
-            
+ 
 
 
-            for i, chunk in enumerate(chunks):
+ for i, chunk in enumerate(chunks):
 
 
-                if len(chunk.split()) < 20: continue # Ignorer les blocs trop petits
+ if len(chunk.split()) < 20: continue # Ignorer les blocs trop petits
 
 
-                
+ 
 
 
-                # 3. Rcupration de l'embedding (Vectorisation smantique)
+ # 3. Rcupration de l'embedding (Vectorisation smantique)
 
 
-                print(f"Vectorisation : {os.path.basename(file_path)} (Chunk {i+1}/{len(chunks)})")
+ print(f"Vectorisation : {os.path.basename(file_path)} (Chunk {i+1}/{len(chunks)})")
 
 
-                emb = get_embedding(client, chunk)
+ emb = get_embedding(client, chunk)
 
 
-                
+ 
 
 
-                index_data.append({
+ index_data.append({
 
 
-                    "file": os.path.basename(file_path),
+ "file": os.path.basename(file_path),
 
 
-                    "chunk_id": i,
+ "chunk_id": i,
 
 
-                    "text": chunk,
+ "text": chunk,
 
 
-                    "embedding": emb
+ "embedding": emb
 
 
-                })
+ })
 
 
-        except Exception as e:
+ except Exception as e:
 
 
-            print(f"X Erreur sur {file_path}: {e}")
+ print(f"X Erreur sur {file_path}: {e}")
 
 
-            
+ 
 
 
-    # 4. Sauvegarde des poids dans des fichiers optimiss pour la mmoire
+ # 4. Sauvegarde des poids dans des fichiers optimiss pour la mmoire
 
 
-    META_PATH = "index_meta.json"
+ META_PATH = "index_meta.json"
 
 
-    VECT_PATH = "index_vectors.npy"
+ VECT_PATH = "index_vectors.npy"
 
 
-    
+ 
 
 
-    print(f"Sauvegarde des mtadonnes dans {META_PATH}...")
+ print(f"Sauvegarde des mtadonnes dans {META_PATH}...")
 
 
-    meta_data = [{"text": item["text"], "file": item["file"]} for item in index_data]
+ meta_data = [{"text": item["text"], "file": item["file"]} for item in index_data]
 
 
-    with open(META_PATH, "w", encoding="utf-8") as f:
+ with open(META_PATH, "w", encoding="utf-8") as f:
 
 
-        json.dump(meta_data, f, ensure_ascii=False)
+ json.dump(meta_data, f, ensure_ascii=False)
 
 
-        
+ 
 
 
-    print(f"Sauvegarde des vecteurs binaires dans {VECT_PATH}...")
+ print(f"Sauvegarde des vecteurs binaires dans {VECT_PATH}...")
 
 
-    import numpy as np
+ import numpy as np
 
 
-    vectors = np.array([item["embedding"] for item in index_data], dtype=np.float32)
+ vectors = np.array([item["embedding"] for item in index_data], dtype=np.float32)
 
 
-    np.save(VECT_PATH, vectors)
+ np.save(VECT_PATH, vectors)
 
 
-        
+ 
 
 
-    print("========================================")
+ print("========================================")
 
 
-    print(f"SUCCÈS : Index Vectoriel Optimisgnr.")
+ print(f"SUCCÈS : Index Vectoriel Optimisgnr.")
 
 
-    print(f"Total des vecteurs : {len(index_data)}")
+ print(f"Total des vecteurs : {len(index_data)}")
 
 
-    print("========================================")
+ print("========================================")
 
 
 
@@ -253,15 +253,15 @@ def build_index():
 if __name__ == "__main__":
 
 
-    if not os.getenv("OPENAI_API_KEY"):
+ if not os.getenv("OPENAI_API_KEY"):
 
 
-        print("⚠️ ERREUR CRITIQUE : OPENAI_API_KEY absente des variables d'environnement.")
+ print("⚠️ ERREUR CRITIQUE : OPENAI_API_KEY absente des variables d'environnement.")
 
 
-    else:
+ else:
 
 
-        build_index()
+ build_index()
 
 

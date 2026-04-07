@@ -34,262 +34,262 @@ import re
 class FinancialSituationMemory:
 
 
-    """Memory system for storing and retrieving financial situations using BM25."""
+ """Memory system for storing and retrieving financial situations using BM25."""
 
 
 
 
 
-    def __init__(self, name: str, config: dict = None):
+ def __init__(self, name: str, config: dict = None):
 
 
-        """Initialize the memory system.
+ """Initialize the memory system.
 
 
 
 
 
-        Args:
+ Args:
 
 
-            name: Name identifier for this memory instance
+ name: Name identifier for this memory instance
 
 
-            config: Configuration dict (kept for API compatibility, not used for BM25)
+ config: Configuration dict (kept for API compatibility, not used for BM25)
 
 
-        """
+ """
 
 
-        self.name = name
+ self.name = name
 
 
-        self.documents: List[str] = []
+ self.documents: List[str] = []
 
 
-        self.recommendations: List[str] = []
+ self.recommendations: List[str] = []
 
 
-        self.bm25 = None
+ self.bm25 = None
 
 
 
 
 
-    def _tokenize(self, text: str) -> List[str]:
+ def _tokenize(self, text: str) -> List[str]:
 
 
-        """Tokenize text for BM25 indexing.
+ """Tokenize text for BM25 indexing.
 
 
 
 
 
-        Simple whitespace + punctuation tokenization with lowercasing.
+ Simple whitespace + punctuation tokenization with lowercasing.
 
 
-        """
+ """
 
 
-        # Lowercase and split on non-alphanumeric characters
+ # Lowercase and split on non-alphanumeric characters
 
 
-        tokens = re.findall(r'\b\w+\b', text.lower())
+ tokens = re.findall(r'\b\w+\b', text.lower())
 
 
-        return tokens
+ return tokens
 
 
 
 
 
-    def _rebuild_index(self):
+ def _rebuild_index(self):
 
 
-        """Rebuild the BM25 index after adding documents."""
+ """Rebuild the BM25 index after adding documents."""
 
 
-        if self.documents:
+ if self.documents:
 
 
-            tokenized_docs = [self._tokenize(doc) for doc in self.documents]
+ tokenized_docs = [self._tokenize(doc) for doc in self.documents]
 
 
-            self.bm25 = BM25Okapi(tokenized_docs)
+ self.bm25 = BM25Okapi(tokenized_docs)
 
 
-        else:
+ else:
 
 
-            self.bm25 = None
+ self.bm25 = None
 
 
 
 
 
-    def add_situations(self, situations_and_advice: List[Tuple[str, str]]):
+ def add_situations(self, situations_and_advice: List[Tuple[str, str]]):
 
 
-        """Add financial situations and their corresponding advice.
+ """Add financial situations and their corresponding advice.
 
 
 
 
 
-        Args:
+ Args:
 
 
-            situations_and_advice: List of tuples (situation, recommendation)
+ situations_and_advice: List of tuples (situation, recommendation)
 
 
-        """
+ """
 
 
-        for situation, recommendation in situations_and_advice:
+ for situation, recommendation in situations_and_advice:
 
 
-            self.documents.append(situation)
+ self.documents.append(situation)
 
 
-            self.recommendations.append(recommendation)
+ self.recommendations.append(recommendation)
 
 
 
 
 
-        # Rebuild BM25 index with new documents
+ # Rebuild BM25 index with new documents
 
 
-        self._rebuild_index()
+ self._rebuild_index()
 
 
 
 
 
-    def get_memories(self, current_situation: str, n_matches: int = 1) -> List[dict]:
+ def get_memories(self, current_situation: str, n_matches: int = 1) -> List[dict]:
 
 
-        """Find matching recommendations using BM25 similarity.
+ """Find matching recommendations using BM25 similarity.
 
 
 
 
 
-        Args:
+ Args:
 
 
-            current_situation: The current financial situation to match against
+ current_situation: The current financial situation to match against
 
 
-            n_matches: Number of top matches to return
+ n_matches: Number of top matches to return
 
 
 
 
 
-        Returns:
+ Returns:
 
 
-            List of dicts with matched_situation, recommendation, and similarity_score
+ List of dicts with matched_situation, recommendation, and similarity_score
 
 
-        """
+ """
 
 
-        if not self.documents or self.bm25 is None:
+ if not self.documents or self.bm25 is None:
 
 
-            return []
+ return []
 
 
 
 
 
-        # Tokenize query
+ # Tokenize query
 
 
-        query_tokens = self._tokenize(current_situation)
+ query_tokens = self._tokenize(current_situation)
 
 
 
 
 
-        # Get BM25 scores for all documents
+ # Get BM25 scores for all documents
 
 
-        scores = self.bm25.get_scores(query_tokens)
+ scores = self.bm25.get_scores(query_tokens)
 
 
 
 
 
-        # Get top-n indices sorted by score (descending)
+ # Get top-n indices sorted by score (descending)
 
 
-        top_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:n_matches]
+ top_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:n_matches]
 
 
 
 
 
-        # Build results
+ # Build results
 
 
-        results = []
+ results = []
 
 
-        max_score = max(scores) if max(scores) > 0 else 1  # Normalize scores
+ max_score = max(scores) if max(scores) > 0 else 1 # Normalize scores
 
 
 
 
 
-        for idx in top_indices:
+ for idx in top_indices:
 
 
-            # Normalize score to 0-1 range for consistency
+ # Normalize score to 0-1 range for consistency
 
 
-            normalized_score = scores[idx] / max_score if max_score > 0 else 0
+ normalized_score = scores[idx] / max_score if max_score > 0 else 0
 
 
-            results.append({
+ results.append({
 
 
-                "matched_situation": self.documents[idx],
+ "matched_situation": self.documents[idx],
 
 
-                "recommendation": self.recommendations[idx],
+ "recommendation": self.recommendations[idx],
 
 
-                "similarity_score": normalized_score,
+ "similarity_score": normalized_score,
 
 
-            })
+ })
 
 
 
 
 
-        return results
+ return results
 
 
 
 
 
-    def clear(self):
+ def clear(self):
 
 
-        """Clear all stored memories."""
+ """Clear all stored memories."""
 
 
-        self.documents = []
+ self.documents = []
 
 
-        self.recommendations = []
+ self.recommendations = []
 
 
-        self.bm25 = None
+ self.bm25 = None
 
 
 
@@ -301,132 +301,132 @@ class FinancialSituationMemory:
 if __name__ == "__main__":
 
 
-    # Example usage
+ # Example usage
 
 
-    matcher = FinancialSituationMemory("test_memory")
+ matcher = FinancialSituationMemory("test_memory")
 
 
 
 
 
-    # Example data
+ # Example data
 
 
-    example_data = [
+ example_data = [
 
 
-        (
+ (
 
 
-            "High inflation rate with rising interest rates and declining consumer spending",
+ "High inflation rate with rising interest rates and declining consumer spending",
 
 
-            "Consider defensive sectors like consumer staples and utilities. Review fixed-income portfolio duration.",
+ "Consider defensive sectors like consumer staples and utilities. Review fixed-income portfolio duration.",
 
 
-        ),
+ ),
 
 
-        (
+ (
 
 
-            "Tech sector showing high volatility with increasing institutional selling pressure",
+ "Tech sector showing high volatility with increasing institutional selling pressure",
 
 
-            "Reduce exposure to high-growth tech stocks. Look for value opportunities in established tech companies with strong cash flows.",
+ "Reduce exposure to high-growth tech stocks. Look for value opportunities in established tech companies with strong cash flows.",
 
 
-        ),
+ ),
 
 
-        (
+ (
 
 
-            "Strong dollar affecting emerging markets with increasing forex volatility",
+ "Strong dollar affecting emerging markets with increasing forex volatility",
 
 
-            "Hedge currency exposure in international positions. Consider reducing allocation to emerging market debt.",
+ "Hedge currency exposure in international positions. Consider reducing allocation to emerging market debt.",
 
 
-        ),
+ ),
 
 
-        (
+ (
 
 
-            "Market showing signs of sector rotation with rising yields",
+ "Market showing signs of sector rotation with rising yields",
 
 
-            "Rebalance portfolio to maintain target allocations. Consider increasing exposure to sectors benefiting from higher rates.",
+ "Rebalance portfolio to maintain target allocations. Consider increasing exposure to sectors benefiting from higher rates.",
 
 
-        ),
+ ),
 
 
-    ]
+ ]
 
 
 
 
 
-    # Add the example situations and recommendations
+ # Add the example situations and recommendations
 
 
-    matcher.add_situations(example_data)
+ matcher.add_situations(example_data)
 
 
 
 
 
-    # Example query
+ # Example query
 
 
-    current_situation = """
+ current_situation = """
 
 
-    Market showing increased volatility in tech sector, with institutional investors
+ Market showing increased volatility in tech sector, with institutional investors
 
 
-    reducing positions and rising interest rates affecting growth stock valuations
+ reducing positions and rising interest rates affecting growth stock valuations
 
 
-    """
+ """
 
 
 
 
 
-    try:
+ try:
 
 
-        recommendations = matcher.get_memories(current_situation, n_matches=2)
+ recommendations = matcher.get_memories(current_situation, n_matches=2)
 
 
 
 
 
-        for i, rec in enumerate(recommendations, 1):
+ for i, rec in enumerate(recommendations, 1):
 
 
-            print(f"\nMatch {i}:")
+ print(f"\nMatch {i}:")
 
 
-            print(f"Similarity Score: {rec['similarity_score']:.2f}")
+ print(f"Similarity Score: {rec['similarity_score']:.2f}")
 
 
-            print(f"Matched Situation: {rec['matched_situation']}")
+ print(f"Matched Situation: {rec['matched_situation']}")
 
 
-            print(f"Recommendation: {rec['recommendation']}")
+ print(f"Recommendation: {rec['recommendation']}")
 
 
 
 
 
-    except Exception as e:
+ except Exception as e:
 
 
-        print(f"Error during recommendation: {str(e)}")
+ print(f"Error during recommendation: {str(e)}")
 
 

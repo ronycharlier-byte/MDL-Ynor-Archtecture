@@ -20,27 +20,27 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 [
-  {
-    "timestamp": "2026-03-20T14:25:37.451282",
-    "node": "ENERGIE",
-    "mu_audit": 1.3596133962102823,
-    "action_taken": "STABLE_IDLE",
-    "success_proven": true
-  },
-  {
-    "timestamp": "2026-03-20T14:25:39.619358",
-    "node": "INFOS",
-    "mu_audit": -1.9131520778313527,
-    "action_taken": "AGI_INNOVATION: La combinaison du sinus de la norme du vecteur d'état et d'une exponentielle décroissante basée sur la somme des valeurs absolues des éléments de 'S' permet d'introduire une modulation oscillatoire avec un facteur d'amortissement. Cela crée une dynamique complexe et variée, potentiellement utile pour modéliser un système en rémission ou alternant entre états de stabilité et d'instabilité.",
-    "success_proven": false
-  },
-  {
-    "timestamp": "2026-03-20T14:25:40.892508",
-    "node": "ENERGIE",
-    "mu_audit": -2.504033507567745,
-    "action_taken": "AGI_INNOVATION: Utilisation de la tangente hyperbolique pour moduler l'influence du vecteur d'état, en préservant la direction grâce à la multiplication par S.",
-    "success_proven": false
-  }
+ {
+ "timestamp": "2026-03-20T14:25:37.451282",
+ "node": "ENERGIE",
+ "mu_audit": 1.3596133962102823,
+ "action_taken": "STABLE_IDLE",
+ "success_proven": true
+ },
+ {
+ "timestamp": "2026-03-20T14:25:39.619358",
+ "node": "INFOS",
+ "mu_audit": -1.9131520778313527,
+ "action_taken": "AGI_INNOVATION: La combinaison du sinus de la norme du vecteur d'état et d'une exponentielle décroissante basée sur la somme des valeurs absolues des éléments de 'S' permet d'introduire une modulation oscillatoire avec un facteur d'amortissement. Cela crée une dynamique complexe et variée, potentiellement utile pour modéliser un système en rémission ou alternant entre états de stabilité et d'instabilité.",
+ "success_proven": false
+ },
+ {
+ "timestamp": "2026-03-20T14:25:40.892508",
+ "node": "ENERGIE",
+ "mu_audit": -2.504033507567745,
+ "action_taken": "AGI_INNOVATION: Utilisation de la tangente hyperbolique pour moduler l'influence du vecteur d'état, en préservant la direction grâce à la multiplication par S.",
+ "success_proven": false
+ }
 ]
 ```
 

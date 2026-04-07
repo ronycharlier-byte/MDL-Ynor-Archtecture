@@ -50,11 +50,11 @@ FrontierMath est structuren plusieurs niveaux de difficult(“tiers”), allant 
 
 
 
-    - **Tier 1 :** Équivalent aux problmes d'olympiades nationales/internationales.
+ - **Tier 1 :** Équivalent aux problmes d'olympiades nationales/internationales.
 
 
 
-    - **Tiers 2 & 3 :** Expertise de niveau master/doctorat (rsolution par un expert en plusieurs heures/jours).
+ - **Tiers 2 & 3 :** Expertise de niveau master/doctorat (rsolution par un expert en plusieurs heures/jours).
 
 
 

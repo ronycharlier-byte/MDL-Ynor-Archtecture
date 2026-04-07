@@ -1,5 +1,5 @@
 ---
-### 💎 CANONICAL RELEASE V11.14.0
+### CANONICAL RELEASE V11.14.0
 - **AUTHOR**: Rony Charlier (ORCID: 0009-0003-8250-0526)
 - **DOI**: [10.5281/zenodo.19437934](https://doi.org/10.5281/zenodo.19437934)
 - **STATUS**: INTERNAL VALIDATION ACHIEVED
@@ -21,11 +21,11 @@ Ce document atteste l'état de consolidation de l'architecture du corpus Ynor po
 
 ## Arbre de Traçabilité
 1. **Unification des axiomes** : [YNOR_UNIFIED_AXIOMS.md](./YNOR_UNIFIED_AXIOMS.md)
-   - *Rôle* : Référence pour les modèles mathématiques fondateurs.
+ - *Rôle* : Référence pour les modèles mathématiques fondateurs.
 2. **Unification des protocoles** : [YNOR_UNIFIED_PROTOCOLS.md](./YNOR_UNIFIED_PROTOCOLS.md)
-   - *Rôle* : Référence pour l'architecture logicielle opérationnelle.
+ - *Rôle* : Référence pour l'architecture logicielle opérationnelle.
 3. **Journal de reproductibilité** : [JOURNAL_DE_REPRODUCTIBILITE.md](../05_C_PRIME_VALIDATION_ET_TESTS/JOURNAL_DE_REPRODUCTIBILITE.md)
-   - *Rôle* : Registre des signatures et logs d'exécution du moteur.
+ - *Rôle* : Registre des signatures et logs d'exécution du moteur.
 
 ## Entité de Vérification Locale
 - **Opérateur** : Antigravity (Advanced Agentic AI).

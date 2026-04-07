@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 1. LE POST VIRAL (LinkedIn / Twitter)
+## 1. LE POST VIRAL (LinkedIn / Twitter)
 *Copiez-collez ce texte pour maximiser la traction immédiate.*
 
 **LLMs don’t know when to stop.** 🛑

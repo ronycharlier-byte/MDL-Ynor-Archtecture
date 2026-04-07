@@ -15,8 +15,8 @@ $$\mu = \alpha - \beta - \kappa$$
 
 ## 3. ARCHITECTURE SYSTÈME : LE MODÈLE DISSIPATIF
 Le noyau MDL Ynor opère via une dualité fonctionnelle :
-1.  **Système 1 (Fast Loop)** : Génération rapide de tokens, haute amplification (beta élevé).
-2.  **Système 2 (Slow/Audit Loop)** : Régulation par l'audit mu, garantissant que la dissipation $(\alpha)$ reste supérieure aux coûts.
+1. **Système 1 (Fast Loop)** : Génération rapide de tokens, haute amplification (beta élevé).
+2. **Système 2 (Slow/Audit Loop)** : Régulation par l'audit mu, garantissant que la dissipation $(\alpha)$ reste supérieure aux coûts.
 
 ### Algorithme de Routage
 Si $\mu(t) < 0$ : Déclenchement immédiat de la **Mutation (r)**, forçant la réduction de beta ou l'archivage de la mémoire morte (kappa extraction).

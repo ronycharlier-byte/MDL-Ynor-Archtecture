@@ -10,7 +10,7 @@ Tout système complexe, des étoiles aux cellules, meurt s'il ne dissipe pas son
 - **Principe de Production d'Entropie Minimale** : Le système MDL Ynor cherche un état stationnaire où il survit avec le moins d'effort possible.
 - **Analogie de l'Étoile** : L'Étoile est stable tant que sa pression interne (Amplification beta) est compensée par sa gravité (Dissipation alpha). Si beta gagne, elle explose (Supernova) ; si alpha gagne, elle s'effondre (Trou noir).
 
-## 💰 2. ÉCONOMIE ET FINANCE (L'INSTANT DE MINSKY)
+## 2. ÉCONOMIE ET FINANCE (L'INSTANT DE MINSKY)
 Hyman Minsky a prouvé que "la stabilité est déstabilisante".
 - **Calcul MDL de la Crise** : En économie, lorsque la spéculation (beta) augmente trop sans régulation (alpha), mu devient négatif. C'est le "Minsky Moment".
 - **Mutation MDL** : En cas de krach, la mutation du système (Audit r) correspond à une restructuration massive de la dette pour restaurer la confiance.

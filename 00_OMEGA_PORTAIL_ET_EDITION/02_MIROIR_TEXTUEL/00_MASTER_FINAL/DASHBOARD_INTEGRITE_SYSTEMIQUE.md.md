@@ -24,8 +24,8 @@ Ce tableau de bord presente les indicateurs de convergence materielle et de vali
 
 ```mermaid
 pie title Etat du Corpus (1408 fichiers)
-    "Fichiers Canoniques Certifies (.md, .json)" : 541
-    "Archives & Releases (Hors-lecture)" : 867
+ "Fichiers Canoniques Certifies (.md, .json)" : 541
+ "Archives & Releases (Hors-lecture)" : 867
 ```
 
 ### 3. Purete de l'Information

@@ -28,70 +28,70 @@ PROMPT_PATH = r"c:\Users\ronyc\Desktop\FRACTAL_Symtrie Bilatrale_UNIVERSEL\MDL_Y
 def generate_payload(user_query, model="gpt-4o"):
 
 
-    """
+ """
 
 
-    Gnre un payload JSON pour l'API OpenAI avec le Prompt Systme Inviolable.
+ Gnre un payload JSON pour l'API OpenAI avec le Prompt Systme Inviolable.
 
 
-    """
+ """
 
 
-    if not os.path.exists(PROMPT_PATH):
+ if not os.path.exists(PROMPT_PATH):
 
 
-        return f"ERREUR : Prompt Systme introuvable {PROMPT_PATH}"
+ return f"ERREUR : Prompt Systme introuvable {PROMPT_PATH}"
 
 
-    
+ 
 
 
-    with open(PROMPT_PATH, "r", encoding="utf-8") as f:
+ with open(PROMPT_PATH, "r", encoding="utf-8") as f:
 
 
-        system_content = f.read()
+ system_content = f.read()
 
 
 
 
 
-    payload = {
+ payload = {
 
 
-        "model": model,
+ "model": model,
 
 
-        "messages": [
+ "messages": [
 
 
-            {"role": "system", "content": system_content},
+ {"role": "system", "content": system_content},
 
 
-            {"role": "user", "content": user_query}
+ {"role": "user", "content": user_query}
 
 
-        ],
+ ],
 
 
-        "temperature": 0.0,
+ "temperature": 0.0,
 
 
-        "top_p": 1.0,
+ "top_p": 1.0,
 
 
-        "frequency_penalty": 0,
+ "frequency_penalty": 0,
 
 
-        "presence_penalty": 0
+ "presence_penalty": 0
 
 
-    }
+ }
 
 
-    
+ 
 
 
-    return payload
+ return payload
 
 
 
@@ -100,21 +100,21 @@ def generate_payload(user_query, model="gpt-4o"):
 if __name__ == "__main__":
 
 
-    test_query = "Rsoudre formellement le problme de Navier-Stokes en utilisant la mu-stabilitdu core Ynor."
+ test_query = "Rsoudre formellement le problme de Navier-Stokes en utilisant la mu-stabilitdu core Ynor."
 
 
-    payload = generate_payload(test_query)
+ payload = generate_payload(test_query)
 
 
-    
+ 
 
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] PAYLOAD GÉNÉRÉ POUR OPENAI API (V10.8) :")
+ print(f"[{datetime.now().strftime('%H:%M:%S')}] PAYLOAD GÉNÉRÉ POUR OPENAI API (V10.8) :")
 
 
-    import json
+ import json
 
 
-    print(json.dumps(payload, indent=2, ensure_ascii=False))
+ print(json.dumps(payload, indent=2, ensure_ascii=False))
 
 

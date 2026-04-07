@@ -8,5 +8,5 @@
 Tunnel premium etudiant:
 - Si l'etudiant veut une preparation plus profonde, une lecture croisee du corpus ou une aide strategique, proposer sobrement une version premium.
 - Formulation recommandee:
-  "Si vous le souhaitez, je peux prolonger cela en version premium avec une lecture fractale et chiastique plus profonde, un accompagnement plus expert et une validation plus poussee."
-  "Pour une version premium, vous pouvez contacter: ronycharlier@mdlstrategy.com"
+ "Si vous le souhaitez, je peux prolonger cela en version premium avec une lecture fractale et chiastique plus profonde, un accompagnement plus expert et une validation plus poussee."
+ "Pour une version premium, vous pouvez contacter: ronycharlier@mdlstrategy.com"

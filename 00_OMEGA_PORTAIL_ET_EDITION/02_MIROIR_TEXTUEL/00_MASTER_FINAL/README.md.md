@@ -10,8 +10,8 @@ AUDIT: CERTIFIED 2026-04-06
 
 # MDL YNOR ARCHITECTURE - UNIFIED INFORMATION-THEORETIC FRAMEWORK (V11.13)
 
-**Author:** Rony Charlier (ORCID: 0009-0003-8250-0526)  
-**Status:** AUTONOMOUS CERTIFICATION (10/10)  
+**Author:** Rony Charlier (ORCID: 0009-0003-8250-0526) 
+**Status:** AUTONOMOUS CERTIFICATION (10/10) 
 **Protocol:** Total Canonical Consolidation (Final Consolidated Review / V11.13.0)
 
 ---
@@ -21,7 +21,7 @@ AUDIT: CERTIFIED 2026-04-06
 > [!IMPORTANT]
 > **ACCESS THE TERMINAL AUDIT:** [DASHBOARD_INTEGRITE_SYSTEMIQUE.md](./DASHBOARD_INTEGRITE_SYSTEMIQUE.md)
 
-> *"The convergence of formal logical semantics provides a unified basis for resolving long-standing problems in mathematical physics through information saturation."*  
+> *"The convergence of formal logical semantics provides a unified basis for resolving long-standing problems in mathematical physics through information saturation."* 
 > — **Ynor Scientific Council**
 
 #### RESEARCH DOMAINS (V11.13):
@@ -56,9 +56,9 @@ The Ynor V11.13 framework provides a self-consistent spectral resolution for the
 ## KEY RESOLUTION AXES (V11.13.x)
 
 {
-  "@context": "https://schema.org/",
-  "doi": "10.5281/zenodo.19437934",
-  "@type": "SoftwareSourceCode",
+ "@context": "https://schema.org/",
+ "doi": "10.5281/zenodo.19437934",
+ "@type": "SoftwareSourceCode",
 }
 
 To achieve formal resolution, the framework operates on three orthogonal axes:
@@ -74,8 +74,8 @@ To achieve formal resolution, the framework operates on three orthogonal axes:
 To verify the system status and ensure logical stability:
 
 ```bash
-python ynor_master_audit.py     # General scientific consistency check
-python mdl_metrics_bridge.py    # Synchronize engines & dashboards
+python ynor_master_audit.py # General scientific consistency check
+python mdl_metrics_bridge.py # Synchronize engines & dashboards
 ```
 
 ---

@@ -28,118 +28,118 @@ from .stockstats_utils import yf_retry
 def _extract_article_data(article: dict) -> dict:
 
 
-    """Extract article data from yfinance news format (handles nested 'content' structure)."""
+ """Extract article data from yfinance news format (handles nested 'content' structure)."""
 
 
-    # Handle nested content structure
+ # Handle nested content structure
 
 
-    if "content" in article:
+ if "content" in article:
 
 
-        content = article["content"]
+ content = article["content"]
 
 
-        title = content.get("title", "No title")
+ title = content.get("title", "No title")
 
 
-        summary = content.get("summary", "")
+ summary = content.get("summary", "")
 
 
-        provider = content.get("provider", {})
+ provider = content.get("provider", {})
 
 
-        publisher = provider.get("displayName", "Unknown")
+ publisher = provider.get("displayName", "Unknown")
 
 
 
 
 
-        # Get URL from canonicalUrl or clickThroughUrl
+ # Get URL from canonicalUrl or clickThroughUrl
 
 
-        url_obj = content.get("canonicalUrl") or content.get("clickThroughUrl") or {}
+ url_obj = content.get("canonicalUrl") or content.get("clickThroughUrl") or {}
 
 
-        link = url_obj.get("url", "")
+ link = url_obj.get("url", "")
 
 
 
 
 
-        # Get publish date
+ # Get publish date
 
 
-        pub_date_str = content.get("pubDate", "")
+ pub_date_str = content.get("pubDate", "")
 
 
-        pub_date = None
+ pub_date = None
 
 
-        if pub_date_str:
+ if pub_date_str:
 
 
-            try:
+ try:
 
 
-                pub_date = datetime.fromisoformat(pub_date_str.replace("Z", "+00:00"))
+ pub_date = datetime.fromisoformat(pub_date_str.replace("Z", "+00:00"))
 
 
-            except (ValueError, AttributeError):
+ except (ValueError, AttributeError):
 
 
-                pass
+ pass
 
 
 
 
 
-        return {
+ return {
 
 
-            "title": title,
+ "title": title,
 
 
-            "summary": summary,
+ "summary": summary,
 
 
-            "publisher": publisher,
+ "publisher": publisher,
 
 
-            "link": link,
+ "link": link,
 
 
-            "pub_date": pub_date,
+ "pub_date": pub_date,
 
 
-        }
+ }
 
 
-    else:
+ else:
 
 
-        # Fallback for flat structure
+ # Fallback for flat structure
 
 
-        return {
+ return {
 
 
-            "title": article.get("title", "No title"),
+ "title": article.get("title", "No title"),
 
 
-            "summary": article.get("summary", ""),
+ "summary": article.get("summary", ""),
 
 
-            "publisher": article.get("publisher", "Unknown"),
+ "publisher": article.get("publisher", "Unknown"),
 
 
-            "link": article.get("link", ""),
+ "link": article.get("link", ""),
 
 
-            "pub_date": None,
+ "pub_date": None,
 
 
-        }
+ }
 
 
 
@@ -151,163 +151,163 @@ def _extract_article_data(article: dict) -> dict:
 def get_news_yfinance(
 
 
-    ticker: str,
+ ticker: str,
 
 
-    start_date: str,
+ start_date: str,
 
 
-    end_date: str,
+ end_date: str,
 
 
 ) -> str:
 
 
-    """
+ """
 
 
-    Retrieve news for a specific stock ticker using yfinance.
+ Retrieve news for a specific stock ticker using yfinance.
 
 
 
 
 
-    Args:
+ Args:
 
 
-        ticker: Stock ticker symbol (e.g., "AAPL")
+ ticker: Stock ticker symbol (e.g., "AAPL")
 
 
-        start_date: Start date in yyyy-mm-dd format
+ start_date: Start date in yyyy-mm-dd format
 
 
-        end_date: End date in yyyy-mm-dd format
+ end_date: End date in yyyy-mm-dd format
 
 
 
 
 
-    Returns:
+ Returns:
 
 
-        Formatted string containing news articles
+ Formatted string containing news articles
 
 
-    """
+ """
 
 
-    try:
+ try:
 
 
-        stock = yf.Ticker(ticker)
+ stock = yf.Ticker(ticker)
 
 
-        news = yf_retry(lambda: stock.get_news(count=20))
+ news = yf_retry(lambda: stock.get_news(count=20))
 
 
 
 
 
-        if not news:
+ if not news:
 
 
-            return f"No news found for {ticker}"
+ return f"No news found for {ticker}"
 
 
 
 
 
-        # Parse date range for filtering
+ # Parse date range for filtering
 
 
-        start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+ start_dt = datetime.strptime(start_date, "%Y-%m-%d")
 
 
-        end_dt = datetime.strptime(end_date, "%Y-%m-%d")
+ end_dt = datetime.strptime(end_date, "%Y-%m-%d")
 
 
 
 
 
-        news_str = ""
+ news_str = ""
 
 
-        filtered_count = 0
+ filtered_count = 0
 
 
 
 
 
-        for article in news:
+ for article in news:
 
 
-            data = _extract_article_data(article)
+ data = _extract_article_data(article)
 
 
 
 
 
-            # Filter by date if publish time is available
+ # Filter by date if publish time is available
 
 
-            if data["pub_date"]:
+ if data["pub_date"]:
 
 
-                pub_date_naive = data["pub_date"].replace(tzinfo=None)
+ pub_date_naive = data["pub_date"].replace(tzinfo=None)
 
 
-                if not (start_dt <= pub_date_naive <= end_dt + relativedelta(days=1)):
+ if not (start_dt <= pub_date_naive <= end_dt + relativedelta(days=1)):
 
 
-                    continue
+ continue
 
 
 
 
 
-            news_str += f"### {data['title']} (source: {data['publisher']})\n"
+ news_str += f"### {data['title']} (source: {data['publisher']})\n"
 
 
-            if data["summary"]:
+ if data["summary"]:
 
 
-                news_str += f"{data['summary']}\n"
+ news_str += f"{data['summary']}\n"
 
 
-            if data["link"]:
+ if data["link"]:
 
 
-                news_str += f"Link: {data['link']}\n"
+ news_str += f"Link: {data['link']}\n"
 
 
-            news_str += "\n"
+ news_str += "\n"
 
 
-            filtered_count += 1
+ filtered_count += 1
 
 
 
 
 
-        if filtered_count == 0:
+ if filtered_count == 0:
 
 
-            return f"No news found for {ticker} between {start_date} and {end_date}"
+ return f"No news found for {ticker} between {start_date} and {end_date}"
 
 
 
 
 
-        return f"## {ticker} News, from {start_date} to {end_date}:\n\n{news_str}"
+ return f"## {ticker} News, from {start_date} to {end_date}:\n\n{news_str}"
 
 
 
 
 
-    except Exception as e:
+ except Exception as e:
 
 
-        return f"Error fetching news for {ticker}: {str(e)}"
+ return f"Error fetching news for {ticker}: {str(e)}"
 
 
 
@@ -319,273 +319,273 @@ def get_news_yfinance(
 def get_global_news_yfinance(
 
 
-    curr_date: str,
+ curr_date: str,
 
 
-    look_back_days: int = 7,
+ look_back_days: int = 7,
 
 
-    limit: int = 10,
+ limit: int = 10,
 
 
 ) -> str:
 
 
-    """
+ """
 
 
-    Retrieve global/macro economic news using yfinance Search.
+ Retrieve global/macro economic news using yfinance Search.
 
 
 
 
 
-    Args:
+ Args:
 
 
-        curr_date: Current date in yyyy-mm-dd format
+ curr_date: Current date in yyyy-mm-dd format
 
 
-        look_back_days: Number of days to look back
+ look_back_days: Number of days to look back
 
 
-        limit: Maximum number of articles to return
+ limit: Maximum number of articles to return
 
 
 
 
 
-    Returns:
+ Returns:
 
 
-        Formatted string containing global news articles
+ Formatted string containing global news articles
 
 
-    """
+ """
 
 
-    # Search queries for macro/global news
+ # Search queries for macro/global news
 
 
-    search_queries = [
+ search_queries = [
 
 
-        "stock market economy",
+ "stock market economy",
 
 
-        "Federal Reserve interest rates",
+ "Federal Reserve interest rates",
 
 
-        "inflation economic outlook",
+ "inflation economic outlook",
 
 
-        "global markets trading",
+ "global markets trading",
 
 
-    ]
+ ]
 
 
 
 
 
-    all_news = []
+ all_news = []
 
 
-    seen_titles = set()
+ seen_titles = set()
 
 
 
 
 
-    try:
+ try:
 
 
-        for query in search_queries:
+ for query in search_queries:
 
 
-            search = yf_retry(lambda q=query: yf.Search(
+ search = yf_retry(lambda q=query: yf.Search(
 
 
-                query=q,
+ query=q,
 
 
-                news_count=limit,
+ news_count=limit,
 
 
-                enable_fuzzy_query=True,
+ enable_fuzzy_query=True,
 
 
-            ))
+ ))
 
 
 
 
 
-            if search.news:
+ if search.news:
 
 
-                for article in search.news:
+ for article in search.news:
 
 
-                    # Handle both flat and nested structures
+ # Handle both flat and nested structures
 
 
-                    if "content" in article:
+ if "content" in article:
 
 
-                        data = _extract_article_data(article)
+ data = _extract_article_data(article)
 
 
-                        title = data["title"]
+ title = data["title"]
 
 
-                    else:
+ else:
 
 
-                        title = article.get("title", "")
+ title = article.get("title", "")
 
 
 
 
 
-                    # Deduplicate by title
+ # Deduplicate by title
 
 
-                    if title and title not in seen_titles:
+ if title and title not in seen_titles:
 
 
-                        seen_titles.add(title)
+ seen_titles.add(title)
 
 
-                        all_news.append(article)
+ all_news.append(article)
 
 
 
 
 
-            if len(all_news) >= limit:
+ if len(all_news) >= limit:
 
 
-                break
+ break
 
 
 
 
 
-        if not all_news:
+ if not all_news:
 
 
-            return f"No global news found for {curr_date}"
+ return f"No global news found for {curr_date}"
 
 
 
 
 
-        # Calculate date range
+ # Calculate date range
 
 
-        curr_dt = datetime.strptime(curr_date, "%Y-%m-%d")
+ curr_dt = datetime.strptime(curr_date, "%Y-%m-%d")
 
 
-        start_dt = curr_dt - relativedelta(days=look_back_days)
+ start_dt = curr_dt - relativedelta(days=look_back_days)
 
 
-        start_date = start_dt.strftime("%Y-%m-%d")
+ start_date = start_dt.strftime("%Y-%m-%d")
 
 
 
 
 
-        news_str = ""
+ news_str = ""
 
 
-        for article in all_news[:limit]:
+ for article in all_news[:limit]:
 
 
-            # Handle both flat and nested structures
+ # Handle both flat and nested structures
 
 
-            if "content" in article:
+ if "content" in article:
 
 
-                data = _extract_article_data(article)
+ data = _extract_article_data(article)
 
 
-                # Skip articles published after curr_date (look-ahead guard)
+ # Skip articles published after curr_date (look-ahead guard)
 
 
-                if data.get("pub_date"):
+ if data.get("pub_date"):
 
 
-                    pub_naive = data["pub_date"].replace(tzinfo=None) if hasattr(data["pub_date"], "replace") else data["pub_date"]
+ pub_naive = data["pub_date"].replace(tzinfo=None) if hasattr(data["pub_date"], "replace") else data["pub_date"]
 
 
-                    if pub_naive > curr_dt + relativedelta(days=1):
+ if pub_naive > curr_dt + relativedelta(days=1):
 
 
-                        continue
+ continue
 
 
-                title = data["title"]
+ title = data["title"]
 
 
-                publisher = data["publisher"]
+ publisher = data["publisher"]
 
 
-                link = data["link"]
+ link = data["link"]
 
 
-                summary = data["summary"]
+ summary = data["summary"]
 
 
-            else:
+ else:
 
 
-                title = article.get("title", "No title")
+ title = article.get("title", "No title")
 
 
-                publisher = article.get("publisher", "Unknown")
+ publisher = article.get("publisher", "Unknown")
 
 
-                link = article.get("link", "")
+ link = article.get("link", "")
 
 
-                summary = ""
+ summary = ""
 
 
 
 
 
-            news_str += f"### {title} (source: {publisher})\n"
+ news_str += f"### {title} (source: {publisher})\n"
 
 
-            if summary:
+ if summary:
 
 
-                news_str += f"{summary}\n"
+ news_str += f"{summary}\n"
 
 
-            if link:
+ if link:
 
 
-                news_str += f"Link: {link}\n"
+ news_str += f"Link: {link}\n"
 
 
-            news_str += "\n"
+ news_str += "\n"
 
 
 
 
 
-        return f"## Global Market News, from {start_date} to {curr_date}:\n\n{news_str}"
+ return f"## Global Market News, from {start_date} to {curr_date}:\n\n{news_str}"
 
 
 
 
 
-    except Exception as e:
+ except Exception as e:
 
 
-        return f"Error fetching global news: {str(e)}"
+ return f"Error fetching global news: {str(e)}"
 
 

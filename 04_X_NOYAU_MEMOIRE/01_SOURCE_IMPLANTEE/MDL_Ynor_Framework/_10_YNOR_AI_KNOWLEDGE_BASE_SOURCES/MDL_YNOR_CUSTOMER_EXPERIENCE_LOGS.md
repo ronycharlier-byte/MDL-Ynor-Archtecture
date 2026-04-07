@@ -1,4 +1,4 @@
-# 💎 MDL YNOR — JOURNAL D'EXPÉRIENCE CLIENT & LOGS D'OR (GOLDEN LOGS)
+# MDL YNOR — JOURNAL D'EXPÉRIENCE CLIENT & LOGS D'OR (GOLDEN LOGS)
 
 > **"Chaque interaction client est une donnée brute de haute valeur Alpha. Ce journal transforme le vécu commercial en intelligence algorithmique."**
 

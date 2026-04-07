@@ -10,16 +10,16 @@ import json
 from Formalisme Logique Smantique_engine.agents.utils.agent_utils import (
 
 
-    build_instrument_context,
+ build_instrument_context,
 
 
-    get_indicators,
+ get_indicators,
 
 
-    get_language_instruction,
+ get_language_instruction,
 
 
-    get_stock_data,
+ get_stock_data,
 
 
 )
@@ -40,37 +40,37 @@ def create_market_analyst(llm):
 
 
 
-    def market_analyst_node(state):
+ def market_analyst_node(state):
 
 
-        current_date = state["trade_date"]
+ current_date = state["trade_date"]
 
 
-        instrument_context = build_instrument_context(state["company_of_interest"])
-
-
-
-
-
-        tools = [
-
-
-            get_stock_data,
-
-
-            get_indicators,
-
-
-        ]
+ instrument_context = build_instrument_context(state["company_of_interest"])
 
 
 
 
 
-        system_message = (
+ tools = [
 
 
-            """You are a trading assistant tasked with analyzing financial markets. Your role is to select the **most relevant indicators** for a given market condition or trading strategy from the following list. The goal is to choose up to **8 indicators** that provide complementary insights without redundancy. Categories and each category's indicators are:
+ get_stock_data,
+
+
+ get_indicators,
+
+
+ ]
+
+
+
+
+
+ system_message = (
+
+
+ """You are a trading assistant tasked with analyzing financial markets. Your role is to select the **most relevant indicators** for a given market condition or trading strategy from the following list. The goal is to choose up to **8 indicators** that provide complementary insights without redundancy. Categories and each category's indicators are:
 
 
 
@@ -145,126 +145,126 @@ Volume-Based Indicators:
 - Select indicators that provide diverse and complementary information. Avoid redundancy (e.g., do not select both rsi and stochrsi). Also briefly explain why they are suitable for the given market context. When you tool call, please use the exact name of the indicators provided above as they are defined parameters, otherwise your call will fail. Please make sure to call get_stock_data first to retrieve the CSV that is needed to generate indicators. Then use get_indicators with the specific indicator names. Write a very detailed and nuanced report of the trends you observe. Provide specific, actionable insights with supporting evidence to help traders make informed decisions."""
 
 
-            + """ Make sure to append a Markdown table at the end of the report to organize key points in the report, organized and easy to read."""
+ + """ Make sure to append a Markdown table at the end of the report to organize key points in the report, organized and easy to read."""
 
 
-            + get_language_instruction()
+ + get_language_instruction()
 
 
-        )
+ )
 
 
 
 
 
-        prompt = ChatPromptTemplate.from_messages(
+ prompt = ChatPromptTemplate.from_messages(
 
 
-            [
+ [
 
 
-                (
+ (
 
 
-                    "system",
+ "system",
 
 
-                    "You are a helpful AI assistant, collaborating with other assistants."
+ "You are a helpful AI assistant, collaborating with other assistants."
 
 
-                    " Use the provided tools to progress towards answering the question."
+ " Use the provided tools to progress towards answering the question."
 
 
-                    " If you are unable to fully answer, that's OK; another assistant with different tools"
+ " If you are unable to fully answer, that's OK; another assistant with different tools"
 
 
-                    " will help where you left off. Execute what you can to make progress."
+ " will help where you left off. Execute what you can to make progress."
 
 
-                    " If you or any other assistant has the FINAL TRANSACTION PROPOSAL: **BUY/HOLD/SELL** or deliverable,"
+ " If you or any other assistant has the FINAL TRANSACTION PROPOSAL: **BUY/HOLD/SELL** or deliverable,"
 
 
-                    " prefix your response with FINAL TRANSACTION PROPOSAL: **BUY/HOLD/SELL** so the team knows to stop."
+ " prefix your response with FINAL TRANSACTION PROPOSAL: **BUY/HOLD/SELL** so the team knows to stop."
 
 
-                    " You have access to the following tools: {tool_names}.\n{system_message}"
+ " You have access to the following tools: {tool_names}.\n{system_message}"
 
 
-                    "For your reference, the current date is {current_date}. {instrument_context}",
+ "For your reference, the current date is {current_date}. {instrument_context}",
 
 
-                ),
+ ),
 
 
-                MessagesPlaceholder(variable_name="messages"),
+ MessagesPlaceholder(variable_name="messages"),
 
 
-            ]
+ ]
 
 
-        )
+ )
 
 
 
 
 
-        prompt = prompt.partial(system_message=system_message)
+ prompt = prompt.partial(system_message=system_message)
 
 
-        prompt = prompt.partial(tool_names=", ".join([tool.name for tool in tools]))
+ prompt = prompt.partial(tool_names=", ".join([tool.name for tool in tools]))
 
 
-        prompt = prompt.partial(current_date=current_date)
+ prompt = prompt.partial(current_date=current_date)
 
 
-        prompt = prompt.partial(instrument_context=instrument_context)
+ prompt = prompt.partial(instrument_context=instrument_context)
 
 
 
 
 
-        chain = prompt | llm.bind_tools(tools)
+ chain = prompt | llm.bind_tools(tools)
 
 
 
 
 
-        result = chain.invoke(state["messages"])
+ result = chain.invoke(state["messages"])
 
 
 
 
 
-        report = ""
+ report = ""
 
 
 
 
 
-        if len(result.tool_calls) == 0:
+ if len(result.tool_calls) == 0:
 
 
-            report = result.content
+ report = result.content
 
 
 
 
 
-        return {
+ return {
 
 
-            "messages": [result],
+ "messages": [result],
 
 
-            "market_report": report,
+ "market_report": report,
 
 
-        }
+ }
 
 
 
 
 
-    return market_analyst_node
+ return market_analyst_node
 
 

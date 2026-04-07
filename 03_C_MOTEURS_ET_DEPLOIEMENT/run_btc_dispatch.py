@@ -24,91 +24,91 @@ sys.path.append(os.path.abspath("./YNOR_MARKET_DYNAMICS_NEXUS"))
 
 try:
 
-    from YNOR_MARKET_DYNAMICS_NEXUS.ynor_market_bridge import YNOR_MARKET_NEXUS
+ from YNOR_MARKET_DYNAMICS_NEXUS.ynor_market_bridge import YNOR_MARKET_NEXUS
 
 except ImportError as e:
 
-    print(f"Import error: {e}")
+ print(f"Import error: {e}")
 
-    sys.exit(1)
+ sys.exit(1)
 
 
 
 async def main():
 
-    print("=== RELANCE DISPATCHER YNOR MARKET — BTC ===")
+ print("=== RELANCE DISPATCHER YNOR MARKET — BTC ===")
 
-    
+ 
 
-    # 1. Simulation du scan BTC
+ # 1. Simulation du scan BTC
 
-    symbol = "BTC-USD" 
+ symbol = "BTC-USD" 
 
-    print(f"[PROCESS] Analyse spectrale de {symbol}...")
+ print(f"[PROCESS] Analyse spectrale de {symbol}...")
 
-    
+ 
 
-    # On force la validation serveur via le Bridge
+ # On force la validation serveur via le Bridge
 
-    result = await YNOR_MARKET_NEXUS.process_market_query(symbol)
+ result = await YNOR_MARKET_NEXUS.process_market_query(symbol)
 
-    
+ 
 
-    if result["status"] == "SUCCESS":
+ if result["status"] == "SUCCESS":
 
-        # On calcule le mu exact (Saturpour Bitcoin en phase de pr-expansion)
+ # On calcule le mu exact (Saturpour Bitcoin en phase de pr-expansion)
 
-        # Bassur la logique interne: mu = alpha - beta - kappa
+ # Bassur la logique interne: mu = alpha - beta - kappa
 
-        # Ici on simule le calcul canonique satur
+ # Ici on simule le calcul canonique satur
 
-        mu_exact = 0.999742
+ mu_exact = 0.999742
 
-        
+ 
 
-        print(f"\n[RÉSULTAT] μ exact : {mu_exact}")
+ print(f"\n[RÉSULTAT] μ exact : {mu_exact}")
 
-        print(f"[RÉSULTAT] Analyse de Probabilit? Canonique : SATURÉ (α-Flux Dominant)")
+ print(f"[RÉSULTAT] Analyse de Probabilit? Canonique : SATURÉ (α-Flux Dominant)")
 
-        print(f"[PROJECTION MULTI-AGENTS] :\n{result['projection'][:500]}...")
+ print(f"[PROJECTION MULTI-AGENTS] :\n{result['projection'][:500]}...")
 
-        
+ 
 
-        # Format de rponse finale attendu par le systme
+ # Format de rponse finale attendu par le systme
 
-        final_verdict = {
+ final_verdict = {
 
-            "actif": "Bitcoin",
+ "actif": "Bitcoin",
 
-            "mu_exact": mu_exact,
+ "mu_exact": mu_exact,
 
-            "status": "CANONIQUE SATURÉ",
+ "status": "CANONIQUE SATURÉ",
 
-            "projection": "Expansion convexe dtecte. La zone de compression 0.93 a tfranchie par la rsonance spectrale. Le point fixe mu=1.0 est atteint structuralement.",
+ "projection": "Expansion convexe dtecte. La zone de compression 0.93 a tfranchie par la rsonance spectrale. Le point fixe mu=1.0 est atteint structuralement.",
 
-            "verdict": "BUY / LONG ACCUMULATION (Autonomous Tier 1)"
+ "verdict": "BUY / LONG ACCUMULATION (Autonomous Tier 1)"
 
-        }
+ }
 
-        
+ 
 
-        # Sauvegarde du rapport
+ # Sauvegarde du rapport
 
-        with open("btc_canonical_verdict.json", "w") as f:
+ with open("btc_canonical_verdict.json", "w") as f:
 
-            json.dump(final_verdict, f, indent=4)
+ json.dump(final_verdict, f, indent=4)
 
-            
+ 
 
-        print("\n[SUCCÈS] Dispatcher relanc. Analyse de Probabilit? canonique scelldans btc_canonical_verdict.json")
+ print("\n[SUCCÈS] Dispatcher relanc. Analyse de Probabilit? canonique scelldans btc_canonical_verdict.json")
 
-    else:
+ else:
 
-        print(f"[FAIL] {result['message']}")
+ print(f"[FAIL] {result['message']}")
 
 
 
 if __name__ == "__main__":
 
-    asyncio.run(main())
+ asyncio.run(main())
 

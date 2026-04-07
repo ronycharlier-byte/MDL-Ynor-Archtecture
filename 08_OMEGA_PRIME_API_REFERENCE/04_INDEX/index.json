@@ -1,21 +1,21 @@
 {
-  "node": "08_OMEGA_PRIME_API_REFERENCE",
-  "key": "OMEGA_PRIME",
-  "mirror": "OMEGA",
-  "role": "Enveloppe de reference finale, API technique et cloture du systeme.",
-  "inventory_count": 2,
-  "inventory": [
-    {
-      "source": "08_X_API_REFERENCE\\openapi.json",
-      "size_bytes": 2960,
-      "sha256": "6fbd72f20d5c1ba9ecaf8ddb521cfe65a58e431eb3b836744718340fe1ca1756",
-      "kind": "text"
-    },
-    {
-      "source": "08_X_API_REFERENCE\\README.md",
-      "size_bytes": 881,
-      "sha256": "fcb6ecc8f03aebf6980e2ab7dbd228144a6d2e0fa6c6ce851fc5cead19d3812e",
-      "kind": "text"
-    }
-  ]
+ "node": "08_OMEGA_PRIME_API_REFERENCE",
+ "key": "OMEGA_PRIME",
+ "mirror": "OMEGA",
+ "role": "Enveloppe de reference finale, API technique et cloture du systeme.",
+ "inventory_count": 2,
+ "inventory": [
+ {
+ "source": "08_X_API_REFERENCE\\openapi.json",
+ "size_bytes": 2960,
+ "sha256": "6fbd72f20d5c1ba9ecaf8ddb521cfe65a58e431eb3b836744718340fe1ca1756",
+ "kind": "text"
+ },
+ {
+ "source": "08_X_API_REFERENCE\\README.md",
+ "size_bytes": 881,
+ "sha256": "fcb6ecc8f03aebf6980e2ab7dbd228144a6d2e0fa6c6ce851fc5cead19d3812e",
+ "kind": "text"
+ }
+ ]
 }

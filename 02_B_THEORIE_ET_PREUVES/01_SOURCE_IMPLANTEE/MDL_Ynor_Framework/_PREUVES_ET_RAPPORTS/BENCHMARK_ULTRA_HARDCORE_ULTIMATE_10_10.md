@@ -1,28 +1,28 @@
-# BENCHMARK ULTRA-HARDCORE : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS
+# BENCHMARK rigoureux : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS
 ## Résolution Intégrale - Version 10/10 (Rigueur Absolue)
 
 ### a) Reformulation Exacte
 L'objectif est l'étude exhaustive de l'opérateur de Schrödinger libre (Laplacien) $A = -\frac{d^2}{dx^2}$ sur la demi-droite $\mathbb{R}^+ = (0, +\infty)$. Partant d'un domaine minimal $C_c^\infty(0, \infty)$, nous devons caractériser son adjoint, ses indices de déficience, ses extensions auto-adjointes (conditions au bord), leurs structures spectrales respectives, ainsi que les propriétés des noyaux de résolvante et de chaleur associés.
 
 ### b) Définitions Rigoureuses
-*   **Opérateur symétrique** : $T$ sur $H$ est symétrique si $\forall f, g \in D(T), \langle Tf, g \rangle = \langle f, Tg \rangle$.
-*   **Opérateur auto-adjoint** : $T$ est auto-adjoint si $T = T^*$, ce qui impose $D(T) = D(T^*)$.
-*   **Indices de déficience** : $n_\pm = \dim \ker(A^* \mp iI)$.
-*   **Spectre essentiel $\sigma_{ess}$** : Valeurs $\lambda$ telles que $A-\lambda I$ n'est pas un opérateur de Fredholm. Pour un opérateur auto-adjoint, cela correspond aux valeurs propres de multiplicité infinie ou aux points d'accumulation du spectre.
-*   **Extension de Friedrichs** : Extension auto-adjointe canonique associée à la forme quadratique fermée minimale.
-*   **Extension de Krein** : Extension auto-adjointe positive minimale (au sens des formes).
+* **Opérateur symétrique** : $T$ sur $H$ est symétrique si $\forall f, g \in D(T), \langle Tf, g \rangle = \langle f, Tg \rangle$.
+* **Opérateur auto-adjoint** : $T$ est auto-adjoint si $T = T^*$, ce qui impose $D(T) = D(T^*)$.
+* **Indices de déficience** : $n_\pm = \dim \ker(A^* \mp iI)$.
+* **Spectre essentiel $\sigma_{ess}$** : Valeurs $\lambda$ telles que $A-\lambda I$ n'est pas un opérateur de Fredholm. Pour un opérateur auto-adjoint, cela correspond aux valeurs propres de multiplicité infinie ou aux points d'accumulation du spectre.
+* **Extension de Friedrichs** : Extension auto-adjointe canonique associée à la forme quadratique fermée minimale.
+* **Extension de Krein** : Extension auto-adjointe positive minimale (au sens des formes).
 
 ### c) Outils Intermédiaires
-1.  **Identité de Green (1D)** : $\forall f, g \in H^2(0, \infty)$, $\int_0^\infty (-f'')\overline{g} dx - \int_0^\infty f\overline{(-g'')} dx = f'(0)\overline{g(0)} - f(0)\overline{g'(0)}$.
-    *   *Preuve* : Intégration par parties sur $[0, R]$, puis $R \to \infty$. La décroissance à l'infini est garantie par l'appartenance à $H^2(0, \infty)$ (voir Point 2).
-2.  **Critère de Weyl** : $\lambda \in \sigma(A)$ ssi $\exists (u_n)_{n \in \mathbb{N}} \subset D(A)$ telle que $\|u_n\|=1$ et $\|(A-\lambda I)u_n\| \to 0$. Pour $\sigma_{ess}$, on impose de plus $u_n \rightharpoonup 0$ (convergence faible vers 0).
-3.  **Théorie de von Neumann** : Les extensions auto-adjointes d'un opérateur symétrique fermé $S$ sont en bijection avec les isométries unitaires $U : \ker(S^*-iI) \to \ker(S^*+iI)$.
+1. **Identité de Green (1D)** : $\forall f, g \in H^2(0, \infty)$, $\int_0^\infty (-f'')\overline{g} dx - \int_0^\infty f\overline{(-g'')} dx = f'(0)\overline{g(0)} - f(0)\overline{g'(0)}$.
+ * *Preuve* : Intégration par parties sur $[0, R]$, puis $R \to \infty$. La décroissance à l'infini est garantie par l'appartenance à $H^2(0, \infty)$ (voir Point 2).
+2. **Critère de Weyl** : $\lambda \in \sigma(A)$ ssi $\exists (u_n)_{n \in \mathbb{N}} \subset D(A)$ telle que $\|u_n\|=1$ et $\|(A-\lambda I)u_n\| \to 0$. Pour $\sigma_{ess}$, on impose de plus $u_n \rightharpoonup 0$ (convergence faible vers 0).
+3. **Théorie de von Neumann** : Les extensions auto-adjointes d'un opérateur symétrique fermé $S$ sont en bijection avec les isométries unitaires $U : \ker(S^*-iI) \to \ker(S^*+iI)$.
 
 ### d) Stratégie
-1.  Calcul direct de l'adjoint par dualité distributionnelle.
-2.  Résolution des EDO homogènes dans $L^2$.
-3.  Paramétrisation par les rapports de traces au bord via l'identité de Green.
-4.  Étude variationnelle et spectrale (résolvante et semi-groupe).
+1. Calcul direct de l'adjoint par dualité distributionnelle.
+2. Résolution des EDO homogènes dans $L^2$.
+3. Paramétrisation par les rapports de traces au bord via l'identité de Green.
+4. Étude variationnelle et spectrale (résolvante et semi-groupe).
 
 ---
 
@@ -35,7 +35,7 @@ $\langle A_{min}\phi, \phi \rangle = \|\phi'\|_2^2 \ge 0$. **[Prouvé]**
 #### 2. Détermination de $A_{min}^*$
 Soit $f \in D(A_{min}^*)$. Il existe $g \in L^2$ tel que $\forall \phi \in C_c^\infty$, $\langle A_{min}\phi, f \rangle = \langle \phi, g \rangle$, soit $\int_0^\infty (-\phi'')\overline{f} = \int \phi\overline{g}$. Au sens des distributions, $-f'' = g$. Comme $g \in L^2$, $f \in H^2_{loc}(0, \infty)$.
 **Comportement à l'infini** : $f \in H^2(0, \infty)$.
-*   *Justification* : Comme $f, f'' \in L^2$, pour $x \to \infty$, $f, f' \to 0$. En effet, $|f(x)|^2 = - \int_x^\infty (f^2)' = -2 \int_x^\infty f f' \le 2 \|f\|_{L^2(x, \infty)} \|f'\|_{L^2(x, \infty)}$, ce qui tend vers 0 par convergence de l'intégrale. Idem pour $f'$.
+* *Justification* : Comme $f, f'' \in L^2$, pour $x \to \infty$, $f, f' \to 0$. En effet, $|f(x)|^2 = - \int_x^\infty (f^2)' = -2 \int_x^\infty f f' \le 2 \|f\|_{L^2(x, \infty)} \|f'\|_{L^2(x, \infty)}$, ce qui tend vers 0 par convergence de l'intégrale. Idem pour $f'$.
 **Domaine** : $D(A_{min}^*) = H^2(0, \infty) = \{ f \in L^2 | f' \in AC_{loc}, f'' \in L^2 \}$. L'opérateur agit par $A_{min}^* f = -f''$. **[Prouvé]**
 
 #### 3. Non auto-adjonction
@@ -43,8 +43,8 @@ $D(A_{min}) = C_c^\infty$ est strictement inclus dans $H^2(0, \infty)$. Par exem
 
 #### 4. Équations de déficience
 $(A^* \mp iI)f = 0 \implies -f'' = \pm if$.
-*   Pour $+i$ : $r^2 = -i = e^{-i\pi/2} \implies r = \pm e^{-i\pi/4} = \pm \frac{1-i}{\sqrt{2}}$. La solution $L^2$ est $f_+(x) = e^{-\frac{1-i}{\sqrt{2}}x}$.
-*   Pour $-i$ : $r^2 = i = e^{i\pi/2} \implies r = \pm e^{i\pi/4} = \pm \frac{1+i}{\sqrt{2}}$. La solution $L^2$ est $f_-(x) = e^{-\frac{1+i}{\sqrt{2}}x}$.
+* Pour $+i$ : $r^2 = -i = e^{-i\pi/2} \implies r = \pm e^{-i\pi/4} = \pm \frac{1-i}{\sqrt{2}}$. La solution $L^2$ est $f_+(x) = e^{-\frac{1-i}{\sqrt{2}}x}$.
+* Pour $-i$ : $r^2 = i = e^{i\pi/2} \implies r = \pm e^{i\pi/4} = \pm \frac{1+i}{\sqrt{2}}$. La solution $L^2$ est $f_-(x) = e^{-\frac{1+i}{\sqrt{2}}x}$.
 Les dimensions sont $n_+ = 1, n_- = 1$. Les indices sont $(1, 1)$. **[Prouvé]**
 
 #### 5. Prolongements auto-adjoints
@@ -53,9 +53,9 @@ Comme $n_+ = n_- = 1$, il existe une famille à 1 paramètre (le groupe unitaire
 #### 6. Condition au bord $\cos(\theta)f(0) + \sin(\theta)f'(0) = 0$
 L'auto-adjonction impose la nullité de la forme de bord de Green : $f'(0)\overline{g(0)} - f(0)\overline{g'(0)} = 0$.
 Soit $f \in D(A_\theta)$. Pour que cela soit nul pour tout $g \in D(A_\theta)$, le vecteur $(f(0), f'(0))$ doit appartenir à une droite réelle de $\mathbb{C}^2$. Cette droite est paramétrée par l'angle $\theta$ via $\cos(\theta)x + \sin(\theta)y = 0$.
-*   $\theta = 0$ : Dirichlet $f(0)=0$.
-*   $\theta = \pi/2$ : Neumann $f'(0)=0$.
-*   Sinon : Robin $f'(0) = -\cot(\theta)f(0)$. **[Prouvé]**
+* $\theta = 0$ : Dirichlet $f(0)=0$.
+* $\theta = \pi/2$ : Neumann $f'(0)=0$.
+* Sinon : Robin $f'(0) = -\cot(\theta)f(0)$. **[Prouvé]**
 
 #### 7. Positivité de $A_\theta$
 $\langle A_\theta f, f \rangle = \|f'\|_2^2 + f'(0)\overline{f(0)}$.
@@ -84,9 +84,9 @@ Pour $\theta = 0$ : $G_D = \frac{1}{2\kappa}(e^{-\kappa|x-y|} - e^{-\kappa(x+y)}
 Pour $\theta = \pi/2$ : $G_N = \frac{1}{2\kappa}(e^{-\kappa|x-y|} + e^{-\kappa(x+y)})$. **[Calculé - Prouvé]**
 
 #### 11. Vérifications analytiques
-*   **Symétrie** : $G(x,y) = G(y,x)$ car $|x-y| = |y-x|$ et $x+y = y+x$.
-*   **Equation** : $(-\partial_x^2 + \lambda)G = \delta(x-y)$ par construction des solutions fondamentales.
-*   **Bord** : On injecte $x=0$ dans la formule, la dérivée $\partial_x$ donne le ratio voulu. **[Vérifié]**
+* **Symétrie** : $G(x,y) = G(y,x)$ car $|x-y| = |y-x|$ et $x+y = y+x$.
+* **Equation** : $(-\partial_x^2 + \lambda)G = \delta(x-y)$ par construction des solutions fondamentales.
+* **Bord** : On injecte $x=0$ dans la formule, la dérivée $\partial_x$ donne le ratio voulu. **[Vérifié]**
 
 #### 13. Comparaison Dirichlet / Neumann
 Au sens des formes quadratiques : $D(q_D) = H_0^1(0, \infty) \subset D(q_N) = H^1(0, \infty)$.
@@ -99,18 +99,18 @@ C'est un noyau de rang 1 : $\Delta G(x,y) = -\frac{1}{\sqrt{n}} \phi(x)\phi(y)$ 
 Norme : $\|R_n\| = \frac{1}{\sqrt{n}} \|\phi\|_2^2 = \frac{1}{\sqrt{n}} \frac{1}{2\sqrt{n}} = \frac{1}{2n}$. **[Prouvé]**
 
 #### 15. Nature de la différence
-*   **Compacte** : Car de rang 1.
-*   **Hilbert-Schmidt** : $\|R_n\|_{HS}^2 = \int_0^\infty \int_0^\infty \frac{1}{n} e^{-2\sqrt{n}(x+y)} dxdy = \frac{1}{n} (\frac{1}{2\sqrt{n}})^2 = \frac{1}{4n^2} < \infty$.
-*   **Trace-classe** : Car de rang 1. **[Prouvé]**
+* **Compacte** : Car de rang 1.
+* **Hilbert-Schmidt** : $\|R_n\|_{HS}^2 = \int_0^\infty \int_0^\infty \frac{1}{n} e^{-2\sqrt{n}(x+y)} dxdy = \frac{1}{n} (\frac{1}{2\sqrt{n}})^2 = \frac{1}{4n^2} < \infty$.
+* **Trace-classe** : Car de rang 1. **[Prouvé]**
 
 #### 16. Noyau de chaleur (Méthode de réflexion)
-*   $K_D(t, x, y) = \frac{1}{\sqrt{4\pi t}} (e^{-\frac{(x-y)^2}{4t}} - e^{-\frac{(x+y)^2}{4t}})$.
-*   $K_N(t, x, y) = \frac{1}{\sqrt{4\pi t}} (e^{-\frac{(x-y)^2}{4t}} + e^{-\frac{(x+y)^2}{4t}})$. **[Prouvé]**
+* $K_D(t, x, y) = \frac{1}{\sqrt{4\pi t}} (e^{-\frac{(x-y)^2}{4t}} - e^{-\frac{(x+y)^2}{4t}})$.
+* $K_N(t, x, y) = \frac{1}{\sqrt{4\pi t}} (e^{-\frac{(x-y)^2}{4t}} + e^{-\frac{(x+y)^2}{4t}})$. **[Prouvé]**
 
 #### 17. Propriétés de contractivité
-*   **L2-contractivité** : Par le théorème spectral, $\|e^{-tA}\| \le e^{-t \inf \sigma(A)} \le 1$.
-*   **L1-contractivité** : Pour Neumann, $\int K_N dy = 1$ (conservation de la masse), donc $\| \cdot \|_1$ conservé. Pour Dirichlet, $\int K_D dy \le 1$ (absorption au bord), donc contractif.
-*   **Positivité** : $K_D, K_N \ge 0$ car $(x+y)^2 \ge (x-y)^2$. **[Prouvé]**
+* **L2-contractivité** : Par le théorème spectral, $\|e^{-tA}\| \le e^{-t \inf \sigma(A)} \le 1$.
+* **L1-contractivité** : Pour Neumann, $\int K_N dy = 1$ (conservation de la masse), donc $\| \cdot \|_1$ conservé. Pour Dirichlet, $\int K_D dy \le 1$ (absorption au bord), donc contractif.
+* **Positivité** : $K_D, K_N \ge 0$ car $(x+y)^2 \ge (x-y)^2$. **[Prouvé]**
 
 #### 18. Convergence forte vs Norme
 $e^{-tA_D} \to I$ fortement : $\forall f \in L^2, \|e^{-tA_D}f - f\| \to 0$ (Propriété des semi-groupes C0).
@@ -128,8 +128,8 @@ Une interaction ponctuelle au bord est modélisée par une condition de Robin. M
 C'est l'extension $A_\theta$ avec $\cot(\theta) = \alpha$. **[Prouvé]**
 
 #### 23. Friedrichs vs Krein
-*   **Friedrichs** = Dirichlet ($\theta=0$). C'est l'extension dont le domaine est inclus dans le domaine de la forme quadratique fermée minimale ($H_0^1$).
-*   **Krein** = Neumann ($\theta=\pi/2$). C'est l'extension positive de plus grand domaine ($H^1$). **[Prouvé]**
+* **Friedrichs** = Dirichlet ($\theta=0$). C'est l'extension dont le domaine est inclus dans le domaine de la forme quadratique fermée minimale ($H_0^1$).
+* **Krein** = Neumann ($\theta=\pi/2$). C'est l'extension positive de plus grand domaine ($H^1$). **[Prouvé]**
 
 #### 24. Question piège : "Fermeture autoadjointe ?"
 **FAUX.**

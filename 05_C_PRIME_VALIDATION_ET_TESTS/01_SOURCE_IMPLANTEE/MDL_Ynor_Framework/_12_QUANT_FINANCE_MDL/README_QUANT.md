@@ -35,22 +35,22 @@ $\mu = \text{Alpha} - \text{Beta} - \text{Kappa}$
 
 ---
 
-## 🚀 How to Run (Quantum Protocol)
+## How to Run (Quantum Protocol)
 
-1.  **Prepare Environment**:
-    Install specific quant dependencies:
-    ```powershell
-    pip install -r _12_QUANT_FINANCE_MDL/requirements_quant.txt
-    ```
+1. **Prepare Environment**:
+ Install specific quant dependencies:
+ ```powershell
+ pip install -r _12_QUANT_FINANCE_MDL/requirements_quant.txt
+ ```
 
-2.  **Execute Strategies**:
-    Each script can be run independently for localized alpha research:
-    - `python _12_QUANT_FINANCE_MDL/strategy_1_sp500_cluster_ml.py`
-    - `python _12_QUANT_FINANCE_MDL/strategy_2_sentiment_nasdaq.py`
-    - `python _12_QUANT_FINANCE_MDL/strategy_3_intraday_garch.py`
+2. **Execute Strategies**:
+ Each script can be run independently for localized alpha research:
+ - `python _12_QUANT_FINANCE_MDL/strategy_1_sp500_cluster_ml.py`
+ - `python _12_QUANT_FINANCE_MDL/strategy_2_sentiment_nasdaq.py`
+ - `python _12_QUANT_FINANCE_MDL/strategy_3_intraday_garch.py`
 
-3.  **Audit Viability**:
-    Run the `ynor_quant_wrapper.py` to see the **Mu-Margin** of your strategy.
+3. **Audit Viability**:
+ Run the `ynor_quant_wrapper.py` to see the **Mu-Margin** of your strategy.
 
 ---
 

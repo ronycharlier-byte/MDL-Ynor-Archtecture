@@ -6,177 +6,177 @@
 
 
 
-  "title": "YNOR_CANONICAL_CONSOLIDATION",
+ "title": "YNOR_CANONICAL_CONSOLIDATION",
 
 
 
 
-  "scope": "full_repository",
+ "scope": "full_repository",
 
 
 
 
-  "order": "A -> B -> C -> X -> C' -> B' -> A'",
+ "order": "A -> B -> C -> X -> C' -> B' -> A'",
 
 
 
 
-  "raw_summary": {
+ "raw_summary": {
 
 
 
 
-    "total_files": 1408,
+ "total_files": 1408,
 
 
 
 
-    "duplicate_hash_groups": 136,
+ "duplicate_hash_groups": 136,
 
 
 
 
-    "duplicate_hash_entries": 381,
+ "duplicate_hash_entries": 381,
 
 
 
 
-    "duplicate_hash_share_percent": 20.9,
+ "duplicate_hash_share_percent": 20.9,
 
 
 
 
-    "derived_entries": 1193,
+ "derived_entries": 1193,
 
 
 
 
-    "versioned_entries": 150,
+ "versioned_entries": 150,
 
 
 
 
-    "sensitive_files_redacted": 23
+ "sensitive_files_redacted": 23
 
 
 
 
-  },
+ },
 
 
 
 
-  "canonical_summary": {
+ "canonical_summary": {
 
 
 
 
-    "total_files": 525,
+ "total_files": 525,
 
 
 
 
-    "collapse_rate_percent": 62.7,
+ "collapse_rate_percent": 62.7,
 
 
 
 
-    "collapsed_files": 1319,
+ "collapsed_files": 1319,
 
 
 
 
-    "duplicate_hash_groups": 0,
+ "duplicate_hash_groups": 0,
 
 
 
 
-    "duplicate_hash_entries": 0
+ "duplicate_hash_entries": 0
 
 
 
 
-  },
+ },
 
 
 
 
-  "node_counts": {
+ "node_counts": {
 
 
 
 
-    "01_A_FONDATION": 111,
+ "01_A_FONDATION": 111,
 
 
 
 
-    "02_B_THEORIE_ET_PREUVES": 59,
+ "02_B_THEORIE_ET_PREUVES": 59,
 
 
 
 
-    "03_C_MOTEURS_ET_DEPLOIEMENT": 108,
+ "03_C_MOTEURS_ET_DEPLOIEMENT": 108,
 
 
 
 
-    "04_X_NOYAU_MEMOIRE": 29,
+ "04_X_NOYAU_MEMOIRE": 29,
 
 
 
 
-    "05_C_PRIME_VALIDATION_ET_TESTS": 37,
+ "05_C_PRIME_VALIDATION_ET_TESTS": 37,
 
 
 
 
-    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 38,
+ "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 38,
 
 
 
 
-    "07_A_PRIME_ARCHIVES_ET_RELEASES": 23
+ "07_A_PRIME_ARCHIVES_ET_RELEASES": 23
 
 
 
 
-  },
+ },
 
 
 
 
-  "central_documents": {
+ "central_documents": {
 
 
 
 
-    "portal": "00_EDITION_CANONIQUE_FINALE/PORTAIL_CANONIQUE_FINAL.md",
+ "portal": "00_EDITION_CANONIQUE_FINALE/PORTAIL_CANONIQUE_FINAL.md",
 
 
 
 
-    "index": "00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/INDEX_MAITRE_YNOR.md",
+ "index": "00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/INDEX_MAITRE_YNOR.md",
 
 
 
 
-    "map": "00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/CARTE_VISUELLE_YNOR.md",
+ "map": "00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/CARTE_VISUELLE_YNOR.md",
 
 
 
 
-    "manifest": "00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/MANIFESTE_YNOR.md",
+ "manifest": "00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/MANIFESTE_YNOR.md",
 
 
 
 
-    "consolidation_report": "00_EDITION_CANONIQUE_FINALE/CORPUS_CANONIQUE_CONSOLIDE.md"
+ "consolidation_report": "00_EDITION_CANONIQUE_FINALE/CORPUS_CANONIQUE_CONSOLIDE.md"
 
 
 
 
-  }
+ }
 
 
 

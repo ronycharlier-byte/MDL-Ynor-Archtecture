@@ -9,13 +9,13 @@ SHA256 : 8fa0db87478039b515f03cd161b3d3d7a3ac4b2aed252d5dd8271a9deb584973
 # MDL YNOR - DEMO RUNBOOK (v2.2.0-PROD) - UNIX VERSION (SH)
 
 echo "============================================================"
-echo "  ⚡ MDL YNOR - AUTOMATED DEMO & VALIDATION ⚡"
+echo " ⚡ MDL YNOR - AUTOMATED DEMO & VALIDATION ⚡"
 echo "============================================================"
 
 # 1. CHECK VIRTUAL ENV
 if [ ! -d "venv" ]; then
-    echo "[INFO] Creating virtual environment..."
-    python3 -m venv venv
+ echo "[INFO] Creating virtual environment..."
+ python3 -m venv venv
 fi
 
 echo "[INFO] Activating environment..."
@@ -28,9 +28,9 @@ pip install -e .
 
 # 3. ENVIRONMENT CHECK
 if [ ! -f .env ]; then
-    echo "[WARNING] No .env file found. Copying template..."
-    cp .env.template .env
-    echo "[ACTION] Please edit your .env file and add your API keys!"
+ echo "[WARNING] No .env file found. Copying template..."
+ cp .env.template .env
+ echo "[ACTION] Please edit your .env file and add your API keys!"
 fi
 
 # 4. RUN VALIDATION
@@ -51,7 +51,7 @@ echo "jupyter notebook ynor_core_demonstration.ipynb"
 echo ""
 
 echo "============================================================"
-echo "  ✅ DEMO & AUDIT SUCCESSFUL"
+echo " ✅ DEMO & AUDIT SUCCESSFUL"
 echo "============================================================"
 
 ```

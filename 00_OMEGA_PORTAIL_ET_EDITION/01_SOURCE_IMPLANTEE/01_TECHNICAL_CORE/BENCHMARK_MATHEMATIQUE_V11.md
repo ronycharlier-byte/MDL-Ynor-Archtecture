@@ -6,13 +6,13 @@ AUDIT: CERTIFIED 2026-04-06
 
 ---
 
-# BENCHMARK MATHEMATIQUE  YNOR
+# BENCHMARK MATHEMATIQUE YNOR
 
 ## Statut
 
-Benchmark de niveau recherche, concu comme stress-test  pour un systeme mathématique.
+Benchmark de niveau recherche, concu comme stress-test pour un systeme mathématique.
 
-Il est plus exigeant que le benchmark  : hypotheses plus fines, preuves plus longues, articulation inter-domaines plus stricte.
+Il est plus exigeant que le benchmark : hypotheses plus fines, preuves plus longues, articulation inter-domaines plus stricte.
 
 ## Role du document
 

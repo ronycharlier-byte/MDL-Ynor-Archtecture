@@ -3,10 +3,10 @@
 
 **Protocole d’évaluation structurelle appliqué au périmètre Belgique – Pays-Bas – Luxembourg**
 
-*   **Version :** 2.0 — Mars 2026 (Millennium Proof Update)
-*   **Auteur :** Charlier Rony
-*   **Corpus MDL :** v8.0 (Millennium Integration)
-*   **i-DEPOT Benelux :** Preuve de date de création (Consolidé 2026)
+* **Version :** 2.0 — Mars 2026 (Millennium Proof Update)
+* **Auteur :** Charlier Rony
+* **Corpus MDL :** v8.0 (Millennium Integration)
+* **i-DEPOT Benelux :** Preuve de date de création (Consolidé 2026)
 
 ---
 
@@ -26,16 +26,16 @@
 Ce document adapte le protocole MDL v2.0 aux spécificités législatives et institutionnelles de l'espace Benelux. En version Millennium, il intègre la validation par les **Invariants Dissipatifs** pour les audits d'infrastructure critique (Port d'Anvers, Hubs logistiques NL, Secteur financier LU).
 
 ## 2. Périmètre géographique et juridique
-*   **Territoires :** Belgique (Wal/Fla/Bxl), Pays-Bas, Luxembourg.
-*   **Cadre applicable :** Loi du 30 juin 1994 (BE), BCIP (Benelux IP), RGPD.
+* **Territoires :** Belgique (Wal/Fla/Bxl), Pays-Bas, Luxembourg.
+* **Cadre applicable :** Loi du 30 juin 1994 (BE), BCIP (Benelux IP), RGPD.
 
 ## 3. Architecture générale (Millennium Standard)
 Suit la séquence obligatoire : Définition $\to$ Contraintes $\to$ Hypothèses $\to$ Production $\to$ Évaluation.
-*   *Note aux auditeurs Benelux :* La validation du coefficient de stabilité neuro-physiologique ($SN$) est obligatoire pour les décisions à impact transfrontalier.
+* *Note aux auditeurs Benelux :* La validation du coefficient de stabilité neuro-physiologique ($SN$) est obligatoire pour les décisions à impact transfrontalier.
 
 ## 4. Fondements constitutionnels (Constitution v4.0)
 L'audit Benelux s'adosse à la **Constitution Millennium**.
-*   **Art. 4 :** Checklist AVANT GO (Test de réversibilité obligatoire dans le cadre environnemental Benelux).
+* **Art. 4 :** Checklist AVANT GO (Test de réversibilité obligatoire dans le cadre environnemental Benelux).
 
 ## 5. Clause juridique et protection IP
 Méthodologie conçue par Charlier Rony. L'ensemble des Volumes I à VII forme une architecture unifiée protégée.

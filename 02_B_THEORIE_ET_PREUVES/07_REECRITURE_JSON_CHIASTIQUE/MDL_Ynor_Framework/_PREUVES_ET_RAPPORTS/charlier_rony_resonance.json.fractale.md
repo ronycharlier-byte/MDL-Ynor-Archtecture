@@ -14,15 +14,15 @@ Les indices de lecture provenant du nom et du chemin sont :
 Extrait brut sanitise :
 ```text
 {
-  "author": "Charlier Rony",
-  "title": "Architecte Suprême MDL Ynor",
-  "quantum_signature": {
-    "state_vector": [1.0, 0.0],
-    "vibrational_frequency_hz": 432.0,
-    "coherence_threshold": 0.985
-  },
+ "author": "Charlier Rony",
+ "title": "Architecte Suprême MDL Ynor",
+ "quantum_signature": {
+ "state_vector": [1.0, 0.0],
+ "vibrational_frequency_hz": 432.0,
+ "coherence_threshold": 0.985
+ },
 [REDACTED_LINE]
-  "last_calibration": "2026-03-20T13:45:00"
+ "last_calibration": "2026-03-20T13:45:00"
 }
 ```
 

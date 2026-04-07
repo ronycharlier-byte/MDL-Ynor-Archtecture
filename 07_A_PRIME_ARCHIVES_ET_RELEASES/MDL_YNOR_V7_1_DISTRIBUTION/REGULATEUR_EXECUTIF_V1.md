@@ -160,7 +160,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - 2 options MAX
+ - 2 options MAX
 
 
 
@@ -169,7 +169,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - Choix forc(même imparfait)
+ - Choix forc(même imparfait)
 
 
 
@@ -349,7 +349,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-  - enchaîner une 2e micro-action
+ - enchaîner une 2e micro-action
 
 
 
@@ -358,7 +358,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-  - ou stop volontaire (mais pas retour la rflexion)
+ - ou stop volontaire (mais pas retour la rflexion)
 
 
 
@@ -619,7 +619,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - parler quelqu'un
+ - parler quelqu'un
 
 
 
@@ -628,7 +628,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - tester
+ - tester
 
 
 
@@ -637,7 +637,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - crire / produire
+ - crire / produire
 
 
 
@@ -781,7 +781,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - Si OUI -> action immdiate
+ - Si OUI -> action immdiate
 
 
 
@@ -790,7 +790,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - Si NON -> rduire l'action
+ - Si NON -> rduire l'action
 
 
 
@@ -1069,7 +1069,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - Si OUI : dcision en < 60 secondes
+ - Si OUI : dcision en < 60 secondes
 
 
 
@@ -1078,7 +1078,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - Si NON : appliquer protocole 5
+ - Si NON : appliquer protocole 5
 
 
 
@@ -1600,7 +1600,7 @@ Chaque protocole = Condition -> Dclencheur -> Excution -> Boucle
 
 
 
-   - Si NON : tu n'as pas avanc-> Forcer une action relle
+ - Si NON : tu n'as pas avanc-> Forcer une action relle
 
 
 

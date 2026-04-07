@@ -11,7 +11,7 @@ color 0B
 setlocal enabledelayedexpansion
 
 echo ==========================================================
-echo        YNOR CORE - ACTIVATION DU DEPLOIEMENT CLOUD
+echo YNOR CORE - ACTIVATION DU DEPLOIEMENT CLOUD
 echo ==========================================================
 echo.
 echo [*] Initialisation du depot Git local...
@@ -31,7 +31,7 @@ git branch -M main
 
 echo.
 echo ----------------------------------------------------------
-echo        PROCHAINE ETAPE : CONFIGURER VOTRE REPO GITHUB
+echo PROCHAINE ETAPE : CONFIGURER VOTRE REPO GITHUB
 echo ----------------------------------------------------------
 echo.
 echo 1. Creez un depot VIDE sur GitHub (ex: Ynor-API-Cloud)
@@ -40,9 +40,9 @@ echo.
 set /p giturl="Collez l'URL de votre depot GitHub ici : "
 
 if "!giturl!"=="" (
-    echo [!] ERREUR: Aucune URL saisie. Recommencez.
-    pause
-    goto eof
+ echo [!] ERREUR: Aucune URL saisie. Recommencez.
+ pause
+ goto eof
 )
 
 git remote add origin !giturl!
@@ -52,7 +52,7 @@ git push -u origin main --force
 
 echo.
 echo ==========================================================
-echo        [SUCCESS] CODE ENVOYE VERS GITHUB !
+echo [SUCCESS] CODE ENVOYE VERS GITHUB !
 echo ==========================================================
 echo.
 echo Allez maintenant sur Render.com > New Web Service > Connect Repo.

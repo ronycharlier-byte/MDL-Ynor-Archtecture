@@ -8,7 +8,7 @@ Ce dossier contient l'infrastructure nécessaire pour exposer l'AGI Ynor au mond
 - **`ynor_sdk/`** : Client Python pour intégrer Ynor dans d'autres applications.
 - **`Dockerfile`** : Configuration pour l'isolation et le déploiement Cloud.
 
-## 🚀 LANCEMENT
+## LANCEMENT
 ```bash
 uvicorn ynor_api_server:app --host 0.0.0.0 --port 8000
 ```

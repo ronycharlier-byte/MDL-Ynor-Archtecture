@@ -14,8 +14,8 @@ IF "%1"=="AUTO" GOTO auto_start
 :menu
 cls
 echo ==========================================
-echo    MDL YNOR - SYSTEM COMMAND CENTER (v3.1)
-echo          MILLENNIUM EDITION
+echo MDL YNOR - SYSTEM COMMAND CENTER (v3.1)
+echo MILLENNIUM EDITION
 echo ==========================================
 echo [1] - Verifier Environnement (Dep)
 echo [2] - Lancer API Ynor (Localhost:8492)

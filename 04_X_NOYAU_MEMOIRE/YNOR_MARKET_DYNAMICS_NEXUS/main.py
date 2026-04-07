@@ -28,13 +28,13 @@ load_dotenv()
 config = DEFAULT_CONFIG.copy()
 
 
-config["deep_think_llm"] = "gpt-5.4-mini"  # Use a different model
+config["deep_think_llm"] = "gpt-5.4-mini" # Use a different model
 
 
-config["quick_think_llm"] = "gpt-5.4-mini"  # Use a different model
+config["quick_think_llm"] = "gpt-5.4-mini" # Use a different model
 
 
-config["max_debate_rounds"] = 1  # Increase debate rounds
+config["max_debate_rounds"] = 1 # Increase debate rounds
 
 
 
@@ -46,16 +46,16 @@ config["max_debate_rounds"] = 1  # Increase debate rounds
 config["data_vendors"] = {
 
 
-    "core_stock_apis": "yfinance",           # Options: alpha_vantage, yfinance
+ "core_stock_apis": "yfinance", # Options: alpha_vantage, yfinance
 
 
-    "technical_indicators": "yfinance",      # Options: alpha_vantage, yfinance
+ "technical_indicators": "yfinance", # Options: alpha_vantage, yfinance
 
 
-    "fundamental_data": "yfinance",          # Options: alpha_vantage, yfinance
+ "fundamental_data": "yfinance", # Options: alpha_vantage, yfinance
 
 
-    "news_data": "yfinance",                 # Options: alpha_vantage, yfinance
+ "news_data": "yfinance", # Options: alpha_vantage, yfinance
 
 
 }

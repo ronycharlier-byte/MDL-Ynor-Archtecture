@@ -21,11 +21,11 @@ Les premieres lignes de force sont :
 Extrait interpretable et sanitise :
 ```json
 {
-  "validator": "Charlier Rony - Automated Protocol",
-  "timestamp": "Fri Mar 20 17:44:29 2026",
-  "falsifiability_status": "PASS",
-  "empirical_accuracy_percent": 100.0,
-  "total_samples": 200
+ "validator": "Charlier Rony - Automated Protocol",
+ "timestamp": "Fri Mar 20 17:44:29 2026",
+ "falsifiability_status": "PASS",
+ "empirical_accuracy_percent": 100.0,
+ "total_samples": 200
 }
 ```
 

@@ -2,275 +2,275 @@
 
 
 
-  "openapi": "3.1.0",
+ "openapi": "3.1.0",
 
 
 
-  "info": {
+ "info": {
 
 
 
-    "title": "MDL Ynor Canonical API",
+ "title": "MDL Ynor Canonical API",
 
 
 
-    "description": "Interface d'accs certifie au Formalisme Logique Smantique MDL V7.1. Requiert une licence canonique active.",
+ "description": "Interface d'accs certifie au Formalisme Logique Smantique MDL V7.1. Requiert une licence canonique active.",
 
 
 
-    "version": "7.1.0"
+ "version": "7.1.0"
 
 
 
-  },
+ },
 
 
 
-  "servers": [
+ "servers": [
 
 
 
-    {
+ {
 
 
 
-      "url": "https://TON_DOMAINE_PROXY_OU_NGROK.com",
+ "url": "https://TON_DOMAINE_PROXY_OU_NGROK.com",
 
 
 
-      "description": "Canonical Gateway"
+ "description": "Canonical Gateway"
 
 
 
-    }
+ }
 
 
 
-  ],
+ ],
 
 
 
-  "paths": {
+ "paths": {
 
 
 
-    "/audit": {
+ "/audit": {
 
 
 
-      "post": {
+ "post": {
 
 
 
-        "summary": "Effectuer un audit de stabilitmu",
+ "summary": "Effectuer un audit de stabilitmu",
 
 
 
-        "operationId": "auditQuery",
+ "operationId": "auditQuery",
 
 
 
-        "requestBody": {
+ "requestBody": {
 
 
 
-          "required": true,
+ "required": true,
 
 
 
-          "content": {
+ "content": {
 
 
 
-            "application/json": {
+ "application/json": {
 
 
 
-              "schema": {
+ "schema": {
 
 
 
-                "type": "object",
+ "type": "object",
 
 
 
-                "properties": {
+ "properties": {
 
 
 
-                  "query": { "type": "string" }
+ "query": { "type": "string" }
 
 
 
-                }
+ }
 
 
 
-              }
+ }
 
 
 
-            }
+ }
 
 
 
-          }
+ }
 
 
 
-        },
+ },
 
 
 
-        "responses": {
+ "responses": {
 
 
 
-          "200": { "description": "Analyse de Probabilit? de stabilitmu-Consensus" }
+ "200": { "description": "Analyse de Probabilit? de stabilitmu-Consensus" }
 
 
 
-        }
+ }
 
 
 
-      }
+ }
 
 
 
-    },
+ },
 
 
 
-    "/Formalisme Logique Smantique": {
+ "/Formalisme Logique Smantique": {
 
 
 
-      "post": {
+ "post": {
 
 
 
-        "summary": "Extraction du Formalisme Logique Smantique pur (Licence requise)",
+ "summary": "Extraction du Formalisme Logique Smantique pur (Licence requise)",
 
 
 
-        "operationId": "getFormalisme Logique Smantique",
+ "operationId": "getFormalisme Logique Smantique",
 
 
 
-        "parameters": [
+ "parameters": [
 
 
 
-          {
+ {
 
 
 
-            "name": "X-MDL-License",
+ "name": "X-MDL-License",
 
 
 
-            "in": "header",
+ "in": "header",
 
 
 
-            "required": true,
+ "required": true,
 
 
 
-            "schema": { "type": "string" },
+ "schema": { "type": "string" },
 
 
 
-            "description": "Clde stabilitMDL V7.1"
+ "description": "Clde stabilitMDL V7.1"
 
 
 
-          }
+ }
 
 
 
-        ],
+ ],
 
 
 
-        "requestBody": {
+ "requestBody": {
 
 
 
-          "required": true,
+ "required": true,
 
 
 
-          "content": {
+ "content": {
 
 
 
-            "application/json": {
+ "application/json": {
 
 
 
-              "schema": {
+ "schema": {
 
 
 
-                "type": "object",
+ "type": "object",
 
 
 
-                "properties": {
+ "properties": {
 
 
 
-                  "query": { "type": "string" }
+ "query": { "type": "string" }
 
 
 
-                }
+ }
 
 
 
-              }
+ }
 
 
 
-            }
+ }
 
 
 
-          }
+ }
 
 
 
-        },
+ },
 
 
 
-        "responses": {
+ "responses": {
 
 
 
-          "200": { "description": "Mod?lisation Pr?dictive certifie du Formalisme Logique Smantique" },
+ "200": { "description": "Mod?lisation Pr?dictive certifie du Formalisme Logique Smantique" },
 
 
 
-          "403": { "description": "Accs refus- Licence invalide" }
+ "403": { "description": "Accs refus- Licence invalide" }
 
 
 
-        }
+ }
 
 
 
-      }
+ }
 
 
 
-    }
+ }
 
 
 
-  }
+ }
 
 
 

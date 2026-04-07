@@ -38,7 +38,7 @@ AUDIT: CERTIFIED 2026-04-06
 
 
 
-**Author**: Canonical Research Collective  
+**Author**: Canonical Research Collective 
 
 
 
@@ -46,7 +46,7 @@ AUDIT: CERTIFIED 2026-04-06
 
 
 
-**Date**: March 2026  
+**Date**: March 2026 
 
 
 

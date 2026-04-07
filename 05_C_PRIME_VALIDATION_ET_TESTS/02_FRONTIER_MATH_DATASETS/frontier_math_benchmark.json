@@ -1,67 +1,67 @@
 {
 
 
-  "benchmark_name": "FrontierMath_Ynor_V10",
+ "benchmark_name": "FrontierMath_Ynor_V10",
 
 
-  "version": "1.0",
+ "version": "1.0",
 
 
-  "problems": [
+ "problems": [
 
 
-    {
+ {
 
 
-      "id": "FM_001",
+ "id": "FM_001",
 
 
-      "theorem": "Thorme de H-alpha Stabilit",
+ "theorem": "Thorme de H-alpha Stabilit",
 
 
-      "conjecture": "Soit E un espace vectoriel de mtriques de logprobs. Dmontrer que la projection KL limite l'entropie \\mu < 0.27 avec un Triumvirat Diamond.",
+ "conjecture": "Soit E un espace vectoriel de mtriques de logprobs. Dmontrer que la projection KL limite l'entropie \\mu < 0.27 avec un Triumvirat Diamond.",
 
 
-      "conditions": [
+ "conditions": [
 
 
-        "Non-mmorisable",
+ "Non-mmorisable",
 
 
-        "Topologie fractale"
+ "Topologie fractale"
 
 
-      ]
+ ]
 
 
-    },
+ },
 
 
-    {
+ {
 
 
-      "id": "FM_002",
+ "id": "FM_002",
 
 
-      "theorem": "Conjecture du Chiasme Universel",
+ "theorem": "Conjecture du Chiasme Universel",
 
 
-      "conjecture": "Prouver que la structure ABBA d'un rseau de neurones attention annule le gradient de fuite smantique.",
+ "conjecture": "Prouver que la structure ABBA d'un rseau de neurones attention annule le gradient de fuite smantique.",
 
 
-      "conditions": [
+ "conditions": [
 
 
-        "Rigueur absolue Codex obligatoire"
+ "Rigueur absolue Codex obligatoire"
 
 
-      ]
+ ]
 
 
-    }
+ }
 
 
-  ]
+ ]
 
 
 }

@@ -12,17 +12,17 @@ beta = 0.05
 difficulties = [0.5, 1.0, 2.0, 3.5, 6.0, 10.0]
 ynor_computes = []
 for diff in difficulties:
-    best_step = 1
-    best_L = -999
-    for s in steps:
-        err = np.exp(-s / diff)
-        I_eff = 1.0 - err
-        D_kl = err * 1.5
-        L = I_eff - (alpha * D_kl) - (beta * s)
-        if L > best_L:
-            best_L = L
-            best_step = s
-    ynor_computes.append(best_step)
+ best_step = 1
+ best_L = -999
+ for s in steps:
+ err = np.exp(-s / diff)
+ I_eff = 1.0 - err
+ D_kl = err * 1.5
+ L = I_eff - (alpha * D_kl) - (beta * s)
+ if L > best_L:
+ best_L = L
+ best_step = s
+ ynor_computes.append(best_step)
 
 plt.figure(figsize=(9,6))
 plt.plot(difficulties, ynor_computes, marker='o', color='#2ca02c', linewidth=2.5, markersize=8, label="AGI Ynor (Compute Auto-Régulé)")

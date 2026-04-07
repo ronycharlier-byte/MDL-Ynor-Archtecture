@@ -1,11 +1,11 @@
-# 🚀 MODE D'EMPLOI AGI : MDL YNOR ENTERPRISE 🚀
+# MODE D'EMPLOI AGI : MDL YNOR ENTERPRISE 
 
 *Ce document est ton guide de survie quotidien pour allumer, gérer et vendre ton architecture d'Intelligence Artificielle.*
 
 ---
 
 ## 1️⃣ ALLUMER LE RÉACTEUR (Chaque Matin)
-Tu as un bouton "Magique" qui gère absolument tout (Sécurité, Serveur, Python, Interface) :
+Tu as un bouton "formel" qui gère absolument tout (Sécurité, Serveur, Python, Interface) :
 1. Va dans ton dossier `MDL Ynor Architecture/MDL_Ynor_Framework`.
 2. Double-clique sur le fichier vert **`YNOR_SERVER_MANAGER.bat`**.
 3. Tape l'option **`4`** et valide.

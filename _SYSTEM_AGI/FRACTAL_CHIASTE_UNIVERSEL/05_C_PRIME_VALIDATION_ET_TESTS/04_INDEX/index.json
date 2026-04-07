@@ -1,41 +1,41 @@
 {
-  "node": "05_C_PRIME_VALIDATION_ET_TESTS",
-  "key": "C_PRIME",
-  "mirror": "C",
-  "role": "Retour miroir par validation, stress et reproductibilite",
-  "inventory_count": 8,
-  "inventory": [
-    {
-      "source": "MDL_Ynor_Framework/tests",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/.pytest_cache",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/.uv-cache",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/.venv",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/_08_EXPERIMENTS_AND_DEMOS",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/_11_GEOMAGNETISM_AND_WMM",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/_12_QUANT_FINANCE_MDL",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/_12_QUANT_FINANCE_MODERN",
-      "status": "missing"
-    }
-  ]
+ "node": "05_C_PRIME_VALIDATION_ET_TESTS",
+ "key": "C_PRIME",
+ "mirror": "C",
+ "role": "Retour miroir par validation, stress et reproductibilite",
+ "inventory_count": 8,
+ "inventory": [
+ {
+ "source": "MDL_Ynor_Framework/tests",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/.pytest_cache",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/.uv-cache",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/.venv",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/_08_EXPERIMENTS_AND_DEMOS",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/_11_GEOMAGNETISM_AND_WMM",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/_12_QUANT_FINANCE_MDL",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/_12_QUANT_FINANCE_MODERN",
+ "status": "missing"
+ }
+ ]
 }

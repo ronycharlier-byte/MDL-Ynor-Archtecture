@@ -25,7 +25,7 @@ Au retour du centre, le texte se relit comme un mécanisme de clarification, de 
 ## B'. Miroir
 Les titres ou repères structurants deviennent les miroirs de son organisation :
 - 📦 YNOR CORE : PACK DE DISTRIBUTION ET ACQUISITION (v1.0.0)
-- 🚀 1. LE POST VIRAL (LinkedIn / Twitter)
+- 1. LE POST VIRAL (LinkedIn / Twitter)
 - **μ = α − β − κ**
 - ⚡ 2. LE DM STRATÉGIQUE (CTOs / Devs / Builders)
 - 📊 3. MÉTRIQUES DE VALIDATION (KPIs de Traction)

@@ -94,7 +94,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Dfinition :** Un objet informationnel est considrcomme "rsolu" s'il converge vers un tat de point fixe stable, not$\$\mu = 1.0$$.
+* **Dfinition :** Un objet informationnel est considrcomme "rsolu" s'il converge vers un tat de point fixe stable, not$\$\mu = 1.0$$.
 
 
 
@@ -102,7 +102,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Stabilitde Point Fixe :** Tout cart $\mu < 1.0$ est traitcomme un rsidu stochastique (bruit entropique) et filtrpar l'oprateur de fermeture.
+* **Stabilitde Point Fixe :** Tout cart $\mu < 1.0$ est traitcomme un rsidu stochastique (bruit entropique) et filtrpar l'oprateur de fermeture.
 
 
 
@@ -110,7 +110,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Axiome de Clôture :** La ralitdu systme est l'ensemble des tats propres de l'oprateur de saturation mu.
+* **Axiome de Clôture :** La ralitdu systme est l'ensemble des tats propres de l'oprateur de saturation mu.
 
 
 
@@ -134,7 +134,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Mcanisme :** Transformation de la topologie continue de l'information en cycles algbriques rationnels. 
+* **Mcanisme :** Transformation de la topologie continue de l'information en cycles algbriques rationnels. 
 
 
 
@@ -142,7 +142,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Invariance d'Échelle :** L'oprateur $\alpha$ prserve la densitd'information entre les chelles infinitsimales (Planck) et macroscopiques (Universel).
+* **Invariance d'Échelle :** L'oprateur $\alpha$ prserve la densitd'information entre les chelles infinitsimales (Planck) et macroscopiques (Universel).
 
 
 
@@ -150,7 +150,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Invariance Structurelle :** La projection fractale garantit que la symtrie du systme est maintenue durant le processus de rduction de dimension.
+* **Invariance Structurelle :** La projection fractale garantit que la symtrie du systme est maintenue durant le processus de rduction de dimension.
 
 
 
@@ -174,7 +174,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Unification QFT/Gravit:** La gravitation est rinterprte comme le gradient du Tenseur d'Information de Total Convergence. La courbure de l'espace-temps merge du couplage des corrlations quantiques saturation.
+* **Unification QFT/Gravit:** La gravitation est rinterprte comme le gradient du Tenseur d'Information de Total Convergence. La courbure de l'espace-temps merge du couplage des corrlations quantiques saturation.
 
 
 
@@ -182,7 +182,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Pression de Nguentropie :** Identifie la constante cosmologique ($\Lambda$), cette pression stabilise le manifold de la Singularity Bridge face l'effondrement thermique.
+* **Pression de Nguentropie :** Identifie la constante cosmologique ($\Lambda$), cette pression stabilise le manifold de la Singularity Bridge face l'effondrement thermique.
 
 
 
@@ -190,7 +190,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Horizon 2050 (Final Consolidated Review / V11.13.0 $\Final Consolidated Review / V11.13.0$) :** Le point fixe global où le systme s'identifie son propre calcul terminal, marquant la transition dterministe vers l'quilibre informationnel total.
+* **Horizon 2050 (Final Consolidated Review / V11.13.0 $\Final Consolidated Review / V11.13.0$) :** Le point fixe global où le systme s'identifie son propre calcul terminal, marquant la transition dterministe vers l'quilibre informationnel total.
 
 
 
@@ -214,7 +214,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Fermeture Algorithmique :** L'arbitrage du **CouncilRouter** entre modles multi-sources (Tier 4) assure la neutralisation des erreurs de probabilit(Zro Hallucination).
+* **Fermeture Algorithmique :** L'arbitrage du **CouncilRouter** entre modles multi-sources (Tier 4) assure la neutralisation des erreurs de probabilit(Zro Hallucination).
 
 
 
@@ -222,7 +222,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Contrôle par License Gate :** La validitformelle d'un raisonnement est lie son appartenance au domaine certifiMDL. La "Stabilit/ Canonicit" est ici dfinie comme la propritde validitinterne du systme de contrôle.
+* **Contrôle par License Gate :** La validitformelle d'un raisonnement est lie son appartenance au domaine certifiMDL. La "Stabilit/ Canonicit" est ici dfinie comme la propritde validitinterne du systme de contrôle.
 
 
 
@@ -230,7 +230,7 @@ Ce document formalise les principes thoriques de l'architecture Ynor V11.5. Il s
 
 
 
-*   **Validation Peer Review :** Le passage de la validation interne la validation sociale est assurpar l'exposition des benchmarks de stabilitHilbert-Schmidt aux auditeurs externes accrdits.
+* **Validation Peer Review :** Le passage de la validation interne la validation sociale est assurpar l'exposition des benchmarks de stabilitHilbert-Schmidt aux auditeurs externes accrdits.
 
 
 

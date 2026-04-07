@@ -18,10 +18,10 @@ SHA256 : 65f53655c598a093de1ec6e90ae2fa9aaf08e0547ee0a98bc4530c09965d851d
 
 \geometry{margin=1in}
 \hypersetup{
-  colorlinks=true,
-  linkcolor=blue,
-  citecolor=red,
-  urlcolor=blue
+ colorlinks=true,
+ linkcolor=blue,
+ citecolor=red,
+ urlcolor=blue
 }
 
 % ----------------------- THEOREMS -------------------------------------
@@ -106,8 +106,8 @@ The $L^\infty$ norm of $\nabla u$ can be bounded by:
 \end{equation}
 By Bernstein's inequalities:
 \begin{itemize}
-    \item High frequencies ($j > N$): $\norm{\Delta_j \nabla u}_{L^\infty} \le C 2^{j(1 + 3/2 - s)} \norm{\Delta_j u}_{H^s}$.
-    \item Low frequencies ($j \le N$): $\norm{\Delta_j \nabla u}_{L^\infty} \le C N \norm{\omega}_{L^\infty}$.
+ \item High frequencies ($j > N$): $\norm{\Delta_j \nabla u}_{L^\infty} \le C 2^{j(1 + 3/2 - s)} \norm{\Delta_j u}_{H^s}$.
+ \item Low frequencies ($j \le N$): $\norm{\Delta_j \nabla u}_{L^\infty} \le C N \norm{\omega}_{L^\infty}$.
 \end{itemize}
 Choosing $N \sim \log \norm{u}_{H^s}$ yields the logarithmic inequality.
 

@@ -23,155 +23,155 @@ Elle relie les axiomes, les protocoles, les axes, les vecteurs et la vectorisati
 
 mindmap
 
-  root((Ynor))
+ root((Ynor))
 
-    Noyau
+ Noyau
 
-      Centre_Sym?trie R?cursive
+ Centre_Sym?trie R?cursive
 
-      Retour
+ Retour
 
-      Coherence
+ Coherence
 
-      Stabilite
+ Stabilite
 
-      Carte_Miroir
+ Carte_Miroir
 
-    Axiomes
+ Axiomes
 
-      Fondamentaux
+ Fondamentaux
 
-      Secondaires
+ Secondaires
 
-    Protocoles
+ Protocoles
 
-      Fondamentaux
+ Fondamentaux
 
-      Secondaires
+ Secondaires
 
-      Par_Axe
+ Par_Axe
 
-      Sous_Axes
+ Sous_Axes
 
-      Feuilles
+ Feuilles
 
-      Sous_Sous_Axes
+ Sous_Sous_Axes
 
-      Sous_Sous_Sous_Axes
+ Sous_Sous_Sous_Axes
 
-    Axes
+ Axes
 
-      Principaux
+ Principaux
 
-        Mathématique
+ Mathématique
 
-        Biologique
+ Biologique
 
-        Physique
+ Physique
 
-        Scientifique
+ Scientifique
 
-      Secondaires
+ Secondaires
 
-        Cognitif
+ Cognitif
 
-        Neurologique
+ Neurologique
 
-        Mecanique_Quantique
+ Mecanique_Quantique
 
-        Informationnel
+ Informationnel
 
-        Computationnel
+ Computationnel
 
-        Semiotique
+ Semiotique
 
-        Temporel
+ Temporel
 
-        Principal Investigatorural
+ Principal Investigatorural
 
-        Editorial
+ Editorial
 
-        Strategique
+ Strategique
 
-      Profonds
+ Profonds
 
-        Metaphysique
+ Metaphysique
 
-        Symbolique
+ Symbolique
 
-        Operationnel
+ Operationnel
 
-        Relationnel
+ Relationnel
 
-        Ethique
+ Ethique
 
-        Cosmologique
+ Cosmologique
 
-        Dialectique
+ Dialectique
 
-        Spirituel
+ Spirituel
 
-        Initiatique
+ Initiatique
 
-        Politique
+ Politique
 
-        Civilisationnel
+ Civilisationnel
 
-        Industriel
+ Industriel
 
-        Systemique
+ Systemique
 
-        Poetique
+ Poetique
 
-        Ingenierique
+ Ingenierique
 
-        Existentiel
+ Existentiel
 
-        Anthropologique
+ Anthropologique
 
-        Ecologique
+ Ecologique
 
-        Memoiriel
+ Memoiriel
 
-        Archivistique
+ Archivistique
 
-        Geopolitique
+ Geopolitique
 
-        Metalogique
+ Metalogique
 
-        Auto_Reflexif
+ Auto_Reflexif
 
-    Vecteurs
+ Vecteurs
 
-      Fondamentaux
+ Fondamentaux
 
-      Par_Famille
+ Par_Famille
 
-      Par_Axe
+ Par_Axe
 
-      Sous_Axes
+ Sous_Axes
 
-      Feuilles
+ Feuilles
 
-    Vectorisation
+ Vectorisation
 
-      Noyau
+ Noyau
 
-      Pilotage
+ Pilotage
 
-      Rayonnement
+ Rayonnement
 
-      Force
+ Force
 
-    Cartes_Miroir
+ Cartes_Miroir
 
-      Noyau
+ Noyau
 
-      Protocoles
+ Protocoles
 
-      Axes
+ Axes
 
-      Vecteurs
+ Vecteurs
 
 ```
 

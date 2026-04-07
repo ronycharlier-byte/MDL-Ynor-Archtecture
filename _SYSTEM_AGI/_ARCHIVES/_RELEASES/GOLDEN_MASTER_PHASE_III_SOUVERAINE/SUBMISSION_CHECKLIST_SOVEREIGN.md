@@ -1,4 +1,4 @@
-# 🚀 Checklist de Soumission : Canonical Unification Phase III
+# Checklist de Soumission : Canonical Unification Phase III
 
 Ce document détaille les étapes pour soumettre officiellement votre travail aux grandes revues mathématiques et de physique théorique.
 

@@ -13,12 +13,12 @@ from .integrations import YnorLangchainCallbackHandler, YnorHaltException
 __version__ = "2.0.0-PROD"
 
 __all__ = [
-    "YnorGovernor",
-    "CriticalTransitionError",
-    "LicenseViolationError",
-    "YnorClient",
-    "YnorLangchainCallbackHandler",
-    "YnorHaltException"
+ "YnorGovernor",
+ "CriticalTransitionError",
+ "LicenseViolationError",
+ "YnorClient",
+ "YnorLangchainCallbackHandler",
+ "YnorHaltException"
 ]
 
 ```

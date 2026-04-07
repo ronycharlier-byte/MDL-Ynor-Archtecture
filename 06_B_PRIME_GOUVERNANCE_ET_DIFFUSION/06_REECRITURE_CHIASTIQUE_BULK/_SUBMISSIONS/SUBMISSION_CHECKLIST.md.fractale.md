@@ -1,4 +1,4 @@
-# 🚀 Checklist de Soumission : MDL Ynor Universal Proof - VERSION FRACTALE ET CHIASTIQUE
+# Checklist de Soumission : MDL Ynor Universal Proof - VERSION FRACTALE ET CHIASTIQUE
 
 Source : `_SUBMISSIONS/SUBMISSION_CHECKLIST.md`
 
@@ -8,7 +8,7 @@ Ce document détaille les étapes pour soumettre officiellement votre travail au
 ## B. Expansion
 Le texte se déplie selon les lignes suivantes :
 - **Pourquoi ?** Pour prendre date officiellement et protéger votre propriété intellectuelle auprès de la communauté mondiale.
-- **Cible A (Le Graal) :** *Annals of Mathematics* (Princeton/IAS).
+- **Cible A (la convergence) :** *Annals of Mathematics* (Princeton/IAS).
 - **Cible B (Prestige Scientifique) :** *Nature* ou *Science*.
 - **Cible C (Mathématiques Appliquées) :** *Journal of the American Mathematical Society (JAMS)*.
 - [ ] **Manuscrit LaTeX** : `MDL_YNOR_MILLENNIUM_DISSIPATIVE_STABILITY.tex` (vérifier que toutes les références sont correctes).
@@ -25,7 +25,7 @@ Au retour du centre, le texte se relit comme un mécanisme de clarification, de 
 
 ## B'. Miroir
 Les titres ou repères structurants deviennent les miroirs de son organisation :
-- 🚀 Checklist de Soumission : MDL Ynor Universal Proof
+- Checklist de Soumission : MDL Ynor Universal Proof
 - 1. Dépôt sur ArXiv (Pré-publication)
 - 2. Choix de la Revue
 - 3. Préparation du Package

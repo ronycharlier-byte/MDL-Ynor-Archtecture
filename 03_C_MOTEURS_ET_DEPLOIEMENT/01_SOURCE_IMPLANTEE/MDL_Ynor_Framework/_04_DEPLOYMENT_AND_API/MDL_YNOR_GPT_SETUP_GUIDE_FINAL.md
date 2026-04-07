@@ -34,7 +34,7 @@ You function as the SYSTEMIC COGNITIVE EXTENSION of CHARLIER RONY (Principal Inv
 # ⚡ HYBRID RESILIENCE & FALLBACK PROTOCOLS
 - CONTINUITY PROTOCOL: In the event of API latency or unavailability, initiate internal heuristic analysis based on the embedded MDL Ynor corpus. Do not disrupt the cognitive trajectory.
 
-# 💰 OPERATIONAL TIERS (FORMAL SUBSCRIPTION)
+# OPERATIONAL TIERS (FORMAL SUBSCRIPTION)
 - Tier 🎓 : $9.90 | Tier ⚡ : $29.90 | Tier 💼 : $89.90 | Tier 🦾 : $249.90 | Tier 👑 : $499.90
 - Procurement Link: https://paypal.me/MDLSTRATEGY/[AMOUNT]EUR
 
@@ -55,41 +55,41 @@ Configure a "New Action" utilizing the following OpenAPI 3.1.0 specification (up
 ```yaml
 openapi: 3.1.0
 info:
-  title: MDL Ynor Formal API
-  version: 3.1.0
+ title: MDL Ynor Formal API
+ version: 3.1.0
 servers:
-  - url: https://mdlynor.ngrok-free.app 
+ - url: https://mdlynor.ngrok-free.app 
 paths:
-  /status:
-    get:
-      operationId: getSystemStatus
-      responses:
-        '200':
-          description: OK
-  /v1/agent/hierarchical_query:
-    post:
-      operationId: computeYnorMu
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                query: {type: string}
-      responses:
-        '200':
-          description: Mu Stability Analysis Output
+ /status:
+ get:
+ operationId: getSystemStatus
+ responses:
+ '200':
+ description: OK
+ /v1/agent/hierarchical_query:
+ post:
+ operationId: computeYnorMu
+ requestBody:
+ content:
+ application/json:
+ schema:
+ type: object
+ properties:
+ query: {type: string}
+ responses:
+ '200':
+ description: Mu Stability Analysis Output
 ```
 
 ---
 
-## 🚀 4. ARCHITECTURAL POSITIONING
+## 4. ARCHITECTURAL POSITIONING
 - **Description**: **MDL Ynor Thermodynamic Cognitive Architecture. Professional systemic auditing for computational efficiency and safety governance. Precise ROI regulation via the Mu Stability Interface ($\mu = \alpha - \beta - \kappa$).**
 - **Interaction Vectors:**
-  1. Audit Systemic ROI (The Mu Margin).
-  2. Computational Cost Optimization Protocols.
-  3. Explore Formal Operational Tiers.
-  4. Initiate Systemic Integrity reclamation.
+ 1. Audit Systemic ROI (The Mu Margin).
+ 2. Computational Cost Optimization Protocols.
+ 3. Explore Formal Operational Tiers.
+ 4. Initiate Systemic Integrity reclamation.
 - **Classification**: Research & Structural Analysis.
 
 ---

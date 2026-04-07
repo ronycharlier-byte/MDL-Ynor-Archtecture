@@ -28,7 +28,7 @@ Ce document définit le tunnel de vente optimisé pour MDL Ynor, visant à conve
 
 ---
 
-## 📈 Métriques de Succès (KPIs)
+## Métriques de Succès (KPIs)
 1. **CTR (Click-Through Rate)** sur les pubs "Coûts LLM".
 2. **Taux d'activation** (Utilisation du SDK après inscription).
 3. **Taux de rétention** de la limite quotidienne (Combien de fois ils touchent le mur des 100 appels).

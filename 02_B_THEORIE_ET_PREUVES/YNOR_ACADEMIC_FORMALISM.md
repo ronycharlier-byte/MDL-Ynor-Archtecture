@@ -22,19 +22,19 @@ AUDIT: CERTIFIED 2026-04-06
 
 
 
-**Author:** Rony Charlier  
+**Author:** Rony Charlier 
 
 
 
-**Affiliation:** MDL Ynor Architecture — Independent Research  
+**Affiliation:** MDL Ynor Architecture — Independent Research 
 
 
 
-**Date:** April 5, 2026  
+**Date:** April 5, 2026 
 
 
 
-**Journal-Reference:** MDL-YNOR-V11-NORMALIZED  
+**Journal-Reference:** MDL-YNOR-V11-NORMALIZED 
 
 
 

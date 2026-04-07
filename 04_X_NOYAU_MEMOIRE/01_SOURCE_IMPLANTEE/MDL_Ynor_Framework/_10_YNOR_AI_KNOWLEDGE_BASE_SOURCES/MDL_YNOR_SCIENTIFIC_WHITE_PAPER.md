@@ -1,7 +1,7 @@
 # WHITE PAPER: MDL YNOR QUANTUM ARCHITECTURE v2.2 (Millennium Edition)
 ### THEORETICAL STABILITY OF DISSIPATIVE SYSTEMS THROUGH MU MARGIN ANALYSIS
-**Author**: Charlier Rony  
-**Date**: March 20, 2026  
+**Author**: Charlier Rony 
+**Date**: March 20, 2026 
 **Keywords**: AGI Stability, Lyapunov Stability, Hilbert Space, EU AI Act, Quantum Modeling.
 
 ---

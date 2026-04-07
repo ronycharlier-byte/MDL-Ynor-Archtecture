@@ -9,29 +9,29 @@ The $\mu$ margin is defined as the scalar viability of any information-processin
 $$\mu(t) = \alpha(t) - \beta(t) - \kappa(t)$$
 
 Where:
--   **$\alpha$ (Alpha)**: The cumulative gain in structured, non-redundant information (Effective Information $I_{eff}$).
--   **$\beta$ (Beta)**: The cumulative physical and computational cost (Physical Cost $C$).
--   **$\kappa$ (Kappa)**: The memory payload and contextual friction (Contextual Payload $M$).
+- **$\alpha$ (Alpha)**: The cumulative gain in structured, non-redundant information (Effective Information $I_{eff}$).
+- **$\beta$ (Beta)**: The cumulative physical and computational cost (Physical Cost $C$).
+- **$\kappa$ (Kappa)**: The memory payload and contextual friction (Contextual Payload $M$).
 
 ## 2. ABSTRACT MEASUREMENT PARAMETERS
 
 ### A. $\alpha$ (Effective Information Extraction)
--   **How to measure**: $\alpha$ is estimated by comparing the output $O$ against a set of axiomatic expectations $A$. It uses a variety of metrics, including semantic diversity, entity extraction density, and logical coherence score.
--   **Safe range**: $\alpha > 1.0$ is considered productive.
+- **How to measure**: $\alpha$ is estimated by comparing the output $O$ against a set of axiomatic expectations $A$. It uses a variety of metrics, including semantic diversity, entity extraction density, and logical coherence score.
+- **Safe range**: $\alpha > 1.0$ is considered productive.
 
 ### B. $\beta$ (Computational Dissipation)
--   **How to measure**: $\beta$ is a linear function of the total tokens processed, weighted by the model's energy consumption profile (FLOPs/Token).
--   **Safe range**: $\beta$ should scale sub-linearly with $\alpha$.
+- **How to measure**: $\beta$ is a linear function of the total tokens processed, weighted by the model's energy consumption profile (FLOPs/Token).
+- **Safe range**: $\beta$ should scale sub-linearly with $\alpha$.
 
 ### C. $\kappa$ (Contextual Pressure)
--   **How to measure**: $\kappa$ is a non-linear function of the context window size ($W$). It models the performance degradation and "hallucination probability" as $W$ approaches the model's architectural limits.
--   **Safe range**: $\kappa < 0.2 \cdot \alpha$.
+- **How to measure**: $\kappa$ is a non-linear function of the context window size ($W$). It models the performance degradation and "hallucination probability" as $W$ approaches the model's architectural limits.
+- **Safe range**: $\kappa < 0.2 \cdot \alpha$.
 
 ## 3. STABILITY CRITERIA
 
 A system is considered **Viable** if and only if:
-1.  **Lower Bound**: $\mu(t) > 0$ for all $t$.
-2.  **Drift Gradient**: $\frac{d\mu}{dt} \approx 0$ or positive. A sustained negative gradient signals imminent systemic collapse.
+1. **Lower Bound**: $\mu(t) > 0$ for all $t$.
+2. **Drift Gradient**: $\frac{d\mu}{dt} \approx 0$ or positive. A sustained negative gradient signals imminent systemic collapse.
 
 ## 4. EXTERNAL AUDIT PROTOCOL
 

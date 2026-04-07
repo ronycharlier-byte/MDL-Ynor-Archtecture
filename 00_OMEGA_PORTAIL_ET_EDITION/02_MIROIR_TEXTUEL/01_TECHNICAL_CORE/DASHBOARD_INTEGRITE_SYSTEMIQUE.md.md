@@ -14,15 +14,15 @@ STATUS: CANONICAL | V11.14.0 | AUDIT: CERTIFIED | FINAL CONSOLIDATED REVIEW
 ## 🛡️ Sommaire de l'Audit Terminal
 Ce tableau de bord présente les indicateurs de convergence matérielle et de validation documentaire du corpus Ynor.
 
-### 💎 1. Sceau d'Intégrité
+### 1. Sceau d'Intégrité
 - **Genesis Block** : [GENESIS_BLOCK_V11_13.md](./GENESIS_BLOCK_V11_13.md)
 - **Signature** : intégralement audité en interne, 525 fichiers certifiés par SHA-256.
 
 ### 🏗️ 2. Santé Structurelle
 ```mermaid
 pie title État du Corpus (1386 fichiers)
-    "Fichiers Canoniques Certifiés (.md, .json, .py)" : 525
-    "Archives & Releases (Hors-lecture)" : 861
+ "Fichiers Canoniques Certifiés (.md, .json, .py)" : 525
+ "Archives & Releases (Hors-lecture)" : 861
 ```
 
 ### ⚡ 3. Moteurs Actifs (Nouveau)

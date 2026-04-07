@@ -18,10 +18,10 @@ Le Traité des Dynamiques Dissipatives est désormais l'œuvre de référence in
 
 ### 3. INVARIANTS CLÉS (ZENODO DOIs)
 Tous les développements mathématiques présentés dans les chapitres PDF sont désormais consolidés sous les DOIs académiques suivants :
-*   **DOI :** 10.5281/zenodo.19181947 (Main Manuscript)
-*   **DOI :** 10.5281/zenodo.18855042
-*   **DOI :** 10.5281/zenodo.18567115
-*   **DOI :** 10.5281/zenodo.18984179
+* **DOI :** 10.5281/zenodo.19181947 (Main Manuscript)
+* **DOI :** 10.5281/zenodo.18855042
+* **DOI :** 10.5281/zenodo.18567115
+* **DOI :** 10.5281/zenodo.18984179
 
 ### 4. IMPLÉMENTATION
 Ces chapitres doivent être implémentés en tant que **Connaissances Fondamentales** du GPT MDL Ynor. Toute référence à une version antérieure à Mars 2026 est considérée comme une étape transitoire. La **Version 2.0 (Millennium)** prévaut.

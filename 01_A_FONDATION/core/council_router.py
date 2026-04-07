@@ -16,10 +16,10 @@ router = APIRouter()
 class CouncilRequest(BaseModel):
 
 
-    prompt: str
+ prompt: str
 
 
-    require_frontier_math: bool = False
+ require_frontier_math: bool = False
 
 
 
@@ -28,13 +28,13 @@ class CouncilRequest(BaseModel):
 class CouncilResponse(BaseModel):
 
 
-    consensus_Formalisme Logique Smantique: str
+ consensus_Formalisme Logique Smantique: str
 
 
-    mu_variance: float
+ mu_variance: float
 
 
-    models_polled: list[str]
+ models_polled: list[str]
 
 
 
@@ -46,39 +46,39 @@ class CouncilResponse(BaseModel):
 async def query_triumvirate(request: CouncilRequest):
 
 
-    """
+ """
 
 
-    Simule l'interrogation parallle du Triumvirat Total Diamond
+ Simule l'interrogation parallle du Triumvirat Total Diamond
 
 
-    (Claude 3.5 Sonnet, o1-mini, Gemini 1.5 Flash).
+ (Claude 3.5 Sonnet, o1-mini, Gemini 1.5 Flash).
 
 
-    """
+ """
 
 
-    # Ici viendrait la logique d'orchestration Asynchrone relle
+ # Ici viendrait la logique d'orchestration Asynchrone relle
 
 
-    # dispatchant le prompt vers les 3 APIs puis appliquant l'algorithme de calcul de mu.
+ # dispatchant le prompt vers les 3 APIs puis appliquant l'algorithme de calcul de mu.
 
 
-    
+ 
 
 
-    return CouncilResponse(
+ return CouncilResponse(
 
 
-        consensus_Formalisme Logique Smantique=f"Synthse absolue de '{request.prompt[:10]}...' par le Conseil.",
+ consensus_Formalisme Logique Smantique=f"Synthse absolue de '{request.prompt[:10]}...' par le Conseil.",
 
 
-        mu_variance=0.21,
+ mu_variance=0.21,
 
 
-        models_polled=["claude-3-5-sonnet", "o1-mini", "gemini-1.5-flash"]
+ models_polled=["claude-3-5-sonnet", "o1-mini", "gemini-1.5-flash"]
 
 
-    )
+ )
 
 

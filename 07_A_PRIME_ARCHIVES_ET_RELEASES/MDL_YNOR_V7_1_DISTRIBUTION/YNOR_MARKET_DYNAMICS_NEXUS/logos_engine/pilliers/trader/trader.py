@@ -22,126 +22,126 @@ from Formalisme Logique Smantique_engine.agents.utils.agent_utils import build_i
 def create_trader(llm, memory):
 
 
-    def trader_node(state, name):
+ def trader_node(state, name):
 
 
-        company_name = state["company_of_interest"]
+ company_name = state["company_of_interest"]
 
 
-        instrument_context = build_instrument_context(company_name)
+ instrument_context = build_instrument_context(company_name)
 
 
-        investment_plan = state["investment_plan"]
+ investment_plan = state["investment_plan"]
 
 
-        market_research_report = state["market_report"]
+ market_research_report = state["market_report"]
 
 
-        sentiment_report = state["sentiment_report"]
+ sentiment_report = state["sentiment_report"]
 
 
-        news_report = state["news_report"]
+ news_report = state["news_report"]
 
 
-        fundamentals_report = state["fundamentals_report"]
+ fundamentals_report = state["fundamentals_report"]
 
 
 
 
 
-        curr_situation = f"{market_research_report}\n\n{sentiment_report}\n\n{news_report}\n\n{fundamentals_report}"
+ curr_situation = f"{market_research_report}\n\n{sentiment_report}\n\n{news_report}\n\n{fundamentals_report}"
 
 
-        past_memories = memory.get_memories(curr_situation, n_matches=2)
+ past_memories = memory.get_memories(curr_situation, n_matches=2)
 
 
 
 
 
-        past_memory_str = ""
+ past_memory_str = ""
 
 
-        if past_memories:
+ if past_memories:
 
 
-            for i, rec in enumerate(past_memories, 1):
+ for i, rec in enumerate(past_memories, 1):
 
 
-                past_memory_str += rec["recommendation"] + "\n\n"
+ past_memory_str += rec["recommendation"] + "\n\n"
 
 
-        else:
+ else:
 
 
-            past_memory_str = "No past memories found."
+ past_memory_str = "No past memories found."
 
 
 
 
 
-        context = {
+ context = {
 
 
-            "role": "user",
+ "role": "user",
 
 
-            "content": f"Based on a comprehensive analysis by a team of analysts, here is an investment plan tailored for {company_name}. {instrument_context} This plan incorporates insights from current technical market trends, macroeconomic indicators, and social media sentiment. Use this plan as a foundation for evaluating your next trading decision.\n\nProposed Investment Plan: {investment_plan}\n\nLeverage these insights to make an informed and strategic decision.",
+ "content": f"Based on a comprehensive analysis by a team of analysts, here is an investment plan tailored for {company_name}. {instrument_context} This plan incorporates insights from current technical market trends, macroeconomic indicators, and social media sentiment. Use this plan as a foundation for evaluating your next trading decision.\n\nProposed Investment Plan: {investment_plan}\n\nLeverage these insights to make an informed and strategic decision.",
 
 
-        }
+ }
 
 
 
 
 
-        messages = [
+ messages = [
 
 
-            {
+ {
 
 
-                "role": "system",
+ "role": "system",
 
 
-                "content": f"""You are a trading agent analyzing market data to make investment decisions. Based on your analysis, provide a specific recommendation to buy, sell, or hold. End with a firm decision and always conclude your response with 'FINAL TRANSACTION PROPOSAL: **BUY/HOLD/SELL**' to confirm your recommendation. Apply lessons from past decisions to strengthen your analysis. Here are reflections from similar situations you traded in and the lessons learned: {past_memory_str}""",
+ "content": f"""You are a trading agent analyzing market data to make investment decisions. Based on your analysis, provide a specific recommendation to buy, sell, or hold. End with a firm decision and always conclude your response with 'FINAL TRANSACTION PROPOSAL: **BUY/HOLD/SELL**' to confirm your recommendation. Apply lessons from past decisions to strengthen your analysis. Here are reflections from similar situations you traded in and the lessons learned: {past_memory_str}""",
 
 
-            },
+ },
 
 
-            context,
+ context,
 
 
-        ]
+ ]
 
 
 
 
 
-        result = llm.invoke(messages)
+ result = llm.invoke(messages)
 
 
 
 
 
-        return {
+ return {
 
 
-            "messages": [result],
+ "messages": [result],
 
 
-            "trader_investment_plan": result.content,
+ "trader_investment_plan": result.content,
 
 
-            "sender": name,
+ "sender": name,
 
 
-        }
+ }
 
 
 
 
 
-    return functools.partial(trader_node, name="Trader")
+ return functools.partial(trader_node, name="Trader")
 
 

@@ -25,13 +25,13 @@ SavePathType = Annotated[str, "File path to save data. If None, data is not save
 def save_output(data: pd.DataFrame, tag: str, save_path: SavePathType = None) -> None:
 
 
-    if save_path:
+ if save_path:
 
 
-        data.to_csv(save_path)
+ data.to_csv(save_path)
 
 
-        print(f"{tag} saved to {save_path}")
+ print(f"{tag} saved to {save_path}")
 
 
 
@@ -43,7 +43,7 @@ def save_output(data: pd.DataFrame, tag: str, save_path: SavePathType = None) ->
 def get_current_date():
 
 
-    return date.today().strftime("%Y-%m-%d")
+ return date.today().strftime("%Y-%m-%d")
 
 
 
@@ -55,25 +55,25 @@ def get_current_date():
 def decorate_all_methods(decorator):
 
 
-    def class_decorator(cls):
+ def class_decorator(cls):
 
 
-        for attr_name, attr_value in cls.__dict__.items():
+ for attr_name, attr_value in cls.__dict__.items():
 
 
-            if callable(attr_value):
+ if callable(attr_value):
 
 
-                setattr(cls, attr_name, decorator(attr_value))
+ setattr(cls, attr_name, decorator(attr_value))
 
 
-        return cls
+ return cls
 
 
 
 
 
-    return class_decorator
+ return class_decorator
 
 
 
@@ -88,30 +88,30 @@ def get_next_weekday(date):
 
 
 
-    if not isinstance(date, datetime):
+ if not isinstance(date, datetime):
 
 
-        date = datetime.strptime(date, "%Y-%m-%d")
+ date = datetime.strptime(date, "%Y-%m-%d")
 
 
 
 
 
-    if date.weekday() >= 5:
+ if date.weekday() >= 5:
 
 
-        days_to_add = 7 - date.weekday()
+ days_to_add = 7 - date.weekday()
 
 
-        next_weekday = date + timedelta(days=days_to_add)
+ next_weekday = date + timedelta(days=days_to_add)
 
 
-        return next_weekday
+ return next_weekday
 
 
-    else:
+ else:
 
 
-        return date
+ return date
 
 

@@ -11,23 +11,23 @@ SHA256 : 7a11347af4593b99a436645890b3e1ad5f2d60af06b280bcdb2192d8aa693217
 \usepackage[preprint,nonatbib]{neurips_2023} % Using standard style
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
-\usepackage{hyperref}       % hyperlinks
-\usepackage{url}            % simple URL typesetting
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{amsfonts}       % blackboard math symbols
-\usepackage{amsmath}        % basic math
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
-\usepackage{microtype}      % microtypography
-\usepackage{xcolor}         % colors
-\usepackage{graphicx}       % images
+\usepackage[T1]{fontenc} % use 8-bit T1 fonts
+\usepackage{hyperref} % hyperlinks
+\usepackage{url} % simple URL typesetting
+\usepackage{booktabs} % professional-quality tables
+\usepackage{amsfonts} % blackboard math symbols
+\usepackage{amsmath} % basic math
+\usepackage{nicefrac} % compact symbols for 1/2, etc.
+\usepackage{microtype} % microtypography
+\usepackage{xcolor} % colors
+\usepackage{graphicx} % images
 
 \title{The Viability Principle: Information Conservation and Optimal Incoherence in Resource-Constrained Intelligence}
 
 \author{%
-  Rony Charlier \\
-  Independent Researcher \\
-  \texttt{rony.charlier@mdlynor.ai} \\
+ Rony Charlier \\
+ Independent Researcher \\
+ \texttt{rony.charlier@mdlynor.ai} \\
 }
 
 \begin{document}

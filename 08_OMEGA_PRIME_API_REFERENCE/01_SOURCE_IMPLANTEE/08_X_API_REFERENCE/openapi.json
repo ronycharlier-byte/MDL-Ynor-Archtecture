@@ -1,262 +1,262 @@
 {
 
 
-  "openapi": "3.1.0",
+ "openapi": "3.1.0",
 
 
-  "info": {
+ "info": {
 
 
-    "title": "MDL YNOR ACADEMIC V11.13.0",
+ "title": "MDL YNOR ACADEMIC V11.13.0",
 
 
-    "description": "Autonomous Dispatcher & Canonical Audit API for Ynor V11.13.x. Support for Final Consolidated Review / V11.13.0-Bridge (V11.8).",
+ "description": "Autonomous Dispatcher & Canonical Audit API for Ynor V11.13.x. Support for Final Consolidated Review / V11.13.0-Bridge (V11.8).",
 
 
-    "version": "11.13.0"
+ "version": "11.13.0"
 
 
-  },
+ },
 
 
-  "servers": [
+ "servers": [
 
 
-    {
+ {
 
 
-      "url": "https://mdl-ynor-api.onrender.com",
+ "url": "https://mdl-ynor-api.onrender.com",
 
 
-      "description": "Render Production Autonomous Node"
+ "description": "Render Production Autonomous Node"
 
 
-    }
+ }
 
 
-  ],
+ ],
 
 
-  "paths": {
+ "paths": {
 
 
-    "/login": {
+ "/login": {
 
 
-      "post": {
+ "post": {
 
 
-        "summary": "JWT Session Initiation",
+ "summary": "JWT Session Initiation",
 
 
-        "operationId": "login",
+ "operationId": "login",
 
 
-        "requestBody": {
+ "requestBody": {
 
 
-          "required": true,
+ "required": true,
 
 
-          "content": {
+ "content": {
 
 
-            "application/json": {
+ "application/json": {
 
 
-              "schema": {
+ "schema": {
 
 
-                "type": "object",
+ "type": "object",
 
 
-                "properties": {
+ "properties": {
 
 
-                  "license_key": { "type": "string" }
+ "license_key": { "type": "string" }
 
 
-                },
+ },
 
 
-                "required": ["license_key"]
+ "required": ["license_key"]
 
 
-              }
+ }
 
 
-            }
+ }
 
 
-          }
+ }
 
 
-        },
+ },
 
 
-        "responses": {
+ "responses": {
 
 
-          "200": { "description": "Token and expiration details" },
+ "200": { "description": "Token and expiration details" },
 
 
-          "403": { "description": "Forbidden (Invalid Key)" }
+ "403": { "description": "Forbidden (Invalid Key)" }
 
 
-        }
+ }
 
 
-      }
+ }
 
 
-    },
+ },
 
 
-    "/dispatch": {
+ "/dispatch": {
 
 
-      "post": {
+ "post": {
 
 
-        "summary": "Multi-Agent Autonomous Dispatcher",
+ "summary": "Multi-Agent Autonomous Dispatcher",
 
 
-        "operationId": "dispatch",
+ "operationId": "dispatch",
 
 
-        "requestBody": {
+ "requestBody": {
 
 
-          "required": true,
+ "required": true,
 
 
-          "content": {
+ "content": {
 
 
-            "application/json": {
+ "application/json": {
 
 
-              "schema": {
+ "schema": {
 
 
-                "type": "object",
+ "type": "object",
 
 
-                "properties": {
+ "properties": {
 
 
-                  "action": { "type": "string" },
+ "action": { "type": "string" },
 
 
-                  "payload": { "type": "object" },
+ "payload": { "type": "object" },
 
 
-                  "token": { "type": "string" },
+ "token": { "type": "string" },
 
 
-                  "license_key": { "type": "string" }
+ "license_key": { "type": "string" }
 
 
-                },
+ },
 
 
-                "required": ["action", "payload"]
+ "required": ["action", "payload"]
 
 
-              }
+ }
 
 
-            }
+ }
 
 
-          }
+ }
 
 
-        },
+ },
 
 
-        "responses": {
+ "responses": {
 
 
-          "200": {
+ "200": {
 
 
-            "description": "Canonical result and mu stability index",
+ "description": "Canonical result and mu stability index",
 
 
-            "content": {
+ "content": {
 
 
-              "application/json": {
+ "application/json": {
 
 
-                "schema": {
+ "schema": {
 
 
-                  "type": "object",
+ "type": "object",
 
 
-                  "properties": {
+ "properties": {
 
 
-                    "status": { "type": "string" },
+ "status": { "type": "string" },
 
 
-                    "mu": { "type": "number" },
+ "mu": { "type": "number" },
 
 
-                    "verdict": { "type": "string" },
+ "verdict": { "type": "string" },
 
 
-                    "data": { "type": "object" }
+ "data": { "type": "object" }
 
 
-                  }
+ }
 
 
-                }
+ }
 
 
-              }
+ }
 
 
-            }
+ }
 
 
-          },
+ },
 
 
-          "401": { "description": "Unauthorized (License Gate)" }
+ "401": { "description": "Unauthorized (License Gate)" }
 
 
-        }
+ }
 
 
-      }
+ }
 
 
-    },
+ },
 
 
-    "/health": {
+ "/health": {
 
 
-      "get": {
+ "get": {
 
 
-        "summary": "Engine Health Status",
+ "summary": "Engine Health Status",
 
 
-        "responses": { "200": { "description": "OK" } }
+ "responses": { "200": { "description": "OK" } }
 
 
-      }
+ }
 
 
-    }
+ }
 
 
-  }
+ }
 
 
 }

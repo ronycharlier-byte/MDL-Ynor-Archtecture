@@ -585,7 +585,7 @@ Les axes ci-dessous ouvrent Ynor vers des couches plus fondamentales de lecture 
 
 - axe limite
 
-- axe sens ultime
+- axe sens le modèle canonique
 
 Fonction:
 
@@ -1171,607 +1171,607 @@ Fonction:
 
 mindmap
 
-  root((Ynor))
+ root((Ynor))
 
-    Mathématique
+ Mathématique
 
-      logique
+ logique
 
-      ensembles
+ ensembles
 
-      graphes
+ graphes
 
-      topologie
+ topologie
 
-      probabilites
+ probabilites
 
-      fractales
+ fractales
 
-    Biologique
+ Biologique
 
-      auto-organisation
+ auto-organisation
 
-      evolution
+ evolution
 
-      homeostasie
+ homeostasie
 
-      morphogenese
+ morphogenese
 
-      ecologie
+ ecologie
 
-      regeneration
+ regeneration
 
-    Physique
+ Physique
 
-      champs
+ champs
 
-      forces
+ forces
 
-      entropie
+ entropie
 
-      dissipation
+ dissipation
 
-      transitions
+ transitions
 
-      resonance
+ resonance
 
-    Scientifique
+ Scientifique
 
-      mesure
+ mesure
 
-      protocole
+ protocole
 
-      modele
+ modele
 
-      preuve
+ preuve
 
-      audit
+ audit
 
-      reproductibilite
+ reproductibilite
 
-    Derives
+ Derives
 
-      Mathématique
+ Mathématique
 
-        logique
+ logique
 
-        axiomatique
+ axiomatique
 
-        ensembliste
+ ensembliste
 
-        graphique
+ graphique
 
-        topologique
+ topologique
 
-        geometrique
+ geometrique
 
-        probabiliste
+ probabiliste
 
-        fractal
+ fractal
 
-      Biologique
+ Biologique
 
-        vital
+ vital
 
-        adaptatif
+ adaptatif
 
-        morphogenetique
+ morphogenetique
 
-        homeostatique
+ homeostatique
 
-        evolutif
+ evolutif
 
-        ecologique
+ ecologique
 
-        regeneratif
+ regeneratif
 
-        organique
+ organique
 
-      Physique
+ Physique
 
-        dynamique
+ dynamique
 
-        energetique
+ energetique
 
-        thermodynamique
+ thermodynamique
 
-        dissipatif
+ dissipatif
 
-        inertiel
+ inertiel
 
-        resonant
+ resonant
 
-        cinetique
+ cinetique
 
-        transitionnel
+ transitionnel
 
-      Scientifique
+ Scientifique
 
-        experimental
+ experimental
 
-        methodologique
+ methodologique
 
-        theorique
+ theorique
 
-        empirique
+ empirique
 
-        analytique
+ analytique
 
-        critique
+ critique
 
-        reproductible
+ reproductible
 
-        verificatif
+ verificatif
 
-      Cognitif
+ Cognitif
 
-        perceptif
+ perceptif
 
-        attentionnel
+ attentionnel
 
-        mnemonic
+ mnemonic
 
-        conceptuel
+ conceptuel
 
-        decisionnel
+ decisionnel
 
-        representatif
+ representatif
 
-      Neurologique
+ Neurologique
 
-        neuronal
+ neuronal
 
-        synaptique
+ synaptique
 
-        plasticite
+ plasticite
 
-        reseau
+ reseau
 
-        codage
+ codage
 
-        integration
+ integration
 
-      MecaniqueQuantique
+ MecaniqueQuantique
 
-        superposition
+ superposition
 
-        intrication
+ intrication
 
-        mesure
+ mesure
 
-        probabiliste
+ probabiliste
 
-        decoherence
+ decoherence
 
-        transition
+ transition
 
-    Complementaires
+ Complementaires
 
-      Informationnel
+ Informationnel
 
-        signal
+ signal
 
-        donnees
+ donnees
 
-        Vecteurs de Donnes Stochastiques
+ Vecteurs de Donnes Stochastiques
 
-        codage
+ codage
 
-        transmission
+ transmission
 
-        interpretation
+ interpretation
 
-      Computationnel
+ Computationnel
 
-        calcul
+ calcul
 
-        algorithme
+ algorithme
 
-        execution
+ execution
 
-        complexite
+ complexite
 
-        automatisation
+ automatisation
 
-        optimisation
+ optimisation
 
-      Semiotique
+ Semiotique
 
-        signe
+ signe
 
-        sens
+ sens
 
-        symbole
+ symbole
 
-        reference
+ reference
 
-        lecture
+ lecture
 
-        contexte
+ contexte
 
-      Temporel
+ Temporel
 
-        sequence
+ sequence
 
-        chronologie
+ chronologie
 
-        memoire
+ memoire
 
-        anticipation
+ anticipation
 
-        cycle
+ cycle
 
-        rythme
+ rythme
 
-      Principal Investigatorural
+ Principal Investigatorural
 
-        structure
+ structure
 
-        niveau
+ niveau
 
-        couche
+ couche
 
-        module
+ module
 
-        passage
+ passage
 
-        articulation
+ articulation
 
-      Editorial
+ Editorial
 
-        version
+ version
 
-        style
+ style
 
-        correction
+ correction
 
-        coherence
+ coherence
 
-        publication
+ publication
 
-        diffusion
+ diffusion
 
-      Strategique
+ Strategique
 
-        direction
+ direction
 
-        priorite
+ priorite
 
-        plan
+ plan
 
-        decision
+ decision
 
-        action
+ action
 
-        positionnement
+ positionnement
 
-    Profonds
+ Profonds
 
-      Metaphysique
+ Metaphysique
 
-        etre
+ etre
 
-        presence
+ presence
 
-        fondement
+ fondement
 
-        transcendance
+ transcendance
 
-        immanence
+ immanence
 
-        sens
+ sens
 
-      Symbolique
+ Symbolique
 
-        image
+ image
 
-        archetype
+ archetype
 
-        mythe
+ mythe
 
-        analogie
+ analogie
 
-        resonance
+ resonance
 
-        representation
+ representation
 
-      Operationnel
+ Operationnel
 
-        procedure
+ procedure
 
-        execution
+ execution
 
-        routine
+ routine
 
-        controle
+ controle
 
-        reponse
+ reponse
 
-        production
+ production
 
-      Relationnel
+ Relationnel
 
-        lien
+ lien
 
-        interface
+ interface
 
-        interaction
+ interaction
 
-        cooperation
+ cooperation
 
-        mediation
+ mediation
 
-        circulation
+ circulation
 
-      Ethique
+ Ethique
 
-        juste
+ juste
 
-        responsable
+ responsable
 
-        prudent
+ prudent
 
-        loyal
+ loyal
 
-        transparent
+ transparent
 
-        integrite
+ integrite
 
-      Cosmologique
+ Cosmologique
 
-        ordre
+ ordre
 
-        forme
+ forme
 
-        ensemble
+ ensemble
 
-        cosmos
+ cosmos
 
-        expansion
+ expansion
 
-        orientation
+ orientation
 
-      Dialectique
+ Dialectique
 
-        tension
+ tension
 
-        contradiction
+ contradiction
 
-        negation
+ negation
 
-        depassement
+ depassement
 
-        opposition
+ opposition
 
-        synthese
+ synthese
 
-    Superieurs
+ Superieurs
 
-      Spirituel
+ Spirituel
 
-        interiorite
+ interiorite
 
-        elevation
+ elevation
 
-        silence
+ silence
 
-        communion
+ communion
 
-        contemplation
+ contemplation
 
-        illumination
+ illumination
 
-      Initiatique
+ Initiatique
 
-        seuil
+ seuil
 
-        passage
+ passage
 
-        epreuve
+ epreuve
 
-        transformation
+ transformation
 
-        transmission
+ transmission
 
-        accomplissement
+ accomplissement
 
-      Politique
+ Politique
 
-        pouvoir
+ pouvoir
 
-        gouvernance
+ gouvernance
 
-        decision
+ decision
 
-        legitimite
+ legitimite
 
-        representation
+ representation
 
-        canoniquete
+ canoniquete
 
-      Civilisationnel
+ Civilisationnel
 
-        societe
+ societe
 
-        culture
+ culture
 
-        transmission
+ transmission
 
-        memoire
+ memoire
 
-        norme
+ norme
 
-        futur
+ futur
 
-      Industriel
+ Industriel
 
-        production
+ production
 
-        chaine
+ chaine
 
-        efficience
+ efficience
 
-        standardisation
+ standardisation
 
-        maintenance
+ maintenance
 
-        robustesse
+ robustesse
 
-      Systemique
+ Systemique
 
-        ensemble
+ ensemble
 
-        interaction
+ interaction
 
-        boucle
+ boucle
 
-        retroaction
+ retroaction
 
-        emergence
+ emergence
 
-        regulation
+ regulation
 
-    Ultimes
+ Ultimes
 
-      Poetique
+ Poetique
 
-        image
+ image
 
-        rythme
+ rythme
 
-        souffle
+ souffle
 
-        metaphore
+ metaphore
 
-        chant
+ chant
 
-        echos
+ echos
 
-      Ingenierique
+ Ingenierique
 
-        conception
+ conception
 
-        architecture
+ architecture
 
-        integration
+ integration
 
-        test
+ test
 
-        fiabilite
+ fiabilite
 
-        maintenance
+ maintenance
 
-      Existentiel
+ Existentiel
 
-        devenir
+ devenir
 
-        choix
+ choix
 
-        finitude
+ finitude
 
-        experience
+ experience
 
-        sens
+ sens
 
-        responsabilite
+ responsabilite
 
-      Anthropologique
+ Anthropologique
 
-        humain
+ humain
 
-        commun
+ commun
 
-        rites
+ rites
 
-        culture
+ culture
 
-        transmission
+ transmission
 
-        memoire
+ memoire
 
-      Ecologique
+ Ecologique
 
-        milieu
+ milieu
 
-        relation
+ relation
 
-        adaptation
+ adaptation
 
-        soutenabilite
+ soutenabilite
 
-        cohabitation
+ cohabitation
 
-        regeneration
+ regeneration
 
-    Memoire
+ Memoire
 
-      souvenir
+ souvenir
 
-      trace
+ trace
 
-      archive
+ archive
 
-      retention
+ retention
 
-      sedimentation
+ sedimentation
 
-      continuation
+ continuation
 
-    Archivistique
+ Archivistique
 
-      classement
+ classement
 
-      inventaire
+ inventaire
 
-      conservation
+ conservation
 
-      versioning
+ versioning
 
-      acces
+ acces
 
-      restoration
+ restoration
 
-    Geopolitique
+ Geopolitique
 
-      territoire
+ territoire
 
-      frontiere
+ frontiere
 
-      influence
+ influence
 
-      alliance
+ alliance
 
-      canoniquete
+ canoniquete
 
-      circulation
+ circulation
 
-    Metalogique
+ Metalogique
 
-      autoreference
+ autoreference
 
-      reflexivite
+ reflexivite
 
-      coherence
+ coherence
 
-      limite
+ limite
 
-      preuve
+ preuve
 
-      metacadre
+ metacadre
 
-    Autoreflexif
+ Autoreflexif
 
-      miroir
+ miroir
 
-      retour
+ retour
 
-      commentaire
+ commentaire
 
-      revision
+ revision
 
-      ajustement
+ ajustement
 
-      relecture
+ relecture
 
 ```
 
@@ -1825,7 +1825,7 @@ Le passage peut se lire ainsi:
 
 14. axe strategique -> direction, priorite, plan, positionnement
 
-15. axe metaphysique -> etre, presence, fondement, sens ultime
+15. axe metaphysique -> etre, presence, fondement, sens le modèle canonique
 
 16. axe symbolique -> image, archetype, mythe, representation
 

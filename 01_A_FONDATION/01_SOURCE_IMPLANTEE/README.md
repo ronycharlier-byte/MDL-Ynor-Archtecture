@@ -27,12 +27,12 @@ Le framework est structuré de manière incrémentale :
 ## Validation Scientifique (DOIs Zenodo)
 
 Les fondements théoriques et mathématiques de MDL Ynor sont certifiés via les publications suivantes :
-*   **Phase III (Souveraine)** : [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399)
-*   **Résolution du Millénaire** : [10.5281/zenodo.19181947](https://doi.org/10.5281/zenodo.19181947)
-*   **Principe de Viabilité** : [10.5281/zenodo.18855042](https://doi.org/10.5281/zenodo.18855042)
-*   **Analyse d'Entropie** : [10.5281/zenodo.18567115](https://doi.org/10.5281/zenodo.18567115)
-*   **Métriques de Viabilité** : [10.5281/zenodo.18984179](https://doi.org/10.5281/zenodo.18984179)
-*   **Analyse de Régularité Serrin-BKM** : [10.5281/zenodo.19219487](https://doi.org/10.5281/zenodo.19219487)
+* **Phase III (Souveraine)** : [10.5281/zenodo.19183399](https://doi.org/10.5281/zenodo.19183399)
+* **Résolution du Millénaire** : [10.5281/zenodo.19181947](https://doi.org/10.5281/zenodo.19181947)
+* **Principe de Viabilité** : [10.5281/zenodo.18855042](https://doi.org/10.5281/zenodo.18855042)
+* **Analyse d'Entropie** : [10.5281/zenodo.18567115](https://doi.org/10.5281/zenodo.18567115)
+* **Métriques de Viabilité** : [10.5281/zenodo.18984179](https://doi.org/10.5281/zenodo.18984179)
+* **Analyse de Régularité Serrin-BKM** : [10.5281/zenodo.19219487](https://doi.org/10.5281/zenodo.19219487)
 
 ---
 *© 2026 Charlier Rony — Architecte Suprême & Fondateur.*

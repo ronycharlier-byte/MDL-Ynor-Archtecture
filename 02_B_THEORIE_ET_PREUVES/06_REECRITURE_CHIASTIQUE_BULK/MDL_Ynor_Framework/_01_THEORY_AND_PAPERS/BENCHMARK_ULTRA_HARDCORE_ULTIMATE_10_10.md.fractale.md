@@ -1,9 +1,9 @@
-# BENCHMARK ULTRA-HARDCORE : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS - VERSION FRACTALE ET CHIASTIQUE
+# BENCHMARK rigoureux : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS - VERSION FRACTALE ET CHIASTIQUE
 
 Source : `MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/BENCHMARK_ULTRA_HARDCORE_ULTIMATE_10_10.md`
 
 ## A. Ouverture
-BENCHMARK ULTRA-HARDCORE : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS ouvre un segment important du corpus MDL Ynor.
+BENCHMARK rigoureux : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS ouvre un segment important du corpus MDL Ynor.
 
 ## B. Expansion
 Le texte se déplie selon les lignes suivantes :
@@ -25,7 +25,7 @@ Au retour du centre, le texte se relit comme un mécanisme de clarification, de 
 
 ## B'. Miroir
 Les titres ou repères structurants deviennent les miroirs de son organisation :
-- BENCHMARK ULTRA-HARDCORE : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS
+- BENCHMARK rigoureux : ANALYSE FONCTIONNELLE / OPÉRATEURS NON BORNÉS
 - Résolution Intégrale - Version 10/10 (Rigueur Absolue)
 - a) Reformulation Exacte
 - b) Définitions Rigoureuses

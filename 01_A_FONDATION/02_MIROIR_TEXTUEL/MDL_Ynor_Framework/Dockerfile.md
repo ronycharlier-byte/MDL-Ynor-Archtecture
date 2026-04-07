@@ -19,9 +19,9 @@ WORKDIR /app
 
 # Installation dépendances système minimales
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+ build-essential \
+ curl \
+ && rm -rf /var/lib/apt/lists/*
 
 # Installation requirements
 COPY requirements.txt .

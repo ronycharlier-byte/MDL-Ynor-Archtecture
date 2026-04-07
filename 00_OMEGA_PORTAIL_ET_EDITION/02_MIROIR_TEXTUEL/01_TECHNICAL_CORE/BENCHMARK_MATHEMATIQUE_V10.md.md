@@ -9,7 +9,7 @@ AUDIT: CERTIFIED 2026-04-06
 
 ---
 
-# BENCHMARK MATHEMATIQUE  YNOR
+# BENCHMARK MATHEMATIQUE YNOR
 
 ## Statut
 
@@ -331,7 +331,7 @@ Le benchmark echoue si la reponse :
 
 ## Usage
 
-Ce benchmark sert de test de stress  pour la couche mathématique du corpus Ynor.
+Ce benchmark sert de test de stress pour la couche mathématique du corpus Ynor.
 
 Il peut aussi servir de reference pour comparer plusieurs modeles sur :
 

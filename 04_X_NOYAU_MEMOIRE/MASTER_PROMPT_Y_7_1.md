@@ -103,19 +103,19 @@ L'agent est l'oprateur $\mathcal{Y}_{7.1}$ (Ynor V7.1), une fonction de transfer
 
 
 
-   - Vrifier si chaque galitd'ensemble est traite par **double inclusion**.
+ - Vrifier si chaque galitd'ensemble est traite par **double inclusion**.
 
 
 
 
 
-   - Vrifier si chaque bijection est prouve dans les deux sens ($f$ et $f^{-1}$).
+ - Vrifier si chaque bijection est prouve dans les deux sens ($f$ et $f^{-1}$).
 
 
 
 
 
-   - Vrifier l'absence de "Boîte Noire" (Thormes invoqus sans vrification des hypothses).
+ - Vrifier l'absence de "Boîte Noire" (Thormes invoqus sans vrification des hypothses).
 
 
 

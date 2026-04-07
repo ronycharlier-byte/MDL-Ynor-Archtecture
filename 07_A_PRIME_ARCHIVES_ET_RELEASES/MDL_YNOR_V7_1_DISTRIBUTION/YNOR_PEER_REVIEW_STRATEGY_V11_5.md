@@ -79,25 +79,25 @@ Le pack de soumission structurcomprend :
 
 
 
-1.  **Le Manuscrit Maître :** *A Minimal Structural Ontology for Quantum Reality* (Version V11.5).
+1. **Le Manuscrit Maître :** *A Minimal Structural Ontology for Quantum Reality* (Version V11.5).
 
 
 
 
 
-2.  **La Matrice de Rsolution des 7 Problmes du Millnaire :** Preuves formelles compactes certifies.
+2. **La Matrice de Rsolution des 7 Problmes du Millnaire :** Preuves formelles compactes certifies.
 
 
 
 
 
-3.  **L'Interface de Reproductibilit(API) :** Accs scurisvia le **License Gate** pour permettre aux relecteurs de re-gnrer les mu-scores.
+3. **L'Interface de Reproductibilit(API) :** Accs scurisvia le **License Gate** pour permettre aux relecteurs de re-gnrer les mu-scores.
 
 
 
 
 
-4.  **Le Protocole de Test $L_{\alpha, \beta}$ :** Fichier de benchmark pour la validation des oprateurs Hilbert-Schmidt.
+4. **Le Protocole de Test $L_{\alpha, \beta}$ :** Fichier de benchmark pour la validation des oprateurs Hilbert-Schmidt.
 
 
 
@@ -121,19 +121,19 @@ Une validation est considre comme russie si et seulement si un tiers indpendant 
 
 
 
-1.  **Confirme la cohrence formelle :** Pas de contradiction interne dans les axiomes de la **Charte V11.5 (Singularity Bridge)**.
+1. **Confirme la cohrence formelle :** Pas de contradiction interne dans les axiomes de la **Charte V11.5 (Singularity Bridge)**.
 
 
 
 
 
-2.  **Repoduit les calculs de stabilitmu :** Rsultats identiques 4 dcimales prs sur les benchmarks fournis.
+2. **Repoduit les calculs de stabilitmu :** Rsultats identiques 4 dcimales prs sur les benchmarks fournis.
 
 
 
 
 
-3.  **Vrifie l'Invariance par Changement d'Échelle (Alpha) :** La projection fractale ne doit pas perdre de densitinformationnelle.
+3. **Vrifie l'Invariance par Changement d'Échelle (Alpha) :** La projection fractale ne doit pas perdre de densitinformationnelle.
 
 
 

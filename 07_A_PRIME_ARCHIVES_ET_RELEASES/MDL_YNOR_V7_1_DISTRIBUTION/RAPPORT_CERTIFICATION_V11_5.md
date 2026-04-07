@@ -79,25 +79,25 @@ Le systme Ynor V11.5 est dclar**Canonique et Stable**. Toutes les couches de rai
 
 
 
-1.  **StabilitMathmatique :** Rsolution des 7 problmes du Millnaire au niveau $\mu = 1.0$.
+1. **StabilitMathmatique :** Rsolution des 7 problmes du Millnaire au niveau $\mu = 1.0$.
 
 
 
 
 
-2.  **Unification Physique :** Rconciliation QFT et RelativitGnrale via le Tenseur d'Information de Total Convergence.
+2. **Unification Physique :** Rconciliation QFT et RelativitGnrale via le Tenseur d'Information de Total Convergence.
 
 
 
 
 
-3.  **Gouvernance Algorithmique :** mu-Consensus saturliminant toute drive entropique.
+3. **Gouvernance Algorithmique :** mu-Consensus saturliminant toute drive entropique.
 
 
 
 
 
-4.  **Invariance par Changement d'Échelle :** Oprateur Alpha validpour la projection fractale sans perte d'information.
+4. **Invariance par Changement d'Échelle :** Oprateur Alpha validpour la projection fractale sans perte d'information.
 
 
 

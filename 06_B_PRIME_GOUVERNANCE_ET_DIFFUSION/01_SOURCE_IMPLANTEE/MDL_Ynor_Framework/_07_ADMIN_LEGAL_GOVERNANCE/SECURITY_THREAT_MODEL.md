@@ -23,10 +23,10 @@ This document formalizes the security architecture of the MDL Ynor Framework, ta
 
 ## 3. INCIDENT RESPONSE PLAN (IRP)
 
-1.  **Detection**: Audit logs in `logs/ynor_audit.log` show a "Anomalous Mu Pattern".
-2.  **Containment**: Automated revocation of the suspect API key.
-3.  **Escalation**: Alert sent to **Rony Charlier** (Level 1).
-4.  **Recovery**: Full reset of the AGI brain and Knowledge Base from the last validated backup.
+1. **Detection**: Audit logs in `logs/ynor_audit.log` show a "Anomalous Mu Pattern".
+2. **Containment**: Automated revocation of the suspect API key.
+3. **Escalation**: Alert sent to **Rony Charlier** (Level 1).
+4. **Recovery**: Full reset of the AGI brain and Knowledge Base from the last validated backup.
 
 ## 4. PENETRATION TESTING REPORT (MOCK)
 

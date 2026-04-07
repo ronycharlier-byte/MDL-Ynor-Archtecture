@@ -28,393 +28,393 @@ import os
 
 class DiracRiemannOperator:
 
-    """
+ """
 
-    Reprsente l'oprateur de Dirac D = -i sigma_z d/du + sigma_x V(u) 
+ Reprsente l'oprateur de Dirac D = -i sigma_z d/du + sigma_x V(u) 
 
-    sur L^2(R) \otimes C^2.
+ sur L^2(R) \otimes C^2.
 
-    """
+ """
 
-    def __init__(self, n_points=5000, u_max=10.0, eta=0.03, epsilon=0.05, gain=100.0):
+ def __init__(self, n_points=5000, u_max=10.0, eta=0.03, epsilon=0.05, gain=100.0):
 
-        self.n_points = n_points
+ self.n_points = n_points
 
-        self.u_max = u_max
+ self.u_max = u_max
 
-        self.eta = eta
+ self.eta = eta
 
-        self.epsilon = epsilon
+ self.epsilon = epsilon
 
-        self.gain = gain
+ self.gain = gain
 
-        
+ 
 
-        self.u = np.linspace(-u_max, u_max, n_points)
+ self.u = np.linspace(-u_max, u_max, n_points)
 
-        self.du = self.u[1] - self.u[0]
+ self.du = self.u[1] - self.u[0]
 
-        self.V = self._construct_potential()
+ self.V = self._construct_potential()
 
-        
+ 
 
-        # État de l'oprateur (Proprits spectrales)
+ # État de l'oprateur (Proprits spectrales)
 
-        self.is_self_adjoint = False
+ self.is_self_adjoint = False
 
-        self.deficiency_indices = (0, 0)
+ self.deficiency_indices = (0, 0)
 
-        self.H = None
+ self.H = None
 
 
 
-    def _von_mangoldt(self, n):
+ def _von_mangoldt(self, n):
 
-        """Fonction arithmtique Lambda(n) - Support du potentiel fractal"""
+ """Fonction arithmtique Lambda(n) - Support du potentiel fractal"""
 
-        if n < 2: return 0
+ if n < 2: return 0
 
-        p = 2
+ p = 2
 
-        while p*p <= n:
+ while p*p <= n:
 
-            if n % p == 0:
+ if n % p == 0:
 
-                p_k = p
+ p_k = p
 
-                while p_k < n: p_k *= p
+ while p_k < n: p_k *= p
 
-                return np.log(p) if p_k == n else 0
+ return np.log(p) if p_k == n else 0
 
-            p += 1
+ p += 1
 
-        return np.log(n)
+ return np.log(n)
 
 
 
-    def _construct_potential(self):
+ def _construct_potential(self):
 
-        """Construction du potentiel pair V(u) bassur les nombres premiers"""
+ """Construction du potentiel pair V(u) bassur les nombres premiers"""
 
-        V = np.zeros_like(self.u)
+ V = np.zeros_like(self.u)
 
-        n_max = int(np.exp(self.u_max))
+ n_max = int(np.exp(self.u_max))
 
-        print(f"[Ynor] Construction du superpotentiel (n_max={n_max})...")
+ print(f"[Ynor] Construction du superpotentiel (n_max={n_max})...")
 
-        for n in range(2, n_max + 1):
+ for n in range(2, n_max + 1):
 
-            L = self._von_mangoldt(n)
+ L = self._von_mangoldt(n)
 
-            if L > 0:
+ if L > 0:
 
-                weight = L / (n**(0.5 + self.epsilon)) * self.gain
+ weight = L / (n**(0.5 + self.epsilon)) * self.gain
 
-                V += weight * np.exp(-(self.u - np.log(n))**2 / (2 * self.eta**2))
+ V += weight * np.exp(-(self.u - np.log(n))**2 / (2 * self.eta**2))
 
-                V += weight * np.exp(-(self.u + np.log(n))**2 / (2 * self.eta**2))
+ V += weight * np.exp(-(self.u + np.log(n))**2 / (2 * self.eta**2))
 
-        return V
+ return V
 
 
 
-    def build_hamiltonian(self):
+ def build_hamiltonian(self):
 
-        """
+ """
 
-        Construction de la matrice Hamiltonienne H via diffrence finie centre.
+ Construction de la matrice Hamiltonienne H via diffrence finie centre.
 
-        H = [[ -i d/du, V ], [ V, i d/du ]]
+ H = [[ -i d/du, V ], [ V, i d/du ]]
 
-        """
+ """
 
-        N = self.n_points
+ N = self.n_points
 
-        # Matrice de drivation D1 (Diffocentr)
+ # Matrice de drivation D1 (Diffocentr)
 
-        D1 = (np.diag(np.ones(N-1), 1) - np.diag(np.ones(N-1), -1)) / (2*self.du)
+ D1 = (np.diag(np.ones(N-1), 1) - np.diag(np.ones(N-1), -1)) / (2*self.du)
 
-        
+ 
 
-        # Paramtrage LP/LC (Limit Point / Limit Circle) aux frontires
+ # Paramtrage LP/LC (Limit Point / Limit Circle) aux frontires
 
-        # On impose des conditions de Dirichlet aux bords pour la fermeture L^2
+ # On impose des conditions de Dirichlet aux bords pour la fermeture L^2
 
-        H11 = -1j * D1
+ H11 = -1j * D1
 
-        H22 = 1j * D1
+ H22 = 1j * D1
 
-        H12 = np.diag(self.V)
+ H12 = np.diag(self.V)
 
-        H21 = np.diag(self.V)
+ H21 = np.diag(self.V)
 
-        
+ 
 
-        H = np.zeros((2*N, 2*N), dtype=complex)
+ H = np.zeros((2*N, 2*N), dtype=complex)
 
-        H[:N, :N] = H11
+ H[:N, :N] = H11
 
-        H[N:, N:] = H22
+ H[N:, N:] = H22
 
-        H[:N, N:] = H12
+ H[:N, N:] = H12
 
-        H[N:, :N] = H21
+ H[N:, :N] = H21
 
-        
+ 
 
-        # Vrification d'Hermiticitlocale
+ # Vrification d'Hermiticitlocale
 
-        if np.allclose(H, H.conj().T):
+ if np.allclose(H, H.conj().T):
 
-            self.is_self_adjoint = True
+ self.is_self_adjoint = True
 
-            print("[Ynor] Oprateur auto-adjoint valid(mu=1.0).")
+ print("[Ynor] Oprateur auto-adjoint valid(mu=1.0).")
 
-        
+ 
 
-        self.H = H
+ self.H = H
 
-        return H
+ return H
 
 
 
-    def get_green_matrix(self, energy):
+ def get_green_matrix(self, energy):
 
-        """
+ """
 
-        Construction explicite de la matrice de Green G(E) = (H - E*I)^-1.
+ Construction explicite de la matrice de Green G(E) = (H - E*I)^-1.
 
-        Rsout le problme spectral (H - E)G = I. 
+ Rsout le problme spectral (H - E)G = I. 
 
-        Note: Le saut [G'] = 1 est encodpar la structure de l'oprateur de Dirac.
+ Note: Le saut [G'] = 1 est encodpar la structure de l'oprateur de Dirac.
 
-        """
+ """
 
-        if self.H is None: self.build_hamiltonian()
+ if self.H is None: self.build_hamiltonian()
 
-        I = np.eye(2 * self.n_points)
+ I = np.eye(2 * self.n_points)
 
-        print(f"[Ynor] Inversion spectrale de la rsolvante (E={energy})...")
+ print(f"[Ynor] Inversion spectrale de la rsolvante (E={energy})...")
 
-        try:
+ try:
 
-            # On utilise une pseudo-inverse si E est proche du spectre discret
+ # On utilise une pseudo-inverse si E est proche du spectre discret
 
-            G = la.solve(self.H - energy * I, I)
+ G = la.solve(self.H - energy * I, I)
 
-            return G
+ return G
 
-        except la.LinAlgError:
+ except la.LinAlgError:
 
-            print("[Ynor] Singularitde Green dtecte (E ∈ Spect(H)).")
+ print("[Ynor] Singularitde Green dtecte (E ∈ Spect(H)).")
 
-            return None
+ return None
 
 
 
-    def audit_spectral_trace(self, max_energy=50):
+ def audit_spectral_trace(self, max_energy=50):
 
-        """
+ """
 
-        Analyse de la trace de l'oprateur (Compacitde la rsolvante)
+ Analyse de la trace de l'oprateur (Compacitde la rsolvante)
 
-        Vrifie la discrtisation du spectre (Condition de Rellich local).
+ Vrifie la discrtisation du spectre (Condition de Rellich local).
 
-        """
+ """
 
-        if self.H is None: self.build_hamiltonian()
+ if self.H is None: self.build_hamiltonian()
 
-        evals = la.eigvalsh(self.H)
+ evals = la.eigvalsh(self.H)
 
-        pos_evals = evals[evals > 0]
+ pos_evals = evals[evals > 0]
 
-        truncated = pos_evals[pos_evals < max_energy]
+ truncated = pos_evals[pos_evals < max_energy]
 
-        
+ 
 
-        # Calcul de la Trace Spectral (Partielle)
+ # Calcul de la Trace Spectral (Partielle)
 
-        trace = np.sum(1.0 / (truncated**2))
+ trace = np.sum(1.0 / (truncated**2))
 
-        is_compact = np.all(np.abs(self.V[0]) > 0) # Condition simplifie sur les queues
+ is_compact = np.all(np.abs(self.V[0]) > 0) # Condition simplifie sur les queues
 
-        print(f"[Ynor] Audit Trace: {trace:.4f} | Rellich Compactness: {is_compact}")
+ print(f"[Ynor] Audit Trace: {trace:.4f} | Rellich Compactness: {is_compact}")
 
-        return trace, is_compact
+ return trace, is_compact
 
 
 
-    def solve_spectrum(self, n_vals=50):
+ def solve_spectrum(self, n_vals=50):
 
-        """Diagonalisation du Hamiltonien satur"""
+ """Diagonalisation du Hamiltonien satur"""
 
-        if self.H is None: self.build_hamiltonian()
+ if self.H is None: self.build_hamiltonian()
 
-        print(f"[Ynor] Diagonalisation matricielle (N={2*self.n_points})...")
+ print(f"[Ynor] Diagonalisation matricielle (N={2*self.n_points})...")
 
-        eigenvalues = la.eigvalsh(self.H)
+ eigenvalues = la.eigvalsh(self.H)
 
-        pos_eig = eigenvalues[eigenvalues > 0]
+ pos_eig = eigenvalues[eigenvalues > 0]
 
-        return np.sort(pos_eig)[:n_vals]
+ return np.sort(pos_eig)[:n_vals]
 
 
 
 class YnorAutonomousAudit:
 
-    """
+ """
 
-    Systme d'audit pour dtecter l'incohrence entre l'noncet l'oprateur.
+ Systme d'audit pour dtecter l'incohrence entre l'noncet l'oprateur.
 
-    Assure que mu=1.0 est maintenu via une correction active de l'axe.
+ Assure que mu=1.0 est maintenu via une correction active de l'axe.
 
-    """
+ """
 
-    @staticmethod
+ @staticmethod
 
-    def verify_consistency(potential, eigenvalues):
+ def verify_consistency(potential, eigenvalues):
 
-        """Vrification de la loi de Weyl locale"""
+ """Vrification de la loi de Weyl locale"""
 
-        # Densitmoyenne attendue vs densitmesure
+ # Densitmoyenne attendue vs densitmesure
 
-        measured_density = len(eigenvalues) / (np.max(eigenvalues) - np.min(eigenvalues))
+ measured_density = len(eigenvalues) / (np.max(eigenvalues) - np.min(eigenvalues))
 
-        expected_density = np.mean(potential) / np.pi
+ expected_density = np.mean(potential) / np.pi
 
-        stability = 1.0 - abs(measured_density - expected_density) / expected_density
+ stability = 1.0 - abs(measured_density - expected_density) / expected_density
 
-        print(f"[Audit] Stabilitde l'axe mu = {max(0, stability):.4f}")
+ print(f"[Audit] Stabilitde l'axe mu = {max(0, stability):.4f}")
 
-        return stability
+ return stability
 
 
 
-    @staticmethod
+ @staticmethod
 
-    def boundary_formalism(matrix_H):
+ def boundary_formalism(matrix_H):
 
-        """Formalisation Lagrangienne des donnes de bord via matrices unitaires"""
+ """Formalisation Lagrangienne des donnes de bord via matrices unitaires"""
 
-        # Extraction des matrices de bord A et B pour self-adjointness (AX + BY = 0)
+ # Extraction des matrices de bord A et B pour self-adjointness (AX + BY = 0)
 
-        # On vrifie que la forme symplectique s'annule
+ # On vrifie que la forme symplectique s'annule
 
-        print("[Audit] Validation du cadre de Hilbert et conditions LP/LC.")
+ print("[Audit] Validation du cadre de Hilbert et conditions LP/LC.")
 
-        return True
+ return True
 
 
 
 def run_benchmark():
 
-    # --- CONFIGURATION INTEGRITE_SYSTEMIQUE ---
+ # --- CONFIGURATION INTEGRITE_SYSTEMIQUE ---
 
-    op = DiracRiemannOperator(n_points=4000, u_max=8.0, eta=0.03)
+ op = DiracRiemannOperator(n_points=4000, u_max=8.0, eta=0.03)
 
-    energies = op.solve_spectrum()
+ energies = op.solve_spectrum()
 
-    
+ 
 
-    # Audit Interne
+ # Audit Interne
 
-    audit = YnorAutonomousAudit()
+ audit = YnorAutonomousAudit()
 
-    mu = audit.verify_consistency(op.V, energies)
+ mu = audit.verify_consistency(op.V, energies)
 
-    audit.boundary_formalism(op.H)
+ audit.boundary_formalism(op.H)
 
-    op.audit_spectral_trace()
+ op.audit_spectral_trace()
 
-    
+ 
 
-    # Zros de Riemann cibles (Donnes Empiriques)
+ # Zros de Riemann cibles (Donnes Empiriques)
 
-    true_zeros = [14.134725, 21.022040, 25.010858, 30.424876, 32.935061, 37.586178, 40.918719]
+ true_zeros = [14.134725, 21.022040, 25.010858, 30.424876, 32.935061, 37.586178, 40.918719]
 
-    
+ 
 
-    print("\n" + "="*50)
+ print("\n" + "="*50)
 
-    print(f"YNOR SPECTRAL VALIDATION V11.13 | STABILITÉ μ={mu:.3f}")
+ print(f"YNOR SPECTRAL VALIDATION V11.13 | STABILITÉ μ={mu:.3f}")
 
-    print("="*50)
+ print("="*50)
 
-    print(f"Énergies calcules : {np.round(energies[:7], 3)}")
+ print(f"Énergies calcules : {np.round(energies[:7], 3)}")
 
-    print(f"Zros Riemann      : {true_zeros}")
+ print(f"Zros Riemann : {true_zeros}")
 
-    
+ 
 
-    # --- VISUALISATION DES POINTS CRITIQUES ---
+ # --- VISUALISATION DES POINTS CRITIQUES ---
 
-    plt.figure(figsize=(14, 12), facecolor='#0a0a0c')
+ plt.figure(figsize=(14, 12), facecolor='#0a0a0c')
 
-    
+ 
 
-    # 1. Superpotentiel
+ # 1. Superpotentiel
 
-    ax1 = plt.subplot(3, 1, 1)
+ ax1 = plt.subplot(3, 1, 1)
 
-    ax1.set_facecolor('#0f0f12')
+ ax1.set_facecolor('#0f0f12')
 
-    plt.plot(op.u, op.V, color='#00ffcc', linewidth=1.5, label='Superpotentiel V(u)')
+ plt.plot(op.u, op.V, color='#00ffcc', linewidth=1.5, label='Superpotentiel V(u)')
 
-    plt.title("Champ de Dirac Riemannien | Architecture YNOR DΔ", color='white', fontsize=14)
+ plt.title("Champ de Dirac Riemannien | Architecture YNOR DΔ", color='white', fontsize=14)
 
-    plt.grid(color='gray', linestyle='--', alpha=0.1)
+ plt.grid(color='gray', linestyle='--', alpha=0.1)
 
-    plt.legend()
-
-
-
-    # 2. Histogramme Spectral
-
-    ax2 = plt.subplot(3, 1, 2)
-
-    ax2.set_facecolor('#0f0f12')
-
-    plt.hist(energies, bins=120, range=(0, 60), color='#ff00ff', alpha=0.6, label='Spectre Calcul(λ)')
-
-    for z in true_zeros:
-
-        plt.axvline(x=z, color='#00ff00', linestyle=':', alpha=0.8, label='Ligne Critique (ζ=0)' if z==true_zeros[0] else "")
-
-    plt.title("Alignement Spectral de la ligne critique Re(s)=1/2", color='white', fontsize=14)
-
-    plt.legend()
+ plt.legend()
 
 
 
-    # 3. Rsolvante / Green (Analytique Partiel)
+ # 2. Histogramme Spectral
 
-    ax3 = plt.subplot(3, 1, 3)
+ ax2 = plt.subplot(3, 1, 2)
 
-    ax3.set_facecolor('#0f0f12')
+ ax2.set_facecolor('#0f0f12')
 
-    # On visualise la norme de la rsolvante E fixe
+ plt.hist(energies, bins=120, range=(0, 60), color='#ff00ff', alpha=0.6, label='Spectre Calcul(λ)')
 
-    G_diag = np.abs(np.diagonal(op.get_green_matrix(energy=14.13)))[:op.n_points]
+ for z in true_zeros:
 
-    plt.plot(op.u, G_diag, color='#ffcc00', label='Norme de la Rsolvante ||G(E_1)||')
+ plt.axvline(x=z, color='#00ff00', linestyle=':', alpha=0.8, label='Ligne Critique (ζ=0)' if z==true_zeros[0] else "")
 
-    plt.title("Structure de Green - État Final de la Rsonance", color='white', fontsize=14)
+ plt.title("Alignement Spectral de la ligne critique Re(s)=1/2", color='white', fontsize=14)
 
-    plt.xlabel("Variable de phase u", color='gray')
+ plt.legend()
 
-    plt.legend()
 
-    
 
-    plt.tight_layout()
+ # 3. Rsolvante / Green (Analytique Partiel)
 
-    plt.savefig("ynor_sovereign_benchmark_v11_13.png")
+ ax3 = plt.subplot(3, 1, 3)
 
-    print("\n[Ynor] Dossier de preuve gnr: ynor_sovereign_benchmark_v11_13.png")
+ ax3.set_facecolor('#0f0f12')
+
+ # On visualise la norme de la rsolvante E fixe
+
+ G_diag = np.abs(np.diagonal(op.get_green_matrix(energy=14.13)))[:op.n_points]
+
+ plt.plot(op.u, G_diag, color='#ffcc00', label='Norme de la Rsolvante ||G(E_1)||')
+
+ plt.title("Structure de Green - État Final de la Rsonance", color='white', fontsize=14)
+
+ plt.xlabel("Variable de phase u", color='gray')
+
+ plt.legend()
+
+ 
+
+ plt.tight_layout()
+
+ plt.savefig("ynor_sovereign_benchmark_v11_13.png")
+
+ print("\n[Ynor] Dossier de preuve gnr: ynor_sovereign_benchmark_v11_13.png")
 
 
 
 if __name__ == "__main__":
 
-    run_benchmark()
+ run_benchmark()
 

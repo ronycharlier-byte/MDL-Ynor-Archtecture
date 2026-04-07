@@ -4,36 +4,36 @@ Ce protocole définit comment MDL Ynor monétise l'accès à son moteur cognitif
 
 ---
 
-## 💎 STRUCTURE DES PALIERS (TIERS)
+## STRUCTURE DES PALIERS (TIERS)
 
 ### [ TIER 1 ] : YNOR DISCOVERY (FREE)
 **Cible** : Développeurs individuels & Tests.
 - **Prix** : **0€ / Mois** (Gratuit à vie).
 - **Inclus** :
-    - **Limite Quotidienne** : 100 appels/jour (Bloqué par erreur 429).
-    - **Orchestration** : Hierarchical System 1 (Local LLM only).
-    - **Dashboard** : Basique (Logs temps-réel).
-    - **Support** : Communauté GitHub.
+ - **Limite Quotidienne** : 100 appels/jour (Bloqué par erreur 429).
+ - **Orchestration** : Hierarchical System 1 (Local LLM only).
+ - **Dashboard** : Basique (Logs temps-réel).
+ - **Support** : Communauté GitHub.
 
 ### [ TIER 2 ] : YNOR PRO (STARTUP)
 **Cible** : Startups avec un flux LLM constant.
 - **Prix** : **99€ HT / Mois** (Sans engagement).
 - **Inclus** :
-    - **Limite Quotidienne** : 10 000 appels/jour.
-    - **Orchestration** : System 1/2 Hybride (GPT-4 + Llama).
-    - **Auto-Learning** : Activation complète de la synchronisation de cerveau (Archivage automatique).
-    - **Dashboard** : Premium (Historique 30 jours + Export CSV).
-    - **Support** : Email Prioritaire (Réponse < 12h).
+ - **Limite Quotidienne** : 10 000 appels/jour.
+ - **Orchestration** : System 1/2 Hybride (GPT-4 + Llama).
+ - **Auto-Learning** : Activation complète de la synchronisation de cerveau (Archivage automatique).
+ - **Dashboard** : Premium (Historique 30 jours + Export CSV).
+ - **Support** : Email Prioritaire (Réponse < 12h).
 
 ### [ TIER 3 ] : YNOR ENTERPRISE (ELITE)
 **Cible** : Grandes entreprises & Agences IA.
 - **Prix** : **Sûr-Mesure (À partir de 499€ HT / Mois)**.
 - **Inclus** :
-    - **Limite Quotidienne** : Illimitée (Usage intensif).
-    - **Déploiement** : Installation "On-Premise" (VPC) possible.
-    - **Sécurité** : Chiffrement Quantum-Ready (YNOR-VAULT).
-    - **Audit de Viabilité** : Rapport mensuel de dérive Mu et économies réalisées.
-    - **Support** : Manager dédié (Slack/Discord Direct 24/7).
+ - **Limite Quotidienne** : Illimitée (Usage intensif).
+ - **Déploiement** : Installation "On-Premise" (VPC) possible.
+ - **Sécurité** : Chiffrement Quantum-Ready (YNOR-VAULT).
+ - **Audit de Viabilité** : Rapport mensuel de dérive Mu et économies réalisées.
+ - **Support** : Manager dédié (Slack/Discord Direct 24/7).
 
 ---
 

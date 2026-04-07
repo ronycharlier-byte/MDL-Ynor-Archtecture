@@ -53,75 +53,75 @@ mindmap
 
 
 
-  root((Vecteurs Ynor))
+ root((Vecteurs Ynor))
 
 
 
-    Noyau
+ Noyau
 
 
 
-      Centre_Stable
+ Centre_Stable
 
 
 
-      Retour
+ Retour
 
 
 
-    Protocoles
+ Protocoles
 
 
 
-      Fondamentaux
+ Fondamentaux
 
 
 
-      Secondaires
+ Secondaires
 
 
 
-      Par_Axe
+ Par_Axe
 
 
 
-    Vecteurs
+ Vecteurs
 
 
 
-      Fondamentaux
+ Fondamentaux
 
 
 
-      Par_Famille
+ Par_Famille
 
 
 
-      Par_Axe
+ Par_Axe
 
 
 
-      Sous_Axes
+ Sous_Axes
 
 
 
-      Feuilles
+ Feuilles
 
 
 
-    Vectorisation
+ Vectorisation
 
 
 
-      Lecture_Operationnelle
+ Lecture_Operationnelle
 
 
 
-      Alignement
+ Alignement
 
 
 
-      Sortie
+ Sortie
 
 
 

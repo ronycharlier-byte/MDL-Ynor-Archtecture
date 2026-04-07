@@ -89,7 +89,7 @@ mindmap
 
 
 
-  root((Ynor))
+ root((Ynor))
 
 
 
@@ -97,7 +97,7 @@ mindmap
 
 
 
-    Noyau
+ Noyau
 
 
 
@@ -105,7 +105,7 @@ mindmap
 
 
 
-      Centre_Symétrie Récursive
+ Centre_Symétrie Récursive
 
 
 
@@ -113,7 +113,7 @@ mindmap
 
 
 
-      Retour
+ Retour
 
 
 
@@ -121,7 +121,7 @@ mindmap
 
 
 
-      Coherence
+ Coherence
 
 
 
@@ -129,7 +129,7 @@ mindmap
 
 
 
-      Stabilite
+ Stabilite
 
 
 
@@ -137,7 +137,7 @@ mindmap
 
 
 
-      Carte_Miroir
+ Carte_Miroir
 
 
 
@@ -145,7 +145,7 @@ mindmap
 
 
 
-    Axiomes
+ Axiomes
 
 
 
@@ -153,7 +153,7 @@ mindmap
 
 
 
-      Fondamentaux
+ Fondamentaux
 
 
 
@@ -161,7 +161,7 @@ mindmap
 
 
 
-      Secondaires
+ Secondaires
 
 
 
@@ -169,7 +169,7 @@ mindmap
 
 
 
-    Protocoles
+ Protocoles
 
 
 
@@ -177,7 +177,7 @@ mindmap
 
 
 
-      Fondamentaux
+ Fondamentaux
 
 
 
@@ -185,7 +185,7 @@ mindmap
 
 
 
-      Secondaires
+ Secondaires
 
 
 
@@ -193,7 +193,7 @@ mindmap
 
 
 
-      Par_Axe
+ Par_Axe
 
 
 
@@ -201,7 +201,7 @@ mindmap
 
 
 
-      Sous_Axes
+ Sous_Axes
 
 
 
@@ -209,7 +209,7 @@ mindmap
 
 
 
-      Feuilles
+ Feuilles
 
 
 
@@ -217,7 +217,7 @@ mindmap
 
 
 
-      Sous_Sous_Axes
+ Sous_Sous_Axes
 
 
 
@@ -225,7 +225,7 @@ mindmap
 
 
 
-      Sous_Sous_Sous_Axes
+ Sous_Sous_Sous_Axes
 
 
 
@@ -233,7 +233,7 @@ mindmap
 
 
 
-    Axes
+ Axes
 
 
 
@@ -241,7 +241,7 @@ mindmap
 
 
 
-      Principaux
+ Principaux
 
 
 
@@ -249,7 +249,7 @@ mindmap
 
 
 
-        Mathematique
+ Mathematique
 
 
 
@@ -257,7 +257,7 @@ mindmap
 
 
 
-        Biologique
+ Biologique
 
 
 
@@ -265,7 +265,7 @@ mindmap
 
 
 
-        Physique
+ Physique
 
 
 
@@ -273,7 +273,7 @@ mindmap
 
 
 
-        Scientifique
+ Scientifique
 
 
 
@@ -281,7 +281,7 @@ mindmap
 
 
 
-      Secondaires
+ Secondaires
 
 
 
@@ -289,7 +289,7 @@ mindmap
 
 
 
-        Cognitif
+ Cognitif
 
 
 
@@ -297,7 +297,7 @@ mindmap
 
 
 
-        Neurologique
+ Neurologique
 
 
 
@@ -305,7 +305,7 @@ mindmap
 
 
 
-        Mecanique_Quantique
+ Mecanique_Quantique
 
 
 
@@ -313,7 +313,7 @@ mindmap
 
 
 
-        Informationnel
+ Informationnel
 
 
 
@@ -321,7 +321,7 @@ mindmap
 
 
 
-        Computationnel
+ Computationnel
 
 
 
@@ -329,7 +329,7 @@ mindmap
 
 
 
-        Semiotique
+ Semiotique
 
 
 
@@ -337,7 +337,7 @@ mindmap
 
 
 
-        Temporel
+ Temporel
 
 
 
@@ -345,7 +345,7 @@ mindmap
 
 
 
-        Principal Investigatorural
+ Principal Investigatorural
 
 
 
@@ -353,7 +353,7 @@ mindmap
 
 
 
-        Editorial
+ Editorial
 
 
 
@@ -361,7 +361,7 @@ mindmap
 
 
 
-        Strategique
+ Strategique
 
 
 
@@ -369,7 +369,7 @@ mindmap
 
 
 
-      Profonds
+ Profonds
 
 
 
@@ -377,7 +377,7 @@ mindmap
 
 
 
-        Metaphysique
+ Metaphysique
 
 
 
@@ -385,7 +385,7 @@ mindmap
 
 
 
-        Symbolique
+ Symbolique
 
 
 
@@ -393,7 +393,7 @@ mindmap
 
 
 
-        Operationnel
+ Operationnel
 
 
 
@@ -401,7 +401,7 @@ mindmap
 
 
 
-        Relationnel
+ Relationnel
 
 
 
@@ -409,7 +409,7 @@ mindmap
 
 
 
-        Ethique
+ Ethique
 
 
 
@@ -417,7 +417,7 @@ mindmap
 
 
 
-        Cosmologique
+ Cosmologique
 
 
 
@@ -425,7 +425,7 @@ mindmap
 
 
 
-        Dialectique
+ Dialectique
 
 
 
@@ -433,7 +433,7 @@ mindmap
 
 
 
-        Spirituel
+ Spirituel
 
 
 
@@ -441,7 +441,7 @@ mindmap
 
 
 
-        Initiatique
+ Initiatique
 
 
 
@@ -449,7 +449,7 @@ mindmap
 
 
 
-        Politique
+ Politique
 
 
 
@@ -457,7 +457,7 @@ mindmap
 
 
 
-        Civilisationnel
+ Civilisationnel
 
 
 
@@ -465,7 +465,7 @@ mindmap
 
 
 
-        Industriel
+ Industriel
 
 
 
@@ -473,7 +473,7 @@ mindmap
 
 
 
-        Systemique
+ Systemique
 
 
 
@@ -481,7 +481,7 @@ mindmap
 
 
 
-        Poetique
+ Poetique
 
 
 
@@ -489,7 +489,7 @@ mindmap
 
 
 
-        Ingenierique
+ Ingenierique
 
 
 
@@ -497,7 +497,7 @@ mindmap
 
 
 
-        Existentiel
+ Existentiel
 
 
 
@@ -505,7 +505,7 @@ mindmap
 
 
 
-        Anthropologique
+ Anthropologique
 
 
 
@@ -513,7 +513,7 @@ mindmap
 
 
 
-        Ecologique
+ Ecologique
 
 
 
@@ -521,7 +521,7 @@ mindmap
 
 
 
-        Memoiriel
+ Memoiriel
 
 
 
@@ -529,7 +529,7 @@ mindmap
 
 
 
-        Archivistique
+ Archivistique
 
 
 
@@ -537,7 +537,7 @@ mindmap
 
 
 
-        Geopolitique
+ Geopolitique
 
 
 
@@ -545,7 +545,7 @@ mindmap
 
 
 
-        Metalogique
+ Metalogique
 
 
 
@@ -553,7 +553,7 @@ mindmap
 
 
 
-        Auto_Reflexif
+ Auto_Reflexif
 
 
 
@@ -561,7 +561,7 @@ mindmap
 
 
 
-    Vecteurs
+ Vecteurs
 
 
 
@@ -569,7 +569,7 @@ mindmap
 
 
 
-      Fondamentaux
+ Fondamentaux
 
 
 
@@ -577,7 +577,7 @@ mindmap
 
 
 
-      Par_Famille
+ Par_Famille
 
 
 
@@ -585,7 +585,7 @@ mindmap
 
 
 
-      Par_Axe
+ Par_Axe
 
 
 
@@ -593,7 +593,7 @@ mindmap
 
 
 
-      Sous_Axes
+ Sous_Axes
 
 
 
@@ -601,7 +601,7 @@ mindmap
 
 
 
-      Feuilles
+ Feuilles
 
 
 
@@ -609,7 +609,7 @@ mindmap
 
 
 
-    Vectorisation
+ Vectorisation
 
 
 
@@ -617,7 +617,7 @@ mindmap
 
 
 
-      Noyau
+ Noyau
 
 
 
@@ -625,7 +625,7 @@ mindmap
 
 
 
-      Pilotage
+ Pilotage
 
 
 
@@ -633,7 +633,7 @@ mindmap
 
 
 
-      Rayonnement
+ Rayonnement
 
 
 
@@ -641,7 +641,7 @@ mindmap
 
 
 
-      Force
+ Force
 
 
 
@@ -649,7 +649,7 @@ mindmap
 
 
 
-    Cartes_Miroir
+ Cartes_Miroir
 
 
 
@@ -657,7 +657,7 @@ mindmap
 
 
 
-      Noyau
+ Noyau
 
 
 
@@ -665,7 +665,7 @@ mindmap
 
 
 
-      Protocoles
+ Protocoles
 
 
 
@@ -673,7 +673,7 @@ mindmap
 
 
 
-      Axes
+ Axes
 
 
 
@@ -681,7 +681,7 @@ mindmap
 
 
 
-      Vecteurs
+ Vecteurs
 
 
 

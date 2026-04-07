@@ -1,4 +1,4 @@
-# 💰 YNOR CORE : MANUEL DE CLOSING ELITE (v1.2.0) - VERSION FRACTALE ET CHIASTIQUE
+# YNOR CORE : MANUEL DE CLOSING ELITE (v1.2.0) - VERSION FRACTALE ET CHIASTIQUE
 
 Source : `MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/YNOR_SALES_PLAYBOOK.md`
 
@@ -22,7 +22,7 @@ Au retour du centre, le texte se relit comme un mécanisme de clarification, de 
 
 ## B'. Miroir
 Les titres ou repères structurants deviennent les miroirs de son organisation :
-- 💰 YNOR CORE : MANUEL DE CLOSING ELITE (v1.2.0)
+- YNOR CORE : MANUEL DE CLOSING ELITE (v1.2.0)
 - 🎯 1. LA PSYCHOLOGIE ÉLITE
 - 🧠 2. LA STRUCTURE DU CALL (5 Étapes Chirurgicales)
 - 🔹 Étape 1 : Frappe Directe

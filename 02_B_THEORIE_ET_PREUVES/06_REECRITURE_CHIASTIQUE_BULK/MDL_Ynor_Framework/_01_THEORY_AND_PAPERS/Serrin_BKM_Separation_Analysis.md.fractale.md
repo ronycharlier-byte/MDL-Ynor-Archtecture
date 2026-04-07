@@ -11,11 +11,11 @@ Le texte se déplie selon les lignes suivantes :
 - **Conformes aux conditions d'intégrabilité de type Serrin** ($L^q(0, T; L^p)$).
 - **Exhibent une vorticité intégrée en temps non bornée** ($\int_0^T \|\omega\|_{L^\infty} dt = \infty$).
 - L'audit de stabilité doit désormais intégrer des contrôles de vorticité ponctuelle, au-delà de la simple dissipation scalaire.
-- Introduire le critère BKM comme garde-fou prioritaire lors des innovations de structures dissipatives ($D(S)$).
+- Introduire le critère BKM comme garde-remarquable prioritaire lors des innovations de structures dissipatives ($D(S)$).
 - [Fichier PDF](file:///c:/Users/ronyc/Desktop/MDL%20Ynor%20Architecture/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/impulse_serrin_bkm.pdf)
 
 ## C. Matiere
-**Directives pour le Moteur AGI :** - L'audit de stabilité doit désormais intégrer des contrôles de vorticité ponctuelle, au-delà de la simple dissipation scalaire. - Introduire le critère BKM comme garde-fou prioritaire lors des innovations de structures dissipatives ($D(S)$).
+**Directives pour le Moteur AGI :** - L'audit de stabilité doit désormais intégrer des contrôles de vorticité ponctuelle, au-delà de la simple dissipation scalaire. - Introduire le critère BKM comme garde-remarquable prioritaire lors des innovations de structures dissipatives ($D(S)$).
 
 ## X. Centre
 La marge de viabilite constitue le centre de gravite du texte.
@@ -28,7 +28,7 @@ Les titres ou repères structurants deviennent les miroirs de son organisation :
 - Analyse Scientifique — Zenodo 19219487
 - Étude de la séparation entre les critères de Serrin et Beale–Kato–Majda (BKM)
 - 🔍 Résumé Technique
-- 🚀 Implications pour MDL Ynor
+- Implications pour MDL Ynor
 - 📍 Localisation du Papier
 
 ## A'. Cloture

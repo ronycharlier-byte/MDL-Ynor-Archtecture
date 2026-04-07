@@ -23,14 +23,14 @@ Les architectures actuelles d'intelligence artificielle générative opèrent co
 \section{Introduction et Axiomatisation}
 L'architecture de l'information dans les LLMs classiques ne s'auto-régule pas. Le présent cadre pose une axiomatisation par des variables différentielles canoniques :
 \begin{itemize}
-    \item $\alpha \in \mathbb{R}^+$ : Capacité dissipative effective (Gain de valeur logique et informationnelle).
-    \item $\beta \in \mathbb{R}^+$ : Pression amplificative (Expansion de texte mort, coût computationnel brut).
-    \item $\kappa \in \mathbb{R}^+$ : Charge inertielle mémorielle (Contextes latents, répétitions pesantes).
+ \item $\alpha \in \mathbb{R}^+$ : Capacité dissipative effective (Gain de valeur logique et informationnelle).
+ \item $\beta \in \mathbb{R}^+$ : Pression amplificative (Expansion de texte mort, coût computationnel brut).
+ \item $\kappa \in \mathbb{R}^+$ : Charge inertielle mémorielle (Contextes latents, répétitions pesantes).
 \end{itemize}
 
 Nous définissons la Marge Dissipative de structure comme suit :
 \begin{equation}
-   \mu(\alpha, \beta, \kappa) = \alpha - \beta - \kappa
+ \mu(\alpha, \beta, \kappa) = \alpha - \beta - \kappa
 \end{equation}
 
 Une trajectoire est dite \textit{viable} si et seulement si $\mu > 0$.
@@ -38,18 +38,18 @@ Une trajectoire est dite \textit{viable} si et seulement si $\mu > 0$.
 \section{Dynamique du Système Fermé}
 Nous considérons l'évolution non linéaire d'un état $S = (\alpha, \beta, \kappa)$ telle que :
 \begin{equation}
-    \begin{cases}
-    \dot\alpha = a_1 - a_2\beta - a_3\alpha \\
-    \dot\beta = b_1\alpha - b_2\beta - b_3 \\
-    \dot\kappa = c_1\beta - c_2\alpha - c_3\kappa
-    \end{cases}
+ \begin{cases}
+ \dot\alpha = a_1 - a_2\beta - a_3\alpha \\
+ \dot\beta = b_1\alpha - b_2\beta - b_3 \\
+ \dot\kappa = c_1\beta - c_2\alpha - c_3\kappa
+ \end{cases}
 \end{equation}
 Avec les constantes $a_i, b_i, c_i > 0$.
 
 \begin{theorem}[Fermeture de l'Équation de la Marge]
 La dynamique absolue de la viabilité générative d'un modèle d'IA est régie par la dérivée du vecteur $\mu$ :
 \begin{equation}
-    \dot\mu = \dot\alpha - \dot\beta - \dot\kappa = a_1+b_3 - \alpha(a_3+b_1-c_2) + \beta(b_2-a_2-c_1) + c_3\kappa
+ \dot\mu = \dot\alpha - \dot\beta - \dot\kappa = a_1+b_3 - \alpha(a_3+b_1-c_2) + \beta(b_2-a_2-c_1) + c_3\kappa
 \end{equation}
 \end{theorem}
 \begin{proof}

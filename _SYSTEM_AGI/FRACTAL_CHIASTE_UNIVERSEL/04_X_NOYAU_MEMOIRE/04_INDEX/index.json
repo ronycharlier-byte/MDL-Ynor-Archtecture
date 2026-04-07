@@ -1,25 +1,25 @@
 {
-  "node": "04_X_NOYAU_MEMOIRE",
-  "key": "X",
-  "mirror": "X",
-  "role": "Centre chiastique de connaissance, memoire et intelligence",
-  "inventory_count": 4,
-  "inventory": [
-    {
-      "source": "MDL_Ynor_Framework/_05_DATA_AND_MEMORY",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/mdl_intelligence_report.json",
-      "status": "missing"
-    },
-    {
-      "source": "MDL_Ynor_Framework/logs",
-      "status": "missing"
-    }
-  ]
+ "node": "04_X_NOYAU_MEMOIRE",
+ "key": "X",
+ "mirror": "X",
+ "role": "Centre chiastique de connaissance, memoire et intelligence",
+ "inventory_count": 4,
+ "inventory": [
+ {
+ "source": "MDL_Ynor_Framework/_05_DATA_AND_MEMORY",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/mdl_intelligence_report.json",
+ "status": "missing"
+ },
+ {
+ "source": "MDL_Ynor_Framework/logs",
+ "status": "missing"
+ }
+ ]
 }

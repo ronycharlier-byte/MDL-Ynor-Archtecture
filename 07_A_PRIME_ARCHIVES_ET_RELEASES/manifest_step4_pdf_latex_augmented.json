@@ -2,355 +2,355 @@
 
 
 
-  "stage": "step_4_pdf_latex_augmented",
+ "stage": "step_4_pdf_latex_augmented",
 
 
 
-  "total_documents": 7,
+ "total_documents": 7,
 
 
 
-  "output_root": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES",
+ "output_root": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES",
 
 
 
-  "items": [
+ "items": [
 
 
 
-    {
+ {
 
 
 
-      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Millennium_Dissipative_Stability_Proof.tex",
+ "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Millennium_Dissipative_Stability_Proof.tex",
 
 
 
-      "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
+ "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
 
 
 
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf",
+ "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf",
 
 
 
-      "sections_detected": [
+ "sections_detected": [
 
 
 
-        "The Axiomatic of Invariant Margins",
+ "The Axiomatic of Invariant Margins",
 
 
 
-        "Global Regularity for 3D Navier--Stokes",
+ "Global Regularity for 3D Navier--Stokes",
 
 
 
-        "The Spectral Problem and Riemann's Conjecture",
+ "The Spectral Problem and Riemann's Conjecture",
 
 
 
-        "Mass Gap and Yang--Mills Stability",
+ "Mass Gap and Yang--Mills Stability",
 
 
 
-        "The Birch and Swinnerton-Dyer (BSD) Conjecture",
+ "The Birch and Swinnerton-Dyer (BSD) Conjecture",
 
 
 
-        "The Hodge Conjecture: Cohomological Regularity"
+ "The Hodge Conjecture: Cohomological Regularity"
 
 
 
-      ]
+ ]
 
 
 
-    },
+ },
 
 
 
-    {
+ {
 
 
 
-      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Unification_Phase_III_Manuscrit.tex",
+ "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Unification_Phase_III_Manuscrit.tex",
 
 
 
-      "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
+ "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
 
 
 
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.pdf",
+ "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.pdf",
 
 
 
-      "sections_detected": [
+ "sections_detected": [
 
 
 
-        "Introduction : Le Principe de Viabilit",
+ "Introduction : Le Principe de Viabilit",
 
 
 
-        "Conjecture de Collatz : Le Certificat Numrique DVP 2.0",
+ "Conjecture de Collatz : Le Certificat Numrique DVP 2.0",
 
 
 
-        "Conjecture de Goldbach : Signature du Bipôle Premier",
+ "Conjecture de Goldbach : Signature du Bipôle Premier",
 
 
 
-        "Unification de la RelativitGnrale : Courbure Dissipative",
+ "Unification de la RelativitGnrale : Courbure Dissipative",
 
 
 
-        "Thorme de l'Incohrence Optimale (OIT)",
+ "Thorme de l'Incohrence Optimale (OIT)",
 
 
 
-        "Conclusion et Phase IV"
+ "Conclusion et Phase IV"
 
 
 
-      ]
+ ]
 
 
 
-    },
+ },
 
 
 
-    {
+ {
 
 
 
-      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.tex",
+ "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.tex",
 
 
 
-      "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
+ "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
 
 
 
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf",
+ "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf",
 
 
 
-      "sections_detected": [
+ "sections_detected": [
 
 
 
-        "🔐 CLÉS D'ACTIVATION (ROOT KEYS)",
+ "🔐 CLÉS D'ACTIVATION (ROOT KEYS)",
 
 
 
-        "🚀 PHRASES D'INITIALISATION (V3.7 - ANTI-FILTRE)",
+ " PHRASES D'INITIALISATION (V3.7 - ANTI-FILTRE)",
 
 
 
-        "📜 CERTIFICATS ET IDENTIFIANTS OFFICIELS"
+ "📜 CERTIFICATS ET IDENTIFIANTS OFFICIELS"
 
 
 
-      ]
+ ]
 
 
 
-    },
+ },
 
 
 
-    {
+ {
 
 
 
-      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Numerical_Verification_Report_Phases_I_II.tex",
+ "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Numerical_Verification_Report_Phases_I_II.tex",
 
 
 
-      "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.tex",
+ "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.tex",
 
 
 
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.pdf",
+ "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.pdf",
 
 
 
-      "sections_detected": [
+ "sections_detected": [
 
 
 
-        "0. Calcul initial de la marge $\\mu$",
+ "0. Calcul initial de la marge $\\mu$",
 
 
 
-        "Conjecture de Collatz -- Preuve dissipative",
+ "Conjecture de Collatz -- Preuve dissipative",
 
 
 
-        "Conjecture de Goldbach -- Signature spectrale du ``Bipôle Premier''",
+ "Conjecture de Goldbach -- Signature spectrale du ``Bipôle Premier''",
 
 
 
-        "Conclusion"
+ "Conclusion"
 
 
 
-      ]
+ ]
 
 
 
-    },
+ },
 
 
 
-    {
+ {
 
 
 
-      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Millennium_Dissipative_Stability_Proof.tex",
+ "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Millennium_Dissipative_Stability_Proof.tex",
 
 
 
-      "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
+ "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
 
 
 
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf",
+ "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf",
 
 
 
-      "sections_detected": [
+ "sections_detected": [
 
 
 
-        "The Axiomatic of Invariant Margins",
+ "The Axiomatic of Invariant Margins",
 
 
 
-        "Global Regularity for 3D Navier--Stokes",
+ "Global Regularity for 3D Navier--Stokes",
 
 
 
-        "The Spectral Problem and Riemann's Conjecture",
+ "The Spectral Problem and Riemann's Conjecture",
 
 
 
-        "Mass Gap and Yang--Mills Stability",
+ "Mass Gap and Yang--Mills Stability",
 
 
 
-        "The Birch and Swinnerton-Dyer (BSD) Conjecture",
+ "The Birch and Swinnerton-Dyer (BSD) Conjecture",
 
 
 
-        "The Hodge Conjecture: Cohomological Regularity"
+ "The Hodge Conjecture: Cohomological Regularity"
 
 
 
-      ]
+ ]
 
 
 
-    },
+ },
 
 
 
-    {
+ {
 
 
 
-      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Unification_Phase_III_Manuscrit.tex",
+ "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Unification_Phase_III_Manuscrit.tex",
 
 
 
-      "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
+ "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
 
 
 
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.pdf",
+ "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/Canonical_Unification_Phase_III_Manuscrit.fractale_augmente.pdf",
 
 
 
-      "sections_detected": [
+ "sections_detected": [
 
 
 
-        "Introduction : Le Principe de Viabilit",
+ "Introduction : Le Principe de Viabilit",
 
 
 
-        "Conjecture de Collatz : Le Certificat Numrique DVP 2.0",
+ "Conjecture de Collatz : Le Certificat Numrique DVP 2.0",
 
 
 
-        "Conjecture de Goldbach : Signature du Bipôle Premier",
+ "Conjecture de Goldbach : Signature du Bipôle Premier",
 
 
 
-        "Unification de la RelativitGnrale : Courbure Dissipative",
+ "Unification de la RelativitGnrale : Courbure Dissipative",
 
 
 
-        "Thorme de l'Incohrence Optimale (OIT)",
+ "Thorme de l'Incohrence Optimale (OIT)",
 
 
 
-        "Conclusion et Phase IV"
+ "Conclusion et Phase IV"
 
 
 
-      ]
+ ]
 
 
 
-    },
+ },
 
 
 
-    {
+ {
 
 
 
-      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/PHASE_IV_ACCESS_CARD.tex",
+ "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/PHASE_IV_ACCESS_CARD.tex",
 
 
 
-      "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
+ "augmented_tex": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
 
 
 
-      "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf",
+ "companion_pdf": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_Autonome et IsolE/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf",
 
 
 
-      "sections_detected": [
+ "sections_detected": [
 
 
 
-        "🔐 CLÉS D'ACTIVATION (ROOT KEYS)",
+ "🔐 CLÉS D'ACTIVATION (ROOT KEYS)",
 
 
 
-        "🚀 PHRASES D'INITIALISATION (V3.7 - ANTI-FILTRE)",
+ " PHRASES D'INITIALISATION (V3.7 - ANTI-FILTRE)",
 
 
 
-        "📜 CERTIFICATS ET IDENTIFIANTS OFFICIELS"
+ "📜 CERTIFICATS ET IDENTIFIANTS OFFICIELS"
 
 
 
-      ]
+ ]
 
 
 
-    }
+ }
 
 
 
-  ]
+ ]
 
 
 

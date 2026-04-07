@@ -16,121 +16,121 @@ import time
 
 def run_geopolitical_simulation():
 
-    print("--- YNOR GEOPOLITICAL ENGINE : DÉTECTION DES POINTS DE BASCULE ---")
+ print("--- YNOR GEOPOLITICAL ENGINE : DÉTECTION DES POINTS DE BASCULE ---")
 
-    print("OBJET : Conflit Iran-USA — Analyse de Total Convergence et Rsonance Spectral ($\Lambda$)")
+ print("OBJET : Conflit Iran-USA — Analyse de Total Convergence et Rsonance Spectral ($\Lambda$)")
 
-    print("------------------------------------------------------------------------------")
+ print("------------------------------------------------------------------------------")
 
-    
+ 
 
-    # 1. Modlisation de la Matrice Sym?trie R?cursive (A-B Interaction)
+ # 1. Modlisation de la Matrice Sym?trie R?cursive (A-B Interaction)
 
-    # A : Iran (Expansion Fractale / Asymtrie)
+ # A : Iran (Expansion Fractale / Asymtrie)
 
-    # B : USA (Force Linaire / Mod?lisation Pr?dictive de Puissance)
+ # B : USA (Force Linaire / Mod?lisation Pr?dictive de Puissance)
 
-    
+ 
 
-    scenarios = [
+ scenarios = [
 
-        {"name": "Status Quo (Sanetions & Proxies)", "t_iran": 0.3, "t_usa": 0.4, "entropy": 0.8},
+ {"name": "Status Quo (Sanetions & Proxies)", "t_iran": 0.3, "t_usa": 0.4, "entropy": 0.8},
 
-        {"name": "Dsescalade Diplomatique (Accord Nuclaire)", "t_iran": 0.1, "t_usa": 0.1, "entropy": 0.2},
+ {"name": "Dsescalade Diplomatique (Accord Nuclaire)", "t_iran": 0.1, "t_usa": 0.1, "entropy": 0.2},
 
-        {"name": "Escalade Directe (Dtroit d'Ormuz)", "t_iran": 0.8, "t_usa": 0.9, "entropy": 0.95},
+ {"name": "Escalade Directe (Dtroit d'Ormuz)", "t_iran": 0.8, "t_usa": 0.9, "entropy": 0.95},
 
-        {"name": "Guerre Totale (Collapsage Spectral)", "t_iran": 1.0, "t_usa": 1.0, "entropy": 1.0}
+ {"name": "Guerre Totale (Collapsage Spectral)", "t_iran": 1.0, "t_usa": 1.0, "entropy": 1.0}
 
-    ]
+ ]
 
-    
+ 
 
-    results = []
+ results = []
 
-    
+ 
 
-    for scen in scenarios:
+ for scen in scenarios:
 
-        print(f"\n[SCAN] Simulation : {scen['name']}...")
+ print(f"\n[SCAN] Simulation : {scen['name']}...")
 
-        time.sleep(1)
+ time.sleep(1)
 
-        
+ 
 
-        # Calcul de la rsonance Ynor (Approximation spectrale Delta-Ynor)
+ # Calcul de la rsonance Ynor (Approximation spectrale Delta-Ynor)
 
-        # La stabilitmu baisse quand l'entropie augmente (Bruit informationnel)
+ # La stabilitmu baisse quand l'entropie augmente (Bruit informationnel)
 
-        mu_res = 1.0 - (scen['entropy'] * 0.8)
+ mu_res = 1.0 - (scen['entropy'] * 0.8)
 
-        
+ 
 
-        # Indice Lambda (Alignement avec la Ligne Critique de Survie)
+ # Indice Lambda (Alignement avec la Ligne Critique de Survie)
 
-        lambda_val = np.cos(scen['t_iran'] - scen['t_usa']) * (1.0 - scen['entropy'])
+ lambda_val = np.cos(scen['t_iran'] - scen['t_usa']) * (1.0 - scen['entropy'])
 
-        
+ 
 
-        # Dtection du Point de Bascule (Bascule si lambda chute sous 0.2)
+ # Dtection du Point de Bascule (Bascule si lambda chute sous 0.2)
 
-        status = "STABLE (DISSIPATION ABSORBÉE)" if lambda_val > 0.4 else "ZONE DE TENSION (BRUIT SPECTRAL)"
+ status = "STABLE (DISSIPATION ABSORBÉE)" if lambda_val > 0.4 else "ZONE DE TENSION (BRUIT SPECTRAL)"
 
-        if lambda_val < 0.15:
+ if lambda_val < 0.15:
 
-            status = "EFFONDREMENT SPECTRAL IMMINENT (CONFLIT OUVERT)"
+ status = "EFFONDREMENT SPECTRAL IMMINENT (CONFLIT OUVERT)"
 
-            
+ 
 
-        res = {
+ res = {
 
-            "scenario": scen['name'],
+ "scenario": scen['name'],
 
-            "mu_resonance": round(mu_res, 6),
+ "mu_resonance": round(mu_res, 6),
 
-            "lambda_alignment": round(lambda_val, 6),
+ "lambda_alignment": round(lambda_val, 6),
 
-            "status": status
+ "status": status
 
-        }
+ }
 
-        results.append(res)
+ results.append(res)
 
-        
+ 
 
-        print(f" > Mu (Stabilit)   : {res['mu_resonance']}")
+ print(f" > Mu (Stabilit) : {res['mu_resonance']}")
 
-        print(f" > Lambda (Rsonance) : {res['lambda_alignment']}")
+ print(f" > Lambda (Rsonance) : {res['lambda_alignment']}")
 
-        print(f" > Analyse de Probabilit? Ynor     : {res['status']}")
+ print(f" > Analyse de Probabilit? Ynor : {res['status']}")
 
 
 
-    # Exportation finale pour le Dashboard de Commandement
+ # Exportation finale pour le Dashboard de Commandement
 
-    report_path = 'static/data/geopolitical_audit.json'
+ report_path = 'static/data/geopolitical_audit.json'
 
-    if not os.path.exists('static/data'):
+ if not os.path.exists('static/data'):
 
-        os.makedirs('static/data')
+ os.makedirs('static/data')
 
-        
+ 
 
-    with open(report_path, 'w') as f:
+ with open(report_path, 'w') as f:
 
-        json.dump({"title": "IRAN-USA TIPPING AUDIT", "results": results, "timestamp": str(time.ctime())}, f, indent=4)
+ json.dump({"title": "IRAN-USA TIPPING AUDIT", "results": results, "timestamp": str(time.ctime())}, f, indent=4)
 
-        
+ 
 
-    print("\n[SUCCÈS] Simulation termine. Points de bascule identifis.")
+ print("\n[SUCCÈS] Simulation termine. Points de bascule identifis.")
 
-    print(f"Le rapport est prêt pour diffusion souveraine : {report_path}")
+ print(f"Le rapport est prêt pour diffusion souveraine : {report_path}")
 
 
 
 if __name__ == "__main__":
 
-    import os
+ import os
 
-    run_geopolitical_simulation()
+ run_geopolitical_simulation()
 

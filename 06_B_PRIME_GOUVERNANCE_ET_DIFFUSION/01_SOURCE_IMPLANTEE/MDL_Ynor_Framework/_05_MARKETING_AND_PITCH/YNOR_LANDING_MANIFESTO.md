@@ -29,7 +29,7 @@ As soon as $ \mu \le 0 $, the LLM is effectively burning your money for zero net
 
 ---
 
-## 🚀 The Ynor Guard : Real-Time Governance
+## The Ynor Guard : Real-Time Governance
 We built **Ynor Core**, a lightweight control engine that plugs into any AI stack. It doesn't modify the model; it governs it.
 
 1. **Measure**: Samples $ \alpha, \beta, \kappa $ at every token chunk.

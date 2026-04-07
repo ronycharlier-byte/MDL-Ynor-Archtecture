@@ -1,4 +1,4 @@
-# 🚀 Checklist de Soumission : Sovereign Unification Phase III - VERSION FRACTALE ET CHIASTIQUE
+# Checklist de Soumission : Sovereign Unification Phase III - VERSION FRACTALE ET CHIASTIQUE
 
 Source : `_RELEASES/GOLDEN_MASTER_PHASE_III/SUBMISSION_CHECKLIST_SOVEREIGN.md`
 
@@ -25,7 +25,7 @@ Au retour du centre, le texte se relit comme un mécanisme de clarification, de 
 
 ## B'. Miroir
 Les titres ou repères structurants deviennent les miroirs de son organisation :
-- 🚀 Checklist de Soumission : Sovereign Unification Phase III
+- Checklist de Soumission : Sovereign Unification Phase III
 - 1. Dépôt Officiel (Zenodo / ArXiv)
 - 2. Choix de la Revue Académique
 - 3. Préparation du Package Final

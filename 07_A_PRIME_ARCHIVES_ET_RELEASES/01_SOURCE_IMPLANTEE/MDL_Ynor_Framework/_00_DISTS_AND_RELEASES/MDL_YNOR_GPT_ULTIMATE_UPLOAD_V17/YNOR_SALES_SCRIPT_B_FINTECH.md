@@ -35,7 +35,7 @@ Rony Charlier / ronycharlier@mdlstrategy
 - **« C’est trop cher »** : Si on coupe 30% vous amortissez le pilote en X jours.
 - **« On n’a pas le temps »** : 15 minutes de démo, 2 semaines de pilote.
 
-## 📈 SÉQUENCE DE RELANCE (3 ÉTAPES)
+## SÉQUENCE DE RELANCE (3 ÉTAPES)
 1. **J+1 après le 1er contact** : rappel court + proposition créneau.
 2. **J+4** : mini-étude de cas + bénéfice chiffré.
 3. **J+10** : dernière tentative + offre limitée.

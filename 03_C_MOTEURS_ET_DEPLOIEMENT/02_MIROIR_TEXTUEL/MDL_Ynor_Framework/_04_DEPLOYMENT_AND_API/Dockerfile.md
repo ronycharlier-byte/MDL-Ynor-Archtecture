@@ -20,7 +20,7 @@ COPY requirements.txt .
 
 # Installe toutes tes dépendances (FastAPI, Cryptography, etc)
 RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-cache-dir -r requirements.txt
+ && pip install --no-cache-dir -r requirements.txt
 
 # Copie l'intégralité du code de ton API (depuis ton PC) vers le serveur
 COPY . .

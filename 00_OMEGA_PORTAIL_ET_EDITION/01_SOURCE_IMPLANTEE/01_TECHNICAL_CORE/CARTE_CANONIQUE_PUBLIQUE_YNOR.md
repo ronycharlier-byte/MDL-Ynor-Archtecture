@@ -20,21 +20,21 @@ Elle garde le centre visible et resume la structure en une vue publique simple.
 
 mindmap
 
-  root((Ynor))
+ root((Ynor))
 
-    Noyau
+ Noyau
 
-    Axiomes
+ Axiomes
 
-    Protocoles
+ Protocoles
 
-    Axes
+ Axes
 
-    Vecteurs
+ Vecteurs
 
-    Vectorisation
+ Vectorisation
 
-    Cartes_Miroir
+ Cartes_Miroir
 
 ```
 

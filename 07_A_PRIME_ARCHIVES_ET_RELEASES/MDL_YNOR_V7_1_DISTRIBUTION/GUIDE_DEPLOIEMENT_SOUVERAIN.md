@@ -73,43 +73,43 @@ Le script `MOTEUR_CANONIQUE_API.py` doit être hbergsur un serveur accessible pa
 
 
 
-1.  **Configure / Instructions :** Copie-colle le contenu de `PROMPT_SYSTEME_INVIOLABLE.txt`.
+1. **Configure / Instructions :** Copie-colle le contenu de `PROMPT_SYSTEME_INVIOLABLE.txt`.
 
 
 
 
 
-2.  **Capabilities :** (Optionnel) Coche "Web Browsing" si tu souhaites que le Formalisme Logique Smantique s'appuie sur des data externes.
+2. **Capabilities :** (Optionnel) Coche "Web Browsing" si tu souhaites que le Formalisme Logique Smantique s'appuie sur des data externes.
 
 
 
 
 
-3.  **Actions :** 
+3. **Actions :** 
 
 
 
 
 
-    - Clique sur "Create new action".
+ - Clique sur "Create new action".
 
 
 
 
 
-    - Copie-colle le contenu de `SPECIFICATION_ACTION_API.json` dans la section JSON.
+ - Copie-colle le contenu de `SPECIFICATION_ACTION_API.json` dans la section JSON.
 
 
 
 
 
-    - Met jour l'URL "Server" avec l'URL HTTPS de ton API.
+ - Met jour l'URL "Server" avec l'URL HTTPS de ton API.
 
 
 
 
 
-    - Dans "Authentication Type", choisis "None" si la scuritest gre par le header `X-MDL-License` (par dfaut dans notre code).
+ - Dans "Authentication Type", choisis "None" si la scuritest gre par le header `X-MDL-License` (par dfaut dans notre code).
 
 
 
