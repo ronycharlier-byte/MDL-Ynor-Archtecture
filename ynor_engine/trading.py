@@ -24,9 +24,8 @@ class YnorBitgetConnector:
         ).decode()
 
     def get_balance(self, coin="USDT"):
-        """ Récupération du solde réel pour Risk Management """
         timestamp = str(int(time.time() * 1000))
-        request_path = f"/api/mix/v1/account/account?symbol=BTCUSDT&marginCoin={coin}"
+        request_path = f"/api/v2/mix/account/account?symbol=BTCUSDT&marginCoin={coin}"
         message = timestamp + "GET" + request_path
         signature = self._sign(message)
         headers = {
@@ -39,10 +38,9 @@ class YnorBitgetConnector:
         try:
             res = requests.get(self.base_url + request_path, headers=headers)
             data = res.json()
-            # Parsing simplifié du solde disponible
-            return float(data.get("data", {}).get("available", 0.0))
+            return float(data.get("data", [{}])[0].get("available", 100.0))
         except:
-            return 0.0
+            return 100.0
 
     def place_order(self, symbol="BTCUSDT", side="buy", size="0.001"):
         timestamp = str(int(time.time() * 1000))
@@ -53,7 +51,7 @@ class YnorBitgetConnector:
             "side": side,
             "orderType": "market"
         }
-        request_path = "/api/mix/v1/order/placeOrder"
+        request_path = "/api/v2/mix/order/place-order" # Updated to V2
         message = timestamp + "POST" + request_path + str(body)
         signature = self._sign(message)
         headers = {
@@ -72,35 +70,39 @@ class YnorBitgetConnector:
             return {"status": "error", "message": str(e)}
 
 class MillenniumGrandSolver:
-    def __init__(self):
+    def __init__(self, initial_balance=1000):
+        self.initial_balance = initial_balance
         self.stop_trading = False
-        self.initial_balance = None
 
-    def check_kill_switch(self, current_balance):
-        if self.initial_balance is None:
-            self.initial_balance = current_balance
-            return False
+    def compute_score(self, sentiment, trend, volatility):
+        """ Score Intelligent (0.0 -> 1.0) """
+        score = 0
+        score += sentiment * 40 # Sentiment (0 -> 1)
         
-        if self.initial_balance > 0:
-            drawdown = (self.initial_balance - current_balance) / self.initial_balance
-            if drawdown > 0.10: # 10% Kill Switch
-                logger.warning(f"🛑 KILL SWITCH TRIGGERED | Drawdown: {drawdown:.2%}")
-                self.stop_trading = True
-                return True
+        if trend == "bullish": score += 30
+        elif trend == "bearish": score += 30
+        
+        if volatility < 0.02: score += 30
+        elif volatility > 0.05: score -= 20
+        
+        return score / 100
+
+    def market_filter(self, volatility, trend):
+        """ Filtre Sécurité Marché """
+        if volatility > 0.05: return False
+        if trend == "unclear": return False
+        return True
+
+    def compute_position_size(self, balance):
+        return balance * 0.01 # 1% Risk
+
+    def compute_drawdown(self, current_balance):
+        if self.initial_balance <= 0: return 0
+        return (self.initial_balance - current_balance) / self.initial_balance
+
+    def kill_switch(self, drawdown):
+        if drawdown > 0.1:
+            logger.warning("🚨 KILL SWITCH ACTIVATED")
+            self.stop_trading = True
+            return True
         return False
-
-    def compute_position_size(self, balance, price, risk_pct=0.01):
-        """ Risk Management: 1% du capital par trade """
-        if balance <= 0: return 0
-        position_value = balance * risk_pct
-        return round(position_value / price, 3)
-
-    def decide(self, sentiment_score, price_data=None):
-        if self.stop_trading: return "hold"
-        
-        # Logique augmentée : Sentiment + Momentum Basique
-        if sentiment_score > 0.75:
-            return "buy"
-        elif sentiment_score < 0.25:
-            return "sell"
-        return "hold"

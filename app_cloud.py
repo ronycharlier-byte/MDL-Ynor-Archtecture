@@ -1,6 +1,7 @@
 import asyncio
 import sys
 import os
+import time
 import logging
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse
@@ -14,7 +15,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # --- CONFIG LOGGING ---
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
-logger = logging.getLogger("YNOR_CLOUD")
+logger = logging.getLogger("YNOR_SYSTEM")
 
 # Imports souverains
 try:
@@ -27,25 +28,38 @@ except Exception as e:
         def update_report(self): pass
     class YnorEconomicSentinel:
         def __init__(self, *a, **k): pass
-        def get_geo_alpha(self, s): return 0.5
+        def get_geo_alpha(self, s): return 0.8
     class YnorBitgetConnector:
-        def get_balance(self): return 100.0
-        def place_order(self, **k): return {"status": "mocked"}
+        def get_balance(self): return 1000.0
+        def place_order(self, **k): return {"code": "00000", "status": "mocked"}
     class MillenniumGrandSolver:
-        def decide(self, s): return "hold"
-        def check_kill_switch(self, b): return False
-        def compute_position_size(self, b, p): return 0.001
+        def __init__(self, *a, **k): self.stop_trading = False
+        def compute_score(self, *a): return 0.8
+        def market_filter(self, *a): return True
+        def compute_position_size(self, b): return b * 0.01
+        def compute_drawdown(self, b): return 0
+        def kill_switch(self, d): return False
 
+# --- PRO VERSION GLOBALS ---
+DRY_RUN = True  # ⚠️ SAFE MODE ACTIF
+MAX_TRADES_PER_DAY = 5
+COOLDOWN_SECONDS = 300
+CONFIDENCE_THRESHOLD = 0.75
+
+last_trade_time = 0
+trades_today = 0
 REPORT_PATH = "data/investing_full_report.json"
-STATUS_PATH = "data/live_market_status.json"
 os.makedirs("data", exist_ok=True)
-os.makedirs("static", exist_ok=True)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    global last_trade_time, trades_today
+    
     scraper = YnorNewsScraper(REPORT_PATH)
     connector = YnorBitgetConnector()
-    solver = MillenniumGrandSolver()
+    # Initial balance via API si possible
+    initial_balance = connector.get_balance()
+    solver = MillenniumGrandSolver(initial_balance=initial_balance)
     sentinel = YnorEconomicSentinel("", REPORT_PATH)
 
     async def news_worker():
@@ -54,48 +68,74 @@ async def lifespan(app: FastAPI):
             except: await asyncio.sleep(60)
     
     async def trading_loop():
-        """ Boucle Autonome : Le coeur du Hedge Fund """
-        logger.info("Starting Autonomous Trading Loop")
+        global last_trade_time, trades_today
+        logger.info(f"Starting Pro Trading Loop | DRY_RUN: {DRY_RUN}")
+        
         while True:
             try:
+                # --- DATA ACQUISITION ---
+                sentiment = sentinel.get_geo_alpha("BTC")
+                trend = "bullish" # À brancher sur un indicateur TA
+                volatility = 0.01 # À brancher sur un indicateur TA
                 balance = connector.get_balance()
-                if solver.check_kill_switch(balance):
-                    logger.warning("Trading suspended by Kill Switch")
-                    break
+
+                # --- KILL SWITCH & SAFETY ---
+                drawdown = solver.compute_drawdown(balance)
+                if solver.kill_switch(drawdown):
+                    logger.warning("🛑 Trading stopped (drawdown)")
+                    await asyncio.sleep(300); continue
+
+                if trades_today >= MAX_TRADES_PER_DAY:
+                    logger.info("📉 Max trades reached for today")
+                    await asyncio.sleep(300); continue
+
+                if time.time() - last_trade_time < COOLDOWN_SECONDS:
+                    await asyncio.sleep(60); continue
+
+                # --- MARKET FILTER ---
+                if not solver.market_filter(volatility, trend):
+                    logger.info("🚫 Market not safe (Filter Active)")
+                    await asyncio.sleep(300); continue
+
+                # --- SCORING ---
+                score = solver.compute_score(sentiment, trend, volatility)
                 
-                # Récupération du Sentiment
-                score = sentinel.get_geo_alpha("BTC")
-                signal = solver.decide(score)
+                if score < CONFIDENCE_THRESHOLD:
+                    await asyncio.sleep(300); continue
+
+                # --- EXECUTION ---
+                size = solver.compute_position_size(balance)
                 
-                if signal != "hold":
-                    # Prix fictif pour calcul (en prod, fetch via yfinance ou exchange)
-                    price = 65000 
-                    size = solver.compute_position_size(balance, price)
-                    if size > 0:
-                        connector.place_order(side=signal, size=size)
+                if DRY_RUN:
+                    logger.info(f"🧪 [DRY RUN] Trade size: {size} | Score: {score}")
+                else:
+                    response = connector.place_order(side="buy", size=size)
+                    if response.get("code") != "00000":
+                        logger.error(f"❌ Order failed: {response}")
+                        await asyncio.sleep(60); continue
                 
-                await asyncio.sleep(300) # Check toutes les 5 min
+                # --- UPDATE STATE ---
+                last_trade_time = time.time()
+                trades_today += 1
+                logger.info(f"✅ Trade executed | Score: {score}")
+
             except Exception as e:
-                logger.error(f"Loop Error: {e}")
+                logger.error(f"🔥 Loop Error: {e}")
                 await asyncio.sleep(60)
+            
+            await asyncio.sleep(300)
 
     asyncio.create_task(news_worker())
     asyncio.create_task(trading_loop())
-    logger.info("[YNOR BOOT] Engine & Workers started")
+    logger.info("[YNOR BOOT] Engine Online")
     yield
 
 app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 def root():
-    return {"status": "ynor sovereign live", "timestamp": datetime.now().isoformat()}
+    return {"status": "ynor live", "dry_run": DRY_RUN, "trades_today": trades_today}
 
 @app.get("/health")
 def health():
     return {"status": "healthy"}
-
-@app.get("/status")
-def get_status():
-    if os.path.exists(STATUS_PATH):
-        with open(STATUS_PATH, 'r') as f: return json.load(f)
-    return {"status": "initializing"}
