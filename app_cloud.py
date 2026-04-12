@@ -23,12 +23,21 @@ try:
     from ynor_bitget import YnorBitgetConnector
 except Exception as e:
     print(f"[BOOT ERROR] {e}")
-    # Definition des mocks pour eviter les NameError
-    from ynor_engine import YnorNewsScraper, YnorEconomicSentinel
+    
+    class YnorNewsScraper:
+        def __init__(self, *args, **kwargs): pass
+        def update_report(self): pass
+
+    class YnorEconomicSentinel:
+        def __init__(self, *args, **kwargs): pass
+        def get_geo_alpha(self, s): return 0
+
     class YnorTelegramNotifier:
         def send_alert(self, msg): print(f"[MOCK NOTIFY] {msg}")
+
     class MillenniumGrandSolver:
         def get_grand_sovereign_score(self, p): return 0.4, {}
+
     class YnorBitgetConnector:
         def get_balance(self): return 0.0
         def get_open_position(self, s): return None
