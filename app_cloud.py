@@ -23,25 +23,25 @@ try:
     from ynor_bitget import YnorBitgetConnector
 except Exception as e:
     print(f"[BOOT ERROR] {e}")
-    
+
     class YnorNewsScraper:
-        def __init__(self, *args, **kwargs): pass
+        def __init__(self, *a, **k): pass
         def update_report(self): pass
 
     class YnorEconomicSentinel:
-        def __init__(self, *args, **kwargs): pass
+        def __init__(self, *a, **k): pass
         def get_geo_alpha(self, s): return 0
 
     class YnorTelegramNotifier:
-        def send_alert(self, msg): print(f"[MOCK NOTIFY] {msg}")
+        def send_alert(self, msg): print(msg)
 
     class MillenniumGrandSolver:
         def get_grand_sovereign_score(self, p): return 0.4, {}
 
     class YnorBitgetConnector:
-        def get_balance(self): return 0.0
+        def get_balance(self): return 0
         def get_open_position(self, s): return None
-        def execute_margin_order(self, *args, **kwargs): return False
+        def execute_margin_order(self, *a, **k): return False
         def close_position(self, s): pass
 
 @asynccontextmanager

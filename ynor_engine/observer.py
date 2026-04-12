@@ -1,5 +1,9 @@
-import torch
-import torch.nn as nn
+try:
+    import torch
+    import torch.nn as nn
+except:
+    torch = None
+    nn = None
 from typing import Tuple
 
 class YnorObserver(nn.Module):
