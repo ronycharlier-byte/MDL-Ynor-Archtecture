@@ -1,11 +1,10 @@
-torch
-numpy
-pandas
-flask
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2
 fastapi
 uvicorn
-requests
-websockets
-python-dotenv
 gunicorn
+requests
+numpy
+pandas
+python-dotenv
 yfinance

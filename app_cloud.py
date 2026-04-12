@@ -1,15 +1,19 @@
 import asyncio
+import sys
+import os
 from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from contextlib import asynccontextmanager
 import uvicorn
 import json
-import os
 import yfinance as yf
 from datetime import datetime
 import numpy as np
 import subprocess
+
+# --- FIX PYTHON PATH ---
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Imports souverains
 try:
@@ -20,20 +24,11 @@ try:
 except Exception as e:
     print(f"[BOOT ERROR] {e}")
     # Definition des mocks pour eviter les NameError
-    class YnorNewsScraper:
-        def __init__(self, path): self.path = path
-        def update_report(self): pass
-    
-    class YnorEconomicSentinel:
-        def __init__(self, cal, rep): pass
-        def get_geo_alpha(self, asset): return 0.0
-
+    from ynor_engine import YnorNewsScraper, YnorEconomicSentinel
     class YnorTelegramNotifier:
         def send_alert(self, msg): print(f"[MOCK NOTIFY] {msg}")
-
     class MillenniumGrandSolver:
         def get_grand_sovereign_score(self, p): return 0.4, {}
-
     class YnorBitgetConnector:
         def get_balance(self): return 0.0
         def get_open_position(self, s): return None
@@ -170,7 +165,11 @@ async def ynor_background_engine():
             print(f"[ENGINE ERROR] {e}")
             await asyncio.sleep(10)
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/")
+def root():
+    return {"status": "ynor live"}
+
+@app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
     try:
         with open(STATUS_PATH, 'r') as f: m = json.load(f)
