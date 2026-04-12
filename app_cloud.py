@@ -19,6 +19,26 @@ try:
     from ynor_bitget import YnorBitgetConnector
 except Exception as e:
     print(f"[BOOT ERROR] {e}")
+    # Definition des mocks pour eviter les NameError
+    class YnorNewsScraper:
+        def __init__(self, path): self.path = path
+        def update_report(self): pass
+    
+    class YnorEconomicSentinel:
+        def __init__(self, cal, rep): pass
+        def get_geo_alpha(self, asset): return 0.0
+
+    class YnorTelegramNotifier:
+        def send_alert(self, msg): print(f"[MOCK NOTIFY] {msg}")
+
+    class MillenniumGrandSolver:
+        def get_grand_sovereign_score(self, p): return 0.4, {}
+
+    class YnorBitgetConnector:
+        def get_balance(self): return 0.0
+        def get_open_position(self, s): return None
+        def execute_margin_order(self, *args, **kwargs): return False
+        def close_position(self, s): pass
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -35,8 +55,14 @@ REPORT_PATH = "data/investing_full_report.json"
 STATUS_PATH = "data/live_market_status.json"
 CONFIG_PATH = "data/optimal_configs.json"
 ENTRY_PRICES = {}
-SCRAPER = YnorNewsScraper(REPORT_PATH)
-NOTIFIER = YnorTelegramNotifier()
+# Safe Boot Initialization
+try:
+    SCRAPER = YnorNewsScraper(REPORT_PATH)
+    NOTIFIER = YnorTelegramNotifier()
+except Exception as e:
+    print(f"[SAFE BOOT] {e}")
+    SCRAPER = YnorNewsScraper(REPORT_PATH) # Use mock if import failed
+    NOTIFIER = YnorTelegramNotifier()
 
 def load_genome():
     try:
