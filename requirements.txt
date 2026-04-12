@@ -7,3 +7,5 @@ uvicorn
 requests
 websockets
 python-dotenv
+gunicorn
+yfinance

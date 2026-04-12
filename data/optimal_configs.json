@@ -1,0 +1,44 @@
+{
+    "BTC-USD": {
+        "ticker": "BTC-USD",
+        "Profit": 5.93,
+        "Threshold": 0.39,
+        "StopLoss": 1.5
+    },
+    "ETH-USD": {
+        "ticker": "ETH-USD",
+        "Profit": 3.49,
+        "Threshold": 0.37,
+        "StopLoss": 1.2
+    },
+    "SOL-USD": {
+        "ticker": "SOL-USD",
+        "Profit": 5.73,
+        "Threshold": 0.41,
+        "StopLoss": 1.5
+    },
+    "XRP-USD": {
+        "ticker": "XRP-USD",
+        "Profit": 3.53,
+        "Threshold": 0.43,
+        "StopLoss": 1.2
+    },
+    "DOGE-USD": {
+        "ticker": "DOGE-USD",
+        "Profit": 3.56,
+        "Threshold": 0.41,
+        "StopLoss": 1.5
+    },
+    "LINK-USD": {
+        "ticker": "LINK-USD",
+        "Profit": 5.03,
+        "Threshold": 0.39,
+        "StopLoss": 1.2
+    },
+    "ADA-USD": {
+        "ticker": "ADA-USD",
+        "Profit": 2.73,
+        "Threshold": 0.49,
+        "StopLoss": 1.2
+    }
+}
