@@ -5,6 +5,7 @@ import base64
 import requests
 import logging
 import numpy as np
+import pandas as pd
 from hashlib import sha256
 
 # --- CONFIG LOGGING ---
@@ -20,11 +21,7 @@ class YnorBitgetConnector:
 
     def _sign(self, timestamp, method, path, body=""):
         message = f"{timestamp}{method}{path}{body}"
-        mac = hmac.new(
-            self.secret.encode() if self.secret else b"",
-            message.encode(),
-            digestmod="sha256"
-        )
+        mac = hmac.new(self.secret.encode() if self.secret else b"", message.encode(), digestmod="sha256")
         return base64.b64encode(mac.digest()).decode()
 
     def _headers(self, method, path, body=""):
@@ -39,8 +36,8 @@ class YnorBitgetConnector:
             data = res.json()
             if data.get("code") == "00000" and data.get("data"):
                 return float(data["data"][0].get("available", 0.0))
-            return 1000.0
-        except: return 1000.0
+            return None
+        except: return None
 
     def place_order(self, symbol="BTCUSDT", side="buy", size="0.001"):
         path = "/api/v2/mix/order/place-order"
@@ -50,53 +47,62 @@ class YnorBitgetConnector:
         try:
             res = requests.post(self.base_url + path, headers=headers, json=body)
             return res.json()
-        except Exception as e: return {"code": "error", "message": str(e)}
+        except: return {"code": "error"}
 
-class YnorScoringEngine:
-    def detect_market_regime(self, prices):
-        """ Detection du Regime de Marche """
-        if len(prices) < 20: return "UNKNOWN"
-        p = np.array(prices)
-        volatility = np.std(p[-20:])
-        trend = np.mean(p[-5:]) - np.mean(p[-20:])
-        avg_price = np.mean(p)
+class MillenniumGrandSolver:
+    def __init__(self, initial_balance=1000):
+        self.initial_balance = initial_balance
 
-        if volatility > avg_price * 0.03: return "HIGH_VOL"
-        if abs(trend) < avg_price * 0.005: return "RANGE"
-        return "TREND"
-
-    def compute_score(self, prices, sentiment):
-        if len(prices) < 20: return 50
-        p = np.array(prices)
-        score = 0
+    def compute_indicators(self, df):
+        """ Calcul des Piliers Quantiques """
+        if len(df) < 20: return df
+        df = df.copy()
         
-        # --- FACTEURS ---
-        # 1. EMA Trend
-        ema_f, ema_s = np.mean(p[-5:]), np.mean(p[-20:])
-        score += 30 if ema_f > ema_s else -30
+        # 1. Trend (EMA)
+        df["ema"] = df["Close"].ewm(span=20).mean()
         
-        # 2. RSI Momentum
-        diff = np.diff(p)
-        gain = np.mean([max(0, x) for x in diff[-14:]])
-        loss = np.mean([max(0, -x) for x in diff[-14:]])
-        rsi = 100 - (100 / (1 + gain/loss)) if loss > 0 else 100
-        if rsi < 30: score += 20
-        elif rsi > 70: score -= 20
+        # 2. Momentum (RSI)
+        delta = df["Close"].diff()
+        gain = (delta.where(delta > 0, 0)).rolling(14).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
+        rs = gain / loss
+        df["rsi"] = 100 - (100 / (1 + rs))
+        
+        # 3. Volatility (ATR-like)
+        df["volatility"] = df["Close"].pct_change().rolling(10).std()
+        
+        return df
 
-        # --- ADAPTATION STRATEGIQUE ---
-        regime = self.detect_market_regime(prices)
-        if regime == "HIGH_VOL": score *= 0.5
-        elif regime == "RANGE": score *= 0.7
-        elif regime == "TREND": score *= 1.2
+    def compute_score(self, current_data):
+        """ YNOR QUANT CORE Scoring (0 - 100) """
+        score = 50 # Neutre
         
-        # --- SENTIMENT ---
-        score += (sentiment * 50)
+        # Trend Pillar (30%)
+        if current_data["price"] > current_data["ema"]: score += 15
+        else: score -= 15
+        
+        # Momentum Pillar (25%)
+        rsi = current_data["rsi"]
+        if rsi < 30: score += 20 # Oversold
+        elif rsi > 70: score -= 20 # Overbought
+        
+        # Sentiment Pillar (25%)
+        sentiment = current_data.get("sentiment", 0.5)
+        score += (sentiment - 0.5) * 40 # Mappage sentiment (0->1) vers score (-20->20)
+        
+        # Volatility Filter (20%)
+        if current_data["volatility"] > 0.05: score -= 10 # Instable
         
         return max(0, min(100, score))
 
+    def decide(self, score):
+        if score > 70: return "BUY"
+        elif score < 30: return "SELL"
+        return "HOLD"
+
     def compute_position_size(self, balance, score, price):
-        """ Allocation Intelligente """
+        if balance is None or balance <= 0: balance = 1000.0 # Fallback
         base_risk = 0.01
-        multiplier = score / 100.0
-        pos_val = balance * base_risk * multiplier
+        confidence = score / 100.0
+        pos_val = balance * base_risk * confidence
         return round(pos_val / price, 4)
