@@ -18,10 +18,10 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s")
 logger = logging.getLogger("YNOR_SYSTEM")
 
-# --- GLOBAL BOT STATE (DASHBOARD) ---
+# --- GLOBAL BOT STATE ---
 BOT_STATE = {
-    "status": "RUNNING",
-    "regime": "SIDEWAYS",
+    "status": "BOOTING",
+    "regime": "UNKNOWN",
     "balance": 0.0,
     "initial_balance": 0.0, 
     "pnl": 0.0,
@@ -34,11 +34,33 @@ BOT_STATE = {
 }
 
 # --- LIVE SAFETY PROTOCOLS ---
-DRY_RUN = True # ⚠️ Mettre à False pour le live réel
-ENABLE_LIVE_TRADING = False # 🔒 Double verrou de sécurité
-MAX_TRADE_SIZE_USD = 10.0 # Phase 1 : Test Live Ultra-Safe
+DRY_RUN = True
+ENABLE_LIVE_TRADING = False
+MAX_TRADE_SIZE_USD = 10.0
 MAX_DAILY_TRADES = 2
-KILL_SWITCH_THRESHOLD = 0.10 # 10% drawdown stop total
+KILL_SWITCH_THRESHOLD = 0.10
+
+# --- SECURE BOOTSTRAP ---
+try:
+    from ynor_engine import YnorEconomicSentinel, YnorNewsScraper, YnorBitgetConnector, MillenniumGrandSolver
+    BOOT_SUCCESS = True
+except Exception as e:
+    logger.critical(f"🔥 CRITICAL IMPORT ERROR: {e}")
+    BOOT_SUCCESS = False
+    # Minimal Fallbacks to prevent total crash
+    class YnorBitgetConnector:
+        def get_balance(self): return None
+        def place_order(self, **k): return {"code": "error"}
+    class MillenniumGrandSolver:
+        def __init__(self, initial_balance=1000): self.initial_balance = initial_balance
+        def compute_indicators(self, df): return df
+        def detect_market_regime(self, t, v): return "sideways"
+        def adjust_score_by_regime(self, s, r): return s
+        def regime_filter(self, d, r): return d
+        def compute_score(self, s, t, v): return 50
+        def decide(self, s): return "HOLD"
+        def compute_allocation(self, s): return {k: 0 for k in s}
+        def compute_position_size(self, *a): return 0.0
 
 def normalize_sentiment(val):
     return max(-1.0, min(1.0, (val - 0.5) * 2))
@@ -46,8 +68,7 @@ def normalize_sentiment(val):
 def check_kill_switch():
     if BOT_STATE["initial_balance"] > 0:
         drawdown = (BOT_STATE["initial_balance"] - BOT_STATE["balance"]) / BOT_STATE["initial_balance"]
-        if drawdown > KILL_SWITCH_THRESHOLD:
-            return True
+        if drawdown > KILL_SWITCH_THRESHOLD: return True
     return False
 
 def update_dashboard(symbol, signal, allocation, regime):
@@ -66,39 +87,31 @@ def update_dashboard(symbol, signal, allocation, regime):
     BOT_STATE["logs"].append({"time": datetime.now().strftime("%H:%M:%S"), "msg": f"{pair}: {signal} | ({allocation:.2f})" })
     if len(BOT_STATE["logs"]) > 20: BOT_STATE["logs"] = BOT_STATE["logs"][-20:]
 
-# Imports souverains
-try:
-    from ynor_engine import YnorEconomicSentinel, YnorNewsScraper, YnorBitgetConnector, MillenniumGrandSolver
-except Exception as e:
-    logger.error(f"[BOOT ERROR] {e}")
-    class YnorBitgetConnector:
-        def get_balance(self): return 1000.0
-        def place_order(self, **k): return {"code": "00000"}
-    class MillenniumGrandSolver:
-        def __init__(self, initial_balance=1000): pass
-        def compute_indicators(self, df): return df
-        def detect_market_regime(self, t, v): return "sideways"
-        def adjust_score_by_regime(self, s, r): return s
-        def regime_filter(self, d, r): return d
-        def compute_score(self, s, t, v): return 50
-        def decide(self, s): return "HOLD"
-        def compute_allocation(self, s): return {k: 0 for k in s}
-        def compute_position_size(self, *a): return 0.001
-
 SYMBOLS = ["BTC-USD", "ETH-USD", "SOL-USD"]
 REPORT_PATH = "data/investing_full_report.json"
 os.makedirs("data", exist_ok=True)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    if not BOOT_SUCCESS:
+        BOT_STATE["status"] = "❌ BOOT FAILED"
+        yield; return
+
     connector = YnorBitgetConnector()
     balance = connector.get_balance()
     if balance:
         BOT_STATE["balance"] = balance; BOT_STATE["initial_balance"] = balance
     
-    solver = MillenniumGrandSolver(initial_balance=BOT_STATE["initial_balance"])
+    # SAFE SOLVER INIT
+    try:
+        solver = MillenniumGrandSolver(initial_balance=BOT_STATE["initial_balance"] or 1000)
+    except Exception as e:
+        logger.error(f"Solver Init Failed: {e}")
+        solver = MillenniumGrandSolver()
+
     sentinel = YnorEconomicSentinel("", REPORT_PATH)
     scraper = YnorNewsScraper(REPORT_PATH)
+    BOT_STATE["status"] = "RUNNING"
 
     async def news_worker():
         while True:
@@ -109,18 +122,15 @@ async def lifespan(app: FastAPI):
         l_trade_t = 0
         while True:
             try:
-                # 1. Kill Switch Check
                 if check_kill_switch() or "STOPPED" in BOT_STATE["status"]:
                     BOT_STATE["status"] = "🚨 STOPPED (KILL SWITCH)"
-                    logger.critical("🚨 CRITICAL: KILL SWITCH ACTIVATED. TRADING HALTED.")
                     await asyncio.sleep(3600); continue
                 
-                # 2. Daily Limits
                 if BOT_STATE["trades_today"] >= MAX_DAILY_TRADES:
-                    logger.info("Daily trade limit reached. Waiting for next cycle.")
                     await asyncio.sleep(3600); continue
 
-                balance = connector.get_balance() or BOT_STATE["balance"]
+                bal = connector.get_balance()
+                if bal: BOT_STATE["balance"] = bal
                 sentiment = normalize_sentiment(sentinel.get_geo_alpha("BTC"))
                 
                 current_scores = {}
@@ -148,39 +158,27 @@ async def lifespan(app: FastAPI):
                 for symbol, alloc_share in allocations.items():
                     score = current_scores[symbol]
                     regime = asset_data[symbol]["regime"]
-                    decision = solver.decide(score)
-                    decision = solver.regime_filter(decision, regime)
+                    decision = solver.regime_filter(solver.decide(score), regime)
                     
                     update_dashboard(symbol, decision, alloc_share, regime)
 
-                    # LIVE EXECUTION BLOCK
                     if decision != "HOLD" and alloc_share > 0:
-                        # Safety checks pre-execution
-                        if time.time() - l_trade_t < 1800: continue # Cooldown 30min en phase 1
+                        if time.time() - l_trade_t < 1800: continue
 
-                        # Allocation logic
-                        raw_size_usd = balance * 0.01 * alloc_share
-                        # Hard Cap Safety
-                        size_usd = min(raw_size_usd, MAX_TRADE_SIZE_USD)
+                        size_usd = min(balance * 0.01 * alloc_share, MAX_TRADE_SIZE_USD)
                         size_coin = round(size_usd / asset_data[symbol]["price"], 4)
 
                         if DRY_RUN:
-                            logger.info(f"🧪 [DRY] {symbol}: {decision} | Size: ${size_usd:.2f}")
-                        elif ENABLE_LIVE_TRADING:
-                            if size_coin <= 0: continue
-                            logger.info(f"🚀 LIVE ORDER: {symbol} | {decision} | ${size_usd:.2f}")
+                            logger.info(f"🧪 [DRY] {symbol}: {decision}")
+                        elif ENABLE_LIVE_TRADING and size_coin > 0:
                             side = "buy" if "BUY" in decision else "sell"
                             res = connector.place_order(symbol=symbol.replace("-", ""), side=side, size=size_coin)
                             if res.get("code") == "00000":
                                 l_trade_t = time.time(); BOT_STATE["trades_today"] += 1
-                                logger.info(f"✅ LIVE CONFIRMED: {symbol}")
-                        else:
-                            logger.warning(f"🔒 LIVE BLOCKED: Double-lock active. Enable ENABLE_LIVE_TRADING to proceed.")
 
-                await asyncio.sleep(1200) # Scan toutes les 20 min en phase 1
+                await asyncio.sleep(1200) 
             except Exception as e:
-                logger.error(f"Loop Error: {e}")
-                await asyncio.sleep(60)
+                logger.error(f"Loop Error: {e}"); await asyncio.sleep(60)
 
     asyncio.create_task(news_worker())
     asyncio.create_task(trading_loop())
@@ -190,30 +188,10 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
-    status_color = "red" if "STOPPED" in BOT_STATE["status"] else "#10b981"
-    mode_text = "LIVE SOUVERAIN" if BOT_STATE["live_mode"] else "OBSERVATION (DRY RUN)"
+    status_color = "red" if "STOPPED" in BOT_STATE["status"] or "FAILED" in BOT_STATE["status"] else "#10b981"
+    mode_text = "LIVE SOUVERAIN" if BOT_STATE["live_mode"] else "OBSERVATION"
     mode_color = "#38bdf8" if BOT_STATE["live_mode"] else "#94a3b8"
-    
-    pos_html = "".join([f"<p style='margin:5px 0;'>{k}: <span style='color:#38bdf8'>{v}</span></p>" for k,v in BOT_STATE["positions"].items()])
-    log_html = "".join([f"<p style='color:#64748b; font-family:monospace; font-size:12px;'>[{l['time']}] {l['msg']}</p>" for l in BOT_STATE["logs"][-10:]])
-    
-    html = f"""
-    <html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'>
-        <div style='max-width:800px; margin:0 auto;'>
-            <h1 style='font-size:14px; letter-spacing:2px; color:#64748b; margin-bottom:5px;'>YNOR ZENITH V18.8.0</h1>
-            <div style='background:#0f172a; padding:20px; border-radius:12px; border:1px solid #1e293b;'>
-                <div style='display:flex; justify-content:space-between; align-items:center;'>
-                    <h2 style='margin:0; font-size:24px;'>$ {BOT_STATE['balance']:,.2f}</h2>
-                    <div style='color:{mode_color}; font-weight:bold; font-size:12px; border:1px solid {mode_color}; padding:4px 10px; border-radius:30px;'>{mode_text}</div>
-                </div>
-                <p style='color:#64748b; font-size:12px;'>Status: <span style='color:{status_color}'>{BOT_STATE['status']}</span> | Regime: {BOT_STATE['regime'].upper()}</p>
-                <div style='margin-top:20px; display:grid; grid-template-columns: 1fr 1fr; gap:20px;'>
-                    <div><h3 style='font-size:12px; color:#64748b;'>PORTFOLIO</h3>{pos_html}</div>
-                    <div><h3 style='font-size:12px; color:#64748b;'>PERFORMANCE</h3><p>PnL: ${BOT_STATE['pnl']:+.2f}</p><p>Drawdown: {BOT_STATE['drawdown']*100:.2f}%</p></div>
-                </div>
-            </div>
-            <div style='margin-top:20px; background:#000; padding:15px; border-radius:10px;'>{log_html}</div>
-        </div>
-    </body></html>
-    """
+    pos_html = "".join([f"<p>{k}: {v}</p>" for k,v in BOT_STATE["positions"].items()])
+    log_html = "".join([f"<p style='font-size:12px; color:#64748b;'>[{l['time']}] {l['msg']}</p>" for l in BOT_STATE["logs"][-10:]])
+    html = f"<html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | BOOTSTRAP OK</h1><div style='background:#0f172a; padding:20px; border-radius:12px;'><h2 style='color:{status_color}'>{BOT_STATE['status']}</h2><p style='color:{mode_color}'>{mode_text}</p><p>Balance: ${BOT_STATE['balance']:,.2f}</p>{pos_html}</div><div style='margin-top:20px;'>{log_html}</div></body></html>"
     return html

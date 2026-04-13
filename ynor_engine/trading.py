@@ -89,7 +89,8 @@ class MillenniumGrandSolver:
         decision = decision.upper()
         regime = regime.lower()
         if regime == "bear" and decision in ["BUY", "STRONG_BUY"]: return "HOLD"
-        if regime == "sideways" and decision != "STRONG_BUY"]: return "HOLD"
+        # FIX: Removed extra ']'
+        if regime == "sideways" and decision != "STRONG_BUY": return "HOLD"
         return decision
 
     def compute_score(self, sentiment, trend, volatility):
@@ -109,15 +110,11 @@ class MillenniumGrandSolver:
         return "HOLD"
 
     def compute_allocation(self, scores):
-        """ Allocation Optimizer : Répartition du risque par score """
-        # On ne garde que les actifs avec un signal BUY/SELL
         active_scores = {k: v for k, v in scores.items() if v >= 65 or v <= 35}
         total = sum(active_scores.values())
         if total == 0: return {k: 0 for k in scores}
         return {k: v / total for k, v in active_scores.items()}
 
     def compute_position_size(self, balance, allocation, price, risk_per_trade=0.01):
-        """ Position Sizing Séquentiel """
-        # Capital à risquer pour cette opportunité spécifique
         opportunity_capital = balance * risk_per_trade * allocation
         return round(opportunity_capital / price, 4)
