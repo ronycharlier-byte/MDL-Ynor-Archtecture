@@ -197,6 +197,22 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
+@app.get("/", response_class=JSONResponse)
+def root():
+    return {
+        "status": "ynor sovereign live",
+        "mode": f"quant regime: {BOT_STATE['regime']}",
+        "dashboard": "/dashboard"
+    }
+
+@app.get("/health")
+def health():
+    return {"status": "healthy", "bootstrap": "OK" if BOOT_SUCCESS else "DEGRADED"}
+
+@app.get("/status")
+def status():
+    return BOT_STATE
+
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
     status_color = "red" if "STOPPED" in BOT_STATE["status"] or "FAILED" in BOT_STATE["status"] else "#10b981"
