@@ -201,17 +201,21 @@ app = FastAPI(lifespan=lifespan)
 def root():
     return {
         "status": "ynor sovereign live",
-        "mode": f"quant regime: {BOT_STATE['regime']}",
-        "dashboard": "/dashboard"
+        "engine": "quant regime",
+        "mode": "autonomous trading"
     }
 
 @app.get("/health")
 def health():
-    return {"status": "healthy", "bootstrap": "OK" if BOOT_SUCCESS else "DEGRADED"}
+    return {"status": "healthy"}
 
 @app.get("/status")
 def status():
     return BOT_STATE
+
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}
 
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
