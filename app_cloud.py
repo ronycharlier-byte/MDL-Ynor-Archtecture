@@ -20,8 +20,8 @@ logger = logging.getLogger("YNOR_SYSTEM")
 # --- GLOBAL BOT STATE (DASHBOARD) ---
 BOT_STATE = {
     "status": "RUNNING",
-    "balance": 1000.0,
-    "initial_balance": 1000.0,
+    "balance": 0.0,
+    "initial_balance": 1.0, # Placeholder
     "pnl": 0.0,
     "drawdown": 0.0,
     "last_signal": "NONE",
@@ -39,6 +39,11 @@ def update_dashboard(signal, confidence):
     if BOT_STATE["initial_balance"] > 0:
         BOT_STATE["drawdown"] = (BOT_STATE["initial_balance"] - BOT_STATE["balance"]) / BOT_STATE["initial_balance"]
     
+    # Kill Switch Logic
+    if BOT_STATE["drawdown"] > 0.10:
+        BOT_STATE["status"] = "STOPPED (KILL SWITCH)"
+        logger.warning("🚨 KILL SWITCH ACTIVATED")
+
     BOT_STATE["logs"].append({
         "time": datetime.now().strftime("%H:%M:%S"),
         "signal": signal,
@@ -68,30 +73,28 @@ except Exception as e:
         def market_filter(self, *a): return True
         def compute_position_size(self, b): return b * 0.01
         def compute_drawdown(self, b): return 0
-        def kill_switch(self, d): return False
 
 # --- PRO VERSION GLOBALS ---
-DRY_RUN = True  # ⚠️ SAFE MODE ACTIF
+DRY_RUN = True
 MAX_TRADES_PER_DAY = 5
 COOLDOWN_SECONDS = 300
 CONFIDENCE_THRESHOLD = 0.75
 
-last_trade_time = 0
-trades_today = 0
 REPORT_PATH = "data/investing_full_report.json"
 os.makedirs("data", exist_ok=True)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global last_trade_time, trades_today
-    
     scraper = YnorNewsScraper(REPORT_PATH)
     connector = YnorBitgetConnector()
-    initial_balance = connector.get_balance()
-    BOT_STATE["balance"] = initial_balance
-    BOT_STATE["initial_balance"] = initial_balance
     
-    solver = MillenniumGrandSolver(initial_balance=initial_balance)
+    # REAL BALANCE SYNC
+    balance = connector.get_balance()
+    if balance is not None:
+        BOT_STATE["balance"] = balance
+        BOT_STATE["initial_balance"] = balance
+    
+    solver = MillenniumGrandSolver(initial_balance=BOT_STATE["initial_balance"])
     sentinel = YnorEconomicSentinel("", REPORT_PATH)
 
     async def news_worker():
@@ -100,26 +103,30 @@ async def lifespan(app: FastAPI):
             except: await asyncio.sleep(60)
     
     async def trading_loop():
-        global last_trade_time, trades_today
+        global trades_today
+        current_trades = 0
+        last_t_time = 0
+        
         logger.info(f"Starting Pro Trading Loop | DRY_RUN: {DRY_RUN}")
         
         while True:
             try:
+                if BOT_STATE["status"] == "STOPPED (KILL SWITCH)":
+                    await asyncio.sleep(300); continue
+
+                # SYNC REAL BALANCE
+                balance = connector.get_balance()
+                if balance is not None:
+                    BOT_STATE["balance"] = balance
+
                 sentiment = sentinel.get_geo_alpha("BTC")
                 trend = "bullish" 
                 volatility = 0.01 
-                balance = connector.get_balance()
-                BOT_STATE["balance"] = balance
 
-                drawdown = solver.compute_drawdown(balance)
-                if solver.kill_switch(drawdown):
-                    BOT_STATE["status"] = "STOPPED (KILL SWITCH)"
+                if current_trades >= MAX_TRADES_PER_DAY:
                     await asyncio.sleep(300); continue
 
-                if trades_today >= MAX_TRADES_PER_DAY:
-                    await asyncio.sleep(300); continue
-
-                if time.time() - last_trade_time < COOLDOWN_SECONDS:
+                if time.time() - last_t_time < COOLDOWN_SECONDS:
                     await asyncio.sleep(10); continue
 
                 if not solver.market_filter(volatility, trend):
@@ -134,26 +141,27 @@ async def lifespan(app: FastAPI):
                 size = solver.compute_position_size(balance)
                 
                 if DRY_RUN:
-                    logger.info(f"🧪 [DRY RUN] Trade size: {size} | Score: {score}")
+                    logger.info(f"🧪 [DRY RUN] Trade size: {size}")
                     update_dashboard("BUY (DRY)", score)
                 else:
                     response = connector.place_order(side="buy", size=size)
                     if response.get("code") == "00000":
                         update_dashboard("BUY (LIVE)", score)
+                        logger.info("✅ Order success")
                     else:
                         logger.error(f"❌ Order failed: {response}")
                         await asyncio.sleep(60); continue
                 
-                last_trade_time = time.time()
-                trades_today += 1
-                BOT_STATE["trades_today"] = trades_today
+                last_t_time = time.time()
+                current_trades += 1
+                BOT_STATE["trades_today"] = current_trades
                 BOT_STATE["last_trade_time"] = datetime.now().strftime("%H:%M:%S")
 
             except Exception as e:
                 logger.error(f"🔥 Loop Error: {e}")
                 await asyncio.sleep(60)
             
-            await asyncio.sleep(30) # Fréquence monitoring accrue
+            await asyncio.sleep(30)
 
     asyncio.create_task(news_worker())
     asyncio.create_task(trading_loop())
@@ -164,7 +172,7 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 def root():
-    return {"status": "ynor live", "dry_run": DRY_RUN, "trades_today": trades_today}
+    return {"status": "ynor live", "dry_run": DRY_RUN, "trades_today": BOT_STATE["trades_today"]}
 
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
@@ -174,62 +182,47 @@ async def dashboard():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>YNOR | Sovereign Dashboard</title>
+        <title>YNOR | Real-Time Monitor</title>
         <meta http-equiv="refresh" content="5">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
         <style>
-            :root {{ --bg: #0f172a; --card: #1e293b; --accent: #38bdf8; --red: #f43f5e; --green: #10b981; }}
-            body {{ font-family: 'Outfit', sans-serif; background: var(--bg); color: white; margin: 0; padding: 20px; }}
-            .container {{ max-width: 800px; margin: 0 auto; }}
-            .header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }}
-            .live-dot {{ width: 10px; height: 10px; background: var(--accent); border-radius: 50%; display: inline-block; margin-right: 10px; box-shadow: 0 0 10px var(--accent); }}
-            .box {{ padding: 25px; margin-bottom: 20px; border-radius: 16px; background: var(--card); border: 1px solid #334155; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }}
-            .grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }}
-            h1 {{ font-size: 24px; margin: 0; letter-spacing: -1px; }}
-            h2 {{ font-size: 14px; text-transform: uppercase; color: #94a3b8; margin-top: 0; margin-bottom: 15px; letter-spacing: 1px; }}
-            .value {{ font-size: 32px; font-weight: 700; margin-bottom: 5px; }}
-            .sub-value {{ font-size: 14px; color: var(--accent); }}
-            .log-container {{ background: #020617; padding: 15px; border-radius: 8px; border: 1px solid #1e293b; }}
-            @media (max-width: 600px) {{ .grid {{ grid-template-columns: 1fr; }} }}
+            :root {{ --bg: #020617; --card: #0f172a; --accent: #38bdf8; --red: #f43f5e; --green: #10b981; }}
+            body {{ font-family: sans-serif; background: var(--bg); color: white; margin: 0; padding: 20px; }}
+            .container {{ max-width: 900px; margin: 0 auto; }}
+            .box {{ padding: 20px; margin-bottom: 20px; border-radius: 12px; background: var(--card); border: 1px solid #1e293b; }}
+            .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }}
+            h1 {{ font-size: 20px; color: var(--accent); }}
+            .val {{ font-size: 28px; font-weight: bold; margin: 5px 0; }}
+            .sub {{ font-size: 13px; color: #64748b; }}
+            .log {{ background: #000; padding: 10px; border-radius: 5px; max-height: 200px; overflow: hidden; }}
         </style>
     </head>
     <body>
         <div class="container">
-            <div class="header">
-                <h1><span class="live-dot"></span>YNOR ZENITH</h1>
-                <div style="font-size: 14px; color: #94a3b8;">{"[TEST MODE]" if DRY_RUN else "[LIVE]"}</div>
-            </div>
-
+            <h1>YNOR ZENITH | BITGET LIVE SYNC</h1>
             <div class="box">
-                <h2>Système Status</h2>
-                <div class="value" style="color: {var(--green) if BOT_STATE["status"]=="RUNNING" else var(--red)}">{BOT_STATE["status"]}</div>
-                <div class="sub-value">SYNC: {datetime.now().strftime("%H:%M:%S")}</div>
+                <div class="sub">STATUS SYSTÈME</div>
+                <div class="val" style="color: {var(--green) if "RUNNING" in BOT_STATE["status"] else var(--red)}">{BOT_STATE["status"]}</div>
             </div>
-
             <div class="grid">
                 <div class="box">
-                    <h2>Capital & Performance</h2>
-                    <div class="value">${BOT_STATE["balance"]:,.2f}</div>
-                    <div class="sub-value">PnL: {BOT_STATE["pnl"]:+.2f}$ ({round(BOT_STATE["drawdown"]*100,2)}%)</div>
+                    <div class="sub">SOLDE RÉEL (USDT)</div>
+                    <div class="val">${BOT_STATE["balance"]:,.2f}</div>
+                    <div class="sub">Drawdown: {round(BOT_STATE["drawdown"]*100,2)}%</div>
                 </div>
                 <div class="box">
-                    <h2>Dernière Décision</h2>
-                    <div class="value" style="color: var(--accent)">{BOT_STATE["last_signal"]}</div>
-                    <div class="sub-value">Score: {BOT_STATE["confidence"]:.4f}</div>
+                    <div class="sub">PNL SESSION</div>
+                    <div class="val" style="color: {var(--green) if BOT_STATE["pnl"] >= 0 else var(--red)}">${BOT_STATE["pnl"]:+.2f}</div>
+                    <div class="sub">Initial: ${BOT_STATE["initial_balance"]:,.2f}</div>
+                </div>
+                <div class="box">
+                    <div class="sub">SIGNAL ACTUEL</div>
+                    <div class="val" style="color: var(--accent)">{BOT_STATE["last_signal"]}</div>
+                    <div class="sub">Score: {BOT_STATE["confidence"]:.4f}</div>
                 </div>
             </div>
-
             <div class="box">
-                <h2>Contrôle du Risque</h2>
-                <div style="font-size: 18px; font-weight: 700;">{BOT_STATE["trades_today"]} / {BOT_STATE["max_trades"]} trades <span style="font-weight: 400; color: #94a3b8; font-size: 14px;">(Last: {BOT_STATE["last_trade_time"] or "N/A"})</span></div>
-            </div>
-
-            <div class="box">
-                <h2>Audit Log (Sovereign)</h2>
-                <div class="log-container">
-                    {log_html or "<p style='color:#475569'>Initialisation du manifold...</p>"}
-                </div>
+                <div class="sub">JOURNAL D'AUDIT</div>
+                <div class="log">{log_html or "En attente de données..."}</div>
             </div>
         </div>
     </body>
