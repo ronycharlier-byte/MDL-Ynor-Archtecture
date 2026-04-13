@@ -26,6 +26,8 @@ BOT_STATE = {
     "initial_balance": 0.0, 
     "pnl": 0.0,
     "drawdown": 0.0,
+    "last_signal": "NONE",
+    "confidence": 0.0,
     "positions": {"BTC": "HUNTING", "ETH": "HUNTING", "SOL": "HUNTING"},
     "allocation": {"BTC": 0.0, "ETH": 0.0, "SOL": 0.0},
     "trades_today": 0,
@@ -49,20 +51,24 @@ try:
 except Exception as e:
     logger.critical(f"🔥 CRITICAL IMPORT ERROR: {e}")
     BOOT_SUCCESS = False
-    # Fallbacks 
     class YnorMarketRegime:
         def detect(self, *a): return "UNKNOWN"
     class YnorBitgetConnector:
         def get_balance(self): return None
         def place_order(self, **k): return {"code": "error"}
-    class MillenniumGrandSolver:
-        def __init__(self, *a): pass
     class YnorEconomicSentinel:
         def __init__(self, *a): pass
         def get_geo_alpha(self, a): return 0.5
     class YnorNewsScraper:
         def __init__(self, *a): pass
         def update_report(self): pass
+    class MillenniumGrandSolver:
+        def __init__(self, initial_balance=1000): pass
+        def compute_indicators(self, df): return df
+        def compute_score(self, s, t, v): return 50
+        def decide(self, s): return "HOLD"
+        def compute_allocation(self, s): return {k: 0 for k in s}
+        def regime_filter(self, d, r): return d
 
 def normalize_sentiment(val):
     return max(-1.0, min(1.0, (val - 0.5) * 2))
@@ -74,18 +80,7 @@ def check_kill_switch():
         if drawdown > KILL_SWITCH_THRESHOLD: return True
     return False
 
-def update_dashboard(symbol, signal, allocation, regime):
-    pair = symbol.split("-")[0]
-    BOT_STATE["positions"][pair] = signal
-    BOT_STATE["allocation"][pair] = allocation
-    BOT_STATE["regime"] = regime
-    if BOT_STATE["balance"] and BOT_STATE["initial_balance"] > 0:
-        BOT_STATE["pnl"] = BOT_STATE["balance"] - BOT_STATE["initial_balance"]
-        BOT_STATE["drawdown"] = (BOT_STATE["initial_balance"] - BOT_STATE["balance"]) / BOT_STATE["initial_balance"]
-
-    BOT_STATE["logs"].append({"time": datetime.now().strftime("%H:%M:%S"), "msg": f"{pair}: {signal} | ({regime})" })
-    if len(BOT_STATE["logs"]) > 20: BOT_STATE["logs"] = BOT_STATE["logs"][-20:]
-
+SYMBOLS = ["BTC-USD", "ETH-USD", "SOL-USD"]
 REPORT_PATH = "data/investing_full_report.json"
 os.makedirs("data", exist_ok=True)
 
@@ -110,20 +105,34 @@ async def lifespan(app: FastAPI):
     async def trading_loop():
         while True:
             try:
-                # Detection du régime MARCHÉ (Source de Vérité)
+                # 1. Régime & Sentiment
                 regime = regime_engine.detect("BTC-USD")
                 BOT_STATE["regime"] = regime
-                
+                sentiment = normalize_sentiment(sentinel.get_geo_alpha("BTC"))
+
+                # 2. Kill Switch & Pause
                 if check_kill_switch():
                     BOT_STATE["status"] = "🚨 STOPPED (KILL SWITCH)"
                     return 
-
                 if BOT_STATE.get("paused"):
                     await asyncio.sleep(60); continue
-                
-                # ... (Le reste de la loop trading ici — On simplifie pour le déploiement)
-                # On valide juste la détection pour l'instant
-                logger.info(f"Market Regime Detected: {regime}")
+
+                # 3. Decision Logic (Observability focus)
+                df = yf.download("BTC-USD", period="1d", interval="5m", progress=False)
+                if not df.empty:
+                    df = solver.compute_indicators(df)
+                    row = df.iloc[-1]
+                    trend = "bullish" if row["Close"] > row.get("ema", row["Close"]) else "bearish"
+                    volatility = row.get("volatility_norm", 0.1)
+
+                    score = solver.compute_score(sentiment, trend, volatility)
+                    decision = solver.decide(score)
+                    decision = solver.regime_filter(decision, regime)
+                    
+                    # Update Observability
+                    BOT_STATE["last_signal"] = decision
+                    BOT_STATE["confidence"] = score / 100.0
+                    logger.info(f"Signal: {decision} | Conf: {BOT_STATE['confidence']:.2f} | Regime: {regime}")
 
                 await asyncio.sleep(300) 
             except Exception as e:
@@ -139,23 +148,27 @@ app = FastAPI(lifespan=lifespan)
 def root():
     return {
         "status": "ynor sovereign live",
-        "engine": "quant regime",
-        "mode": "autonomous trading",
+        "engine": "quant regime observer",
         "market_regime": BOT_STATE["regime"],
-        "dashboard": "/dashboard"
+        "last_signal": BOT_STATE["last_signal"],
+        "confidence": BOT_STATE["confidence"]
     }
-
-@app.get("/regime")
-def get_regime():
-    return {"market_regime": BOT_STATE.get("regime")}
-
-@app.get("/health")
-def health():
-    return {"status": "healthy", "regime": BOT_STATE["regime"]}
 
 @app.get("/status")
 def status():
-    return BOT_STATE
+    return {
+        "state": BOT_STATE["status"],
+        "regime": BOT_STATE["regime"],
+        "last_signal": BOT_STATE["last_signal"],
+        "confidence": BOT_STATE["confidence"],
+        "trades_today": BOT_STATE["trades_today"],
+        "pnl": BOT_STATE["pnl"],
+        "balance": BOT_STATE["balance"]
+    }
+
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
 
 @app.get("/control/pause")
 def pause():
@@ -170,5 +183,16 @@ def resume():
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
     status_color = "red" if BOT_STATE["kill_switch"] else ("orange" if BOT_STATE["paused"] else "#10b981")
-    html = f"<html><body style='background:#111; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | INTEL ACTIVE</h1><div style='background:#222; padding:20px; border-radius:10px;'><h2 style='color:{status_color}; margin:0;'>{BOT_STATE['status']}</h2><p>Market Regime: <span style='color:#38bdf8; font-weight:bold;'>{BOT_STATE['regime']}</span></p><p>Balance: ${BOT_STATE['balance']:,.2f}</p></div></body></html>"
+    html = f"""
+    <html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'>
+        <h1>YNOR ZENITH | OBSERVABLE MODE</h1>
+        <div style='background:#0f172a; padding:20px; border-radius:12px; border:1px solid #1e293b;'>
+            <h2 style='color:{status_color}; margin:0;'>{BOT_STATE['status']}</h2>
+            <div style='display:grid; grid-template-columns: 1fr 1fr; gap:20px; margin-top:20px;'>
+                <div><p>Regime: {BOT_STATE['regime']}</p><p>Signal: {BOT_STATE['last_signal']}</p></div>
+                <div><p>Confiance: {BOT_STATE['confidence']*100:.1f}%</p><p>PnL: ${BOT_STATE['pnl']:,.2f}</p></div>
+            </div>
+        </div>
+    </body></html>
+    """
     return html
