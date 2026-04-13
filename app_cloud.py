@@ -149,6 +149,28 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
+@app.get("/")
+def root():
+    return {"status": "ynor live", "dry_run": DRY_RUN, "version": "17.9.1"}
+
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
+
+@app.get("/status")
+def get_status():
+    return {
+        "status": BOT_STATE["status"],
+        "balance": BOT_STATE["balance"],
+        "pnl": BOT_STATE["pnl"],
+        "trades_today": BOT_STATE["trades_today"],
+        "dry_run": DRY_RUN
+    }
+
+@app.get("/routes")
+def list_routes():
+    return [route.path for route in app.routes]
+
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
     pos_html = "".join([f"<p>{k}: <span style='color:#38bdf8'>{v}</span> ({BOT_STATE['confidence'][k]:.2f})</p>" for k,v in BOT_STATE["positions"].items()])
