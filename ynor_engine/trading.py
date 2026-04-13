@@ -70,34 +70,50 @@ class MillenniumGrandSolver:
         if len(df) < 20: return df
         df = df.copy()
         df["ema"] = df["Close"].ewm(span=20).mean()
-        # Volatility normalization (0 - 1) sur une fenêtre de 20
         df["std"] = df["Close"].pct_change().rolling(20).std()
         df["volatility_norm"] = (df["std"] - df["std"].rolling(100).min()) / (df["std"].rolling(100).max() - df["std"].rolling(100).min())
         return df
 
+    def detect_market_regime(self, trend, volatility):
+        """ Étape 1 : Détection Contextuelle """
+        if trend == "bullish" and volatility < 0.5:
+            return "bull"
+        if trend == "bearish" and volatility < 0.5:
+            return "bear"
+        return "sideways"
+
+    def adjust_score_by_regime(self, score, regime):
+        """ Étape 2 : Pondération Contextuelle """
+        if regime == "bull": score += 10
+        elif regime == "bear": score -= 15
+        elif regime == "sideways": score -= 5
+        return max(0, min(100, score))
+
+    def regime_filter(self, decision, regime):
+        """ Étape 3 : Bouclier de Régime (Niveau Pro) """
+        decision = decision.upper()
+        regime = regime.lower()
+        
+        # Interdiction de BUY en plein Bear Market (hormis Strong Buy exceptionnel)
+        if regime == "bear" and decision in ["BUY", "STRONG_BUY"]:
+            return "HOLD"
+            
+        # Limitation en Sideways : Seul le Strong Buy est autorisé
+        if regime == "sideways" and decision != "STRONG_BUY":
+            return "HOLD"
+            
+        return decision
+
     def compute_score(self, sentiment, trend, volatility):
-        """ Signal Engine V1 : Multi-Factor Scoring """
         score = 50 
-        
-        # 1. SENTIMENT (30%) - Normalisé -1 à +1
         score += (sentiment * 30)
-        
-        # 2. TREND (40%)
         if trend == "bullish": score += 25
         elif trend == "bearish": score -= 25
-        
-        # 3. VOLATILITY (20%) - 0: calme, 1: tempête
         if volatility < 0.3: score += 10
         elif volatility > 0.7: score -= 15
-        
-        # 4. REGIME BONUS
-        if trend == "bullish" and sentiment > 0.5: score += 10
-        elif trend == "bearish" and sentiment < -0.5: score -= 10
-        
         return max(0, min(100, score))
 
     def decide(self, score):
-        """ Échelles de décision nuancées """
         if score >= 80: return "STRONG_BUY"
         elif score >= 65: return "BUY"
         elif score <= 20: return "STRONG_SELL"
@@ -108,6 +124,5 @@ class MillenniumGrandSolver:
         if balance is None or balance <= 0: balance = 1000.0
         base_risk = 0.01 * balance
         confidence = score / 100.0
-        # Multiplicateur de conviction
         if score >= 80: confidence *= 1.5
         return round((base_risk * confidence) / price, 4)
