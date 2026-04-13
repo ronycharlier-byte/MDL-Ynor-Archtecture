@@ -21,6 +21,7 @@ logger = logging.getLogger("YNOR_SYSTEM")
 # --- GLOBAL BOT STATE (DASHBOARD) ---
 BOT_STATE = {
     "status": "RUNNING",
+    "regime": "RANGE",
     "balance": 1000.0,
     "initial_balance": 1000.0, 
     "pnl": 0.0,
@@ -32,26 +33,27 @@ BOT_STATE = {
     "logs": []
 }
 
-def update_dashboard(symbol, signal, confidence):
+def update_dashboard(symbol, signal, confidence, regime):
     pair = symbol.split("-")[0]
     BOT_STATE["positions"][pair] = signal
     BOT_STATE["confidence"][pair] = confidence
+    BOT_STATE["regime"] = regime
     
-    # Safe calc
     if BOT_STATE["balance"] is not None and BOT_STATE["initial_balance"] > 0:
         BOT_STATE["pnl"] = BOT_STATE["balance"] - BOT_STATE["initial_balance"]
         BOT_STATE["drawdown"] = (BOT_STATE["initial_balance"] - BOT_STATE["balance"]) / BOT_STATE["initial_balance"]
         if BOT_STATE["drawdown"] > 0.10: BOT_STATE["status"] = "STOPPED (KILL SWITCH)"
 
-    BOT_STATE["logs"].append({"time": datetime.now().strftime("%H:%M:%S"), "msg": f"{pair}: {signal} (Score: {confidence:.2f})"})
+    BOT_STATE["logs"].append({"time": datetime.now().strftime("%H:%M:%S"), "msg": f"{pair}: {signal} | Regime: {regime}"})
     if len(BOT_STATE["logs"]) > 50: BOT_STATE["logs"] = BOT_STATE["logs"][-50:]
 
 # Imports souverains
 try:
-    from ynor_engine import YnorEconomicSentinel, YnorNewsScraper, YnorBitgetConnector, MillenniumGrandSolver
+    from ynor_engine import YnorEconomicSentinel, YnorNewsScraper, YnorBitgetConnector, MillenniumGrandSolver, YnorMarketRegime
 except Exception as e:
     logger.error(f"[BOOT ERROR] {e}")
-    # Fallback placeholders
+    class YnorMarketRegime:
+        def detect(self, df): return "range"
     class YnorBitgetConnector:
         def get_balance(self): return 1000.0
         def place_order(self, **k): return {"code": "00000"}
@@ -59,8 +61,8 @@ except Exception as e:
         def __init__(self, *a): pass
         def compute_indicators(self, df): return df
         def compute_score(self, d): return 50
-        def decide(self, s): return "HOLD"
-        def compute_position_size(self, b, s, p): return 0.001
+        def decide_adaptive(self, s, r): return "HOLD"
+        def compute_position_size(self, *a): return 0.001
 
 SYMBOLS = ["BTC-USD", "ETH-USD", "SOL-USD"]
 DRY_RUN = True
@@ -74,10 +76,10 @@ async def lifespan(app: FastAPI):
     connector = YnorBitgetConnector()
     balance = connector.get_balance()
     if balance is not None:
-        BOT_STATE["balance"] = balance
-        BOT_STATE["initial_balance"] = balance
+        BOT_STATE["balance"] = balance; BOT_STATE["initial_balance"] = balance
     
     solver = MillenniumGrandSolver(initial_balance=BOT_STATE["initial_balance"])
+    regime_engine = YnorMarketRegime()
     sentinel = YnorEconomicSentinel("", REPORT_PATH)
     scraper = YnorNewsScraper(REPORT_PATH)
 
@@ -87,7 +89,7 @@ async def lifespan(app: FastAPI):
             except: await asyncio.sleep(60)
     
     async def trading_loop():
-        last_t_time = 0
+        l_trade_t = 0
         while True:
             try:
                 if "STOPPED" in BOT_STATE["status"]: await asyncio.sleep(300); continue
@@ -100,43 +102,32 @@ async def lifespan(app: FastAPI):
                 sentiment = sentinel.get_geo_alpha("BTC")
 
                 for symbol in SYMBOLS:
-                    # 1. Fetch
                     df = yf.Ticker(symbol).history(period="1d", interval="5m")
-                    if df.empty or len(df) < 20: continue
+                    if df.empty or len(df) < 50: continue
                     
-                    # 2. Indicators
                     df = solver.compute_indicators(df)
+                    regime = regime_engine.detect(df)
+                    
                     row = df.iloc[-1]
+                    data_point = {"price": row["Close"], "ema": row["ema"], "rsi": row["rsi"], "volatility": row["volatility"], "sentiment": sentiment}
                     
-                    data_point = {
-                        "price": row["Close"],
-                        "ema": row["ema"],
-                        "rsi": row["rsi"],
-                        "volatility": row["volatility"],
-                        "sentiment": sentiment
-                    }
-                    
-                    # 3. Score & Decide
                     score = solver.compute_score(data_point)
-                    signal = solver.decide(score)
+                    signal = solver.decide_adaptive(score, regime)
                     
-                    # 4. Filters
-                    if score < 65: signal = "HOLD" # Anti-overtrading filter
+                    if score < 65 and regime != "bull": signal = "HOLD"
                     if BOT_STATE["trades_today"] >= MAX_TRADES_PER_DAY: signal = "HOLD"
-                    if time.time() - last_t_time < COOLDOWN_SECONDS: signal = "HOLD"
+                    if time.time() - l_trade_t < COOLDOWN_SECONDS: signal = "HOLD"
 
-                    update_dashboard(symbol, signal if signal != "HOLD" else "HUNTING", score / 100.0)
+                    update_dashboard(symbol, signal if signal != "HOLD" else "HUNTING", score / 100.0, regime)
 
                     if signal != "HOLD":
                         if DRY_RUN:
-                            logger.info(f"🧪 [DRY] {symbol}: {signal} | Score: {score}")
+                            logger.info(f"🧪 [DRY] {symbol}: {signal} | Regime: {regime}")
                         else:
-                            size = solver.compute_position_size(BOT_STATE["balance"], score, row["Close"])
+                            size = solver.compute_position_size(BOT_STATE["balance"], score, regime, row["Close"])
                             res = connector.place_order(symbol=symbol.replace("-", ""), side=signal.lower(), size=size)
                             if res.get("code") == "00000":
-                                last_t_time = time.time()
-                                BOT_STATE["trades_today"] += 1
-                                logger.info(f"✅ Executed: {symbol}")
+                                l_trade_t = time.time(); BOT_STATE["trades_today"] += 1
 
                 await asyncio.sleep(300)
             except Exception as e:
@@ -149,31 +140,9 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
-@app.get("/")
-def root():
-    return {"status": "ynor live", "dry_run": DRY_RUN, "version": "17.9.1"}
-
-@app.get("/health")
-def health():
-    return {"status": "healthy"}
-
-@app.get("/status")
-def get_status():
-    return {
-        "status": BOT_STATE["status"],
-        "balance": BOT_STATE["balance"],
-        "pnl": BOT_STATE["pnl"],
-        "trades_today": BOT_STATE["trades_today"],
-        "dry_run": DRY_RUN
-    }
-
-@app.get("/routes")
-def list_routes():
-    return [route.path for route in app.routes]
-
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
-    pos_html = "".join([f"<p>{k}: <span style='color:#38bdf8'>{v}</span> ({BOT_STATE['confidence'][k]:.2f})</p>" for k,v in BOT_STATE["positions"].items()])
+    pos_html = "".join([f"<p>{k}: <span style='color:#38bdf8'>{v}</span></p>" for k,v in BOT_STATE["positions"].items()])
     log_html = "".join([f"<p style='font-size:12px; color:#94a3b8;'>[{log['time']}] {log['msg']}</p>" for log in BOT_STATE["logs"][-12:]])
-    html = f"<html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR QUANT CORE V3</h1><div style='background:#0f172a; padding:20px; border-radius:10px;'><h2>Solde: ${BOT_STATE['balance']:,.2f}</h2><p>PnL: {BOT_STATE['pnl']:+.2f}$ ({BOT_STATE['drawdown']*100:.2f}%)</p>{pos_html}</div><div style='margin-top:20px; background:#000; padding:15px; border-radius:10px;'>{log_html}</div></body></html>"
+    html = f"<html><head><meta http-equiv='refresh' content='5'></head><body style='background:#111; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | ADAPTIVE ENGINE</h1><div style='background:#222; padding:20px; border-radius:10px;'><h2>Dernier Régime: <span style='color:#38bdf8'>{BOT_STATE['regime'].upper()}</span></h2><p>Balance: ${BOT_STATE['balance']:,.2f}</p><p>PnL: {BOT_STATE['pnl']:+.2f}$ ({BOT_STATE['drawdown']*100:.2f}%)</p>{pos_html}</div><div style='margin-top:20px; background:#000; padding:15px; border-radius:10px;'>{log_html}</div></body></html>"
     return html
