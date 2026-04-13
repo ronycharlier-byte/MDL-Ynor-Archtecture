@@ -52,55 +52,41 @@ class YnorBitgetConnector:
 class MillenniumGrandSolver:
     def __init__(self, initial_balance=1000):
         self.initial_balance = initial_balance
+        self.current_balance = initial_balance
 
     def compute_indicators(self, df):
+        """ Calcul des indicateurs de base """
         if len(df) < 20: return df
         df = df.copy()
         df["ema"] = df["Close"].ewm(span=20).mean()
-        delta = df["Close"].diff()
-        gain = (delta.where(delta > 0, 0)).rolling(14).mean()
-        loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
-        rs = gain / loss
-        df["rsi"] = 100 - (100 / (1 + rs))
         df["volatility"] = df["Close"].pct_change().rolling(10).std()
         return df
 
-    def compute_score(self, current_data):
-        score = 50 
-        if current_data["price"] > current_data["ema"]: score += 15
-        else: score -= 15
-        rsi = current_data["rsi"]
-        if rsi < 30: score += 20 
-        elif rsi > 70: score -= 20 
-        sentiment = current_data.get("sentiment", 0.5)
-        score += (sentiment - 0.5) * 40 
-        if current_data["volatility"] > 0.05: score -= 10 
+    def compute_score(self, sentiment, trend, volatility):
+        """ Source de Vérité Unique pour le Scoring """
+        score = 50 # Base neutre
+        
+        # Sentiment Alpha
+        if sentiment > 0.5: score += 15
+        elif sentiment < 0.4: score -= 15
+        
+        # Trend Alpha
+        if trend == "bullish": score += 20
+        elif trend == "bearish": score -= 20
+        
+        # Volatility Filter
+        if volatility < 0.05: score += 10
+        else: score -= 10
+        
         return max(0, min(100, score))
 
-    def decide_adaptive(self, score, regime):
-        """ Logique d'adaptation stratégique par régime """
-        if regime == "bull":
-            if score > 60: return "BUY"
-            return "HOLD"
-        elif regime == "bear":
-            if score < 40: return "SELL"
-            return "HOLD"
-        else: # Range
-            if 40 < score < 60: return "HOLD"
-            if score > 70: return "BUY"
-            if score < 30: return "SELL"
-            return "HOLD"
+    def decide(self, score):
+        if score > 70: return "BUY"
+        elif score < 30: return "SELL"
+        return "HOLD"
 
-    def compute_position_size(self, balance, score, regime, price):
-        """ Allocation dynamique adaptée au régime """
+    def compute_position_size(self, balance, score, price):
         if balance is None or balance <= 0: balance = 1000.0
-        base_risk = 0.01 * balance
-        
-        if regime == "bull": 
-            val = base_risk * 1.2
-        elif regime == "bear": 
-            val = base_risk * 0.8
-        else: 
-            val = base_risk * 0.5
-            
-        return round(val / price, 4)
+        base_risk = 0.01
+        confidence = score / 100.0
+        return round((balance * base_risk * confidence) / price, 4)
