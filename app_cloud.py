@@ -43,7 +43,7 @@ def update_dashboard(symbol, signal, confidence, regime):
         BOT_STATE["drawdown"] = (BOT_STATE["initial_balance"] - BOT_STATE["balance"]) / BOT_STATE["initial_balance"]
         if BOT_STATE["drawdown"] > 0.10: BOT_STATE["status"] = "STOPPED (KILL SWITCH)"
 
-    BOT_STATE["logs"].append({"time": datetime.now().strftime("%H:%M:%S"), "msg": f"{pair}: {signal} | Conf: {confidence:.2f}"})
+    BOT_STATE["logs"].append({"time": datetime.now().strftime("%H:%M:%S"), "msg": f"{pair}: {signal} (Rel: {confidence:.2f})" })
     if len(BOT_STATE["logs"]) > 50: BOT_STATE["logs"] = BOT_STATE["logs"][-50:]
 
 # Imports souverains
@@ -51,14 +51,12 @@ try:
     from ynor_engine import YnorEconomicSentinel, YnorNewsScraper, YnorBitgetConnector, MillenniumGrandSolver, YnorMarketRegime, YnorPortfolioEngine
 except Exception as e:
     logger.error(f"[BOOT ERROR] {e}")
-    # Fallbacks 
-    class YnorPortfolioEngine:
-        def allocate(self, b, s): return {}
-    class YnorMarketRegime:
-        def detect(self, df): return "range"
+    # Fallback minimal mocks
     class YnorBitgetConnector:
         def get_balance(self): return 1000.0
         def place_order(self, **k): return {"code": "00000"}
+    class YnorPortfolioEngine:
+        def allocate(self, b, s): return {}
     class MillenniumGrandSolver:
         def __init__(self, *a): pass
         def compute_indicators(self, df): return df
@@ -71,16 +69,20 @@ COOLDOWN_SECONDS = 300
 REPORT_PATH = "data/investing_full_report.json"
 os.makedirs("data", exist_ok=True)
 
+async def fetch_history(ticker):
+    try: return yf.Ticker(ticker).history(period="1d", interval="5m")
+    except: return pd.DataFrame()
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     connector = YnorBitgetConnector()
     balance = connector.get_balance()
-    if balance is not None:
+    if balance:
         BOT_STATE["balance"] = balance; BOT_STATE["initial_balance"] = balance
     
     solver = MillenniumGrandSolver(initial_balance=BOT_STATE["initial_balance"])
     regime_engine = YnorMarketRegime()
-    portfolio_engine = YnorPortfolioEngine(max_total_exposure=0.05)
+    portfolio_engine = YnorPortfolioEngine(max_total_exposure=0.70, max_asset_allocation=0.30)
     sentinel = YnorEconomicSentinel("", REPORT_PATH)
     scraper = YnorNewsScraper(REPORT_PATH)
 
@@ -98,45 +100,44 @@ async def lifespan(app: FastAPI):
                 balance = connector.get_balance() or BOT_STATE["balance"]
                 sentiment = sentinel.get_geo_alpha("BTC")
                 
-                # 1. Collect Scores
-                asset_scores = {}
+                # 1. Collect Signals
+                signals = []
                 asset_data = {}
-                global_regime = "range"
 
                 for symbol in SYMBOLS:
-                    df = yf.Ticker(symbol).history(period="1d", interval="5m")
+                    df = await fetch_history(symbol)
                     if df.empty or len(df) < 50: continue
                     
-                    df = solver.compute_indicators(df)
-                    regime = regime_engine.detect(df)
-                    if symbol == "BTC-USD": global_regime = regime # On suit le régime BTC
+                    df_proc = solver.compute_indicators(df)
+                    regime = regime_engine.detect(df_proc)
+                    row = df_proc.iloc[-1]
                     
-                    row = df.iloc[-1]
                     data_point = {"price": row["Close"], "ema": row["ema"], "rsi": row["rsi"], "volatility": row["volatility"], "sentiment": sentiment}
-                    
                     score = solver.compute_score(data_point)
-                    asset_scores[symbol] = score
-                    asset_data[symbol] = {"price": row["Close"], "regime": regime}
-
-                # 2. Portfolio Allocation
-                allocations = portfolio_engine.allocate(balance, asset_scores)
-
-                # 3. Execution
-                for symbol, allocated_usdt in allocations.items():
-                    score = asset_scores[symbol]
-                    regime = asset_data[symbol]["regime"]
-                    signal = solver.decide_adaptive(score, regime)
+                    action = solver.decide_adaptive(score, regime)
                     
-                    update_dashboard(symbol, signal, score / 100.0, regime)
+                    signals.append({"symbol": symbol, "score": score, "action": action, "regime": regime})
+                    asset_data[symbol] = {"price": row["Close"]}
 
-                    if signal != "HOLD" and time.time() - l_trade_t > COOLDOWN_SECONDS:
+                # 2. Portfolio Optimized Allocation
+                allocations = portfolio_engine.allocate(balance, signals)
+
+                # 3. Execution based on allocations
+                for s_info in signals:
+                    sym = s_info["symbol"]
+                    if sym in allocations and time.time() - l_trade_t > COOLDOWN_SECONDS:
+                        allocated_val = allocations[sym]
                         if DRY_RUN:
-                            logger.info(f"🧪 [DRY] {symbol}: {signal} (Alloc: ${allocated_usdt:.2f})")
+                            logger.info(f"🧪 [DRY] {sym}: {s_info['action']} | Capital: ${allocated_val:.2f} (Score: {s_info['score']})")
                         else:
-                            size = allocated_usdt / asset_data[symbol]["price"]
-                            res = connector.place_order(symbol=symbol.replace("-", ""), side=signal.lower(), size=size)
+                            size = allocated_val / asset_data[sym]["price"]
+                            res = connector.place_order(symbol=sym.replace("-", ""), side=s_info["action"].lower(), size=size)
                             if res.get("code") == "00000":
                                 l_trade_t = time.time(); BOT_STATE["trades_today"] += 1
+                                logger.info(f"✅ Executed {sym}")
+                    
+                    # Log to dashboard regardless of trade
+                    update_dashboard(sym, s_info["action"] if s_info["action"] != "HOLD" else "HUNTING", s_info["score"] / 100.0, s_info["regime"])
 
                 await asyncio.sleep(300)
             except Exception as e:
@@ -151,6 +152,7 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
-    pos_html = "".join([f"<p style='margin:5px 0;'>{k}: <span style='color:#38bdf8'>{v}</span> ({BOT_STATE['confidence'][k]:.2f})</p>" for k,v in BOT_STATE["positions"].items()])
-    html = f"<html><head><meta http-equiv='refresh' content='10'></head><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | PORTFOLIO ENGINE</h1><div style='background:#0f172a; padding:20px; border-radius:12px;'><h2>Global Regime: {BOT_STATE['regime'].upper()}</h2><p>Balance: ${BOT_STATE['balance']:,.2f}</p>{pos_html}</div></body></html>"
+    pos_html = "".join([f"<p>{k}: <span style='color:#38bdf8'>{v}</span> ({BOT_STATE['confidence'][k]:.2f})</p>" for k,v in BOT_STATE["positions"].items()])
+    log_html = "".join([f"<p style='font-size:12px; color:#94a3b8;'>[{log['time']}] {log['msg']}</p>" for log in BOT_STATE["logs"][-12:]])
+    html = f"<html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | PORTFOLIO MASTER</h1><div style='background:#0f172a; padding:20px; border-radius:12px;'><h2>Capital Allocation Live</h2><p>Balance: ${BOT_STATE['balance']:,.2f}</p>{pos_html}</div><div style='margin-top:20px; background:#000; padding:15px; border-radius:10px;'>{log_html}</div></body></html>"
     return html

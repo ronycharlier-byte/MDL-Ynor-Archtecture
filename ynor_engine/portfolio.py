@@ -1,43 +1,50 @@
 import numpy as np
 
 class YnorPortfolioEngine:
-    def __init__(self, max_total_exposure=0.05):
+    def __init__(self, max_total_exposure=0.70, max_asset_allocation=0.30):
         self.max_total_exposure = max_total_exposure
+        self.max_asset_allocation = max_asset_allocation
 
-    def allocate(self, balance, assets_scores):
+    def allocate(self, balance, signals):
         """
-        Calcule l'allocation optimale pour une liste d'assets.
-        assets_scores: dict { "BTC": 85, "ETH": 40, ... }
+        Calcul de l'allocation pondérée par le score.
+        signals: list of dicts [{"symbol": "...", "score": 85, "action": "buy"}]
         """
-        # Filtrage des signaux faibles
-        candidates = {k: v for k, v in assets_scores.items() if v > 70 or v < 30}
+        # 1. Filtrage des opportunités réelles
+        active_signals = [s for s in signals if s["action"].upper() != "HOLD"]
         
-        if not candidates:
+        if not active_signals:
             return {}
 
-        # Calcul du poids relatif basé sur la confiance (Confidence-Weighted Allocation)
-        total_purity = sum(candidates.values())
-        allocations = {}
+        # 2. Top 3 Assets (Risque limité)
+        active_signals = sorted(active_signals, key=lambda x: x["score"], reverse=True)[:3]
         
-        for asset, score in candidates.items():
-            # Allocation de base : 1% du capital par opportunité
-            # Pondérée par la force du signal
-            purity_factor = score / 100.0
-            share = (balance * 0.01) * purity_factor
-            
-            # Limite de sécurité individuelle
-            allocations[asset] = share
+        # 3. Calcul du poids relatif
+        total_score = sum([s["score"] for s in active_signals])
+        if total_score == 0: return {}
 
-        # Vérification de l'exposition globale
+        allocations = {}
+        for s in active_signals:
+            symbol = s["symbol"]
+            score = s["score"]
+            
+            # Poids relatif
+            weight = score / total_score
+            
+            # Allocation cible
+            allocation = balance * weight
+            
+            # Application du plafond par asset (30%)
+            allocation = min(allocation, balance * self.max_asset_allocation)
+            
+            allocations[symbol] = allocation
+
+        # 4. Vérification de l'exposition globale (70%)
         total_allocated = sum(allocations.values())
-        if total_allocated > (balance * self.max_total_exposure):
-            # Réduction proportionnelle si dépassement du plafond
-            reduction_ratio = (balance * self.max_total_exposure) / total_allocated
+        max_allowed = balance * self.max_total_exposure
+        
+        if total_allocated > max_allowed:
+            reduction_ratio = max_allowed / total_allocated
             allocations = {k: v * reduction_ratio for k, v in allocations.items()}
 
         return allocations
-
-    def detect_correlations(self, returns_matrix):
-        """ Suppression des doublons de risque (Anti-correlation) """
-        # À implémenter avec numpy pour les versions futures
-        pass
