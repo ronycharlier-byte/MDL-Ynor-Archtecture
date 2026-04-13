@@ -13,16 +13,15 @@ class YnorMarketRegime:
         """
         try:
             # On récupère les données intraday (5 min interval)
-            # On force le ticker unique pour éviter les MultiIndex complexes
             data = yf.download(symbol, period="1d", interval="5m", progress=False)
             
+            # RÈGLE D'OR : Jamais d'UNKNOWN en prod -> Fallback RANGE
             if data is None or data.empty or len(data) < 2:
-                return "UNKNOWN"
+                return "RANGE"
 
             # Sécurisation des colonnes (extraction scalaire propre)
             prices = data["Close"]
             if isinstance(prices, pd.DataFrame):
-                # Cas MultiIndex (yfinance v0.2+)
                 prices = prices.iloc[:, 0]
             
             start_price = float(prices.iloc[0])
@@ -37,13 +36,13 @@ class YnorMarketRegime:
             if volatility > 0.005: 
                 return "VOLATILE"
 
-            if abs(trend_pct) < 0.005: 
+            if abs(trend_pct) < 0.003: # Plus strict pour le range
                 return "RANGE"
 
-            if trend_pct >= 0.005:
+            if trend_pct >= 0.003:
                 return "BULL"
             
             return "BEAR"
 
-        except Exception as e:
-            return "UNKNOWN"
+        except Exception:
+            return "RANGE" # Fallback sécurisé
