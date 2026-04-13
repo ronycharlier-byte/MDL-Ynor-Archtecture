@@ -31,6 +31,10 @@ BOT_STATE = {
     "logs": []
 }
 
+def normalize_sentiment(val):
+    """ Mappe 0->1 en -1->+1 """
+    return max(-1.0, min(1.0, (val - 0.5) * 2))
+
 def update_dashboard(signal, confidence):
     BOT_STATE["last_signal"] = signal
     BOT_STATE["confidence"] = confidence
@@ -47,7 +51,6 @@ try:
     from ynor_engine import YnorEconomicSentinel, YnorNewsScraper, YnorBitgetConnector, MillenniumGrandSolver
 except Exception as e:
     logger.error(f"[BOOT ERROR] {e}")
-    # Fallback minimal mocks
     class YnorBitgetConnector:
         def get_balance(self): return 1000.0
         def place_order(self, **k): return {"code": "00000"}
@@ -59,7 +62,7 @@ except Exception as e:
         def compute_position_size(self, *a): return 0.001
 
 DRY_RUN = True
-MAX_TRADES_PER_DAY = 10
+MAX_TRADES_PER_DAY = 5
 SYMBOLS = ["BTC-USD", "ETH-USD", "SOL-USD"]
 REPORT_PATH = "data/investing_full_report.json"
 os.makedirs("data", exist_ok=True)
@@ -86,14 +89,14 @@ async def lifespan(app: FastAPI):
             try:
                 if "STOPPED" in BOT_STATE["status"]: await asyncio.sleep(300); continue
                 
-                # Update balance with safety
                 bal = connector.get_balance()
                 if bal: BOT_STATE["balance"] = bal
                 
-                sentiment = sentinel.get_geo_alpha("BTC")
+                # Normalisation Sentiment (-1 à +1)
+                raw_sentimentArr = sentinel.get_geo_alpha("BTC") # Suppose return 0-1
+                sentiment = normalize_sentiment(raw_sentimentArr)
 
                 for symbol in SYMBOLS:
-                    # Space out calls to prevent rate limiting
                     await asyncio.sleep(2) 
                     
                     df = yf.Ticker(symbol).history(period="1d", interval="5m")
@@ -102,25 +105,38 @@ async def lifespan(app: FastAPI):
                     df = solver.compute_indicators(df)
                     row = df.iloc[-1]
                     trend = "bullish" if row["Close"] > row["ema"] else "bearish"
-                    volatility = row.get("volatility", 0.01)
+                    volatility = row.get("volatility_norm", 0.1)
 
                     score = solver.compute_score(sentiment, trend, volatility)
-                    signal = solver.decide(score)
+                    decision = solver.decide(score)
                     
-                    # Log activity
-                    update_dashboard(f"{symbol.split('-')[0]}: {signal}", score / 100.0)
+                    # LOGIQUE SELECTIVE
+                    if decision == "HOLD": continue
+                    
+                    # FILTRES ANTI-FASH-CRASH / OVERTRADE
+                    if volatility > 0.8: 
+                        logger.warning(f"⚠️ Market too dangerous ({symbol}): Volatility {volatility:.2f}")
+                        continue
+                    
+                    if BOT_STATE["trades_today"] >= MAX_TRADES_PER_DAY: 
+                        logger.info("🚫 Max daily trades reached")
+                        break # Stop for the session
 
-                    if signal != "HOLD" and time.time() - l_trade_t > 300:
-                        if BOT_STATE["trades_today"] < MAX_TRADES_PER_DAY:
-                            if DRY_RUN:
-                                logger.info(f"🧪 [DRY] {symbol}: {signal}")
-                            else:
-                                size = solver.compute_position_size(BOT_STATE["balance"], score, row["Close"])
-                                res = connector.place_order(symbol=symbol.replace("-", ""), side=signal.lower(), size=size)
-                                if res.get("code") == "00000":
-                                    l_trade_t = time.time(); BOT_STATE["trades_today"] += 1
+                    if time.time() - l_trade_t < 600: continue # Cooldown 10min
 
-                await asyncio.sleep(300) # Deep scan interval
+                    update_dashboard(f"{symbol.split('-')[0]}: {decision}", score / 100.0)
+
+                    if DRY_RUN:
+                        logger.info(f"🧪 [DRY] {symbol}: {decision} | Score: {score}")
+                    else:
+                        size = solver.compute_position_size(BOT_STATE["balance"], score, row["Close"])
+                        side = "buy" if "BUY" in decision else "sell"
+                        res = connector.place_order(symbol=symbol.replace("-", ""), side=side, size=size)
+                        if res.get("code") == "00000":
+                            l_trade_t = time.time(); BOT_STATE["trades_today"] += 1
+                            logger.info(f"✅ Executed: {symbol} {decision}")
+
+                await asyncio.sleep(600) 
 
             except Exception as e:
                 logger.error(f"Loop Error: {e}")
@@ -133,7 +149,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
-def root(): return {"status": "ynor live", "version": "18.4.0"}
+def root(): return {"status": "ynor live", "version": "18.5.0"}
 
 @app.get("/health")
 def health(): return {"status": "healthy"}
@@ -141,5 +157,5 @@ def health(): return {"status": "healthy"}
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
     log_html = "".join([f"<p style='color:#94a3b8; font-family:monospace; font-size:12px;'>[{l['time']}] {l['msg']}</p>" for l in BOT_STATE["logs"][-12:]])
-    html = f"<html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | ANTI-RATE LIMIT V18.4</h1><div style='background:#0f172a; padding:20px; border-radius:12px; border:1px solid #1e293b;'><h2>Balance: ${BOT_STATE['balance']:,.2f}</h2><p>Last Activity: {BOT_STATE['last_signal']}</p></div><div style='margin-top:20px; background:#000; padding:15px; border-radius:10px;'>{log_html}</div></body></html>"
+    html = f"<html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | SIGNAL ENGINE V1</h1><div style='background:#0f172a; padding:20px; border-radius:12px;'><h2>Balance: ${BOT_STATE['balance']:,.2f}</h2><p>Last Trade Quality: {BOT_STATE['last_signal']}</p></div><div style='margin-top:20px; background:#000; padding:15px; border-radius:10px;'>{log_html}</div></body></html>"
     return html
