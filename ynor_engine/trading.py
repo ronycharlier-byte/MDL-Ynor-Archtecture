@@ -30,82 +30,73 @@ class YnorBitgetConnector:
     def _headers(self, method, path, body=""):
         timestamp = str(int(time.time() * 1000))
         sign = self._sign(timestamp, method, path, body)
-        return {
-            "ACCESS-KEY": self.api_key or "",
-            "ACCESS-SIGN": sign,
-            "ACCESS-TIMESTAMP": timestamp,
-            "ACCESS-PASSPHRASE": self.passphrase or "",
-            "Content-Type": "application/json"
-        }
+        return {"ACCESS-KEY": self.api_key or "", "ACCESS-SIGN": sign, "ACCESS-TIMESTAMP": timestamp, "ACCESS-PASSPHRASE": self.passphrase or "", "Content-Type": "application/json"}
 
     def get_balance(self):
         path = "/api/v2/mix/account/accounts?productType=USDT-FUTURES"
-        url = self.base_url + path
         try:
-            res = requests.get(url, headers=self._headers("GET", path))
+            res = requests.get(self.base_url + path, headers=self._headers("GET", path))
             data = res.json()
             if data.get("code") == "00000" and data.get("data"):
                 return float(data["data"][0].get("available", 0.0))
-            return 1000.0 # Mock for local if keys fail
-        except:
             return 1000.0
+        except: return 1000.0
 
     def place_order(self, symbol="BTCUSDT", side="buy", size="0.001"):
         path = "/api/v2/mix/order/place-order"
-        url = self.base_url + path
-        body = {
-            "symbol": symbol,
-            "marginCoin": "USDT",
-            "size": str(size),
-            "side": side,
-            "orderType": "market",
-            "productType": "USDT-FUTURES"
-        }
+        body = {"symbol": symbol, "marginCoin": "USDT", "size": str(size), "side": side, "orderType": "market", "productType": "USDT-FUTURES"}
         body_str = str(body).replace("'", '"').replace(" ", "")
         headers = self._headers("POST", path, body_str)
         try:
-            response = requests.post(url, headers=headers, json=body)
-            return response.json()
-        except Exception as e:
-            return {"code": "error", "message": str(e)}
+            res = requests.post(self.base_url + path, headers=headers, json=body)
+            return res.json()
+        except Exception as e: return {"code": "error", "message": str(e)}
 
 class YnorScoringEngine:
+    def detect_market_regime(self, prices):
+        """ Detection du Regime de Marche """
+        if len(prices) < 20: return "UNKNOWN"
+        p = np.array(prices)
+        volatility = np.std(p[-20:])
+        trend = np.mean(p[-5:]) - np.mean(p[-20:])
+        avg_price = np.mean(p)
+
+        if volatility > avg_price * 0.03: return "HIGH_VOL"
+        if abs(trend) < avg_price * 0.005: return "RANGE"
+        return "TREND"
+
     def compute_score(self, prices, sentiment):
-        """ Multi-Factor Scoring Engine V3 """
-        if len(prices) < 20: return 50 # Neutre si pas assez de data
-        
+        if len(prices) < 20: return 50
+        p = np.array(prices)
         score = 0
-        prices = np.array(prices)
-
-        # --- TREND (EMA) ---
-        ema_fast = np.mean(prices[-5:])
-        ema_slow = np.mean(prices[-20:])
-        if ema_fast > ema_slow: score += 30
-        else: score -= 30
-
-        # --- MOMENTUM (RSI) ---
-        gains = [max(0, prices[i] - prices[i-1]) for i in range(1, len(prices))]
-        losses = [max(0, prices[i-1] - prices[i]) for i in range(1, len(prices))]
-        avg_gain = np.mean(gains[-14:]) if gains else 0
-        avg_loss = np.mean(losses[-14:]) if losses else 1
-        rs = avg_gain / avg_loss if avg_loss != 0 else 0
-        rsi = 100 - (100 / (1 + rs))
-
+        
+        # --- FACTEURS ---
+        # 1. EMA Trend
+        ema_f, ema_s = np.mean(p[-5:]), np.mean(p[-20:])
+        score += 30 if ema_f > ema_s else -30
+        
+        # 2. RSI Momentum
+        diff = np.diff(p)
+        gain = np.mean([max(0, x) for x in diff[-14:]])
+        loss = np.mean([max(0, -x) for x in diff[-14:]])
+        rsi = 100 - (100 / (1 + gain/loss)) if loss > 0 else 100
         if rsi < 30: score += 20
         elif rsi > 70: score -= 20
 
-        # --- VOLATILITY FILTER ---
-        volatility = np.std(prices[-20:])
-        if volatility > np.mean(prices) * 0.02:
-            return 0 # Trop dangereux
-
-        # --- SENTIMENT (Alpha) ---
-        score += (sentiment * 50) # sentiment -1.0 to 1.0
-
+        # --- ADAPTATION STRATEGIQUE ---
+        regime = self.detect_market_regime(prices)
+        if regime == "HIGH_VOL": score *= 0.5
+        elif regime == "RANGE": score *= 0.7
+        elif regime == "TREND": score *= 1.2
+        
+        # --- SENTIMENT ---
+        score += (sentiment * 50)
+        
         return max(0, min(100, score))
 
-class MillenniumGrandSolver: # Legacy support
-    def __init__(self, initial_balance=1000):
-        self.initial_initial = initial_balance
-    def compute_position_size(self, balance):
-        return balance * 0.01
+    def compute_position_size(self, balance, score, price):
+        """ Allocation Intelligente """
+        base_risk = 0.01
+        multiplier = score / 100.0
+        pos_val = balance * base_risk * multiplier
+        return round(pos_val / price, 4)
