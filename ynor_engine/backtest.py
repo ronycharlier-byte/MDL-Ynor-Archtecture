@@ -3,12 +3,12 @@ import numpy as np
 import logging
 
 class YnorBacktestEngine:
-    def __init__(self, engine, initial_balance=1000, fee=0.0006):
+    def __init__(self, solver, initial_balance=1000, fee=0.0006):
         """
-        engine: L'instance de YnorScoringEngine
+        solver: L'instance de MillenniumGrandSolver
         fee: Commission moyenne par trade (Taker fee Bitget ~0.06%)
         """
-        self.engine = engine
+        self.solver = solver
         self.initial_balance = initial_balance
         self.fee = fee
 
@@ -22,30 +22,38 @@ class YnorBacktestEngine:
         history = []
         trades = []
         
+        # 1. Calcul des indicateurs via le Solver
+        data = self.solver.compute_indicators(data)
+        
         # On commence à l'index 20 pour avoir assez de data pour les indicateurs (EMA20)
         for i in range(20, len(data)):
-            # Extraction de la fenêtre glissante pour le Scoring Engine
-            window = data['Close'].iloc[i-20:i+1].tolist()
-            current_price = window[-1]
-            
-            # Sentiment simulé (virevolte autour de 0.5 par défaut)
+            row = data.iloc[i]
+            current_price = row["Close"]
             sentiment = data.get('sentiment', pd.Series([0.5]*len(data))).iloc[i]
             
-            score = self.engine.compute_score(window, sentiment)
+            # Préparation du data_point pour le solver
+            data_point = {
+                "price": current_price,
+                "ema": row["ema"],
+                "rsi": row["rsi"],
+                "volatility": row["volatility"],
+                "sentiment": sentiment
+            }
             
-            # LOGIQUE DE TRADING
-            # BUY (SIGNAL > 75)
-            if score > 75 and position is None:
+            score = self.solver.compute_score(data_point)
+            
+            # LOGIQUE DE TRADING (Simulée)
+            # On utilise une logique simplifiée pour le backtest buy/sell
+            if score > 70 and position is None:
                 position = "LONG"
                 entry_price = current_price
-                balance *= (1 - self.fee) # Paiement des frais à l'entrée
+                balance *= (1 - self.fee)
                 trades.append({"type": "BUY", "price": entry_price, "time": data.index[i]})
 
-            # SELL (SIGNAL < 25)
-            elif score < 25 and position == "LONG":
+            elif score < 30 and position == "LONG":
                 pnl = (current_price - entry_price) / entry_price
                 balance *= (1 + pnl)
-                balance *= (1 - self.fee) # Paiement des frais à la sortie
+                balance *= (1 - self.fee)
                 position = None
                 trades.append({"type": "SELL", "price": current_price, "pnl": pnl, "time": data.index[i]})
 

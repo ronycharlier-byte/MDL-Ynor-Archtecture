@@ -56,12 +56,17 @@ except Exception as e:
         def get_balance(self): return 1000.0
         def place_order(self, **k): return {"code": "00000"}
     class YnorPortfolioEngine:
+        def __init__(self, **k): pass
         def allocate(self, b, s): return {}
     class MillenniumGrandSolver:
-        def __init__(self, *a): pass
+        def __init__(self, initial_balance=1000): 
+            self.initial_balance = initial_balance
         def compute_indicators(self, df): return df
         def compute_score(self, d): return 50
         def decide_adaptive(self, s, r): return "HOLD"
+        def compute_position_size(self, *a): return 0.001
+    class YnorMarketRegime:
+        def detect(self, df): return "range"
 
 SYMBOLS = ["BTC-USD", "ETH-USD", "SOL-USD"]
 DRY_RUN = True
