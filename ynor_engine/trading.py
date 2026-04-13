@@ -75,33 +75,21 @@ class MillenniumGrandSolver:
         return df
 
     def detect_market_regime(self, trend, volatility):
-        """ Étape 1 : Détection Contextuelle """
-        if trend == "bullish" and volatility < 0.5:
-            return "bull"
-        if trend == "bearish" and volatility < 0.5:
-            return "bear"
+        if trend == "bullish" and volatility < 0.5: return "bull"
+        if trend == "bearish" and volatility < 0.5: return "bear"
         return "sideways"
 
     def adjust_score_by_regime(self, score, regime):
-        """ Étape 2 : Pondération Contextuelle """
         if regime == "bull": score += 10
         elif regime == "bear": score -= 15
         elif regime == "sideways": score -= 5
         return max(0, min(100, score))
 
     def regime_filter(self, decision, regime):
-        """ Étape 3 : Bouclier de Régime (Niveau Pro) """
         decision = decision.upper()
         regime = regime.lower()
-        
-        # Interdiction de BUY en plein Bear Market (hormis Strong Buy exceptionnel)
-        if regime == "bear" and decision in ["BUY", "STRONG_BUY"]:
-            return "HOLD"
-            
-        # Limitation en Sideways : Seul le Strong Buy est autorisé
-        if regime == "sideways" and decision != "STRONG_BUY":
-            return "HOLD"
-            
+        if regime == "bear" and decision in ["BUY", "STRONG_BUY"]: return "HOLD"
+        if regime == "sideways" and decision != "STRONG_BUY"]: return "HOLD"
         return decision
 
     def compute_score(self, sentiment, trend, volatility):
@@ -114,15 +102,22 @@ class MillenniumGrandSolver:
         return max(0, min(100, score))
 
     def decide(self, score):
-        if score >= 80: return "STRONG_BUY"
+        if score >= 85: return "STRONG_BUY"
         elif score >= 65: return "BUY"
         elif score <= 20: return "STRONG_SELL"
         elif score <= 35: return "SELL"
         return "HOLD"
 
-    def compute_position_size(self, balance, score, price):
-        if balance is None or balance <= 0: balance = 1000.0
-        base_risk = 0.01 * balance
-        confidence = score / 100.0
-        if score >= 80: confidence *= 1.5
-        return round((base_risk * confidence) / price, 4)
+    def compute_allocation(self, scores):
+        """ Allocation Optimizer : Répartition du risque par score """
+        # On ne garde que les actifs avec un signal BUY/SELL
+        active_scores = {k: v for k, v in scores.items() if v >= 65 or v <= 35}
+        total = sum(active_scores.values())
+        if total == 0: return {k: 0 for k in scores}
+        return {k: v / total for k, v in active_scores.items()}
+
+    def compute_position_size(self, balance, allocation, price, risk_per_trade=0.01):
+        """ Position Sizing Séquentiel """
+        # Capital à risquer pour cette opportunité spécifique
+        opportunity_capital = balance * risk_per_trade * allocation
+        return round(opportunity_capital / price, 4)
