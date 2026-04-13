@@ -74,25 +74,6 @@ class MillenniumGrandSolver:
         df["volatility_norm"] = (df["std"] - df["std"].rolling(100).min()) / (df["std"].rolling(100).max() - df["std"].rolling(100).min())
         return df
 
-    def detect_market_regime(self, trend, volatility):
-        if trend == "bullish" and volatility < 0.5: return "bull"
-        if trend == "bearish" and volatility < 0.5: return "bear"
-        return "sideways"
-
-    def adjust_score_by_regime(self, score, regime):
-        if regime == "bull": score += 10
-        elif regime == "bear": score -= 15
-        elif regime == "sideways": score -= 5
-        return max(0, min(100, score))
-
-    def regime_filter(self, decision, regime):
-        decision = decision.upper()
-        regime = regime.lower()
-        if regime == "bear" and decision in ["BUY", "STRONG_BUY"]: return "HOLD"
-        # FIX: Removed extra ']'
-        if regime == "sideways" and decision != "STRONG_BUY": return "HOLD"
-        return decision
-
     def compute_score(self, sentiment, trend, volatility):
         score = 50 
         score += (sentiment * 30)
@@ -102,19 +83,26 @@ class MillenniumGrandSolver:
         elif volatility > 0.7: score -= 15
         return max(0, min(100, score))
 
-    def decide(self, score):
-        if score >= 85: return "STRONG_BUY"
-        elif score >= 65: return "BUY"
-        elif score <= 20: return "STRONG_SELL"
-        elif score <= 35: return "SELL"
-        return "HOLD"
+    def decide(self, score, regime):
+        """
+        Decision Engine V2 : Régime-Aware Calibration
+        """
+        regime = str(regime).upper()
+        
+        if regime == "BULL":
+            if score >= 60: return "BUY"
+            return "HOLD"
+            
+        elif regime == "BEAR":
+            if score <= 40: return "SELL"
+            return "HOLD"
+            
+        else: # RANGE / VOLATILE
+            if score >= 65: return "BUY"
+            elif score <= 35: return "SELL"
+            return "HOLD"
 
-    def compute_allocation(self, scores):
-        active_scores = {k: v for k, v in scores.items() if v >= 65 or v <= 35}
-        total = sum(active_scores.values())
-        if total == 0: return {k: 0 for k in scores}
-        return {k: v / total for k, v in active_scores.items()}
-
-    def compute_position_size(self, balance, allocation, price, risk_per_trade=0.01):
-        opportunity_capital = balance * risk_per_trade * allocation
-        return round(opportunity_capital / price, 4)
+    def compute_allocation(self, score, balance):
+        # Sizing agressif si forte certitude
+        if score > 80: return balance * 0.4 # 40%
+        return balance * 0.25 # 25% base
