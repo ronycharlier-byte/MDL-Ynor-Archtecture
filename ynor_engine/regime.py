@@ -1,5 +1,6 @@
 import yfinance as yf
 import numpy as np
+import pandas as pd
 
 class YnorMarketRegime:
     def __init__(self):
@@ -12,30 +13,33 @@ class YnorMarketRegime:
         """
         try:
             # On récupère les données intraday (5 min interval)
+            # On force le ticker unique pour éviter les MultiIndex complexes
             data = yf.download(symbol, period="1d", interval="5m", progress=False)
             
-            if data.empty:
+            if data is None or data.empty or len(data) < 2:
                 return "UNKNOWN"
 
-            # 1. Calcul de la tendance (Variation Price Start/End)
-            start_price = data["Close"].iloc[0]
-            end_price = data["Close"].iloc[-1]
-            trend_pct = (end_price - start_price) / start_price
+            # Sécurisation des colonnes (extraction scalaire propre)
+            prices = data["Close"]
+            if isinstance(prices, pd.DataFrame):
+                # Cas MultiIndex (yfinance v0.2+)
+                prices = prices.iloc[:, 0]
+            
+            start_price = float(prices.iloc[0])
+            end_price = float(prices.iloc[-1])
+            trend_pct = (end_price - start_price) / start_price if start_price != 0 else 0
 
             # 2. Calcul de la volatilité (Ecart-type des rendements)
-            returns = data["Close"].pct_change().dropna()
-            volatility = returns.std()
+            returns = prices.pct_change().dropna()
+            volatility = float(returns.std())
 
             # --- LOGIC DE CLASSIFICATION ---
-            # Seuil de volatilité critique (instabilité)
-            if volatility > 0.005: # Environ 0.5% d'écart standard par 5min
+            if volatility > 0.005: 
                 return "VOLATILE"
 
-            # Marché neutre / Latéralisation
-            if abs(trend_pct) < 0.005: # Moins de 0.5% de variation sur 24h
+            if abs(trend_pct) < 0.005: 
                 return "RANGE"
 
-            # Directionnel
             if trend_pct >= 0.005:
                 return "BULL"
             

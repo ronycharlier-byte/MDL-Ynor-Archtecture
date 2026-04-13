@@ -73,6 +73,9 @@ except Exception as e:
 def normalize_sentiment(val):
     return max(-1.0, min(1.0, (val - 0.5) * 2))
 
+def is_valid_data(df):
+    return df is not None and not df.empty and len(df) > 5
+
 def check_kill_switch():
     if BOT_STATE["kill_switch"]: return True
     if BOT_STATE["initial_balance"] > 0:
@@ -117,26 +120,32 @@ async def lifespan(app: FastAPI):
                 if BOT_STATE.get("paused"):
                     await asyncio.sleep(60); continue
 
-                # 3. Decision Logic (Observability focus)
+                # 3. Decision Logic (Safe extraction)
                 df = yf.download("BTC-USD", period="1d", interval="5m", progress=False)
-                if not df.empty:
+                if is_valid_data(df):
                     df = solver.compute_indicators(df)
-                    row = df.iloc[-1]
-                    trend = "bullish" if row["Close"] > row.get("ema", row["Close"]) else "bearish"
-                    volatility = row.get("volatility_norm", 0.1)
+                    
+                    # Scalairisation forcée (Protection vs MultiIndex)
+                    close_prices = df["Close"]
+                    if isinstance(close_prices, pd.DataFrame): close_prices = close_prices.iloc[:, 0]
+                    
+                    last_price = float(close_prices.iloc[-1])
+                    ema_val = float(df.get("ema", close_prices).iloc[-1])
+                    
+                    trend = "bullish" if last_price > ema_val else "bearish"
+                    volatility = float(df.get("volatility_norm", pd.Series([0.1]*len(df))).iloc[-1])
 
                     score = solver.compute_score(sentiment, trend, volatility)
                     decision = solver.decide(score)
                     decision = solver.regime_filter(decision, regime)
                     
-                    # Update Observability
                     BOT_STATE["last_signal"] = decision
                     BOT_STATE["confidence"] = score / 100.0
                     logger.info(f"Signal: {decision} | Conf: {BOT_STATE['confidence']:.2f} | Regime: {regime}")
 
                 await asyncio.sleep(300) 
             except Exception as e:
-                logger.error(f"Loop Error: {e}"); await asyncio.sleep(60)
+                logger.error(f"Loop Error (Fixed): {e}"); await asyncio.sleep(60)
 
     asyncio.create_task(news_worker())
     asyncio.create_task(trading_loop())
@@ -162,37 +171,16 @@ def status():
         "last_signal": BOT_STATE["last_signal"],
         "confidence": BOT_STATE["confidence"],
         "trades_today": BOT_STATE["trades_today"],
-        "pnl": BOT_STATE["pnl"],
-        "balance": BOT_STATE["balance"]
+        "pnl": f"{BOT_STATE['pnl']:.2f}",
+        "balance": f"{BOT_STATE['balance']:.2f}"
     }
 
 @app.get("/health")
 def health():
     return {"status": "healthy"}
 
-@app.get("/control/pause")
-def pause():
-    BOT_STATE["paused"] = True
-    return {"trading": "paused"}
-
-@app.get("/control/resume")
-def resume():
-    BOT_STATE["paused"] = False
-    return {"trading": "resumed"}
-
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
     status_color = "red" if BOT_STATE["kill_switch"] else ("orange" if BOT_STATE["paused"] else "#10b981")
-    html = f"""
-    <html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'>
-        <h1>YNOR ZENITH | OBSERVABLE MODE</h1>
-        <div style='background:#0f172a; padding:20px; border-radius:12px; border:1px solid #1e293b;'>
-            <h2 style='color:{status_color}; margin:0;'>{BOT_STATE['status']}</h2>
-            <div style='display:grid; grid-template-columns: 1fr 1fr; gap:20px; margin-top:20px;'>
-                <div><p>Regime: {BOT_STATE['regime']}</p><p>Signal: {BOT_STATE['last_signal']}</p></div>
-                <div><p>Confiance: {BOT_STATE['confidence']*100:.1f}%</p><p>PnL: ${BOT_STATE['pnl']:,.2f}</p></div>
-            </div>
-        </div>
-    </body></html>
-    """
+    html = f"<html><body style='background:#020617; color:white; font-family:sans-serif; padding:40px;'><h1>YNOR ZENITH | STABLE CORE active</h1><div style='background:#0f172a; padding:20px; border-radius:12px;'><h2 style='color:{status_color};'>{BOT_STATE['status']}</h2><p>Regime: {BOT_STATE['regime']}</p><p>Signal: {BOT_STATE['last_signal']}</p></div></body></html>"
     return html
