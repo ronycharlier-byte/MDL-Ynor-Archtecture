@@ -1,0 +1,24 @@
+# MDL Ynor V2.0 - Dissipative Ignore File
+# Suppression du κ (Complexité/Masse) inutile pour le déploiement
+
+# Éliminer la récursivité fantôme
+SCIENTIFIC_CORPUS/06_INFRASTRUCTURE/rag_system/Corpus/MDL Ynor/
+
+# Fichiers massifs non-essentiels pour l'exécution Cloud
+**/*.zip
+**/*.json
+**/*.pth
+**/*.bin
+!knowledge.json
+!vector_memory.json
+
+# Cache et logs
+__pycache__/
+*.log
+*.jsonl
+data/investing_full_report.json
+
+# Git
+.git/
+.gitmodules
+.github/
