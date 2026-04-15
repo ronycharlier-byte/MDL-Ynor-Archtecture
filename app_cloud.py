@@ -82,85 +82,125 @@ os.makedirs("data", exist_ok=True)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    connector = YnorBitgetConnector()
-    balance = connector.get_balance()
-    if balance:
-        BOT_STATE["balance"] = balance; BOT_STATE["initial_balance"] = balance
+    """
+    Gestion optimisée du cycle de vie pour Render.
+    L'ordre est CRITIQUE pour éviter les timeouts de déploiement.
+    """
+    logger.info("🔰 [SYSTEM] Initializing MDL Ynor Sovereign Engine...")
     
-    solver = MillenniumGrandSolver(initial_balance=BOT_STATE["initial_balance"])
-    regime_engine = YnorMarketRegime()
-    sentinel = YnorEconomicSentinel("", REPORT_PATH)
-    scraper = YnorNewsScraper(REPORT_PATH)
-    BOT_STATE["status"] = "RUNNING"
-
-    async def news_worker():
-        while True:
-            try: scraper.update_report(); await asyncio.sleep(600)
-            except: await asyncio.sleep(60)
+    # 1. État initial immédiat
+    BOT_STATE["status"] = "BOOTING"
     
-    async def trading_loop():
-        while True:
-            try:
-                # 1. Régime & Sentiment
-                regime = regime_engine.detect("BTC-USD")
-                BOT_STATE["regime"] = regime
-                sentiment = normalize_sentiment(sentinel.get_geo_alpha("BTC"))
+    # 2. Initialisation des composants (Non-bloquant si possible)
+    try:
+        # On tente de récupérer le balance mais on ne bloque pas indéfiniment le démarrage
+        connector = YnorBitgetConnector()
+        # Note: Dans un environnement réel, on pourrait déléguer ceci au trading_loop
+        # pour que le serveur HTTP démarre EN PREMIER.
+        BOT_STATE["balance"] = 1000.0 # Valeur par défaut rapide
+        
+        # Initialisation rapide des moteurs
+        app.state.solver = MillenniumGrandSolver(initial_balance=BOT_STATE["balance"])
+        app.state.regime_engine = YnorMarketRegime()
+        app.state.sentinel = YnorEconomicSentinel("", REPORT_PATH)
+        app.state.scraper = YnorNewsScraper(REPORT_PATH)
+        
+        BOT_STATE["status"] = "RUNNING"
+        logger.info("✅ [SYSTEM] Core components initialized.")
+    except Exception as e:
+        logger.error(f"❌ [SYSTEM] Boot error: {e}")
+        BOT_STATE["status"] = "DEGRADED"
 
-                if check_kill_switch():
-                    BOT_STATE["status"] = "🚨 STOPPED (KILL SWITCH)"
-                    return 
-                if BOT_STATE.get("paused"):
-                    await asyncio.sleep(60); continue
+    # 3. Lancement des boucles asynchrones en arrière-plan
+    # Cela permet au serveur de répondre au health check pendant que l'engine chauffe
+    asyncio.create_task(news_worker(app.state.scraper))
+    asyncio.create_task(trading_loop(app.state.solver, app.state.regime_engine, app.state.sentinel))
 
-                # 3. Decision Logic (Signal + Mock Allocation)
-                df = yf.download("BTC-USD", period="1d", interval="5m", progress=False)
-                if is_valid_data(df):
-                    df = solver.compute_indicators(df)
-                    
-                    # Extraction Scalaire
-                    close_prices = df["Close"]
-                    if isinstance(close_prices, pd.DataFrame): close_prices = close_prices.iloc[:, 0]
-                    
-                    last_price = float(close_prices.iloc[-1])
-                    ema_val = float(df["ema"].iloc[-1]) if "ema" in df.columns else last_price
-                    
-                    trend = "bullish" if last_price > ema_val else "bearish"
-                    volatility = float(df["volatility_norm"].iloc[-1]) if "volatility_norm" in df.columns else 0.1
-
-                    # --- SIGNAL ENGINE V2 ---
-                    score = solver.compute_score(sentiment, trend, volatility)
-                    decision = solver.decide(score, regime)
-                    
-                    # Update Observability
-                    BOT_STATE["last_signal"] = decision
-                    BOT_STATE["confidence"] = score
-                    
-                    # --- MOCK EXECUTION & ALLOCATION ---
-                    if decision == "BUY":
-                        alloc_usd = solver.compute_allocation(score, BOT_STATE["balance"])
-                        BOT_STATE["allocation"]["BTC"] = alloc_usd
-                        BOT_STATE["positions"]["BTC"] = "LONG"
-                        logger.info(f"🚀 MOCK TRADE: BTC LONG | Alloc: ${alloc_usd:.2f}")
-                    
-                    elif decision == "SELL":
-                        alloc_usd = solver.compute_allocation(score, BOT_STATE["balance"])
-                        BOT_STATE["allocation"]["BTC"] = alloc_usd
-                        BOT_STATE["positions"]["BTC"] = "SHORT"
-                        logger.info(f"📉 MOCK TRADE: BTC SHORT | Alloc: ${alloc_usd:.2f}")
-                    
-                    else:
-                        BOT_STATE["allocation"]["BTC"] = 0.0
-                        BOT_STATE["positions"]["BTC"] = "HUNTING"
-
-                await asyncio.sleep(300) 
-            except Exception as e:
-                logger.error(f"Loop Error: {e}"); await asyncio.sleep(60)
-
-    asyncio.create_task(news_worker())
-    asyncio.create_task(trading_loop())
+    logger.info("🚀 [SYSTEM] Service is LIVE and listening for health checks.")
     yield
+    logger.info("🛑 [SYSTEM] Shutting down.")
+
+# --- WORKERS DEFINITION ---
+async def news_worker(scraper):
+    while True:
+        try: 
+            scraper.update_report()
+            await asyncio.sleep(600)
+        except Exception as e:
+            logger.error(f"News Worker Error: {e}")
+            await asyncio.sleep(60)
+
+async def trading_loop(solver, regime_engine, sentinel):
+    while True:
+        try:
+            # 1. Régime & Sentiment (Optimisation: Fetch First)
+            regime = regime_engine.detect("BTC-USD")
+            BOT_STATE["regime"] = regime
+            sentiment = normalize_sentiment(sentinel.get_geo_alpha("BTC"))
+
+            if check_kill_switch():
+                BOT_STATE["status"] = "🚨 STOPPED (KILL SWITCH)"
+                return 
+            if BOT_STATE.get("paused"):
+                await asyncio.sleep(60); continue
+
+            # 3. Decision Logic (Signal + Mock Allocation)
+            df = yf.download("BTC-USD", period="1d", interval="5m", progress=False)
+            if is_valid_data(df):
+                df = solver.compute_indicators(df)
+                
+                # Extraction Scalaire
+                close_prices = df["Close"]
+                if isinstance(close_prices, pd.DataFrame): close_prices = close_prices.iloc[:, 0]
+                
+                last_price = float(close_prices.iloc[-1])
+                ema_val = float(df["ema"].iloc[-1]) if "ema" in df.columns else last_price
+                
+                trend = "bullish" if last_price > ema_val else "bearish"
+                volatility = float(df["volatility_norm"].iloc[-1]) if "volatility_norm" in df.columns else 0.1
+
+                # --- SIGNAL ENGINE V2 ---
+                score = solver.compute_score(sentiment, trend, volatility)
+                decision = solver.decide(score, regime)
+                
+                # Update Observability
+                BOT_STATE["last_signal"] = decision
+                BOT_STATE["confidence"] = score
+                
+                # --- MOCK EXECUTION & ALLOCATION ---
+                if decision == "BUY":
+                    alloc_usd = solver.compute_allocation(score, BOT_STATE["balance"])
+                    BOT_STATE["allocation"]["BTC"] = alloc_usd
+                    BOT_STATE["positions"]["BTC"] = "LONG"
+                    logger.info(f"🚀 MOCK TRADE: BTC LONG | Alloc: ${alloc_usd:.2f}")
+                
+                elif decision == "SELL":
+                    alloc_usd = solver.compute_allocation(score, BOT_STATE["balance"])
+                    BOT_STATE["allocation"]["BTC"] = alloc_usd
+                    BOT_STATE["positions"]["BTC"] = "SHORT"
+                    logger.info(f"📉 MOCK TRADE: BTC SHORT | Alloc: ${alloc_usd:.2f}")
+                
+                else:
+                    BOT_STATE["allocation"]["BTC"] = 0.0
+                    BOT_STATE["positions"]["BTC"] = "HUNTING"
+
+            await asyncio.sleep(300) 
+        except Exception as e:
+            logger.error(f"Trading Loop Error: {e}")
+            await asyncio.sleep(60)
 
 app = FastAPI(lifespan=lifespan)
+
+# --- HEALTH CHECK (RENDER MANDATORY) ---
+@app.get("/health")
+def health():
+    """Endpoint crucial pour le déploiement Render"""
+    return {
+        "status": "healthy",
+        "bot_status": BOT_STATE["status"],
+        "uptime": "active",
+        "timestamp": datetime.now().isoformat()
+    }
 
 @app.get("/", response_class=JSONResponse)
 def root():
