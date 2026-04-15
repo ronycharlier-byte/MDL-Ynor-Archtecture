@@ -1,0 +1,13 @@
+t=2026-03-20T19:46:06+0100 lvl=info msg="no configuration paths supplied"
+t=2026-03-20T19:46:06+0100 lvl=info msg="using configuration at default config path" path=C:\\Users\\ronyc\\AppData\\Local/ngrok/ngrok.yml
+t=2026-03-20T19:46:06+0100 lvl=info msg="open config file" path=C:\\Users\\ronyc\\AppData\\Local\\ngrok\\ngrok.yml err=nil
+t=2026-03-20T19:46:06+0100 lvl=info msg="FIPS 140 mode" enabled=false
+t=2026-03-20T19:46:06+0100 lvl=warn msg="can't bind default web address, trying alternatives" obj=web addr=127.0.0.1:4040
+t=2026-03-20T19:46:06+0100 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4041 allow_hosts=[]
+t=2026-03-20T19:46:06+0100 lvl=info msg="client session established" obj=tunnels.session
+t=2026-03-20T19:46:06+0100 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-03-20T19:46:07+0100 lvl=info msg="update available" obj=updater
+t=2026-03-20T19:46:07+0100 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8000 url=https://mdlynor.ngrok-free.app
+t=2026-03-20T19:46:11+0100 lvl=info msg="join connections" obj=join id=a2b19bd4e082 l=127.0.0.1:8000 r=68.221.75.27:33658
+t=2026-03-20T21:43:29+0100 lvl=info msg="join connections" obj=join id=0753cf6da685 l=127.0.0.1:8000 r=20.215.220.154:33811
+t=2026-03-20T21:43:47+0100 lvl=info msg="join connections" obj=join id=ca739b3ac1c6 l=127.0.0.1:8000 r=20.215.220.150:27876

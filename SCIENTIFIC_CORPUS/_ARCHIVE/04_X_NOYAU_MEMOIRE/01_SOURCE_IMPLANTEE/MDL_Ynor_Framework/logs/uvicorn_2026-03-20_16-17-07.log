@@ -1,0 +1,16 @@
+INFO:     91.177.38.152:0 - "GET / HTTP/1.1" 200 OK
+INFO:     91.177.38.152:0 - "GET /favicon.ico HTTP/1.1" 401 Unauthorized
+INFO:     91.177.38.152:0 - "GET / HTTP/1.1" 200 OK
+INFO:     91.177.38.152:0 - "GET /favicon.ico HTTP/1.1" 401 Unauthorized
+INFO:     91.177.38.152:0 - "GET / HTTP/1.1" 200 OK
+INFO:     91.177.38.152:0 - "GET /favicon.ico HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.175:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.175:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.168:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.168:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
+INFO:     91.177.38.152:0 - "GET / HTTP/1.1" 200 OK
+INFO:     91.177.38.152:0 - "GET /favicon.ico HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.169:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.169:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.174:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
+INFO:     68.221.67.174:0 - "GET /audit_mu HTTP/1.1" 401 Unauthorized
