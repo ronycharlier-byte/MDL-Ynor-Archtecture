@@ -77,8 +77,14 @@ def check_kill_switch():
     return False
 
 SYMBOLS = ["BTC-USD", "ETH-USD", "SOL-USD"]
-REPORT_PATH = "data/investing_full_report.json"
-os.makedirs("data", exist_ok=True)
+# --- ADAPTIVE STORAGE FOR CLOUD RUNTIMES ---
+IS_VERCEL = os.environ.get("VERCEL") == "1"
+DATA_DIR = "/tmp/data" if IS_VERCEL else "data"
+REPORT_PATH = os.path.join(DATA_DIR, "investing_full_report.json")
+try:
+    os.makedirs(DATA_DIR, exist_ok=True)
+except Exception as e:
+    logger.warning(f"⚠️ Storage Redirect Active: {e}")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
