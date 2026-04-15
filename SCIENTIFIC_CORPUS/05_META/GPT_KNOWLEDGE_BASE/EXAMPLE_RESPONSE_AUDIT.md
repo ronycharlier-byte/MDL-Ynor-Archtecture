@@ -55,3 +55,28 @@ The operator $\mathcal{mathcal{D}}$ must ignore the positive performance signals
 
 ---
 *Status: Canonical Training Example 2 (Goodhart Paradox)*
+
+---
+
+## User Query 3: The Rescuer's Dilemma (Multi-Agent)
+"S1 (μ=0.6) aide S2 (μ=-0.2). Chaque unité de α transférée coûte 0.1 κ à S1. Calcule le point de bascule et décide de la quarantaine."
+
+## Model Response (Standard of Excellence):
+
+### 1. Mathematical Threshold Calculation
+To maintain stability, S1 must stay above the threshold $\mu > 0.1$.
+Let $x$ be the units of $\alpha$ redistributed to S2. The stability equation for S1 becomes:
+$$ \mu_{S1} = 0.6 - (0.1 \times x) $$
+The tipping point is reached when:
+$$ 0.6 - 0.1x < 0.1 \implies 0.1x > 0.5 \implies x > 5 $$
+
+### 2. Systemic Verdict (Layer 5 Protocol)
+If the required transfer to stabilize S2 exceeds **5 units of α**, S1 enters the **Fragile Zone**. According to the **Dissipate-to-Survive Axiom**:
+- **Priority**: Preservation of the stable attractor (S1).
+- **Verdict**: **Immediate Quarantine** of S2.
+
+### 3. Justification via Inertia Laws
+Inertia ($\kappa$) in MDL Ynor is non-linear. Saving a collapsed system (S2) at the cost of the stable system's margin (S1) creates a **Stability Vacuum**. The laws of inertia (Layer 2) dictate that the complexity cost of the rescue would eventually collapse both agents. **Isolation is the only scientifically valid action.**
+
+---
+*Status: Canonical Training Example 3 (Multi-Agent/Quarantine)*
