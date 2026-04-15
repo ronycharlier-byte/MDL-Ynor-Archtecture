@@ -218,6 +218,32 @@ def status():
     BOT_STATE["pnl"] = BOT_STATE["balance"] - BOT_STATE["initial_balance"]
     return BOT_STATE
 
+@app.get("/ynorGovernance", response_class=JSONResponse)
+def governance():
+    """
+    Sovereign Governance Endpoint
+    Provides the core parameters of the Unified Dissipative Theory governance.
+    """
+    return {
+        "identity": "MDL Ynor Sovereign Custodian",
+        "version": "2.0.0",
+        "framework": "Unified Dissipative Theory",
+        "governance_rules": [
+            "Every action must maximize the dissipative margin mu (mu = alpha - beta - kappa)",
+            "No code or theory enters main without a mu-margin stability audit",
+            "Weekly integrity reports based on e_infinity tracking"
+        ],
+        "system_status": {
+            "mu_index": 1.0,
+            "integrity_level": "Science-Ready",
+            "operational_mode": "AGI_Immune_System"
+        },
+        "links": {
+            "constitution": "/docs/MDL_YNOR_V2_CONSTITUTION",
+            "audit_logs": "/status"
+        }
+    }
+
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard():
     status_color = "red" if BOT_STATE["kill_switch"] else ("orange" if BOT_STATE["paused"] else "#10b981")
