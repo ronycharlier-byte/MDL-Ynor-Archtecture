@@ -1,0 +1,43 @@
+뿃뻃਍ഀ
+--- Audit Magn髃琀椀焀甀攀 㨀 䄀甀猀琀椀渀 䈀攀爀最猀琀爀漀洀 ⠀䄀唀匀⤀ ⴀⴀⴀഀ
+਍圀愀爀渀椀渀最㨀 一伀䄀䄀 䄀倀䤀 昀愀椀氀攀搀 ⠀㐀　　 䌀氀椀攀渀琀 䔀爀爀漀爀㨀 㐀　　 昀漀爀 甀爀氀㨀 栀琀琀瀀猀㨀⼀⼀眀眀眀⸀渀最搀挀⸀渀漀愀愀⸀最漀瘀⼀最攀漀洀愀最ⴀ眀攀戀⼀挀愀氀挀甀氀愀琀漀爀猀⼀挀愀氀挀甀氀愀琀攀䐀攀挀氀椀渀愀琀椀漀渀㼀氀愀琀㄀㴀㌀　⸀㄀㤀㐀㐀☀氀漀渀㄀㴀ⴀ㤀㜀⸀㘀㜀☀洀漀搀攀氀㴀圀䴀䴀☀猀琀愀爀琀夀攀愀爀㴀㈀　㄀㔀☀猀琀愀爀琀䴀漀渀琀栀㴀　㄀☀猀琀愀爀琀䐀愀礀㴀　㄀☀爀攀猀甀氀琀䘀漀爀洀愀琀㴀樀猀漀渀☀欀攀礀㴀稀一䔀眀㜀⤀⸀ 唀猀椀渀最 氀漀挀愀氀 愀瀀瀀爀漀砀椀洀愀琀椀漀渀⸀ഀ
+਍倀漀猀椀琀椀漀渀㨀 ㌀　⸀㄀㤀㐀㐀Ⰰ ⴀ㤀㜀⸀㘀㜀ഀ
+਍䌀愀瀀 嘀爀愀椀㨀 ㄀㠀㐀⸀㄀颀ഥ
+਍䐀쌀clinaison 2015: -2.50胢▘ -> Num髃爀漀㨀 ㄀㤀ഀ
+਍䐀쌀clinaison 2026: +3.07胢▘ -> Num髃爀漀㨀 ㄀㠀ഀ
+਍瀀礀琀栀漀渀 㨀 吀爀愀挀攀戀愀挀欀 ⠀洀漀猀琀 爀攀挀攀渀琀 挀愀氀氀 氀愀猀琀⤀㨀ഀ
+਍䄀甀 挀愀爀愀挀琀쌀¨re Ligne:1 : 1਍ഀ
++ python "c:\Users\ronyc\Desktop\MDL Ynor ਍ഀ
+Architecture\MDL_Ynor_Framewo ...਍ഀ
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~਍ഀ
+~~~~~~~~~~~~~~~~~~਍ഀ
+    + CategoryInfo          : NotSpecified: (Traceba ਍ഀ
+   ck (most recent call last)::String) [], RemoteEx  ਍ഀ
+  ception਍ഀ
+    + FullyQualifiedErrorId : NativeCommandError਍ഀ
+ ਍ഀ
+  File "c:\Users\ronyc\Desktop\MDL Ynor Architecture\਍ഀ
+MDL_Ynor_Framework\_11_GEOMAGNETISM_AND_WMM\runway_re਍ഀ
+number.py", line 145, in <module>਍ഀ
+    check_airport_renumbering("Austin Bergstrom ਍ഀ
+(AUS)", 30.1944, -97.67, 184.1)਍ഀ
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^਍ഀ
+^^^^^^^^^^^^^^^^^^^^^^^^^^਍ഀ
+  File "c:\Users\ronyc\Desktop\MDL Ynor Architecture\਍ഀ
+MDL_Ynor_Framework\_11_GEOMAGNETISM_AND_WMM\runway_re਍ഀ
+number.py", line 137, in check_airport_renumbering਍ഀ
+    print(f"\u26a0\ufe0f ACTION REQUISE : ਍ഀ
+Renum髃爀漀琀愀琀椀漀渀 渀쌀cessaire ({num_2015:02d} -> ਍ഀ
+{num_2026:02d})")਍ഀ
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^਍ഀ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^਍ഀ
+  File "C:\Users\ronyc\AppData\Local\Python\pythoncor਍ഀ
+e-3.14-64\Lib\encodings\cp1252.py", line 19, in ਍ഀ
+encode਍ഀ
+    return codecs.charmap_encode(input,self.errors,en਍ഀ
+coding_table)[0]਍ഀ
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^਍ഀ
+^^^^^^^^^^^^^਍ഀ
+UnicodeEncodeError: 'charmap' codec can't encode ਍ഀ
+characters in position 0-1: character maps to ਍ഀ
+<undefined>਍ഀ

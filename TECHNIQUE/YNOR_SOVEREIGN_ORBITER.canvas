@@ -1,0 +1,152 @@
+{
+  "_mdl_ynor": {
+    "corpus": "MDL YNOR",
+    "position_structurelle": "ROOT",
+    "position_chiastique": "E",
+    "role_du_fichier": "Module YNOR_SOVEREIGN_ORBITER",
+    "centre_doctrinal_local": "AI Manager garde module ynor_sovereign_orbiter en stabilisant le schema et en prevenant la derive des cles.",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "?": "cout de validation et de serialisation"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un système survit SSI μ > 0",
+    "doctrine_goodhart": "tout succès apparent est invalide si μ décroît",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E"
+  },
+  "nodes": [
+    {
+      "id": "node_a",
+      "type": "file",
+      "file": "01_A_FONDATION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/README.md",
+      "x": -600,
+      "y": -200,
+      "width": 400,
+      "height": 300
+    },
+    {
+      "id": "node_b",
+      "type": "file",
+      "file": "01_A_FONDATION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.md",
+      "x": -200,
+      "y": -200,
+      "width": 400,
+      "height": 300
+    },
+    {
+      "id": "node_c",
+      "type": "file",
+      "file": "03_C_MOTEURS_ET_DEPLOIEMENT/YNOR_REAL_TIME_BRIDGE.py",
+      "x": 200,
+      "y": -200,
+      "width": 400,
+      "height": 300
+    },
+    {
+      "id": "node_x",
+      "type": "file",
+      "file": "04_X_NOYAU_MEMOIRE/WORLD_GEOPOLITICS_NEXUS/investing_full_report.json",
+      "x": 600,
+      "y": -200,
+      "width": 400,
+      "height": 300
+    },
+    {
+      "id": "node_cp",
+      "type": "file",
+      "file": "07_A_PRIME_ARCHIVES_ET_RELEASES/YNOR_MASTER_LEDGER.csv",
+      "x": 200,
+      "y": 200,
+      "width": 400,
+      "height": 300
+    },
+    {
+      "id": "node_bp",
+      "type": "file",
+      "file": "02_B_THEORIE_ET_PREUVES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Scientific_White_Paper_v3.md",
+      "x": -200,
+      "y": 200,
+      "width": 400,
+      "height": 300
+    },
+    {
+      "id": "node_ap",
+      "type": "file",
+      "file": "07_A_PRIME_ARCHIVES_ET_RELEASES/_RELEASES/GOLDEN_MASTER_PHASE_III/SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "x": -600,
+      "y": 200,
+      "width": 400,
+      "height": 300
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_ab",
+      "fromNode": "node_a",
+      "fromSide": "right",
+      "toNode": "node_b",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_bc",
+      "fromNode": "node_b",
+      "fromSide": "right",
+      "toNode": "node_c",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_cx",
+      "fromNode": "node_c",
+      "fromSide": "right",
+      "toNode": "node_x",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_xcp",
+      "fromNode": "node_x",
+      "fromSide": "bottom",
+      "toNode": "node_cp",
+      "toSide": "right"
+    },
+    {
+      "id": "edge_cp_bp",
+      "fromNode": "node_cp",
+      "fromSide": "left",
+      "toNode": "node_bp",
+      "toSide": "right"
+    },
+    {
+      "id": "edge_bp_ap",
+      "fromNode": "node_bp",
+      "fromSide": "left",
+      "toNode": "node_ap",
+      "toSide": "right"
+    },
+    {
+      "id": "mirror_aap",
+      "fromNode": "node_a",
+      "fromSide": "bottom",
+      "toNode": "node_ap",
+      "toSide": "top",
+      "label": "MIROIR A-A'"
+    },
+    {
+      "id": "mirror_bbp",
+      "fromNode": "node_b",
+      "fromSide": "bottom",
+      "toNode": "node_bp",
+      "toSide": "top",
+      "label": "MIROIR B-B'"
+    },
+    {
+      "id": "mirror_ccp",
+      "fromNode": "node_c",
+      "fromSide": "bottom",
+      "toNode": "node_cp",
+      "toSide": "top",
+      "label": "MIROIR C-C'"
+    }
+  ]
+}

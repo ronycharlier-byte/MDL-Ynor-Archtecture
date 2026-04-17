@@ -1,0 +1,40 @@
+{
+  "_mdl_ynor": {
+    "corpus": "MDL YNOR",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "D",
+    "role_du_fichier": "Module frontier_math_benchmark",
+    "centre_doctrinal_local": "AI Manager garde module frontier_math_benchmark en stabilisant le schema et en prevenant la derive des cles.",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "?": "cout de validation et de serialisation"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un système survit SSI μ > 0",
+    "doctrine_goodhart": "tout succès apparent est invalide si μ décroît",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "D'"
+  },
+  "benchmark_name": "FrontierMath_Ynor_V10",
+  "version": "1.0",
+  "problems": [
+    {
+      "id": "FM_001",
+      "theorem": "Thorme de H-alpha Stabilit",
+      "conjecture": "Soit E un espace vectoriel de mtriques de logprobs. Dmontrer que la projection KL limite l'entropie \\mu < 0.27 avec un Triumvirat Diamond.",
+      "conditions": [
+        "Non-mmorisable",
+        "Topologie fractale"
+      ]
+    },
+    {
+      "id": "FM_002",
+      "theorem": "Conjecture du Chiasme Universel",
+      "conjecture": "Prouver que la structure ABBA d'un rseau de neurones attention annule le gradient de fuite smantique.",
+      "conditions": [
+        "Rigueur absolue Codex obligatoire"
+      ]
+    }
+  ]
+}

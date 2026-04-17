@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "phase": 4,
+  "targets": {
+    "top5_pertinent_min": 70.0,
+    "citation_canonical_min": 95.0,
+    "citation_stable_min": 90.0,
+    "archive_leak_zero": true,
+    "tech_leak_zero": true,
+    "no_valid_source_zero": true,
+    "monopoly_violation_zero": true,
+    "support_coverage_min": 60.0
+  },
+  "alerts": {
+    "yellow": {
+      "top5_drop_points": 2.0,
+      "citation_stable_drop_points": 2.0,
+      "support_drop_points": 5.0,
+      "concentration_max": 0.25
+    },
+    "orange": {
+      "top5_drop_points": 5.0,
+      "citation_stable_drop_points": 5.0,
+      "support_drop_points": 8.0,
+      "concentration_max": 0.30
+    }
+  },
+  "quarantine": {
+    "require_canonical_id": true,
+    "require_status": true,
+    "allowed_primary_layers": [
+      "CANON",
+      "RAG_SUPPORT"
+    ],
+    "forbidden_primary_terms": [
+      "prompts",
+      "logs",
+      "wrappers",
+      "auto_audits",
+      "releases",
+      "mirrors"
+    ]
+  },
+  "maintenance": {
+    "history_path": "MONITORING/phase4_health_history.jsonl",
+    "report_path": "MONITORING/phase4_health_report.json",
+    "markdown_path": "MONITORING/phase4_health_report.md"
+  }
+}

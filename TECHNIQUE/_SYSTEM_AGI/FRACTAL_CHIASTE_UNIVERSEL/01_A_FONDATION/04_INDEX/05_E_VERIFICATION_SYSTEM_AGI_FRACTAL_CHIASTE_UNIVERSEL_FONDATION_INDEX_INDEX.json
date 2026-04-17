@@ -1,0 +1,86 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Indexation et cartographie",
+    "centre_doctrinal_local": "point local d orientation et d acces",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "node": "01_A_FONDATION",
+  "key": "A",
+  "mirror": "A_PRIME",
+  "role": "Ouverture, configuration, cadre initial",
+  "inventory_count": 14,
+  "inventory": [
+    {
+      "source": "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/.env",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/.env.template",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/.gitignore",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/docker-compose.yml",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/Dockerfile",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/environment.yml",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/pyproject.toml",
+      "status": "missing"
+    },
+    {
+      "source": "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/requirements.txt",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/uv.lock",
+      "status": "missing"
+    },
+    {
+      "source": "../../../../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.pdf",
+      "status": "missing"
+    },
+    {
+      "source": "MDL Ynor Constitution",
+      "status": "missing"
+    }
+  ]
+}

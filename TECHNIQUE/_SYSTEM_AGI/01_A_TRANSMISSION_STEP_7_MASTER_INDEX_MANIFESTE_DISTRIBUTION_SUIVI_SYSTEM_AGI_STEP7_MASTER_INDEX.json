@@ -1,0 +1,2966 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "LAYER",
+    "position_chiastique": "A",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "A' / 08_OMEGA_PRIME_API_REFERENCE"
+  },
+  "stage": "step_7_master_index",
+  "chiastic_axis": [
+    "A",
+    "B",
+    "C",
+    "X",
+    "C'",
+    "B'",
+    "A'"
+  ],
+  "node_labels": {
+    "01_A_FONDATION": "A",
+    "02_B_THEORIE_ET_PREUVES": "B",
+    "03_C_MOTEURS_ET_DEPLOIEMENT": "C",
+    "04_X_NOYAU_MEMOIRE": "X",
+    "05_C_PRIME_validéTION_ET_TESTS": "C'",
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": "B'",
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": "A'"
+  },
+  "total_entries": 181,
+  "unique_sources": 181,
+  "stage_counts": {
+    "step_1_curated_text": 6,
+    "step_2_bulk_text": 59,
+    "step_3_json": 22,
+    "step_4_latex_pdf": 7,
+    "step_5_constitution_pdf": 9,
+    "step_6_legal_pdf": 24
+  },
+  "node_counts": {
+    "01_A_FONDATION": 2,
+    "02_B_THEORIE_ET_PREUVES": 43,
+    "03_C_MOTEURS_ET_DEPLOIEMENT": 29,
+    "04_X_NOYAU_MEMOIRE": 8,
+    "05_C_PRIME_VALIDATION_ET_TESTS": 30,
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 43,
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": 31
+  },
+  "family_counts": {
+    "mathématique": 2,
+    "constitutionnel": 6,
+    "corpus_formel": 1,
+    "foi_et_doctrine": 4,
+    "depot_et_pack": 7,
+    "constitution_juridique": 6,
+    "volume_monumental": 5,
+    "prospectus": 2
+  },
+  "entries": [
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+      "stage": "step_1_curated_text",
+      "node": "01_A_FONDATION",
+      "chiastic_symbol": "A",
+      "outputs": [
+        "../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_RACINE_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+      "stage": "step_1_curated_text",
+      "node": "01_A_FONDATION",
+      "chiastic_symbol": "A",
+      "outputs": [
+        "../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_FRAMEWORK_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../01_A_FONDATION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/02_B_CONSTITUTION_FONDATION_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3.md",
+      "stage": "step_1_curated_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md",
+      "stage": "step_1_curated_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md",
+      "stage": "step_1_curated_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/05_REECRITURE_CHIASTIQUE/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_REECRITURE_CHIASTIQUE_SUBMISSION_CHECKLIST_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "stage": "step_1_curated_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/05_REECRITURE_CHIASTIQUE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_CHIASTIQUE_SOVEREIGN_MASTER_PROMPT_V3_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.tex",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Millennium_Dissipative_Stability_Proof.tex",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Unification_Phase_III_Manuscrit.tex",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Numerical_Verification_Report_Phases_I_II.tex",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/PHASE_IV_ACCESS_CARD.tex",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Millennium_Dissipative_Stability_Proof.tex",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Unification_Phase_III_Manuscrit.tex",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md",
+      "stage": "step_2_bulk_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_COVER_LETTER_CHARLIER_RONY.txt",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_AI_KNOWLEDGE_3F7E3E.txt",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_EMPLOI_YNOR_0D0191.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/M2.tex",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_24C7A5.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_Ynor_Dynamic_Systems_Paper.tex",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_7F334D.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_AI_KNOWLEDGE_3F7E3E.txt",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_EMPLOI_YNOR_0D0191.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_MILLENNIUM_DISSIPATIVE_STABILITY.tex",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_24C7A5.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_NAVIER_STOKES_PROFESSOR_AUDIT.tex",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_VERIFICATION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_C55A79.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_AI_KNOWLEDGE_3F7E3E.txt",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_EMPLOI_YNOR_0D0191.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_Ynor_NeurIPS_Submission.tex",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_TRANSMISSION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_298E43.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_III.tex",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_VERIFICATION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_39101C.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_I_II.tex",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_VERIFICATION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_7FE80C.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_WHITE_PAPER_31EC29.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_WHITE_PAPER_31EC29.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_TECHNICAL_SPECIFICATIONS_684A42.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_TECHNICAL_SPECIFICATIONS_684A42.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_OPERATIONAL_HANDBOOK_76AF67.md",
+      "stage": "step_2_bulk_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_OPERATIONAL_HANDBOOK_76AF67.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_COPY_BA81D5.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_COPY_BA81D5.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_SCRIPT_04B469.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_SCRIPT_04B469.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_DECK_BE4485.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_DECK_BE4485.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_DISTRIBUTION_PACKAGE_6E82E7.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_DISTRIBUTION_PACKAGE_6E82E7.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_FORMALISME_B_PRIME_GOUVERNANCE_DIFFUSION_PROOF_PAGE_52965C.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_FORMALISME_B_PRIME_GOUVERNANCE_DIFFUSION_PROOF_PAGE_52965C.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_LANDING_MANIFESTO_B0B9F0.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_LANDING_MANIFESTO_B0B9F0.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_FUNNEL_3E2DA1.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_FUNNEL_3E2DA1.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SUBSCRIPTION_PROTOCOL_5203F4.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SUBSCRIPTION_PROTOCOL_5203F4.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../01_A_FONDATION/02_B_CONSTITUTION_01_FONDATION_CONSTITUTION_STRUCTURANTE_01_FONDATION.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../01_A_FONDATION/02_B_CONSTITUTION_01_FONDATION_CONSTITUTION_STRUCTURANTE_01_FONDATION.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/06_D_PRIME_VERIFICATION_B_PRIME_GOUVERNANCE_DIFFUSION_AUDIT_POLICY_72A307.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/06_D_PRIME_VERIFICATION_B_PRIME_GOUVERNANCE_DIFFUSION_AUDIT_POLICY_72A307.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_NDA_TEMPLATE_C7E6E4.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_NDA_TEMPLATE_C7E6E4.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_THREAT_MODEL_E452D3.md",
+      "stage": "step_2_bulk_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_THREAT_MODEL_E452D3.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../03_C_MOTEURS_ET_DEPLOIEMENT/02_MIROIR_TEXTUEL/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/06_D_PRIME_MIROIR_C_MOTEURS_DEPLOIEMENT_MIROIR_VALIDATION_PY_FFC834.md",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_GLOBAL_KNOWLEDGE_7B9E1D.json",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_MANIFESTO_GOVERNANCE_C9852E.json",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_THEORIQUE_MAPPING.json",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/07_REECRITURE_JSON_CHIASTIQUE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_JSON_FRACTALE_5B4F61.md",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_MDL_GLOBAL_KNOWLEDGE.json",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_DATA_PROVENANCE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_ACTIVATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_YNOR_UNIFIED_PROMPTS.json",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_DATA_PROVENANCE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_CHARLIER_RONY_RESONANCE.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ],
+      "mode": "fallback_raw",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_OFFENSIVE_REPORT.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_TEST_COVERAGE_REPORT.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_THEORIQUE_MAPPING.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ],
+      "mode": "fallback_raw",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_USER_RESONANCE.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_LEARNED_KNOWLEDGE_99C878.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_CORE_PROOF_FC3781.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/07_REECRITURE_JSON_CHIASTIQUE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_JSON_FRACTALE_5B4F61.md",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_YNOR_AUDIT_SNAPSHOT.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_TEST_COVERAGE_REPORT.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_YNOR_CRISIS_LOG.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/logs/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_LOGS_YNOR_LEARNING_EXPERIENCE_LOG.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/logs/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_LOGS_YNOR_LEARNING_EXPERIENCE_LOG.json"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_OFFENSIVE_REPORT.json",
+      "stage": "step_3_json",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_TEST_COVERAGE_REPORT.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/05_E_VERIFICATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_MDL_INTELLIGENCE_REPORT.json",
+      "stage": "step_3_json",
+      "node": "04_X_NOYAU_MEMOIRE",
+      "chiastic_symbol": "X",
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/05_E_VERIFICATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_MDL_INTELLIGENCE_REPORT.json"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stage": "step_3_json",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stage": "step_3_json",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ],
+      "mode": "parsed_json",
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Millennium_Dissipative_Stability_Proof.tex",
+      "stage": "step_4_latex_pdf",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Unification_Phase_III_Manuscrit.tex",
+      "stage": "step_4_latex_pdf",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.pdf"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.tex",
+      "stage": "step_4_latex_pdf",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Numerical_Verification_Report_Phases_I_II.tex",
+      "stage": "step_4_latex_pdf",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.pdf"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Millennium_Dissipative_Stability_Proof.tex",
+      "stage": "step_4_latex_pdf",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Unification_Phase_III_Manuscrit.tex",
+      "stage": "step_4_latex_pdf",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.pdf"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/PHASE_IV_ACCESS_CARD.tex",
+      "stage": "step_4_latex_pdf",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique 01_A_VERIFICATION_SYSTEM_AGI_INDEX_MAITRE_FRACTAL_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "mathématique"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathématique intégrale du noyau MDL Ynor.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathématique intégrale du noyau MDL 01_A_VERIFICATION_SYSTEM_AGI_INDEX_MAITRE_FRACTAL_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathématique intégrale du noyau MDL Ynor.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "mathématique"
+    },
+    {
+      "source": "MDL Ynor Constitution/Chapitre I — Formalisation mathématique intégrale du noyau MDL Ynor.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_YNOR_FRACTALE_48E1F4.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/Chapitre I — Formalisation mathématique intégrale du noyau MDL Ynor.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitutionnel"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systèmes Dissipatifs à Amplification Bornée.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_BORNEE_FRACTALE_907CD0.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systèmes Dissipatifs à Amplification Bornée.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitutionnel"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Théorie Structurelle des Systèmes Dissipatifs à Amplification Bornée.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_BORNEE_FRACTALE_4E9ECF.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Théorie Structurelle des Systèmes Dissipatifs à Amplification Bornée.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitutionnel"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Théorèmes fondamentaux de la marge dissipative.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_DISSIPATIVE_FRACTALE_231DE0.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Théorèmes fondamentaux de la marge dissipative.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitutionnel"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Traité des dynamiques dissipatives et de la stabilité structurelle.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_STRUCTURELLE_FRACTALE_CAC254.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Traité des dynamiques dissipatives et de la stabilité structurelle.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitutionnel"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifiée V1.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_V1_FRACTALE_7BE6B9.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifiée V1.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitutionnel"
+    },
+    {
+      "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.pdf",
+      "stage": "step_5_constitution_pdf",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_3_FRACTALE_E3672E.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "corpus_formel"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Charte_Foi_Officielle.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_OFFICIELLE_FRACTALE_72A2D5.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Charte_Foi_Officielle.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "foi_et_doctrine"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE(1).pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE(1)05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE(1).fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "depot_et_pack"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "depot_et_pack"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_BD2EB4.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "depot_et_pack"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_10_10_HISTORIQUE.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_10_10_HISTORIQUE.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "depot_et_pack"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_CONSTITUTIONNELLE_9_5.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_5_FRACTALE_A9EF15.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_CONSTITUTIONNELLE_9_5.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitution_juridique"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ETENDUE_COMPLETE.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_COMPLETE_FRACTALE_A81701.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ETENDUE_COMPLETE.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "depot_et_pack"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ULTIME_9_10.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_10_FRACTALE_77D2A1.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ULTIME_9_10.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "depot_et_pack"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_COMPLETE.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_COMPLETE_FRACTALE_83A426.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_COMPLETE.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitution_juridique"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_Officielle_Consolidee.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_CONSOLIDEE_FRACTALE_9638F3.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_Officielle_Consolidee.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitution_juridique"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack(1).pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack(1)05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack(1).fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "foi_et_doctrine"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_PACK_FRACTALE_4207F8.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "foi_et_doctrine"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Responsabilite_Liberte.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Responsabilite_Liberte.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "foi_et_doctrine"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Identite_Fracturee_Reconstruction.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Identite_Fracturee_Reconstruction.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "depot_et_pack"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_MONUMENTALE_FRACTALE_1DAE8F.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitution_juridique"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE(1).pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE(1)05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE(1).fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitution_juridique"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_MONUMENTALE_FRACTALE_1DAE8F.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "constitution_juridique"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_II_PDHU_MONUMENTAL_2026.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_B46890.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_II_PDHU_MONUMENTAL_2026.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "volume_monumental"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_III_NEURO_ARCHITECTURE_MONUMENTALE_2026.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_194E6A.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_III_NEURO_ARCHITECTURE_MONUMENTALE_2026.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "volume_monumental"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_IV_ASIC_MONUMENTAL_2026.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_12EF24.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_IV_ASIC_MONUMENTAL_2026.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "volume_monumental"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_V_DOCTRINE_STRATEGIQUE_CUMULATIVE_2026.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_A50064.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_V_DOCTRINE_STRATEGIQUE_CUMULATIVE_2026.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "volume_monumental"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_VI_PROTECTION_ANNEXES_MONUMENTALE_2026.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_95D307.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_VI_PROTECTION_ANNEXES_MONUMENTALE_2026.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "volume_monumental"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Prospectus_v7_1.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_DIFFUSION_1_FRACTALE_497DA0.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Prospectus_v7_1.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "prospectus"
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/Prospectus-Evaluation-MDL.docx.pdf",
+      "stage": "step_6_legal_pdf",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_DIFFUSION_DOCX_FRACTALE_8446C3.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/Prospectus-Evaluation-MDL.docx.fractale_compagnon.pdf"
+      ],
+      "mode": null,
+      "family": "prospectus"
+    }
+  ],
+  "source_correspondence": [
+    {
+      "source": "MDL Ynor Constitution/Chapitre I — Formalisation mathématique intégrale du noyau MDL Ynor.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_YNOR_FRACTALE_48E1F4.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/Chapitre I — Formalisation mathématique intégrale du noyau MDL Ynor.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifiée V1.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_V1_FRACTALE_7BE6B9.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifiée V1.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique 01_A_VERIFICATION_SYSTEM_AGI_INDEX_MAITRE_FRACTAL_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathématique intégrale du noyau MDL Ynor.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathématique intégrale du noyau MDL 01_A_VERIFICATION_SYSTEM_AGI_INDEX_MAITRE_FRACTAL_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathématique intégrale du noyau MDL Ynor.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systèmes Dissipatifs à Amplification Bornée.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_BORNEE_FRACTALE_907CD0.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systèmes Dissipatifs à Amplification Bornée.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Théorie Structurelle des Systèmes Dissipatifs à Amplification Bornée.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_BORNEE_FRACTALE_4E9ECF.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Théorie Structurelle des Systèmes Dissipatifs à Amplification Bornée.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Théorèmes fondamentaux de la marge dissipative.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_DISSIPATIVE_FRACTALE_231DE0.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Théorèmes fondamentaux de la marge dissipative.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL Ynor — Traité des dynamiques dissipatives et de la stabilité structurelle.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor ../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_STRUCTURELLE_FRACTALE_CAC254.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL Ynor Constitution/MDL Ynor — Traité des dynamiques dissipatives et de la stabilité structurelle.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Charte_Foi_Officielle.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_OFFICIELLE_FRACTALE_72A2D5.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Charte_Foi_Officielle.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE(1).pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE(1)05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE(1).fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_BD2EB4.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_10_10_HISTORIQUE.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_10_10_HISTORIQUE.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_CONSTITUTIONNELLE_9_5.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_5_FRACTALE_A9EF15.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_CONSTITUTIONNELLE_9_5.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ETENDUE_COMPLETE.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_COMPLETE_FRACTALE_A81701.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ETENDUE_COMPLETE.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ULTIME_9_10.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_10_FRACTALE_77D2A1.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ULTIME_9_10.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_COMPLETE.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_COMPLETE_FRACTALE_83A426.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_COMPLETE.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_Officielle_Consolidee.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_CONSOLIDEE_FRACTALE_9638F3.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Constitution_v3.0_Officielle_Consolidee.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack(1).pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack(1)05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack(1).fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_PACK_FRACTALE_4207F8.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Integration_Comprehensive_Pack.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Responsabilite_Liberte.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Foi_Responsabilite_Liberte.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Identite_Fracturee_Reconstruction.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_1_FRACTALE_DAE7F7.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_Identite_Fracturee_Reconstruction.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_III_NEURO_ARCHITECTURE_MONUMENTALE_2026.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_194E6A.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_III_NEURO_ARCHITECTURE_MONUMENTALE_2026.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_II_PDHU_MONUMENTAL_2026.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_B46890.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_II_PDHU_MONUMENTAL_2026.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_IV_ASIC_MONUMENTAL_2026.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_12EF24.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_IV_ASIC_MONUMENTAL_2026.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_MONUMENTALE_FRACTALE_1DAE8F.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE(1).pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE(1)05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE(1).fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_MONUMENTALE_FRACTALE_1DAE8F.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_I_CONSTITUTION_2026_EDITION_MONUMENTALE_ETENDUE.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_VI_PROTECTION_ANNEXES_MONUMENTALE_2026.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_95D307.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_VI_PROTECTION_ANNEXES_MONUMENTALE_2026.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_V_DOCTRINE_STRATEGIQUE_CUMULATIVE_2026.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_2026_FRACTALE_A50064.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/MDL_VOLUME_V_DOCTRINE_STRATEGIQUE_CUMULATIVE_2026.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Prospectus_v7_1.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_DIFFUSION_1_FRACTALE_497DA0.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Prospectus_v7_1.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "MDL Ynor Constitution/MDL — Argent & Juridique/Prospectus-Evaluation-MDL.docx.pdf",
+      "stages": [
+        "step_6_legal_pdf"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & ../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/07_C_PRIME_CONSTITUTION_B_PRIME_GOUVERNANCE_DIFFUSION_DOCX_FRACTALE_8446C3.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/07_PDF_JURIDIQUE_ADMIN_AUGMENTES/MDL Ynor Constitution/MDL — Argent & Juridique/Prospectus-Evaluation-MDL.docx.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "01_A_FONDATION"
+      ],
+      "outputs": [
+        "../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_FRAMEWORK_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../01_A_FONDATION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/02_B_CONSTITUTION_FONDATION_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3_FRACTAL_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.pdf",
+      "stages": [
+        "step_5_constitution_pdf"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/03_C_CONSTITUTION_B_THEORIE_PREUVES_PDF_3_FRACTALE_E3672E.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/02_B_THEORIE_ET_PREUVES/09_PDF_CONSTITUTION_MATH_AUGMENTES/MDL_Ynor_Framework/YNOR_FULL_CORPUS_FORMAL_SPEC_V2.3.fractale_compagnon.pdf"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_AI_KNOWLEDGE_3F7E3E.txt",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_EMPLOI_YNOR_0D0191.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/M2.tex",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_24C7A5.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_AI_KNOWLEDGE_3F7E3E.txt",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_EMPLOI_YNOR_0D0191.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_MILLENNIUM_DISSIPATIVE_STABILITY.tex",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_24C7A5.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_NAVIER_STOKES_PROFESSOR_AUDIT.tex",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_VERIFICATION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_C55A79.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_III.tex",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_VERIFICATION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_39101C.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_I_II.tex",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_VERIFICATION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_7FE80C.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_WHITE_PAPER_31EC29.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_WHITE_PAPER_31EC29.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_TECHNICAL_SPECIFICATIONS_684A42.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_TECHNICAL_SPECIFICATIONS_684A42.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_Ynor_Dynamic_Systems_Paper.tex",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_7F334D.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_AI_KNOWLEDGE_3F7E3E.txt",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_EMPLOI_YNOR_0D0191.md"
+      ]
+    },
+    {
+      "source": "MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_Ynor_NeurIPS_Submission.tex",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/06_REECRITURE_CHIASTIQUE_BULK/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_TRANSMISSION_B_THEORIE_PREUVES_REECRITURE_TEX_FRACTALE_298E43.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md"
+      ]
+    },
+    {
+      "source": "../01_A_FONDATION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/02_B_CONSTITUTION_FONDATION_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../01_A_FONDATION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/02_B_CONSTITUTION_FONDATION_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3.md"
+      ]
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_OPERATIONAL_HANDBOOK_76AF67.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_OPERATIONAL_HANDBOOK_76AF67.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_MDL_GLOBAL_KNOWLEDGE.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_DATA_PROVENANCE.md"
+      ]
+    },
+    {
+      "source": "../03_C_MOTEURS_ET_DEPLOIEMENT/02_MIROIR_TEXTUEL/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/06_D_PRIME_MIROIR_C_MOTEURS_DEPLOIEMENT_MIROIR_VALIDATION_PY_FFC834.md",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_GLOBAL_KNOWLEDGE_7B9E1D.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md"
+      ]
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_MANIFESTO_GOVERNANCE_C9852E.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_THEORIQUE_MAPPING.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/07_REECRITURE_JSON_CHIASTIQUE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_JSON_FRACTALE_5B4F61.md",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_ACTIVATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_YNOR_UNIFIED_PROMPTS.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_DATA_PROVENANCE.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_COPY_BA81D5.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_COPY_BA81D5.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_SCRIPT_04B469.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_SCRIPT_04B469.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_DECK_BE4485.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_PITCH_DECK_BE4485.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_DISTRIBUTION_PACKAGE_6E82E7.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_DISTRIBUTION_PACKAGE_6E82E7.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_FORMALISME_B_PRIME_GOUVERNANCE_DIFFUSION_PROOF_PAGE_52965C.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_FORMALISME_B_PRIME_GOUVERNANCE_DIFFUSION_PROOF_PAGE_52965C.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_LANDING_MANIFESTO_B0B9F0.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_LANDING_MANIFESTO_B0B9F0.md"
+      ]
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_SALES_PLAYBOOK_68204A.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_FUNNEL_3E2DA1.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SALES_FUNNEL_3E2DA1.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SUBSCRIPTION_PROTOCOL_5203F4.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_MARKETING_AND_PITCH/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_SUBSCRIPTION_PROTOCOL_5203F4.md"
+      ]
+    },
+    {
+      "source": "../01_A_FONDATION/02_B_CONSTITUTION_01_FONDATION_CONSTITUTION_STRUCTURANTE_01_FONDATION.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../01_A_FONDATION/02_B_CONSTITUTION_01_FONDATION_CONSTITUTION_STRUCTURANTE_01_FONDATION.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/06_D_PRIME_VERIFICATION_B_PRIME_GOUVERNANCE_DIFFUSION_AUDIT_POLICY_72A307.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/06_D_PRIME_VERIFICATION_B_PRIME_GOUVERNANCE_DIFFUSION_AUDIT_POLICY_72A307.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_GOVERNANCE_PROCEDURES_382AD7.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_NDA_TEMPLATE_C7E6E4.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_NDA_TEMPLATE_C7E6E4.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_THREAT_MODEL_E452D3.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_07_ADMIN_LEGAL_GOVERNANCE/07_C_PRIME_GOUVERNANCE_B_PRIME_GOUVERNANCE_DIFFUSION_THREAT_MODEL_E452D3.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_LEARNED_KNOWLEDGE_99C878.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_CORE_PROOF_FC3781.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_CHARLIER_RONY_RESONANCE.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_OFFENSIVE_REPORT.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_TEST_COVERAGE_REPORT.md"
+      ]
+    },
+    {
+      "source": "../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_THEORIQUE_MAPPING.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_USER_RESONANCE.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ]
+    },
+    {
+      "source": "../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/07_REECRITURE_JSON_CHIASTIQUE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_JSON_FRACTALE_5B4F61.md",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "05_E_ACTIVATION_SYSTEM_AGI_CARTE_VISUELLE_FRACTALE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_YNOR_AUDIT_SNAPSHOT.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_TEST_COVERAGE_REPORT.md"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_YNOR_CRISIS_LOG.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_YNOR_VENDRE_MON_IA.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/logs/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_LOGS_YNOR_LEARNING_EXPERIENCE_LOG.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/logs/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_LOGS_YNOR_LEARNING_EXPERIENCE_LOG.json"
+      ]
+    },
+    {
+      "source": "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_OFFENSIVE_REPORT.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_VERIFICATION_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_TEST_COVERAGE_REPORT.md"
+      ]
+    },
+    {
+      "source": "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/05_E_VERIFICATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_MDL_INTELLIGENCE_REPORT.json",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "04_X_NOYAU_MEMOIRE"
+      ],
+      "outputs": [
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/05_E_VERIFICATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_MDL_INTELLIGENCE_REPORT.json"
+      ]
+    },
+    {
+      "source": "../07_A_PRIME_ARCHIVES_ET_RELEASES/97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "01_A_FONDATION"
+      ],
+      "outputs": [
+        "../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_RACINE_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md"
+      ]
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.tex",
+      "stages": [
+        "step_2_bulk_text",
+        "step_4_latex_pdf"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "stages": [
+        "step_1_curated_text",
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/05_REECRITURE_CHIASTIQUE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_CHIASTIQUE_SOVEREIGN_MASTER_PROMPT_V3_FRACTAL_CHIASTIQUE.md",
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Millennium_Dissipative_Stability_Proof.tex",
+      "stages": [
+        "step_2_bulk_text",
+        "step_4_latex_pdf"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md",
+      "stages": [
+        "step_1_curated_text",
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES",
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3_FRACTAL_CHIASTIQUE.md",
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ]
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Unification_Phase_III_Manuscrit.tex",
+      "stages": [
+        "step_2_bulk_text",
+        "step_4_latex_pdf"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.pdf"
+      ]
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Numerical_Verification_Report_Phases_I_II.tex",
+      "stages": [
+        "step_2_bulk_text",
+        "step_4_latex_pdf"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Numerical_Verification_Report_Phases_I_II.fractale_augmente.pdf"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md"
+      ]
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/PHASE_IV_ACCESS_CARD.tex",
+      "stages": [
+        "step_2_bulk_text",
+        "step_4_latex_pdf"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/PHASE_IV_ACCESS_CARD.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/PHASE_IV_ACCESS_CARD.fractale_augmente.pdf"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_GOVERNANCE_CERTIFICATION.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SUBMISSION_CHECKLIST_SOVEREIGN.md"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+      "stages": [
+        "step_3_json"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SUCCESS_CERTIFICATE.md"
+      ]
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Millennium_Dissipative_Stability_Proof.tex",
+      "stages": [
+        "step_2_bulk_text",
+        "step_4_latex_pdf"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Millennium_Dissipative_Stability_Proof.fractale_augmente.pdf"
+      ]
+    },
+    {
+      "source": "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ]
+    },
+    {
+      "source": "_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Unification_Phase_III_Manuscrit.tex",
+      "stages": [
+        "step_2_bulk_text",
+        "step_4_latex_pdf"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../07_A_PRIME_ARCHIVES_ET_RELEASES/06_REECRITURE_CHIASTIQUE_BULK/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_TEX_FRACTALE_883563.md",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.tex",
+        "FRACTAL_CHIASTE_UNIVERSEL/07_A_PRIME_ARCHIVES_ET_RELEASES/08_PDF_LATEX_CHIASTIQUES_AUGMENTES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Unification_Phase_III_Manuscrit.fractale_augmente.pdf"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md",
+      "stages": [
+        "step_1_curated_text",
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/05_REECRITURE_CHIASTIQUE/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_REECRITURE_CHIASTIQUE_SUBMISSION_CHECKLIST_FRACTAL_CHIASTIQUE.md",
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md"
+      ]
+    },
+    {
+      "source": "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_COVER_LETTER_CHARLIER_RONY.txt",
+      "stages": [
+        "step_2_bulk_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md"
+      ]
+    }
+  ]
+}

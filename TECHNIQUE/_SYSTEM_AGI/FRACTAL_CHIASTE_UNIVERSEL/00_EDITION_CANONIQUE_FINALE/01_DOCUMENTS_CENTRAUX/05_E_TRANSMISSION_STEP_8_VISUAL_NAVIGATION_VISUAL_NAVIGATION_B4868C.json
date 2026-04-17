@@ -1,0 +1,99 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "stage": "step_8_visual_navigation",
+  "chiastic_axis": [
+    "A",
+    "B",
+    "C",
+    "X",
+    "C'",
+    "B'",
+    "A'"
+  ],
+  "node_titles": {
+    "01_A_FONDATION": "A | Fondation",
+    "02_B_THEORIE_ET_PREUVES": "B | Theorie et preuves",
+    "03_C_MOTEURS_ET_DEPLOIEMENT": "C | Moteurs et deploiement",
+    "04_X_NOYAU_MEMOIRE": "X | Noyau memoire",
+    "05_C_PRIME_validéTION_ET_TESTS": "C' | validation et tests",
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": "B' | Gouvernance et diffusion",
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": "A' | Archives et releases"
+  },
+  "node_counts": {
+    "01_A_FONDATION": 2,
+    "02_B_THEORIE_ET_PREUVES": 2,
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 1,
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": 1
+  },
+  "stage_counts": {
+    "step_1_curated_text": 6
+  },
+  "navigation": {
+    "01_A_FONDATION": {
+      "title": "A | Fondation",
+      "count": 2,
+      "top_sources": [
+        "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md",
+        "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md"
+      ]
+    },
+    "02_B_THEORIE_ET_PREUVES": {
+      "title": "B | Theorie et preuves",
+      "count": 2,
+      "top_sources": [
+        "../../../../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+        "../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md"
+      ]
+    },
+    "03_C_MOTEURS_ET_DEPLOIEMENT": {
+      "title": "C | Moteurs et deploiement",
+      "count": 0,
+      "top_sources": []
+    },
+    "04_X_NOYAU_MEMOIRE": {
+      "title": "X | Noyau memoire",
+      "count": 0,
+      "top_sources": []
+    },
+    "05_C_PRIME_validéTION_ET_TESTS": {
+      "title": "C' | validation et tests",
+      "count": 0,
+      "top_sources": []
+    },
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": {
+      "title": "B' | Gouvernance et diffusion",
+      "count": 1,
+      "top_sources": [
+        "../../../../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md"
+      ]
+    },
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": {
+      "title": "A' | Archives et releases",
+      "count": 1,
+      "top_sources": [
+        "../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt"
+      ]
+    }
+  },
+  "mermaid_path": "05_E_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_FRACTALE_CHIASTIQUE_F97AAF.md"
+}

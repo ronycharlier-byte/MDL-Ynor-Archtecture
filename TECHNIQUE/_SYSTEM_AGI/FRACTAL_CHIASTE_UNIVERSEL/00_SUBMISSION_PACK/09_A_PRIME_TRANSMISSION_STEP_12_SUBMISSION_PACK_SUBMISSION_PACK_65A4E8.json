@@ -1,0 +1,58 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "A'",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "A / 00_OMEGA_PORTAIL_ET_EDITION"
+  },
+  "stage": "step_12_submission_pack",
+  "submission_root": "FRACTAL_CHIASTE_UNIVERSEL/00_SUBMISSION_PACK",
+  "inputs": {
+    "public_brief": "../00_PUBLIC_BRIEF/09_A_PRIME_TRANSMISSION_STEP_11_PUBLIC_BRIEF_PUBLIC_BRIEF_D29A11.json",
+    "executive_digest": "../00_EXECUTIVE_DIGEST/09_A_PRIME_TRANSMISSION_STEP_10_EXECUTIVE_DIGEST_EXECUTIVE_DIGEST_F4499D.json",
+    "canonical_edition": "../00_EDITION_CANONIQUE_FINALE/05_E_TRANSMISSION_STEP_9_CANONICAL_EDITION_CANONICAL_EDITION_839205.json"
+  },
+  "outputs": {
+    "cover_letter": "09_A_PRIME_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_UNIVERSEL_SUBMISSION_PACK_LETTRE_COUVERTURE.md",
+    "submission_summary": "09_A_PRIME_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_UNIVERSEL_SUBMISSION_PACK_RESUME_SOUMISSION.md",
+    "delivery_map": "09_A_PRIME_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_UNIVERSEL_SUBMISSION_PACK_STRUCTURE_LIVRAISON.md",
+    "manifest": "09_A_PRIME_TRANSMISSION_STEP_12_SUBMISSION_PACK_SUBMISSION_PACK_65A4E8.json"
+  },
+  "stats": {
+    "total_entries": 6,
+    "unique_sources": 6,
+    "chiastic_axis": [
+      "A",
+      "B",
+      "C",
+      "X",
+      "C'",
+      "B'",
+      "A'"
+    ],
+    "stage_counts": {
+      "step_1_curated_text": 6
+    },
+    "node_counts": {
+      "01_A_FONDATION": 2,
+      "02_B_THEORIE_ET_PREUVES": 2,
+      "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 1,
+      "07_A_PRIME_ARCHIVES_ET_RELEASES": 1
+    }
+  }
+}

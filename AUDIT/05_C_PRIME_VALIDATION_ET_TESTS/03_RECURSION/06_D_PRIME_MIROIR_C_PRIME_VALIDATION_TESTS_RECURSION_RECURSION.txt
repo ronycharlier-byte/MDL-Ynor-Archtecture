@@ -1,0 +1,22 @@
+> **[◬] MATRICE FRACTALE MDL YNOR V2.0**
+> **Corpus :** MDL YNOR
+> **Passe de correction :** 2026-04-16
+> **Position Structurelle :** MODULE
+> **Position Chiastique :** D'
+> **Role du Fichier :** Boucle de recursion et reflet
+> **Centre Doctrinal Local :** boucle locale de reflet et de coherence
+> **Loi de Survie :** μ = α - β - κ
+> **Lecture Locale :**
+> - **α :** coherence reflexive et effet miroir
+> - **β :** derive de boucle et bruit de reflet
+> - **κ :** cout de cycle et de stabilisation
+> **Risque :** e∞ ∝ ε / μ
+> **Operateur Correctif :** D(S)=proj_{SafeDomain}(S)
+> **Axiome :** un systeme survit SSI μ > 0
+> **Doctrine Goodhart :** tout succes apparent est invalide si μ decroit
+> **Gouvernance :** toute modification doit maximiser Δμ
+> **Lien Miroir :** D / 03_C_MOTEURS_ET_DEPLOIEMENT
+Noeud : C_PRIME / validéTION_ET_TESTS
+Miroir : C
+Regle fractale : chaque fichier est replie en source, miroir textuel et index.
+Regle chiastique : tout noeud renvoie a son miroir et au centre X.

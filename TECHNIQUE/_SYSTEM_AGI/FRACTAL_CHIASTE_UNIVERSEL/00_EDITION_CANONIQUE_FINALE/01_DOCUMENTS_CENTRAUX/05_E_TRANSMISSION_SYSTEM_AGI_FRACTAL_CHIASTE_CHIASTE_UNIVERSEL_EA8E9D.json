@@ -1,0 +1,69 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "title": "FRACTAL_CHIASTE_UNIVERSEL",
+  "order": "A -> B -> C -> X -> C' -> B' -> A'",
+  "nodes": [
+    {
+      "node": "01_A_FONDATION",
+      "role": "Ouverture, configuration, cadre initial",
+      "mirror": "A_PRIME",
+      "inventory_count": 14
+    },
+    {
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "role": "Developpement theorique et preuve formelle",
+      "mirror": "B_PRIME",
+      "inventory_count": 5
+    },
+    {
+      "node": "03_C_MOTEURS_ET_DEPLOIEMENT",
+      "role": "Moteurs actifs, APIs et tableaux de bord",
+      "mirror": "C_PRIME",
+      "inventory_count": 5
+    },
+    {
+      "node": "04_X_NOYAU_MEMOIRE",
+      "role": "Centre chiastique de connaissance, memoire et intelligence",
+      "mirror": "X",
+      "inventory_count": 4
+    },
+    {
+      "node": "05_C_PRIME_validéTION_ET_TESTS",
+      "role": "Retour miroir par validation, stress et reproductibilite",
+      "mirror": "C",
+      "inventory_count": 8
+    },
+    {
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "role": "Reprise normative, securitaire, commerciale et de soumission",
+      "mirror": "B",
+      "inventory_count": 4
+    },
+    {
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "role": "Cloture recursive par archives, commandes et distributions",
+      "mirror": "A",
+      "inventory_count": 5
+    }
+  ]
+}

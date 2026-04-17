@@ -1,0 +1,44 @@
+# **[?] MATRICE FRACTALE MDL YNOR V2.0**
+# **Corpus :** MDL YNOR
+# **Position Structurelle :** NODE
+# **Position Chiastique :** E
+# **R?le du Fichier :** Script ou configuration declarative
+# **Centre Doctrinal Local :** AI Manager garde script ou configuration declarative en limitant le bruit d'integration et la friction structurelle.
+# **Loi de Survie :** ? = ? - ? - ?
+# **Lecture Locale :**
+# - **? :** capacite operationnelle du fichier
+# - **? :** bruit d'integration et derive de dependance
+# - **? :** friction de maintenance et complexite d'appel
+# **Risque :** e? ? ? / ?
+# **Op?rateur Correctif :** D(S)=proj_{SafeDomain}(S)
+# **Axiome :** un syst?me survit SSI ? > 0
+# **Doctrine Goodhart :** tout succ?s apparent est invalide si ? d?cro?t
+# **Gouvernance :** toute modification doit maximiser ??
+# **Lien Miroir :** E
+
+# Utilise une image miniature Linux (Debian) optimisée pour la grande vitesse
+FROM python:3.11-slim
+
+# Crée le dossier d'application "dans le nuage"
+WORKDIR /app
+
+# Optimisations DevOps : Bloque la création de cache lourd
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Copie le fichier d'exigences des bibliothèques
+COPY requirements.txt .
+
+# Installe toutes tes dépendances (FastAPI, Cryptography, etc)
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
+
+# Copie l'intégralité du code de ton API (depuis ton PC) vers le serveur
+COPY . .
+
+# IMPORTANT : Le port dynamique pour les hébergeurs Cloud (Render/Heroku/AWS)
+ENV PORT=8492
+EXPOSE $PORT
+
+# Allume ton Moteur Mathématique avec le Serveur de Haute Performance (Uvicorn)
+CMD ["sh", "-c", "uvicorn ynor_api_server:app --host 0.0.0.0 --port ${PORT}"]

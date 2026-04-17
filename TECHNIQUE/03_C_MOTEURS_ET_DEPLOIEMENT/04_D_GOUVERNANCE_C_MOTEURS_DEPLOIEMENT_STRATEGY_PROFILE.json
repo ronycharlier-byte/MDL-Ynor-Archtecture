@@ -1,0 +1,38 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "LAYER",
+    "position_chiastique": "D",
+    "role_du_fichier": "Profil strategique et pilotage",
+    "centre_doctrinal_local": "pilotage strategique et arbitrage des priorites",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "densite structurelle et stabilite du schema",
+      "beta": "doublons et derive de structure",
+      "kappa": "cout de serialisation et de maintenance"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "D' / 05_C_PRIME_VALIDATION_ET_TESTS"
+  },
+  "name": "Ynor Market Quant v1",
+  "entry_threshold": 3.0,
+  "exit_threshold": -1.0,
+  "risk": {
+    "trail_factor": 0.5,
+    "max_volatility": 0.06
+  },
+  "weights": {
+    "trend": 1.5,
+    "momentum": 1.0,
+    "volume": 1.0,
+    "breakout": 1.5,
+    "sweep": 1.5,
+    "volatility": -1.0
+  }
+}

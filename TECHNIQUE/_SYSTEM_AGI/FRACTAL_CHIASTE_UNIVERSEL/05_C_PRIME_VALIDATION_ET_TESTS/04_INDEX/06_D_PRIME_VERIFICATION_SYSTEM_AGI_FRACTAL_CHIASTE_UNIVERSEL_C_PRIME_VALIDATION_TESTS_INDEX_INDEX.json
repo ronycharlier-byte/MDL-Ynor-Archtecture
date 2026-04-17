@@ -1,0 +1,62 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "D'",
+    "role_du_fichier": "Indexation et cartographie",
+    "centre_doctrinal_local": "point local d orientation et d acces",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "D / 03_C_MOTEURS_ET_DEPLOIEMENT"
+  },
+  "node": "05_C_PRIME_validéTION_ET_TESTS",
+  "key": "C_PRIME",
+  "mirror": "C",
+  "role": "Retour miroir par validation, stress et reproductibilite",
+  "inventory_count": 8,
+  "inventory": [
+    {
+      "source": "MDL_Ynor_Framework/tests",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/.pytest_cache",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/.uv-cache",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/.venv",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_08_EXPERIMENTS_AND_DEMOS",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_11_GEOMAGNETISM_AND_WMM",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_12_QUANT_FINANCE_MDL",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_12_QUANT_FINANCE_MODERN",
+      "status": "missing"
+    }
+  ]
+}

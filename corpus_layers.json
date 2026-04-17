@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "corpus": "MDL YNOR",
+  "policy": {
+    "primary_retrieval_layers": ["CANON", "RAG_SUPPORT"],
+    "archive_layers": ["ARCHIVES"],
+    "technical_layers": ["TECHNIQUE"],
+    "require_canonical_id": true,
+    "anti_monopoly_topk": true,
+    "max_per_canonical_id": 1,
+    "max_per_source": 1,
+    "forbid_primary_sources": [
+      "prompts",
+      "logs",
+      "wrappers",
+      "auto_audits",
+      "releases",
+      "mirrors"
+    ],
+    "retrieval_weights": {
+      "canonical": 1.0,
+      "support": 0.9,
+      "navigation": 0.75,
+      "registry": 0.85,
+      "glossary": 0.82,
+      "guide": 0.75,
+      "crosswalk": 0.72,
+      "policy": 0.8
+    }
+  },
+  "gates": {
+    "utf8_clean": true,
+    "no_archive_leak_top10": true,
+    "no_duplicate_canonical_id": true,
+    "no_production_answer_without_citation": true,
+    "no_doctrinal_use_of_technique": true,
+    "citation_stable_min": 0.9,
+    "canonical_citation_min": 0.95,
+    "top5_pertinent_min": 0.7
+  }
+}

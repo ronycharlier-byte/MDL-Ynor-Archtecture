@@ -1,0 +1,196 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "stage": "step_7_master_index",
+  "chiastic_axis": [
+    "A",
+    "B",
+    "C",
+    "X",
+    "C'",
+    "B'",
+    "A'"
+  ],
+  "node_labels": {
+    "01_A_FONDATION": "A",
+    "02_B_THEORIE_ET_PREUVES": "B",
+    "03_C_MOTEURS_ET_DEPLOIEMENT": "C",
+    "04_X_NOYAU_MEMOIRE": "X",
+    "05_C_PRIME_validéTION_ET_TESTS": "C'",
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": "B'",
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": "A'"
+  },
+  "total_entries": 6,
+  "unique_sources": 6,
+  "stage_counts": {
+    "step_1_curated_text": 6
+  },
+  "node_counts": {
+    "01_A_FONDATION": 2,
+    "02_B_THEORIE_ET_PREUVES": 2,
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 1,
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": 1
+  },
+  "family_counts": {},
+  "entries": [
+    {
+      "source": "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md",
+      "stage": "step_1_curated_text",
+      "node": "01_A_FONDATION",
+      "chiastic_symbol": "A",
+      "outputs": [
+        "../../../../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_RACINE_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md",
+      "stage": "step_1_curated_text",
+      "node": "01_A_FONDATION",
+      "chiastic_symbol": "A",
+      "outputs": [
+        "../../../../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_FRAMEWORK_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../../../../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stage": "step_1_curated_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../../../../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md",
+      "stage": "step_1_curated_text",
+      "node": "02_B_THEORIE_ET_PREUVES",
+      "chiastic_symbol": "B",
+      "outputs": [
+        "../../../../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../../../../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md",
+      "stage": "step_1_curated_text",
+      "node": "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION",
+      "chiastic_symbol": "B'",
+      "outputs": [
+        "../../../../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/05_REECRITURE_CHIASTIQUE/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_REECRITURE_CHIASTIQUE_SUBMISSION_CHECKLIST_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    },
+    {
+      "source": "../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "stage": "step_1_curated_text",
+      "node": "07_A_PRIME_ARCHIVES_ET_RELEASES",
+      "chiastic_symbol": "A'",
+      "outputs": [
+        "../../../../07_A_PRIME_ARCHIVES_ET_RELEASES/05_REECRITURE_CHIASTIQUE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_CHIASTIQUE_SOVEREIGN_MASTER_PROMPT_V3_FRACTAL_CHIASTIQUE.md"
+      ],
+      "mode": null,
+      "family": null
+    }
+  ],
+  "source_correspondence": [
+    {
+      "source": "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "01_A_FONDATION"
+      ],
+      "outputs": [
+        "../../../../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_FRAMEWORK_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../../../../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../../../../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3_FRACTAL_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "01_A_FONDATION"
+      ],
+      "outputs": [
+        "../../../../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_RACINE_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "07_A_PRIME_ARCHIVES_ET_RELEASES"
+      ],
+      "outputs": [
+        "../../../../07_A_PRIME_ARCHIVES_ET_RELEASES/05_REECRITURE_CHIASTIQUE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_CHIASTIQUE_SOVEREIGN_MASTER_PROMPT_V3_FRACTAL_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "02_B_THEORIE_ET_PREUVES"
+      ],
+      "outputs": [
+        "../../../../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3_FRACTAL_CHIASTIQUE.md"
+      ]
+    },
+    {
+      "source": "../../../../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md",
+      "stages": [
+        "step_1_curated_text"
+      ],
+      "nodes": [
+        "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+      ],
+      "outputs": [
+        "../../../../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/05_REECRITURE_CHIASTIQUE/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_REECRITURE_CHIASTIQUE_SUBMISSION_CHECKLIST_FRACTAL_CHIASTIQUE.md"
+      ]
+    }
+  ]
+}

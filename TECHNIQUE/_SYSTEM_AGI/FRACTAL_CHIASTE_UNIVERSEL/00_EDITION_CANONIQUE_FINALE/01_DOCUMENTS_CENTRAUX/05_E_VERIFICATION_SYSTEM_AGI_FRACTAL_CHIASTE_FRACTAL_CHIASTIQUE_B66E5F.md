@@ -1,0 +1,61 @@
+> **[◬] MATRICE FRACTALE MDL YNOR V2.0**
+> **Corpus :** MDL YNOR
+> **Passe de correction :** 2026-04-16
+> **Position Structurelle :** NODE
+> **Position Chiastique :** E
+> **Role du Fichier :** Indexation et cartographie
+> **Centre Doctrinal Local :** point local d orientation et d acces
+> **Loi de Survie :** μ = α - β - κ
+> **Lecture Locale :**
+> - **α :** couverture de navigation et orientation
+> - **β :** distraction et fragmentation
+> - **κ :** cout d acces et de relecture
+> **Risque :** e∞ ∝ ε / μ
+> **Operateur Correctif :** D(S)=proj_{SafeDomain}(S)
+> **Axiome :** un systeme survit SSI μ > 0
+> **Doctrine Goodhart :** tout succes apparent est invalide si μ decroit
+> **Gouvernance :** toute modification doit maximiser Δμ
+> **Lien Miroir :** E / 04_X_NOYAU_MEMOIRE
+Axe chiastique global : A -> B -> C -> X -> C' -> B' -> A'
+
+## Vue D'ensemble
+- Entrees totales : `6`
+- Sources uniques : `6`
+
+## Comptage Par Etape
+- step_1_curated_text : `6`
+
+## Comptage Par Noeud
+- A | 01_A_FONDATION : `2`
+- B | 02_B_THEORIE_ET_PREUVES : `2`
+- B' | 06_B_PRIME_GOUVERNANCE_ET_DIFFUSION : `1`
+- A' | 07_A_PRIME_ARCHIVES_ET_RELEASES : `1`
+
+## Table Centrale Des Correspondances
+../../../../05_C_PRIME_VALIDATION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/.pytest_cache/06_D_PRIME_ROOT_PYTEST_CACHE_DIRECTORY_MANIFESTE_PYTEST_CACHE_463436.md`
+  Stages : step_1_curated_text
+  Noeuds : 01_A_FONDATION
+../../../../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_FRAMEWORK_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md
+../../../../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_01_THEORY_PAPERS_COMPARATIVE_WORKS.md`
+  Stages : step_1_curated_text
+  Noeuds : 02_B_THEORIE_ET_PREUVES
+../../../../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_YNOR_FULL_CORPUS_FORMAL_SPEC_V2_3_FRACTAL_CHIASTIQUE.md
+05_E_TRANSMISSION_STEP_7_MASTER_INDEX_MASTER_INDEX_E8E07B.json`
+  Stages : step_1_curated_text
+  Noeuds : 01_A_FONDATION
+../../../../01_A_FONDATION/05_REECRITURE_CHIASTIQUE/02_B_CONSTITUTION_RACINE_VERSION_FRACTALE_CHIASTIQUE_CONSTITUTION_STRUCTURANTE_01_FONDATION_05_REECRITURE_CHIASTIQUE.md
+../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_MASTER_PROMPT_V3.txt`
+  Stages : step_1_curated_text
+  Noeuds : 07_A_PRIME_ARCHIVES_ET_RELEASES
+../../../../07_A_PRIME_ARCHIVES_ET_RELEASES/05_REECRITURE_CHIASTIQUE/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_REECRITURE_CHIASTIQUE_SOVEREIGN_MASTER_PROMPT_V3_FRACTAL_CHIASTIQUE.md
+../../../_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3.md`
+  Stages : step_1_curated_text
+  Noeuds : 02_B_THEORIE_ET_PREUVES
+../../../../02_B_THEORIE_ET_PREUVES/05_REECRITURE_CHIASTIQUE/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_CHIASTIQUE_SOVEREIGN_SCIENTIFIC_WHITE_PAPER_V3_FRACTAL_CHIASTIQUE.md
+../../../../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/01_SOURCE_IMPLANTEE/_SUBMISSIONS/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_SOURCE_IMPLANTEE_SUBMISSIONS_SUBMISSION_CHECKLIST.md`
+  Stages : step_1_curated_text
+  Noeuds : 06_B_PRIME_GOUVERNANCE_ET_DIFFUSION
+../../../../06_B_PRIME_GOUVERNANCE_ET_DIFFUSION/05_REECRITURE_CHIASTIQUE/07_C_PRIME_TRANSMISSION_B_PRIME_GOUVERNANCE_DIFFUSION_REECRITURE_CHIASTIQUE_SUBMISSION_CHECKLIST_FRACTAL_CHIASTIQUE.md
+
+## Centre
+Le centre chiastique de l'index maitre est la correspondance : chaque source retrouve sa place, son miroir et sa fermeture dans l'arche universelle.

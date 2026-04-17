@@ -1,0 +1,56 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "stage": "step_9_canonical_edition",
+  "canonical_root": "FRACTAL_CHIASTE_UNIVERSEL/00_EDITION_CANONIQUE_FINALE",
+  "copied_documents": [
+    "01_DOCUMENTS_CENTRAUX/05_E_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_CHIASTE_UNIVERSEL_EA8E9D.json",
+    "01_DOCUMENTS_CENTRAUX/05_E_VERIFICATION_SYSTEM_AGI_FRACTAL_CHIASTE_FRACTAL_CHIASTIQUE_B66E5F.md",
+    "01_DOCUMENTS_CENTRAUX/05_E_TRANSMISSION_STEP_7_MASTER_INDEX_MASTER_INDEX_E8E07B.json",
+    "01_DOCUMENTS_CENTRAUX/05_E_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_FRACTALE_CHIASTIQUE_F97AAF.md",
+    "01_DOCUMENTS_CENTRAUX/05_E_TRANSMISSION_STEP_8_VISUAL_NAVIGATION_VISUAL_NAVIGATION_B4868C.json"
+  ],
+  "total_entries": 6,
+  "unique_sources": 6,
+  "chiastic_axis": [
+    "A",
+    "B",
+    "C",
+    "X",
+    "C'",
+    "B'",
+    "A'"
+  ],
+  "node_counts": {
+    "01_A_FONDATION": 2,
+    "02_B_THEORIE_ET_PREUVES": 2,
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 1,
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": 1
+  },
+  "stage_counts": {
+    "step_1_curated_text": 6
+  },
+  "primary_portal": "05_E_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_UNIVERSEL_EDITION_CANONIQUE_FINALE_PORTAIL_CANONIQUE_FINAL.md",
+  "visual_map": "01_DOCUMENTS_CENTRAUX/05_E_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_FRACTALE_CHIASTIQUE_F97AAF.md",
+  "master_index": "01_DOCUMENTS_CENTRAUX/05_E_VERIFICATION_SYSTEM_AGI_FRACTAL_CHIASTE_FRACTAL_CHIASTIQUE_B66E5F.md",
+  "navigation_manifest": "01_DOCUMENTS_CENTRAUX/05_E_TRANSMISSION_STEP_8_VISUAL_NAVIGATION_VISUAL_NAVIGATION_B4868C.json"
+}

@@ -1,0 +1,46 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Indexation et cartographie",
+    "centre_doctrinal_local": "point local d orientation et d acces",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "node": "04_X_NOYAU_MEMOIRE",
+  "key": "X",
+  "mirror": "X",
+  "role": "Centre chiastique de connaissance, memoire et intelligence",
+  "inventory_count": 4,
+  "inventory": [
+    {
+      "source": "MDL_Ynor_Framework/_05_DATA_AND_MEMORY",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES",
+      "status": "missing"
+    },
+    {
+      "source": "../../../../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/05_E_VERIFICATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_MDL_INTELLIGENCE_REPORT.json",
+      "status": "missing"
+    },
+    {
+      "source": "MDL_Ynor_Framework/logs",
+      "status": "missing"
+    }
+  ]
+}

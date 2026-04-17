@@ -1,0 +1,113 @@
+{
+  "alert_level": "GREEN",
+  "rollback_required": false,
+  "production_ready": true,
+  "benchmark_path": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\AUDIT\\validation_long_duration_cycles\\rag_validation_long_duration_cycle_1.json",
+  "quarantine_count": 0,
+  "quarantine_examples": [],
+  "pivot_watchlist": [
+    {
+      "layer": "RAG_SUPPORT",
+      "share": 0.7,
+      "count": 28
+    },
+    {
+      "layer": "CANON",
+      "share": 0.3,
+      "count": 12
+    }
+  ],
+  "drift": {
+    "current": {
+      "queries": 40,
+      "top5_pertinent_rate": 71.0,
+      "canonical_rate": 30.0,
+      "support_rate": 70.0,
+      "archive_leak_rate": 0.0,
+      "tech_leak_rate": 0.0,
+      "other_rate": 0.0,
+      "duplicate_rate": 0.0,
+      "citation_canonical_rate": 100.0,
+      "citation_stable_rate": 100.0,
+      "no_valid_source_rate": 0.0,
+      "monopoly_violation_rate": 0.0,
+      "average_concentration": 0.2,
+      "average_score": 8.98
+    },
+    "previous": {
+      "queries": 40,
+      "top5_pertinent_rate": 72.5,
+      "canonical_rate": 29.5,
+      "support_rate": 70.5,
+      "archive_leak_rate": 0.0,
+      "tech_leak_rate": 0.0,
+      "other_rate": 0.0,
+      "duplicate_rate": 0.0,
+      "citation_canonical_rate": 100.0,
+      "citation_stable_rate": 100.0,
+      "no_valid_source_rate": 0.0,
+      "monopoly_violation_rate": 0.0,
+      "average_concentration": 0.2,
+      "average_score": 9.04
+    },
+    "reasons": [],
+    "legacy_quarantine_status": "GREEN",
+    "delta": {
+      "top5_pertinent_rate": -1.5,
+      "citation_stable_rate": 0.0,
+      "citation_canonical_rate": 0.0,
+      "support_rate": -0.5
+    }
+  },
+  "metric_views": {
+    "canonical": {
+      "queries": 20,
+      "top5_pertinent_rate": 70.0,
+      "canonical_rate": 30.0,
+      "support_rate": 70.0,
+      "archive_leak_rate": 0.0,
+      "tech_leak_rate": 0.0,
+      "other_rate": 0.0,
+      "duplicate_rate": 0.0,
+      "citation_canonical_rate": 100.0,
+      "citation_stable_rate": 100.0,
+      "no_valid_source_rate": 0.0,
+      "monopoly_violation_rate": 0.0,
+      "average_concentration": 0.2,
+      "average_score": 8.95
+    },
+    "production": {
+      "queries": 20,
+      "top5_pertinent_rate": 72.0,
+      "canonical_rate": 30.0,
+      "support_rate": 70.0,
+      "archive_leak_rate": 0.0,
+      "tech_leak_rate": 0.0,
+      "other_rate": 0.0,
+      "duplicate_rate": 0.0,
+      "citation_canonical_rate": 100.0,
+      "citation_stable_rate": 100.0,
+      "no_valid_source_rate": 0.0,
+      "monopoly_violation_rate": 0.0,
+      "average_concentration": 0.2,
+      "average_score": 9.02
+    },
+    "combined": {
+      "queries": 40,
+      "top5_pertinent_rate": 71.0,
+      "canonical_rate": 30.0,
+      "support_rate": 70.0,
+      "archive_leak_rate": 0.0,
+      "tech_leak_rate": 0.0,
+      "other_rate": 0.0,
+      "duplicate_rate": 0.0,
+      "citation_canonical_rate": 100.0,
+      "citation_stable_rate": 100.0,
+      "no_valid_source_rate": 0.0,
+      "monopoly_violation_rate": 0.0,
+      "average_concentration": 0.2,
+      "average_score": 8.98
+    }
+  },
+  "previous_alert_level": "GREEN"
+}

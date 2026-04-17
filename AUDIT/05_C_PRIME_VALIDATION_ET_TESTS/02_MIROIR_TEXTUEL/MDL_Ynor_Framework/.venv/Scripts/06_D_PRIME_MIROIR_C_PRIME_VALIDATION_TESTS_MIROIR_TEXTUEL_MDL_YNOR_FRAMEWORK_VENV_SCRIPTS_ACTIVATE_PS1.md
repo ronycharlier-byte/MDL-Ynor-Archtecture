@@ -1,0 +1,115 @@
+> **[◬] MATRICE FRACTALE MDL YNOR V2.0**
+> **Corpus :** MDL YNOR
+> **Passe de correction :** 2026-04-16
+> **Position Structurelle :** NODE
+> **Position Chiastique :** D'
+> **Role du Fichier :** Surface miroir et symetrie locale
+> **Centre Doctrinal Local :** boucle locale de reflet et de coherence
+> **Loi de Survie :** μ = α - β - κ
+> **Lecture Locale :**
+> - **α :** coherence reflexive et effet miroir
+> - **β :** derive de boucle et bruit de reflet
+> - **κ :** cout de cycle et de stabilisation
+> **Risque :** e∞ ∝ ε / μ
+> **Operateur Correctif :** D(S)=proj_{SafeDomain}(S)
+> **Axiome :** un systeme survit SSI μ > 0
+> **Doctrine Goodhart :** tout succes apparent est invalide si μ decroit
+> **Gouvernance :** toute modification doit maximiser Δμ
+> **Lien Miroir :** D / 03_C_MOTEURS_ET_DEPLOIEMENT
+# MIROIR TEXTUEL - activate.ps1
+
+Source : MDL_Ynor_Framework\.venv\Scripts\activate.ps1
+Taille : 2802 octets
+SHA256 : 6fe10a72c48d654a324299128f0863c9b4dcade6a162452ef9e93c6f3c49ef86
+
+```text
+# Copyright (c) 2020-202x The virtualenv developers
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+#
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+# LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+# OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+# WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+$script:THIS_PATH = $myinvocation.mycommand.path
+$script:BASE_DIR = Split-Path (Resolve-Path "$THIS_PATH/..") -Parent
+
+function global:deactivate([switch] $NonDestructive) {
+ if (Test-Path variable:_OLD_VIRTUAL_PATH) {
+ $env:PATH = $variable:_OLD_VIRTUAL_PATH
+ Remove-Variable "_OLD_VIRTUAL_PATH" -Scope global
+ }
+
+ if (Test-Path function:_old_virtual_prompt) {
+ $function:prompt = $function:_old_virtual_prompt
+ Remove-Item function:\_old_virtual_prompt
+ }
+
+ if ($env:VIRTUAL_ENV) {
+ Remove-Item env:VIRTUAL_ENV -ErrorAction SilentlyContinue
+ }
+
+ if ($env:VIRTUAL_ENV_PROMPT) {
+ Remove-Item env:VIRTUAL_ENV_PROMPT -ErrorAction SilentlyContinue
+ }
+
+ if (!$NonDestructive) {
+ # Self destruct!
+ Remove-Item function:deactivate
+ Remove-Item function:pydoc
+ }
+}
+
+function global:pydoc {
+ python -m pydoc $args
+}
+
+# unset irrelevant variables
+deactivate -nondestructive
+
+$VIRTUAL_ENV = $BASE_DIR
+$env:VIRTUAL_ENV = $VIRTUAL_ENV
+
+if ("mdl-ynor-framework" -ne "") {
+ $env:VIRTUAL_ENV_PROMPT = "mdl-ynor-framework"
+}
+else {
+ $env:VIRTUAL_ENV_PROMPT = $( Split-Path $env:VIRTUAL_ENV -Leaf )
+}
+
+New-Variable -Scope global -Name _OLD_VIRTUAL_PATH -Value $env:PATH
+
+$env:PATH = "$env:VIRTUAL_ENV/Scripts;" + $env:PATH
+if (!$env:VIRTUAL_ENV_DISABLE_PROMPT) {
+ function global:_old_virtual_prompt {
+ ""
+ }
+ $function:_old_virtual_prompt = $function:prompt
+
+ function global:prompt {
+ # Add the custom prefix to the existing prompt
+ $previous_prompt_value = & $function:_old_virtual_prompt
+ ("(" + $env:VIRTUAL_ENV_PROMPT + ") " + $previous_prompt_value)
+ }
+}
+
+```
+
+---
+## 🛡️ Clôture Académique & Structurelle (MDL Ynor)
+- **Principes Respectés** : Équilibre Thermodynamique de l'Information (μ = α - β - κ)
+- **Alignement** : Symétrie Chiastique & Fractalité
+- [SIGN: MDL-YNOR-RC-LIEGE-4020]

@@ -1,0 +1,23 @@
+# Sécurité & Environnement
+.env
+*.env
+BITGET/
+settings.py
+
+# API Spécifiques
+*API_REFERENCE*
+ynor_bitget.py
+*API*
+
+# Archives et Logs (Data lourde)
+*.jsonl
+*.pth
+vector_memory*.json
+ARCHIVES/
+INBOX_QUARANTAINE/
+
+# Fichiers internes et système
+__pycache__/
+*.pyc
+.obsidian/
+supreme_temp/

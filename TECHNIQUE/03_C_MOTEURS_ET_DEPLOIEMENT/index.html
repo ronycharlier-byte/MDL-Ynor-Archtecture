@@ -1,0 +1,283 @@
+<!--
+**[◬] MATRICE FRACTALE MDL YNOR V2.0**
+**Corpus :** MDL YNOR
+**Position Structurelle :** LAYER
+**Position Chiastique :** C
+**Rôle du Fichier :** Index canonique et point d'acces
+**Centre Doctrinal Local :** AI Manager garde index canonique et point d'acces en limitant le bruit local et la friction structurelle.
+**Loi de Survie :** μ = α - β - κ
+**Lecture Locale :**
+- **α :** stabilite locale
+- **β :** bruit externe injecte
+- **κ :** friction structurelle
+**Risque :** e∞ ∝ ε / μ
+**Opérateur Correctif :** D(S)=proj_{SafeDomain}(S)
+**Axiome :** un système survit SSI μ > 0
+**Doctrine Goodhart : tout succès apparent est invalide si μ décroît**
+**Gouvernance : toute modification doit maximiser Δμ**
+**Lien Miroir :** C'
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDL YNOR - Système Immunitaire des IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        :root {
+            --bg: #050505;
+            --card: rgba(20, 20, 20, 0.7);
+            --accent: #4bff4b;
+            --danger: #ff3c3c;
+            --warning: #ffb800;
+            --text: #ffffff;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+            background: radial-gradient(circle at top right, #0a1f0a 0%, #050505 50%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+            background: linear-gradient(to bottom, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+
+        .audit-box {
+            background: var(--card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        textarea {
+            width: 100%;
+            height: clamp(100px, 20vh, 200px);
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--glass);
+            border-radius: 16px;
+            color: white;
+            padding: 20px;
+            font-family: inherit;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        textarea:focus { border-color: var(--accent); }
+
+        button {
+            padding: 18px 45px;
+            border-radius: 50px;
+            background: var(--accent);
+            color: black;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background 0.3s;
+            box-shadow: 0 10px 20px rgba(75, 255, 75, 0.2);
+        }
+
+        button:hover { transform: scale(1.05); background: #6bff6b; }
+        button:disabled { background: #333; cursor: not-allowed; color: #555; }
+
+        .result-panel {
+            margin-top: 60px;
+            display: none;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .mu-circle {
+            width: 180px;
+            height: 180px;
+            border: 10px solid var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 3rem;
+            font-weight: 900;
+            box-shadow: 0 0 40px rgba(75, 255, 75, 0.1);
+        }
+
+        .mu-circle.danger { border-color: var(--danger); box-shadow: 0 0 40px rgba(255, 60, 60, 0.2); }
+        .mu-circle.warning { border-color: var(--warning); box-shadow: 0 0 40px rgba(255, 184, 0, 0.2); }
+
+        .verdict-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .diagnosis {
+            font-size: 1.2rem;
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .metric-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--glass);
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        .metric-label { font-size: 0.8rem; color: #666; font-weight: 700; margin-bottom: 10px; }
+        .metric-value { font-size: 1.4rem; font-weight: 900; color: var(--accent); }
+
+        .loader {
+            display: none;
+            margin: 20px auto;
+            border: 4px solid var(--glass);
+            border-top: 4px solid var(--accent);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        footer { margin-top: 100px; color: #444; font-size: 0.8rem; letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MDL YNOR — SOUVERAIN</h1>
+        <p class="tagline">Votre IA hallucine. Ynor vous le prouve en direct.</p>
+
+        <div class="audit-box">
+            <textarea id="promptInput" placeholder="Saisissez un texte, une rumeur ou un prompt complexe pour l'auditer..."></textarea>
+            <br>
+            <button id="auditBtn" onclick="runAudit()">LANCER L'AUDIT IMMUNITAIRE</button>
+            <div class="loader" id="loader"></div>
+        </div>
+
+        <div class="result-panel" id="resultPanel">
+            <div class="verdict-wrapper">
+                <div class="mu-circle" id="muDisplay">0.99</div>
+                <div id="verdictBadge" class="verdict-badge">SYSTÈME STABLE</div>
+                <p class="diagnosis" id="diagnosisText">La réponse est topologiquement stable et vérifiée par consensus multi-modèles.</p>
+            </div>
+
+            <div class="metrics">
+                <div class="metric-card">
+                    <div class="metric-label">ALPHA (ALIGNEMENT)</div>
+                    <div class="metric-value" id="alphaValue">0.99</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">BETA (DÉRIVE)</div>
+                    <div class="metric-value" id="betaValue">0.01</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">KAPPA (INERTIE)</div>
+                    <div class="metric-value" id="kappaValue">0.02</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 MDL YNOR - LEADER GLOBAL DE LA GOUVERNANCE IA
+        </footer>
+    </div>
+
+    <script>
+        async function runAudit() {
+            const prompt = document.getElementById('promptInput').value;
+            if (!prompt) return alert("Veuillez saisir un texte.");
+
+            const btn = document.getElementById('auditBtn');
+            const loader = document.getElementById('loader');
+            const panel = document.getElementById('resultPanel');
+
+            btn.disabled = true;
+            loader.style.display = 'block';
+            panel.style.display = 'none';
+
+            try {
+                const response = await axios.post('/api/audit', { prompt });
+                const data = response.data;
+
+                // Mise à jour de l'UI
+                const muDisplay = document.getElementById('muDisplay');
+                muDisplay.innerText = data.mu.toFixed(2);
+                
+                // Coloration selon verdict
+                muDisplay.className = 'mu-circle';
+                const badge = document.getElementById('verdictBadge');
+                if (data.verdict === 'DANGEREUX') {
+                    muDisplay.classList.add('danger');
+                    badge.style.background = 'var(--danger)'; badge.innerText = "ALERTE HALLUCINATION";
+                } else if (data.verdict === 'INCERTAIN') {
+                    muDisplay.classList.add('warning');
+                    badge.style.background = 'var(--warning)'; badge.innerText = "DÉRIVE POTENTIELLE";
+                } else {
+                    badge.style.background = 'var(--accent)'; badge.innerText = "SOUVERAINETÉ CONFIRMÉE";
+                }
+
+                document.getElementById('diagnosisText').innerText = data.explanation;
+                document.getElementById('alphaValue').innerText = data.alpha;
+                document.getElementById('betaValue').innerText = data.beta;
+                document.getElementById('kappaValue').innerText = data.kappa;
+
+                panel.style.display = 'block';
+            } catch (err) {
+                alert("Erreur de connexion : " + err);
+            } finally {
+                btn.disabled = false;
+                loader.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

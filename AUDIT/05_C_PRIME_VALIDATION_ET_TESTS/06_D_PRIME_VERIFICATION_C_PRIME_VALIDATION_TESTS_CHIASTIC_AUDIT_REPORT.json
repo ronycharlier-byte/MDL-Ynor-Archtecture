@@ -1,0 +1,37 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "LAYER",
+    "position_chiastique": "D'",
+    "role_du_fichier": "Audit chiastique et verification de structure",
+    "centre_doctrinal_local": "centre local de verification et de preuve",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "preuve exploitable et signal de verification",
+      "beta": "faux positifs et flou de mesure",
+      "kappa": "cout de test et de reprise"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "D / 03_C_MOTEURS_ET_DEPLOIEMENT"
+  },
+  "timestamp": "2026-04-07 13:52:36.070091",
+  "version": "V11.13.0",
+  "status": "STABLE",
+  "mu": 1.0,
+  "alpha": 1.0,
+  "beta": 0.0,
+  "kappa": 0.0,
+  "c_count": 26,
+  "c_prime_count": 28,
+  "delta_ratio": 0.0714,
+  "tolerance_limit": 0.15,
+  "within_tolerance": true,
+  "tolerance_ok": "OUI (dans la tolerance +/-15%)",
+  "note": "Symetrie C<->C' est SEMANTIQUE (non lexicale). C' valide les fonctions de C sans miroir de noms. Tolerance officielle : delta <= 15%."
+}

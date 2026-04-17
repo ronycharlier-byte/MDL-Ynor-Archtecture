@@ -1,0 +1,155 @@
+# **[?] MATRICE FRACTALE MDL YNOR V2.0**
+# **Corpus :** MDL YNOR
+# **Position Structurelle :** LAYER
+# **Position Chiastique :** C
+# **R?le du Fichier :** Script ou configuration declarative
+# **Centre Doctrinal Local :** AI Manager garde script ou configuration declarative en limitant le bruit d'integration et la friction structurelle.
+# **Loi de Survie :** ? = ? - ? - ?
+# **Lecture Locale :**
+# - **? :** capacite operationnelle du fichier
+# - **? :** bruit d'integration et derive de dependance
+# - **? :** friction de maintenance et complexite d'appel
+# **Risque :** e? ? ? / ?
+# **Op?rateur Correctif :** D(S)=proj_{SafeDomain}(S)
+# **Axiome :** un syst?me survit SSI ? > 0
+# **Doctrine Goodhart :** tout succ?s apparent est invalide si ? d?cro?t
+# **Gouvernance :** toute modification doit maximiser ??
+# **Lien Miroir :** C'
+
+# INSTANCIATION GLOBALE
+shield = YnorIndustrialShield()
+broker = YnorPaperBroker()
+
+def fetch_bitget_history(symbol, limit=60):
+    try:
+        bt_symbol = symbol.replace("-USD", "USDT")
+        url = f"https://api.bitget.com/api/v2/spot/market/history-candles?symbol={bt_symbol}&granularity=1min&limit={limit}"
+        res = requests.get(url, timeout=5).json()
+        if res.get('code') == '00000' and res.get('data'):
+            df = pd.DataFrame(res['data'], columns=['ts', 'Open', 'High', 'Low', 'Close', 'Vol', 'QVol'])
+            for col in ['Open', 'High', 'Low', 'Close']: df[col] = df[col].astype(float)
+            return df.iloc[::-1] # Ordre Chrono
+    except: return None
+    return None
+
+def run_live_monitor(assets=["GC=F", "UUP", "BTC-USD", "ETH-USD", "^GSPC"], interval_sec=1):
+    print(f"\n[YNOR LIVE] Surveillance Multi-Source active sur {assets}")
+    
+    try:
+        while True:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            print("="*120)
+            print(f" 🔺 YNOR STREAMING ORACLE - PHASE OMEGA ALPHA | {now_str}")
+            print("="*120)
+            print(f"{'ASSET':<12} | {'PRICE':<10} | {'MU_EXT':<8} | {'STATUS':<12} | {'ACTION':<10} | {'EXPECTED':<10} | {'STABILITY'}")
+            print("-"*120)
+            
+            # 1. FETCHING MULTI-SOURCE
+            raw_data_agg = {}
+            current_prices = {}
+            
+            # Yahoo pour Trad
+            trad_assets = [a for a in assets if "-USD" not in a]
+            y_data = yf.download(trad_assets, period="5d", interval="1m", progress=False, threads=True) if trad_assets else None
+            
+            for symbol in assets:
+                price = None
+                df_hist = None
+                
+                if "-USD" in symbol: # CRYPTO -> BITGET DIRECT
+                    df_bit = fetch_bitget_history(symbol)
+                    if df_bit is not None and not df_bit.empty:
+                        df_hist = df_bit
+                        price = float(df_bit['Close'].iloc[-1])
+                        raw_data_agg[symbol] = df_bit
+                else: # TRAD -> YAHOO
+                    try:
+                        df_y = y_data[symbol] if len(trad_assets) > 1 else y_data
+                        if df_y is not None and not df_y.empty:
+                            df_hist = df_y.dropna(subset=['Close'])
+                            if not df_hist.empty:
+                                price = float(df_hist['Close'].iloc[-1])
+                                raw_data_agg[symbol] = df_hist
+                    except: pass
+                
+                current_prices[symbol] = price
+
+            # 2. CALCUL DE RÉSONANCE GLOBALE
+            temp_audit = {}
+            avg_mu = 0
+            valid_counts = 0
+            for s in assets:
+                try:
+                    df = raw_data_agg.get(s)
+                    if df is not None and not df.empty:
+                        m, _, _, _ = shield.audit_market_segment(df.tail(20))
+                        temp_audit[s] = m
+                        avg_mu += m
+                        valid_counts += 1
+                except: pass
+            
+            final_avg_mu = (avg_mu / valid_counts) if valid_counts > 0 else 1.0
+            if final_avg_mu < 0.6:
+                print(f"\n !!! [STASIS] RÉSONANCE GLOBALE FAIBLE ({final_avg_mu:.2f}) !!!")
+                time.sleep(5); continue
+
+            # 3. Audit & Trade loop
+            current_prices_clean = {s: v for s, v in current_prices.items() if v is not None}
+            for symbol in assets:
+                p_val = current_prices.get(symbol)
+                p_str = f"{p_val:.2f}" if p_val else "N/A"
+                df_h = raw_data_agg.get(symbol)
+                
+                if p_val is None or df_h is None or len(df_h) < 5:
+                    print(f"{symbol:<12} | {p_str:<10} | N/A      | SEARCHING... | N/A        | N/A        | [NO DATA]")
+                    continue
+                
+                try:
+                    mu, sk, ku, ant = shield.audit_market_segment(df_h.tail(20))
+                    expected, var = shield.run_monte_carlo_sim(df_h.tail(20))
+                    action = broker.execute_logic(symbol, p_val, mu, expected, shield, df_h.tail(20))
+
+                    status = "SOUVERAIN" if mu > 0.8 else ("VIGILANCE" if mu > 0.5 else "CRITICAL")
+                    bar_len = int(mu * 20)
+                    bar = f"[{'#' * (max(0, bar_len))}{'-' * (max(0, 20 - bar_len))}]"
+                    print(f"{symbol:<12} | {p_val:<10.2f} | {mu:<8.2f} | {status:<12} | {action:<10} | {expected:<10.2f} | {bar}")
+                except Exception as e:
+                    print(f"{symbol:<12} | {p_str:<10} | ERR      | CALC_ERROR   | N/A        | N/A        | [RETRYING]")
+
+            # Portfolio Display
+            total_val = broker.get_total_value(current_prices_clean)
+            pnl = total_val - 100000.0
+            wr = (broker.wins / broker.total_trades * 100) if broker.total_trades > 0 else 0
+            print("-" * 120)
+            print(f" PORTFOLIO : {total_val:,.2f} $ | PnL : {pnl:+,.2f} $ | WIN RATE : {wr:.1f}% {'🎯' if wr > 80 else ''}")
+            if broker.trade_log:
+                print(f" LAST ACTION : {broker.trade_log[-1]}")
+            print("-" * 120)
+            
+            # Logger (Safe Check)
+            try:
+                if any(temp_audit.get(s, 1.0) < 0.5 for s in assets):
+                    archive_path = "c:/Users/ronyc/Desktop/MDL Ynor/07_A_PRIME_ARCHIVES_ET_RELEASES"
+                    log_file = f"{archive_path}/ALPHA_ALERT_{datetime.now().strftime('%Y%m%d_%H%M')}.txt"
+                    with open(log_file, "w", encoding="utf-8") as f:
+                        f.write(f"--- YNOR STRATEGIC ARCHIVE ---\nDate: {now_str}\n")
+                        for s in assets:
+                            f.write(f"Asset: {s} | mu: {temp_audit.get(s, 1.0):.2f}\n")
+            except: pass
+
+            time.sleep(interval_sec)
+
+    except KeyboardInterrupt: print("\n[YNOR] Interrompu.")
+    except Exception as e:
+        print(f"\n[ERREUR LIVE] {e}")
+        time.sleep(5)
+
+if __name__ == "__main__":
+    try:
+        run_live_monitor()
+    except Exception as e:
+        print(f"\n[ERREUR FATALE] {e}")
+    finally:
+        print("\n" + "="*60)
+        input("Session YNOR terminée. Appuyez sur ENTRÉE pour fermer...")
