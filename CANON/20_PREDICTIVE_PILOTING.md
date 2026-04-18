@@ -4,26 +4,34 @@ status: canonical
 canonical_id: MDLYNOR-CANON-020
 concept_id: MDLYNOR.CONCEPT.PREDICTIVE_PILOTING
 citation_id: MDLYNOR-CANON-020
-document_role: answer_card
+document_role: predictive-piloting
 retrieval_weight: 1.08
 ---
 
 # Predictive Piloting
 
-Query anchors:
-- Signaux faibles et detection avancee.
-- Pilotage dissipatif unifie et boucle d anticipation.
+Early warning:
+- weak signals are detected by tracking `dot mu(t) < 0` on a pre-registered window.
 
-Question:
-- What is the predictive piloting and the unified audit loop?
+Loop:
+- `S(t) -> O(t) -> I(t) -> A(t) -> S(t + Delta t)`
 
-Answer:
-- Detection of weak signals relies on tracking early $\mu$ derivative drops $\dot{\mu}(t) < 0$.
-- The piloting loop operates dynamically: $S(t) \to O(t) \to I(t) \to A(t) \to S(t+\Delta t)$.
-- Global audit state is framed as $A_{global} : S(t) \to (\mu(t), \dot{\mu}(t), R(t), S(t))$.
+Meaning:
+- `O` = observe;
+- `I` = interpret;
+- `A` = act;
+- `S` = state update.
 
-Definition:
-- Unified Piloting = Using anticipatory bounds to trigger operator $D$ before actual saturation occurs.
+Rule:
+- trigger `D` before saturation occurs.
+- pilot the margin `mu`, not the signal surface.
 
-Operational reading:
-- Anticipate, do not react. Pilot the margin $\mu$, not the signal.
+Validation note:
+- separate calibration from validation and do not reuse the same window for both.
+- keep a final untouched test set for the final claim.
+- if the trigger threshold is tuned after observing outcomes, the trigger is not a validated rule.
+
+Failure criteria:
+- `mu` improves only in-sample but not out-of-sample;
+- `dot mu` predicts nothing beyond random drift;
+- the operator `D` reduces risk in one setting while increasing leakage or brittleness elsewhere.

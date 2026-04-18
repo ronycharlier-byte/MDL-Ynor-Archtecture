@@ -3,6 +3,9 @@ layer: TECHNIQUE
 status: technical
 canonical_id: MDLYNOR-TECH-002
 concept_id: MDLYNOR.TECHNOLOGY.GATES
+citation_id: MDLYNOR-TECH-002
+document_role: gate-spec
+retrieval_weight: 0.08
 ---
 
 # Gate spec
@@ -14,3 +17,4 @@ Required gates:
 - zero concept with two canonical sources
 - zero production answer without canonical citation
 - zero prompt, log, wrapper, or auto-audit promoted to doctrine
+- zero technical artefact promoted to canonical authority

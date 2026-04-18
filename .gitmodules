@@ -1,0 +1,3 @@
+[submodule "TECHNIQUE/supreme_bot_deploy"]
+	path = TECHNIQUE/supreme_bot_deploy
+	url = https://github.com/ronycharlier-byte/ynor-supreme-bot.git

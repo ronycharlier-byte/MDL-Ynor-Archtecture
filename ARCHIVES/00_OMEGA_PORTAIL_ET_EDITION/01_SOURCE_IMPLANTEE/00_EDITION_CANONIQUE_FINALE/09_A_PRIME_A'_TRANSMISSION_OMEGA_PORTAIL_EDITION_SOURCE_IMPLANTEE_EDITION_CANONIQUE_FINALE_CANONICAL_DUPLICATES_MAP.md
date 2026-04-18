@@ -1,0 +1,264 @@
+> **[◬] MATRICE FRACTALE MDL YNOR V2.0**
+> **Corpus :** MDL YNOR
+> **Passe de correction :** 2026-04-16
+> **Position Structurelle :** MODULE
+> **Position Chiastique :** A'
+> **Role du Fichier :** Transmission et interface
+> **Centre Doctrinal Local :** canal local de diffusion et de synchronisation
+> **Loi de Survie :** μ = α - β - κ
+> **Lecture Locale :**
+> - **α :** portee de diffusion et memoisation utile
+> - **β :** perte de fidelite et dispersion
+> - **κ :** cout de packaging et de synchronisation
+> **Risque :** e∞ ∝ ε / μ
+> **Operateur Correctif :** D(S)=proj_{SafeDomain}(S)
+> **Axiome :** un systeme survit SSI μ > 0
+> **Doctrine Goodhart :** tout succes apparent est invalide si μ decroit
+> **Gouvernance :** toute modification doit maximiser Δμ
+> **Lien Miroir :** A / 00_OMEGA_PORTAIL_ET_EDITION
+STATUS: CANONICAL | V11.14.0 | AUDIT: CERTIFIED | CONSOLIDATION MAP / V11.14.0
+
+---
+
+# CANONICAL DUPLICATES MAP YNOR
+
+## Purpose
+
+Map exact duplicate groups onto a single canonical representative so the corpus can be read as one structure instead of multiple mirrored copies.
+
+## Selection Rule
+
+- Prefer the canonical edition or technical core when a duplicate exists.
+- Otherwise prefer the shortest stable source path.
+- Keep all other exact copies as archive references, not primary navigation.
+
+## Summary
+
+- Historical exact duplicate groups resolved during consolidation: `35`
+- Historical duplicate files covered: `76`
+- Current full-tree exact duplicate groups: `0`
+- Current full-tree duplicate files: `0`
+- Physical hardlink consolidation was applied to the safest documentary duplicates before the final cleanup pass.
+
+## Current State
+
+- The repository scan currently shows no remaining exact duplicate files in the visible corpus.
+- This document is therefore an archival map of the consolidation work, not a live duplicate inventory.
+
+## Canonical Mapping
+
+### Group 1 (7 files)
+
+- Canonical: `01_TECHNICAL_CORE/PROTOCOLES_YNOR.md`
+- Mirrors:
+ - `01_TECHNICAL_CORE/PROTOCOLES_PAR_AXE_YNOR.md`
+ - `01_TECHNICAL_CORE/PROTOCOLES_SOUS_AXES_YNOR.md`
+ - `01_TECHNICAL_CORE/PROTOCOLES_SECONDAIRES_YNOR.md`
+ - `01_TECHNICAL_CORE/PROTOCOLES_FONDAMENTAUX_YNOR.md`
+ - `01_TECHNICAL_CORE/PROTOCOLES_SOUS_SOUS_AXES_YNOR.md`
+ - `01_TECHNICAL_CORE/PROTOCOLES_SOUS_SOUS_SOUS_AXES_YNOR.md`
+
+### Group 2 (3 files)
+
+- Canonical: `01_TECHNICAL_CORE/AXIOMES_YNOR.md`
+- Mirrors:
+ - `01_TECHNICAL_CORE/AXIOMES_SECONDAIRES_YNOR.md`
+ - `01_TECHNICAL_CORE/AXIOMES_FONDAMENTAUX_YNOR.md`
+
+### Group 3 (2 files)
+
+- Canonical: `01_A_FONDATION/YNOR_KNOWLEDGE_SEED_V11_13_5/GPT_CUSTOM_INSTRUCTIONS_V11_13_5.txt`
+- Mirrors:
+ - `01_A_FONDATION/YNOR_KNOWLEDGE_SEED_V11_10_12/GPT_CUSTOM_SYSTEM_PROMPT_V11_10_12.txt`
+
+### Group 4 (2 files)
+
+- Canonical: `01_A_FONDATION/YNOR_KNOWLEDGE_SEED_V11_13_5/GPT_SPEC_API_V11_13_5.json`
+- Mirrors:
+ - `01_A_FONDATION/YNOR_KNOWLEDGE_SEED_V11_10_12/GPT_SPEC_API_V11_10_15.json`
+
+### Group 5 (2 files)
+
+- Canonical: `01_A_FONDATION/YNOR_KNOWLEDGE_SEED_V11_9_3/GPT_SPEC_API_V11_8.yaml`
+- Mirrors:
+ - `01_A_FONDATION/YNOR_KNOWLEDGE_SEED_V11_10_12/GPT_SPEC_API_V11_8.yaml`
+
+### Group 6 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/_RELEASES/GOLDEN_MASTER_PHASE_III/Sovereign_Global_Knowledge.json`
+- Mirrors:
+ - `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/Sovereign_Global_Knowledge.json`
+
+### Group 7 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_Ynor_Dynamic_Systems_Paper.tex`
+- Mirrors:
+ - `04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/MDL_Ynor_Dynamic_Systems_Paper.tex`
+
+### Group 8 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_MILLENNIUM_DISSIPATIVE_STABILITY.tex`
+- Mirrors:
+ - `03_C_MOTEURS_ET_DEPLOIEMENT/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/MDL_GPT_KNOWLEDGE_PRODUCTION/MDL_YNOR_MILLENNIUM_DISSIPATIVE_STABILITY.tex`
+
+### Group 9 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_Ynor_NeurIPS_Submission.tex`
+- Mirrors:
+ - `04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_10_YNOR_AI_KNOWLEDGE_BASE_SOURCES/MDL_Ynor_NeurIPS_Submission.tex`
+
+### Group 10 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_I_II.tex`
+- Mirrors:
+ - `03_C_MOTEURS_ET_DEPLOIEMENT/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/MDL_GPT_KNOWLEDGE_PRODUCTION/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_I_II.tex`
+
+### Group 11 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_01_THEORY_AND_PAPERS/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_III.tex`
+- Mirrors:
+ - `03_C_MOTEURS_ET_DEPLOIEMENT/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/MDL_GPT_KNOWLEDGE_PRODUCTION/MDL_YNOR_POST_MILLENNIUM_REPORT_PHASE_III.tex`
+
+### Group 12 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/GLOSSAIRE_MDL_SIMPLE.txt`
+- Mirrors:
+ - `03_C_MOTEURS_ET_DEPLOIEMENT/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/MDL_YNOR_GPT_KNOWLEDGE/GLOSSAIRE_MDL_SIMPLE.txt`
+
+### Group 13 (2 files)
+
+- Canonical: `02_B_THEORIE_ET_PREUVES/index_meta.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/MDL_YNOR_V7_1_DISTRIBUTION/index_meta.json`
+
+### Group 14 (2 files)
+
+- Canonical: `04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/mdl_global_knowledge.json`
+- Mirrors:
+ - `03_C_MOTEURS_ET_DEPLOIEMENT/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/MDL_GPT_KNOWLEDGE_PRODUCTION/mdl_global_knowledge.json`
+
+### Group 15 (2 files)
+
+- Canonical: `04_X_NOYAU_MEMOIRE/YNOR_MARKET_DYNAMICS_NEXUS/logos_engine/oracles/TODO.md`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/MDL_YNOR_V7_1_DISTRIBUTION/YNOR_MARKET_DYNAMICS_NEXUS/logos_engine/oracles/TODO.md`
+
+### Group 16 (2 files)
+
+- Canonical: `04_X_NOYAU_MEMOIRE/YNOR_MARKET_DYNAMICS_NEXUS/requirements.txt`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/MDL_YNOR_V7_1_DISTRIBUTION/YNOR_MARKET_DYNAMICS_NEXUS/requirements.txt`
+
+### Group 17 (2 files)
+
+- Canonical: `04_X_NOYAU_MEMOIRE/YNOR_MARKET_DYNAMICS_NEXUS/YNOR_MANIFEST_V11_7.md`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/MDL_YNOR_V7_1_DISTRIBUTION/YNOR_MARKET_DYNAMICS_NEXUS/YNOR_MANIFEST_V11_7.md`
+
+### Group 18 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/mdl_global_knowledge.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/mdl_global_knowledge.json`
+
+### Group 19 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_FINAL_DIST/ynor_node_5775e09f.md`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/YNOR_USER_GUIDE.md`
+
+### Group 20 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/DATA_PROVENANCE.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/DATA_PROVENANCE.json`
+
+### Group 21 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/GPT_ACTION_SCHEMA.yaml`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_FINAL_DIST/ynor_node_b2fc5604.yaml`
+
+### Group 22 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/MDL_YNOR_CONTRAT_LICENCE.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/MDL_YNOR_CONTRAT_LICENCE.json`
+
+### Group 23 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/mdl_ynor_manifesto_governance.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/mdl_ynor_manifesto_governance.json`
+
+### Group 24 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/MU_SPECIFICATION_ABSTRACT.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/MU_SPECIFICATION_ABSTRACT.json`
+
+### Group 25 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/TEST_COVERAGE_REPORT.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/TEST_COVERAGE_REPORT.json`
+
+### Group 26 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/YNOR_AUDIT_TEMPLATES.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/YNOR_AUDIT_TEMPLATES.json`
+
+### Group 27 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_UPLOAD_V3/YNOR_OPERATIONAL_HANDBOOK.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_DISTS_AND_RELEASES/MDL_YNOR_GPT_ULTIMATE_UPLOAD_V17/YNOR_OPERATIONAL_HANDBOOK.json`
+
+### Group 28 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/GPT_CUSTOM_ACTION_SPEC_V11_5.json`
+- Mirrors:
+ - `07_A_PRIME_ARCHIVES_ET_RELEASES/MDL_YNOR_V7_1_DISTRIBUTION/SPECIFICATION_ACTION_API.json`
+
+### Group 29 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/GPT_CUSTOM_ACTION_SPEC_V11_5.yaml`
+- Mirrors:
+ - `01_A_FONDATION/YNOR_KNOWLEDGE_SEED/GPT_CUSTOM_ACTION_SPEC_V11_5.yaml`
+
+### Group 30 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/manifest_step2_bulk_rewrite.json`
+- Mirrors:
+ - `00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/manifest_step2_bulk_rewrite.json`
+
+### Group 31 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/manifest_step3_json_rewrite.json`
+- Mirrors:
+ - `00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/manifest_step3_json_rewrite.json`
+
+### Group 32 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/manifest_step4_pdf_latex_augmented.json`
+- Mirrors:
+ - `00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/manifest_step4_pdf_latex_augmented.json`
+
+### Group 33 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/manifest_step5_constitution_pdf_augmented.json`
+- Mirrors:
+ - `00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/manifest_step5_constitution_pdf_augmented.json`
+
+### Group 34 (2 files)
+
+- Canonical: `07_A_PRIME_ARCHIVES_ET_RELEASES/manifest_step6_legal_admin_pdf_augmented.json`
+- Mirrors:
+ - `00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/manifest_step6_legal_admin_pdf_augmented.json`
+
+### Group 35 (2 files)
+
+09_A_PRIME_A'_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_EDITION_CANONIQUE_FINALE_CANONICAL_DUPLICATES_MAP.md`
+- Mirrors:
+ - `MDL_YNOR_PACK_GPT_CUSTOM/PACK_GPT_CUSTOM.md`

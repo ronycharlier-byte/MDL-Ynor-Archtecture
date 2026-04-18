@@ -1,0 +1,67 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "A'",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "A / 00_OMEGA_PORTAIL_ET_EDITION"
+  },
+  "stage": "step_12_submission_pack",
+  "submission_root": "FRACTAL_Symtrie Bilatrale_UNIVERSEL/00_ACADEMIC_SUBMISSION",
+  "inputs": {
+    "public_brief": "FRACTAL_Symtrie ../../../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json",
+    "executive_digest": "FRACTAL_Symtrie ../../../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json",
+    "canonical_edition": "FRACTAL_Symtrie ../../04_INDEX/01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json"
+  },
+  "outputs": {
+    "final_manuscript": "FRACTAL_Symtrie 09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_ACADEMIC_SUBMISSION_MANUSCRIT_FINAL.md",
+    "cover_letter": "FRACTAL_Symtrie 09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_ACADEMIC_SUBMISSION_LETTRE_COUVERTURE.md",
+    "journal_targeting": "FRACTAL_Symtrie 09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_ACADEMIC_SUBMISSION_JOURNAL_TARGETING.md",
+    "submission_metadata": "FRACTAL_Symtrie 09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_ACADEMIC_SUBMISSION_METADONNEES_SOUMISSION.md",
+    "submission_summary": "FRACTAL_Symtrie 09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_ACADEMIC_SUBMISSION_RESUME_SOUMISSION.md",
+    "delivery_map": "FRACTAL_Symtrie 09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_ACADEMIC_SUBMISSION_STRUCTURE_LIVRAISON.md",
+    "manifest": "FRACTAL_Symtrie ../../../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json"
+  },
+  "stats": {
+    "total_entries": 127,
+    "unique_sources": 117,
+    "chiastic_axis": [
+      "A",
+      "B",
+      "C",
+      "X",
+      "C'",
+      "B'",
+      "A'"
+    ],
+    "stage_counts": {
+      "step_1_curated_text": 6,
+      "step_2_bulk_text": 59,
+      "step_3_json": 22,
+      "step_4_latex_pdf": 7,
+      "step_5_constitution_pdf": 9,
+      "step_6_legal_pdf": 24
+    },
+    "node_counts": {
+      "01_A_FONDATION": 2,
+      "02_B_THEORIE_ET_PREUVES": 43,
+      "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 43,
+      "07_A_PRIME_ARCHIVES_ET_RELEASES": 31,
+      "04_X_NOYAU_MEMOIRE": 9
+    }
+  }
+}

@@ -30,6 +30,14 @@ Canonical anchors:
 - `operator D` -> `MDLYNOR-CANON-011`
 - Goodhart -> `MDLYNOR-CANON-012`
 - Stability regimes -> `MDLYNOR-CANON-013`
+- Canonical identifiers -> `MDLYNOR-CANON-014`
+- Layer architecture -> `MDLYNOR-CANON-015`
+- Theory / constitution / governance -> `MDLYNOR-CANON-016`
+- Scientific validation -> `MDLYNOR-CANON-017`
+- Mathematical topology -> `MDLYNOR-CANON-018`
+- Empirical measurement -> `MDLYNOR-CANON-019`
+- Predictive piloting -> `MDLYNOR-CANON-020`
+- Cognitive extensions -> `MDLYNOR-CANON-021`
 
 Query anchors:
 - Quelle couche repond a une question doctrinale ?

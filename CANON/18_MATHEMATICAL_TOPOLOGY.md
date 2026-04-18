@@ -4,27 +4,20 @@ status: canonical
 canonical_id: MDLYNOR-CANON-018
 concept_id: MDLYNOR.CONCEPT.MATHEMATICAL_TOPOLOGY
 citation_id: MDLYNOR-CANON-018
-document_role: answer_card
+document_role: math-topology
 retrieval_weight: 1.08
 ---
 
 # Mathematical Topology
 
-Query anchors:
-- Espace dynamique dissipatif et bifurcations.
-- Invariants, attracteurs et fermeture spatiale.
+State map:
+- `S(t)` is the state in a real Hilbert space.
+- `C(theta) = (mu(theta), Gamma(theta), Pi(theta))` is a local classification map.
 
-Question:
-- How are attractors and critical transitions mapped in the state space?
+Topological reading:
+- attractors appear when the state remains in a stable basin;
+- critical transitions appear when `mu` approaches zero or `dot mu` turns negative;
+- `F = (mu, Sigma, Lambda)` is a closure convention, not a universal theorem.
 
-Answer:
-- Attractors emerge in the structural configuration where $\mu = 0$ bounded.
-- Critical bifurcations occur when the gradient $\nabla \mu$ signals a regime shift.
-- The closure of the system is represented by the triad $F = (\mu, \Sigma, \Lambda)$.
-
-Definition:
-- Dissipative space = The local geometry mapping $C(\theta) = (\mu(\theta), \Gamma(\theta), \Pi(\theta))$.
-
-Operational reading:
-- $\mu > 0$ defines the basin of attraction.
-- $\nabla \mu < 0$ defines approaching criticality.
+Rule:
+- keep the topology tied to observable regime shifts, not to decorative notation.

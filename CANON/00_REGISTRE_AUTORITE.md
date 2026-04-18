@@ -11,20 +11,15 @@ retrieval_weight: 0.30
 # Registre d autorite
 
 Role:
-- Le registre d autorite route les questions vers la bonne feuille canonique.
-- Il ne doit jamais servir de preuve doctrinale de premier rang.
-- Il existe pour decompacter le pivot et forcer la lecture des unites fines.
-
-Query anchors:
-- Quel est le role du registre d autorite ?
-- Quelle couche repond a une question doctrinale ?
-- Quel est le comportement attendu des doublons non canoniques ?
+- Route questions to the correct canonical sheet.
+- Never replace doctrine with the registry hub.
+- Force reading of the smallest stable unit.
 
 Rules:
 - One concept = one canonical source.
 - One citation_id = one resolvable target.
 - Competing authority views are archives or derivatives.
-- Do not answer doctrine from the registry hub when a dedicated sheet exists.
+- If a dedicated sheet exists, do not answer doctrine from the registry hub.
 
 Shards:
 - `00_REGISTRE_AUTORITE_01_PORTAIL.md`
@@ -47,3 +42,8 @@ Canonical anchors:
 - Canonical ids -> `MDLYNOR-CANON-014`
 - Layers -> `MDLYNOR-CANON-015`
 - Theory / constitution / governance -> `MDLYNOR-CANON-016`
+- Scientific validation -> `MDLYNOR-CANON-017`
+- Mathematical topology -> `MDLYNOR-CANON-018`
+- Empirical measurement -> `MDLYNOR-CANON-019`
+- Predictive piloting -> `MDLYNOR-CANON-020`
+- Cognitive extensions -> `MDLYNOR-CANON-021`

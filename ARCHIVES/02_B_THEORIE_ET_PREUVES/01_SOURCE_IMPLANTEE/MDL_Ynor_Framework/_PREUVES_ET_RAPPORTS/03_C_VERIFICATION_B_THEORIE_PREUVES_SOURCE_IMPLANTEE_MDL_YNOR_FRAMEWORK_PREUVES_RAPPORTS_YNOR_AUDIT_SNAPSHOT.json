@@ -1,0 +1,41 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "C",
+    "role_du_fichier": "Audit et verification",
+    "centre_doctrinal_local": "centre local de verification et de preuve",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "preuve exploitable et signal de verification",
+      "beta": "faux positifs et flou de mesure",
+      "kappa": "cout de test et de reprise"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "C' / 06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+  },
+  "architecture": "MDL Ynor",
+  "timestamp": "2026-03-20T09:58:20.157100",
+  "state": {
+    "S": [
+      2.0,
+      2.0
+    ],
+    "dimension": 2
+  },
+  "coefficients": {
+    "alpha": 0.5,
+    "beta": 1.5,
+    "kappa": 0.0
+  },
+  "result": {
+    "mu": -1.0,
+    "regime": "INSTABLE"
+  }
+}

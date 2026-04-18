@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "MDLYNOR_EXTVAL_SNAPSHOT_2026-04-18",
+  "protocol_ref": "AUDIT/99_Z_VALIDATION_PROTOCOL_EXTENDED.md",
+  "split_manifest_ref": "AUDIT/split_manifest.json",
+  "seed_ref": "AUDIT/seed_log.json",
+  "item_id_format": "normalized relative path from the corpus root using forward slashes",
+  "selection_method": "stable_sha256_order",
+  "selection_expression": "sha256(snapshot_id|split_seed|scope|relative_path)",
+  "universes": {
+    "internal": {
+      "scope": [
+        "CANON",
+        "RAG_SUPPORT"
+      ],
+      "allowed_extensions": [
+        ".md",
+        ".json",
+        ".jsonl",
+        ".jsonld"
+      ],
+      "excluded_names": [
+        "README.md"
+      ],
+      "candidate_count": 47,
+      "candidate_sha256": "7960b8e82a217134e3694395b780ca3c0d2e9e703e94ae603ee2000e24cfabdd",
+      "selected_count": 40,
+      "selected_sha256": "d3501a94bc283798743ec6013fd95aba7e79f3fc26574b1c5c6349e653c690f8",
+      "partition": {
+        "J_cal": {
+          "offset": 0,
+          "count": 10
+        },
+        "J_val": {
+          "offset": 10,
+          "count": 10
+        },
+        "J_test": {
+          "offset": 20,
+          "count": 20
+        }
+      },
+      "notes": [
+        "The internal split is one deterministic permutation sliced into three disjoint blocks.",
+        "Seven internal candidates remain unassigned by design."
+      ]
+    },
+    "E1": {
+      "scope": [
+        "ARCHIVES/00_OMEGA_PORTAIL_ET_EDITION/01_SOURCE_IMPLANTEE"
+      ],
+      "allowed_extensions": [
+        ".md",
+        ".json",
+        ".jsonl",
+        ".jsonld"
+      ],
+      "excluded_names": [
+        "README.md"
+      ],
+      "candidate_count": 192,
+      "candidate_sha256": "8940bf49ca449d394efaf29e5f692f74b04777654099be0b4367d707fd0b542f",
+      "selected_count": 40,
+      "selected_sha256": "cf292eed4a85ab45795264a21110c71efd629b8cb9af4b654d7ef801b7c0685b",
+      "partition": {
+        "offset": 0,
+        "count": 40
+      }
+    },
+    "E2": {
+      "scope": [
+        "TECHNIQUE/_SYSTEM_AGI/FRACTAL_CHIASTE_UNIVERSEL"
+      ],
+      "allowed_extensions": [
+        ".md",
+        ".json",
+        ".jsonl",
+        ".jsonld"
+      ],
+      "excluded_names": [
+        "README.md"
+      ],
+      "candidate_count": 42,
+      "candidate_sha256": "6054b61c9f87716a1aa38721557028d42006eb76c52ff7b5938c49d5fa8fb0df",
+      "selected_count": 40,
+      "selected_sha256": "010dd4f3cc439f3d964f45a7a9a50b7a4b0643c699778b2d5088da15fb978d80",
+      "partition": {
+        "offset": 0,
+        "count": 40
+      }
+    }
+  },
+  "disjointness_policy": "Internal groups are disjoint by slicing one permutation. E1 and E2 are disjoint by using distinct universes. If a candidate path collides across universes, the later universe drops it and logs the collision.",
+  "artifact_contracts": {
+    "packet_schema_ref": "AUDIT/99_Z_BLIND_ANNOTATION_PACKET_SCHEMA.json",
+    "run_output_schema_ref": "AUDIT/99_Z_RUN_OUTPUT_SCHEMA.json",
+    "final_report_template_ref": "AUDIT/99_Z_FINAL_VALIDATION_REPORT_TEMPLATE.md"
+  },
+  "notes": [
+    "This policy does not redefine doctrine, thresholds, or protocol structure.",
+    "It only explains how real item ids are minted from the frozen snapshot."
+  ]
+}

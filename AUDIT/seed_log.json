@@ -1,0 +1,82 @@
+{
+  "snapshot_id": "MDLYNOR_EXTVAL_SNAPSHOT_2026-04-18",
+  "protocol_ref": "AUDIT/99_Z_VALIDATION_PROTOCOL_EXTENDED.md",
+  "randomization_policy": "Deterministic, snapshot-bound, and replayable. Each seed is derived from SHA-256(snapshot_id|seed_name) and fixed before first exposure to labels or the test final untouched.",
+  "seeds": {
+    "split_seed": 309682001,
+    "bootstrap_seed": 2760944122,
+    "perturbation_seed": 420979799,
+    "annotation_order_seed": 2247239027,
+    "ablation_seed": 1993504975
+  },
+  "window_policy": {
+    "calibration": "10-case window on J_cal.",
+    "validation": "10-case window on J_val.",
+    "test_final": "20-case window on J_test, opened once.",
+    "external": "40-case window on each of E1 and E2.",
+    "aggregation": "Block-level aggregation over 40 cases.",
+    "reseed": "No reseed after J_test is opened."
+  },
+  "sampler_policy": {
+    "split_sampler": "Deterministic, without replacement, with frozen item order.",
+    "bootstrap_sampler": "Fixed-seed bootstrap with replacement.",
+    "annotation_sampler": "Anonymized packets in seed-controlled order.",
+    "perturbation_sampler": "Pre-registered family and epsilon grid only.",
+    "ablation_sampler": "Same item order and same seed as baseline."
+  },
+  "rerun_policy": {
+    "allowed": [
+      "Replay with identical seeds.",
+      "Replay with identical item order.",
+      "Replay after environment repair when inputs are unchanged."
+    ],
+    "forbidden": [
+      "New seeds after observation.",
+      "Relabeling after the fact.",
+      "Reshuffling J_test.",
+      "Retuning thresholds or hypotheses."
+    ]
+  },
+  "allowed_variants": [
+    "baseline",
+    "bootstrap",
+    "pre_registered_ablation",
+    "pre_registered_perturbation",
+    "blind_external_validation_E1",
+    "blind_external_validation_E2",
+    "replication_consistency_check"
+  ],
+  "forbidden_posthoc_adjustments": [
+    "seed replacement",
+    "split replacement",
+    "threshold drift",
+    "hypothesis drift",
+    "post-hoc exclusion of difficult cases",
+    "reordering after outcome visibility"
+  ],
+  "execution_order": [
+    "Freeze the snapshot and verify hashes.",
+    "Materialize split packets using split_seed.",
+    "Calibrate on J_cal.",
+    "Validate on J_val.",
+    "Run pre-registered ablations on J_cal and J_val only.",
+    "Open J_test once and keep it untouched.",
+    "Run blind external validation on E1 and E2.",
+    "Run pre-registered perturbations.",
+    "Archive all logs and outputs."
+  ],
+  "audit_trail_requirements": {
+    "log_seed_values": true,
+    "log_item_order": true,
+    "log_environment": true,
+    "log_hashes": true,
+    "log_run_parameters": true,
+    "retain_annotation_logs": true,
+    "retain_adjudication_logs": true,
+    "retain_replay_path": true
+  },
+  "notes": [
+    "Seed derivation is deterministic and snapshot-bound.",
+    "All post hoc adjustments are forbidden; any rerun must reuse the recorded seeds."
+  ]
+}

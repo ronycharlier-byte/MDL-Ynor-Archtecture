@@ -1,22 +1,27 @@
-# Sécurité & Environnement
+# Security & environment
 .env
 *.env
 BITGET/
 settings.py
 
-# API Spécifiques
+# API-specific
 *API_REFERENCE*
 ynor_bitget.py
 *API*
 
-# Archives et Logs (Data lourde)
-*.jsonl
+# Large generated artefacts and machine outputs
 *.pth
 vector_memory*.json
-ARCHIVES/
-INBOX_QUARANTAINE/
+*.zip
+*.npy
+*.bin
+*.log
+*.out
+*.exe
+*.tmp
+server_pids.json
 
-# Fichiers internes et système
+# Internal files and system caches
 __pycache__/
 *.pyc
 .obsidian/

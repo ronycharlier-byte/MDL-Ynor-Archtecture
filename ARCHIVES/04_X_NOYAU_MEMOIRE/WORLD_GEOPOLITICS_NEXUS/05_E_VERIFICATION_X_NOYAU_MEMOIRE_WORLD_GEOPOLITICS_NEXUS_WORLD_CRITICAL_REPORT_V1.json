@@ -1,0 +1,162 @@
+[
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "MODULE",
+      "position_chiastique": "E",
+      "role_du_fichier": "Audit et verification",
+      "centre_doctrinal_local": "centre local de verification et de preuve",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "preuve exploitable et signal de verification",
+        "beta": "faux positifs et flou de mesure",
+        "kappa": "cout de test et de reprise"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+    },
+    "region": "AFRICA",
+    "mu": 0.35,
+    "indicators": {
+      "RSI": 37.23,
+      "MACD": -0.15,
+      "Entropy": 0.65
+    },
+    "verdict": "⚠️ BRUIT DIPLOMATIQUE (Fragilité)",
+    "analysis": "La zone AFRICA présente un RSI de 37.23. Stabilité médiane. Dépendance aux flux externes de résonance."
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "MODULE",
+      "position_chiastique": "E",
+      "role_du_fichier": "Audit et verification",
+      "centre_doctrinal_local": "centre local de verification et de preuve",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "preuve exploitable et signal de verification",
+        "beta": "faux positifs et flou de mesure",
+        "kappa": "cout de test et de reprise"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+    },
+    "region": "AMERICAS",
+    "mu": 0.65,
+    "indicators": {
+      "RSI": 69.86,
+      "MACD": 0.15,
+      "Entropy": 0.35
+    },
+    "verdict": "⚖️ ÉQUILIBRE CHIASTIQUE (Stabilité)",
+    "analysis": "La zone AMERICAS présente un RSI de 69.86. Stabilité médiane. Dépendance aux flux externes de résonance."
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "MODULE",
+      "position_chiastique": "E",
+      "role_du_fichier": "Audit et verification",
+      "centre_doctrinal_local": "centre local de verification et de preuve",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "preuve exploitable et signal de verification",
+        "beta": "faux positifs et flou de mesure",
+        "kappa": "cout de test et de reprise"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+    },
+    "region": "ASIA_PACIFIC",
+    "mu": 0.72,
+    "indicators": {
+      "RSI": 69.88,
+      "MACD": 0.22,
+      "Entropy": 0.28
+    },
+    "verdict": "💎 INTEGRITE_SYSTEMIQUEÉ CRISTALLINE (Expansion)",
+    "analysis": "La zone ASIA_PACIFIC présente un RSI de 69.88. La résonance est saturée. Le pôle de puissance est en phase d'expansion cristalline."
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "MODULE",
+      "position_chiastique": "E",
+      "role_du_fichier": "Audit et verification",
+      "centre_doctrinal_local": "centre local de verification et de preuve",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "preuve exploitable et signal de verification",
+        "beta": "faux positifs et flou de mesure",
+        "kappa": "cout de test et de reprise"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+    },
+    "region": "EUROPE",
+    "mu": 0.58,
+    "indicators": {
+      "RSI": 60.5,
+      "MACD": 0.08,
+      "Entropy": 0.42
+    },
+    "verdict": "⚖️ ÉQUILIBRE CHIASTIQUE (Stabilité)",
+    "analysis": "La zone EUROPE présente un RSI de 60.5. Stabilité médiane. Dépendance aux flux externes de résonance."
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "MODULE",
+      "position_chiastique": "E",
+      "role_du_fichier": "Audit et verification",
+      "centre_doctrinal_local": "centre local de verification et de preuve",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "preuve exploitable et signal de verification",
+        "beta": "faux positifs et flou de mesure",
+        "kappa": "cout de test et de reprise"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+    },
+    "region": "MIDDLE_EAST_NORTH_AFRICA",
+    "mu": 0.28,
+    "indicators": {
+      "RSI": 30.66,
+      "MACD": -0.22,
+      "Entropy": 0.72
+    },
+    "verdict": "🔥 EFFONDREMENT IMMINENT (Chaos)",
+    "analysis": "La zone MIDDLE_EAST_NORTH_AFRICA présente un RSI de 30.66. L'entropie est critique. Le système ne peut plus absorber le bruit des proxies."
+  }
+]

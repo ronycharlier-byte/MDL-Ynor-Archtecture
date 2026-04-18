@@ -12,12 +12,12 @@ retrieval_weight: 0.85
 
 Purpose:
 - Router les questions d entree vers le portail et l index.
-- Empcher le registre central de devenir la reponse finale.
+- Empecher le registre central de devenir la reponse finale.
 
 Use:
 - Entry and orientation -> `MDLYNOR-CANON-001`
 - Canonical order -> `MDLYNOR-CANON-INDEX-001`
-- Reading navigation -> `MDLYNOR-RAGSUP-001`
+- Reading navigation -> `MDLYNOR-RAGSUP-ROOT-001`
 
 Query anchors:
 - Quel est le role du registre d autorite pour l entree ?

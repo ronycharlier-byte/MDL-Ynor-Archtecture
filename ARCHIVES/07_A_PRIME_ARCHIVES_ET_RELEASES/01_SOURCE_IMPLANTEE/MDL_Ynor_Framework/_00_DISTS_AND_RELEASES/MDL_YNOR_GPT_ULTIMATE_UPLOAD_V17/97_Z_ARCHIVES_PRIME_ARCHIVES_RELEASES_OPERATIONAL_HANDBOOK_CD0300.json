@@ -1,0 +1,58 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "B'",
+    "role_du_fichier": "Archive et transmission",
+    "centre_doctrinal_local": "canal local de diffusion et de synchronisation",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "portee de diffusion et memoisation utile",
+      "beta": "perte de fidelite et dispersion",
+      "kappa": "cout de packaging et de synchronisation"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "B / 01_A_FONDATION"
+  },
+  "title": "YNOR OPERATIONAL HANDBOOK",
+  "version": "3.0.0-PROD-ULTIMATE",
+  "owner": "Rony Charlier | MDL Strategy",
+  "tagline": "Tout système opérationnel doit être gouverné par ses propres protocoles.",
+  "protocols": [
+    {
+      "id": "P1",
+      "heading": "L'EXÉCUTION TECHNIQUE (Core µ)",
+      "content": "Core system: ynor_core (Alpha, Beta, Kappa). Stopping rule: mu = alpha - beta - kappa <= 0. Reproducibility audit via experiments/ folder."
+    },
+    {
+      "id": "P2",
+      "heading": "REPRODUCTIBILITÉ & PROVENANCE",
+      "content": "Refer to DATA_PROVENANCE for source datasets. Use experiments/run_and_log_experiments.py for stability validation. Coverage: 100% in _PREUVES_ET_RAPPORTS/TEST_COVERAGE_REPORT."
+    },
+    {
+      "id": "P3",
+      "heading": "LA SÉCURITÉ & THREAT MODEL (Red-Team)",
+      "content": "Refer to SECURITY_THREAT_MODEL. NO proliferation of source file names or local paths. Identity/Internal logic is never disclosed. ynor_security_shield.py blocks unauthorized mutations."
+    },
+    {
+      "id": "P4",
+      "heading": "LE CLOSING & MONÉTISATION",
+      "content": "Standard: $99. Integration: $299. Position: Gap Selling (waste tokens reduction). Access: Exclusive Activation Code by Rony Charlier + Signed NDA."
+    },
+    {
+      "id": "P5",
+      "heading": "LA CONNAISSANCE UNIFIÉE",
+      "content": "97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_GLOBAL_KNOWLEDGE_17E864.json (v3). CI/CD: GitHub Actions pipeline. Coherent synchronization between all knowledge instances is mandatory."
+    }
+  ],
+  "command_center": {
+    "entry_point": "YNOR_SERVER_MANAGER.bat",
+    "status": "Operational, Sovereign"
+  }
+}

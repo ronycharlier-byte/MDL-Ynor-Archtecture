@@ -1,0 +1,31 @@
+{
+  "_mdl_ynor": {
+    "corpus": "MDL YNOR",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Module benchmark_ultimate_report",
+    "centre_doctrinal_local": "AI Manager garde module benchmark_ultimate_report en stabilisant le schema et en prevenant la derive des cles.",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "?": "cout de validation et de serialisation"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un système survit SSI μ > 0",
+    "doctrine_goodhart": "tout succès apparent est invalide si μ décroît",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E"
+  },
+  "metadata": {
+    "timestamp": "2026-03-25T02:50:06.562867",
+    "system": "Windows",
+    "duration_sec": 0.008577823638916016
+  },
+  "scores": {
+    "sovereignty_index": 82.56,
+    "fidelity": 100.0,
+    "stability_mu": 1.2800000000000002,
+    "knowledge_depth": 283
+  },
+  "status": "OPTIMAL"
+}

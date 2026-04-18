@@ -1,0 +1,45 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Audit et verification",
+    "centre_doctrinal_local": "centre local de verification et de preuve",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "preuve exploitable et signal de verification",
+      "beta": "faux positifs et flou de mesure",
+      "kappa": "cout de test et de reprise"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "timestamp": "2026-04-10T02:24:00",
+  "top_news": [
+    "Focus on U.S. Inflation Data (CPI/Core CPI at 07:30 ET)",
+    "Geopolitical Calm: Israel-Lebanon negotiations start, markets rally",
+    "Oil prices retreat following Middle East de-escalation",
+    "Corporate: Spire Global $70M private placement today"
+  ],
+  "technical_summary": {
+    "BTC-USD": {
+      "sentiment": "STRONG BUY",
+      "resistance": 74500,
+      "support": 68200
+    },
+    "GC=F": {
+      "sentiment": "STRONG BUY",
+      "window": "April 10-12 Reversal Area"
+    },
+    "^GSPC": {
+      "sentiment": "STRONG BUY",
+      "trend": "Positive Breakout"
+    }
+  }
+}

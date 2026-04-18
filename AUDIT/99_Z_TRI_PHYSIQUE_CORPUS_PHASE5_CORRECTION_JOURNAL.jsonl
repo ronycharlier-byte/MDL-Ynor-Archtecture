@@ -1,0 +1,10 @@
+{"action":"move","from":"TECHNIQUE/vector_memory_governed_phase3.json","to":"ARCHIVES/07_A_PRIME_ARCHIVES_ET_RELEASES/vector_memory_governed_phase3.json","decision":"archive duplicate governed snapshot","status":"resolved"}
+{"action":"move","from":"RAG_SUPPORT/18_THEORY_CONSTITUTION_GOVERNANCE.md","to":"ARCHIVES/07_A_PRIME_ARCHIVES_ET_RELEASES/18_THEORY_CONSTITUTION_GOVERNANCE.md","decision":"archive duplicate support shard","status":"resolved"}
+{"action":"move","from":"ARCHIVES/MDL Ynor.zip","to":"ARCHIVES/07_A_PRIME_ARCHIVES_ET_RELEASES/MDL Ynor.zip","decision":"relocate opaque archive bundle into release archive", "status":"resolved"}
+{"action":"move","from":"INBOX_QUARANTAINE/90_Z_CARNET_AUTO_RECHERCHE.txt","to":"INBOX_QUARANTAINE/supreme_temp/90_Z_CARNET_AUTO_RECHERCHE.txt","decision":"place scratch carnet inside quarantine temp","status":"resolved"}
+{"action":"move","from":"AUDIT/_injection_log.txt","to":"AUDIT/05_C_PRIME_VALIDATION_ET_TESTS/logs/_injection_log.txt","decision":"relocate injection log into audit logs","status":"resolved"}
+{"action":"move","from":"TECHNIQUE/90_Z_BASE_CONNAISSANCE_DOCTRINALE.json","to":"TECHNIQUE/data/90_Z_BASE_CONNAISSANCE_TECHNIQUE.json","decision":"relabel doctrinally named technical dataset as technical data","status":"resolved"}
+{"action":"edit","file":"CANON/00_REGISTRE_AUTORITE.md","decision":"reduce registry retrieval dominance","status":"resolved"}
+{"action":"edit","file":"TECHNIQUE/README.md","decision":"disambiguate live vector store versus governed snapshot","status":"resolved"}
+{"action":"create","file":"AUDIT/05_C_PRIME_VALIDATION_ET_TESTS/README.md","decision":"mark validation tests as audit-only","status":"resolved"}
+{"action":"create","file":"MONITORING/dashboard/README.md","decision":"mark dashboard as active monitoring surface","status":"resolved"}

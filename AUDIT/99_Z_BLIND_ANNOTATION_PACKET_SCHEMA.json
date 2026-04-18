@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AUDIT/99_Z_BLIND_ANNOTATION_PACKET_SCHEMA.json",
+  "title": "MDL YNOR Blind Annotation Packet",
+  "description": "Canonical envelope for blind annotation packets used in the external validation campaign.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "packet_id",
+    "snapshot_id",
+    "protocol_ref",
+    "manifest_sha256",
+    "seed_ref",
+    "split_name",
+    "packet_role",
+    "item_count",
+    "items"
+  ],
+  "properties": {
+    "packet_id": {
+      "type": "string"
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "protocol_ref": {
+      "type": "string"
+    },
+    "manifest_sha256": {
+      "type": "string"
+    },
+    "seed_ref": {
+      "type": "string"
+    },
+    "split_name": {
+      "type": "string",
+      "enum": [
+        "J_cal",
+        "J_val",
+        "J_test",
+        "E1",
+        "E2"
+      ]
+    },
+    "packet_role": {
+      "type": "string",
+      "enum": [
+        "calibration",
+        "validation",
+        "test_final_untouched",
+        "external_validation_primary",
+        "external_validation_replication"
+      ]
+    },
+    "packet_index": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "item_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "item_id",
+          "surface_text",
+          "candidate_citations",
+          "redacted_fields"
+        ],
+        "properties": {
+          "item_id": {
+            "type": "string"
+          },
+          "packet_order": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "surface_text": {
+            "type": "string"
+          },
+          "candidate_citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "citation_id"
+              ],
+              "properties": {
+                "citation_id": {
+                  "type": "string"
+                },
+                "canonical_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "source_path": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "source_type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "sha256": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "annotation_slots": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "primary_label",
+              "supporting_label",
+              "confidence"
+            ],
+            "properties": {
+              "primary_label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "supporting_label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          },
+          "redacted_fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "split_seed",
+        "annotation_order_seed",
+        "instantiation_policy_ref"
+      ],
+      "properties": {
+        "split_seed": {
+          "type": "integer"
+        },
+        "annotation_order_seed": {
+          "type": "integer"
+        },
+        "instantiation_policy_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "packet_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

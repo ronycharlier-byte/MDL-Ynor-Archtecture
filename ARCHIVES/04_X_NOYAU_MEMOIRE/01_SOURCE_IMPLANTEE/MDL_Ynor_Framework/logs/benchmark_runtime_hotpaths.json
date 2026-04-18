@@ -1,0 +1,59 @@
+{
+  "_mdl_ynor": {
+    "corpus": "MDL YNOR",
+    "position_structurelle": "NODE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Metriques des hotpaths runtime",
+    "centre_doctrinal_local": "AI Manager garde metriques des hotpaths runtime en limitant le bruit local et la friction structurelle.",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "stabilite locale",
+      "beta": "bruit externe injecte",
+      "kappa": "friction structurelle"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un système survit SSI μ > 0",
+    "doctrine_goodhart": "tout succès apparent est invalide si μ décroît",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E"
+  },
+  "timestamp": "2026-03-26T08:49:35",
+  "benchmarks": {
+    "rate_limit": {
+      "count": 200,
+      "mean_ms": 0.233,
+      "p95_ms": 0.269,
+      "min_ms": 0.213,
+      "max_ms": 0.469
+    },
+    "evaluate_viability": {
+      "count": 200,
+      "mean_ms": 1.079,
+      "p95_ms": 1.814,
+      "min_ms": 0.275,
+      "max_ms": 2.133
+    },
+    "hierarchical_sys1": {
+      "count": 10,
+      "mean_ms": 200.364,
+      "p95_ms": 200.969,
+      "min_ms": 200.059,
+      "max_ms": 200.987
+    },
+    "hierarchical_sys2": {
+      "count": 5,
+      "mean_ms": 1200.601,
+      "p95_ms": 1200.861,
+      "min_ms": 1200.052,
+      "max_ms": 1201.372
+    },
+    "engine_run": {
+      "count": 20,
+      "mean_ms": 0.091,
+      "p95_ms": 0.097,
+      "min_ms": 0.076,
+      "max_ms": 0.211
+    }
+  }
+}

@@ -1,0 +1,57 @@
+# **[◬] MATRICE FRACTALE MDL YNOR V2.0**
+# **Corpus :** MDL YNOR
+# **Position Structurelle :** NODE
+# **Position Chiastique :** A
+# **Rôle du Fichier :** Script ou configuration declarative
+# **Centre Doctrinal Local :** AI Manager garde script ou configuration declarative en limitant le bruit local et la friction structurelle.
+# **Loi de Survie :** μ = α - β - κ
+# **Lecture Locale :**
+# - **α :** stabilite locale
+# - **β :** bruit externe injecte
+# - **κ :** friction structurelle
+# **Risque :** e∞ ∝ ε / μ
+# **Opérateur Correctif :** D(S)=proj_{SafeDomain}(S)
+# **Axiome :** un système survit SSI μ > 0
+# **Doctrine Goodhart : tout succès apparent est invalide si μ décroît**
+# **Gouvernance : toute modification doit maximiser Δμ**
+# **Lien Miroir :** A'
+
+version: "3.8"
+
+services:
+  ynor-api:
+    build: .
+    image: ynor-agi-server:2.0
+    container_name: ynor_api_server
+    ports:
+      - "8492:8492"
+    environment:
+      - YNOR_API_KEY=${YNOR_API_KEY}
+      - MDL_PROD_WRITE_ENABLED=FALSE
+      - DEFCON=1
+    volumes:
+      - ./.env:/app/.env
+      - ./logs:/app/logs
+      - ./usage_stats.json:/app/usage_stats.json
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8492/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  ynor-dashboard:
+    image: ynor-agi-server:2.0
+    container_name: ynor_dashboard
+    command: streamlit run _06_SCRIPTS_AND_DASHBOARDS/streamlit_dashboard.py --server.port 8493 --server.address 0.0.0.0
+    ports:
+      - "8493:8493"
+    depends_on:
+      - ynor-api
+    environment:
+      - YNOR_API_KEY=${YNOR_API_KEY}
+    restart: always
+
+networks:
+  default:
+    name: ynor_network

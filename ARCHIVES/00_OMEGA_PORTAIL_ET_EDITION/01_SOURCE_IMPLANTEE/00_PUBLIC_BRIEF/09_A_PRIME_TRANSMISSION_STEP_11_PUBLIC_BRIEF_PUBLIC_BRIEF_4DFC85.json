@@ -1,0 +1,47 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "A'",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "A / 00_OMEGA_PORTAIL_ET_EDITION"
+  },
+  "stage": "step_11_public_brief",
+  "public_root": "FRACTAL_CHIASTE_UNIVERSEL/00_PUBLIC_BRIEF",
+  "inputs": {
+    "executive_digest": "../../../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json",
+    "canonical_edition": "../../04_INDEX/01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json"
+  },
+  "outputs": {
+    "public_brief": "09_A_PRIME_ROOT_STATUS_CANONICAL_V11_13_PUBLIC_BRIEF_99F733.md",
+    "presentation": "09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_PUBLIC_BRIEF_PRESENTATION_PUBLIQUE.md",
+    "manifest": "../../../00_CORPUS_AUDIT/01_A_AUDIT_CORPUS_AUDIT_CORPUS_AUDIT.json"
+  },
+  "public_stats": {
+    "unique_sources": 117,
+    "total_entries": 127,
+    "chiastic_axis": [
+      "A",
+      "B",
+      "C",
+      "X",
+      "C'",
+      "B'",
+      "A'"
+    ]
+  }
+}

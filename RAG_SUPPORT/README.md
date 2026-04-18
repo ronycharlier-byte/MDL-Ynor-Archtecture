@@ -3,10 +3,10 @@ layer: RAG_SUPPORT
 status: navigation
 canonical_id: MDLYNOR-RAGSUP-ROOT-001
 concept_id: MDLYNOR.SUPPORT.RAG_LAYER
-source_of_truth: CANON
 citation_id: MDLYNOR-RAGSUP-ROOT-001
 document_role: navigation
 retrieval_weight: 0.12
+source_of_truth: MDLYNOR-CANON-015
 ---
 
 # RAG_SUPPORT
@@ -15,6 +15,8 @@ Role:
 - RAG_SUPPORT helps retrieval but never replaces CANON.
 - It provides controlled support, not first-rank doctrine.
 - It exists to reduce ambiguity and keep answers chunkable.
+- It may summarize, crosswalk, and disambiguate canonical sources.
+- It must not introduce new doctrine.
 
 Query anchors:
 - Quel est le role de RAG_SUPPORT ?
@@ -25,6 +27,8 @@ Allowed content:
 - access maps
 - controlled examples
 - crosswalks to canonical sources
+- citation helpers
+- normalization notes
 
 The primary retriever may use:
 - CANON

@@ -32,6 +32,11 @@ Key facts:
 - Canonical files retained: `525`
 - Canonical collapse rate: `62.7 %`
 
+Note:
+- these values are audit snapshot values, not universal constants;
+- refresh them after substantial corpus changes;
+- use them to detect collapse signals, not to redefine doctrine.
+
 Collapse rule:
 - The memory nucleus is a support layer for canonical collapse signals.
 - It must point back to the stability regime sheet, not replace it.

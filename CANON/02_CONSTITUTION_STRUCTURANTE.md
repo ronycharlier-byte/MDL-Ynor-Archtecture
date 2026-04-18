@@ -3,23 +3,28 @@ layer: CANON
 status: canonical
 canonical_id: MDLYNOR-CANON-003
 concept_id: MDLYNOR.CONCEPT.CONSTITUTION
-source_path: 01_A_FONDATION/02_B_CONSTITUTION_01_FONDATION_CONSTITUTION_STRUCTURANTE_01_FONDATION.md
+citation_id: MDLYNOR-CANON-003
+document_role: constitution
+retrieval_weight: 1.02
 ---
 
 # Constitution structurante
 
-Role: opening, configuration, initial frame.
+Role:
+- Entry frame and admissibility law for the corpus.
+- The constitution sets the boundary of what may enter the canonical layer.
+- It is not a theory and does not try to replace validation.
 
-Observed nucleus:
-- Stable formal frame
-- Initial structure of the corpus
-- Local stabilization of formalization
+Stable nucleus:
+- Define the canonical source of truth.
+- Define which layers may answer which kind of question.
+- Reject competing constitutional variants unless they are archived.
+- Require canonical identifiers for production use.
 
-Why it is canonical:
-- It defines the entry frame.
-- It is the constitutional source of the corpus.
-- Competing constitutional versions are archives, not doctrine.
+Operational meaning:
+- A document is canonical only if it can be cited, routed and validated.
+- A document that is only operational belongs in `TECHNIQUE`.
+- A document that only records history belongs in `ARCHIVES`.
 
-Stable reading:
-- The constitution is the entry law of the corpus.
-- The rest must conform to it, not compete with it.
+Constitutional rule:
+- The rest of the corpus must conform to this frame, not compete with it.

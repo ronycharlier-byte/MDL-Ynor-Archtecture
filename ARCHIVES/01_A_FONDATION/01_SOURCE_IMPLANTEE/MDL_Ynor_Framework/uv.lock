@@ -1,0 +1,26 @@
+# **[?] MATRICE FRACTALE MDL YNOR V2.0**
+# **Corpus :** MDL YNOR
+# **Position Structurelle :** NODE
+# **Position Chiastique :** A
+# **R?le du Fichier :** Script ou configuration declarative
+# **Centre Doctrinal Local :** AI Manager garde script ou configuration declarative en limitant le bruit d'integration et la friction structurelle.
+# **Loi de Survie :** ? = ? - ? - ?
+# **Lecture Locale :**
+# - **? :** capacite operationnelle du fichier
+# - **? :** bruit d'integration et derive de dependance
+# - **? :** friction de maintenance et complexite d'appel
+# **Risque :** e? ? ? / ?
+# **Op?rateur Correctif :** D(S)=proj_{SafeDomain}(S)
+# **Axiome :** un syst?me survit SSI ? > 0
+# **Doctrine Goodhart :** tout succ?s apparent est invalide si ? d?cro?t
+# **Gouvernance :** toute modification doit maximiser ??
+# **Lien Miroir :** A'
+
+version = 1
+revision = 3
+requires-python = ">=3.10"
+
+[[package]]
+name = "mdl-ynor-framework"
+version = "0.1.0"
+source = { editable = "." }

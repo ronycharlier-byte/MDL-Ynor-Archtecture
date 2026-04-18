@@ -1,0 +1,70 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "A'",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "A / 00_OMEGA_PORTAIL_ET_EDITION"
+  },
+  "stage": "step_14_master_final",
+  "master_final_root": "FRACTAL_CHIASTE_UNIVERSEL/00_MASTER_FINAL",
+  "stats": {
+    "unique_sources": 117,
+    "total_entries": 127,
+    "chiastic_axis": [
+      "A",
+      "B",
+      "C",
+      "X",
+      "C'",
+      "B'",
+      "A'"
+    ],
+    "stage_counts": {
+      "step_1_curated_text": 6,
+      "step_2_bulk_text": 59,
+      "step_3_json": 22,
+      "step_4_latex_pdf": 7,
+      "step_5_constitution_pdf": 9,
+      "step_6_legal_pdf": 24
+    },
+    "node_counts": {
+      "01_A_FONDATION": 2,
+      "02_B_THEORIE_ET_PREUVES": 43,
+      "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 43,
+      "07_A_PRIME_ARCHIVES_ET_RELEASES": 31,
+      "04_X_NOYAU_MEMOIRE": 8
+    }
+  },
+  "linked_steps": {
+    "step_7_master_index": "09_A_PRIME_TRANSMISSION_STEP_14_MASTER_FINAL_MASTER_FINAL_858F65.json",
+    "step_8_visual_navigation": "09_A_PRIME_TRANSMISSION_STEP_14_MASTER_FINAL_MASTER_FINAL_858F65.json",
+    "step_9_canonical_edition": "../../../../_SYSTEM_AGI/FRACTAL_CHIASTE_UNIVERSEL/00_EDITION_CANONIQUE_FINALE/05_E_TRANSMISSION_STEP_9_CANONICAL_EDITION_CANONICAL_EDITION_839205.json",
+    "step_10_executive_digest": "../../00_EXECUTIVE_DIGEST/09_A_PRIME_TRANSMISSION_STEP_10_EXECUTIVE_DIGEST_EXECUTIVE_DIGEST_E0C2F2.json",
+    "step_11_public_brief": "../../00_PUBLIC_BRIEF/09_A_PRIME_TRANSMISSION_STEP_11_PUBLIC_BRIEF_PUBLIC_BRIEF_4DFC85.json",
+    "step_12_submission_pack": "../../00_SUBMISSION_PACK/09_A_PRIME_TRANSMISSION_STEP_12_SUBMISSION_PACK_SUBMISSION_PACK_CB61BC.json",
+    "step_13_homepage": "../../00_HOMEPAGE/09_A_PRIME_TRANSMISSION_STEP_13_HOMEPAGE_MANIFESTE_STEP13_HOMEPAGE_D43380.json"
+  },
+  "primary_entrypoints": {
+    "homepage": "../../00_HOMEPAGE/09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_HOMEPAGE_HOMEPAGE_CORPUS.md",
+    "public_brief": "../../00_PUBLIC_BRIEF/09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_PUBLIC_BRIEF_PRESENTATION_PUBLIQUE.md",
+    "executive_digest": "../../../02_MIROIR_TEXTUEL/00_EXECUTIVE_DIGEST/09_A_PRIME_TRANSMISSION_STAGE_STEP_10_EXECUTIVE_DIGEST_JSON_D59418.md",
+    "canonical_portal": "../../../../_SYSTEM_AGI/FRACTAL_CHIASTE_UNIVERSEL/00_EDITION_CANONIQUE_FINALE/05_E_TRANSMISSION_SYSTEM_AGI_FRACTAL_CHIASTE_UNIVERSEL_EDITION_CANONIQUE_FINALE_PORTAIL_CANONIQUE_FINAL.md",
+    "submission_summary": "../../00_SUBMISSION_PACK/09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_IMPLANTEE_SUBMISSION_PACK_RESUME_SOUMISSION.md",
+    "master_final": "../09_A_PRIME_ROOT_MDL_YNOR_ARCHITECTURE_UNIFIED_MASTER_FINAL_1373DA.md"
+  }
+}

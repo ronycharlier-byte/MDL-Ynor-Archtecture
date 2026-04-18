@@ -1,0 +1,9 @@
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\monitoring", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\__MONITORING_TMP__"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\__MONITORING_TMP__", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\MONITORING"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\static", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\TECHNIQUE\\static"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\ynor_engine", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\TECHNIQUE\\ynor_engine"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\__pycache__", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\TECHNIQUE\\__pycache__"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\ingest.py", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\TECHNIQUE\\ingest.py"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\rag_engine.py", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\TECHNIQUE\\rag_engine.py"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\vector_memory.py", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\TECHNIQUE\\vector_memory.py"}
+{"old": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\TECHNIQUE\\dashboard", "new": "C:\\Users\\ronyc\\Desktop\\Corpus\\MDL Ynor\\MONITORING\\dashboard"}

@@ -4,28 +4,24 @@ status: canonical
 canonical_id: MDLYNOR-CANON-016
 concept_id: MDLYNOR.CONCEPT.THEORY_CONSTITUTION_GOVERNANCE
 citation_id: MDLYNOR-CANON-016
-document_role: answer_card
+document_role: theory-governance
 retrieval_weight: 1.08
 ---
 
 # Theory, constitution, governance
 
-Query anchors:
-- Quelle relation entre theorie, constitution et gouvernance ?
+Constitution:
+- sets the entry frame and the authority boundary.
 
-Question:
-- What is the relation between theory, constitution and governance?
+Theory:
+- provides the formal machinery and doctrinal core.
 
-Answer:
-- Constitution sets the entry frame and the authority boundary.
-- Theory provides the formal machinery and doctrinal core.
-- Governance enforces ordering, routing, citation and exclusion rules.
+Governance:
+- enforces ordering, routing, citation and exclusion rules.
 
-- Constitution sets the entry frame and the authority boundary.
-- Theory provides the formal machinery and doctrinal core.
-- Governance enforces ordering, routing, citation, and exclusion rules.
+Relation:
+- constitution frames;
+- theory explains;
+- governance constrains.
 
-This relation is not symmetrical:
-- constitution frames
-- theory explains
-- governance constrains
+This relation is intentionally asymmetrical.

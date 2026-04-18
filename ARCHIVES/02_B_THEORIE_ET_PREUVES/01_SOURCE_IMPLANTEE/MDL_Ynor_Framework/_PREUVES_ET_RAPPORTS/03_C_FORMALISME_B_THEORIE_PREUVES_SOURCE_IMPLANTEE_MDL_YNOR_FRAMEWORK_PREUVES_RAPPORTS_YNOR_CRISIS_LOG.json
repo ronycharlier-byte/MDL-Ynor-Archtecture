@@ -1,0 +1,31 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "C",
+    "role_du_fichier": "Formalisation theorique",
+    "centre_doctrinal_local": "stabilisation locale de la formalisation",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "coherence formelle et compatibilite",
+      "beta": "ambiguite semantique et divergence",
+      "kappa": "cout de demonstration et d integration"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "C' / 06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+  },
+  "event": "CRITICAL_THRESHOLD_EXCEEDED",
+  "time": 0.0,
+  "mu": -1.0,
+  "state": [
+    2.0,
+    2.0
+  ],
+  "recommendation": "Requérir une mutation immédiate de l'opérateur D."
+}

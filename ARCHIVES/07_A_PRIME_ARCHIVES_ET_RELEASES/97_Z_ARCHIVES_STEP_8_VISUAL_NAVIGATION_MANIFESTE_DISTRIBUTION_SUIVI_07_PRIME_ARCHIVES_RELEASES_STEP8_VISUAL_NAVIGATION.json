@@ -1,0 +1,159 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "LAYER",
+    "position_chiastique": "B'",
+    "role_du_fichier": "Manifeste de distribution et de suivi",
+    "centre_doctrinal_local": "circulation des actifs et suivi de version",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "B / 01_A_FONDATION"
+  },
+  "stage": "step_8_visual_navigation",
+  "chiastic_axis": [
+    "A",
+    "B",
+    "C",
+    "X",
+    "C'",
+    "B'",
+    "A'"
+  ],
+  "node_titles": {
+    "01_A_FONDATION": "A | Fondation",
+    "02_B_THEORIE_ET_PREUVES": "B | Theorie et preuves",
+    "03_C_MOTEURS_ET_DEPLOIEMENT": "C | Moteurs et deploiement",
+    "04_X_NOYAU_MEMOIRE": "X | Noyau memoire",
+    "05_C_PRIME_validéTION_ET_TESTS": "C' | validation et tests",
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": "B' | Gouvernance et diffusion",
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": "A' | Archives et releases"
+  },
+  "node_counts": {
+    "01_A_FONDATION": 2,
+    "02_B_THEORIE_ET_PREUVES": 43,
+    "03_C_MOTEURS_ET_DEPLOIEMENT": 187,
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": 43,
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": 31,
+    "04_X_NOYAU_MEMOIRE": 9,
+    "05_C_PRIME_validéTION_ET_TESTS": 75
+  },
+  "local_inventory_counts": {
+    "03_C_MOTEURS_ET_DEPLOIEMENT": 187,
+    "05_C_PRIME_validéTION_ET_TESTS": 75
+  },
+  "stage_counts": {
+    "step_1_curated_text": 6,
+    "step_2_bulk_text": 59,
+    "step_3_json": 22,
+    "step_4_latex_pdf": 7,
+    "step_5_constitution_pdf": 9,
+    "step_6_legal_pdf": 24
+  },
+  "navigation": {
+    "01_A_FONDATION": {
+      "title": "A | Fondation",
+      "count": 2,
+      "top_sources": [
+        "97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+        "97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md"
+      ]
+    },
+    "02_B_THEORIE_ET_PREUVES": {
+      "title": "B | Theorie et preuves",
+      "count": 43,
+      "top_sources": [
+        "MDL Ynor Constitution/Chapitre I — Formalisation mathmatique intgrale du noyau MDL Ynor.pdf",
+        "MDL Ynor Constitution/MDL Ynor Canonique_/Mdl Ynor — Version Canonique Unifie V1.pdf",
+        "MDL Ynor Constitution/MDL Ynor MATH/Chapitre I — Formalisation axiomatique minimale.pdf",
+        "MDL Ynor Constitution/MDL Ynor MATH/Chapitre XVI — Formalisation mathmatique intgrale du noyau MDL Ynor.pdf",
+        "MDL Ynor Constitution/MDL Ynor — Constitution Structurelle des Systmes Dissipatifs Amplification Borne.pdf",
+        "MDL Ynor Constitution/MDL Ynor — Thorie Structurelle des Systmes Dissipatifs Amplification Borne.pdf",
+        "MDL Ynor Constitution/MDL Ynor — Thormes fondamentaux de la marge dissipative.pdf",
+        "MDL Ynor Constitution/MDL Ynor — Traitdes dynamiques dissipatives et de la stabilitstructurelle.pdf"
+      ]
+    },
+    "03_C_MOTEURS_ET_DEPLOIEMENT": {
+      "title": "C | Moteurs et deploiement",
+      "count": 187,
+      "top_sources": [
+        "97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+        "../03_C_MOTEURS_ET_DEPLOIEMENT/04_D_TRANSMISSION_C_MOTEURS_DEPLOIEMENT_API_CONTRACT.md",
+        "../03_C_MOTEURS_ET_DEPLOIEMENT/04_D_VERIFICATION_C_MOTEURS_DEPLOIEMENT_DASHBOARD_SPEC.md",
+        "../03_C_MOTEURS_ET_DEPLOIEMENT/04_D_ACTIVATION_03_C_MOTEURS_DEPLOIEMENT_NOEUD_ORCHESTRATION_MOTEUR_DEPLOIEMENT_03_C_MOTEURS_DEPLOIEMENT.md",
+        "../03_C_MOTEURS_ET_DEPLOIEMENT/04_D_VERIFICATION_C_MOTEURS_DEPLOIEMENT_OBSERVABILITY_LOGS.md",
+        "../03_C_MOTEURS_ET_DEPLOIEMENT/97_Z_ARCHIVES_C_MOTEURS_DEPLOIEMENT_RELEASE_PIPELINE.md",
+        "97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+        "03_C_MOTEURS_ET_DEPLOIEMENT/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_04_DEPLOYMENT_AND_API/ynor_api_server.py"
+      ]
+    },
+    "04_X_NOYAU_MEMOIRE": {
+      "title": "X | Noyau memoire",
+      "count": 9,
+      "top_sources": [
+        "97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_CENTRE_DOCTRINAL_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_MDL_GLOBAL_KNOWLEDGE.json",
+        "../03_C_MOTEURS_ET_DEPLOIEMENT/02_MIROIR_TEXTUEL/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/06_D_PRIME_MIROIR_C_MOTEURS_DEPLOIEMENT_MIROIR_VALIDATION_PY_FFC834.md",
+        "01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_GLOBAL_KNOWLEDGE_7B9E1D.json",
+        "01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_00_YNOR_COMMAND_CENTER/97_Z_ARCHIVES_PRIME_ARCHIVES_RELEASES_SOURCE_MANIFESTO_GOVERNANCE_C9852E.json",
+        "../02_B_THEORIE_ET_PREUVES/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_PREUVES_RAPPORTS_MDL_THEORIQUE_MAPPING.json",
+        "../02_B_THEORIE_ET_PREUVES/07_REECRITURE_JSON_CHIASTIQUE/MDL_Ynor_Framework/_PREUVES_ET_RAPPORTS/03_C_FORMALISME_B_THEORIE_PREUVES_REECRITURE_JSON_FRACTALE_5B4F61.md",
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_05_DATA_AND_MEMORY/05_E_ACTIVATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_05_DATA_MEMORY_YNOR_UNIFIED_PROMPTS.json",
+        "../04_X_NOYAU_MEMOIRE/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/05_E_VERIFICATION_X_NOYAU_MEMOIRE_SOURCE_IMPLANTEE_MDL_YNOR_FRAMEWORK_MDL_INTELLIGENCE_REPORT.json"
+      ]
+    },
+    "05_C_PRIME_validéTION_ET_TESTS": {
+      "title": "C' | validation et tests",
+      "count": 75,
+      "top_sources": [
+        "97_Z_ARCHIVES_STATUS_CANONICAL_V11_13_0_AUDIT_CERTIFIED_FINAL_CONSOLIDATED_REVIEW_V11_13_0_MANIFESTE_ENTREE_HUB_NAVIGATION_07_PRIME_ARCHIVES_RELEASES.md",
+        "../05_C_PRIME_VALIDATION_ET_TESTS/06_D_PRIME_VERIFICATION_05_C_PRIME_VALIDETION_TESTS_AUDIT_VERIFICATION_05_C_PRIME_VALIDATION_TESTS.md",
+        "../05_C_PRIME_VALIDATION_ET_TESTS/06_D_PRIME_VERIFICATION_05_C_PRIME_VALIDETION_TESTS_AUDIT_VERIFICATION_05_C_PRIME_VALIDATION_TESTS.md",
+        "../05_C_PRIME_VALIDATION_ET_TESTS/06_D_PRIME_VERIFICATION_05_C_PRIME_VALIDETION_TESTS_AUDIT_VERIFICATION_05_C_PRIME_VALIDATION_TESTS.md",
+        "../05_C_PRIME_VALIDATION_ET_TESTS/06_D_PRIME_VERIFICATION_05_C_PRIME_VALIDETION_TESTS_AUDIT_VERIFICATION_05_C_PRIME_VALIDATION_TESTS.md",
+        "../05_C_PRIME_VALIDATION_ET_TESTS/06_D_PRIME_VERIFICATION_05_C_PRIME_VALIDETION_TESTS_AUDIT_VERIFICATION_05_C_PRIME_VALIDATION_TESTS.md",
+        "05_C_PRIME_validéTION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/tests/test_mdl_robustness.py",
+        "05_C_PRIME_validéTION_ET_TESTS/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/tests/test_shareable_mu_audit.py"
+      ]
+    },
+    "06_B_PRIME_GOUVERNANCE_ET_DIFFUSION": {
+      "title": "B' | Gouvernance et diffusion",
+      "count": 43,
+      "top_sources": [
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Charte_Foi_Officielle.pdf",
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE(1).pdf",
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_2026_VERSION_ULTRA_TECHNIQUE_OPERATIONNELLE.pdf",
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026.pdf",
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_10_10_HISTORIQUE.pdf",
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_CONSTITUTIONNELLE_9_5.pdf",
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ETENDUE_COMPLETE.pdf",
+        "MDL Ynor Constitution/MDL — Argent & Juridique/MDL_Legal_Pack/Corpus_MDL_Depot_2026_VERSION_ULTIME_9_10.pdf"
+      ]
+    },
+    "07_A_PRIME_ARCHIVES_ET_RELEASES": {
+      "title": "A' | Archives et releases",
+      "count": 31,
+      "top_sources": [
+        "../_SYSTEM_AGI/_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III_SOUVERAINE/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOUVERAINE_PHASE_IV_ACCESS_CARD.md",
+        "_RELEASES/GOLDEN_MASTER_PHASE_III/PHASE_IV_ACCESS_CARD.tex",
+        "../_SYSTEM_AGI/_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOVEREIGN_GOVERNANCE_CERTIFICATION.md",
+        "../_SYSTEM_AGI/_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOVEREIGN_MASTER_PROMPT_V3.txt",
+        "../_SYSTEM_AGI/_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOVEREIGN_SUCCESS_CERTIFICATE.md",
+        "../_SYSTEM_AGI/_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SOVEREIGN_ULTIMATE_KNOWLEDGE_PROMPT_COPY_ME.txt",
+        "../_SYSTEM_AGI/_ARCHIVES/_RELEASES/GOLDEN_MASTER_PHASE_III/97_Z_ARCHIVES_SYSTEM_AGI_ARCHIVES_RELEASES_GOLDEN_MASTER_PHASE_III_SUBMISSION_CHECKLIST_SOVEREIGN.md",
+        "../03_C_MOTEURS_ET_DEPLOIEMENT/01_SOURCE_IMPLANTEE/MDL_Ynor_Framework/_03_CORE_AGI_ENGINES/MDL_YNOR_GPT_KNOWLEDGE/04_D_CENTRE_DOCTRINAL_C_MOTEURS_DEPLOIEMENT_SOURCE_GLOBAL_KNOWLEDGE_B0873F.json"
+      ]
+    }
+  },
+  "mermaid_path": "../00_OMEGA_PORTAIL_ET_EDITION/01_SOURCE_IMPLANTEE/00_EDITION_CANONIQUE_FINALE/01_DOCUMENTS_CENTRAUX/09_A_PRIME_TRANSMISSION_OMEGA_PORTAIL_EDITION_SOURCE_VISUELLE_YNOR_8815A9.md"
+}

@@ -1,11 +1,121 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "corpus": "MDL YNOR",
+  "layer_order": {
+    "reading": [
+      "CANON",
+      "RAG_SUPPORT",
+      "ARCHIVES",
+      "TECHNIQUE",
+      "MONITORING",
+      "AUDIT",
+      "INBOX_QUARANTAINE"
+    ],
+    "retrieval": [
+      "CANON",
+      "RAG_SUPPORT"
+    ],
+    "operation": [
+      "TECHNIQUE",
+      "MONITORING",
+      "AUDIT"
+    ],
+    "validation": [
+      "CANON",
+      "AUDIT",
+      "MONITORING"
+    ],
+    "quarantine": [
+      "INBOX_QUARANTAINE"
+    ]
+  },
+  "metadata_contract": {
+    "required_fields": [
+      "layer",
+      "status",
+      "canonical_id",
+      "concept_id",
+      "citation_id",
+      "document_role",
+      "retrieval_weight"
+    ],
+    "recommended_fields": [
+      "source_of_truth",
+      "source_path",
+      "chunking_policy"
+    ],
+    "status_vocab": [
+      "canonical",
+      "support",
+      "archive",
+      "technical",
+      "audit",
+      "monitoring",
+      "quarantine",
+      "navigation"
+    ],
+    "role_vocab": [
+      "answer_card",
+      "archive-inventory",
+      "archive-policy",
+      "archive-root",
+      "audit-root",
+      "canonical-layer-root",
+      "citation-policy",
+      "constitution",
+      "cognitive-extension",
+      "crosswalk",
+      "dashboard",
+      "empirical-measurement",
+      "glossary",
+      "identifier-policy",
+      "index",
+      "layer-architecture",
+      "math-topology",
+      "measurement",
+      "monitoring",
+      "monitoring-root",
+      "navigation",
+      "operational-pack",
+      "operator",
+      "policy",
+      "predictive-piloting",
+      "quarantine-root",
+      "registry",
+      "registry-shard",
+      "regime-sheet",
+      "risk-law",
+      "support-layer-root",
+      "survival-law",
+      "technical-root",
+      "theory",
+      "theory-governance",
+      "validation",
+      "validation-framework",
+      "variable-profile",
+      "anti-goodhart"
+    ]
+  },
   "policy": {
-    "primary_retrieval_layers": ["CANON", "RAG_SUPPORT"],
-    "archive_layers": ["ARCHIVES"],
-    "technical_layers": ["TECHNIQUE"],
+    "primary_retrieval_layers": [
+      "CANON",
+      "RAG_SUPPORT"
+    ],
+    "archive_layers": [
+      "ARCHIVES"
+    ],
+    "technical_layers": [
+      "TECHNIQUE"
+    ],
+    "operational_layers": [
+      "MONITORING",
+      "AUDIT"
+    ],
+    "quarantine_layers": [
+      "INBOX_QUARANTAINE"
+    ],
     "require_canonical_id": true,
+    "require_citation_id_for_primary": true,
     "anti_monopoly_topk": true,
     "max_per_canonical_id": 1,
     "max_per_source": 1,
@@ -15,27 +125,36 @@
       "wrappers",
       "auto_audits",
       "releases",
-      "mirrors"
+      "mirrors",
+      "temporary_artifacts",
+      "demo_scripts"
     ],
     "retrieval_weights": {
       "canonical": 1.0,
-      "support": 0.9,
-      "navigation": 0.75,
-      "registry": 0.85,
+      "support": 0.88,
+      "navigation": 0.72,
+      "registry": 0.66,
       "glossary": 0.82,
-      "guide": 0.75,
-      "crosswalk": 0.72,
-      "policy": 0.8
+      "guide": 0.74,
+      "crosswalk": 0.7,
+      "policy": 0.68,
+      "operational-pack": 0.2,
+      "validation": 0.6,
+      "measurement": 0.62,
+      "monitoring": 0.18,
+      "audit": 0.15
     }
   },
   "gates": {
     "utf8_clean": true,
     "no_archive_leak_top10": true,
     "no_duplicate_canonical_id": true,
+    "no_duplicate_concept_id": true,
     "no_production_answer_without_citation": true,
     "no_doctrinal_use_of_technique": true,
     "citation_stable_min": 0.9,
     "canonical_citation_min": 0.95,
-    "top5_pertinent_min": 0.7
+    "top5_pertinent_min": 0.7,
+    "no_quarantine_leak": true
   }
 }

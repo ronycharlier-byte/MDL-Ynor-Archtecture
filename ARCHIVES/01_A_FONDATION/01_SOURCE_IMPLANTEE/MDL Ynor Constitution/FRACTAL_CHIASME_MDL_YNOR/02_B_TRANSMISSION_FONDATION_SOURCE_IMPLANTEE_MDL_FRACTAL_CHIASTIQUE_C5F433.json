@@ -1,0 +1,227 @@
+[
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "NODE",
+      "position_chiastique": "B",
+      "role_du_fichier": "Manifeste de distribution et de suivi",
+      "centre_doctrinal_local": "circulation des actifs et suivi de version",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "couverture de navigation et orientation",
+        "beta": "distraction et fragmentation",
+        "kappa": "cout d acces et de relecture"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "B' / 07_A_PRIME_ARCHIVES_ET_RELEASES"
+    },
+    "order": "01",
+    "key": "A",
+    "title": "AXIOMATIQUE_MINIMALE",
+    "role": "Ouverture fondatrice",
+    "mirror": "A_PRIME",
+    "summary": "Le point d'entree du systeme. Les axiomes minimaux ouvrent la forme fractale.",
+    "sources": [
+      "Chapitre I — Formalisation axiomatique minimale.pdf"
+    ]
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "NODE",
+      "position_chiastique": "B",
+      "role_du_fichier": "Manifeste de distribution et de suivi",
+      "centre_doctrinal_local": "circulation des actifs et suivi de version",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "couverture de navigation et orientation",
+        "beta": "distraction et fragmentation",
+        "kappa": "cout d acces et de relecture"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "B' / 07_A_PRIME_ARCHIVES_ET_RELEASES"
+    },
+    "order": "02",
+    "key": "B",
+    "title": "THEOREMES_DE_LA_MARGE",
+    "role": "Premier arc de dissipation",
+    "mirror": "B_PRIME",
+    "summary": "Le premier developpement porte la marge dissipative comme loi de propagation.",
+    "sources": [
+      "MDL Ynor — Théorèmes fondamentaux de la marge dissipative.pdf"
+    ]
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "NODE",
+      "position_chiastique": "B",
+      "role_du_fichier": "Manifeste de distribution et de suivi",
+      "centre_doctrinal_local": "circulation des actifs et suivi de version",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "couverture de navigation et orientation",
+        "beta": "distraction et fragmentation",
+        "kappa": "cout d acces et de relecture"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "B' / 07_A_PRIME_ARCHIVES_ET_RELEASES"
+    },
+    "order": "03",
+    "key": "C",
+    "title": "THEORIE_STRUCTURELLE",
+    "role": "Arc structural amont",
+    "mirror": "C_PRIME",
+    "summary": "La theorie structurelle prepare le renversement chiastique vers le noyau.",
+    "sources": [
+      "MDL Ynor — Théorie Structurelle des Systèmes Dissipatifs à Amplification Bornée.pdf"
+    ]
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "NODE",
+      "position_chiastique": "B",
+      "role_du_fichier": "Manifeste de distribution et de suivi",
+      "centre_doctrinal_local": "circulation des actifs et suivi de version",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "couverture de navigation et orientation",
+        "beta": "distraction et fragmentation",
+        "kappa": "cout d acces et de relecture"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "B' / 07_A_PRIME_ARCHIVES_ET_RELEASES"
+    },
+    "order": "04",
+    "key": "X",
+    "title": "NOYAU_INTEGRAL",
+    "role": "Centre chiastique",
+    "mirror": "X",
+    "summary": "Le centre integre les formulations mathématiques du noyau. Tout converge ici puis repart en reflet.",
+    "sources": [
+      "Chapitre XVI — Formalisation mathématique intégrale du noyau MDL Ynor.pdf",
+      "Chapitre I — Formalisation mathématique intégrale du noyau MDL Ynor.pdf"
+    ]
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "NODE",
+      "position_chiastique": "B",
+      "role_du_fichier": "Manifeste de distribution et de suivi",
+      "centre_doctrinal_local": "circulation des actifs et suivi de version",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "couverture de navigation et orientation",
+        "beta": "distraction et fragmentation",
+        "kappa": "cout d acces et de relecture"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "B' / 07_A_PRIME_ARCHIVES_ET_RELEASES"
+    },
+    "order": "05",
+    "key": "C_PRIME",
+    "title": "CONSTITUTION_STRUCTURELLE",
+    "role": "Arc structural aval",
+    "mirror": "C",
+    "summary": "La constitution structurelle rejoue la theorie en forme inverse et plus normative.",
+    "sources": [
+      "MDL Ynor — Constitution Structurelle des Systèmes Dissipatifs à Amplification Bornée.pdf"
+    ]
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "NODE",
+      "position_chiastique": "B",
+      "role_du_fichier": "Manifeste de distribution et de suivi",
+      "centre_doctrinal_local": "circulation des actifs et suivi de version",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "couverture de navigation et orientation",
+        "beta": "distraction et fragmentation",
+        "kappa": "cout d acces et de relecture"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "B' / 07_A_PRIME_ARCHIVES_ET_RELEASES"
+    },
+    "order": "06",
+    "key": "B_PRIME",
+    "title": "TRAITE_DYNAMIQUE",
+    "role": "Second arc de dissipation",
+    "mirror": "B",
+    "summary": "Le traite reprend la dynamique au retour du centre et ferme l'enveloppe theorique.",
+    "sources": [
+      "MDL Ynor — Traité des dynamiques dissipatives et de la stabilité structurelle.pdf"
+    ]
+  },
+  {
+    "_mdl_ynor": {
+      "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+      "corpus": "MDL YNOR",
+      "passe_de_correction": "2026-04-16",
+      "position_structurelle": "NODE",
+      "position_chiastique": "B",
+      "role_du_fichier": "Manifeste de distribution et de suivi",
+      "centre_doctrinal_local": "circulation des actifs et suivi de version",
+      "loi_de_survie": "μ = α - β - κ",
+      "lecture_locale": {
+        "alpha": "couverture de navigation et orientation",
+        "beta": "distraction et fragmentation",
+        "kappa": "cout d acces et de relecture"
+      },
+      "risque": "e∞ ∝ ε / μ",
+      "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+      "axiome": "un systeme survit SSI μ > 0",
+      "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+      "gouvernance": "toute modification doit maximiser Δμ",
+      "lien_miroir": "B' / 07_A_PRIME_ARCHIVES_ET_RELEASES"
+    },
+    "order": "07",
+    "key": "A_PRIME",
+    "title": "ARCHITECTURE_RECURSIVE",
+    "role": "Cloture architecturale",
+    "mirror": "A",
+    "summary": "La cloture se fait par l'architecture, qui replie le corpus sur lui-meme et ouvre la recursion fractale.",
+    "sources": [
+      "MDL Ynor Archtecture_"
+    ]
+  }
+]

@@ -1,0 +1,183 @@
+<!--
+**[◬] MATRICE FRACTALE MDL YNOR V2.0**
+**Corpus :** MDL YNOR
+**Position Structurelle :** LAYER
+**Position Chiastique :** A
+**Rôle du Fichier :** Interface de supervision
+**Centre Doctrinal Local :** AI Manager garde interface de supervision en limitant le bruit local et la friction structurelle.
+**Loi de Survie :** μ = α - β - κ
+**Lecture Locale :**
+- **α :** stabilite locale
+- **β :** bruit externe injecte
+- **κ :** friction structurelle
+**Risque :** e∞ ∝ ε / μ
+**Opérateur Correctif :** D(S)=proj_{SafeDomain}(S)
+**Axiome :** un système survit SSI μ > 0
+**Doctrine Goodhart : tout succès apparent est invalide si μ décroît**
+**Gouvernance : toute modification doit maximiser Δμ**
+**Lien Miroir :** A'
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YNOR COMMAND CENTER - Dashboard de Stabilité</title>
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --accent: #00d2ff;
+            --text: #e0e0e0;
+            --panel: #16161a;
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0.5rem;
+            margin: 0;
+            background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            background: var(--panel);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .mu-value {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+        }
+        .chiastic-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 4rem;
+            position: relative;
+        }
+        .node {
+            width: 60px;
+            height: 60px;
+            background: var(--panel);
+            border: 2px solid #444;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+        .node.active { border-color: var(--accent); box-shadow: 0 0 15px var(--accent); }
+        .line {
+            position: absolute;
+            height: 2px;
+            background: #333;
+            width: 100%;
+            top: 50%;
+            z-index: 1;
+        }
+        .label { position: absolute; bottom: -30px; font-size: 0.8rem; white-space: nowrap; left: 50%; transform: translateX(-50%); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>YNOR V11.13.x</h1>
+        <p>Sovereign Intelligence Architecture</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Indice de Stabilité</h3>
+            <div class="mu-value">μ = 0.999</div>
+            <p>CONVERGENCE ASYMPTOTIQUE</p>
+        </div>
+        <div class="card">
+            <h3>Saturation Informationnelle</h3>
+            <p>Capacité : 1081 Noeuds</p>
+            <p>Status : SATURATED</p>
+        </div>
+        <div class="card">
+            <h3>Audit Chiastique</h3>
+            <p>Symétrie C <-> C' : 100%</p>
+            <p>Dernier Audit : 5 Avril 2026</p>
+        </div>
+        <div class="card" style="border-style: dashed; opacity: 0.8; cursor: pointer;" onclick="window.location.href='axes_visualizer.html'">
+            <h3>Configuration des Axes</h3>
+            <p>Symmetry, Saturation, Resonance</p>
+            <button style="background: transparent; color: var(--accent); border: 1px solid var(--accent); padding: 5px 15px; border-radius: 20px; cursor: pointer;">VISUALISER</button>
+        </div>
+    </div>
+
+    <div class="chiastic-flow">
+        <div class="line"></div>
+        <div class="node active">A<span class="label">Fondation</span></div>
+        <div class="node active">B<span class="label">Théorie</span></div>
+        <div class="node active">C<span class="label">Moteur</span></div>
+        <div class="node active" style="background: var(--accent); color: #000;">X<span class="label">Noyau</span></div>
+        <div class="node active">C'<span class="label">Validation</span></div>
+        <div class="node active">B'<span class="label">Gouvernance</span></div>
+        <div class="node active">A'<span class="label">Archive</span></div>
+    </div>
+
+    <div style="margin-top: 8rem; color: #666; font-size: 0.9rem;">
+        © 2026 MDL YNOR ENGINE - Rony Charlier
+    </div>
+
+    <script>
+        async function updateDashboard() {
+            try {
+                // Determine current URL for relative fetch
+                const response = await fetch('/');
+                const data = await response.json();
+                
+                // Update elements
+                document.querySelector('.mu-value').textContent = `μ = ${data.mu.toFixed(6)}`;
+                
+                // Visual feedback if mu is high
+                if (data.mu > 0.99) {
+                    document.querySelector('.mu-value').style.color = '#00d2ff';
+                    document.querySelector('.mu-value').style.textShadow = '0 0 20px rgba(0, 210, 255, 0.6)';
+                }
+                
+                console.log("Dashboard Updated:", data);
+            } catch (err) {
+                console.warn("API Sync Failed:", err);
+            }
+        }
+
+        // Initialize and setup interval
+        updateDashboard();
+        setInterval(updateDashboard, 5000);
+    </script>
+</body>
+</html>

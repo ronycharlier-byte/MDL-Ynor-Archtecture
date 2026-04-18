@@ -6,18 +6,21 @@ concept_id: MDLYNOR.CONCEPT.CANON_LAYER
 citation_id: MDLYNOR-CANON-ROOT-001
 document_role: navigation
 retrieval_weight: 0.26
+source_of_truth: MDLYNOR-CANON-015
 ---
 
 # CANON
 
-This is the navigation stub for the canonical layer.
-It should not monopolize retrieval when a dedicated concept sheet exists.
+This is the authoritative layer for first-rank doctrine.
+It defines the canonical source of truth and the admissible reading order.
 
 Rules:
 - One concept = one canonical source.
 - Only `CANON` and `RAG_SUPPORT` may enter the primary retriever.
 - Every canonical document must expose a stable `canonical_id`.
+- Every canonical document used in production must expose a stable `citation_id`.
 - Prompts, logs, wrappers, releases, mirrors, and audits are not first-rank doctrine.
+- If a document is only operational, it belongs in `TECHNIQUE`.
 
 Canonical retrieval order:
 1. Registry shards
@@ -30,9 +33,12 @@ Canonical retrieval order:
 8. Risk law and operator D
 9. Goodhart and stability regimes
 10. Identifiers, layers, and governance relation
+11. Scientific validation
+12. Empirical measurement
+13. Predictive piloting
+14. Cognitive extensions
 
 Primary files:
-- `00_PACK_INJECTION_CANONIQUE.md`
 - `00_REGISTRE_AUTORITE.md`
 - `00_REGISTRE_AUTORITE_01_PORTAIL.md`
 - `00_REGISTRE_AUTORITE_02_DOCTRINE.md`

@@ -1,0 +1,50 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "NODE",
+    "position_chiastique": "C",
+    "role_du_fichier": "Formalisation theorique",
+    "centre_doctrinal_local": "stabilisation locale de la formalisation",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "coherence formelle et compatibilite",
+      "beta": "ambiguite semantique et divergence",
+      "kappa": "cout de demonstration et d integration"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "C' / 06_B_PRIME_GOUVERNANCE_ET_DIFFUSION"
+  },
+  "concepts": {
+    "Marge Dissipative (mu)": {
+      "formule": "mu = alpha - beta - kappa",
+      "fichier": "mdl_ynor_core.py",
+      "fonction": "measure_dissipative_margin"
+    },
+    "Reconstruction Post-Critique": {
+      "definition": "Changement brusque de structure apres mu <= 0",
+      "fichier": "mdl_ynor_regimes.py",
+      "classe": "PostCriticalReconstructor"
+    },
+    "Champs Dissipatifs": {
+      "definition": "Interaction de multiples systemes MDL",
+      "fichier": "mdl_ynor_networks.py",
+      "classe": "DissipativeField"
+    },
+    "Métacognition": {
+      "definition": "Auto-audit de la gouvernance IA",
+      "fichier": "ynor_metacognitive_layer.py",
+      "classe": "MetacognitiveGovernor"
+    },
+    "Auto-Evolution (AGI)": {
+      "definition": "Reecriture autonome du code source",
+      "fichier": "ynor_agi_optimizer.py",
+      "classe": "AGIOptimizer"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "E",
+    "role_du_fichier": "Noyau de connaissance",
+    "centre_doctrinal_local": "noyau local de memoire et de conservation",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "densite de connaissance exploitable",
+      "beta": "redondance et entropie injectee",
+      "kappa": "cout de maintenance et de reconciliation"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "E / 04_X_NOYAU_MEMOIRE"
+  },
+  "date": "2026-04-10",
+  "events": [
+    {
+      "time_et": "07:30",
+      "time_local": "13:30",
+      "event": "US CPI (Consumer Price Index)",
+      "impact": "HIGH"
+    },
+    {
+      "time_et": "07:30",
+      "time_local": "13:30",
+      "event": "US Core CPI",
+      "impact": "HIGH"
+    },
+    {
+      "time_et": "09:00",
+      "time_local": "15:00",
+      "event": "Michigan Consumer Sentiment",
+      "impact": "MEDIUM"
+    },
+    {
+      "time_et": "09:00",
+      "time_local": "15:00",
+      "event": "Factory Orders",
+      "impact": "LOW"
+    },
+    {
+      "time_et": "12:00",
+      "time_local": "18:00",
+      "event": "Baker Hughes Oil Rig Count",
+      "impact": "LOW"
+    }
+  ]
+}

@@ -4,26 +4,25 @@ status: canonical
 canonical_id: MDLYNOR-CANON-021
 concept_id: MDLYNOR.CONCEPT.COGNITIVE_EXTENSIONS
 citation_id: MDLYNOR-CANON-021
-document_role: answer_card
+document_role: cognitive-extension
 retrieval_weight: 1.08
 ---
 
 # Cognitive Extensions
 
-Query anchors:
-- Extensions controlees et systemes cognitifs.
-- Auto-organisation et information dynamique.
+Scope:
+- adaptive and cognitive systems can be read through the same dissipative discipline.
 
-Question:
-- How does MDL Ynor apply to adaptive and cognitive systems?
+Claim:
+- intelligence and self-organization are local formations bounded by global dissipative laws.
 
-Answer:
-- Intelligence and self-organization are local negentropic formations strictly bound by global dissipative laws.
-- The framework unifies physical, informational, and decisional networks under the same invariant closure.
-- Cognitive structures require structural intelligence constraints to prevent uncontrolled scaling without reciprocal capability $\alpha$.
+Constraint:
+- no infinite scaling assumption is admissible without bounding `alpha`, `beta`, and `kappa`.
 
-Definition:
-- Structural Intelligence = Adaptive processing capability fundamentally limited by the margin of systemic dissipation.
+Epistemic discipline:
+- distinguish analogy from evidence;
+- distinguish speculation from validation;
+- keep the domain of transfer explicit.
 
-Operational reading:
-- Non-admissible usage: applying infinite scaling assumptions to adaptive networks without bounding $\beta$ and $\kappa$.
+Status:
+- the extension is plausible, but only within calibrated and observed limits.

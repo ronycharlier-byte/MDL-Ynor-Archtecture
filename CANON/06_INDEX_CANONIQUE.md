@@ -4,23 +4,15 @@ status: canonical
 canonical_id: MDLYNOR-CANON-INDEX-001
 concept_id: MDLYNOR.CONCEPT.CANONICAL_INDEX
 citation_id: MDLYNOR-CANON-INDEX-001
-document_role: answer_card
+document_role: index
 retrieval_weight: 1.15
 ---
 
 # Index canonique
 
-Query anchors:
-- Quelle est la fonction de l index canonique ?
-- Quelle fiche donne l ordre de lecture canonique ?
-
-Question:
-- Which sheet gives the canonical reading order?
-
-Answer:
-- The canonical index gives the reading order and routing priority.
-- It points to the smallest dedicated sheet when one exists.
-- It never replaces doctrine.
+The canonical index defines reading order and routing priority.
+It points to the smallest dedicated sheet when one exists.
+It never replaces doctrine.
 
 Primary order:
 1. `01_PORTAIL_CANONIQUE_FINAL.md`
@@ -43,8 +35,17 @@ Primary order:
 18. `14_IDENTIFIANTS_CANONIQUES.md`
 19. `15_ARCHITECTURE_COUCHES.md`
 20. `16_THEORIE_CONSTITUTION_GOUVERNANCE.md`
+21. `17_SCIENTIFIC_VALIDATION.md`
+22. `18_MATHEMATICAL_TOPOLOGY.md`
+23. `19_EMPIRICAL_MEASUREMENT.md`
+24. `20_PREDICTIVE_PILOTING.md`
+25. `21_COGNITIVE_EXTENSIONS.md`
 
-Role:
-- The index canonique gives the canonical reading order and the routing priority.
-- If the question asks for the function of the canonical index, this sheet is the answer.
-- Any other source is secondary until assigned a canonical_id and layer.
+Retrieval rule:
+- dedicated sheet first;
+- registry shard next;
+- support only if it adds chunkable clarity;
+- archive only if historical context is explicitly requested.
+
+Validation rule:
+- if a file cannot be cited, it is not production-ready.

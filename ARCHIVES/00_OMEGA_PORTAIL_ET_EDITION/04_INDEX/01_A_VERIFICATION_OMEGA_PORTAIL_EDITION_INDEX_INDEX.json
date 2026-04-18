@@ -1,0 +1,972 @@
+{
+  "_mdl_ynor": {
+    "header": "[◬] MATRICE FRACTALE MDL YNOR V2.0",
+    "corpus": "MDL YNOR",
+    "passe_de_correction": "2026-04-16",
+    "position_structurelle": "MODULE",
+    "position_chiastique": "A",
+    "role_du_fichier": "Indexation et cartographie",
+    "centre_doctrinal_local": "point local d orientation et d acces",
+    "loi_de_survie": "μ = α - β - κ",
+    "lecture_locale": {
+      "alpha": "couverture de navigation et orientation",
+      "beta": "distraction et fragmentation",
+      "kappa": "cout d acces et de relecture"
+    },
+    "risque": "e∞ ∝ ε / μ",
+    "operateur_correctif": "D(S)=proj_{SafeDomain}(S)",
+    "axiome": "un systeme survit SSI μ > 0",
+    "doctrine_goodhart": "tout succes apparent est invalide si μ decroit",
+    "gouvernance": "toute modification doit maximiser Δμ",
+    "lien_miroir": "A' / 08_OMEGA_PRIME_API_REFERENCE"
+  },
+  "node": "00_OMEGA_PORTAIL_ET_EDITION",
+  "key": "OMEGA",
+  "mirror": "OMEGA_PRIME",
+  "role": "Enveloppe matricielle externe, face d'entree structurelle.",
+  "inventory_count": 157,
+  "inventory": [
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_JOURNAL_TARGETING_MD.md",
+      "size_bytes": 1962,
+      "sha256": "eb93d8224729e3f05b84fcd11fd1f8bdec4e5a42ca5caf2e5e2e93410ac9ef6a",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2728,
+      "sha256": "a2d865b01afaca09ca667ac87796e0277e7885351f240cf20304a08fbdcabfda",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2038,
+      "sha256": "c3a41c80a6263cff3677115f1e7eda46561bae8388553d1cdaad528381600608",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_MANUSCRIT_FINAL_MD.md",
+      "size_bytes": 28503,
+      "sha256": "f5e3f356a87759c43cc915a51051c496f60c07404b05a427fb06621be640c8d1",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_MANUSCRIT_FINAL_FOUNDATIONS_PHYSICS_MD.md",
+      "size_bytes": 29217,
+      "sha256": "34c2b45b1ae300ff7d121bbac5655f2f786881453699540c6daa1e0060cb73fc",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_METADONNEES_SOUMISSION_MD.md",
+      "size_bytes": 1493,
+      "sha256": "4eb7958bed81484c5e6a96090dd1f1d54cceabd8667d0ecab8ed99bec71e613f",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1229,
+      "sha256": "596dc7c3f4707bb8e593f24a21b99ff2974ff79d3f6db414fd7d2caf742f0964",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1430,
+      "sha256": "4181e32eebceb050c9f7cae16581b78863c35481006d42d53a9549c64cbcb4cf",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 700,
+      "sha256": "4cad1150b0950f62d7ca4289ca167dfe210679776f02dc6e204ad63832459d11",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 922,
+      "sha256": "4ad9429e09c09cf5de26fadedfd8a32dd510f570b3c743b50b4d3b538c654119",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1129,
+      "sha256": "4c014d683a263cac2a66303056849e8fa3d01a1c4d8ac649931cb9bf9235da3e",
+      "kind": "text"
+    },
+    {
+      "source": "00_ACADEMIC_SUBMISSION\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 4442,
+      "sha256": "d1b42048a7fe0137d5a42658dab7fde2f7dadd73cccf69268b94f92574c23905",
+      "kind": "text"
+    },
+    {
+      "source": "00_CORPUS_AUDIT\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 298946,
+      "sha256": "b24e6db558133ce319591e5fb65470c20bb3f2cb6b3c7efbca226b268c8381bf",
+      "kind": "text"
+    },
+    {
+      "source": "00_CORPUS_AUDIT\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 71396,
+      "sha256": "471125484016fa33ee386f954bf27281fc1667fd45ae01767731f38c3086eb65",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\../02_MIROIR_TEXTUEL/00_EDITION_CANONIQUE_FINALE/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_EDITION_CANONIQUE_FINALE_CANONICAL_DUPLICATES_MAP_MD.md",
+      "size_bytes": 11069,
+      "sha256": "a6e4f62e0e95d39d4dc89103a7272063ce2e9346f6693a58b2915a007edead18",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1959,
+      "sha256": "6eb06941de72b79dd832cf7d0bd4f2c18764b2c2c7e72926b3b101666273cd9b",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2575,
+      "sha256": "03063685fd6f13c8990631959eaf4de0ccb9bd6d72c9d931c47479358cd3c2e7",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2511,
+      "sha256": "eaf2c8e8bda524556f8b5378550ce5dd090979b4d2a05614ecb4718ef7387dc7",
+      "kind": "text"
+    },
+    {
+      "source": "00_EXECUTIVE_DIGEST\\../02_MIROIR_TEXTUEL/00_EXECUTIVE_DIGEST/09_A_PRIME_TRANSMISSION_STAGE_STEP_10_EXECUTIVE_DIGEST_JSON_D59418.md",
+      "size_bytes": 1483,
+      "sha256": "fbfb7b6d151b2b049dd39aa4cb7f5f4488503e1d7909930e8611d7189e1dd137",
+      "kind": "text"
+    },
+    {
+      "source": "00_EXECUTIVE_DIGEST\\../02_MIROIR_TEXTUEL/00_EXECUTIVE_DIGEST/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_EXECUTIVE_DIGEST_FICHE_PAGE_MD.md",
+      "size_bytes": 520,
+      "sha256": "97d9bf6811a8f85488c1a7d6afba231c0d339cddd8744807a16525fd5f4e2e0e",
+      "kind": "text"
+    },
+    {
+      "source": "00_EXECUTIVE_DIGEST\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1366,
+      "sha256": "80b04926f2e30d74d01f7148a52b3e73efd2fb03447446db76310769ef2518dd",
+      "kind": "text"
+    },
+    {
+      "source": "00_EXTERNAL_AUDIT_PORTAL\\../02_MIROIR_TEXTUEL/00_EXTERNAL_AUDIT_PORTAL/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_EXTERNAL_AUDIT_PORTAL_AUDIT_GUIDE_MD.md",
+      "size_bytes": 1725,
+      "sha256": "e9d3287bca91ac8948f1da33a22d8ebb444cf6033d1503a60ffca02e25c0f17c",
+      "kind": "text"
+    },
+    {
+      "source": "00_HOMEPAGE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1641,
+      "sha256": "0185a0e6dd3fb256a34629bab81bc2d5ba79de00192e7a9a896fad70654067e5",
+      "kind": "text"
+    },
+    {
+      "source": "00_HOMEPAGE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1092,
+      "sha256": "d97c17602f5c1e5d9a5f6ab3c2882987b4fa39f2c562098eb46258b45ea92fe1",
+      "kind": "text"
+    },
+    {
+      "source": "00_HOMEPAGE\\../02_MIROIR_TEXTUEL/00_HOMEPAGE/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_HOMEPAGE_SITE_MAP_MD.md",
+      "size_bytes": 416,
+      "sha256": "3f0f71a0f637a3f389b3475d1463111aa9b41ce80436159d711728b4cae82aae",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 114,
+      "sha256": "036dcb8a35b735775a49d602591bb77dc664751b63f4dcdadd436d2f6acd5966",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 37184,
+      "sha256": "d6feab39e486cc799b50a89f9852938b053ed87a2430f0c0c31fb149120969d5",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 274,
+      "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 274,
+      "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 274,
+      "sha256": "c787a05edf798c0f8eb77547ec6e18df41894ccd77e1ae7c84edd5f3a0fa0749",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\BENCHMARK_mathé01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 9812,
+      "sha256": "a3c3c0c8b5b4153c753ec78f0d986e71030c53486aa629ecdbef36e0a5c88536",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\BENCHMARK_mathé01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 12653,
+      "sha256": "8ace952b55b3093310c70131805c7ab90aba7c47c4c891e837977b33ebfa1e2a",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_CANONICAL_CONSOLIDATION_CERTIFICATE_MD.md",
+      "size_bytes": 2057,
+      "sha256": "01f3410df1b9173cecf32ae0d473c7939b5171c652e7756523b6a23fbfd3aeaa",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1060,
+      "sha256": "3bc940657846a7a0e6d11c6803d09eed076914a0fc2a1ce207d0747e8ec301a4",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1710,
+      "sha256": "01fb6b6cce2d369d1842b7a2e50f2157f501cc4ffc60d516cdc31c7fb153b6a2",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 3216,
+      "sha256": "134b81df549a349309abeeed096b2a3960e4b56bc6e081115367a9074ef5f47f",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2408,
+      "sha256": "2e848abe92b65aeb981b3a9b1ab7d2ce16b5a6ff00ca5c627c53347b282c4412",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1179,
+      "sha256": "3ea8ae110ab7662b20ab535397847c2adde152e9f75e9ca573c69d4a63da35e6",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1180,
+      "sha256": "204445cd4153f143906388c5020abe1bba805bd9b84ec972256f4944c9a68063",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1234,
+      "sha256": "29a96fea0b2d6851f4b65599cd6b48eddcf32bd57138f2dd4f32f136f5e27b73",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2422,
+      "sha256": "07894ae6f3a704b41d0e009978057a05c6432fc1af8369e04cc8338db027ad52",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_DASHBOARD_INTEGRITE_SYSTEMIQUE_MD.md",
+      "size_bytes": 1293,
+      "sha256": "a61cc7914a932bc30a9c4bc74b1300d6791ebdf1a5bb902c15655ebe957ff75f",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 4153,
+      "sha256": "d37a7c08ea2710e1f9319382f93bf7f33dce0c4b13a7685d6913d9e7f9e90250",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_DISCUSSION_BOHR_CALCULEE_MD.md",
+      "size_bytes": 11554,
+      "sha256": "54629ce622aafcbd91859f6b9e89896ea06fb8b51911fe7ee2c25137e203846c",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_ENCODING_AUDIT_FIRST_BLOCK_MD.md",
+      "size_bytes": 1451,
+      "sha256": "2f6d2af3b0fe54975fba22888c7501336fc26b796016e50a9e243b8691637e36",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/00_MASTER_FINAL/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_MASTER_FINAL_GENESIS_BLOCK_V11_13_MD.md",
+      "size_bytes": 92975,
+      "sha256": "a7946c02ae2a5bd25e437e4e48e63fb1592340ddce987f725ebfff99fa1af298",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_LICENSE_MD.md",
+      "size_bytes": 2234,
+      "sha256": "57868a841a15794ddc8662fe791877234ed276e94ccf0bc6cd500b46cd5c004e",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 5810,
+      "sha256": "bbc5ed5cce88241a0862e7a6ab286344a34abd69b1270858538744d642399051",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1227,
+      "sha256": "ed65e36913d851511d38a5585c880f51699ba7da9d7716ccc3a62b82945091f2",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1986,
+      "sha256": "b1f050b6e2e42dbd53406df14a9bd638d3c36111ce44b48b6c342794c28af53a",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/00_MASTER_FINAL/09_A_PRIME_TRANSMISSION_STAGE_STEP_14_MASTER_FINAL_JSON_9FFE52.md",
+      "size_bytes": 6412,
+      "sha256": "e230815654dc97f69a56ad8b969231b4de520a0ad2d9aac63b159a01e43417a9",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_NETTOYAGE_TECHNIQUE_MD.md",
+      "size_bytes": 1101,
+      "sha256": "ee649ff13841174d484e07a1927c4d7dab6f26ed7f3febc92d9da677b1a33898",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_NORMALISATION_CANONIQUE_MD.md",
+      "size_bytes": 2616,
+      "sha256": "24818c66d6deee6fe67d665984ffba29410ad7f0cf49d2f72223f4646e623834",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2477,
+      "sha256": "3a76c06fc6d138fb5b41e123474bb12cc9c2e934e316f665171ae25a15757138",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1750,
+      "sha256": "04d83fa3ef14101e2466802885f0e57142e3374009a11ec6da351ae20e23d1b2",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 8499,
+      "sha256": "d86b2553e15fd75a424263a41c48ffed890dcd786cf5400a756845be88b3135d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 11271,
+      "sha256": "2d111ad1344de371435994a97faa9bfa74e85b5e9e859ffbf863d7fbc02e32f4",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\../../_SYSTEM_AGI/_GPT_PACKS/GPT_UPLOAD_PACK/08_B_PRIME_ACTIVATION_SYSTEM_AGI_GPT_PACKS_GPT_UPLOAD_PACK_PROMPT_GPT_FINAL_MOINS_8000.md",
+      "size_bytes": 7180,
+      "sha256": "7214fe5062f1ef4cda04e4cf026f9d7f51feee765709fbfd9796429721311dfd",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 11290,
+      "sha256": "ceac1f613a6320484dc5195f022f46a9a33477f17c0a5008b08a017d8608d4f7",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 280,
+      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 280,
+      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 280,
+      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 280,
+      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 280,
+      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 280,
+      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 280,
+      "sha256": "332df8db3b477216ef9a40051cf7dc93a6dff382b8828f75b3835a925de8379d",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 3698,
+      "sha256": "07c9f2b5a4943fcfaa14eb533e78126b5a29831b854dd863568a1cad73c71bee",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 4873,
+      "sha256": "3a230fcd85b03b6d8437622ce9c3e8d43682c7683dd3f48dc9638f333a0bb764",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\validé01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2677,
+      "sha256": "f72673ff726617a774b4207b0662a499d97e7c5ee1e2a54b7399046f206c0cae",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 9699,
+      "sha256": "ed7011db86e43ab47744a405b6bc3e2f66159e99b6ec4e794fd938ffacd53576",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 3493,
+      "sha256": "5f4b296d84606a06b2c6486f20662424f6612e8e16fac3c91312cb00d765b8a7",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 13019,
+      "sha256": "12a94c9cebd050f62827315f74fef52ef72f8aa16d9831c2ac21fe5bc1789997",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 20066,
+      "sha256": "37397b7ed603a106bca982f85150ec9939d8babfd5bf9f6df2b1ae585b47b601",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 23331,
+      "sha256": "83389bc7f351b99dd1de5fa223ab4fd1a2e939e6a3d500673586c59dbfa3a292",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1638,
+      "sha256": "8a74247461e32fc452fdf0c9f684ace4a9404de4621133f21765deae8bfa89a4",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2467,
+      "sha256": "787ef491de27d475c790d257a506deb2b148542946cebc0e066b80dde927c010",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\YNOR_ACADEMIC_META.jsonld",
+      "size_bytes": 1211,
+      "sha256": "7dffd0fa79d9874a64458c46f18a7675649a75d0f30ac7a4889edbd5645e773b",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 7606,
+      "sha256": "bd6fda5a805e34c70f5befec780de39dd6d5d04e345fd84a7c13f22a1db23be2",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 15771,
+      "sha256": "b2fb65cf3746d4aece7a14d056ecaedf8181045caba646942e1687af0fd7d2a3",
+      "kind": "text"
+    },
+    {
+      "source": "00_PUBLIC_BRIEF\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 844,
+      "sha256": "8c1bd901ce7cd8eef4ba59e9ee2dd2a8acd643c84d6b3bd45343afcef6814f0c",
+      "kind": "text"
+    },
+    {
+      "source": "00_PUBLIC_BRIEF\\../02_MIROIR_TEXTUEL/00_PUBLIC_BRIEF/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_PUBLIC_BRIEF_PRESENTATION_PUBLIQUE_MD.md",
+      "size_bytes": 698,
+      "sha256": "d0f570891c9e091c552dd3db92502838453d6c8dd5096e2b4e4206fb3247150e",
+      "kind": "text"
+    },
+    {
+      "source": "00_PUBLIC_BRIEF\\../02_MIROIR_TEXTUEL/00_PUBLIC_BRIEF/09_A_PRIME_MIROIR_STATUS_CANONICAL_V11_13_PUBLIC_BRIEF_DE4F11.md",
+      "size_bytes": 922,
+      "sha256": "cd5dbbd57304523ab5b4557dc5804e68dee396ab1aaabae586441c6eb2c17fad",
+      "kind": "text"
+    },
+    {
+      "source": "00_PUBLIC_BRIEF\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2183,
+      "sha256": "46e2a6fc99fdb0ef0a5a2fee55fd8866197ecdab591caaa2a52ac8c0e934396f",
+      "kind": "text"
+    },
+    {
+      "source": "00_PUBLIC_BRIEF\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_CARTE_CANONIQUE_PUBLIQUE_YNOR_MD.md",
+      "size_bytes": 1826,
+      "sha256": "d6d266ff70ac0722365680a053dfa2cd69995d0a15a44478f7af9a76faff1eb7",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_JOURNAL_TARGETING_MD.md",
+      "size_bytes": 2068,
+      "sha256": "f2f9549f3c7bd1984fa1c96ecf140b9bd8313f1db375513063dbef16cd050df8",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1118,
+      "sha256": "ade82d452cd90d231d2946395c1d4b53a8f9f59aa652a477f4b512f997a5dbbe",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1508,
+      "sha256": "93f1bb0f5057765d3f04c626285dc65b06406d3a251c02a42e16844c57ff8b39",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_MANUSCRIT_FINAL_MD.md",
+      "size_bytes": 29848,
+      "sha256": "373f7a9e6201fa65c10bf6ecd0155d0c6856079845cd0bb64bae7b5360f71907",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_MANUSCRIT_FINAL_FOUNDATIONS_PHYSICS_MD.md",
+      "size_bytes": 30568,
+      "sha256": "80c8176ed1e22aa8cac378208f9460fda7e420d7dee884bf33ea2d9681f3faec",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\../02_MIROIR_TEXTUEL/00_SUBMISSION_PACK/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_SUBMISSION_PACK_METADONNEES_SOUMISSION_MD.md",
+      "size_bytes": 1594,
+      "sha256": "43bff47139ddce3873f95f32f1f13f30e2535d82fd236213b40215f756abee47",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 684,
+      "sha256": "37923447618da7ca377feb69ae68a09b32f1233b96d166fade02b59dcb7a8877",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 821,
+      "sha256": "f85e0abdaaeb0a2acbce5f7214e5546f1842741880cded18c7e4ea840fc6f29a",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 693,
+      "sha256": "1bd5bb60ecf77df282659e83480d9b777e321bc60a3bbb7238a9b17f085b4ef2",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 915,
+      "sha256": "2cd4331c611880f6647bd31270aebf4ed587c423ae355b3bbe560088f40770df",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1243,
+      "sha256": "169a308150e7f3fb9553f56232b038799d1171ea51faa598020e7535046408ea",
+      "kind": "text"
+    },
+    {
+      "source": "00_SUBMISSION_PACK\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 5325,
+      "sha256": "0640278bc0fab8df00b4dde932c14a518386897e81b44e6b89f7af1ab33a1fdf",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 98,
+      "sha256": "9e0e0ad9795ec6100fca49107d271dc92aac7ebf9ecd239adaed145975e6a62a",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 24182,
+      "sha256": "e5b28b7ca8cdd5f279fd6e1bde6514bbb880d8740add799e0b806c99f2a7f386",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 244,
+      "sha256": "bbe63385ebbd2d8df3adc9550d0c1782fac774e1722b369a67bd08b47f33d821",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\BENCHMARK_mathé../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_BENCHMARK_MATHEMATIQUE_V10_MD.md",
+      "size_bytes": 8863,
+      "sha256": "99d9c5882ca0cfa9aa7976d58038d4310158c8763e77a15162a59f0417539d6c",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\BENCHMARK_mathé../01_SOURCE_IMPLANTEE/01_TECHNICAL_CORE/01_A_ROOT_MDL_YNOR_ARCHITECTURE_UNIFIED_TECHNICAL_CORE_139432.md",
+      "size_bytes": 9933,
+      "sha256": "98938743c3586bc21d4efbcb7505e73784d9720981853aca86f55559236b7c60",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_CANONICAL_CONSOLIDATION_CERTIFICATE_MD.md",
+      "size_bytes": 2051,
+      "sha256": "4b312f0026bde1911e06057da0d959417369c1a40c8c30bf3799a0be5ee0bf1b",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 835,
+      "sha256": "9c4e82a365fcc3614cc1fbf3377849c7f63cf95a3598db7065c9f4e3f3323bd3",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1371,
+      "sha256": "89442c6b528a138ab80a508144aeacfe569dfd021f12a3f5941dd2554f6ccf68",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1939,
+      "sha256": "197b8b118f9c3f599fd1572b4346ac46da3270f21639a90f2d47a1d516d7c986",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2464,
+      "sha256": "4ccd6cbfb693c34fd881f28148e6118f0372c3c77e7377f2422b4618e4779bb7",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_DASHBOARD_INTEGRITE_SYSTEMIQUE_MD.md",
+      "size_bytes": 1787,
+      "sha256": "af216b9c88e68f2dd6642d6114bacb6cad16c0541f82cf248fa5c59b5b575178",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 3908,
+      "sha256": "806787d7bfd7785a3ca2cd8e43f4e8e87cb75c2a1ba716fbf9aa96997b8ed1a6",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_DISCUSSION_BOHR_CALCULEE_MD.md",
+      "size_bytes": 7758,
+      "sha256": "e8ecb400781181a7886e07e84c4cac093095c5642840353cb320bb70b451b8bd",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_ENCODING_AUDIT_FIRST_BLOCK_MD.md",
+      "size_bytes": 1327,
+      "sha256": "1d5ebe02591769c2b3a18d3688aacfa8b140262f1e28db6f4a9f100e857ee43d",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_LICENSE_MD.md",
+      "size_bytes": 2236,
+      "sha256": "70697f16b5ab9c463ab41c9bcfdd793c52d5d100316f225da3c9fd251585f1ae",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 4330,
+      "sha256": "670a64360230d58254e784f71315d3c56cf9997a889306fcf70ee6b1e25f58aa",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 969,
+      "sha256": "28f061a872d3ae8fcce10fa30234f7b7c782253153946d70b1cf962f3a9c452c",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2512,
+      "sha256": "d8a10d62cb7cf662c950ad1c5ab6ce9f8f003da53702f370c64ec9c349a378ee",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/00_MASTER_FINAL/09_A_PRIME_TRANSMISSION_STAGE_STEP_14_MASTER_FINAL_JSON_9FFE52.md",
+      "size_bytes": 5039,
+      "sha256": "b2a21b95ac70ebd3c16feda6d75c21943605383c95a98800397482cd56fdc54c",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_NETTOYAGE_TECHNIQUE_MD.md",
+      "size_bytes": 949,
+      "sha256": "a915899fdd1e096baeb9665fa62e9789c3445446f94f3f6c59ae9041c23df8fc",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_NORMALISATION_CANONIQUE_MD.md",
+      "size_bytes": 2035,
+      "sha256": "73a8252ff018ba6893d968d83001b41f92de8e1d128affd7fa6e81f5437e9772",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2229,
+      "sha256": "3e4439d730ea81ae5d0258e82fa9d5eb06464858a19855019a18d1cc2b170a04",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1408,
+      "sha256": "ebeeb55c624f896a6ad752e54eff47a16b3870edc1333ebb0dc5c7d0f58d88c8",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 7717,
+      "sha256": "d17643236e3656a6328afc39f7c5b974fad907617f2a4866241726d647119977",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 250,
+      "sha256": "5b4d8eb67dc32df2d5944e2be4968dfef6980cd5edc796cb070004941c4a5272",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 3693,
+      "sha256": "11325f5d8b459b047388074e85ef3a0d42cb237b08a90b7559118e7558cb3c5a",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 3766,
+      "sha256": "92ecbe20177efbc0dc6a229550880b70e5ccd57a2d45cc8c7ff20156dba581cc",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\validé01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2551,
+      "sha256": "ee9b3c8a2603b2a7944d28a4e70f7be102c333a4c5b5767be7f91e26636535a1",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 6758,
+      "sha256": "e487ad86a0e480f04208e8f0c235b4fe0168f63a25185892b463304f6e85f5a7",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2834,
+      "sha256": "e8ba85be44c85d1d40d634dbef923045dcfcfba3bd64382127627ca511550963",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 9951,
+      "sha256": "42994bb6f5c75c90cc9b9b8843eaf221695b58cac0b83cc80f1ebab66e8a76cc",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 13562,
+      "sha256": "a598277c3552f478d87157ff7fc97a519a823ce1bc63c03bb51a4f35368a123d",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 18500,
+      "sha256": "1b66a55a948943df9c319bdc9c20f441ad9198ee44d29feea1cc9b0527e482d3",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1450,
+      "sha256": "7a57b109541301a3921a2626ab24f270d5829d529b51716816bbb57ba3fd4474",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2071,
+      "sha256": "b5c3b9590f2f0d02a31fb383e4c67a782cd924da062e43071cab6b6c55ae7e21",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\YNOR_ACADEMIC_META.jsonld",
+      "size_bytes": 1213,
+      "sha256": "742494585e2f83e40239adb5c8847c8c1cbd5bda22213f4ccddb46d6946782d1",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 6564,
+      "sha256": "fb7fb3ae493573c0aca642f1918a6d1317ad0f36df33f9afc1d5fbf3643e1e94",
+      "kind": "text"
+    },
+    {
+      "source": "01_TECHNICAL_CORE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 13709,
+      "sha256": "65880a3ccc44028e7e2ed25f00f46f1c4dadd016d382a23c0c5ebbb5f70e4133",
+      "kind": "text"
+    },
+    {
+      "source": "02_PUBLIC_LITERATURE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1114,
+      "sha256": "a9f905375fbfeabdf264f9b5da3255dea314de86ab9a1f92367b0258c235fce4",
+      "kind": "text"
+    },
+    {
+      "source": "02_PUBLIC_LITERATURE\\../02_MIROIR_TEXTUEL/00_PUBLIC_BRIEF/09_A_PRIME_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_PUBLIC_BRIEF_PRESENTATION_PUBLIQUE_MD.md",
+      "size_bytes": 2031,
+      "sha256": "17c2ba7d3a08afdf7b85b6fa302c384a13f135f4bb8675f5beb40ce2126d41ab",
+      "kind": "text"
+    },
+    {
+      "source": "02_PUBLIC_LITERATURE\\../02_MIROIR_TEXTUEL/00_PUBLIC_BRIEF/09_A_PRIME_MIROIR_STATUS_CANONICAL_V11_13_PUBLIC_BRIEF_DE4F11.md",
+      "size_bytes": 1698,
+      "sha256": "caa00db86dfad6ff3556089da88ab1e5fac6ee19242fbbc89df61e9aff52e02a",
+      "kind": "text"
+    },
+    {
+      "source": "02_PUBLIC_LITERATURE\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2089,
+      "sha256": "22250259f7626cd25168aa8ea7cfaa10ac79734a844afba7b349bbb414056d3f",
+      "kind": "text"
+    },
+    {
+      "source": "02_PUBLIC_LITERATURE\\../02_MIROIR_TEXTUEL/01_TECHNICAL_CORE/01_A_MIROIR_OMEGA_PORTAIL_EDITION_MIROIR_TEXTUEL_TECHNICAL_CORE_CARTE_CANONIQUE_PUBLIQUE_YNOR_MD.md",
+      "size_bytes": 1723,
+      "sha256": "8dde5046fa68a8c966452719ab1429de4c440aa1366c30152f6040f4934f85d4",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2114,
+      "sha256": "d0072f295d81f66e883a8a625c558156d68376752fd83e172e7f1bd77dd1e0ad",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\../02_MIROIR_TEXTUEL/00_MASTER_FINAL/09_A_PRIME_TRANSMISSION_STAGE_STEP_14_MASTER_FINAL_JSON_9FFE52.md",
+      "size_bytes": 1050,
+      "sha256": "4e1232d5f11dc3b1f22553589494b3745a4ed03dc3c9385c27ff76455d50e493",
+      "kind": "text"
+    },
+    {
+      "source": "00_MASTER_FINAL\\00_MASTER_FINAL\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 7515,
+      "sha256": "5870c4c62ce7631ef6503094a8eb7b8b1b64c8bf6c36c27a7f9da49e1e92321d",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 4393,
+      "sha256": "7a4b537f9e1f4f5e998ecf98514a51a6cfab1a68bfffc8641d18e3a3c6bb54ed",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 2152,
+      "sha256": "f89b627b198322e0e5b85c5dccd527ec958565c6ec9d90b9a581e4cc2100f9f6",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 29094,
+      "sha256": "7abf2068d1e9961712b3c76b3fe721f55d28e9241144e7bce16463816ab11948",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 3422,
+      "sha256": "ae40cf50f6b8cef0f0de9e13995d8175bcb9e551bf9a34e55ed3f73c92c1b18d",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1394,
+      "sha256": "41857b52ca18b4f38b8873ade8800e5fad8094c2d888c825bd330ab8f866b8b3",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 999,
+      "sha256": "1b47f9b26781569363bde10bb89cc209397ff7e9c7468d13fb2ca31049003204",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1632,
+      "sha256": "ff9c649dce46337ffed6e2d24d38ea8f93b093cf0209774ebd99c2a32ca3fd7f",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 1903,
+      "sha256": "9f869829c7ef1e8ab99ab951bd65894eb766689ff0104ef46905b2acb6485290",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 20643,
+      "sha256": "a9790623239c105369b5516ba732071ff96aa91e6e8eac873843ebdff335ecc9",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 7770,
+      "sha256": "31be788fa537092ab642f5e106aea8ce0614c4fb73e1f3fd122507ebb719b118",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 6269,
+      "sha256": "d2d2e1bd01dd4a059cf427c9c857cc694891fcf05f22066eb75798ed7af5810f",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 5908,
+      "sha256": "b5b93885272c4446721ec5975aab786e23079dc6f576e876f87e1e0b9f47fdff",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 16783,
+      "sha256": "6c48f44085f9dfd81882e4d2bba122e61df7d2281c36df01a258792f3907f6a9",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 137761,
+      "sha256": "76a1095aa7534adfa1af446ea653e5bc30fe77bc59889186994b34696db6271f",
+      "kind": "text"
+    },
+    {
+      "source": "00_EDITION_CANONIQUE_FINALE\\01_DOCUMENTS_CENTRAUX\\01_A_VERIFICATION_OMEGA_PORTAIL_EDITION_INDEX_INDEX.json",
+      "size_bytes": 5261,
+      "sha256": "2292862c3f17034934f1ea63fc8091d131b1b9233386b88eb635ce84653bcc11",
+      "kind": "text"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "AUDIT/99_Z_RUN_OUTPUT_SCHEMA.json",
+  "title": "MDL YNOR Run Output",
+  "description": "Canonical output contract for a single external-validation run.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "snapshot_id",
+    "protocol_ref",
+    "manifest_sha256",
+    "seed_ref",
+    "split_name",
+    "run_kind",
+    "item_results",
+    "aggregate",
+    "comparison",
+    "non_conclusion_flags",
+    "artifact_refs"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "protocol_ref": {
+      "type": "string"
+    },
+    "manifest_sha256": {
+      "type": "string"
+    },
+    "seed_ref": {
+      "type": "string"
+    },
+    "split_name": {
+      "type": "string",
+      "enum": [
+        "J_cal",
+        "J_val",
+        "J_test",
+        "E1",
+        "E2"
+      ]
+    },
+    "run_kind": {
+      "type": "string",
+      "enum": [
+        "baseline",
+        "ablation",
+        "perturbation",
+        "external_validation",
+        "replication"
+      ]
+    },
+    "item_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "item_id",
+          "status"
+        ],
+        "properties": {
+          "item_id": {
+            "type": "string"
+          },
+          "packet_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "missing",
+              "redacted",
+              "failed",
+              "nonconclusive"
+            ]
+          },
+          "prediction": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "response_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_citations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metric_flags": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "archive_leak": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "tech_leak": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "duplicate": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "no_valid_source": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "monopoly_violation": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            }
+          },
+          "timing_ms": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "aggregate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "item_count",
+        "mean",
+        "median",
+        "variance",
+        "stddev",
+        "mad",
+        "primary_ci_95",
+        "bootstrap_ci_95",
+        "krippendorff_alpha"
+      ],
+      "properties": {
+        "item_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mean": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "median": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "variance": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "stddev": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "mad": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "primary_ci_95": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "lower": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "upper": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "method": {
+              "type": "string"
+            }
+          }
+        },
+        "bootstrap_ci_95": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "lower": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "upper": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "method": {
+              "type": "string"
+            }
+          }
+        },
+        "krippendorff_alpha": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "heterogeneity": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "between_corpus_variance": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "baseline_vs_ablation",
+        "baseline_vs_perturbation"
+      ],
+      "properties": {
+        "baseline_vs_ablation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "target",
+              "metric",
+              "delta"
+            ],
+            "properties": {
+              "target": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "delta": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ci_95": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "lower": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "upper": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "baseline_vs_perturbation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "target",
+              "metric",
+              "delta"
+            ],
+            "properties": {
+              "target": {
+                "type": "string"
+              },
+              "metric": {
+                "type": "string"
+              },
+              "delta": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ci_95": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "lower": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "upper": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "non_conclusion_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "artifact_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "run_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "packet_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
